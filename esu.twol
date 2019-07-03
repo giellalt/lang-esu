@@ -1,0 +1,25 @@
+Alphabet 
+
+a c e g h i k l m n p q r s t u v w y  
+%(g%/t%) %= %- %+:%> ' ':0 %::%>   
+
+%@:0 ; 
+
+Sets 
+
+Boundary = %+ %= ' ;
+
+Vow = a e i u ; 
+Cns = c g h k l m n p q r s t v w y ;
+
+Rules 
+
+"RuleForG/T"
+%(g%/t%):t <=> g Boundary:* _ ;
+
+"RuleForApostrophe"
+':' <=> Cns? Vow Cns Vow _ ;
+
+
+
+! evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu
