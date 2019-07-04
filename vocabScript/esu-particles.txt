@@ -1,17 +1,24 @@
 aa-ang                 EncliticOrEnd; ! yes; you’re welcome
 aang                   EncliticOrEnd; ! yes; you’re welcome
 acaca                  EncliticOrEnd; ! how little!; how few!
-acakikika              EncliticOrEnd; ! I told you so!
-acakikik               EncliticOrEnd; ! I told you so!
 acak                   EncliticOrEnd; ! I told you so!
+acakikik               EncliticOrEnd; ! I told you so!
+acakikika              EncliticOrEnd; ! I told you so!
 acu’u                  EncliticOrEnd; ! yeah?; right!
 agu                    EncliticOrEnd; ! don’t!, no!
-agu’u                  EncliticOrEnd; ! don’t!, no!
 agurrluk               EncliticOrEnd; ! not ever; never
+agu’u                  EncliticOrEnd; ! don’t!, no!
 ai                     EncliticOrEnd; ! what did you say?; say it again!
 aipaagni               EncliticOrEnd; ! on the other hand; maybe
-ak’a                   EncliticOrEnd; ! past; a long time; already # adverbial particle; ak’a igallruaqa ‘I already wrote to him’; ak’arpak or ak’anurpak ‘a very long time’; Unuakumi tupiimi mak’arrluni maaten piuq aanii kiimi ak’a maktellrullinilria. ‘In the morning when she woke up she sat up and noticed that her mother alone had already gotten up.’ (ELN 1990:15); AK’A IMUMI, AK’A AVANI or AK’A TAMAANI a long time ago; 
 akaa                   EncliticOrEnd; ! ouch!
+akeka                  EncliticOrEnd; ! ouch!
+akekataki              EncliticOrEnd; ! ouch!
+akitmun                EncliticOrEnd; ! transversely; toward the other side; across
+akleng                 EncliticOrEnd; ! poor thing!
+akwarpak               EncliticOrEnd; ! forever
+akwaugaq               EncliticOrEnd; ! yesterday
+akwaugarpak            EncliticOrEnd; ! all day yesterday; since yesterday
+ak’a                   EncliticOrEnd; ! past; a long time; already # adverbial particle; ak’a igallruaqa ‘I already wrote to him’; ak’arpak or ak’anurpak ‘a very long time’; Unuakumi tupiimi mak’arrluni maaten piuq aanii kiimi ak’a maktellrullinilria. ‘In the morning when she woke up she sat up and noticed that her mother alone had already gotten up.’ (ELN 1990:15); AK’A IMUMI, AK’A AVANI or AK’A TAMAANI a long time ago; 
 ak’akika               EncliticOrEnd; ! so far away!; so many!; so much!
 ak’am                  EncliticOrEnd; ! again
 ak’ami’i               EncliticOrEnd; ! that’s all; the end
@@ -19,13 +26,6 @@ ak’anek                EncliticOrEnd; ! for the first time in a long time; sin
 ak’anun                EncliticOrEnd; ! for a long time # past or future; adverbial particle; ak’anun ayaumauq ‘he’s been gone for a long time’; ak’anun maanciiquq ‘he will be here for a long time’; Ak’anun ayagpek’natek cali allamek taqukamek tanglliniuk neryalriamek. ‘Without traveling long they2 saw yet another bear grazing on berries.’ (YUU 1995:13); < ak’a-terminalis; > ak’anurrli- ak’anurrli- to take a long time; to let a long time elapse
 ak’arpak               EncliticOrEnd; ! forever; since very long ago
 ak’atak                EncliticOrEnd; ! ouch!
-akekataki              EncliticOrEnd; ! ouch!
-akeka                  EncliticOrEnd; ! ouch!
-akitmun                EncliticOrEnd; ! transversely; toward the other side; across
-akleng                 EncliticOrEnd; ! poor thing!
-akwarpak               EncliticOrEnd; ! forever
-akwaugaq               EncliticOrEnd; ! yesterday
-akwaugarpak            EncliticOrEnd; ! all day yesterday; since yesterday
 ala-i                  EncliticOrEnd; ! oh my!
 alak’aa                EncliticOrEnd; ! is that so!
 alap’aa                EncliticOrEnd; ! how cold it is!
@@ -47,9 +47,9 @@ amta-llu               EncliticOrEnd; ! nevertheless; however; but; and yet
 angli-lli              EncliticOrEnd; ! too much!
 angqutegken            EncliticOrEnd; ! 
 angu                   EncliticOrEnd; ! don’t!; no!
-angu’u                 EncliticOrEnd; ! don’t!; no!
 anguqa                 EncliticOrEnd; ! or
 angurrluk              EncliticOrEnd; ! absolutely not; in no case; certainly not
+angu’u                 EncliticOrEnd; ! don’t!; no!
 anirta                 EncliticOrEnd; ! thank goodness!; how fortunate!
 anirtaqulluk           EncliticOrEnd; ! serves him right!; serves you right!
 anirtima               EncliticOrEnd; ! so that’s why!; no wonder!; good thing then!
@@ -60,13 +60,12 @@ arcassi                EncliticOrEnd; ! wow!
 aren                   EncliticOrEnd; ! oops!; oh!; oh no!; unfortunately
 asgutmun               EncliticOrEnd; ! in the upriver direction
 ata                    EncliticOrEnd; ! let me see; well then
-ata’a                  EncliticOrEnd; ! let me see; well then
 ataam                  EncliticOrEnd; ! again
-ataki                  EncliticOrEnd; ! let me see; well then; come on
 atak                   EncliticOrEnd; ! let me see; well then; come on
+ataki                  EncliticOrEnd; ! let me see; well then; come on
 ataku                  EncliticOrEnd; ! (this) evening (noun (especially when with final q) and adverbial particle)
-atakuq                 EncliticOrEnd; ! (this) evening (noun (especially when with final q) and adverbial particle)
 ataku-                 EncliticOrEnd; ! to be evening
+atakuq                 EncliticOrEnd; ! (this) evening (noun (especially when with final q) and adverbial particle)
 atam                   EncliticOrEnd; ! notice!; look!
 atata                  EncliticOrEnd; ! later on
 atataarqu              EncliticOrEnd; ! a little later
@@ -74,6 +73,7 @@ atataku                EncliticOrEnd; ! after a while; wait a while!
 ataucikun              EncliticOrEnd; ! all together; at once; at the same time; simultaneously
 ataucirqumek           EncliticOrEnd; ! once
 ataucitun              EncliticOrEnd; ! like one; simultaneously; in unison
+ata’a                  EncliticOrEnd; ! let me see; well then
 atunem                 EncliticOrEnd; ! matching; mutually; complementary; conforming to
 aullu                  EncliticOrEnd; ! careful!; watch out!; don’t even think of it!
 aullu-wa-i             EncliticOrEnd; ! careful!; watch out!; don’t even think of it!
@@ -99,8 +99,8 @@ egmianun               EncliticOrEnd; ! immediately
 elatmun                EncliticOrEnd; ! (to or toward) outside # adverbial particle
 elliinginaq            EncliticOrEnd; ! in vain; without purpose
 elliitau͡gaten         EncliticOrEnd; ! just in case it’s possible # particle
-ellmaar(aq*)           EncliticOrEnd; ! a little bit
 ellma                  EncliticOrEnd; ! a little bit
+ellmaar(aq*)           EncliticOrEnd; ! a little bit
 ellmacuar(aq*)         EncliticOrEnd; ! a little bit
 envanek                EncliticOrEnd; ! from time immemorial; from long ago; from far in the distance
 ernequ                 EncliticOrEnd; ! later today
@@ -113,11 +113,11 @@ iciwa                  EncliticOrEnd; ! you know; remember; as you know too
 iciw’                  EncliticOrEnd; ! you know; remember; as you know too
 icugg’                 EncliticOrEnd; ! you know; remember; as you know too
 iilektii               EncliticOrEnd; ! how disgusting!
-ik’apassi              EncliticOrEnd; ! ugh!; yuck!
 ikik                   EncliticOrEnd; ! it is to be hoped; perhaps
 ikika                  EncliticOrEnd; ! I suppose; perhaps
-ik’ikika               EncliticOrEnd; ! so much!; so many!; so big!
+ik’apassi              EncliticOrEnd; ! ugh!; yuck!
 ik’iki                 EncliticOrEnd; ! so much!; so many!; so big!
+ik’ikika               EncliticOrEnd; ! so much!; so many!; so big!
 ik’itmun               EncliticOrEnd; ! toward or in ugly (improper) ways
 iliini                 EncliticOrEnd; ! sometimes
 ilumun                 EncliticOrEnd; ! truly; indeed; really
@@ -140,11 +140,11 @@ kesianek               EncliticOrEnd; ! always
 kesiani                EncliticOrEnd; ! only then
 kiika-wa               EncliticOrEnd; ! I too wish it were so!
 kiiki                  EncliticOrEnd; ! hurry!
-kiituani               EncliticOrEnd; ! (HBC,NS, NUN form), kiituan’ finally; thereafter
 kiitau͡gani            EncliticOrEnd; ! (HBC,NS, NUN form), kiituan’ finally; thereafter
+kiituani               EncliticOrEnd; ! (HBC,NS, NUN form), kiituan’ finally; thereafter
 kingumek               EncliticOrEnd; ! and next; at last
-kitaki                 EncliticOrEnd; ! well then; please; okay
 kitak                  EncliticOrEnd; ! well then; please; okay
+kitaki                 EncliticOrEnd; ! well then; please; okay
 kitek                  EncliticOrEnd; ! well then; please; okay
 kuten                  EncliticOrEnd; ! like this
 maa-i                  EncliticOrEnd; ! here; coming this way; now; at the present time
@@ -161,8 +161,8 @@ negetmun               EncliticOrEnd; ! northward
 nepetmun               EncliticOrEnd; ! heading toward commotion, turbulence, chaos
 nutem                  EncliticOrEnd; ! from the beginning; originally
 patagmek               EncliticOrEnd; ! quickly; rapidly
-perr’irpak             EncliticOrEnd; ! completely clean
 perrirpak              EncliticOrEnd; ! completely clean
+perr’irpak             EncliticOrEnd; ! completely clean
 piciatun               EncliticOrEnd; ! in any manner; any old which way; anywhere; of various kinds; at random
 pitsaqutmek            EncliticOrEnd; ! intentionally
 pulengtaq              EncliticOrEnd; ! frequently; often; repeatedly
@@ -170,9 +170,9 @@ qakirpak               EncliticOrEnd; ! all pale, dry, bleached
 qaku                   EncliticOrEnd; ! when? (in the future); how long from now?; a certain unspecified (or unspecifiable) time afterward; 
 qakuan                 EncliticOrEnd; ! when some time had elapsed
 qakuaqan               EncliticOrEnd; ! at what times?; at various times
-qang’a-llu             EncliticOrEnd; ! on the other hand; contrary to what might be thought adverb; or; or else; either . . . or
 qangkun                EncliticOrEnd; ! as one usually does
 qangvaq                EncliticOrEnd; ! when (in the past); how long ago?; for some time
+qang’a-llu             EncliticOrEnd; ! on the other hand; contrary to what might be thought adverb; or; or else; either . . . or
 qaterpak               EncliticOrEnd; ! very white; all white
 qayuwa                 EncliticOrEnd; ! this time; to my surprise; for some unknown reason; how? (Y, NSU additional meaning)
 qeratmun               EncliticOrEnd; ! crosswise; perpendicularly
@@ -186,11 +186,11 @@ takelmun               EncliticOrEnd; ! marking, cutting, moving, etc. lengthwis
 tamaa                  EncliticOrEnd; ! at once; right away; immediately; as soon as possible
 tamatmun               EncliticOrEnd; ! in various directions
 tangrriu               EncliticOrEnd; ! look at him/it!; see!
-tau͡gaam               EncliticOrEnd; ! (UY form) however; but; only; except for; instead
-tau͡g’am               EncliticOrEnd; ! (UY form) however; but; only; except for; instead
-tau͡gken               EncliticOrEnd; ! even though; however; but; from there
 taunginaq              EncliticOrEnd; ! without anyone intending it to be so
 taunginarmek           EncliticOrEnd; ! without anyone intending it to be so
+tau͡gaam               EncliticOrEnd; ! (UY form) however; but; only; except for; instead
+tau͡gken               EncliticOrEnd; ! even though; however; but; from there
+tau͡g’am               EncliticOrEnd; ! (UY form) however; but; only; except for; instead
 tavaq                  EncliticOrEnd; ! I doubt it
 tavatellengraan        EncliticOrEnd; ! nevertheless
 tayima                 EncliticOrEnd; ! elsewhere
@@ -204,8 +204,8 @@ tuarpiaq               EncliticOrEnd; ! like; similar to
 tuaten                 EncliticOrEnd; ! like that
 tuatkacagaq            EncliticOrEnd; ! exactly like that
 tungurpak              EncliticOrEnd; ! all black; very black
-ukanirpak              EncliticOrEnd; ! historically; up till now at least
 ukaniku                EncliticOrEnd; ! in the near future
+ukanirpak              EncliticOrEnd; ! historically; up till now at least
 ukaqvaggun             EncliticOrEnd; ! in the near future; recently
 ukatmun                EncliticOrEnd; ! toward here; this way; on this side
 uksuaqu                EncliticOrEnd; ! this coming autumn
@@ -224,31 +224,31 @@ usuuq                  EncliticOrEnd; ! hey you!; you here!
 utelmun                EncliticOrEnd; ! homeward, toward one’s point of origin
 utetmun                EncliticOrEnd; ! homeward, toward one’s point of origin
 uumi                   EncliticOrEnd; ! recently; this time; once
-uumiarqu               EncliticOrEnd; ! in the near future
 uumiaraqu              EncliticOrEnd; ! in the near future
+uumiarqu               EncliticOrEnd; ! in the near future
 uumiku                 EncliticOrEnd; ! next time
 uumirpak               EncliticOrEnd; ! in the past period of time (days, hour, minutes); for some time now
 wacicetun              EncliticOrEnd; ! like now
 wagg’uq                EncliticOrEnd; ! that is to say; in other words; it is called
 wak’nirnek             EncliticOrEnd; ! from this time on; from now on; henceforth
-wall’u                 EncliticOrEnd; ! or
 wall’                  EncliticOrEnd; ! or
+wall’u                 EncliticOrEnd; ! or
 wall’upik              EncliticOrEnd; ! really, I wonder
+wani-gga               EncliticOrEnd; ! here (it is)!
+wani-wa                EncliticOrEnd; ! here (it is)!
+wanigga                EncliticOrEnd; ! now
 waniku                 EncliticOrEnd; ! later on
 wanikuarqu             EncliticOrEnd; ! a little later on
 wanirpak               EncliticOrEnd; ! now and for a short time hence; for a while
 waniwa                 EncliticOrEnd; ! now
-wanigga                EncliticOrEnd; ! now
-wani-wa                EncliticOrEnd; ! here (it is)!
-wani-gga               EncliticOrEnd; ! here (it is)!
 waqaa                  EncliticOrEnd; ! hello; what’s the matter?; ‘what are you doing here?’; ‘what can I do for you?’
 waten                  EncliticOrEnd; ! like this
 watkacagaq             EncliticOrEnd; ! exactly like this
-watmi                  EncliticOrEnd; ! nalliini now at this time
-wat’um                 EncliticOrEnd; ! nalliini now at this time
 watlirqantar           EncliticOrEnd; ! of course
+watmi                  EncliticOrEnd; ! nalliini now at this time
 watua                  EncliticOrEnd; ! (NS, HBC form) just now; right now; that’s fine by me, just go ahead and do it
-wat’au͡ga              EncliticOrEnd; ! (NS, HBC form) just now; right now; that’s fine by me, just go ahead and do it
 watuacetun             EncliticOrEnd; ! like nowadays
+wat’au͡ga              EncliticOrEnd; ! (NS, HBC form) just now; right now; that’s fine by me, just go ahead and do it
+wat’um                 EncliticOrEnd; ! nalliini now at this time
 yaaliagni              EncliticOrEnd; ! day before yesterday or year before last (K, Y, BB meaning); three days ago or three years ago (NI meaning)
 yaaliaku               EncliticOrEnd; ! day after tomorrow or year after next (K, Y, BB, LI meaning); three or more days hence or three or more years hence (NI meaning)

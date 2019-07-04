@@ -28,9 +28,19 @@ def readDictionaryJson(filename):
                     else:
                         for word in wordDef[0]:
                             if word[-1] == "-":
-                                verbs.append("{:22} VerbPostbase; ! {}".format(re.sub(r'[0-9]', '', word), "; ".join(wordDef[1])))
+                                verb = re.sub(r'[0-9]', '', word)
+                                verb = re.sub(r'-', '', verb)
+                                verbs.append("{:22} VerbPostbase; ! {}".format(verb, "; ".join(wordDef[1])))
                             else:
-                                nouns.append("{:22} NounPostbase; ! {}".format(re.sub(r'[0-9]', '', word), "; ".join(wordDef[1])))
+                                noun = re.sub(r'[0-9]', '', word)
+                                noun = re.sub(r'a\^e\b', 'e', noun)
+                                noun = re.sub(r'\(aq\*\)\b', '(ar*)', noun)
+                                noun = re.sub(r'q\*\b', 'r*', noun)
+                                noun = re.sub(r'q\b', 'r', noun)
+                                noun = re.sub(r'k\b', 'g', noun)
+                                noun = re.sub(r'ta\b', 'te', noun)
+                                noun = re.sub(r'n\b', 'te', noun)
+                                nouns.append("{:22} NounPostbase; ! {}".format(noun, "; ".join(wordDef[1])))
 
     return nouns, verbs, particles, other
 
@@ -40,10 +50,10 @@ if __name__ == "__main__":
     nouns, verbs, particles, other = readDictionaryJson(filename)
 
     with open('esu-nouns.txt', 'w') as out:
-        out.write("\n".join(nouns))
+        out.write("\n".join(sorted(nouns)))
     with open('esu-verbs.txt', 'w') as out:
-        out.write("\n".join(verbs))
+        out.write("\n".join(sorted(verbs)))
     with open('esu-particles.txt', 'w') as out:
-        out.write("\n".join(particles))
+        out.write("\n".join(sorted(particles)))
     with open('esu-other.txt', 'w') as out:
-        out.write("".join(other))
+        out.write("".join(sorted(other)))

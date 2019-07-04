@@ -1,6 +1,7 @@
 Alphabet 
 
-a ä b c d e ë f g h i j k l m n o ö p q r s š t u v w x y z ʼ ꞉
+a c e g h i k l m n p q r s t u v w y  
+%(g%/t%) %= %- %+:%> ' ':0 %::%>   
 
 %=:%-
 %>:0 ; 
@@ -8,7 +9,8 @@ a ä b c d e ë f g h i j k l m n o ö p q r s š t u v w x y z ʼ ꞉
 
 Sets 
 
-Vow = a ä e ë o ö i u ; 
+Vow = a e i u ; 
+Cns = c g h k l m n p q r s t v w y ;
 
 Rules 
 
