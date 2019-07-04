@@ -3,7 +3,8 @@
 #	esu.gen.hfst: Morphological generator
 #	esu.seg.hfst: Morphological segmenter
 
-all: esu.mor.hfst esu.gen.hfst esu.seg.hfst
+all: esu.mor.hfst esu.gen.hfst esu.seg.hfst \
+	esu.mor.hfstol
 
 # This is the lexicon 
 #	<past><s_sg3><f>deyë꞉s<v><tv>:>w{A}>{y}ö{n}>deyë꞉s
@@ -38,5 +39,10 @@ esu.mor.hfst: esu.gen.hfst
 esu.seg.hfst: esu.mor.hfst esu.gen.seg.hfst
 	hfst-compose -F -1 esu.mor.hfst -2 esu.gen.seg.hfst | hfst-minimise -o esu.seg.hfst
 
+esu.mor.hfstol: esu.mor.hfst
+	hfst-fst2fst -O esu.mor.hfst -o esu.mor.hfstol
+
 clean:
 	rm *.hfst
+
+
