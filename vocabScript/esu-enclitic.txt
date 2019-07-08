@@ -1,0 +1,23 @@
+LEXICON EncliticOrEnd
+=am[Encl]:=am       EncliticOrEnd; ! used for emphasis or contrast in narrative or conversation
+=amta[Encl]:=amta   EncliticOrEnd; ! again
+=ata[Encl]:=ata     EncliticOrEnd; ! look in bases section; may be treated as either a particle base or an enclitic
+=atam[Encl]:=atam   EncliticOrEnd; ! look in bases section; may be treated as either a particle base or an enclitic
+=gga[Encl]:=gga     EncliticOrEnd; ! see =wa
+=ggem[Encl]:=ggem   EncliticOrEnd; ! indeed
+=gguq[Encl]:=gguq   EncliticOrEnd; ! one said; it is said
+=i[Encl]:=i         EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+=ima[Encl]:=ima     EncliticOrEnd; ! look in bases section; may be treated as either a particle base or an enclitic
+=kin[Encl]:=kin     EncliticOrEnd; ! I wish
+=kiq[Encl]:=kiq     EncliticOrEnd; ! I wonder # used to form rhetorical questions
+=llam[Encl]:=llam   EncliticOrEnd; ! alas; I wish it were not so
+=lli[Encl]:=lli     EncliticOrEnd; ! oh!; gee whiz!
+=llu[Encl]:=llu     EncliticOrEnd; ! and; also
+=mi[Encl]:=mi       EncliticOrEnd; ! on the other hand; how about?; but
+=naa[Encl]:=naa     EncliticOrEnd; ! intensifier
+=qaa[Encl]:=qaa     EncliticOrEnd; ! used with the indicative mood to form ‘yes-no’ questions; also occurs independently as an exclamatory particle (see in bases section)
+=tanem[Encl]:=tanem EncliticOrEnd; ! look in bases section; may be treated as either a particle base or an enclitic
+=tang[Encl]:=tang   EncliticOrEnd; ! look in bases section; may be treated as either a particle base or an enclitic
+=tuq[Encl]:=tuq     EncliticOrEnd; ! I wish; I hope
+=wa[Encl]:=wa       EncliticOrEnd; ! used when answering questions with a verb in the consequential mood, when making statements where the verb is understood from context (usually with the same verbal idea as a preceding sentence), and for making statements involving probability where the verb is in the participial mood with the postbase -lli- ‘maybe’ (that construction calls for this enclitic); thus, this enclitic implies that there is more involved than that which is explicitly stated;
+=gga[Encl]:=gga     EncliticOrEnd; ! (HBC, NI form) used when answering questions with a verb in the consequential mood, when making statements where the verb is understood from context (usually with the same verbal idea as a preceding sentence), and for making statements involving probability where the verb is in the participial mood with the postbase -lli- ‘maybe’ (that construction calls for this enclitic); thus, this enclitic implies that there is more involved than that which is explicitly stated;
