@@ -3,17 +3,17 @@
 
 Multichar_Symbols
 vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
-[N] [V] [Sg] [Pl] [Du] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [4Sg] [4Pl] [4Du] [_] [N→N] [N→V] [V→N] [V→V] [Imprs_Agnt]
-[Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-[Abs] [Abl_Mod] [Equ] [Loc] [Rel] [Ter] [Via] [Intr] [Trns] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Sbrd] [Ptcp_Obl] [Cmpd_Vbl] [Quant_Qual] [Encl]
-[Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_PRS_2Sg_1Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
-[e] (g/t) (g) (t) (N) (i) (r) (s) (u) (e) (ar)
+[N] [V] [Sg] [Pl] [Du] [1Sg] [1Pl] [1Du] [2Sg] [2Pl] [2Du] [3Sg] [3Pl] [3Du] [4Sg] [4Pl] [4Du] [_] [N→N] [N→V] [V→N] [V→V] [Imprs_Agnt]
+[Unpd] [SgPosd] [PlPosd] [DuPosd] [1SgPoss] [1PlPoss] [1DuPoss] [2SgPoss] [2PlPoss] [2DuPoss] [3SgPoss] [3PlPoss] [3DuPoss] [4SgPoss] [4PlPoss] [4DuPoss]
+[Abs] [Rel] [Abl_Mod] [Loc] [Ter] [Via] [Equ] [Intr] [Trns] [Ind] [Intrg] [Opt] [Ptcp] [PRS] [NEG] [FUT] [Sbrd] [Prec] [Cnsq] [Cont] [Conc] [Cond] [CtmpI] [CtmpII] [Quant_Qual] [Encl]
+[Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_PRS_2Sg_1Sg]
+[e] (a) (e) (g) (r) (s) (t) (u) (aa) (ar) (ar*) (ng) (ur) (g/t) (r/l) (u/i) (ni)
 
 
 LEXICON Root
     Particle        ;
     NounBase        ;
-!    ProperNoun      ;
+    ProperNoun      ;
 !    PersonalPronoun ;
     VerbBase        ;
 !    PosturalRoot    ;
@@ -133,7 +133,7 @@ egmian                 EncliticOrEnd; ! immediately
 egmianun               EncliticOrEnd; ! immediately
 elatmun                EncliticOrEnd; ! (to or toward) outside # adverbial particle
 elliinginaq            EncliticOrEnd; ! in vain; without purpose
-elliitau͡gaten         EncliticOrEnd; ! just in case it’s possible # particle
+elliitau͡gaten          EncliticOrEnd; ! just in case it’s possible # particle
 ellma                  EncliticOrEnd; ! a little bit
 ellmaar(aq*)           EncliticOrEnd; ! a little bit
 ellmacuar(aq*)         EncliticOrEnd; ! a little bit
@@ -175,7 +175,7 @@ kesianek               EncliticOrEnd; ! always
 kesiani                EncliticOrEnd; ! only then
 kiika-wa               EncliticOrEnd; ! I too wish it were so!
 kiiki                  EncliticOrEnd; ! hurry!
-kiitau͡gani            EncliticOrEnd; ! (HBC,NS, NUN form), kiituan’ finally; thereafter
+kiitau͡gani             EncliticOrEnd; ! (HBC,NS, NUN form), kiituan’ finally; thereafter
 kiituani               EncliticOrEnd; ! (HBC,NS, NUN form), kiituan’ finally; thereafter
 kingumek               EncliticOrEnd; ! and next; at last
 kitak                  EncliticOrEnd; ! well then; please; okay
@@ -223,9 +223,9 @@ tamatmun               EncliticOrEnd; ! in various directions
 tangrriu               EncliticOrEnd; ! look at him/it!; see!
 taunginaq              EncliticOrEnd; ! without anyone intending it to be so
 taunginarmek           EncliticOrEnd; ! without anyone intending it to be so
-tau͡gaam               EncliticOrEnd; ! (UY form) however; but; only; except for; instead
-tau͡gken               EncliticOrEnd; ! even though; however; but; from there
-tau͡g’am               EncliticOrEnd; ! (UY form) however; but; only; except for; instead
+tau͡gaam                EncliticOrEnd; ! (UY form) however; but; only; except for; instead
+tau͡gken                EncliticOrEnd; ! even though; however; but; from there
+tau͡g’am                EncliticOrEnd; ! (UY form) however; but; only; except for; instead
 tavaq                  EncliticOrEnd; ! I doubt it
 tavatellengraan        EncliticOrEnd; ! nevertheless
 tayima                 EncliticOrEnd; ! elsewhere
@@ -283,7 +283,7 @@ watlirqantar           EncliticOrEnd; ! of course
 watmi                  EncliticOrEnd; ! nalliini now at this time
 watua                  EncliticOrEnd; ! (NS, HBC form) just now; right now; that’s fine by me, just go ahead and do it
 watuacetun             EncliticOrEnd; ! like nowadays
-wat’au͡ga              EncliticOrEnd; ! (NS, HBC form) just now; right now; that’s fine by me, just go ahead and do it
+wat’au͡ga               EncliticOrEnd; ! (NS, HBC form) just now; right now; that’s fine by me, just go ahead and do it
 wat’um                 EncliticOrEnd; ! nalliini now at this time
 yaaliagni              EncliticOrEnd; ! day before yesterday or year before last (K, Y, BB meaning); three days ago or three years ago (NI meaning)
 yaaliaku               EncliticOrEnd; ! day after tomorrow or year after next (K, Y, BB, LI meaning); three or more days hence or three or more years hence (NI meaning)
@@ -359,7 +359,7 @@ Ate’arciir             NounPostbase; ! lower Johnson River
 Ate’gaqtar             NounPostbase; ! legendary creator, said to be the daughter of Raven
 Atmaulluar             NounPostbase; ! Atmauthluak
 Atner                  NounPostbase; ! Cape Darby
-Au͡gkumiut             NounPostbase; ! plural Kuskokwim people, from the point of view of NS
+Au͡gkumiut              NounPostbase; ! plural Kuskokwim people, from the point of view of NS
 Ayagniqarraar          NounPostbase; ! the Biblical book of Genesis
 Ayaucaryar             NounPostbase; ! Mountain Village
 Ayimqeryarar           NounPostbase; ! Kalskag
@@ -419,7 +419,7 @@ Ingricuar              NounPostbase; ! Twin Hills
 Ingrill’er             NounPostbase; ! Kusilvak Mountain
 Ingrirraller           NounPostbase; ! Holy Cross
 Ingrirraller           NounPostbase; ! Holy Cross
-Ingri’u͡rlur*          NounPostbase; ! Three Step Mountain
+Ingri’u͡rlur*           NounPostbase; ! Three Step Mountain
 Ingula(r)              NounPostbase; ! indigenous Yup’ik holiday celebrated in summer or fall; woman’s slow dance performed during this holiday
 Ingute                 NounPostbase; ! July
 Ing’errlag             NounPostbase; ! Roberts Mountain on Nunivak Is.; Pilcher Mountain near Marshall
@@ -1536,8 +1536,8 @@ asgur                  NounPostbase; ! upriver area; windward side
 asguranairtet          NounPostbase; ! references # for employment, in research, etc.; neologism from Alexie et al. (1990)
 asgurar                NounPostbase; ! obstacle
 asguruar               NounPostbase; ! parka ruff
-aspiar!                NounPostbase; ! excellent!, superb!
-asqapiar!              NounPostbase; ! excellent!, superb!
+aspiar                 NounPostbase; ! excellent!, superb!
+asqapiar               NounPostbase; ! excellent!, superb!
 asrir                  NounPostbase; ! naughty child (or young animal); mischievous child (or young animal)
 asrirciryarar          NounPostbase; ! malicious mischief
 asrurtuute             NounPostbase; ! blessing
@@ -1650,9 +1650,9 @@ aumag                  NounPostbase; ! ember; glowing coal; jade or other colorf
 aumar                  NounPostbase; ! ember; glowing coal; jade or other colorful stone (NUN additional meaning)
 aumarngalngur          NounPostbase; ! dark red thing; maroon thing; dark bead with white inside; ruby stone
 aurner                 NounPostbase; ! vapor, especially vapor rising from a relatively warm, damp object in the cold
-au͡gna                 NounPostbase; ! (in NSU) the extended one over there; the one going away
-au͡g’arissuute         NounPostbase; ! something used for removing things; eraser; stain remover
-au͡g’ariyarar          NounPostbase; ! subtraction
+au͡gna                  NounPostbase; ! (in NSU) the extended one over there; the one going away
+au͡g’arissuute          NounPostbase; ! something used for removing things; eraser; stain remover
+au͡g’ariyarar           NounPostbase; ! subtraction
 ava(ni)                NounPostbase; ! (au͡ga(ni)) over there; then; in those days
 avalir                 NounPostbase; ! thing that one has with him, or on hand; foster child
 avalissar              NounPostbase; ! reason; cause; justification; excuse
@@ -2956,7 +2956,7 @@ imaller(ar*)           NounPostbase; ! undesirable contents; phlegm; pus
 imanar                 NounPostbase; ! guts; internal organs; abdominal viscera
 imanarvig              NounPostbase; ! conainer made of beluga stomach
 imangar                NounPostbase; ! blackfish (Dallia pectoralis)
-imaqcaar(ar            NounPostbase; ! *) red-necked phalarope (Phalaropus lobatus)
+imaqcaar(ar*)          NounPostbase; ! red-necked phalarope (Phalaropus lobatus)
 imaqlir                NounPostbase; ! kayak part, piece on each side, up from keel, in front of tracking stabilizer
 imaqucug               NounPostbase; ! undesirable contents; phlegm; pus
 imaqur                 NounPostbase; ! undesirable contents; phlegm; pus
@@ -3840,7 +3840,7 @@ kiursar                NounPostbase; ! (NS form) aurora; northern lights
 kiuryag                NounPostbase; ! (NS form) aurora; northern lights
 kiuryar                NounPostbase; ! (NS form) aurora; northern lights
 kiute                  NounPostbase; ! answer
-kiu͡gna                NounPostbase; ! (HBC form) the one inside; the one upriver
+kiu͡gna                 NounPostbase; ! (HBC form) the one inside; the one upriver
 kivyaner               NounPostbase; ! residue inside a container that had liquid content
 kiyner                 NounPostbase; ! (HBC form) something that has settled to the bottom of a liquid; sediment
 kiy’ute                NounPostbase; ! (HBC form) net sinker
@@ -5086,8 +5086,8 @@ paugnar*               NounPostbase; ! bear (Ursus sp.)
 paular                 NounPostbase; ! spark from a fire
 paunrar*               NounPostbase; ! (NS, LY, EG form) paunr(aq*) (NUN form) crowberry locally: blackberry (Empetrum nigrum)
 pautar                 NounPostbase; ! powder
-pau͡gkumiu             NounPostbase; ! mainlander; inlander
-pau͡gna                NounPostbase; ! (NSU form) the one back up away from the river
+pau͡gkumiu              NounPostbase; ! mainlander; inlander
+pau͡gna                 NounPostbase; ! (NSU form) the one back up away from the river
 pava(ni)               NounPostbase; ! (pau͡ga(ni)) up there away from the shore (of river or other body of water), in the back and upper part of a kashim or the like
 payariste              NounPostbase; ! welder
 payiggsir              NounPostbase; ! sledgehammer
@@ -5298,7 +5298,6 @@ piyagar*               NounPostbase; ! baby animal; baby bird; chick; cub
 piyuayarar             NounPostbase; ! footpath
 piyunarqucir           NounPostbase; ! authorization; rights when used in the plural
 piyuute                NounPostbase; ! proposal; wish
-post;                  NounPostbase; ! support
 pucengllug             NounPostbase; ! barrel
 pucickar               NounPostbase; ! (NUN form) to fall down head- or face-first
 puckacuar(ar*)         NounPostbase; ! condenser
@@ -5692,12 +5691,12 @@ qaur                   NounPostbase; ! sore on one’s scalp
 qaurar                 NounPostbase; ! forehead; brow
 qaurtuli               NounPostbase; ! very whitish clay
 qaurtur                NounPostbase; ! broad whitefish (Coregonus nasus)
-qau͡ger                NounPostbase; ! spectacled eider (Somateria fischeri)
-qau͡giir*              NounPostbase; ! spectacled eider (Somateria fischeri)
-qau͡gkumiu             NounPostbase; ! upriver person; resident of the upriver area
-qau͡gna                NounPostbase; ! (NSU form) the one upriver; the one inland or inside
-qau͡gyar               NounPostbase; ! sand
-qau͡gyarrlainar        NounPostbase; ! desert; sandspit
+qau͡ger                 NounPostbase; ! spectacled eider (Somateria fischeri)
+qau͡giir*               NounPostbase; ! spectacled eider (Somateria fischeri)
+qau͡gkumiu              NounPostbase; ! upriver person; resident of the upriver area
+qau͡gna                 NounPostbase; ! (NSU form) the one upriver; the one inland or inside
+qau͡gyar                NounPostbase; ! sand
+qau͡gyarrlainar         NounPostbase; ! desert; sandspit
 qava(ni)               NounPostbase; ! (qau͡ga(ni)) inside; inland; upriver
 qavaciller             NounPostbase; ! dried eye mucus; “sleep” in the corner of one’s eye
 qavaliqtar             NounPostbase; ! jump-rope
@@ -6586,8 +6585,8 @@ tauciite               NounPostbase; ! first time
 taumiqlag              NounPostbase; ! thing from there or then
 tauna                  NounPostbase; ! that one; the thing near the person being spoken to
 tauteg                 NounPostbase; ! forehead
-tau͡ga-i               NounPostbase; ! that’s enough; well then; and then; that’s all
-tau͡gag’estauna        NounPostbase; ! see what happened, that’s what you get
+tau͡ga-i                NounPostbase; ! that’s enough; well then; and then; that’s all
+tau͡gag’estauna         NounPostbase; ! see what happened, that’s what you get
 tava(ni)               NounPostbase; ! (tau͡ga(ni)) there
 tava-i                 NounPostbase; ! that’s enough; well then; and then; that’s all
 tavci                  NounPostbase; ! belt
@@ -7443,7 +7442,7 @@ uyaqucuayaaleg         NounPostbase; ! northern pintail (Anas acuta)
 uyaqukiir(ar)          NounPostbase; ! to be in up to the neck
 uyaqur                 NounPostbase; ! neck (anatomical)
 uyaqurrilitar          NounPostbase; ! scarf; dog collar
-uyaqu͡rrute            NounPostbase; ! necklace; dog collar
+uyaqu͡rrute             NounPostbase; ! necklace; dog collar
 uyarar                 NounPostbase; ! necklace
 uyarruyuar             NounPostbase; ! semipalmated plover (Charadrius semipalmatus); ruddy turnstone (Arenaria interpres)
 uyarr’uyar             NounPostbase; ! semipalmated plover (Charadrius semipalmatus); ruddy turnstone (Arenaria interpres)
@@ -7455,10 +7454,10 @@ uyuqlir*               NounPostbase; ! youngest sibling
 uyur(ar*)              NounPostbase; ! younger sibling
 uyuur                  NounPostbase; ! hey you!; you here!
 uyvi                   NounPostbase; ! intelligence; wisdom
-u͡galguute             NounPostbase; ! fish-skin bag; ammunition pouch; quiver for arrows
-u͡gaseg                NounPostbase; ! tundra hare; arctic hare; Alaska hare (Lepus othus)
-u͡gayarate             NounPostbase; ! legendary giant in Kuskokwim-area folklore
-u͡gayarituli           NounPostbase; ! thief; robber
+u͡galguute              NounPostbase; ! fish-skin bag; ammunition pouch; quiver for arrows
+u͡gaseg                 NounPostbase; ! tundra hare; arctic hare; Alaska hare (Lepus othus)
+u͡gayarate              NounPostbase; ! legendary giant in Kuskokwim-area folklore
+u͡gayarituli            NounPostbase; ! thief; robber
 veg                    NounPostbase; ! grass
 vegtar*                NounPostbase; ! # bumblebee
 vegtarcuute            NounPostbase; ! sickle
@@ -7695,8 +7694,8 @@ VerbEte;
 -–pig[N→N]:–pig                               NounPostbase; ! genuine N; real N; authentic N
 -–piar[N→N]:–piar                             NounPostbase; ! genuine N; real N; authentic N
 -–pigar[N→N]:–pigar                           NounPostbase; ! genuine N; real N; authentic N
--+(a)r[N→N]:+(a)r                             NounPostbase; ! used with English words when they are used in Yup'ik speech or writing
--+(aa)r[N→N]:+(aa)r                           NounPostbase; ! used with English words when they are used in Yup'ik speech or writing
+-+(a)r[N→N]:+(a)r                             NounPostbase; ! used with English words when they are used in Yup’ik speech or writing
+-+(aa)r[N→N]:+(aa)r                           NounPostbase; ! used with English words when they are used in Yup’ik speech or writing
 -–qainar[N→N]:–qainar                         NounPostbase; ! only N; merely N
 -+qar[N→N]:+qar                               NounPostbase; ! N area of possessor; exact area denoted by N with respect to possessor
 -–qlikacaar(ar*)[N→N]:–qlikacaar(ar*)         NounPostbase; ! one that is the farthest in the area denoted by N
@@ -7738,7 +7737,7 @@ VerbEte;
 -+yag[N→N]:+yag                               NounPostbase; ! thing similar to N; thing that acts as if it were V; small N
 -–yaya(g)ar*[N→N]:–yaya(g)ar*                 NounPostbase; ! little baby N
 
--+’(g)ar(ar)[N→V]:+’(g)ar(ar)                 VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
+-+'(g)ar(ar)[N→V]:+'(g)ar(ar)                 VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
 -+arar(ar)[N→V]:+arar(ar)                     VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
 -%:(ng)ar(ar)te[N→V]:%:(ng)ar(ar)te           VerbPostbase; ! to hit or get hit in or on one’s N
 -–car(ar)te[N→V]:–car(ar)te                   VerbPostbase; ! to hit in or on the N, to hit right in or on the N
@@ -8815,12 +8814,12 @@ aurrar                 VerbPostbase; ! to crawl
 aurre                  VerbPostbase; ! to crawl
 aurrmar                VerbPostbase; ! to crawl
 aurrur                 VerbPostbase; ! to crawl
-au͡giute               VerbPostbase; ! (HBC form) to lead away from danger
-au͡gtaqe               VerbPostbase; ! to feel hesitant about acting toward; to feel inhibited by; to feel uncomfortable because of
-au͡gtarnarqe           VerbPostbase; ! to be inhibiting
-au͡gtaryug             VerbPostbase; ! to feel inhibited
-au͡g’ar                VerbPostbase; ! to come off; to remove; to take away
-au͡g’arite             VerbPostbase; ! to forgive; to pardon; to ritually shake hands and kiss on cheeks in Russian Orthodox Church
+au͡giute                VerbPostbase; ! (HBC form) to lead away from danger
+au͡gtaqe                VerbPostbase; ! to feel hesitant about acting toward; to feel inhibited by; to feel uncomfortable because of
+au͡gtarnarqe            VerbPostbase; ! to be inhibiting
+au͡gtaryug              VerbPostbase; ! to feel inhibited
+au͡g’ar                 VerbPostbase; ! to come off; to remove; to take away
+au͡g’arite              VerbPostbase; ! to forgive; to pardon; to ritually shake hands and kiss on cheeks in Russian Orthodox Church
 avair                  VerbPostbase; ! for the sky to be clear and cloudless; to wipe clean (in EG)
 avaknir                VerbPostbase; ! for there to be a westerly wind
 avaliite               VerbPostbase; ! to be lacking something
@@ -10248,8 +10247,8 @@ kaullrir               VerbPostbase; ! to trim the wick of an oil lamp
 kaute                  VerbPostbase; ! to enter a smaller part of the main area; to go from the mouth of the river upriver
 kautuar                VerbPostbase; ! to feel around inside something hollow; to grope
 kautur                 VerbPostbase; ! to feel around inside something hollow; to grope
-kau͡g’ag               VerbPostbase; ! to strike hard with an object
-kau͡k’ar               VerbPostbase; ! to hit with a sudden sharp blow
+kau͡g’ag                VerbPostbase; ! to strike hard with an object
+kau͡k’ar                VerbPostbase; ! to hit with a sudden sharp blow
 kavcagte               VerbPostbase; ! to rattle; to clatter
 kavcir                 VerbPostbase; ! to hail
 kavinge                VerbPostbase; ! to become red; to blush
@@ -12069,7 +12068,7 @@ qaucirte               VerbPostbase; ! to have wrinkled skin from too much wetne
 qaunqe                 VerbPostbase; ! to protect; to care for
 qaur                   VerbPostbase; ! to have sores on one’s scalp
 qaurtar                VerbPostbase; ! to brace a rifle on top of something to steady one’s aim
-qau͡gyaqar             VerbPostbase; ! to have a grinding feeling as from arthritis (of one’s joint(s)) or bone spurs
+qau͡gyaqar              VerbPostbase; ! to have a grinding feeling as from arthritis (of one’s joint(s)) or bone spurs
 qavaliqtar             VerbPostbase; ! to jump rope
 qavamli                VerbPostbase; ! to take a nap
 qavangcar              VerbPostbase; ! to put to sleep
@@ -13344,11 +13343,11 @@ uyungllugte            VerbPostbase; ! to be wrinkled (of clothing)
 uyungqa                VerbPostbase; ! to be squatting
 uyungssuar             VerbPostbase; ! to stand with one’s knees bent slightly
 uyuruar                VerbPostbase; ! to hum or sing a wordless tune (especially when going out in the morning to check the weather)
-u͡gaq’allaga           VerbPostbase; ! to retch; to gag
-u͡gasqinarqe           VerbPostbase; ! to be slippery
-u͡gasqite              VerbPostbase; ! to slip
-u͡gayar                VerbPostbase; ! to strip bare; to take off one’s clothes; to pillage; to rob, to plunder
-u͡gayite               VerbPostbase; ! to give one’s belonging to (a younger female when a girl has her first menses)
+u͡gaq’allaga            VerbPostbase; ! to retch; to gag
+u͡gasqinarqe            VerbPostbase; ! to be slippery
+u͡gasqite               VerbPostbase; ! to slip
+u͡gayar                 VerbPostbase; ! to strip bare; to take off one’s clothes; to pillage; to rob, to plunder
+u͡gayite                VerbPostbase; ! to give one’s belonging to (a younger female when a girl has her first menses)
 vegtar                 VerbPostbase; ! to gather grass
 verte                  VerbPostbase; ! to get a foreign object in one’s eye
 wang’u                 VerbPostbase; ! to be me
@@ -13451,12 +13450,12 @@ yuvyiite               VerbPostbase; ! to be unsmiling; to be unfriendly
 LEXICON VerbPostbase
 VerbInflection;
 -+a–/+aar[V→V]:+a–/+aar                       VerbPostbase; ! to V repeatedly
--+’(g)aqe[V→V]:+’(g)aqe                       VerbPostbase; ! to usually V; to repeatedly V; to habitually V
--+’(g)ar(ar)[V→V]:+’(g)ar(ar)                 VerbPostbase; ! to just barely V; to hardly V; to gradually V; leisurely V; With adjectival verbs ending in te-, this postbase means to be a little V
+-+'(g)aqe[V→V]:+'(g)aqe                       VerbPostbase; ! to usually V; to repeatedly V; to habitually V
+-+'(g)ar(ar)[V→V]:+'(g)ar(ar)                 VerbPostbase; ! to just barely V; to hardly V; to gradually V; leisurely V; With adjectival verbs ending in te-, this postbase means to be a little V
 -@+(g)ar(ar)te[V→V]:@+(g)ar(ar)te             VerbPostbase; ! to suddenly or immediately V; to V with short duration of action
--+’(g)arkaqe[V→V]:+’(g)arkaqe                 VerbPostbase; ! will V (it); should V (it); to V (it) in the future
--+’(g)arkau[V→V]:+’(g)arkau                   VerbPostbase; ! will eventually V or be V-ed; should V or be V-ed; is supposed to V or be V-ed; to V in the future
--+’(g)arkaunrir[V→V]:+’(g)arkaunrir           VerbPostbase; ! to now be unable to V; to not be able or fit to V in the V future
+-+'(g)arkaqe[V→V]:+'(g)arkaqe                 VerbPostbase; ! will V (it); should V (it); to V (it) in the future
+-+'(g)arkau[V→V]:+'(g)arkau                   VerbPostbase; ! will eventually V or be V-ed; should V or be V-ed; is supposed to V or be V-ed; to V in the future
+-+'(g)arkaunrir[V→V]:+'(g)arkaunrir           VerbPostbase; ! to now be unable to V; to not be able or fit to V in the V future
 -+aur(ar)[V→V]:+aur(ar)                       VerbPostbase; ! to continue V-ing over a period of time
 -@~+caar(ar)[V→V]:@~+caar(ar)                 VerbPostbase; ! to endeavor to V, to undertake the act of V-ing, to try to V (with a high probability of success)
 -@+car[V→V]:@+car                             VerbPostbase; ! to cause to V, to try to induce to V
@@ -13483,7 +13482,7 @@ VerbInflection;
 -@–ckegg[V→V]:@–ckegg                         VerbPostbase; ! to be very V, to have good N
 -–curlag[V→V]:–curlag                         VerbPostbase; ! to be interfered with while V-ing; to V with unsatisfactory results
 -@+(r/l)i[V→V]:@+(r/l)i                       VerbPostbase; ! to become or cause to become V
--+’(g)i[V→V]:+’(g)i                           VerbPostbase; ! to V something; to do some V-ing; to suffer the V-ing of something
+-+'(g)i[V→V]:+'(g)i                           VerbPostbase; ! to V something; to do some V-ing; to suffer the V-ing of something
 -@~+(ng)iinar[V→V]:@~+(ng)iinar               VerbPostbase; ! to V more and more
 -%:(ng)illiqe[V→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
 -–inar[V→V]:–inar                             VerbPostbase; ! to finally V
@@ -13635,8 +13634,8 @@ VerbInflection;
 -–pig[V→V]:–pig                               VerbPostbase; ! to be really V; to be very V
 -–piar[V→V]:–piar                             VerbPostbase; ! to be really V; to be very V
 -–pigar[V→V]:–pigar                           VerbPostbase; ! (NSU form) to be really V; to be very V
--+(a)r[V→V]:+(a)r                             VerbPostbase; ! used with English words when they are used in Yup'ik speech or writing
--+(aa)r[V→V]:+(aa)r                           VerbPostbase; ! used with English words when they are used in Yup'ik speech or writing
+-+(a)r[V→V]:+(a)r                             VerbPostbase; ! used with English words when they are used in Yup’ik speech or writing
+-+(aa)r[V→V]:+(aa)r                           VerbPostbase; ! used with English words when they are used in Yup’ik speech or writing
 -–qaci[V→V]:–qaci                             VerbPostbase; ! to V in a minor way
 -–qainar[V→V]:–qainar                         VerbPostbase; ! to merely V; to just V
 -–qainaurte[V→V]:–qainaurte                   VerbPostbase; ! to be ready to V
@@ -13698,11 +13697,11 @@ VerbInflection;
 -+tuinar[V→V]:+tuinar                         VerbPostbase; ! to always V
 -–turnike[V→V]:–turnike                       VerbPostbase; ! to feel that object can V proficiently
 -–turnir[V→V]:–turnir                         VerbPostbase; ! to be able to V proficiently
--@+’(g/t)ur(ar)[V→V]:@+’(g/t)ur(ar)           VerbPostbase; ! to keep on V-ing; to continue to V; to V though no one else does; to be a little V (with adjectival verbs); to V leisurely (addition NSU meaning)
--@+’(g/t)urainar[V→V]:@+’(g/t)urainar         VerbPostbase; ! to finally V after desiring to do so but being prevented by circumstances
--@+’(g/t)uralar[V→V]:@+’(g/t)uralar           VerbPostbase; ! (K, BB form) to always V
--@+’(g/t)ur(ar)lar[V→V]:@+’(g/t)ur(ar)lar     VerbPostbase; ! (Y form) to always V
--@+’(g/t)uratu[V→V]:@+’(g/t)uratu             VerbPostbase; ! (HBC, NI form) to always V
+-@+'(g/t)ur(ar)[V→V]:@+'(g/t)ur(ar)           VerbPostbase; ! to keep on V-ing; to continue to V; to V though no one else does; to be a little V (with adjectival verbs); to V leisurely (addition NSU meaning)
+-@+'(g/t)urainar[V→V]:@+'(g/t)urainar         VerbPostbase; ! to finally V after desiring to do so but being prevented by circumstances
+-@+'(g/t)uralar[V→V]:@+'(g/t)uralar           VerbPostbase; ! (K, BB form) to always V
+-@+'(g/t)ur(ar)lar[V→V]:@+'(g/t)ur(ar)lar     VerbPostbase; ! (Y form) to always V
+-@+'(g/t)uratu[V→V]:@+'(g/t)uratu             VerbPostbase; ! (HBC, NI form) to always V
 -–vguar(ar)[V→V]:–vguar(ar)                   VerbPostbase; ! to V a little bit
 -–vialug[V→V]:–vialug                         VerbPostbase; ! to V clumsily or sloppily
 -–viite[V→V]:–viite                           VerbPostbase; ! to leave no room, space, place, realm for V-ing
@@ -13755,9 +13754,9 @@ VerbInflection;
 -@~+yuumiite[V→V]:@~+yuumiite                 VerbPostbase; ! to not care to V
 -@~+yuumir[V→V]:@~+yuumir                     VerbPostbase; ! to yearn to V; to desire to V
 
--+’(g)ar[V→N]:+’(g)ar                         NounPostbase; ! that which has been V-ed
--+’(g)arkar[V→N]:+’(g)arkar                   NounPostbase; ! that which is to be V-ed; that which will V
--+’(g)arkaqenrilke[V→N]:+’(g)arkaqenrilke     NounPostbase; ! that which possessor must, should or would not V
+-+'(g)ar[V→N]:+'(g)ar                         NounPostbase; ! that which has been V-ed
+-+'(g)arkar[V→N]:+'(g)arkar                   NounPostbase; ! that which is to be V-ed; that which will V
+-+'(g)arkaqenrilke[V→N]:+'(g)arkaqenrilke     NounPostbase; ! that which possessor must, should or would not V
 -@~+cetaar[V→N]:@~+cetaar                     NounPostbase; ! something used to cause one to V
 -@%:(u)cir[V→N]:@%:(u)cir                     NounPostbase; ! condition of possessor with respect to V; incidence of V; occurrence of V
 -@%:(u)cirkar[V→N]:@%:(u)cirkar               NounPostbase; ! future condition of possessor with respect to V
@@ -14007,7 +14006,7 @@ LEXICON TransitiveInterrogative
 [3Sg][3Sg]:+'(g/t)a%:gu   EncliticOrEnd; [3Sg][3Pl]:+'(g/t)aki     EncliticOrEnd; [3Sg][3Du]:+'(g/t)akek     EncliticOrEnd;
 [3Pl][3Sg]:+'(g/t)atgu    EncliticOrEnd; [3Pl][3Pl]:+'(g/t)atki    EncliticOrEnd; [3Pl][3Du]:+'(g/t)atkek    EncliticOrEnd;
 [3Du][3Sg]:+'(g/t)agnegu  EncliticOrEnd; [3Du][3Pl]:+'(g/t)agki    EncliticOrEnd; [3Du][3Du]:+'(g/t)agkek    EncliticOrEnd;
-[3Du][3Sg]:+'(g/t)an'gu   EncliticOrEnd; [3Du][3Pl]:+'(g/t)agneki  EncliticOrEnd; [3Du][3Du]:+'(g/t)agnekek  EncliticOrEnd;
+[3Du][3Sg]:+'(g/t)an’gu   EncliticOrEnd; [3Du][3Pl]:+'(g/t)agneki  EncliticOrEnd; [3Du][3Du]:+'(g/t)agnekek  EncliticOrEnd;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 ![1Sg][3Sg]: EncliticOrEnd; [1Sg][3Pl]: EncliticOrEnd; [1Sg][3Du]: EncliticOrEnd;
 ![1Pl][3Sg]: EncliticOrEnd; [1Pl][3Pl]: EncliticOrEnd; [1Pl][3Du]: EncliticOrEnd;
@@ -14058,7 +14057,7 @@ LEXICON TransitivePresentOptative
 [3Sg][3Sg]:@~+liku             EncliticOrEnd; [3Sg][3Pl]:@~+liki          EncliticOrEnd; [3Sg][3Du]:@~+likek          EncliticOrEnd;
 [3Pl][3Sg]:@~+litgu            EncliticOrEnd; [3Pl][3Pl]:@~+litki         EncliticOrEnd; [3Pl][3Du]:@~+litkek         EncliticOrEnd;
 [3Du][3Sg]:@~+lignegu          EncliticOrEnd; [3Du][3Pl]:@~+ligki         EncliticOrEnd; [3Du][3Du]:@~+ligkek         EncliticOrEnd;
-[3Du][3Sg]:@~lin'gu            EncliticOrEnd; [3Du][3Pl]:@~+ligneki       EncliticOrEnd; [3Du][3Du]:@~+lignekek       EncliticOrEnd;
+[3Du][3Sg]:@~lin’gu            EncliticOrEnd; [3Du][3Pl]:@~+ligneki       EncliticOrEnd; [3Du][3Du]:@~+lignekek       EncliticOrEnd;
 !-------------------------------------------|------------------------------------------|-------------------------------------------|
 [1Sg][3Sg]:@~+laku             EncliticOrEnd; [1Sg][3Pl]:@~+laki          EncliticOrEnd; [1Sg][3Du]:@~+lakek          EncliticOrEnd;
 [1Pl][3Sg]:@~+laut             EncliticOrEnd; [1Pl][3Pl]:@~+laput         EncliticOrEnd; [1Pl][3Du]:@~+lagput         EncliticOrEnd;
@@ -14109,7 +14108,7 @@ LEXICON TransitiveFutureOptative
 [3Sg][3Sg]:ku                  EncliticOrEnd; [3Sg][3Pl]:ki               EncliticOrEnd; [3Sg][3Du]:kek               EncliticOrEnd;
 [3Pl][3Sg]:tgu                 EncliticOrEnd; [3Pl][3Pl]:tki              EncliticOrEnd; [3Pl][3Du]:tkek              EncliticOrEnd;
 [3Du][3Sg]:gnegu               EncliticOrEnd; [3Du][3Pl]:gki              EncliticOrEnd; [3Du][3Du]:gkek              EncliticOrEnd;
-[3Du][3Sg]:n'gu                EncliticOrEnd; [3Du][3Pl]:gneki            EncliticOrEnd; [3Du][3Du]:gnekek            EncliticOrEnd;
+[3Du][3Sg]:n’gu                EncliticOrEnd; [3Du][3Pl]:gneki            EncliticOrEnd; [3Du][3Du]:gnekek            EncliticOrEnd;
 !-------------------------------------------|------------------------------------------|-------------------------------------------|
 [1Sg][3Sg]:ku                  EncliticOrEnd; [1Sg][3Pl]:ki               EncliticOrEnd; [1Sg][3Du]:kek               EncliticOrEnd;
 [1Pl][3Sg]:ut                  EncliticOrEnd; [1Pl][3Pl]:put              EncliticOrEnd; [1Pl][3Du]:gput              EncliticOrEnd;
@@ -14230,7 +14229,7 @@ LEXICON IntransitiveConnectiveCtmp
 !--------------------------|----------------------------|-----------------------------|----------------------------|
 
 
-LEXICON TransitiveConnnectiveVEnd
+LEXICON TransitiveConnectiveVEnd
 !----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][3Sg]:%:^aku     EncliticOrEnd; [3Sg][3Pl]:%:^aki     EncliticOrEnd; [3Sg][3Du]:%:^akek     EncliticOrEnd; 
 [3Pl][3Sg]:%:^atgu    EncliticOrEnd; [3Pl][3Pl]:%:^atki    EncliticOrEnd; [3Pl][3Du]:%:^atkek    EncliticOrEnd; 
@@ -14297,7 +14296,7 @@ LEXICON TransitiveConnnectiveVEnd
 !                                  |                                    |                                     |
 !----------------------------------|------------------------------------|-------------------------------------|
 
-LEXICON TransitiveConnnectiveCEnd
+LEXICON TransitiveConnectiveCEnd
 !----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][3Sg]:%:aku      EncliticOrEnd; [3Sg][3Pl]:%:aki      EncliticOrEnd; [3Sg][3Du]:%:akek      EncliticOrEnd; 
 [3Pl][3Sg]:%:atgu     EncliticOrEnd; [3Pl][3Pl]:%:atki     EncliticOrEnd; [3Pl][3Du]:%:atkek     EncliticOrEnd; 
@@ -14364,7 +14363,7 @@ LEXICON TransitiveConnnectiveCEnd
 !                                  |                                    |                                     |
 !----------------------------------|------------------------------------|-------------------------------------|
 
-LEXICON TransitiveConnnectiveCond
+LEXICON TransitiveConnectiveCond
 !----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][3Sg]:%:^aku     EncliticOrEnd; [3Sg][3Pl]:%:^aki     EncliticOrEnd; [3Sg][3Du]:%:^akek     EncliticOrEnd; 
 [3Pl][3Sg]:%:^atgu    EncliticOrEnd; [3Pl][3Pl]:%:^atki    EncliticOrEnd; [3Pl][3Du]:%:^atkek    EncliticOrEnd; 
@@ -14431,7 +14430,7 @@ LEXICON TransitiveConnnectiveCond
 !                                  |                                    |                                     |
 !----------------------------------|------------------------------------|-------------------------------------|
 
-LEXICON TransitiveConnnectiveCmtp
+LEXICON TransitiveConnectiveCtmp
 !----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][3Sg]:%:aku      EncliticOrEnd; [3Sg][3Pl]:%:aki      EncliticOrEnd; [3Sg][3Du]:%:akek      EncliticOrEnd; 
 [3Pl][3Sg]:%:atgu     EncliticOrEnd; [3Pl][3Pl]:%:atki     EncliticOrEnd; [3Pl][3Du]:%:atkek     EncliticOrEnd; 
