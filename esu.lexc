@@ -7892,7 +7892,7 @@ LEXICON NounInflection
 ! ----------------------------------------------------------------------------------------------------------------------------------------------------|
 !               singular possessed                 |                    plural possessed                |               dual possessed                |    
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Rel][Unpd][Sg]:%%%:(e)m           EncliticOrEnd;[N][Rel][Unpd][Pl]:%%%:(e)k            EncliticOrEnd; [N][Rel][Unpd][Du]:%%%:(e)t                 EncliticOrEnd; ! unpossessed   |
+[N][Rel][Unpd][Sg]:%%%:(e)m           EncliticOrEnd;[N][Rel][Unpd][Pl]:%%%:(e)t            EncliticOrEnd; [N][Rel][Unpd][Du]:%%%:(e)k                 EncliticOrEnd; ! unpossessed   |
 ! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
 [N][Rel][3SgPoss][SgPosd]:%:(ng)an    EncliticOrEnd; [N][Rel][3SgPoss][PlPosd]:%:(ng)in    EncliticOrEnd; [N][Rel][3SgPoss][DuPosd]:%%%:(e)gken       EncliticOrEnd; ! 3Sg possessor |
 [N][Rel][3PlPoss][SgPosd]:%:(ng)ata   EncliticOrEnd; [N][Rel][3PlPoss][PlPosd]:%:(ng)ita   EncliticOrEnd; [N][Rel][3PlPoss][DuPosd]:%%%:(e)gketa      EncliticOrEnd; ! 3Pl possessor |
