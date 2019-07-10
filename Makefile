@@ -7,7 +7,7 @@ all: esu.mor.hfst esu.gen.hfst esu.seg.hfst \
 	esu.mor.hfstol
 
 # This is the lexicon 
-#	<past><s_sg3><f>deyë꞉s<v><tv>:>w{A}>{y}ö{n}>deyë꞉s
+#	evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu
 esu.lexc.hfst: esu.lexc
 	hfst-lexc --Werror esu.lexc -o esu.lexc.hfst
 
@@ -43,6 +43,6 @@ esu.mor.hfstol: esu.mor.hfst
 	hfst-fst2fst -O esu.mor.hfst -o esu.mor.hfstol
 
 clean:
-	rm *.hfst
+	rm *.hfst *.hfstol
 
 

@@ -1,25 +1,59 @@
-Alphabet 
+Alphabet
+    a c e g i k l m n p q r s t u v w y ḿ ń
+    vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
+    %[e%]:e %[e%]:0 
+    
+    %(a%):%> %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%> 
+    %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> %(ur%):%>
+    %(g%/t%):%> %(r%/l%):%> %(u%/i%):%>
+    
+    %[Opt%_PRS%_2Sg%]:0 %[Opt%_PRS%_2Sg%_3Sg%]:0 %[Opt%_PRS%_2Sg%_1Sg%]:0 
 
-a c e g h i k l m n p q r s t u v w y  
-%(g%/t%) %= %- %+:%> ' ':0 %::%>   
-
-%@:0 ; 
+    %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %@:%> %*:%>
+    %= ; 
 
 Sets 
-
-Boundary = %+ %= ' ;
-
-Vow = a e i u ; 
-Cns = c g h k l m n p q r s t v w y ;
+Boundary = %+ %– %~ %% %: %' %. %@ %* %(a%) %(e%) %(g%) %(r%) %(s%) %(t%) %(u%) %(aa%) %(ar%) %(ar%*%) %(ng%) %(ur%) %(g%/t%) %(r%/l%) %(u%/i%) ;
+!
+!    Stop = p t c k q ;
+!    VoiceFric = v l s g r u͡g u͡r ; 
+!    VlessFric = vv ll ss gg rr u͡gg u͡rr ;
+!    VoiceNasal = m n ng ;
+!    VlessNasal = ḿ ń ńg ;
+!
+!    VoicedCns = VoiceFric VoiceNasal ;
+!    VlessCns = VlessFric VlessNasal ;
+!
+!    Fric = VoiceFric VlessFric ;
+!    Nasal = VoiceNasal VlessNasal ;
+!
+!    Cns = Stop Fric Nasal w y ;
+!
+!    FVow = a i u ;
+!    Vow = FVow e ;
 
 Rules 
 
-"RuleForG/T"
-%(g%/t%):t <=> g Boundary:* _ ;
+! "Only one boundary"
+! Boundary:0 <=> Boundary:%> _ ;
 
-"RuleForApostrophe"
-':' <=> Cns? Vow Cns Vow _ ;
-
+!"Rule (g/t):t"
+!%(g%/t%):t <=> g Boundary:* _ ;
+!
+!"RuleForApostrophe"
+!%':%ʼ <=> Cns:? Vow: Cns: e: Boundary:* _ ;
+!
+!!"Word final Vte t"
+!!t:n <=> Vow _ e:0 [ .#. | %= ] ;
+!
+!!"Word final Vte e"
+!!e:0 <=> Vow t:n _ [ .#. | %= ] ; 
+!
+!!"Word final e"
+!!e:a <=> .#. ~[ :* Vow t:n] _ [ .#. | %= ] ; 
+!
+"Word Final changes"
+[ g:k | r:q ] <=> _ Boundary:* [ .#. | %= ] ;
 
 
 ! evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu

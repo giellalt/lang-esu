@@ -1,18 +1,15 @@
 Alphabet 
 
-a c e g h i k l m n p q r s t u v w y  
-%(g%/t%) %= %- %+:%> ' ':0 %::%>   
+a c e g i k l m n p q r s t u v w y ḿ ń
+vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
 
 %=:%-
 %>:0 ; 
-
-
-Sets 
-
-Vow = a e i u ; 
-Cns = c g h k l m n p q r s t v w y ;
 
 Rules 
 
 "Remove morpheme boundary"
 %>:0 <=> _ ; 
+
+"Convert enclitic to hyphen"
+%=:%- <=> _ ; 
