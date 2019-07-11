@@ -7,13 +7,11 @@ Alphabet
     %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> %(ur%):%>
     %(g%/t%):%> %(r%/l%):%> %(u%/i%):%>
     
-!    %[Opt%_PRS%_2Sg%]:0 %[Opt%_PRS%_2Sg%_3Sg%]:0 %[Opt%_PRS%_2Sg%_1Sg%]:0 
-
     %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %@:%> %*:%>
     %= ; 
 
 Sets 
-    Boundary = %+ %– %~ %% %: %' %. %@ %* %(a%) %(e%) %(g%) %(r%) %(s%) %(t%) %(u%) %(aa%) %(ar%) %(ar%*%) %(ng%) %(ur%) %(g%/t%) %(r%/l%) %(u%/i%) ;
+    Bndry = %+ %– %~ %% %: %' %. %@ %* %(a%) %(e%) %(g%) %(r%) %(s%) %(t%) %(u%) %(aa%) %(ar%) %(ar%*%) %(ng%) %(ur%) %(g%/t%) %(r%/l%) %(u%/i%) ;
 
     Stop = p t c k q ;
     VoiceFric = v l s g r u͡g u͡r ; 
@@ -34,26 +32,73 @@ Sets
 
 Rules 
 
+! uita+'(g/t)uq
+! uita<0 0   uq
 "Only one boundary"
-Boundary:0 <=> Boundary:%> _ ;
+Bndry:0 <=> Bndry:%> _ ;
 
-"Rule (g/t):t"
-%(g%/t%):t <=> g Boundary:* _ ;
+! aqume+'(g/t)uq
+! aqum0<0 0   uq
+!"vowel postbases are e deleters"
+!e:0 <=> _ Bndry:+ Vow: ;
+!e:0 <=> _ [ Bndry: - %~: ]+ Vow: ;
 
-"RuleForApostrophe"
-%':%ʼ <=> Cns:? Vow: Cns: e: Boundary:* _ ;
 
-"Word final Vte t"
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!     OPERATORS     !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! nere+'(g/t)uq
+! nerʼ<0 0   uq
+"Rule for Apostrophe - gemination of short bases"
+!e:%ʼ <=> .#. (Cns) Vow Cns _ Bndry:* %': ;
+e:%ʼ <=> .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ;
+
+
+"Rule for Tilde - e deletion"
+!e:0 <=> _ Bndry:* %~: ;
+e:0 <=> _ [ Bndry: - %': ]* %~: ;
+        _ [ Bndry: - %~: ]+ Vow ;
+    except
+        .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ;
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!     ALLOPHONES    !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! kaig+'(g/t)uq
+! kaig<0 t   uq
+"Rule (t):t - consonant ending base"
+![ %(g%/t%):t | %(t%):t ] <=> .#. [[ :* Cns Bndry:* ] - [ :* :Vow Bndry:* :Vow Bndry:* ]] _ ;
+[ %(g%/t%):t | %(t%):t ] <=> Cns Bndry:* _ ;
+                         except
+                             :Vow Bndry:* :Vow Bndry:* _ ;
+
+
+! qia+'(g/t)uq
+! qia<0 g   uq
+"Rule (g):g - double vowel ending base"
+[ %(g%/t%):g | %(g%):g ] <=> :Vow Bndry:* :Vow Bndry:* _ ;
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!     WORD FINAL    !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"Word final Vte -> t:n"
 t:n <=> Vow _ e:0 [ .#. | %= ] ;
 
-"Word final Vte e"
+"Word final Vte -> e:0"
 e:0 <=> Vow t:n _ [ .#. | %= ] ; 
 
-"Word final e"
+"Word final e:a"
 e:a <=> .#. ~[ :* Vow t:n] _ [ .#. | %= ] ; 
 
-"Word Final changes"
-[ g:k | r:q ] <=> _ Boundary:* [ .#. | %= ] ;
+"Word Final changes - g:k, r:q"
+[ g:k | r:q ] <=> _ Bndry:* [ .#. | %= ] ;
 
 
 ! evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu
