@@ -62,16 +62,24 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ;
     except
         .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ; ! "Rule for Apostrophe - gemination of short bases"
 
+
 ! assir-–llru[V→V][V][Intr][Ind][3Sg]
 ! assir–llru+'(g/t)uq
-! assi0<llru00 0   uq
+! assi0<llru<0 0   uq
 ! assillruuq
 "Rule for Minus - drop consonant ending base"
 !Cns:0 <=> _ Bndry:* %–: ;
 [ g:0 | r:0 | gg:0 | rr:0 ] <=> _ Bndry:* %–: ;
     except
-        _ Bndry:* [ .#. | %= ] ; ! "Word Final changes - g:k, r:q"
+        \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent - drop weak r ending base"
 
+
+! arnar[N][Abl_Mod][Unpd][Sg]
+! arnar%~mek
+! arna0<0mek
+! arnamek
+"Rule for Percent - drop weak r ending base"
+r:0 <=> \Vow FVow _ [Bndry: - %*:]* %%: ;
 
 
 
@@ -109,6 +117,8 @@ e:a <=> .#. ~[ :* Vow t:n] _ [ .#. | %= ] ;
 
 "Word Final changes - g:k, r:q"
 [ g:k | r:q ] <=> _ Bndry:* [ .#. | %= ] ;
-
+    except
+        _ Bndry:* %–: ; ! "Rule for Minus - drop consonant ending base"
+        \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent - drop weak r ending base"
 
 ! evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu

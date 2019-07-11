@@ -7615,483 +7615,6 @@ yuvger                 NounPostbase; ! fish slime
 yuvririyarar           NounPostbase; ! ‘investigation’
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                                 !!!!!!
-!!!!!!     Derivational Morphemes Applied To Nouns / Derived Bases     !!!!!!
-!!!!!!                                                                 !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-LEXICON NounPostbase
-NounInflection;
-VerbEte;
-
--–ar[N→N]:–ar                                 NounPostbase; ! (usually does not alter meaning of noun base)
--–ar(ar*)[N→N]:–ar(ar*)                       NounPostbase; ! little piece of N
--–cengar*[N→N]:–cengar*                       NounPostbase; ! one with a small N
--–ciller[N→N]:–ciller                         NounPostbase; ! worthless N; dilapidated N
--@–ckegg[N→N]:@–ckegg                         NounPostbase; ! to be very V, to have good N
--–cuar(ar*)[N→N]:–cuar(ar*)                   NounPostbase; ! small N; tiny N; little N
--–cug[N→N]:–cug                               NounPostbase; ! unpleasing N; ugly old N; bad result of V-ing
--–cungar[N→N]:–cungar                         NounPostbase; ! cute little N; little N (NSU meaning)
--%:(ng)inar*[N→N]:%:(ng)inar*                 NounPostbase; ! merely N (nothing more)
--–irite[N→N]:–irite                           NounPostbase; ! forms names of weekdays from certain noun bases
--%:(ng)i%:rute[N→N]:%:(ng)i%:rute             NounPostbase; ! late (deceased) N; something that causes one to lose his N
--–kainer[N→N]:–kainer                         NounPostbase; ! a little bit of N; small amount of N
--+kar[N→N]:+kar                               NounPostbase; ! raw material for N; future N; unrealized N
--@kar(ar*)[N→N]:@kar(ar*)                     NounPostbase; ! small N; little N
--–kcag[N→N]:–kcag                             NounPostbase; ! something that looks like N
--–kcuar(ar*)[N→N]:–kcuar(ar*)                 NounPostbase; ! small N; little N
--–kegtaar(ar*)[N→N]:–kegtaar(ar*)             NounPostbase; ! good N; nice N; new N
--–kellriig[N→N]:–kellriig                     NounPostbase; ! the pair or group whereof one member has the other as his N
--–kellriit[N→N]:–kellriit                     NounPostbase; ! the pair or group whereof one member has the other as his N
--@–ksagar[N→N]:@–ksagar                       NounPostbase; ! very ugly N
--@ksuar(ar*)[N→N]:@ksuar(ar*)                 NounPostbase; ! small N
--+kuar[N→N]:+kuar                             NounPostbase; ! leftover N
--–kucir[N→N]:–kucir                           NounPostbase; ! one of the same kind as N
--–kuiner(ar*)[N→N]:–kuiner(ar*)               NounPostbase; ! small amount of N
--–kuinr(ar*)[N→N]:–kuinr(ar*)                 NounPostbase; ! small amount of N
--–kuiner[N→N]:–kuiner                         NounPostbase; ! small amount of N
--–kutar[N→N]:–kutar                           NounPostbase; ! thing to be used as N would be used; small N
--–kute[N→N]:–kute                             NounPostbase; ! thing to be used as N would be used; small N
--–kuyug[N→N]:–kuyug                           NounPostbase; ! small bit of N; poor N
--–kuyugar[N→N]:–kuyugar                       NounPostbase; ! small bit of N; poor N
--–leg[N→N]:–leg                               NounPostbase; ! one with N or Ns, one having N
--–lgute[N→N]:–lgute                           NounPostbase; ! one who has the same N as possessor; sharer of N
--––liar[N→N]:––liar                           NounPostbase; ! a made N; N made by possessor
--––linrar*[N→N]:––linrar*                     NounPostbase; ! product of N; evidence or trace of N
--––linr(ar*)[N→N]:––linr(ar*)                 NounPostbase; ! (NUN form) product of N; evidence or trace of N
--–lkug[N→N]:–lkug                             NounPostbase; ! no-good, darned N
--–llar*[N→N]:–llar*                           NounPostbase; ! thing of N (often with reference to the past)
--–ller[N→N]:–ller                             NounPostbase; ! former N; one that V-ed or was V-ed; act or state of V-ing
--–ller(ar*)[N→N]:–ller(ar*)                   NounPostbase; ! shabby, old N
--–llruar(ar*)[N→N]:–llruar(ar*)               NounPostbase; ! few N in poor condition
--@–llug[N→N]:@–llug                           NounPostbase; ! bad N; one with bad N
--–lqur[N→N]:–lqur                             NounPostbase; ! old broken piece of N
--–luatar[N→N]:–luatar                         NounPostbase; ! good N
--–lugpiar[N→N]:–lugpiar                       NounPostbase; ! original N; authentic N
--–maa[N→N]:–maa                               NounPostbase; ! my N, ... ; my Ns, ...
--+mig[N→N]:+mig                               NounPostbase; ! thing held in one’s N
--+miar[N→N]:+miar                             NounPostbase; ! thing held in one’s N
--~+miu[N→N]:~+miu                             NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
--~+miutar*[N→N]:~+miutar*                     NounPostbase; ! one whose place is N
--–mte[N→N]:–mte                               NounPostbase; ! our N, ... ; our Ns, ...
--+ner[N→N]:+ner                               NounPostbase; ! area of N
--–nerrar*[N→N]:–nerrar*                       NounPostbase; ! new N; one that has recently V-ed
--–nerrar(ar*)[N→N]:–nerrar(ar*)               NounPostbase; ! new N; one that has recently V-ed
--–nerar(ar*)[N→N]:–nerar(ar*)                 NounPostbase; ! (NUN form) new N; one that has recently V-ed
--–ngirte’rrlugar*[N→N]:–ngirte’rrlugar*       NounPostbase; ! good old (but perhaps decrepit) N
--–ngnagar[N→N]:–ngnagar                       NounPostbase; ! poor quality N; darned N
--–ngssaar(ar*)[N→N]:–ngssaar(ar*)             NounPostbase; ! secret N
--–nguar[N→N]:–nguar                           NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
--–ngyaar(ar*)[N→N]:–ngyaar(ar*)               NounPostbase; ! old N (person)
--–ngiar(ar*)[N→N]:–ngiar(ar*)                 NounPostbase; ! old N (person)
--+nir[N→N]:+nir                               NounPostbase; ! since N; since some time in the N
--+nir[N→N]:+nir                               NounPostbase; ! the smell of N
--%:(e)nkut[N→N]:%:(e)nkut                     NounPostbase; ! (plural) N and family; N and companion
--%:(e)nkug[N→N]:%:(e)nkug                     NounPostbase; ! (dual) N and family; N and companion
--–paarrlug[N→N]:–paarrlug                     NounPostbase; ! big N
--–pig[N→N]:–pig                               NounPostbase; ! genuine N; real N; authentic N
--–piar[N→N]:–piar                             NounPostbase; ! genuine N; real N; authentic N
--–pigar[N→N]:–pigar                           NounPostbase; ! genuine N; real N; authentic N
--+(a)r[N→N]:+(a)r                             NounPostbase; ! used with English words when they are used in Yup’ik speech or writing
--+(aa)r[N→N]:+(aa)r                           NounPostbase; ! used with English words when they are used in Yup’ik speech or writing
--–qainar[N→N]:–qainar                         NounPostbase; ! only N; merely N
--+qar[N→N]:+qar                               NounPostbase; ! N area of possessor; exact area denoted by N with respect to possessor
--–qlikacaar(ar*)[N→N]:–qlikacaar(ar*)         NounPostbase; ! one that is the farthest in the area denoted by N
--–qlir*[N→N]:–qlir*                           NounPostbase; ! the one located far in the area or space or time denoted by N
--–qtar*[N→N]:–qtar*                           NounPostbase; ! weak, helpless, worthless N; dear N
--–qva[N→N]:–qva                               NounPostbase; ! area far in the direction of N
--–qvaar*[N→N]:–qvaar*                         NounPostbase; ! area far in the direction of N
--–r’aya’ar[N→N]:–r’aya’ar                     NounPostbase; ! multitude of Ns; lots of Ns
--–rpaa(ar*)[N→N]:–rpaa(ar*)                   NounPostbase; ! great N; oldest N (with kinship terms)
--–rpag[N→N]:–rpag                             NounPostbase; ! large N; big N
--–rpallr(ar*)[N→N]:–rpallr(ar*)               NounPostbase; ! very large N
--–rpallug[N→N]:–rpallug                       NounPostbase; ! one that is primarily or mostly N
--–rqu[N→N]:–rqu                               NounPostbase; ! N times
--–rrar*[N→N]:–rrar*                           NounPostbase; ! just a little N; a little bit of N; a few N; and -rrar-to V a little; to just barely V
--–rrlainar*[N→N]:–rrlainar*                   NounPostbase; ! nothing but N; all N; solely N; mostly N
--–rrlugar*[N→N]:–rrlugar*                     NounPostbase; ! good old N; dear old N; shabby old N
--–rrlug[N→N]:–rrlug                           NounPostbase; ! N that has departed from its natural state (often, though not always, with an undesirable connotation)
--–rugar*[N→N]:–rugar*                         NounPostbase; ! many Ns; multitude of Ns
--–r(ur)lur*[N→N]:–r(ur)lur*                   NounPostbase; ! poor dear N
--–ssaarar[N→N]:–ssaarar                       NounPostbase; ! old N
--+taleg[N→N]:+taleg                           NounPostbase; ! place having N
--+tar[N→N]:+tar                               NounPostbase; ! thing of N; thing pertaining to N
--+tar[N→N]:+tar                               NounPostbase; ! caught N (game animal); N caught by possessor
--+tar[N→N]:+tar                               NounPostbase; ! N part of something
--+tar[N→N]:+tar                               NounPostbase; ! N specifically (exact meaning uncertain); small N
--+tna[N→N]:+tna                               NounPostbase; ! to do like N
--+tuli[N→N]:+tuli                             NounPostbase; ! one that is well endowed with N
--+(ng)uar[N→N]:+(ng)uar                       NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
--%:(ng)ute[N→N]:%:(ng)ute                     NounPostbase; ! supply of N; owned N
--%:~(ng)ute[N→N]:%:~(ng)ute                   NounPostbase; ! supply of N; owned N
--%:(ng)uteller[N→N]:%:(ng)uteller             NounPostbase; ! empty container that held N
--%:~(ng)uteller[N→N]:%:~(ng)uteller           NounPostbase; ! empty container that held N
--–vaarrlug[N→N]:–vaarrlug                     NounPostbase; ! big N; huge N
--@vag/?vag[N→N]:@vag/?vag                     NounPostbase; ! big N; large N
--–vialug[N→N]:–vialug                         NounPostbase; ! shabby N; funny old N; worthless N
--@~+viutar[N→N]:@~+viutar                     NounPostbase; ! container for N
--–ya(g)ar*[N→N]:–ya(g)ar*                     NounPostbase; ! baby N; little N
--–yagar*[N→N]:–yagar*                         NounPostbase; ! baby N; little N
--+yag[N→N]:+yag                               NounPostbase; ! thing similar to N; thing that acts as if it were V; small N
--–yaya(g)ar*[N→N]:–yaya(g)ar*                 NounPostbase; ! little baby N
-
--+'(g)ar(ar)[N→V]:+'(g)ar(ar)                 VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
--+arar(ar)[N→V]:+arar(ar)                     VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
--%:(ng)ar(ar)te[N→V]:%:(ng)ar(ar)te           VerbPostbase; ! to hit or get hit in or on one’s N
--–car(ar)te[N→V]:–car(ar)te                   VerbPostbase; ! to hit in or on the N, to hit right in or on the N
--+ci[N→V]:+ci                                 VerbPostbase; ! to buy (some) N
--–ciller(ar)te[N→V]:–ciller(ar)te             VerbPostbase; ! to unintentionally hit (it) in the N
--+cite[N→V]:+cite                             VerbPostbase; ! to have the quality of V or N
--+cugninarqe[N→V]:+cugninarqe                 VerbPostbase; ! (Y form) to smell or taste like N
--+cugnilarqe[N→V]:+cugnilarqe                 VerbPostbase; ! (NUN, NSU form) to smell or taste like N
--–cugninarqe[N→V]:–cugninarqe                 VerbPostbase; ! (K form) to smell or taste like N
--+cugnite[N→V]:+cugnite                       VerbPostbase; ! to smell or taste like N
--–culngu[N→V]:–culngu                         VerbPostbase; ! to be indisposed with respect to one’s N; to have trouble V-ing
--+cur–/+ssur[N→V]:+cur–/+ssur                 VerbPostbase; ! to hunt N; to seek N; to check N (game-catching implement)
--%:(ng)icag[N→V]:%:(ng)icag                   VerbPostbase; ! to be in need of N; to lack N
--%:(ng)illiqe[N→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
--–ir[N→V]:–ir                                 VerbPostbase; ! N (natural phenomenon) is occurring; to set N (game capturing device); to provide or be provided with N (but not in the sense of giving N to someone)
--%:(ng)ir[N→V]:%:(ng)ir                       VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
--%:(ng)ir(ar)[N→V]:%:(ng)ir(ar)               VerbPostbase; ! to have cold N
--%:(ng)ir(ar)te[N→V]:%:(ng)ir(ar)te           VerbPostbase; ! to injure or be injured in one’s N; to abrubtly cease V-ing
--%:(ng)i%:rute[N→V]:%:(ng)i%:rute             VerbPostbase; ! to not have N any more; to no longer be V (adjectival verbs only)
--%:(ng)ite[N→V]:%:(ng)ite                     VerbPostbase; ! to lack N or V; to have no N or V
--+karci[N→V]:+karci                           VerbPostbase; ! to buy something to serve as one’s N
--–kcugi[N→V]:–kcugi                           VerbPostbase; ! to strike (it) with a projectile or implement in the N
--–ke[N→V]:–ke                                 VerbPostbase; ! to have as one’s N
--–kegci[N→V]:–kegci                           VerbPostbase; ! to have good N
--–keggi[N→V]:–keggi                           VerbPostbase; ! to become good N
--–kegte[N→V]:–kegte                           VerbPostbase; ! to be good N; to have good N
--–kiirar[N→V]:–kiirar                         VerbPostbase; ! to be in (water, mud, tall grass, body part, etc.) up to one’s N
--–kiir(ar)[N→V]:–kiir(ar)                     VerbPostbase; ! to be in (water, mud, tall grass, body part, etc.) up to one’s N
--–kaar[N→V]:–kaar                             VerbPostbase; ! to be in (water, mud, tall grass, body part, etc.) up to one’s N
--+killi[N→V]:+killi                           VerbPostbase; ! to have N to a decreasing degree
--+kite[N→V]:+kite                             VerbPostbase; ! to give N to object to use or possess; to supply object with N
--+kiur[N→V]:+kiur                             VerbPostbase; ! to prepare something to be N
--–kliute[N→V]:–kliute                         VerbPostbase; ! to have obtained or claimed as one’s N
--–knaggair[N→V]:–knaggair                     VerbPostbase; ! to take away all N from (it)
--–knaggairute[N→V]:–knaggairute               VerbPostbase; ! to have come to totally lack N
--–knaggaite[N→V]:–knaggaite                   VerbPostbase; ! to totally lack N
--–ksagute[N→V]:–ksagute                       VerbPostbase; ! to acquire or claim (it) as one’s N
--%%kuir[N→V]:%%kuir                           VerbPostbase; ! to go along N; to go following N
--–laar(ar)[N→V]:–laar(ar)                     VerbPostbase; ! to get a new N
--–lgir[N→V]:–lgir                             VerbPostbase; ! to take along N
--––li[N→V]:––li                               VerbPostbase; ! to make N; to make N for (him); to make N out of (it)
--––linqigte[N→V]:––linqigte                   VerbPostbase; ! to change one’s N; to get another N
--––liqe[N→V]:––liqe                           VerbPostbase; ! to catch a lot of N
--––liqe[N→V]:––liqe                           VerbPostbase; ! to be afflicted in one’s N or with respect to N
--––lir[N→V]:––lir                             VerbPostbase; ! to have lots of N; to provide with or be well provided with N; to add N to (it)
--––liur[N→V]:––liur                           VerbPostbase; ! to be occupied with N; to work or play with N; to cook N (additional NUN meaning)
--––liyar[N→V]:––liyar                         VerbPostbase; ! to go to participate in N or V
--–liar[N→V]:–liar                             VerbPostbase; ! to go to participate in N or V
--–lkia[N→V]:–lkia                             VerbPostbase; ! to give evidence or indication of N or V
--–lkite[N→V]:–lkite                           VerbPostbase; ! to make a noise or give other evidence of N
--+lliqe[N→V]:+lliqe                           VerbPostbase; ! to have N of poor quality
--–llug[N→V]:–llug                             VerbPostbase; ! to have bad N
--–llugte[N→V]:–llugte                         VerbPostbase; ! to have bad N
--–luatar[N→V]:–luatar                         VerbPostbase; ! to V well; to V with satisfaction
--+mig[N→V]:+mig                               VerbPostbase; ! to put in one’s N
--+miu[N→V]:+miu                               VerbPostbase; ! to be at N; to stay at N
--+miuyaar[N→V]:+miuyaar                       VerbPostbase; ! to speak the language or dialect of the residents of N
--@~+ngari[N→V]:@~+ngari                       VerbPostbase; ! to seem to be becoming V; to begin to be like N
--+ngate[N→V]:+ngate                           VerbPostbase; ! to seem like N
--–nge[N→V]:–nge                               VerbPostbase; ! to acquire N; to begin to V
--–ngqerr[N→V]:–ngqerr                         VerbPostbase; ! to have N
--@~+nialke[N→V]:@~+nialke                     VerbPostbase; ! to consider object to be unpleasant to V or to be an unpleasant N
--@~+niate[N→V]:@~+niate                       VerbPostbase; ! to be unpleasant to V; to be an unpleasant N
--@~+niilke[N→V]:@~+niilke                     VerbPostbase; ! to consider object to be unpleasant to V or to be an unpleasant N
--@~+niite[N→V]:@~+niite                       VerbPostbase; ! to be unpleasant to V; to be an unpleasant N
--@~+nike[N→V]:@~+nike                         VerbPostbase; ! to consider object to be pleasant to V or to be a pleasant N
--~+ninarqe[N→V]:~+ninarqe                     VerbPostbase; ! to smell or taste like N
--~+nilarqe[N→V]:~+nilarqe                     VerbPostbase; ! (NUN, NSU form) to smell or taste like N
--@~+nirqe[N→V]:@~+nirqe                       VerbPostbase; ! to be pleasant to V; to be a pleasant N
--+nite[N→V]:+nite                             VerbPostbase; ! to smell or taste like N
--–nqar[N→V]:–nqar                             VerbPostbase; ! to unintentionally hit (it) in the N with a projectile
--–qliarte[N→V]:–qliarte                       VerbPostbase; ! to reach the N of; to extend to the N of
--–qsig[N→V]:–qsig                             VerbPostbase; ! to be far in the direction denoted by N
--–qsigi[N→V]:–qsigi                           VerbPostbase; ! to get farther into the area denoted by N
--–qu[N→V]:–qu                                 VerbPostbase; ! to hunt with N or at N
--+(a)r[N→V]:+(a)r                             VerbPostbase; ! to say or “go”. . . (word or sound)
--–rpagninarqe[N→V]:–rpagninarqe               VerbPostbase; ! to smell strongly of N
--–rpagnite[N→V]:–rpagnite                     VerbPostbase; ! to smell or taste strongly of N
--–rpau[N→V]:–rpau                             VerbPostbase; ! to be a large N; to have a large N
--–rpi[N→V]:–rpi                               VerbPostbase; ! to have a large N
--–rrlug[N→V]:–rrlug                           VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in one’s N or in respect to N; to have bad N
--–rrlugte[N→V]:–rrlugte                       VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in one’s N or in respect to N; to have bad N
--–(u)saar[N→V]:–(u)saar                       VerbPostbase; ! to speak the language of N
--–ssaag[N→V]:–ssaag                           VerbPostbase; ! to fetch some N from an easily accessible place
--–ssaar[N→V]:–ssaar                           VerbPostbase; ! to hunt N
--+ssur[N→V]:+ssur                             VerbPostbase; ! to hunt N; to seek N; to check N (game-capturing implement)
--+tairute[N→V]:+tairute                       VerbPostbase; ! (for there) to be no more N
--+taite[N→V]:+taite                           VerbPostbase; ! (for there) to be no N
--+taknaggaite[N→V]:+taknaggaite               VerbPostbase; ! for there to be absolutely no N
--+tange[N→V]:+tange                           VerbPostbase; ! (for there) to be N now
--+tangqerr[N→V]:+tangqerr                     VerbPostbase; ! (for there) to be N
--+tar[N→V]:+tar                               VerbPostbase; ! (for there) to be N
--+te[N→V]:+te                                 VerbPostbase; ! to catch N (game animal); to go to N (place); to obtain N; to spend the N (time); for N (time) to pass
--+te[N→V]:+te                                 VerbPostbase; ! to plan to act at a given time
--+te[N→V]:+te                                 VerbPostbase; ! to make the N noise
--+te[N→V]:+te                                 VerbPostbase; ! to apply N (liquid or the like) to (it)
--–tmurte[N→V]:–tmurte                         VerbPostbase; ! to go N-ward; to go in the area described by V
--–trute[N→V]:–trute                           VerbPostbase; ! to miss by passing through the N area, or the N area of it
--+tu[N→V]:+tu                                 VerbPostbase; ! to be well endowed with N, to have N to a large extent
--+tur[N→V]:+tur                               VerbPostbase; ! to eat N (food); to wear N (clothing); to use N (limited usage with this meaning)
--+(r)tuuma(r)[N→V]:+(r)tuuma(r)               VerbPostbase; ! to act together with one’s N or Ns
--%:~(ng)u[N→V]:%:~(ng)u                       VerbPostbase; ! to be N
--%:(ng)ucir[N→V]:%:(ng)ucir                   VerbPostbase; ! to have lots of N
--%:~(ng)urte[N→V]:%:~(ng)urte                 VerbPostbase; ! to become N; to expose the N of (it)
--+yag[N→V]:+yag                               VerbPostbase; ! (for there) to be much N, many N
--+(r)yug[N→V]:+(r)yug                         VerbPostbase; ! to want N; to want to do the appropriate thing with N
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                                 !!!!!!
-!!!!!!     Inflectional Morphemes Applied To Nouns / Derived Bases     !!!!!!
-!!!!!!                                                                 !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-LEXICON NounInflection
-! -------------------------------------------------|
-!              Absolutive Case Endings             |
-! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                singular possessed                |                     plural possessed                 |                       dual possessed                   |
-! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Abs][Unpd][Sg]:0                  EncliticOrEnd; [N][Abs][Unpd][Pl]:%%%:(e)t             EncliticOrEnd; [N][Abs][Unpd][Du]:%%%:(e)k               EncliticOrEnd; ! unpossessed   |
-! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
-[N][Abs][3SgPoss][SgPosd]:%:(ng)a     EncliticOrEnd; [N][Abs][3SgPoss][PlPosd]:%:(ng)i       EncliticOrEnd; [N][Abs][3SgPoss][DuPosd]:%%%:(e)k        EncliticOrEnd; ! 3SG possessor |
-[N][Abs][3PlPoss][SgPosd]:%:(ng)at    EncliticOrEnd; [N][Abs][3PlPoss][PlPosd]:%:(ng)it      EncliticOrEnd; [N][Abs][3PlPoss][DuPosd]:%%%:(e)gket     EncliticOrEnd; ! 3PL possessor |
-[N][Abs][3DuPoss][SgPosd]:%:(ng)ak    EncliticOrEnd; [N][Abs][3DuPoss][PlPosd]:-kek          EncliticOrEnd; [N][Abs][3DuPoss][DuPosd]:%%%:(e)gkek     EncliticOrEnd; ! 3Du possessor |
-! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
-[N][Abs][1SgPoss][SgPosd]:-ka         EncliticOrEnd; [N][Abs][1SgPoss][PlPosd]:%%%:(e)nka    EncliticOrEnd; [N][Abs][1SgPoss][DuPosd]:%%%:(e)gka      EncliticOrEnd; ! 1SG possessor |
-[N][Abs][1PlPoss][SgPosd]:-put        EncliticOrEnd; [N][Abs][1PlPoss][PlPosd]:-put          EncliticOrEnd; [N][Abs][1PlPoss][DuPosd]:%%%:(e)gput     EncliticOrEnd; ! 1PL possessor |
-[N][Abs][1PlPoss][SgPosd]:.vut        EncliticOrEnd; [N][Abs][1PlPoss][SgPosd]:+put          EncliticOrEnd;
-[N][Abs][1DuPoss][SgPosd]:-puk        EncliticOrEnd; [N][Abs][1DuPoss][PlPosd]:-puk          EncliticOrEnd; [N][Abs][1DuPoss][DuPosd]:%%%:(e)gpuk     EncliticOrEnd; ! 1Du possessor |
-[N][Abs][1DuPoss][SgPosd]:.vuk        EncliticOrEnd; [N][Abs][1DuPoss][SgPosd]:+puk          EncliticOrEnd;
-! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
-[N][Abs][2SgPoss][SgPosd]:%%%:(e)n    EncliticOrEnd; [N][Abs][2SgPoss][PlPosd]:-ten          EncliticOrEnd; [N][Abs][2SgPoss][DuPosd]:%%%:(e)gken     EncliticOrEnd; ! 2SG possessor |
-[N][Abs][2PlPoss][SgPosd]:-ci         EncliticOrEnd; [N][Abs][2PlPoss][PlPosd]:-ci           EncliticOrEnd; [N][Abs][2PlPoss][DuPosd]:%%%:(e)gci      EncliticOrEnd; ! 2Pl possessor |
-[N][Abs][2PlPoss][SgPosd]:.si         EncliticOrEnd; [N][Abs][2PlPoss][SgPosd]:+ci           EncliticOrEnd;
-[N][Abs][2DuPoss][SgPosd]:-tek        EncliticOrEnd; [N][Abs][2DuPoss][PlPosd]:-tek          EncliticOrEnd; [N][Abs][2DuPoss][DuPosd]:%%%:(e)gtek     EncliticOrEnd; ! 2Du possessor |
-[N][Abs][2DuPoss][SgPosd]:.sek        EncliticOrEnd; [N][Abs][2DuPoss][SgPosd]:+tek          EncliticOrEnd;
-! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
-[N][Abs][4SgPoss][SgPosd]:-ni         EncliticOrEnd; [N][Abs][4SgPoss][PlPosd]:-ni           EncliticOrEnd; [N][Abs][4SgPoss][DuPosd]:%%%:(e)gni      EncliticOrEnd; ! 4SG possessor |
-[N][Abs][4PlPoss][SgPosd]:-teng       EncliticOrEnd; [N][Abs][4PlPoss][PlPosd]:-teng         EncliticOrEnd; [N][Abs][4PlPoss][DuPosd]:%%%:(e)gteng    EncliticOrEnd; ! 4Pl possessor |
-[N][Abs][4PlPoss][SgPosd]:.seng       EncliticOrEnd; [N][Abs][4PlPoss][SgPosd]:+teng         EncliticOrEnd;
-[N][Abs][4DuPoss][SgPosd]:-tek        EncliticOrEnd; [N][Abs][4DuPoss][PlPosd]:-tek          EncliticOrEnd; [N][Abs][4DuPoss][DuPosd]:%%%:(e)gtek     EncliticOrEnd; ! 4Du possessor |
-[N][Abs][4DuPoss][SgPosd]:.sek        EncliticOrEnd; [N][Abs][4DuPoss][SgPosd]:+tek          EncliticOrEnd;
-! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
-
-
-! -------------------------------------------------|
-!              Relative Case Endings               | 
-! ----------------------------------------------------------------------------------------------------------------------------------------------------|
-!               singular possessed                 |                    plural possessed                |               dual possessed                |    
-! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Rel][Unpd][Sg]:%%%:(e)m           EncliticOrEnd;[N][Rel][Unpd][Pl]:%%%:(e)t            EncliticOrEnd; [N][Rel][Unpd][Du]:%%%:(e)k                 EncliticOrEnd; ! unpossessed   |
-! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
-[N][Rel][3SgPoss][SgPosd]:%:(ng)an    EncliticOrEnd; [N][Rel][3SgPoss][PlPosd]:%:(ng)in    EncliticOrEnd; [N][Rel][3SgPoss][DuPosd]:%%%:(e)gken       EncliticOrEnd; ! 3Sg possessor |
-[N][Rel][3PlPoss][SgPosd]:%:(ng)ata   EncliticOrEnd; [N][Rel][3PlPoss][PlPosd]:%:(ng)ita   EncliticOrEnd; [N][Rel][3PlPoss][DuPosd]:%%%:(e)gketa      EncliticOrEnd; ! 3Pl possessor |
-[N][Rel][3DuPoss][SgPosd]:%:(ng)agnek EncliticOrEnd; [N][Rel][3DuPoss][PlPosd]:-kenka      EncliticOrEnd; [N][Rel][3DuPoss][DuPosd]:%%%:(e)gkenka     EncliticOrEnd; ! 3Du possessor |
-! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
-[N][Rel][1SgPoss][SgPosd]:-ma         EncliticOrEnd; [N][Rel][1SgPoss][PlPosd]:-ma         EncliticOrEnd; [N][Rel][1SgPoss][DuPosd]:%%%:(e)gma        EncliticOrEnd; ! 1Sg possessor |
-[N][Rel][1PlPoss][SgPosd]:-mta        EncliticOrEnd; [N][Rel][1PlPoss][PlPosd]:-mta        EncliticOrEnd; [N][Rel][1PlPoss][DuPosd]:%%%:(e)gemta      EncliticOrEnd; ! 1Pl possessor |
-[N][Rel][1DuPoss][SgPosd]:-megnuk     EncliticOrEnd; [N][Rel][1DuPoss][PlPosd]:-megnuk     EncliticOrEnd; [N][Rel][1DuPoss][DuPosd]:%%%:(e)gmegnuk    EncliticOrEnd; ! 1Du possessor |
-[N][Rel][1DuPoss][SgPosd]:-mnuk       EncliticOrEnd; [N][Rel][1DuPoss][PlPosd]:-mnuk       EncliticOrEnd;
-! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
-[N][Rel][2SgPoss][SgPosd]:-vet        EncliticOrEnd; [N][Rel][2SgPoss][PlPosd]:-vet        EncliticOrEnd; [N][Rel][2SgPoss][DuPosd]:%%%:(e)gpet       EncliticOrEnd; ! 2Sg possessor |
-[N][Rel][2SgPoss][SgPosd]:+pet        EncliticOrEnd; [N][Rel][2SgPoss][PlPosd]:+pet        EncliticOrEnd;
-[N][Rel][2PlPoss][SgPosd]:-vci        EncliticOrEnd; [N][Rel][2PlPoss][PlPosd]:-vci        EncliticOrEnd; [N][Rel][2PlPoss][DuPosd]:%%%:(e)gpeci      EncliticOrEnd; ! 2Pl possessor |
-[N][Rel][2PlPoss][SgPosd]:+peci       EncliticOrEnd; [N][Rel][2PlPoss][PlPosd]:+peci       EncliticOrEnd;
-[N][Rel][2DuPoss][SgPosd]:-vtek       EncliticOrEnd; [N][Rel][2DuPoss][PlPosd]:-vtek       EncliticOrEnd; [N][Rel][2DuPoss][DuPosd]:%%%:(e)gpetek     EncliticOrEnd; ! 2Du possessor |
-[N][Rel][2DuPoss][SgPosd]:+petek      EncliticOrEnd; [N][Rel][2DuPoss][PlPosd]:+petek      EncliticOrEnd;
-! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
-[N][Rel][4SgPoss][SgPosd]:-mi         EncliticOrEnd; [N][Rel][4SgPoss][PlPosd]:-mi         EncliticOrEnd; [N][Rel][4SgPoss][DuPosd]:%%%:(e)gmi        EncliticOrEnd; ! 4Sg possessor |
-[N][Rel][4PlPoss][SgPosd]:-meng       EncliticOrEnd; [N][Rel][4PlPoss][PlPosd]:-meng       EncliticOrEnd; [N][Rel][4PlPoss][DuPosd]:%%%:(e)gmeng      EncliticOrEnd; ! 4Pl possessor |
-[N][Rel][4PlPoss][SgPosd]:-megta      EncliticOrEnd; [N][Rel][4PlPoss][PlPosd]:-megta      EncliticOrEnd;
-[N][Rel][4PlPoss][SgPosd]:-megteng    EncliticOrEnd; [N][Rel][4PlPoss][PlPosd]:-megteng    EncliticOrEnd;
-[N][Rel][4DuPoss][SgPosd]:-mek        EncliticOrEnd; [N][Rel][4DuPoss][PlPosd]:-mek        EncliticOrEnd; [N][Rel][4DuPoss][DuPosd]:%%%:(e)gmek       EncliticOrEnd; ! 4Du possessor |
-! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
-
-
-! -----------------------------------------------------------|
-!                Ablative-Modalis Case Endings               |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                      singular possessed                    |                        plural possessed                    |                            dual possessed                         |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][Unpd][Sg]:%%~mek                   EncliticOrEnd; [N][Abl_Mod][Unpd][Pl]:%%~nek                 EncliticOrEnd; [N][Abl_Mod][Unpd][Du]:%%%:(e)gnek                   EncliticOrEnd; ! unpossessed   |
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][3SgPoss][SgPosd]:%:(ng)anek        EncliticOrEnd; [N][Abl_Mod][3SgPoss][PlPosd]:%:(ng)inek      EncliticOrEnd; [N][Abl_Mod][3SgPoss][DuPosd]:%%%:(e)gkenek          EncliticOrEnd; ! 3Sg possessor |
-[N][Abl_Mod][3PlPoss][SgPosd]:%:(ng)atnek       EncliticOrEnd; [N][Abl_Mod][3PlPoss][PlPosd]:%:(ng)itnek     EncliticOrEnd; [N][Abl_Mod][3PlPoss][DuPosd]:%%%:(e)gketnek         EncliticOrEnd; ! 3Pl possessor |
-[N][Abl_Mod][3DuPoss][SgPosd]:%:(ng)agnek       EncliticOrEnd; [N][Abl_Mod][3DuPoss][PlPosd]:-kegnek         EncliticOrEnd; [N][Abl_Mod][3DuPoss][DuPosd]:%%%:(e)gkegni          EncliticOrEnd; ! 3Du possessor |
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][1SgPoss][SgPosd]:-mnek             EncliticOrEnd; [N][Abl_Mod][1SgPoss][PlPosd]:-mnek           EncliticOrEnd; [N][Abl_Mod][1SgPoss][DuPosd]:%%%:(e)gemnek          EncliticOrEnd; ! 1Sg possessor |
-[N][Abl_Mod][1PlPoss][SgPosd]:-mteńek           EncliticOrEnd; [N][Abl_Mod][1PlPoss][PlPosd]:-mteńek         EncliticOrEnd; [N][Abl_Mod][1PlPoss][DuPosd]:%%%:(e)gemteńek        EncliticOrEnd; ! 1Pl possessor |
-[N][Abl_Mod][1DuPoss][SgPosd]:-megnek           EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:-megnek         EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:%%%:(e)gmegnek         EncliticOrEnd; ! 1Du possessor |
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][2SgPoss][SgPosd]:-vnek             EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:-vnek           EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:%%%:(e)gpenek          EncliticOrEnd; ! 2Sg possessor |
-[N][Abl_Mod][2SgPoss][SgPosd]:+penek            EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:+penek          EncliticOrEnd;  
-[N][Abl_Mod][2PlPoss][SgPosd]:-vceńek           EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:-vceńek         EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:%%%:(e)gpeceńek        EncliticOrEnd; ! 2Pl possessor |
-[N][Abl_Mod][2PlPoss][SgPosd]:+peceńek          EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:+peceńek        EncliticOrEnd;  
-[N][Abl_Mod][2DuPoss][SgPosd]:-vtegnek          EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:-vtegnek        EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:%%%:(e)gpetegnek       EncliticOrEnd; ! 2Du possessor |
-[N][Abl_Mod][2DuPoss][SgPosd]:+petegnek         EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:+petegnek       EncliticOrEnd;  
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][4SgPoss][SgPosd]:-minek            EncliticOrEnd; [N][Abl_Mod][4SgPoss][PlPosd]:-minek          EncliticOrEnd; [N][Abl_Mod][4SgPoss][DuPosd]:%%%:(e)gminek          EncliticOrEnd; ! 4Sg possessor |
-[N][Abl_Mod][4PlPoss][SgPosd]:-meggnek          EncliticOrEnd; [N][Abl_Mod][4PlPoss][PlPosd]:-meggnek        EncliticOrEnd; [N][Abl_Mod][4PlPoss][DuPosd]:%%%:(e)gmeggnek        EncliticOrEnd; ! 4Pl possessor |
-[N][Abl_Mod][4DuPoss][SgPosd]:-megnek           EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:-megnek         EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:%%%:(e)gmegnek         EncliticOrEnd; ! 4Du possessor |
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-
-! -----------------------------------------------------------|
-!                Ablative-Modalis Case Endings (in HBC)      |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                      singular possessed                    |                        plural possessed                    |                            dual possessed                         |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][Unpd][Sg]:%%~meng                  EncliticOrEnd; [N][Abl_Mod][Unpd][Pl]:%%~neng                EncliticOrEnd; [N][Abl_Mod][Unpd][Du]:%%%:(e)gneng                  EncliticOrEnd; ! unpossessed   |
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][3SgPoss][SgPosd]:%:(ng)aneng       EncliticOrEnd; [N][Abl_Mod][3SgPoss][PlPosd]:%:(ng)ineng     EncliticOrEnd; [N][Abl_Mod][3SgPoss][DuPosd]:%%%:(e)gkeneng         EncliticOrEnd; ! 3Sg possessor |
-[N][Abl_Mod][3PlPoss][SgPosd]:%:(ng)atneng      EncliticOrEnd; [N][Abl_Mod][3PlPoss][PlPosd]:%:(ng)itneng    EncliticOrEnd; [N][Abl_Mod][3PlPoss][DuPosd]:%%%:(e)gketneng        EncliticOrEnd; ! 3Pl possessor |
-[N][Abl_Mod][3DuPoss][SgPosd]:%:(ng)agneng      EncliticOrEnd; [N][Abl_Mod][3DuPoss][PlPosd]:-kegneng        EncliticOrEnd; [N][Abl_Mod][3DuPoss][DuPosd]:%%%:(e)gkegneng        EncliticOrEnd; ! 3Du possessor |
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][1SgPoss][SgPosd]:-mneng            EncliticOrEnd; [N][Abl_Mod][1SgPoss][PlPosd]:-mneng          EncliticOrEnd; [N][Abl_Mod][1SgPoss][DuPosd]:%%%:(e)gemneng         EncliticOrEnd; ! 1Sg possessor |
-[N][Abl_Mod][1PlPoss][SgPosd]:-mteńeng          EncliticOrEnd; [N][Abl_Mod][1PlPoss][PlPosd]:-mteńeng        EncliticOrEnd; [N][Abl_Mod][1PlPoss][DuPosd]:%%%:(e)gemteńeng       EncliticOrEnd; ! 1Pl possessor |
-[N][Abl_Mod][1DuPoss][SgPosd]:-megneng          EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:-megneng        EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:%%%:(e)gmegneng        EncliticOrEnd; ! 1Du possessor |
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][2SgPoss][SgPosd]:-vneng            EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:-vneng          EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:%%%:(e)gpeneng         EncliticOrEnd; ! 2Sg possessor |
-[N][Abl_Mod][2SgPoss][SgPosd]:+peneng           EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:+peneng         EncliticOrEnd;  
-[N][Abl_Mod][2PlPoss][SgPosd]:-vcineng          EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:-vcineng        EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:%%%:(e)gpecineng       EncliticOrEnd; ! 2Pl possessor |
-[N][Abl_Mod][2PlPoss][SgPosd]:+pecineng         EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:+pecineng       EncliticOrEnd;   
-[N][Abl_Mod][2DuPoss][SgPosd]:-vtegneng         EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:-vtegneng       EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:%%%:(e)gpetegneng      EncliticOrEnd; ! 2Du possessor |
-[N][Abl_Mod][2DuPoss][SgPosd]:+petegneng        EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:+petegneng      EncliticOrEnd;  
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-[N][Abl_Mod][4SgPoss][SgPosd]:-mineng           EncliticOrEnd; [N][Abl_Mod][4SgPoss][PlPosd]:-mineng         EncliticOrEnd; [N][Abl_Mod][4SgPoss][DuPosd]:%%%:(e)gmineng         EncliticOrEnd; ! 4Sg possessor |
-[N][Abl_Mod][4PlPoss][SgPosd]:-meggneng         EncliticOrEnd; [N][Abl_Mod][4PlPoss][PlPosd]:-meggneng       EncliticOrEnd; [N][Abl_Mod][4PlPoss][DuPosd]:%%%:(e)gmeggneng       EncliticOrEnd; ! 4Pl possessor |
-[N][Abl_Mod][4DuPoss][SgPosd]:-megneng          EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:-megneng        EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:%%%:(e)gmegneng        EncliticOrEnd; ! 4Du possessor |
-! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-
-
-! -----------------------------------------------------|
-!           Localis Case Endings (at N; in N)          |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                  singular possessed                  |                     plural possessed                 |                          dual possessed                     |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Loc][Unpd][Sg]:%%~mi                  EncliticOrEnd; [N][Loc][Unpd][Pl]:%%~ni                EncliticOrEnd; [N][Loc][Unpd][Du]:%%%:(e)gni                  EncliticOrEnd; ! unpossessed   |
-! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
-[N][Loc][3SgPoss][SgPosd]:%:(ng)ani       EncliticOrEnd; [N][Loc][3SgPoss][PlPosd]:%:(ng)ini     EncliticOrEnd; [N][Loc][3SgPoss][DuPosd]:%%%:(e)gkeni         EncliticOrEnd; ! 3Sg possessor |
-[N][Loc][3PlPoss][SgPosd]:%:(ng)atni      EncliticOrEnd; [N][Loc][3PlPoss][PlPosd]:%:(ng)itni    EncliticOrEnd; [N][Loc][3PlPoss][DuPosd]:%%%:(e)gketni        EncliticOrEnd; ! 3Pl possessor |
-[N][Loc][3DuPoss][SgPosd]:%:(ng)agni      EncliticOrEnd; [N][Loc][3DuPoss][PlPosd]:-kegni        EncliticOrEnd; [N][Loc][3DuPoss][DuPosd]:%%%:(e)gkegni        EncliticOrEnd; ! 3Du possessor |
-! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
-[N][Loc][1SgPoss][SgPosd]:-mni            EncliticOrEnd; [N][Loc][1SgPoss][PlPosd]:-mni          EncliticOrEnd; [N][Loc][1SgPoss][DuPosd]:%%%:(e)gemni         EncliticOrEnd; ! 1Sg possessor |
-[N][Loc][1PlPoss][SgPosd]:-mteńi          EncliticOrEnd; [N][Loc][1PlPoss][PlPosd]:-mteńi        EncliticOrEnd; [N][Loc][1PlPoss][DuPosd]:%%%:(e)gemteńi       EncliticOrEnd; ! 1Pl possessor |
-[N][Loc][1DuPoss][SgPosd]:-megni          EncliticOrEnd; [N][Loc][1DuPoss][PlPosd]:-megni        EncliticOrEnd; [N][Loc][1DuPoss][DuPosd]:%%%:(e)gmegni        EncliticOrEnd; ! 1Du possessor |
-! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
-[N][Loc][2SgPoss][SgPosd]:-vni            EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:-vni          EncliticOrEnd; [N][Loc][2SgPoss][DuPosd]:%%%:(e)gpeni         EncliticOrEnd; ! 2Sg possessor |
-[N][Loc][2SgPoss][SgPosd]:+peni           EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:+peni         EncliticOrEnd;
-[N][Loc][2PlPoss][SgPosd]:-vceńi          EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:-vceńi        EncliticOrEnd; [N][Loc][2PlPoss][DuPosd]:%%%:(e)gpeceńi       EncliticOrEnd; ! 2Pl possessor |
-[N][Loc][2PlPoss][SgPosd]:+peceńi         EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:+peceńi       EncliticOrEnd;
-[N][Loc][2PlPoss][SgPosd]:-vcini          EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:-vcini        EncliticOrEnd; [N][Loc][2PlPoss][DuPosd]:%%%:(e)gpecini       EncliticOrEnd; ! 2Pl possessor |
-[N][Loc][2PlPoss][SgPosd]:+peceńi         EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:+peceńi       EncliticOrEnd;
-[N][Loc][2DuPoss][SgPosd]:-vtegni         EncliticOrEnd; [N][Loc][2DuPoss][PlPosd]:-vtegni       EncliticOrEnd; [N][Loc][2DuPoss][DuPosd]:%%%:(e)gpetegni      EncliticOrEnd; ! 2Du possessor |
-[N][Loc][2DuPoss][SgPosd]:+petegni        EncliticOrEnd; [N][Loc][2DuPoss][PlPosd]:+petegni      EncliticOrEnd;
-! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
-[N][Loc][4SgPoss][SgPosd]:-mini           EncliticOrEnd; [N][Loc][4SgPoss][PlPosd]:-mini         EncliticOrEnd; [N][Loc][4SgPoss][DuPosd]:%%%:(e)gmini         EncliticOrEnd; ! 4Sg possessor |
-[N][Loc][4PlPoss][SgPosd]:-meggni         EncliticOrEnd; [N][Loc][4PlPoss][PlPosd]:-meggni       EncliticOrEnd; [N][Loc][4PlPoss][DuPosd]:%%%:(e)gmeggni       EncliticOrEnd; ! 4Pl possessor |
-[N][Loc][4DuPoss][SgPosd]:-megni          EncliticOrEnd; [N][Loc][4DuPoss][PlPosd]:-megni        EncliticOrEnd; [N][Loc][4DuPoss][DuPosd]:%%%:(e)gmegni        EncliticOrEnd; ! 4Du possessor |
-! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
-
-
-! ------------------------------------------------------|
-!            Terminalis Case Endings (to N)             | 
-! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                   singular possessed                  |                      plural possessed                 |                          dual possessed                      |
-! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Ter][Unpd][Sg]:%%~mun                  EncliticOrEnd; [N][Ter][Unpd][Pl]:%%~nun                EncliticOrEnd; [N][Ter][Unpd][Du]:%%%:(e)gnun                  EncliticOrEnd; ! unpossessed   |
-! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Ter][3SgPoss][SgPosd]:%:(ng)anun       EncliticOrEnd; [N][Ter][3SgPoss][PlPosd]:%:(ng)inun     EncliticOrEnd; [N][Ter][3SgPoss][DuPosd]:%%%:(e)gkenun         EncliticOrEnd; ! 3Sg possessor |
-[N][Ter][3PlPoss][SgPosd]:%:(ng)atnun      EncliticOrEnd; [N][Ter][3PlPoss][PlPosd]:%:(ng)itnun    EncliticOrEnd; [N][Ter][3PlPoss][DuPosd]:%%%:(e)gketnun        EncliticOrEnd; ! 3Pl possessor |
-[N][Ter][3DuPoss][SgPosd]:%:(ng)agnun      EncliticOrEnd; [N][Ter][3DuPoss][PlPosd]:-kegnun        EncliticOrEnd; [N][Ter][3DuPoss][DuPosd]:%%%:(e)gkegnun        EncliticOrEnd; ! 3Du possessor |
-! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Ter][1SgPoss][SgPosd]:-mnun            EncliticOrEnd; [N][Ter][1SgPoss][PlPosd]:-mnun          EncliticOrEnd; [N][Ter][1SgPoss][DuPosd]:%%%:(e)gemnun         EncliticOrEnd; ! 1Sg possessor |
-[N][Ter][1PlPoss][SgPosd]:-mteńun          EncliticOrEnd; [N][Ter][1PlPoss][PlPosd]:-mteńun        EncliticOrEnd; [N][Ter][1PlPoss][DuPosd]:%%%:(e)gemteńun       EncliticOrEnd; ! 1Pl possessor |
-[N][Ter][1DuPoss][SgPosd]:-megnun          EncliticOrEnd; [N][Ter][1DuPoss][PlPosd]:-megnun        EncliticOrEnd; [N][Ter][1DuPoss][DuPosd]:%%%:(e)gmegnun        EncliticOrEnd; ! 1Du possessor |
-! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Ter][2SgPoss][SgPosd]:-vnun            EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:-vnun          EncliticOrEnd; [N][Ter][2SgPoss][DuPosd]:%%%:(e)gpenun         EncliticOrEnd; ! 2Sg possessor |
-[N][Ter][2SgPoss][SgPosd]:+penun           EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:+penun         EncliticOrEnd;
-[N][Ter][2PlPoss][SgPosd]:-vceńun          EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:-vceńun        EncliticOrEnd; [N][Ter][2PlPoss][DuPosd]:%%%:(e)gpeceńun       EncliticOrEnd; ! 2Pl possessor |
-[N][Ter][2PlPoss][SgPosd]:+peceńun         EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:+peceńun       EncliticOrEnd;
-[N][Ter][2PlPoss][SgPosd]:-vcinun          EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:-vcinun        EncliticOrEnd; [N][Ter][2PlPoss][DuPosd]:%%%:(e)gpecinun       EncliticOrEnd; ! 2Pl possessor |
-[N][Ter][2PlPoss][SgPosd]:+peceńun         EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:+peceńun       EncliticOrEnd;
-[N][Ter][2DuPoss][SgPosd]:-vtegnun         EncliticOrEnd; [N][Ter][2DuPoss][PlPosd]:-vtegnun       EncliticOrEnd; [N][Ter][2DuPoss][DuPosd]:%%%:(e)gpetegnun      EncliticOrEnd; ! 2Du possessor |
-[N][Ter][2DuPoss][SgPosd]:+petegnun        EncliticOrEnd; [N][Ter][2DuPoss][PlPosd]:+petegnun      EncliticOrEnd;
-! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Ter][4SgPoss][SgPosd]:-minun           EncliticOrEnd; [N][Ter][4SgPoss][PlPosd]:-minun         EncliticOrEnd; [N][Ter][4SgPoss][DuPosd]:%%%:(e)gminun         EncliticOrEnd; ! 4Sg possessor |
-[N][Ter][4PlPoss][SgPosd]:-meggnun         EncliticOrEnd; [N][Ter][4PlPoss][PlPosd]:-meggnun       EncliticOrEnd; [N][Ter][4PlPoss][DuPosd]:%%%:(e)gmeggnun       EncliticOrEnd; ! 4Pl possessor |
-[N][Ter][4DuPoss][SgPosd]:-megnun          EncliticOrEnd; [N][Ter][4DuPoss][PlPosd]:-megnun        EncliticOrEnd; [N][Ter][4DuPoss][DuPosd]:%%%:(e)gmegnun        EncliticOrEnd; ! 4Du possessor |
-! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-
-
-! -------------------------------------------------------|
-!              Vialis Case Endings (through N)           |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                  singular possessed                    |                      plural possessed                  |                           dual possessed                      |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Via][Unpd][Sg]:%%kun                    EncliticOrEnd; [N][Via][Unpd][Pl]:%%tgun                 EncliticOrEnd; [N][Via][Unpd][Du]:%%%:(e)gnegun                 EncliticOrEnd; ! unpossessed   |
-                                                                                                                    [N][Via][Unpd][Du]:%%%:(e)gkun                   EncliticOrEnd;
-! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
-[N][Via][3SgPoss][SgPosd]:%:(ng)akun        EncliticOrEnd; [N][Via][3SgPoss][PlPosd]:%:(ng)ikun      EncliticOrEnd; [N][Via][3SgPoss][DuPosd]:%%%:(e)gkenkun         EncliticOrEnd; ! 3Sg possessor |
-[N][Via][3PlPoss][SgPosd]:%:(ng)atgun       EncliticOrEnd; [N][Via][3PlPoss][PlPosd]:%:(ng)itgun     EncliticOrEnd; [N][Via][3PlPoss][DuPosd]:%%%:(e)gketgun         EncliticOrEnd; ! 3Pl possessor |
-[N][Via][3DuPoss][SgPosd]:%:(ng)agnegun     EncliticOrEnd; [N][Via][3DuPoss][PlPosd]:-kegnegun       EncliticOrEnd; [N][Via][3DuPoss][DuPosd]:%%%:(e)gkegnegun       EncliticOrEnd; ! 3Du possessor |
-! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
-[N][Via][1SgPoss][SgPosd]:-mkun             EncliticOrEnd; [N][Via][1SgPoss][PlPosd]:-mkun           EncliticOrEnd; [N][Via][1SgPoss][DuPosd]:%%%:(e)gemkun          EncliticOrEnd; ! 1Sg possessor |
-[N][Via][1PlPoss][SgPosd]:-mteggun          EncliticOrEnd; [N][Via][1PlPoss][PlPosd]:-mteggun        EncliticOrEnd; [N][Via][1PlPoss][DuPosd]:%%%:(e)gemteggun       EncliticOrEnd; ! 1Pl possessor |
-[N][Via][1DuPoss][SgPosd]:-megnegun         EncliticOrEnd; [N][Via][1DuPoss][PlPosd]:-megnegun       EncliticOrEnd; [N][Via][1DuPoss][DuPosd]:%%%:(e)gmegnegun       EncliticOrEnd; ! 1Du possessor |
-! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
-[N][Via][2SgPoss][SgPosd]:-vkun             EncliticOrEnd; [N][Via][2SgPoss][PlPosd]:-vkun           EncliticOrEnd; [N][Via][2SgPoss][DuPosd]:%%%:(e)gpegun          EncliticOrEnd; ! 2Sg possessor |
-[N][Via][2SgPoss][SgPosd]:+pegun            EncliticOrEnd; [N][Via][2SgPoss][PlPosd]:+pegun          EncliticOrEnd;
-[N][Via][2PlPoss][SgPosd]:-vcetgun          EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:-vcetgun        EncliticOrEnd; [N][Via][2PlPoss][DuPosd]:%%%:(e)gpecetgun       EncliticOrEnd; ! 2Pl possessor |
-[N][Via][2PlPoss][SgPosd]:+pecetgun         EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:+pecetgun       EncliticOrEnd;
-[N][Via][2PlPoss][SgPosd]:-vciuggun         EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:-vciuggun       EncliticOrEnd; [N][Via][2PlPoss][DuPosd]:%%%:(e)gpeciuggun      EncliticOrEnd; ! 2Pl possessor |
-[N][Via][2PlPoss][SgPosd]:+peciuggun        EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:+peciuggun      EncliticOrEnd;
-[N][Via][2DuPoss][SgPosd]:-vtegnegun        EncliticOrEnd; [N][Via][2DuPoss][PlPosd]:-vtegnegun      EncliticOrEnd; [N][Via][2DuPoss][DuPosd]:%%%:(e)gpetegnegun     EncliticOrEnd; ! 2Du possessor |
-[N][Via][2DuPoss][SgPosd]:+petegnegun       EncliticOrEnd; [N][Via][2DuPoss][PlPosd]:+petegnegun     EncliticOrEnd;
-! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
-[N][Via][4SgPoss][SgPosd]:-mikun            EncliticOrEnd; [N][Via][4SgPoss][PlPosd]:-mikun          EncliticOrEnd; [N][Via][4SgPoss][DuPosd]:%%%:(e)gmikun          EncliticOrEnd; ! 4Sg possessor |
-[N][Via][4PlPoss][SgPosd]:-megteggun        EncliticOrEnd; [N][Via][4PlPoss][PlPosd]:-megteggun      EncliticOrEnd; [N][Via][4PlPoss][DuPosd]:%%%:(e)gmegteggun      EncliticOrEnd; ! 4Pl possessor |
-[N][Via][4DuPoss][SgPosd]:-megnegun         EncliticOrEnd; [N][Via][4DuPoss][PlPosd]:-megnegun       EncliticOrEnd; [N][Via][4DuPoss][DuPosd]:%%%:(e)gmegnegun       EncliticOrEnd; ! 4Du possessor |
-! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
-
-
-! ------------------------------------------------------|
-!             Equalis Case Endings (like N)             |
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                  singular possessed                   |                     plural possessed                |                          dual possessed                      |
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Equ][Unpd][Sg]:%%tun                   EncliticOrEnd; [N][Equ][Unpd][Pl]:%%cetun             EncliticOrEnd; [N][Equ][Unpd][Du]:%%%:(e)gtun                  EncliticOrEnd; ! unpossessed   |
-! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Equ][3SgPoss][SgPosd]:%:(ng)atun       EncliticOrEnd; [N][Equ][3SgPoss][PlPosd]:%:(ng)itun   EncliticOrEnd; [N][Equ][3SgPoss][DuPosd]:%%%:(e)gketun         EncliticOrEnd; ! 3Sg possessor |
-[N][Equ][3PlPoss][SgPosd]:%:(ng)acetun     EncliticOrEnd; [N][Equ][3PlPoss][PlPosd]:%:(ng)icetun EncliticOrEnd; [N][Equ][3PlPoss][DuPosd]:%%%:(e)gkecetun       EncliticOrEnd; ! 3Pl possessor |
-[N][Equ][3DuPoss][SgPosd]:%:(ng)agtun      EncliticOrEnd; [N][Equ][3DuPoss][PlPosd]:-kegtun      EncliticOrEnd; [N][Equ][3DuPoss][DuPosd]:%%%:(e)gkegtun        EncliticOrEnd; ! 3Du possessor |
-! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Equ][1SgPoss][SgPosd]:-mtun            EncliticOrEnd; [N][Equ][1SgPoss][PlPosd]:-mtun        EncliticOrEnd; [N][Equ][1SgPoss][DuPosd]:%%%:(e)gemtun         EncliticOrEnd; ! 1Sg possessor |
-[N][Equ][1PlPoss][SgPosd]:-mcetun          EncliticOrEnd; [N][Equ][1PlPoss][PlPosd]:-mcetun      EncliticOrEnd; [N][Equ][1PlPoss][DuPosd]:%%%:(e)gemcetun       EncliticOrEnd; ! 1Pl possessor |
-[N][Equ][1DuPoss][SgPosd]:-megtun          EncliticOrEnd; [N][Equ][1DuPoss][PlPosd]:-megtun      EncliticOrEnd; [N][Equ][1DuPoss][DuPosd]:%%%:(e)gmegtun        EncliticOrEnd; ! 1Du possessor |
-! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Equ][2SgPoss][SgPosd]:-vtun            EncliticOrEnd; [N][Equ][2SgPoss][PlPosd]:-vtun        EncliticOrEnd; [N][Equ][2SgPoss][DuPosd]:%%%:(e)gpetun         EncliticOrEnd; ! 2Sg possessor |
-[N][Equ][2SgPoss][SgPosd]:+petun           EncliticOrEnd; [N][Equ][2SgPoss][PlPosd]:+petun       EncliticOrEnd;
-[N][Equ][2PlPoss][SgPosd]:-vcetun          EncliticOrEnd; [N][Equ][2PlPoss][PlPosd]:-vcetun      EncliticOrEnd; [N][Equ][2PlPoss][DuPosd]:%%%:(e)gpecetun       EncliticOrEnd; ! 2Pl possessor |
-[N][Equ][2PlPoss][SgPosd]:+pecetun         EncliticOrEnd; [N][Equ][2PlPoss][PlPosd]:+pecetun     EncliticOrEnd;
-[N][Equ][2DuPoss][SgPosd]:-vtegtun         EncliticOrEnd; [N][Equ][2DuPoss][PlPosd]:-vtegtun     EncliticOrEnd; [N][Equ][2DuPoss][DuPosd]:%%%:(e)gpetegtun      EncliticOrEnd; ! 2Du possessor |
-[N][Equ][2DuPoss][SgPosd]:+petegtun        EncliticOrEnd; [N][Equ][2DuPoss][PlPosd]:+petegtun    EncliticOrEnd;
-! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Equ][4SgPoss][SgPosd]:-mitun           EncliticOrEnd; [N][Equ][4SgPoss][PlPosd]:-mitun       EncliticOrEnd; [N][Equ][4SgPoss][DuPosd]:%%%:(e)gmitun         EncliticOrEnd; ! 4Sg possessor |
-[N][Equ][4PlPoss][SgPosd]:-megcetun        EncliticOrEnd; [N][Equ][4PlPoss][PlPosd]:-megcetun    EncliticOrEnd; [N][Equ][4PlPoss][DuPosd]:%%%:(e)gmegcetun      EncliticOrEnd; ! 4Pl possessor |
-[N][Equ][4DuPoss][SgPosd]:-megtun          EncliticOrEnd; [N][Equ][4DuPoss][PlPosd]:-megtun      EncliticOrEnd; [N][Equ][4DuPoss][DuPosd]:%%%:(e)gmegtun        EncliticOrEnd; ! 4Du possessor |
-! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
-
-
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -13439,6 +12962,238 @@ yuvrir                 VerbPostbase; ! to examine
 yuvyiite               VerbPostbase; ! to be unsmiling; to be unfriendly
 
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!     Derivational Morphemes Applied To Nouns / Derived Bases     !!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NounPostbase
+NounInflection;
+VerbEte;
+
+-–ar[N→N]:–ar                                 NounPostbase; ! (usually does not alter meaning of noun base)
+-–ar(ar*)[N→N]:–ar(ar*)                       NounPostbase; ! little piece of N
+-–cengar*[N→N]:–cengar*                       NounPostbase; ! one with a small N
+-–ciller[N→N]:–ciller                         NounPostbase; ! worthless N; dilapidated N
+-@–ckegg[N→N]:@–ckegg                         NounPostbase; ! to be very V, to have good N
+-–cuar(ar*)[N→N]:–cuar(ar*)                   NounPostbase; ! small N; tiny N; little N
+-–cug[N→N]:–cug                               NounPostbase; ! unpleasing N; ugly old N; bad result of V-ing
+-–cungar[N→N]:–cungar                         NounPostbase; ! cute little N; little N (NSU meaning)
+-%:(ng)inar*[N→N]:%:(ng)inar*                 NounPostbase; ! merely N (nothing more)
+-–irite[N→N]:–irite                           NounPostbase; ! forms names of weekdays from certain noun bases
+-%:(ng)i%:rute[N→N]:%:(ng)i%:rute             NounPostbase; ! late (deceased) N; something that causes one to lose his N
+-–kainer[N→N]:–kainer                         NounPostbase; ! a little bit of N; small amount of N
+-+kar[N→N]:+kar                               NounPostbase; ! raw material for N; future N; unrealized N
+-@kar(ar*)[N→N]:@kar(ar*)                     NounPostbase; ! small N; little N
+-–kcag[N→N]:–kcag                             NounPostbase; ! something that looks like N
+-–kcuar(ar*)[N→N]:–kcuar(ar*)                 NounPostbase; ! small N; little N
+-–kegtaar(ar*)[N→N]:–kegtaar(ar*)             NounPostbase; ! good N; nice N; new N
+-–kellriig[N→N]:–kellriig                     NounPostbase; ! the pair or group whereof one member has the other as his N
+-–kellriit[N→N]:–kellriit                     NounPostbase; ! the pair or group whereof one member has the other as his N
+-@–ksagar[N→N]:@–ksagar                       NounPostbase; ! very ugly N
+-@ksuar(ar*)[N→N]:@ksuar(ar*)                 NounPostbase; ! small N
+-+kuar[N→N]:+kuar                             NounPostbase; ! leftover N
+-–kucir[N→N]:–kucir                           NounPostbase; ! one of the same kind as N
+-–kuiner(ar*)[N→N]:–kuiner(ar*)               NounPostbase; ! small amount of N
+-–kuinr(ar*)[N→N]:–kuinr(ar*)                 NounPostbase; ! small amount of N
+-–kuiner[N→N]:–kuiner                         NounPostbase; ! small amount of N
+-–kutar[N→N]:–kutar                           NounPostbase; ! thing to be used as N would be used; small N
+-–kute[N→N]:–kute                             NounPostbase; ! thing to be used as N would be used; small N
+-–kuyug[N→N]:–kuyug                           NounPostbase; ! small bit of N; poor N
+-–kuyugar[N→N]:–kuyugar                       NounPostbase; ! small bit of N; poor N
+-–leg[N→N]:–leg                               NounPostbase; ! one with N or Ns, one having N
+-–lgute[N→N]:–lgute                           NounPostbase; ! one who has the same N as possessor; sharer of N
+-––liar[N→N]:––liar                           NounPostbase; ! a made N; N made by possessor
+-––linrar*[N→N]:––linrar*                     NounPostbase; ! product of N; evidence or trace of N
+-––linr(ar*)[N→N]:––linr(ar*)                 NounPostbase; ! (NUN form) product of N; evidence or trace of N
+-–lkug[N→N]:–lkug                             NounPostbase; ! no-good, darned N
+-–llar*[N→N]:–llar*                           NounPostbase; ! thing of N (often with reference to the past)
+-–ller[N→N]:–ller                             NounPostbase; ! former N; one that V-ed or was V-ed; act or state of V-ing
+-–ller(ar*)[N→N]:–ller(ar*)                   NounPostbase; ! shabby, old N
+-–llruar(ar*)[N→N]:–llruar(ar*)               NounPostbase; ! few N in poor condition
+-@–llug[N→N]:@–llug                           NounPostbase; ! bad N; one with bad N
+-–lqur[N→N]:–lqur                             NounPostbase; ! old broken piece of N
+-–luatar[N→N]:–luatar                         NounPostbase; ! good N
+-–lugpiar[N→N]:–lugpiar                       NounPostbase; ! original N; authentic N
+-–maa[N→N]:–maa                               NounPostbase; ! my N, ... ; my Ns, ...
+-+mig[N→N]:+mig                               NounPostbase; ! thing held in one’s N
+-+miar[N→N]:+miar                             NounPostbase; ! thing held in one’s N
+-~+miu[N→N]:~+miu                             NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
+-~+miutar*[N→N]:~+miutar*                     NounPostbase; ! one whose place is N
+-–mte[N→N]:–mte                               NounPostbase; ! our N, ... ; our Ns, ...
+-+ner[N→N]:+ner                               NounPostbase; ! area of N
+-–nerrar*[N→N]:–nerrar*                       NounPostbase; ! new N; one that has recently V-ed
+-–nerrar(ar*)[N→N]:–nerrar(ar*)               NounPostbase; ! new N; one that has recently V-ed
+-–nerar(ar*)[N→N]:–nerar(ar*)                 NounPostbase; ! (NUN form) new N; one that has recently V-ed
+-–ngirte’rrlugar*[N→N]:–ngirte’rrlugar*       NounPostbase; ! good old (but perhaps decrepit) N
+-–ngnagar[N→N]:–ngnagar                       NounPostbase; ! poor quality N; darned N
+-–ngssaar(ar*)[N→N]:–ngssaar(ar*)             NounPostbase; ! secret N
+-–nguar[N→N]:–nguar                           NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
+-–ngyaar(ar*)[N→N]:–ngyaar(ar*)               NounPostbase; ! old N (person)
+-–ngiar(ar*)[N→N]:–ngiar(ar*)                 NounPostbase; ! old N (person)
+-+nir[N→N]:+nir                               NounPostbase; ! since N; since some time in the N
+-+nir[N→N]:+nir                               NounPostbase; ! the smell of N
+-%:(e)nkut[N→N]:%:(e)nkut                     NounPostbase; ! (plural) N and family; N and companion
+-%:(e)nkug[N→N]:%:(e)nkug                     NounPostbase; ! (dual) N and family; N and companion
+-–paarrlug[N→N]:–paarrlug                     NounPostbase; ! big N
+-–pig[N→N]:–pig                               NounPostbase; ! genuine N; real N; authentic N
+-–piar[N→N]:–piar                             NounPostbase; ! genuine N; real N; authentic N
+-–pigar[N→N]:–pigar                           NounPostbase; ! genuine N; real N; authentic N
+-+(a)r[N→N]:+(a)r                             NounPostbase; ! used with English words when they are used in Yup’ik speech or writing
+-+(aa)r[N→N]:+(aa)r                           NounPostbase; ! used with English words when they are used in Yup’ik speech or writing
+-–qainar[N→N]:–qainar                         NounPostbase; ! only N; merely N
+-+qar[N→N]:+qar                               NounPostbase; ! N area of possessor; exact area denoted by N with respect to possessor
+-–qlikacaar(ar*)[N→N]:–qlikacaar(ar*)         NounPostbase; ! one that is the farthest in the area denoted by N
+-–qlir*[N→N]:–qlir*                           NounPostbase; ! the one located far in the area or space or time denoted by N
+-–qtar*[N→N]:–qtar*                           NounPostbase; ! weak, helpless, worthless N; dear N
+-–qva[N→N]:–qva                               NounPostbase; ! area far in the direction of N
+-–qvaar*[N→N]:–qvaar*                         NounPostbase; ! area far in the direction of N
+-–r’aya’ar[N→N]:–r’aya’ar                     NounPostbase; ! multitude of Ns; lots of Ns
+-–rpaa(ar*)[N→N]:–rpaa(ar*)                   NounPostbase; ! great N; oldest N (with kinship terms)
+-–rpag[N→N]:–rpag                             NounPostbase; ! large N; big N
+-–rpallr(ar*)[N→N]:–rpallr(ar*)               NounPostbase; ! very large N
+-–rpallug[N→N]:–rpallug                       NounPostbase; ! one that is primarily or mostly N
+-–rqu[N→N]:–rqu                               NounPostbase; ! N times
+-–rrar*[N→N]:–rrar*                           NounPostbase; ! just a little N; a little bit of N; a few N; and -rrar-to V a little; to just barely V
+-–rrlainar*[N→N]:–rrlainar*                   NounPostbase; ! nothing but N; all N; solely N; mostly N
+-–rrlugar*[N→N]:–rrlugar*                     NounPostbase; ! good old N; dear old N; shabby old N
+-–rrlug[N→N]:–rrlug                           NounPostbase; ! N that has departed from its natural state (often, though not always, with an undesirable connotation)
+-–rugar*[N→N]:–rugar*                         NounPostbase; ! many Ns; multitude of Ns
+-–r(ur)lur*[N→N]:–r(ur)lur*                   NounPostbase; ! poor dear N
+-–ssaarar[N→N]:–ssaarar                       NounPostbase; ! old N
+-+taleg[N→N]:+taleg                           NounPostbase; ! place having N
+-+tar[N→N]:+tar                               NounPostbase; ! thing of N; thing pertaining to N
+-+tar[N→N]:+tar                               NounPostbase; ! caught N (game animal); N caught by possessor
+-+tar[N→N]:+tar                               NounPostbase; ! N part of something
+-+tar[N→N]:+tar                               NounPostbase; ! N specifically (exact meaning uncertain); small N
+-+tna[N→N]:+tna                               NounPostbase; ! to do like N
+-+tuli[N→N]:+tuli                             NounPostbase; ! one that is well endowed with N
+-+(ng)uar[N→N]:+(ng)uar                       NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
+-%:(ng)ute[N→N]:%:(ng)ute                     NounPostbase; ! supply of N; owned N
+-%:~(ng)ute[N→N]:%:~(ng)ute                   NounPostbase; ! supply of N; owned N
+-%:(ng)uteller[N→N]:%:(ng)uteller             NounPostbase; ! empty container that held N
+-%:~(ng)uteller[N→N]:%:~(ng)uteller           NounPostbase; ! empty container that held N
+-–vaarrlug[N→N]:–vaarrlug                     NounPostbase; ! big N; huge N
+-@vag/?vag[N→N]:@vag/?vag                     NounPostbase; ! big N; large N
+-–vialug[N→N]:–vialug                         NounPostbase; ! shabby N; funny old N; worthless N
+-@~+viutar[N→N]:@~+viutar                     NounPostbase; ! container for N
+-–ya(g)ar*[N→N]:–ya(g)ar*                     NounPostbase; ! baby N; little N
+-–yagar*[N→N]:–yagar*                         NounPostbase; ! baby N; little N
+-+yag[N→N]:+yag                               NounPostbase; ! thing similar to N; thing that acts as if it were V; small N
+-–yaya(g)ar*[N→N]:–yaya(g)ar*                 NounPostbase; ! little baby N
+
+-+'(g)ar(ar)[N→V]:+'(g)ar(ar)                 VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
+-+arar(ar)[N→V]:+arar(ar)                     VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
+-%:(ng)ar(ar)te[N→V]:%:(ng)ar(ar)te           VerbPostbase; ! to hit or get hit in or on one’s N
+-–car(ar)te[N→V]:–car(ar)te                   VerbPostbase; ! to hit in or on the N, to hit right in or on the N
+-+ci[N→V]:+ci                                 VerbPostbase; ! to buy (some) N
+-–ciller(ar)te[N→V]:–ciller(ar)te             VerbPostbase; ! to unintentionally hit (it) in the N
+-+cite[N→V]:+cite                             VerbPostbase; ! to have the quality of V or N
+-+cugninarqe[N→V]:+cugninarqe                 VerbPostbase; ! (Y form) to smell or taste like N
+-+cugnilarqe[N→V]:+cugnilarqe                 VerbPostbase; ! (NUN, NSU form) to smell or taste like N
+-–cugninarqe[N→V]:–cugninarqe                 VerbPostbase; ! (K form) to smell or taste like N
+-+cugnite[N→V]:+cugnite                       VerbPostbase; ! to smell or taste like N
+-–culngu[N→V]:–culngu                         VerbPostbase; ! to be indisposed with respect to one’s N; to have trouble V-ing
+-+cur–/+ssur[N→V]:+cur–/+ssur                 VerbPostbase; ! to hunt N; to seek N; to check N (game-catching implement)
+-%:(ng)icag[N→V]:%:(ng)icag                   VerbPostbase; ! to be in need of N; to lack N
+-%:(ng)illiqe[N→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
+-–ir[N→V]:–ir                                 VerbPostbase; ! N (natural phenomenon) is occurring; to set N (game capturing device); to provide or be provided with N (but not in the sense of giving N to someone)
+-%:(ng)ir[N→V]:%:(ng)ir                       VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
+-%:(ng)ir(ar)[N→V]:%:(ng)ir(ar)               VerbPostbase; ! to have cold N
+-%:(ng)ir(ar)te[N→V]:%:(ng)ir(ar)te           VerbPostbase; ! to injure or be injured in one’s N; to abrubtly cease V-ing
+-%:(ng)i%:rute[N→V]:%:(ng)i%:rute             VerbPostbase; ! to not have N any more; to no longer be V (adjectival verbs only)
+-%:(ng)ite[N→V]:%:(ng)ite                     VerbPostbase; ! to lack N or V; to have no N or V
+-+karci[N→V]:+karci                           VerbPostbase; ! to buy something to serve as one’s N
+-–kcugi[N→V]:–kcugi                           VerbPostbase; ! to strike (it) with a projectile or implement in the N
+-–ke[N→V]:–ke                                 VerbPostbase; ! to have as one’s N
+-–kegci[N→V]:–kegci                           VerbPostbase; ! to have good N
+-–keggi[N→V]:–keggi                           VerbPostbase; ! to become good N
+-–kegte[N→V]:–kegte                           VerbPostbase; ! to be good N; to have good N
+-–kiirar[N→V]:–kiirar                         VerbPostbase; ! to be in (water, mud, tall grass, body part, etc.) up to one’s N
+-–kiir(ar)[N→V]:–kiir(ar)                     VerbPostbase; ! to be in (water, mud, tall grass, body part, etc.) up to one’s N
+-–kaar[N→V]:–kaar                             VerbPostbase; ! to be in (water, mud, tall grass, body part, etc.) up to one’s N
+-+killi[N→V]:+killi                           VerbPostbase; ! to have N to a decreasing degree
+-+kite[N→V]:+kite                             VerbPostbase; ! to give N to object to use or possess; to supply object with N
+-+kiur[N→V]:+kiur                             VerbPostbase; ! to prepare something to be N
+-–kliute[N→V]:–kliute                         VerbPostbase; ! to have obtained or claimed as one’s N
+-–knaggair[N→V]:–knaggair                     VerbPostbase; ! to take away all N from (it)
+-–knaggairute[N→V]:–knaggairute               VerbPostbase; ! to have come to totally lack N
+-–knaggaite[N→V]:–knaggaite                   VerbPostbase; ! to totally lack N
+-–ksagute[N→V]:–ksagute                       VerbPostbase; ! to acquire or claim (it) as one’s N
+-%%kuir[N→V]:%%kuir                           VerbPostbase; ! to go along N; to go following N
+-–laar(ar)[N→V]:–laar(ar)                     VerbPostbase; ! to get a new N
+-–lgir[N→V]:–lgir                             VerbPostbase; ! to take along N
+-––li[N→V]:––li                               VerbPostbase; ! to make N; to make N for (him); to make N out of (it)
+-––linqigte[N→V]:––linqigte                   VerbPostbase; ! to change one’s N; to get another N
+-––liqe[N→V]:––liqe                           VerbPostbase; ! to catch a lot of N
+-––liqe[N→V]:––liqe                           VerbPostbase; ! to be afflicted in one’s N or with respect to N
+-––lir[N→V]:––lir                             VerbPostbase; ! to have lots of N; to provide with or be well provided with N; to add N to (it)
+-––liur[N→V]:––liur                           VerbPostbase; ! to be occupied with N; to work or play with N; to cook N (additional NUN meaning)
+-––liyar[N→V]:––liyar                         VerbPostbase; ! to go to participate in N or V
+-–liar[N→V]:–liar                             VerbPostbase; ! to go to participate in N or V
+-–lkia[N→V]:–lkia                             VerbPostbase; ! to give evidence or indication of N or V
+-–lkite[N→V]:–lkite                           VerbPostbase; ! to make a noise or give other evidence of N
+-+lliqe[N→V]:+lliqe                           VerbPostbase; ! to have N of poor quality
+-–llug[N→V]:–llug                             VerbPostbase; ! to have bad N
+-–llugte[N→V]:–llugte                         VerbPostbase; ! to have bad N
+-–luatar[N→V]:–luatar                         VerbPostbase; ! to V well; to V with satisfaction
+-+mig[N→V]:+mig                               VerbPostbase; ! to put in one’s N
+-+miu[N→V]:+miu                               VerbPostbase; ! to be at N; to stay at N
+-+miuyaar[N→V]:+miuyaar                       VerbPostbase; ! to speak the language or dialect of the residents of N
+-@~+ngari[N→V]:@~+ngari                       VerbPostbase; ! to seem to be becoming V; to begin to be like N
+-+ngate[N→V]:+ngate                           VerbPostbase; ! to seem like N
+-–nge[N→V]:–nge                               VerbPostbase; ! to acquire N; to begin to V
+-–ngqerr[N→V]:–ngqerr                         VerbPostbase; ! to have N
+-@~+nialke[N→V]:@~+nialke                     VerbPostbase; ! to consider object to be unpleasant to V or to be an unpleasant N
+-@~+niate[N→V]:@~+niate                       VerbPostbase; ! to be unpleasant to V; to be an unpleasant N
+-@~+niilke[N→V]:@~+niilke                     VerbPostbase; ! to consider object to be unpleasant to V or to be an unpleasant N
+-@~+niite[N→V]:@~+niite                       VerbPostbase; ! to be unpleasant to V; to be an unpleasant N
+-@~+nike[N→V]:@~+nike                         VerbPostbase; ! to consider object to be pleasant to V or to be a pleasant N
+-~+ninarqe[N→V]:~+ninarqe                     VerbPostbase; ! to smell or taste like N
+-~+nilarqe[N→V]:~+nilarqe                     VerbPostbase; ! (NUN, NSU form) to smell or taste like N
+-@~+nirqe[N→V]:@~+nirqe                       VerbPostbase; ! to be pleasant to V; to be a pleasant N
+-+nite[N→V]:+nite                             VerbPostbase; ! to smell or taste like N
+-–nqar[N→V]:–nqar                             VerbPostbase; ! to unintentionally hit (it) in the N with a projectile
+-–qliarte[N→V]:–qliarte                       VerbPostbase; ! to reach the N of; to extend to the N of
+-–qsig[N→V]:–qsig                             VerbPostbase; ! to be far in the direction denoted by N
+-–qsigi[N→V]:–qsigi                           VerbPostbase; ! to get farther into the area denoted by N
+-–qu[N→V]:–qu                                 VerbPostbase; ! to hunt with N or at N
+-+(a)r[N→V]:+(a)r                             VerbPostbase; ! to say or “go”. . . (word or sound)
+-–rpagninarqe[N→V]:–rpagninarqe               VerbPostbase; ! to smell strongly of N
+-–rpagnite[N→V]:–rpagnite                     VerbPostbase; ! to smell or taste strongly of N
+-–rpau[N→V]:–rpau                             VerbPostbase; ! to be a large N; to have a large N
+-–rpi[N→V]:–rpi                               VerbPostbase; ! to have a large N
+-–rrlug[N→V]:–rrlug                           VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in one’s N or in respect to N; to have bad N
+-–rrlugte[N→V]:–rrlugte                       VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in one’s N or in respect to N; to have bad N
+-–(u)saar[N→V]:–(u)saar                       VerbPostbase; ! to speak the language of N
+-–ssaag[N→V]:–ssaag                           VerbPostbase; ! to fetch some N from an easily accessible place
+-–ssaar[N→V]:–ssaar                           VerbPostbase; ! to hunt N
+-+ssur[N→V]:+ssur                             VerbPostbase; ! to hunt N; to seek N; to check N (game-capturing implement)
+-+tairute[N→V]:+tairute                       VerbPostbase; ! (for there) to be no more N
+-+taite[N→V]:+taite                           VerbPostbase; ! (for there) to be no N
+-+taknaggaite[N→V]:+taknaggaite               VerbPostbase; ! for there to be absolutely no N
+-+tange[N→V]:+tange                           VerbPostbase; ! (for there) to be N now
+-+tangqerr[N→V]:+tangqerr                     VerbPostbase; ! (for there) to be N
+-+tar[N→V]:+tar                               VerbPostbase; ! (for there) to be N
+-+te[N→V]:+te                                 VerbPostbase; ! to catch N (game animal); to go to N (place); to obtain N; to spend the N (time); for N (time) to pass
+-+te[N→V]:+te                                 VerbPostbase; ! to plan to act at a given time
+-+te[N→V]:+te                                 VerbPostbase; ! to make the N noise
+-+te[N→V]:+te                                 VerbPostbase; ! to apply N (liquid or the like) to (it)
+-–tmurte[N→V]:–tmurte                         VerbPostbase; ! to go N-ward; to go in the area described by V
+-–trute[N→V]:–trute                           VerbPostbase; ! to miss by passing through the N area, or the N area of it
+-+tu[N→V]:+tu                                 VerbPostbase; ! to be well endowed with N, to have N to a large extent
+-+tur[N→V]:+tur                               VerbPostbase; ! to eat N (food); to wear N (clothing); to use N (limited usage with this meaning)
+-+(r)tuuma(r)[N→V]:+(r)tuuma(r)               VerbPostbase; ! to act together with one’s N or Ns
+-%:~(ng)u[N→V]:%:~(ng)u                       VerbPostbase; ! to be N
+-%:(ng)ucir[N→V]:%:(ng)ucir                   VerbPostbase; ! to have lots of N
+-%:~(ng)urte[N→V]:%:~(ng)urte                 VerbPostbase; ! to become N; to expose the N of (it)
+-+yag[N→V]:+yag                               VerbPostbase; ! (for there) to be much N, many N
+-+(r)yug[N→V]:+(r)yug                         VerbPostbase; ! to want N; to want to do the appropriate thing with N
+
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -13811,6 +13566,251 @@ VerbInflection;
 -@~–yuli[V→N]:@~–yuli                         NounPostbase; ! one who is good at V-ing: a proficient V-er
 -@~+yunqeggli[V→N]:@~+yunqeggli               NounPostbase; ! one who loves to V; an avid V-er
 
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!     Inflectional Morphemes Applied To Nouns / Derived Bases     !!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NounInflection
+! -------------------------------------------------|
+!              Absolutive Case Endings             |
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                singular possessed                |                     plural possessed                 |                       dual possessed                   |
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Abs][Unpd][Sg]:0                  EncliticOrEnd; [N][Abs][Unpd][Pl]:%%%:(e)t             EncliticOrEnd; [N][Abs][Unpd][Du]:%%%:(e)k               EncliticOrEnd; ! unpossessed   |
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+[N][Abs][3SgPoss][SgPosd]:%:(ng)a     EncliticOrEnd; [N][Abs][3SgPoss][PlPosd]:%:(ng)i       EncliticOrEnd; [N][Abs][3SgPoss][DuPosd]:%%%:(e)k        EncliticOrEnd; ! 3SG possessor |
+[N][Abs][3PlPoss][SgPosd]:%:(ng)at    EncliticOrEnd; [N][Abs][3PlPoss][PlPosd]:%:(ng)it      EncliticOrEnd; [N][Abs][3PlPoss][DuPosd]:%%%:(e)gket     EncliticOrEnd; ! 3PL possessor |
+[N][Abs][3DuPoss][SgPosd]:%:(ng)ak    EncliticOrEnd; [N][Abs][3DuPoss][PlPosd]:-kek          EncliticOrEnd; [N][Abs][3DuPoss][DuPosd]:%%%:(e)gkek     EncliticOrEnd; ! 3Du possessor |
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+[N][Abs][1SgPoss][SgPosd]:-ka         EncliticOrEnd; [N][Abs][1SgPoss][PlPosd]:%%%:(e)nka    EncliticOrEnd; [N][Abs][1SgPoss][DuPosd]:%%%:(e)gka      EncliticOrEnd; ! 1SG possessor |
+[N][Abs][1PlPoss][SgPosd]:-put        EncliticOrEnd; [N][Abs][1PlPoss][PlPosd]:-put          EncliticOrEnd; [N][Abs][1PlPoss][DuPosd]:%%%:(e)gput     EncliticOrEnd; ! 1PL possessor |
+[N][Abs][1PlPoss][SgPosd]:.vut        EncliticOrEnd; [N][Abs][1PlPoss][SgPosd]:+put          EncliticOrEnd;
+[N][Abs][1DuPoss][SgPosd]:-puk        EncliticOrEnd; [N][Abs][1DuPoss][PlPosd]:-puk          EncliticOrEnd; [N][Abs][1DuPoss][DuPosd]:%%%:(e)gpuk     EncliticOrEnd; ! 1Du possessor |
+[N][Abs][1DuPoss][SgPosd]:.vuk        EncliticOrEnd; [N][Abs][1DuPoss][SgPosd]:+puk          EncliticOrEnd;
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+[N][Abs][2SgPoss][SgPosd]:%%%:(e)n    EncliticOrEnd; [N][Abs][2SgPoss][PlPosd]:-ten          EncliticOrEnd; [N][Abs][2SgPoss][DuPosd]:%%%:(e)gken     EncliticOrEnd; ! 2SG possessor |
+[N][Abs][2PlPoss][SgPosd]:-ci         EncliticOrEnd; [N][Abs][2PlPoss][PlPosd]:-ci           EncliticOrEnd; [N][Abs][2PlPoss][DuPosd]:%%%:(e)gci      EncliticOrEnd; ! 2Pl possessor |
+[N][Abs][2PlPoss][SgPosd]:.si         EncliticOrEnd; [N][Abs][2PlPoss][SgPosd]:+ci           EncliticOrEnd;
+[N][Abs][2DuPoss][SgPosd]:-tek        EncliticOrEnd; [N][Abs][2DuPoss][PlPosd]:-tek          EncliticOrEnd; [N][Abs][2DuPoss][DuPosd]:%%%:(e)gtek     EncliticOrEnd; ! 2Du possessor |
+[N][Abs][2DuPoss][SgPosd]:.sek        EncliticOrEnd; [N][Abs][2DuPoss][SgPosd]:+tek          EncliticOrEnd;
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+[N][Abs][4SgPoss][SgPosd]:-ni         EncliticOrEnd; [N][Abs][4SgPoss][PlPosd]:-ni           EncliticOrEnd; [N][Abs][4SgPoss][DuPosd]:%%%:(e)gni      EncliticOrEnd; ! 4SG possessor |
+[N][Abs][4PlPoss][SgPosd]:-teng       EncliticOrEnd; [N][Abs][4PlPoss][PlPosd]:-teng         EncliticOrEnd; [N][Abs][4PlPoss][DuPosd]:%%%:(e)gteng    EncliticOrEnd; ! 4Pl possessor |
+[N][Abs][4PlPoss][SgPosd]:.seng       EncliticOrEnd; [N][Abs][4PlPoss][SgPosd]:+teng         EncliticOrEnd;
+[N][Abs][4DuPoss][SgPosd]:-tek        EncliticOrEnd; [N][Abs][4DuPoss][PlPosd]:-tek          EncliticOrEnd; [N][Abs][4DuPoss][DuPosd]:%%%:(e)gtek     EncliticOrEnd; ! 4Du possessor |
+[N][Abs][4DuPoss][SgPosd]:.sek        EncliticOrEnd; [N][Abs][4DuPoss][SgPosd]:+tek          EncliticOrEnd;
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+
+
+! -------------------------------------------------|
+!              Relative Case Endings               | 
+! ----------------------------------------------------------------------------------------------------------------------------------------------------|
+!               singular possessed                 |                    plural possessed                |               dual possessed                |    
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Rel][Unpd][Sg]:%%%:(e)m           EncliticOrEnd;[N][Rel][Unpd][Pl]:%%%:(e)t            EncliticOrEnd; [N][Rel][Unpd][Du]:%%%:(e)k                 EncliticOrEnd; ! unpossessed   |
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+[N][Rel][3SgPoss][SgPosd]:%:(ng)an    EncliticOrEnd; [N][Rel][3SgPoss][PlPosd]:%:(ng)in    EncliticOrEnd; [N][Rel][3SgPoss][DuPosd]:%%%:(e)gken       EncliticOrEnd; ! 3Sg possessor |
+[N][Rel][3PlPoss][SgPosd]:%:(ng)ata   EncliticOrEnd; [N][Rel][3PlPoss][PlPosd]:%:(ng)ita   EncliticOrEnd; [N][Rel][3PlPoss][DuPosd]:%%%:(e)gketa      EncliticOrEnd; ! 3Pl possessor |
+[N][Rel][3DuPoss][SgPosd]:%:(ng)agnek EncliticOrEnd; [N][Rel][3DuPoss][PlPosd]:-kenka      EncliticOrEnd; [N][Rel][3DuPoss][DuPosd]:%%%:(e)gkenka     EncliticOrEnd; ! 3Du possessor |
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+[N][Rel][1SgPoss][SgPosd]:-ma         EncliticOrEnd; [N][Rel][1SgPoss][PlPosd]:-ma         EncliticOrEnd; [N][Rel][1SgPoss][DuPosd]:%%%:(e)gma        EncliticOrEnd; ! 1Sg possessor |
+[N][Rel][1PlPoss][SgPosd]:-mta        EncliticOrEnd; [N][Rel][1PlPoss][PlPosd]:-mta        EncliticOrEnd; [N][Rel][1PlPoss][DuPosd]:%%%:(e)gemta      EncliticOrEnd; ! 1Pl possessor |
+[N][Rel][1DuPoss][SgPosd]:-megnuk     EncliticOrEnd; [N][Rel][1DuPoss][PlPosd]:-megnuk     EncliticOrEnd; [N][Rel][1DuPoss][DuPosd]:%%%:(e)gmegnuk    EncliticOrEnd; ! 1Du possessor |
+[N][Rel][1DuPoss][SgPosd]:-mnuk       EncliticOrEnd; [N][Rel][1DuPoss][PlPosd]:-mnuk       EncliticOrEnd;
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+[N][Rel][2SgPoss][SgPosd]:-vet        EncliticOrEnd; [N][Rel][2SgPoss][PlPosd]:-vet        EncliticOrEnd; [N][Rel][2SgPoss][DuPosd]:%%%:(e)gpet       EncliticOrEnd; ! 2Sg possessor |
+[N][Rel][2SgPoss][SgPosd]:+pet        EncliticOrEnd; [N][Rel][2SgPoss][PlPosd]:+pet        EncliticOrEnd;
+[N][Rel][2PlPoss][SgPosd]:-vci        EncliticOrEnd; [N][Rel][2PlPoss][PlPosd]:-vci        EncliticOrEnd; [N][Rel][2PlPoss][DuPosd]:%%%:(e)gpeci      EncliticOrEnd; ! 2Pl possessor |
+[N][Rel][2PlPoss][SgPosd]:+peci       EncliticOrEnd; [N][Rel][2PlPoss][PlPosd]:+peci       EncliticOrEnd;
+[N][Rel][2DuPoss][SgPosd]:-vtek       EncliticOrEnd; [N][Rel][2DuPoss][PlPosd]:-vtek       EncliticOrEnd; [N][Rel][2DuPoss][DuPosd]:%%%:(e)gpetek     EncliticOrEnd; ! 2Du possessor |
+[N][Rel][2DuPoss][SgPosd]:+petek      EncliticOrEnd; [N][Rel][2DuPoss][PlPosd]:+petek      EncliticOrEnd;
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+[N][Rel][4SgPoss][SgPosd]:-mi         EncliticOrEnd; [N][Rel][4SgPoss][PlPosd]:-mi         EncliticOrEnd; [N][Rel][4SgPoss][DuPosd]:%%%:(e)gmi        EncliticOrEnd; ! 4Sg possessor |
+[N][Rel][4PlPoss][SgPosd]:-meng       EncliticOrEnd; [N][Rel][4PlPoss][PlPosd]:-meng       EncliticOrEnd; [N][Rel][4PlPoss][DuPosd]:%%%:(e)gmeng      EncliticOrEnd; ! 4Pl possessor |
+[N][Rel][4PlPoss][SgPosd]:-megta      EncliticOrEnd; [N][Rel][4PlPoss][PlPosd]:-megta      EncliticOrEnd;
+[N][Rel][4PlPoss][SgPosd]:-megteng    EncliticOrEnd; [N][Rel][4PlPoss][PlPosd]:-megteng    EncliticOrEnd;
+[N][Rel][4DuPoss][SgPosd]:-mek        EncliticOrEnd; [N][Rel][4DuPoss][PlPosd]:-mek        EncliticOrEnd; [N][Rel][4DuPoss][DuPosd]:%%%:(e)gmek       EncliticOrEnd; ! 4Du possessor |
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+
+
+! -----------------------------------------------------------|
+!                Ablative-Modalis Case Endings               |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                      singular possessed                    |                        plural possessed                    |                            dual possessed                         |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][Unpd][Sg]:%%~mek                   EncliticOrEnd; [N][Abl_Mod][Unpd][Pl]:%%~nek                 EncliticOrEnd; [N][Abl_Mod][Unpd][Du]:%%%:(e)gnek                   EncliticOrEnd; ! unpossessed   |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][3SgPoss][SgPosd]:%:(ng)anek        EncliticOrEnd; [N][Abl_Mod][3SgPoss][PlPosd]:%:(ng)inek      EncliticOrEnd; [N][Abl_Mod][3SgPoss][DuPosd]:%%%:(e)gkenek          EncliticOrEnd; ! 3Sg possessor |
+[N][Abl_Mod][3PlPoss][SgPosd]:%:(ng)atnek       EncliticOrEnd; [N][Abl_Mod][3PlPoss][PlPosd]:%:(ng)itnek     EncliticOrEnd; [N][Abl_Mod][3PlPoss][DuPosd]:%%%:(e)gketnek         EncliticOrEnd; ! 3Pl possessor |
+[N][Abl_Mod][3DuPoss][SgPosd]:%:(ng)agnek       EncliticOrEnd; [N][Abl_Mod][3DuPoss][PlPosd]:-kegnek         EncliticOrEnd; [N][Abl_Mod][3DuPoss][DuPosd]:%%%:(e)gkegni          EncliticOrEnd; ! 3Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][1SgPoss][SgPosd]:-mnek             EncliticOrEnd; [N][Abl_Mod][1SgPoss][PlPosd]:-mnek           EncliticOrEnd; [N][Abl_Mod][1SgPoss][DuPosd]:%%%:(e)gemnek          EncliticOrEnd; ! 1Sg possessor |
+[N][Abl_Mod][1PlPoss][SgPosd]:-mteńek           EncliticOrEnd; [N][Abl_Mod][1PlPoss][PlPosd]:-mteńek         EncliticOrEnd; [N][Abl_Mod][1PlPoss][DuPosd]:%%%:(e)gemteńek        EncliticOrEnd; ! 1Pl possessor |
+[N][Abl_Mod][1DuPoss][SgPosd]:-megnek           EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:-megnek         EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:%%%:(e)gmegnek         EncliticOrEnd; ! 1Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][2SgPoss][SgPosd]:-vnek             EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:-vnek           EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:%%%:(e)gpenek          EncliticOrEnd; ! 2Sg possessor |
+[N][Abl_Mod][2SgPoss][SgPosd]:+penek            EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:+penek          EncliticOrEnd;  
+[N][Abl_Mod][2PlPoss][SgPosd]:-vceńek           EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:-vceńek         EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:%%%:(e)gpeceńek        EncliticOrEnd; ! 2Pl possessor |
+[N][Abl_Mod][2PlPoss][SgPosd]:+peceńek          EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:+peceńek        EncliticOrEnd;  
+[N][Abl_Mod][2DuPoss][SgPosd]:-vtegnek          EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:-vtegnek        EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:%%%:(e)gpetegnek       EncliticOrEnd; ! 2Du possessor |
+[N][Abl_Mod][2DuPoss][SgPosd]:+petegnek         EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:+petegnek       EncliticOrEnd;  
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][4SgPoss][SgPosd]:-minek            EncliticOrEnd; [N][Abl_Mod][4SgPoss][PlPosd]:-minek          EncliticOrEnd; [N][Abl_Mod][4SgPoss][DuPosd]:%%%:(e)gminek          EncliticOrEnd; ! 4Sg possessor |
+[N][Abl_Mod][4PlPoss][SgPosd]:-meggnek          EncliticOrEnd; [N][Abl_Mod][4PlPoss][PlPosd]:-meggnek        EncliticOrEnd; [N][Abl_Mod][4PlPoss][DuPosd]:%%%:(e)gmeggnek        EncliticOrEnd; ! 4Pl possessor |
+[N][Abl_Mod][4DuPoss][SgPosd]:-megnek           EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:-megnek         EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:%%%:(e)gmegnek         EncliticOrEnd; ! 4Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+
+! -----------------------------------------------------------|
+!                Ablative-Modalis Case Endings (in HBC)      |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                      singular possessed                    |                        plural possessed                    |                            dual possessed                         |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][Unpd][Sg]:%%~meng                  EncliticOrEnd; [N][Abl_Mod][Unpd][Pl]:%%~neng                EncliticOrEnd; [N][Abl_Mod][Unpd][Du]:%%%:(e)gneng                  EncliticOrEnd; ! unpossessed   |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][3SgPoss][SgPosd]:%:(ng)aneng       EncliticOrEnd; [N][Abl_Mod][3SgPoss][PlPosd]:%:(ng)ineng     EncliticOrEnd; [N][Abl_Mod][3SgPoss][DuPosd]:%%%:(e)gkeneng         EncliticOrEnd; ! 3Sg possessor |
+[N][Abl_Mod][3PlPoss][SgPosd]:%:(ng)atneng      EncliticOrEnd; [N][Abl_Mod][3PlPoss][PlPosd]:%:(ng)itneng    EncliticOrEnd; [N][Abl_Mod][3PlPoss][DuPosd]:%%%:(e)gketneng        EncliticOrEnd; ! 3Pl possessor |
+[N][Abl_Mod][3DuPoss][SgPosd]:%:(ng)agneng      EncliticOrEnd; [N][Abl_Mod][3DuPoss][PlPosd]:-kegneng        EncliticOrEnd; [N][Abl_Mod][3DuPoss][DuPosd]:%%%:(e)gkegneng        EncliticOrEnd; ! 3Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][1SgPoss][SgPosd]:-mneng            EncliticOrEnd; [N][Abl_Mod][1SgPoss][PlPosd]:-mneng          EncliticOrEnd; [N][Abl_Mod][1SgPoss][DuPosd]:%%%:(e)gemneng         EncliticOrEnd; ! 1Sg possessor |
+[N][Abl_Mod][1PlPoss][SgPosd]:-mteńeng          EncliticOrEnd; [N][Abl_Mod][1PlPoss][PlPosd]:-mteńeng        EncliticOrEnd; [N][Abl_Mod][1PlPoss][DuPosd]:%%%:(e)gemteńeng       EncliticOrEnd; ! 1Pl possessor |
+[N][Abl_Mod][1DuPoss][SgPosd]:-megneng          EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:-megneng        EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:%%%:(e)gmegneng        EncliticOrEnd; ! 1Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][2SgPoss][SgPosd]:-vneng            EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:-vneng          EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:%%%:(e)gpeneng         EncliticOrEnd; ! 2Sg possessor |
+[N][Abl_Mod][2SgPoss][SgPosd]:+peneng           EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:+peneng         EncliticOrEnd;  
+[N][Abl_Mod][2PlPoss][SgPosd]:-vcineng          EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:-vcineng        EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:%%%:(e)gpecineng       EncliticOrEnd; ! 2Pl possessor |
+[N][Abl_Mod][2PlPoss][SgPosd]:+pecineng         EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:+pecineng       EncliticOrEnd;   
+[N][Abl_Mod][2DuPoss][SgPosd]:-vtegneng         EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:-vtegneng       EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:%%%:(e)gpetegneng      EncliticOrEnd; ! 2Du possessor |
+[N][Abl_Mod][2DuPoss][SgPosd]:+petegneng        EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:+petegneng      EncliticOrEnd;  
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][4SgPoss][SgPosd]:-mineng           EncliticOrEnd; [N][Abl_Mod][4SgPoss][PlPosd]:-mineng         EncliticOrEnd; [N][Abl_Mod][4SgPoss][DuPosd]:%%%:(e)gmineng         EncliticOrEnd; ! 4Sg possessor |
+[N][Abl_Mod][4PlPoss][SgPosd]:-meggneng         EncliticOrEnd; [N][Abl_Mod][4PlPoss][PlPosd]:-meggneng       EncliticOrEnd; [N][Abl_Mod][4PlPoss][DuPosd]:%%%:(e)gmeggneng       EncliticOrEnd; ! 4Pl possessor |
+[N][Abl_Mod][4DuPoss][SgPosd]:-megneng          EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:-megneng        EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:%%%:(e)gmegneng        EncliticOrEnd; ! 4Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+
+
+! -----------------------------------------------------|
+!           Localis Case Endings (at N; in N)          |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                  singular possessed                  |                     plural possessed                 |                          dual possessed                     |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Loc][Unpd][Sg]:%%~mi                  EncliticOrEnd; [N][Loc][Unpd][Pl]:%%~ni                EncliticOrEnd; [N][Loc][Unpd][Du]:%%%:(e)gni                  EncliticOrEnd; ! unpossessed   |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+[N][Loc][3SgPoss][SgPosd]:%:(ng)ani       EncliticOrEnd; [N][Loc][3SgPoss][PlPosd]:%:(ng)ini     EncliticOrEnd; [N][Loc][3SgPoss][DuPosd]:%%%:(e)gkeni         EncliticOrEnd; ! 3Sg possessor |
+[N][Loc][3PlPoss][SgPosd]:%:(ng)atni      EncliticOrEnd; [N][Loc][3PlPoss][PlPosd]:%:(ng)itni    EncliticOrEnd; [N][Loc][3PlPoss][DuPosd]:%%%:(e)gketni        EncliticOrEnd; ! 3Pl possessor |
+[N][Loc][3DuPoss][SgPosd]:%:(ng)agni      EncliticOrEnd; [N][Loc][3DuPoss][PlPosd]:-kegni        EncliticOrEnd; [N][Loc][3DuPoss][DuPosd]:%%%:(e)gkegni        EncliticOrEnd; ! 3Du possessor |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+[N][Loc][1SgPoss][SgPosd]:-mni            EncliticOrEnd; [N][Loc][1SgPoss][PlPosd]:-mni          EncliticOrEnd; [N][Loc][1SgPoss][DuPosd]:%%%:(e)gemni         EncliticOrEnd; ! 1Sg possessor |
+[N][Loc][1PlPoss][SgPosd]:-mteńi          EncliticOrEnd; [N][Loc][1PlPoss][PlPosd]:-mteńi        EncliticOrEnd; [N][Loc][1PlPoss][DuPosd]:%%%:(e)gemteńi       EncliticOrEnd; ! 1Pl possessor |
+[N][Loc][1DuPoss][SgPosd]:-megni          EncliticOrEnd; [N][Loc][1DuPoss][PlPosd]:-megni        EncliticOrEnd; [N][Loc][1DuPoss][DuPosd]:%%%:(e)gmegni        EncliticOrEnd; ! 1Du possessor |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+[N][Loc][2SgPoss][SgPosd]:-vni            EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:-vni          EncliticOrEnd; [N][Loc][2SgPoss][DuPosd]:%%%:(e)gpeni         EncliticOrEnd; ! 2Sg possessor |
+[N][Loc][2SgPoss][SgPosd]:+peni           EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:+peni         EncliticOrEnd;
+[N][Loc][2PlPoss][SgPosd]:-vceńi          EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:-vceńi        EncliticOrEnd; [N][Loc][2PlPoss][DuPosd]:%%%:(e)gpeceńi       EncliticOrEnd; ! 2Pl possessor |
+[N][Loc][2PlPoss][SgPosd]:+peceńi         EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:+peceńi       EncliticOrEnd;
+[N][Loc][2PlPoss][SgPosd]:-vcini          EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:-vcini        EncliticOrEnd; [N][Loc][2PlPoss][DuPosd]:%%%:(e)gpecini       EncliticOrEnd; ! 2Pl possessor |
+[N][Loc][2PlPoss][SgPosd]:+peceńi         EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:+peceńi       EncliticOrEnd;
+[N][Loc][2DuPoss][SgPosd]:-vtegni         EncliticOrEnd; [N][Loc][2DuPoss][PlPosd]:-vtegni       EncliticOrEnd; [N][Loc][2DuPoss][DuPosd]:%%%:(e)gpetegni      EncliticOrEnd; ! 2Du possessor |
+[N][Loc][2DuPoss][SgPosd]:+petegni        EncliticOrEnd; [N][Loc][2DuPoss][PlPosd]:+petegni      EncliticOrEnd;
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+[N][Loc][4SgPoss][SgPosd]:-mini           EncliticOrEnd; [N][Loc][4SgPoss][PlPosd]:-mini         EncliticOrEnd; [N][Loc][4SgPoss][DuPosd]:%%%:(e)gmini         EncliticOrEnd; ! 4Sg possessor |
+[N][Loc][4PlPoss][SgPosd]:-meggni         EncliticOrEnd; [N][Loc][4PlPoss][PlPosd]:-meggni       EncliticOrEnd; [N][Loc][4PlPoss][DuPosd]:%%%:(e)gmeggni       EncliticOrEnd; ! 4Pl possessor |
+[N][Loc][4DuPoss][SgPosd]:-megni          EncliticOrEnd; [N][Loc][4DuPoss][PlPosd]:-megni        EncliticOrEnd; [N][Loc][4DuPoss][DuPosd]:%%%:(e)gmegni        EncliticOrEnd; ! 4Du possessor |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+
+
+! ------------------------------------------------------|
+!            Terminalis Case Endings (to N)             | 
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                   singular possessed                  |                      plural possessed                 |                          dual possessed                      |
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Ter][Unpd][Sg]:%%~mun                  EncliticOrEnd; [N][Ter][Unpd][Pl]:%%~nun                EncliticOrEnd; [N][Ter][Unpd][Du]:%%%:(e)gnun                  EncliticOrEnd; ! unpossessed   |
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Ter][3SgPoss][SgPosd]:%:(ng)anun       EncliticOrEnd; [N][Ter][3SgPoss][PlPosd]:%:(ng)inun     EncliticOrEnd; [N][Ter][3SgPoss][DuPosd]:%%%:(e)gkenun         EncliticOrEnd; ! 3Sg possessor |
+[N][Ter][3PlPoss][SgPosd]:%:(ng)atnun      EncliticOrEnd; [N][Ter][3PlPoss][PlPosd]:%:(ng)itnun    EncliticOrEnd; [N][Ter][3PlPoss][DuPosd]:%%%:(e)gketnun        EncliticOrEnd; ! 3Pl possessor |
+[N][Ter][3DuPoss][SgPosd]:%:(ng)agnun      EncliticOrEnd; [N][Ter][3DuPoss][PlPosd]:-kegnun        EncliticOrEnd; [N][Ter][3DuPoss][DuPosd]:%%%:(e)gkegnun        EncliticOrEnd; ! 3Du possessor |
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Ter][1SgPoss][SgPosd]:-mnun            EncliticOrEnd; [N][Ter][1SgPoss][PlPosd]:-mnun          EncliticOrEnd; [N][Ter][1SgPoss][DuPosd]:%%%:(e)gemnun         EncliticOrEnd; ! 1Sg possessor |
+[N][Ter][1PlPoss][SgPosd]:-mteńun          EncliticOrEnd; [N][Ter][1PlPoss][PlPosd]:-mteńun        EncliticOrEnd; [N][Ter][1PlPoss][DuPosd]:%%%:(e)gemteńun       EncliticOrEnd; ! 1Pl possessor |
+[N][Ter][1DuPoss][SgPosd]:-megnun          EncliticOrEnd; [N][Ter][1DuPoss][PlPosd]:-megnun        EncliticOrEnd; [N][Ter][1DuPoss][DuPosd]:%%%:(e)gmegnun        EncliticOrEnd; ! 1Du possessor |
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Ter][2SgPoss][SgPosd]:-vnun            EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:-vnun          EncliticOrEnd; [N][Ter][2SgPoss][DuPosd]:%%%:(e)gpenun         EncliticOrEnd; ! 2Sg possessor |
+[N][Ter][2SgPoss][SgPosd]:+penun           EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:+penun         EncliticOrEnd;
+[N][Ter][2PlPoss][SgPosd]:-vceńun          EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:-vceńun        EncliticOrEnd; [N][Ter][2PlPoss][DuPosd]:%%%:(e)gpeceńun       EncliticOrEnd; ! 2Pl possessor |
+[N][Ter][2PlPoss][SgPosd]:+peceńun         EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:+peceńun       EncliticOrEnd;
+[N][Ter][2PlPoss][SgPosd]:-vcinun          EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:-vcinun        EncliticOrEnd; [N][Ter][2PlPoss][DuPosd]:%%%:(e)gpecinun       EncliticOrEnd; ! 2Pl possessor |
+[N][Ter][2PlPoss][SgPosd]:+peceńun         EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:+peceńun       EncliticOrEnd;
+[N][Ter][2DuPoss][SgPosd]:-vtegnun         EncliticOrEnd; [N][Ter][2DuPoss][PlPosd]:-vtegnun       EncliticOrEnd; [N][Ter][2DuPoss][DuPosd]:%%%:(e)gpetegnun      EncliticOrEnd; ! 2Du possessor |
+[N][Ter][2DuPoss][SgPosd]:+petegnun        EncliticOrEnd; [N][Ter][2DuPoss][PlPosd]:+petegnun      EncliticOrEnd;
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Ter][4SgPoss][SgPosd]:-minun           EncliticOrEnd; [N][Ter][4SgPoss][PlPosd]:-minun         EncliticOrEnd; [N][Ter][4SgPoss][DuPosd]:%%%:(e)gminun         EncliticOrEnd; ! 4Sg possessor |
+[N][Ter][4PlPoss][SgPosd]:-meggnun         EncliticOrEnd; [N][Ter][4PlPoss][PlPosd]:-meggnun       EncliticOrEnd; [N][Ter][4PlPoss][DuPosd]:%%%:(e)gmeggnun       EncliticOrEnd; ! 4Pl possessor |
+[N][Ter][4DuPoss][SgPosd]:-megnun          EncliticOrEnd; [N][Ter][4DuPoss][PlPosd]:-megnun        EncliticOrEnd; [N][Ter][4DuPoss][DuPosd]:%%%:(e)gmegnun        EncliticOrEnd; ! 4Du possessor |
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+
+
+! -------------------------------------------------------|
+!              Vialis Case Endings (through N)           |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                  singular possessed                    |                      plural possessed                  |                           dual possessed                      |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Via][Unpd][Sg]:%%kun                    EncliticOrEnd; [N][Via][Unpd][Pl]:%%tgun                 EncliticOrEnd; [N][Via][Unpd][Du]:%%%:(e)gnegun                 EncliticOrEnd; ! unpossessed   |
+                                                                                                                    [N][Via][Unpd][Du]:%%%:(e)gkun                   EncliticOrEnd;
+! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
+[N][Via][3SgPoss][SgPosd]:%:(ng)akun        EncliticOrEnd; [N][Via][3SgPoss][PlPosd]:%:(ng)ikun      EncliticOrEnd; [N][Via][3SgPoss][DuPosd]:%%%:(e)gkenkun         EncliticOrEnd; ! 3Sg possessor |
+[N][Via][3PlPoss][SgPosd]:%:(ng)atgun       EncliticOrEnd; [N][Via][3PlPoss][PlPosd]:%:(ng)itgun     EncliticOrEnd; [N][Via][3PlPoss][DuPosd]:%%%:(e)gketgun         EncliticOrEnd; ! 3Pl possessor |
+[N][Via][3DuPoss][SgPosd]:%:(ng)agnegun     EncliticOrEnd; [N][Via][3DuPoss][PlPosd]:-kegnegun       EncliticOrEnd; [N][Via][3DuPoss][DuPosd]:%%%:(e)gkegnegun       EncliticOrEnd; ! 3Du possessor |
+! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
+[N][Via][1SgPoss][SgPosd]:-mkun             EncliticOrEnd; [N][Via][1SgPoss][PlPosd]:-mkun           EncliticOrEnd; [N][Via][1SgPoss][DuPosd]:%%%:(e)gemkun          EncliticOrEnd; ! 1Sg possessor |
+[N][Via][1PlPoss][SgPosd]:-mteggun          EncliticOrEnd; [N][Via][1PlPoss][PlPosd]:-mteggun        EncliticOrEnd; [N][Via][1PlPoss][DuPosd]:%%%:(e)gemteggun       EncliticOrEnd; ! 1Pl possessor |
+[N][Via][1DuPoss][SgPosd]:-megnegun         EncliticOrEnd; [N][Via][1DuPoss][PlPosd]:-megnegun       EncliticOrEnd; [N][Via][1DuPoss][DuPosd]:%%%:(e)gmegnegun       EncliticOrEnd; ! 1Du possessor |
+! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
+[N][Via][2SgPoss][SgPosd]:-vkun             EncliticOrEnd; [N][Via][2SgPoss][PlPosd]:-vkun           EncliticOrEnd; [N][Via][2SgPoss][DuPosd]:%%%:(e)gpegun          EncliticOrEnd; ! 2Sg possessor |
+[N][Via][2SgPoss][SgPosd]:+pegun            EncliticOrEnd; [N][Via][2SgPoss][PlPosd]:+pegun          EncliticOrEnd;
+[N][Via][2PlPoss][SgPosd]:-vcetgun          EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:-vcetgun        EncliticOrEnd; [N][Via][2PlPoss][DuPosd]:%%%:(e)gpecetgun       EncliticOrEnd; ! 2Pl possessor |
+[N][Via][2PlPoss][SgPosd]:+pecetgun         EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:+pecetgun       EncliticOrEnd;
+[N][Via][2PlPoss][SgPosd]:-vciuggun         EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:-vciuggun       EncliticOrEnd; [N][Via][2PlPoss][DuPosd]:%%%:(e)gpeciuggun      EncliticOrEnd; ! 2Pl possessor |
+[N][Via][2PlPoss][SgPosd]:+peciuggun        EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:+peciuggun      EncliticOrEnd;
+[N][Via][2DuPoss][SgPosd]:-vtegnegun        EncliticOrEnd; [N][Via][2DuPoss][PlPosd]:-vtegnegun      EncliticOrEnd; [N][Via][2DuPoss][DuPosd]:%%%:(e)gpetegnegun     EncliticOrEnd; ! 2Du possessor |
+[N][Via][2DuPoss][SgPosd]:+petegnegun       EncliticOrEnd; [N][Via][2DuPoss][PlPosd]:+petegnegun     EncliticOrEnd;
+! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
+[N][Via][4SgPoss][SgPosd]:-mikun            EncliticOrEnd; [N][Via][4SgPoss][PlPosd]:-mikun          EncliticOrEnd; [N][Via][4SgPoss][DuPosd]:%%%:(e)gmikun          EncliticOrEnd; ! 4Sg possessor |
+[N][Via][4PlPoss][SgPosd]:-megteggun        EncliticOrEnd; [N][Via][4PlPoss][PlPosd]:-megteggun      EncliticOrEnd; [N][Via][4PlPoss][DuPosd]:%%%:(e)gmegteggun      EncliticOrEnd; ! 4Pl possessor |
+[N][Via][4DuPoss][SgPosd]:-megnegun         EncliticOrEnd; [N][Via][4DuPoss][PlPosd]:-megnegun       EncliticOrEnd; [N][Via][4DuPoss][DuPosd]:%%%:(e)gmegnegun       EncliticOrEnd; ! 4Du possessor |
+! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
+
+
+! ------------------------------------------------------|
+!             Equalis Case Endings (like N)             |
+! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                  singular possessed                   |                     plural possessed                |                          dual possessed                      |
+! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Equ][Unpd][Sg]:%%tun                   EncliticOrEnd; [N][Equ][Unpd][Pl]:%%cetun             EncliticOrEnd; [N][Equ][Unpd][Du]:%%%:(e)gtun                  EncliticOrEnd; ! unpossessed   |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Equ][3SgPoss][SgPosd]:%:(ng)atun       EncliticOrEnd; [N][Equ][3SgPoss][PlPosd]:%:(ng)itun   EncliticOrEnd; [N][Equ][3SgPoss][DuPosd]:%%%:(e)gketun         EncliticOrEnd; ! 3Sg possessor |
+[N][Equ][3PlPoss][SgPosd]:%:(ng)acetun     EncliticOrEnd; [N][Equ][3PlPoss][PlPosd]:%:(ng)icetun EncliticOrEnd; [N][Equ][3PlPoss][DuPosd]:%%%:(e)gkecetun       EncliticOrEnd; ! 3Pl possessor |
+[N][Equ][3DuPoss][SgPosd]:%:(ng)agtun      EncliticOrEnd; [N][Equ][3DuPoss][PlPosd]:-kegtun      EncliticOrEnd; [N][Equ][3DuPoss][DuPosd]:%%%:(e)gkegtun        EncliticOrEnd; ! 3Du possessor |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Equ][1SgPoss][SgPosd]:-mtun            EncliticOrEnd; [N][Equ][1SgPoss][PlPosd]:-mtun        EncliticOrEnd; [N][Equ][1SgPoss][DuPosd]:%%%:(e)gemtun         EncliticOrEnd; ! 1Sg possessor |
+[N][Equ][1PlPoss][SgPosd]:-mcetun          EncliticOrEnd; [N][Equ][1PlPoss][PlPosd]:-mcetun      EncliticOrEnd; [N][Equ][1PlPoss][DuPosd]:%%%:(e)gemcetun       EncliticOrEnd; ! 1Pl possessor |
+[N][Equ][1DuPoss][SgPosd]:-megtun          EncliticOrEnd; [N][Equ][1DuPoss][PlPosd]:-megtun      EncliticOrEnd; [N][Equ][1DuPoss][DuPosd]:%%%:(e)gmegtun        EncliticOrEnd; ! 1Du possessor |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Equ][2SgPoss][SgPosd]:-vtun            EncliticOrEnd; [N][Equ][2SgPoss][PlPosd]:-vtun        EncliticOrEnd; [N][Equ][2SgPoss][DuPosd]:%%%:(e)gpetun         EncliticOrEnd; ! 2Sg possessor |
+[N][Equ][2SgPoss][SgPosd]:+petun           EncliticOrEnd; [N][Equ][2SgPoss][PlPosd]:+petun       EncliticOrEnd;
+[N][Equ][2PlPoss][SgPosd]:-vcetun          EncliticOrEnd; [N][Equ][2PlPoss][PlPosd]:-vcetun      EncliticOrEnd; [N][Equ][2PlPoss][DuPosd]:%%%:(e)gpecetun       EncliticOrEnd; ! 2Pl possessor |
+[N][Equ][2PlPoss][SgPosd]:+pecetun         EncliticOrEnd; [N][Equ][2PlPoss][PlPosd]:+pecetun     EncliticOrEnd;
+[N][Equ][2DuPoss][SgPosd]:-vtegtun         EncliticOrEnd; [N][Equ][2DuPoss][PlPosd]:-vtegtun     EncliticOrEnd; [N][Equ][2DuPoss][DuPosd]:%%%:(e)gpetegtun      EncliticOrEnd; ! 2Du possessor |
+[N][Equ][2DuPoss][SgPosd]:+petegtun        EncliticOrEnd; [N][Equ][2DuPoss][PlPosd]:+petegtun    EncliticOrEnd;
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Equ][4SgPoss][SgPosd]:-mitun           EncliticOrEnd; [N][Equ][4SgPoss][PlPosd]:-mitun       EncliticOrEnd; [N][Equ][4SgPoss][DuPosd]:%%%:(e)gmitun         EncliticOrEnd; ! 4Sg possessor |
+[N][Equ][4PlPoss][SgPosd]:-megcetun        EncliticOrEnd; [N][Equ][4PlPoss][PlPosd]:-megcetun    EncliticOrEnd; [N][Equ][4PlPoss][DuPosd]:%%%:(e)gmegcetun      EncliticOrEnd; ! 4Pl possessor |
+[N][Equ][4DuPoss][SgPosd]:-megtun          EncliticOrEnd; [N][Equ][4DuPoss][PlPosd]:-megtun      EncliticOrEnd; [N][Equ][4DuPoss][DuPosd]:%%%:(e)gmegtun        EncliticOrEnd; ! 4Du possessor |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
 
 
 
