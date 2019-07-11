@@ -72,10 +72,10 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ;
 ! assi0<llru<0 0   uq
 ! assillruuq
 "Rule for Minus" ! - drop consonant ending base
-!Cns:0 <=> _ Bndry:* %–: ;
-[ g:0 | r:0 | gg:0 | rr:0 ] <=> _ Bndry:* %–: ;
+Cx:0 <=> _ Bndry:* %–: ;    
     except
         \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent"
+    where Cx in ( g r gg rr ) ; 
 
 
 ! arnar[N][Abl_Mod][Unpd][Sg]
@@ -84,6 +84,7 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ;
 ! arnamek
 "Rule for Percent" ! - drop weak r ending base
 r:0 <=> \Vow FVow _ [Bndry: - %*:]* %%: ;
+
 
 
 "Rule for Colon" ! - drop g,r,ng if between single full vowels (first being full)
