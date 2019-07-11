@@ -67,12 +67,14 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ;
 ! assi0<llru00 0   uq
 ! assillruuq
 "Rule for Minus - drop consonant ending base"
-!Cns:0 <=> _ Bndry:* %–: ;
-[ g:0 | r:0 | gg:0 | rr:0 ] <=> _ Bndry:* %–: ;
+Cx:0 <=> _ Bndry:* %–: ;
     except
         _ Bndry:* [ .#. | %= ] ; ! "Word Final changes - g:k, r:q"
+    where Cx in ( g r gg rr ) ; 
 
 
+!Cns:0 <=> _ Bndry:* %–: ;
+![ g:0 | r:0 | gg:0 | rr:0 ] <=> _ Bndry:* %–: ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
