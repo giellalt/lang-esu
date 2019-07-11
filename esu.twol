@@ -48,39 +48,50 @@ Rules
 !!!!!     OPERATORS     !!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+! "Rule for Plus" - useless
+! "Rule for Period" - useless
+
+
 ! nere+'(g/t)uq
 ! nerʼ<0 0   uq
-"Rule for Apostrophe - gemination of short bases"
+"Rule for Apostrophe" ! - gemination of short bases
 !e:%ʼ <=> .#. (Cns) Vow Cns _ Bndry:* %': ;
 e:%ʼ <=> .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ;
 
 
-"Rule for Tilde - e deletion"
+"Rule for Tilde" ! - e deletion
 !e:0 <=> _ Bndry:* %~: ;
 e:0 <=> _ [ Bndry: - %': ]* %~: ;
         _ [ Bndry: - %~: ]+ Vow ; ! "vowel postbases are e deleters"
     except
-        .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ; ! "Rule for Apostrophe - gemination of short bases"
+        .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ; ! "Rule for Apostrophe"
 
 
 ! assir-–llru[V→V][V][Intr][Ind][3Sg]
 ! assir–llru+'(g/t)uq
 ! assi0<llru<0 0   uq
 ! assillruuq
-"Rule for Minus - drop consonant ending base"
+"Rule for Minus" ! - drop consonant ending base
 !Cns:0 <=> _ Bndry:* %–: ;
 [ g:0 | r:0 | gg:0 | rr:0 ] <=> _ Bndry:* %–: ;
     except
-        \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent - drop weak r ending base"
+        \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent"
 
 
 ! arnar[N][Abl_Mod][Unpd][Sg]
 ! arnar%~mek
 ! arna0<0mek
 ! arnamek
-"Rule for Percent - drop weak r ending base"
+"Rule for Percent" ! - drop weak r ending base
 r:0 <=> \Vow FVow _ [Bndry: - %*:]* %%: ;
 
+
+"Rule for Colon" ! - drop g,r,ng if between single full vowels (first being full)
+[ g:0 | r:0 | ng:0 ] <=> \Vow Bndry:* FVow Bndry:* %:: Bndry:* _ Bndry:* Vow Bndry:* \Vow ;
+                         \Vow Bndry:* FVow Bndry:* _ Bndry:* %:: Bndry:* Vow Bndry:* \Vow ;
+    except
+        _ Bndry:* %–: ; ! "Rule for Minus"
+        \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent"
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -89,16 +100,16 @@ r:0 <=> \Vow FVow _ [Bndry: - %*:]* %%: ;
 
 ! kaig+'(g/t)uq
 ! kaig<0 t   uq
-"Rule (t):t - consonant ending base"
+"Rule (t):t" ! - consonant ending base
 [ %(g%/t%):t | %(t%):t ] <=> Cns Bndry:* _ ;
     except
-        :Vow Bndry:* :Vow Bndry:* _ ; !"Rule (g):g - double vowel ending base"
+        :Vow [:%>|:0]* :Vow [:%>|:0]* _ ; ! "Rule (g):g"
 
 
 ! qia+'(g/t)uq
 ! qia<0 g   uq
-"Rule (g):g - double vowel ending base"
-[ %(g%/t%):g | %(g%):g ] <=> :Vow Bndry:* :Vow Bndry:* _ ;
+"Rule (g):g" ! - double vowel ending base
+[ %(g%/t%):g | %(g%):g ] <=> :Vow [:%>|:0]* :Vow [:%>|:0]* _ ;
 
 
 
@@ -118,7 +129,7 @@ e:a <=> .#. ~[ :* Vow t:n] _ [ .#. | %= ] ;
 "Word Final changes - g:k, r:q"
 [ g:k | r:q ] <=> _ Bndry:* [ .#. | %= ] ;
     except
-        _ Bndry:* %–: ; ! "Rule for Minus - drop consonant ending base"
-        \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent - drop weak r ending base"
+        _ Bndry:* %–: ; ! "Rule for Minus"
+        \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent"
 
 ! evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu
