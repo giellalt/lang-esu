@@ -34,8 +34,8 @@ Rules
 
 ! uita+'(g/t)uq
 ! uita<0 0   uq
-"Only one boundary"
-Bndry:0 <=> Bndry:%> _ ;
+!"Only one boundary"
+!Bndry:0 <=> Bndry:%> _ ;
 
 ! aqume+'(g/t)uq
 ! aqum0<0 0   uq
@@ -58,9 +58,20 @@ e:%ʼ <=> .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ;
 "Rule for Tilde - e deletion"
 !e:0 <=> _ Bndry:* %~: ;
 e:0 <=> _ [ Bndry: - %': ]* %~: ;
-        _ [ Bndry: - %~: ]+ Vow ;
+        _ [ Bndry: - %~: ]+ Vow ; ! "vowel postbases are e deleters"
     except
-        .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ;
+        .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ; ! "Rule for Apostrophe - gemination of short bases"
+
+! assir-–llru[V→V][V][Intr][Ind][3Sg]
+! assir–llru+'(g/t)uq
+! assi0<llru00 0   uq
+! assillruuq
+"Rule for Minus - drop consonant ending base"
+!Cns:0 <=> _ Bndry:* %–: ;
+[ g:0 | r:0 | gg:0 | rr:0 ] <=> _ Bndry:* %–: ;
+    except
+        _ Bndry:* [ .#. | %= ] ; ! "Word Final changes - g:k, r:q"
+
 
 
 
@@ -71,10 +82,9 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ;
 ! kaig+'(g/t)uq
 ! kaig<0 t   uq
 "Rule (t):t - consonant ending base"
-![ %(g%/t%):t | %(t%):t ] <=> .#. [[ :* Cns Bndry:* ] - [ :* :Vow Bndry:* :Vow Bndry:* ]] _ ;
 [ %(g%/t%):t | %(t%):t ] <=> Cns Bndry:* _ ;
-                         except
-                             :Vow Bndry:* :Vow Bndry:* _ ;
+    except
+        :Vow Bndry:* :Vow Bndry:* _ ; !"Rule (g):g - double vowel ending base"
 
 
 ! qia+'(g/t)uq
