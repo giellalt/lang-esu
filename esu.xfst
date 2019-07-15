@@ -1,12 +1,77 @@
-
+! LANGUAGE: "esu"
+! AUTHOR: "Lonny Strunk"
 
 ! define MultipleForms
-    ! for @~+lu/@na (ch) and others with \w/\w
+    ! for @~+lu/@na (ch) and others with \w/\w !!!!TODO!!!!
     ! for [Opt_PRS_2Sg] (ch5 pg67)
     ! for [Opt_PRS_2Sg_3Sg]
     ! for [Opt_PRS_2Sg_1Sg]
-
-! change the multi-char symbols to single char
+! change the multi-char symbols to single char??
 ! change capital to lowercase
-
 ! give to twolc
+
+define Stop               [ p | t | c | k | q ];
+define VoicedFricative    [ v | l | s | g | r | u͡g | u͡r ];
+define VoicelessFricative [ vv | ll | ss | gg | rr | u͡gg | u͡rr ];
+define VoicedNasal        [ m | n | ng ];
+define VoicelessNasal     [ ḿ | ń | ńg ];
+
+define VoicedC    [ VoicedFricative | VoicedNasal ];
+define VoicelessC [ VoicelessFricative | VoicelessNasal | Stop ];
+
+define Fricative  [ VoicelessFricative | VoicedFricative ];
+define Nasal      [ VoicelessNasal     | VoicedNasal     ];
+
+define C          [ Stop | Fricative | Nasal | w | y ];
+
+define FullVowel   [ a | i | u ];
+define V           [ e | FullVowel ];
+
+define Lowercase "A"   -> a,
+                 "C"   -> c,
+                 "E"   -> e,
+                 "G"   -> g,
+                 "I"   -> i,
+                 "K"   -> k,
+                 "L"   -> l,
+                 "M"   -> m,
+                 "N"   -> n,
+                 "P"   -> p,
+                 "Q"   -> q,
+                 "R"   -> r,
+                 "S"   -> s,
+                 "T"   -> t,
+                 "U"   -> u, 
+                 "V"   -> v,
+                 "W"   -> w,
+                 "Y"   -> y,
+                 "Ḿ"   -> ḿ,
+                 "Ń"   -> ń,
+                 "Vv"  -> vv,
+                 "Ll"  -> ll,
+                 "Ss"  -> ss,
+                 "Gg"  -> gg,
+                 "Rr"  -> rr,
+                 "Ng"  -> ng,
+                 "Ńg"  -> ńg,
+                 "U͡g"  -> u͡g,
+                 "U͡r"  -> u͡r,
+                 "U͡gg" -> u͡gg,
+                 "U͡rr" -> u͡rr;
+
+define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ V V | [ C - t ] e ] _  ∘
+                     "[Opt_PRS_2Sg]" -> "+" n               || t e  _                   ∘
+                     t e "*" "[Opt_PRS_2Sg]" -> l u                                     ∘
+                     "[Opt_PRS_2Sg]" -> ":" a               || C  _                     ∘
+                     "[Opt_PRS_2Sg]" -> 0                                               ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~" "(g)" i u   || [ V V | [ C - t ] e ] _  ∘
+                     t e "[Opt_PRS_2Sg_3Sg]" -> s g u                                   ∘
+                     t e "*" "[Opt_PRS_2Sg_3Sg]" -> l g u                               ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "–" gg u        || g _                      ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "–" rr u        || r _                      ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> u                                           ∘
+                     "[Opt_PRS_2Sg_1Sg]" (->) "~" "(g)" i a || [ V V | [ C - t ] e ] _  ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "@" "+" ng a                                ∘
+                     "@~+lu/@na" -> "@" n a                 || t e "*" _                ∘
+                     "@~+lu/@na" -> "@" "~" "+" l u                                     ;
+
