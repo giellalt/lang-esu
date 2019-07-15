@@ -2,14 +2,82 @@
 ! AUTHOR: "Lonny Strunk"
 
 Multichar_Symbols
+
+[N]                          ! Nominal
+[V]                          ! Verbal
+[Sg]                         ! Singular
+[Pl]                         ! Plural
+[Du]                         ! Dual
+[1Sg]                        !
+[1Pl]                        !
+[1Du]                        !
+[2Sg]                        !
+[2Pl]                        !
+[2Du]                        !
+[3Sg]                        !
+[3Pl]                        !
+[3Du]                        !
+[4Sg]                        !
+[4Pl]                        !
+[4Du]                        !
+[_]                          !
+[N→N]                        ! Denominal noun derivation
+[N→V]                        ! Denominal verb derivation
+[V→N]                        ! Deverbal noun derivation
+[V→V]                        ! Deverbal verb derivation
+[Imprs_Agnt]                 !
+[Unpd]                       !
+[SgPosd]                     !
+[PlPosd]                     !
+[DuPosd]                     !
+[1SgPoss]                    !
+[1PlPoss]                    !
+[1DuPoss]                    !
+[2SgPoss]                    !
+[2PlPoss]                    !
+[2DuPoss]                    !
+[3SgPoss]                    !
+[3PlPoss]                    !
+[3DuPoss]                    !
+[4SgPoss]                    !
+[4PlPoss]                    !
+[4DuPoss]                    !
+[Abs]                        ! Absolutive
+[Rel]                        ! Relative
+[Abl_Mod]                    !
+[Loc]                        ! Locative
+[Ter]                        !
+[Via]                        !
+[Equ]                        !
+[Intr]                       !
+[Trns]                       !
+[Ind]                        ! Indicative
+[Intrg]                      ! Interrogative
+[Opt]                        ! Optative
+[Ptcp]                       !
+[PRS]                        !
+[NEG]                        ! Negative
+[FUT]                        ! Future
+[Sbrd]                       !
+[Prec]                       !
+[Cnsq]                       !
+[Cont]                       !
+[Conc]                       !
+[Cond]                       !
+[CtmpI]                      !
+[CtmpII]                     !
+[Quant_Qual]                 !
+[Encl]                       !
+[Opt_PRS_2Sg]                !
+[Opt_PRS_2Sg_3Sg]            !
+[Opt_PRS_2Sg_1Sg]            !
+
 vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
+
 [e] (a) (e) (g) (r) (s) (t) (u) (aa) (ar) (ar*) (ng) (ur) (g/t) (r/l) (u/i)
 
-[N] [V] [Sg] [Pl] [Du] [1Sg] [1Pl] [1Du] [2Sg] [2Pl] [2Du] [3Sg] [3Pl] [3Du] [4Sg] [4Pl] [4Du] [_] [N→N] [N→V] [V→N] [V→V] [Imprs_Agnt]
-[Unpd] [SgPosd] [PlPosd] [DuPosd] [1SgPoss] [1PlPoss] [1DuPoss] [2SgPoss] [2PlPoss] [2DuPoss] [3SgPoss] [3PlPoss] [3DuPoss] [4SgPoss] [4PlPoss] [4DuPoss]
-[Abs] [Rel] [Abl_Mod] [Loc] [Ter] [Via] [Equ] [Intr] [Trns] [Ind] [Intrg] [Opt] [Ptcp] [PRS] [NEG] [FUT] [Sbrd] [Prec] [Cnsq] [Cont] [Conc] [Cond] [CtmpI] [CtmpII] [Quant_Qual] [Encl]
-[Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_PRS_2Sg_1Sg]
-
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Root
     Particle        ;
@@ -54,7 +122,7 @@ akleng                 EncliticOrEnd; ! poor thing!
 akwarpak               EncliticOrEnd; ! forever
 akwaugaq               EncliticOrEnd; ! yesterday
 akwaugarpak            EncliticOrEnd; ! all day yesterday; since yesterday
-ak’a                   EncliticOrEnd; ! past; a long time; already # adverbial particle; ak’a igallruaqa ‘I already wrote to him’; ak’arpak or ak’anurpak ‘a very long time’; Unuakumi tupiimi mak’arrluni maaten piuq aanii kiimi ak’a maktellrullinilria. ‘In the morning when she woke up she sat up and noticed that her mother alone had already gotten up.’ (ELN 1990:15); AK’A IMUMI, AK’A AVANI or AK’A TAMAANI a long time ago; 
+ak’a                   EncliticOrEnd; ! past; a long time; already # adverbial particle; ak’a igallruaqa ‘I already wrote to him’; ak’arpak or ak’anurpak ‘a very long time’; Unuakumi tupiimi mak’arrluni maaten piuq aanii kiimi ak’a maktellrullinilria. ‘In the morning when she woke up she sat up and noticed that her mother alone had already gotten up.’ (ELN 1990:15); AK’A IMUMI, AK’A AVANI or AK’A TAMAANI a long time ago;
 ak’akika               EncliticOrEnd; ! so far away!; so many!; so much!
 ak’am                  EncliticOrEnd; ! again
 ak’ami’i               EncliticOrEnd; ! that’s all; the end
@@ -81,7 +149,7 @@ amllerqunek            EncliticOrEnd; ! many times
 ampi                   EncliticOrEnd; ! hurry up!, let’s go!
 amta-llu               EncliticOrEnd; ! nevertheless; however; but; and yet
 angli-lli              EncliticOrEnd; ! too much!
-angqutegken            EncliticOrEnd; ! 
+angqutegken            EncliticOrEnd; !
 angu                   EncliticOrEnd; ! don’t!; no!
 anguqa                 EncliticOrEnd; ! or
 angurrluk              EncliticOrEnd; ! absolutely not; in no case; certainly not
@@ -90,7 +158,7 @@ anirta                 EncliticOrEnd; ! thank goodness!; how fortunate!
 anirtaqulluk           EncliticOrEnd; ! serves him right!; serves you right!
 anirtima               EncliticOrEnd; ! so that’s why!; no wonder!; good thing then!
 apqiitnek              EncliticOrEnd; ! what people call ––; as people call it; as people say
-aqaa                   EncliticOrEnd; ! hello; what’s the matter?, what are you doing here?, what can I do for you?; “what’s up?”; 
+aqaa                   EncliticOrEnd; ! hello; what’s the matter?, what are you doing here?, what can I do for you?; “what’s up?”;
 arca                   EncliticOrEnd; ! don’t do what you’re doing so excessively!; hush!
 arcassi                EncliticOrEnd; ! wow!
 aren                   EncliticOrEnd; ! oops!; oh!; oh no!; unfortunately
@@ -190,7 +258,7 @@ malrurqugni            EncliticOrEnd; ! during two periods of time
 nakmiin                EncliticOrEnd; ! one’s own
 nak’nirmek             EncliticOrEnd; ! since when
 nalliinitun            EncliticOrEnd; ! like at the time of (it)
-nallu                  EncliticOrEnd; ! 
+nallu                  EncliticOrEnd; !
 nallutmun              EncliticOrEnd; ! in ignorance; not knowing
 naullu-wa-i            EncliticOrEnd; ! watch out!
 negetmun               EncliticOrEnd; ! northward
@@ -203,7 +271,7 @@ piciatun               EncliticOrEnd; ! in any manner; any old which way; anywhe
 pitsaqutmek            EncliticOrEnd; ! intentionally
 pulengtaq              EncliticOrEnd; ! frequently; often; repeatedly
 qakirpak               EncliticOrEnd; ! all pale, dry, bleached
-qaku                   EncliticOrEnd; ! when? (in the future); how long from now?; a certain unspecified (or unspecifiable) time afterward; 
+qaku                   EncliticOrEnd; ! when? (in the future); how long from now?; a certain unspecified (or unspecifiable) time afterward;
 qakuan                 EncliticOrEnd; ! when some time had elapsed
 qakuaqan               EncliticOrEnd; ! at what times?; at various times
 qangkun                EncliticOrEnd; ! as one usually does
@@ -298,7 +366,7 @@ yaaliaku               EncliticOrEnd; ! day after tomorrow or year after next (K
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!LEXICON Interrogative 
+!LEXICON Interrogative
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -989,7 +1057,7 @@ alakiitaar             NounPostbase; ! game of tag
 alangru                NounPostbase; ! a thing that appears unexpectedly; unexpected discovery; surprise visitor; apparition; ghost
 alangrur               NounPostbase; ! a thing that appears unexpectedly; unexpected discovery; surprise visitor; apparition; ghost
 alapar                 NounPostbase; ! rubber boot; black person
-alap’ar                NounPostbase; ! rubber boot; 
+alap’ar                NounPostbase; ! rubber boot;
 alarcaqur              NounPostbase; ! appendix (anatomical)
 alarcaug               NounPostbase; ! appendix (anatomical)
 alarcuar               NounPostbase; ! appendix (anatomical)
@@ -1529,7 +1597,7 @@ asauqur                NounPostbase; ! spear used to kill seals sleeping on the 
 asaurute               NounPostbase; ! pole, oar, etc., used for poling a boat
 asaute                 NounPostbase; ! deck beam next to and aft of coaming of kayak
 asaute                 NounPostbase; ! thumb (NSU meaning); oar (NSK meaning)
-asgir                  NounPostbase; ! pancake; fry bread # “fry bread” is the characteristic widespread Native American homemade deep-fried biscuit, sometimes called “Eskimo doughnut” locally, known as “bannock” in Canada; 
+asgir                  NounPostbase; ! pancake; fry bread # “fry bread” is the characteristic widespread Native American homemade deep-fried biscuit, sometimes called “Eskimo doughnut” locally, known as “bannock” in Canada;
 asgircuute             NounPostbase; ! frying pan; barbecue stick
 asguilitar             NounPostbase; ! windbreak as used with kayak
 asgulirner             NounPostbase; ! upwind or up-current side
@@ -1605,7 +1673,7 @@ atkucuar(ar*)          NounPostbase; ! shirt
 atkug                  NounPostbase; ! parka
 atkuliggiir            NounPostbase; ! great gray owl (Strix nebulosa)
 atkupiar               NounPostbase; ! Yup’ik fur parka made of ground squirrel, muskrat or mink pelts with traditional fancy decorations (such as one style that has a band across the chest area and eight tassels hanging front and back)
-atliliyarar            NounPostbase; ! addition (in mathematics) # from the way addition is done with numbers written in a column with a line under it and the sum at the bottom; 
+atliliyarar            NounPostbase; ! addition (in mathematics) # from the way addition is done with numbers written in a column with a line under it and the sum at the bottom;
 atlir*                 NounPostbase; ! thing underneath; saucer; cellar; skin scraping board (additional HBC meaning)
 atlirner               NounPostbase; ! sewing-machine bobbin; lead line of fishnet
 atmag                  NounPostbase; ! backpack; knapsack; costume (additional meaning in HBC)
@@ -2692,7 +2760,7 @@ esip’ar                NounPostbase; ! zipper
 esir                   NounPostbase; ! egg yolk
 esirlir                NounPostbase; ! yellow thing
 esirngalngur*          NounPostbase; ! yellow thing
-eskaanir               NounPostbase; ! bark of a certain type of tree (species?) burned and used as an inhalant to stop nosebleeds; 
+eskaanir               NounPostbase; ! bark of a certain type of tree (species?) burned and used as an inhalant to stop nosebleeds;
 eskaapaar              NounPostbase; ! shelf
 eskaapar               NounPostbase; ! shelf
 eskaayar               NounPostbase; ! dog with a ring of dark fur around its eye
@@ -3422,10 +3490,10 @@ kapsuli                NounPostbase; ! insect similar to a mayfly (species ?)
 kapsuute               NounPostbase; ! hypodermic needle; pew (tool) for handling fish; poking or stabbing device; fork (additional Y meaning)
 kapuckar               NounPostbase; ! stick with sharp point at end used in a traditional Yup’ik game somewhat like mumblety-peg
 kapuckaryarar          NounPostbase; ! a traditional Yup’ik game somewhat like mumblety-peg
-kaputar                NounPostbase; ! poker; drill; awl; 
+kaputar                NounPostbase; ! poker; drill; awl;
 kapute                 NounPostbase; ! spear point; hypodermic needle; inoculation; multipronged fish spear (NUN meaning)
 kapuukar(ar*)          NounPostbase; ! buttercup (Ranunculus sp.)
-kapuutar               NounPostbase; ! poker; drill; awl; 
+kapuutar               NounPostbase; ! poker; drill; awl;
 kapuute                NounPostbase; ! buttercup (Ranunculus sp.)
 kap’aniskar            NounPostbase; ! store; storekeeper
 kap’issuute            NounPostbase; ! implement for piercing patients during traditional medical treatment; hypodermic needle; poker; drill
@@ -3660,7 +3728,7 @@ kenercetaar            NounPostbase; ! cornmeal, starch, etc., used as a thicken
 kenercissuute          NounPostbase; ! (NSU form) sled brake
 kenerkuaryarar         NounPostbase; ! electric appliance
 kenerpallag            NounPostbase; ! lightning; sparks
-kenerqar               NounPostbase; ! punk; birch bracket fungus (Fomes pinicola (or Poria obliqua)) # formerly used as punk for fires, now used for reducing to ash (araq, peluq), which is mixed with leaf tobacco for chewing; 
+kenerqar               NounPostbase; ! punk; birch bracket fungus (Fomes pinicola (or Poria obliqua)) # formerly used as punk for fires, now used for reducing to ash (araq, peluq), which is mixed with leaf tobacco for chewing;
 kenerute               NounPostbase; ! (NSU form) sled brake
 kenervig               NounPostbase; ! primer cap box or the primer cap itself
 kenevkaute             NounPostbase; ! tool for crushing ochre
@@ -4106,9 +4174,9 @@ mallug                 NounPostbase; ! beached carcass or other thing found whil
 malri                  NounPostbase; ! twin
 malrug                 NounPostbase; ! two
 malruite               NounPostbase; ! two groups or pairs
-malrunelgete           NounPostbase; ! 
+malrunelgete           NounPostbase; !
 malruner               NounPostbase; ! measurement of the width at their ends of the index finger and the middle finger held next to each other
-malrunlegete           NounPostbase; ! 
+malrunlegete           NounPostbase; !
 malruyagar*            NounPostbase; ! deuce in cards
 mamcar                 NounPostbase; ! spleen
 mamcartar              NounPostbase; ! upper tie beam of men’s community house or small semi-subterranean house
@@ -4556,7 +4624,7 @@ narussuli              NounPostbase; ! skilled harpooner or spear thrower
 narusvag               NounPostbase; ! glaucous gull (Larus hyperboreus)
 naruya                 NounPostbase; ! very close friend or cousin
 naruyacuar             NounPostbase; ! black-legged kittiwake (Rissa tridactyla)
-naruyar                NounPostbase; ! seagull; gull; mew gull (Larus canus); glaucous-winged gull (Larus glaucescens); northern fulmar (Fulmarus glacialis); 
+naruyar                NounPostbase; ! seagull; gull; mew gull (Larus canus); glaucous-winged gull (Larus glaucescens); northern fulmar (Fulmarus glacialis);
 naruyar                NounPostbase; ! very close friend or cousin
 naryarcetaar           NounPostbase; ! chum for catching fish
 nasaalug               NounPostbase; ! girl
@@ -4741,7 +4809,7 @@ neqcar                 NounPostbase; ! bait
 neqcaute               NounPostbase; ! bait
 neqe                   NounPostbase; ! food; fish
 neqengqertassiaryarar  NounPostbase; ! test fishing
-neqepig                NounPostbase; ! real food; dog salmon, chum salmon (Oncorhynchus keta) (additional meaning in NSU); 
+neqepig                NounPostbase; ! real food; dog salmon, chum salmon (Oncorhynchus keta) (additional meaning in NSU);
 neqerrluar             NounPostbase; ! smoked dried fish (particularly salmon)
 neqerrlug              NounPostbase; ! smoked dried fish (particularly salmon)
 neqiar                 NounPostbase; ! food-stealing bird
@@ -4845,7 +4913,7 @@ nukalpiartar           NounPostbase; ! young man in his prime; young successful 
 nukar                  NounPostbase; ! beaver in its second year; younger sibling (NSU meaning)
 nukar(ar*)             NounPostbase; ! beaver in its second year; younger sibling (NSU meaning)
 nukarar                NounPostbase; ! second wife in a polygamous marriage; concubine
-nukaruar               NounPostbase; ! ulna, large bone of the forearm; 
+nukaruar               NounPostbase; ! ulna, large bone of the forearm;
 nukasegaucir           NounPostbase; ! less successful, not fully proficient, hunter
 nuka’urlur*            NounPostbase; ! young man
 nuliacungar*           NounPostbase; ! female cross-cousin of a male; also male’s grandparent’s cross-cousin’s granddaughter
@@ -5946,7 +6014,7 @@ qilagkar               NounPostbase; ! yarn; fishnet twine
 qilagmiutar*           NounPostbase; ! heavenly personage (in Bible translation and Christian prayers, etc.); lemming (Lemmus trimucronatus)
 qilagturar             NounPostbase; ! splicing of line loop through seal harpoon head
 qilakeggute            NounPostbase; ! net gauge
-qilakutar              NounPostbase; ! canopy; awning; 
+qilakutar              NounPostbase; ! canopy; awning;
 qilangar               NounPostbase; ! tufted puffin (Fratercula cirrhata); horned puffin (Fratercula corniculata) (NUN meaning)
 qilaute                NounPostbase; ! net-making device; netting shuttle; knitting needle
 qilkirtar              NounPostbase; ! inlaid piece of ivory; stone in ring; diamond
@@ -6114,7 +6182,7 @@ qulvarvig              NounPostbase; ! elevated cache
 qumar                  NounPostbase; ! tapeworm often found in fish or seal
 qumiar                 NounPostbase; ! enclosed thing; thing inside; fetus (additional meaning for HBC, NUN, NS, Y)
 qumig                  NounPostbase; ! enclosed thing; thing inside; fetus (additional meaning for HBC, NUN, NS, Y)
-qumileg                NounPostbase; ! pregnant woman; prune (BB meaning); 
+qumileg                NounPostbase; ! pregnant woman; prune (BB meaning);
 qunarlir               NounPostbase; ! sourdock (Rumex arcticus)
 qunavute               NounPostbase; ! sinew splitter; bark splitter
 qungasvig              NounPostbase; ! trunk, box, bag or other storage container; bentwood box; sewing box
@@ -6270,7 +6338,7 @@ selite                 NounPostbase; ! whetstone
 senkar                 NounPostbase; ! land otter (Lontra canadensis)
 ser                    NounPostbase; ! sweat; perspiration; condensation
 setiinkaar             NounPostbase; ! pig
-sevete                 NounPostbase; ! 
+sevete                 NounPostbase; !
 siimar                 NounPostbase; ! stone; rock; gallstone or kidney stone (additional meaning for NUN)
 siimarar(ar*)          NounPostbase; ! small rock; large pebble
 siipar                 NounPostbase; ! chain
@@ -6638,7 +6706,7 @@ tegurciurute           NounPostbase; ! tangle remover; comb with widely spaced t
 tegurrliurute          NounPostbase; ! tangle remover; comb with widely spaced teeth
 teguste                NounPostbase; ! policeman; state trooper
 tegute                 NounPostbase; ! recovery hook, used to take killed seals out of water; harpoon that is used without an atlatl (throwing device)
-teguteguar             NounPostbase; ! pectoral sandpiper (Calidris melanotos); 
+teguteguar             NounPostbase; ! pectoral sandpiper (Calidris melanotos);
 teguyarar              NounPostbase; ! handle
 tekallngar             NounPostbase; ! one who messes around, is careless in a silly way
 tekcitag               NounPostbase; ! (CAN form), tekcika(aq*) (NUN form), tekcilunaq savannah sparrow (Passerculus sandwichensis)
@@ -7715,7 +7783,7 @@ agcilir                VerbPostbase; ! to inlay a design on (it)
 agcirte                VerbPostbase; ! to inlay a design on (it)
 age                    VerbPostbase; ! to go from one place to another without crossing something extended (river, road, etc.) in between; for snow to cover it
 agelru                 VerbPostbase; ! to follow traditional practices associated with birth, death, first menstruation, illness, etc. consisting of abstaining from certain foods and activities
-agenkar                VerbPostbase; ! to graze; to slightly touch # of a bullet, arrow, rock skipped on water, etc.; 
+agenkar                VerbPostbase; ! to graze; to slightly touch # of a bullet, arrow, rock skipped on water, etc.;
 aggetpag               VerbPostbase; ! to squirt in an arc in a big way
 aggigte                VerbPostbase; ! to dance Eskimo-style vigorously and enthusiastically
 agiirte                VerbPostbase; ! to come or approach from the distance
@@ -7981,7 +8049,7 @@ anag                   VerbPostbase; ! to escape; to get away; to “make it”;
 anagkenge              VerbPostbase; ! to win; to have exceptionally good fortune in hunting; to prevail
 anagtaar               VerbPostbase; ! to overdo; to act haughty
 anagtassiigute         VerbPostbase; ! to compete
-anagte                 VerbPostbase; ! to surpass; 
+anagte                 VerbPostbase; ! to surpass;
 anagute                VerbPostbase; ! to do socially undesirable things to excess; to misbehave; to be “out of hand”; to be unbearable
 anagyaaqute            VerbPostbase; ! to defend
 anangnaqe              VerbPostbase; ! to try to survive
@@ -8511,7 +8579,7 @@ cakucug                VerbPostbase; ! to be ill; to have skin sores
 cakug                  VerbPostbase; ! to have a hard time
 cakukegte              VerbPostbase; ! to be adept
 cakuug                 VerbPostbase; ! to tan a skin by scraping it
-cakviur                VerbPostbase; ! to have a hard time; to work hard; to endure troubles; 
+cakviur                VerbPostbase; ! to have a hard time; to work hard; to endure troubles;
 caleryag               VerbPostbase; ! to act or react violently or abruptly
 cali                   VerbPostbase; ! to work; to make something
 calinguar              VerbPostbase; ! to play at working; to work on things such as arts and crafts that are not for direct serious use (though perhaps to be sold)
@@ -9696,7 +9764,7 @@ kaner                  VerbPostbase; ! to be frosted
 kanevcir               VerbPostbase; ! to have tiny ice crystals in it
 kanevlarte             VerbPostbase; ! to shake clothing, etc.; to remove debris; to sprinkle
 kangar                 VerbPostbase; ! to walk around
-kangiitur              VerbPostbase; ! to inquire deeply about (him) or of (him); 
+kangiitur              VerbPostbase; ! to inquire deeply about (him) or of (him);
 kangiiyug              VerbPostbase; ! to be curious about the principle behind something; to want to find out (it)
 kangilir               VerbPostbase; ! to explain the meaning or reason behind something; to provide with a (new) start; to rename in order to cure
 kanginge               VerbPostbase; ! to discover or find out the principle behind something; to understand
@@ -9871,7 +9939,7 @@ kenegyagute            VerbPostbase; ! to come to love; to fall in love with
 kenegyug               VerbPostbase; ! to be in love
 keneke                 VerbPostbase; ! to love in any sense; to like
 kenercete              VerbPostbase; ! to be of such a nature as to impede motion; to be viscous; to be rough-surfaced
-kenerpallag            VerbPostbase; ! to flash of lightning, flint and steel, etc.; 
+kenerpallag            VerbPostbase; ! to flash of lightning, flint and steel, etc.;
 kenerrliur             VerbPostbase; ! to build a fire
 kenerte                VerbPostbase; ! to slow down forward progress; to brake
 kenevkar               VerbPostbase; ! to rub in (using shavings) the ochre with which wood is colored red
@@ -10116,17 +10184,17 @@ legci                  VerbPostbase; ! to burn or char things; to make ashes fro
 lege                   VerbPostbase; ! (HBC form), legte- (NUN form) to get scorched; to get singed; to char; to burn
 legleg                 VerbPostbase; ! to scrub with steel wool or the like
 leg’uma                VerbPostbase; ! to be singed; to be charred; to be burned
-lekuk’ar               VerbPostbase; ! to graze (of a bullet, arrow, etc.); to touch upon (it); to brush against (it); to say something relevant to (a certain situation); 
+lekuk’ar               VerbPostbase; ! to graze (of a bullet, arrow, etc.); to touch upon (it); to brush against (it); to say something relevant to (a certain situation);
 lepli                  VerbPostbase; ! to make a flapping sound in the wind
 lep’ag                 VerbPostbase; ! to break wind loudly, expelling much flatus
 leqecirar              VerbPostbase; ! to tickle
-ler                    VerbPostbase; ! to break wind; to pass gas; to expel flatus; vulgar to fart; 
+ler                    VerbPostbase; ! to break wind; to pass gas; to expel flatus; vulgar to fart;
 lerave                 VerbPostbase; ! to crumble
 lerli                  VerbPostbase; ! to make a clattering noise (as of solid objects being put away or being taken out for use)
-lerr’arte              VerbPostbase; ! to make a churning, bubbling or gurgling sound; 
+lerr’arte              VerbPostbase; ! to make a churning, bubbling or gurgling sound;
 leryir                 VerbPostbase; ! to gurgle; to make a gurgling noise
 ler’a                  VerbPostbase; ! to break wind repeatedly
-ler’arte               VerbPostbase; ! to make a churning, bubbling or gurgling sound; 
+ler’arte               VerbPostbase; ! to make a churning, bubbling or gurgling sound;
 leve                   VerbPostbase; ! to have things clinging to it
 leviar                 VerbPostbase; ! to flutter in the wind
 leviileviar            VerbPostbase; ! to flutter in the wind
@@ -11312,7 +11380,7 @@ pupig                  VerbPostbase; ! to get impetigo
 pupingerte             VerbPostbase; ! to squeak
 pupingqua              VerbPostbase; ! to have a frostbitten spot on one’s skin where one has touched a cold object
 pupsir                 VerbPostbase; ! to pay with the necessities of life
-pupsug                 VerbPostbase; ! to pinch; to cut with scissors (additional meaning in CAN, NI, HBC); 
+pupsug                 VerbPostbase; ! to pinch; to cut with scissors (additional meaning in CAN, NI, HBC);
 puqelvag               VerbPostbase; ! to have burning pain; to have a high fever
 puqiate                VerbPostbase; ! to be stupid; to lack intelligence
 puqig                  VerbPostbase; ! to be intelligent; to be smart; to be articulate
@@ -11547,7 +11615,7 @@ qapngute               VerbPostbase; ! to get an imprint of something pressing i
 qapniurteqe            VerbPostbase; ! to foam (as, at the mouth)
 qap’ite                VerbPostbase; ! to be sunk into mud or similar matter; to get mired
 qaqicii                VerbPostbase; ! to finish the job; to go through completely
-qaqima                 VerbPostbase; ! to be complete; to be completely equipped; to have everything needed; 
+qaqima                 VerbPostbase; ! to be complete; to be completely equipped; to have everything needed;
 qaqirmirte             VerbPostbase; ! to be all there; to be complete in number
 qaqite                 VerbPostbase; ! to finish; to complete; to go through all; to not omit or pass over any; to spend (period of time)
 qaqunite               VerbPostbase; ! to give the finger
@@ -12563,7 +12631,7 @@ uk’lir                 VerbPostbase; ! to provide solid ingredients in soup
 ulakitaar              VerbPostbase; ! to play tag
 ulapeqe                VerbPostbase; ! to waste time; to act wantonly (and perhaps cruelly); to take advantage of someone; to play around
 ulapsagte              VerbPostbase; ! to make a mistake; to forget
-ule                    VerbPostbase; ! to rise (of liquid or semiliquid, e.g., dough); to be high tide (coast and along tidal rivers); to flood (inland); 
+ule                    VerbPostbase; ! to rise (of liquid or semiliquid, e.g., dough); to be high tide (coast and along tidal rivers); to flood (inland);
 ulerpag                VerbPostbase; ! to flood
 uleve                  VerbPostbase; ! to well up (of water from beneath the earth or ice); to babble (of one speaking)
 ulevlar                VerbPostbase; ! to have a constant visible flow of water as evidenced by bubbles
@@ -13609,9 +13677,9 @@ LEXICON NounInflection
 
 
 ! -------------------------------------------------|
-!              Relative Case Endings               | 
+!              Relative Case Endings               |
 ! ----------------------------------------------------------------------------------------------------------------------------------------------------|
-!               singular possessed                 |                    plural possessed                |               dual possessed                |    
+!               singular possessed                 |                    plural possessed                |               dual possessed                |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 [N][Rel][Unpd][Sg]:%%%:(e)m           EncliticOrEnd;[N][Rel][Unpd][Pl]:%%%:(e)t            EncliticOrEnd; [N][Rel][Unpd][Du]:%%%:(e)k                 EncliticOrEnd; ! unpossessed   |
 ! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
@@ -13655,11 +13723,11 @@ LEXICON NounInflection
 [N][Abl_Mod][1DuPoss][SgPosd]:-megnek           EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:-megnek         EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:%%%:(e)gmegnek         EncliticOrEnd; ! 1Du possessor |
 ! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
 [N][Abl_Mod][2SgPoss][SgPosd]:-vnek             EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:-vnek           EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:%%%:(e)gpenek          EncliticOrEnd; ! 2Sg possessor |
-[N][Abl_Mod][2SgPoss][SgPosd]:+penek            EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:+penek          EncliticOrEnd;  
+[N][Abl_Mod][2SgPoss][SgPosd]:+penek            EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:+penek          EncliticOrEnd;
 [N][Abl_Mod][2PlPoss][SgPosd]:-vceńek           EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:-vceńek         EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:%%%:(e)gpeceńek        EncliticOrEnd; ! 2Pl possessor |
-[N][Abl_Mod][2PlPoss][SgPosd]:+peceńek          EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:+peceńek        EncliticOrEnd;  
+[N][Abl_Mod][2PlPoss][SgPosd]:+peceńek          EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:+peceńek        EncliticOrEnd;
 [N][Abl_Mod][2DuPoss][SgPosd]:-vtegnek          EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:-vtegnek        EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:%%%:(e)gpetegnek       EncliticOrEnd; ! 2Du possessor |
-[N][Abl_Mod][2DuPoss][SgPosd]:+petegnek         EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:+petegnek       EncliticOrEnd;  
+[N][Abl_Mod][2DuPoss][SgPosd]:+petegnek         EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:+petegnek       EncliticOrEnd;
 ! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
 [N][Abl_Mod][4SgPoss][SgPosd]:-minek            EncliticOrEnd; [N][Abl_Mod][4SgPoss][PlPosd]:-minek          EncliticOrEnd; [N][Abl_Mod][4SgPoss][DuPosd]:%%%:(e)gminek          EncliticOrEnd; ! 4Sg possessor |
 [N][Abl_Mod][4PlPoss][SgPosd]:-meggnek          EncliticOrEnd; [N][Abl_Mod][4PlPoss][PlPosd]:-meggnek        EncliticOrEnd; [N][Abl_Mod][4PlPoss][DuPosd]:%%%:(e)gmeggnek        EncliticOrEnd; ! 4Pl possessor |
@@ -13682,11 +13750,11 @@ LEXICON NounInflection
 [N][Abl_Mod][1DuPoss][SgPosd]:-megneng          EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:-megneng        EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:%%%:(e)gmegneng        EncliticOrEnd; ! 1Du possessor |
 ! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
 [N][Abl_Mod][2SgPoss][SgPosd]:-vneng            EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:-vneng          EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:%%%:(e)gpeneng         EncliticOrEnd; ! 2Sg possessor |
-[N][Abl_Mod][2SgPoss][SgPosd]:+peneng           EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:+peneng         EncliticOrEnd;  
+[N][Abl_Mod][2SgPoss][SgPosd]:+peneng           EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:+peneng         EncliticOrEnd;
 [N][Abl_Mod][2PlPoss][SgPosd]:-vcineng          EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:-vcineng        EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:%%%:(e)gpecineng       EncliticOrEnd; ! 2Pl possessor |
-[N][Abl_Mod][2PlPoss][SgPosd]:+pecineng         EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:+pecineng       EncliticOrEnd;   
+[N][Abl_Mod][2PlPoss][SgPosd]:+pecineng         EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:+pecineng       EncliticOrEnd;
 [N][Abl_Mod][2DuPoss][SgPosd]:-vtegneng         EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:-vtegneng       EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:%%%:(e)gpetegneng      EncliticOrEnd; ! 2Du possessor |
-[N][Abl_Mod][2DuPoss][SgPosd]:+petegneng        EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:+petegneng      EncliticOrEnd;  
+[N][Abl_Mod][2DuPoss][SgPosd]:+petegneng        EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:+petegneng      EncliticOrEnd;
 ! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
 [N][Abl_Mod][4SgPoss][SgPosd]:-mineng           EncliticOrEnd; [N][Abl_Mod][4SgPoss][PlPosd]:-mineng         EncliticOrEnd; [N][Abl_Mod][4SgPoss][DuPosd]:%%%:(e)gmineng         EncliticOrEnd; ! 4Sg possessor |
 [N][Abl_Mod][4PlPoss][SgPosd]:-meggneng         EncliticOrEnd; [N][Abl_Mod][4PlPoss][PlPosd]:-meggneng       EncliticOrEnd; [N][Abl_Mod][4PlPoss][DuPosd]:%%%:(e)gmeggneng       EncliticOrEnd; ! 4Pl possessor |
@@ -13725,7 +13793,7 @@ LEXICON NounInflection
 
 
 ! ------------------------------------------------------|
-!            Terminalis Case Endings (to N)             | 
+!            Terminalis Case Endings (to N)             |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 !                   singular possessed                  |                      plural possessed                 |                          dual possessed                      |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
@@ -13874,10 +13942,10 @@ LEXICON VerbInflection
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 [V][Intr][Ind]:+'(g/t)u                    IntransitiveIndicative;
-[V][Trns][Ind]:+'(g)a                      TransitiveIndicative; 
+[V][Trns][Ind]:+'(g)a                      TransitiveIndicative;
 
-[V][Intr][Intrg]:                          IntransitiveInterrogative; 
-[V][Trns][Intrg]:                          TransitiveInterrogative; 
+[V][Intr][Intrg]:                          IntransitiveInterrogative;
+[V][Trns][Intrg]:                          TransitiveInterrogative;
 
 [V][Intr][Opt][PRS]:                       IntransitivePresentOptative;
 [V][Trns][Opt][PRS]:                       TransitivePresentOptative;
@@ -13889,7 +13957,7 @@ LEXICON VerbInflection
 [V][Trns][Opt][FUT][NEG]:@~+yaquna         TransitiveNegativeFutureOptative;
 
 [V][Intr][Ptcp]:-lria/@+ngur*              IntransitiveParticipial;
-![V][Trns][Ptcp]:@~-ke                      TransitiveParticipial; 
+![V][Trns][Ptcp]:@~-ke                      TransitiveParticipial;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                 !!!
@@ -14022,9 +14090,9 @@ LEXICON TransitiveInterrogative
 [3Du][1Sg]:+'(g/t)agnga   EncliticOrEnd; [3Du][1Pl]:+'(g/t)agkut   EncliticOrEnd; [3Du][1Du]:+'(g/t)agkuk    EncliticOrEnd;
 [3Du][1Sg]:+'(g/t)agnenga EncliticOrEnd; [3Du][1Pl]:+'(g/t)agnekut EncliticOrEnd; [3Du][1Du]:+'(g/t)agnekuk  EncliticOrEnd;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
+!                                      |                                        |                                         |
+!                                      |                                        |                                         |
+!                                      |                                        |                                         |
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [2Sg][1Sg]:~+(t)sia       EncliticOrEnd; [2Sg][1Pl]:~+(t)sikut     EncliticOrEnd; [2Sg][1Du]:~+(t)sikuk      EncliticOrEnd;
 [2Pl][1Sg]:@~+cecia       EncliticOrEnd; [2Pl][1Pl]:@~+cecikut     EncliticOrEnd; [2Pl][1Du]:@~+cecikuk      EncliticOrEnd;
@@ -14039,9 +14107,9 @@ LEXICON TransitiveInterrogative
 ![1Pl][2Sg]:               EncliticOrEnd;                                        !                                         |
 ![1Du][2Sg]:               EncliticOrEnd;                                        !                                         |
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
+!                                      |                                        |                                         |
+!                                      |                                        |                                         |
+!                                      |                                        |                                         |
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 
 
@@ -14186,111 +14254,111 @@ LEXICON IntransitiveParticipial
 
 LEXICON IntransitiveSubordinative
 !-----------------------|--------------------------|-------------------------|
-[3Sg]:ni   EncliticOrEnd; [1Sg]:%:nga EncliticOrEnd; [2Sg]:ten  EncliticOrEnd; 
-[3Pl]:teng EncliticOrEnd; [1Pl]:ta    EncliticOrEnd; [2Pl]:ci   EncliticOrEnd; 
+[3Sg]:ni   EncliticOrEnd; [1Sg]:%:nga EncliticOrEnd; [2Sg]:ten  EncliticOrEnd;
+[3Pl]:teng EncliticOrEnd; [1Pl]:ta    EncliticOrEnd; [2Pl]:ci   EncliticOrEnd;
 [3Du]:tek  EncliticOrEnd; [1Du]:nuk   EncliticOrEnd; [2Du]:tek  EncliticOrEnd;
                           [1Du]:nung  EncliticOrEnd;
 !-----------------------|--------------------------|-------------------------|
 
 LEXICON TransitiveSubordinative
 !---------------------------|--------------------------|----------------------------|
-[_][3Sg]:ku    EncliticOrEnd; [_][3Pl]:ki EncliticOrEnd; [_][3Du]:kek  EncliticOrEnd; 
+[_][3Sg]:ku    EncliticOrEnd; [_][3Pl]:ki EncliticOrEnd; [_][3Du]:kek  EncliticOrEnd;
 [_][1Sg]:%:nga EncliticOrEnd; [_][1Pl]:ta EncliticOrEnd; [_][1Du]:nuk  EncliticOrEnd;
-                                                         [_][1Du]:nung EncliticOrEnd;  
-[_][2Sg]:ten   EncliticOrEnd; [_][2Pl]:ci EncliticOrEnd; [_][2Du]:tek  EncliticOrEnd; 
+                                                         [_][1Du]:nung EncliticOrEnd;
+[_][2Sg]:ten   EncliticOrEnd; [_][2Pl]:ci EncliticOrEnd; [_][2Du]:tek  EncliticOrEnd;
 !---------------------------|--------------------------|----------------------------|
 
 
 LEXICON IntransitiveConnectiveVEnd
 !---------------------------|----------------------------|---------------------------|--------------------------|
-[3Sg]:%:^an    EncliticOrEnd; [1Sg]:+ma     EncliticOrEnd; [2Sg]:.vet   EncliticOrEnd; [4Sg]:+mi   EncliticOrEnd; 
-[3Pl]:%:^ata   EncliticOrEnd; [1Pl]:-mta    EncliticOrEnd; [2Pl]:.veci  EncliticOrEnd; [4Pl]:+meng EncliticOrEnd; 
-[3Du]:%:^agnek EncliticOrEnd; [1Du]:-megnuk EncliticOrEnd; [2Du]:.vtek  EncliticOrEnd; [4Du]:+mek  EncliticOrEnd; 
+[3Sg]:%:^an    EncliticOrEnd; [1Sg]:+ma     EncliticOrEnd; [2Sg]:.vet   EncliticOrEnd; [4Sg]:+mi   EncliticOrEnd;
+[3Pl]:%:^ata   EncliticOrEnd; [1Pl]:-mta    EncliticOrEnd; [2Pl]:.veci  EncliticOrEnd; [4Pl]:+meng EncliticOrEnd;
+[3Du]:%:^agnek EncliticOrEnd; [1Du]:-megnuk EncliticOrEnd; [2Du]:.vtek  EncliticOrEnd; [4Du]:+mek  EncliticOrEnd;
 !---------------------------|----------------------------|---------------------------|--------------------------|
 
 LEXICON IntransitiveConnectiveCEnd
 !--------------------------|----------------------------|---------------------------|--------------------------|
-[3Sg]:%:an    EncliticOrEnd; [1Sg]:+ma     EncliticOrEnd; [2Sg]:+pet   EncliticOrEnd; [4Sg]:+mi   EncliticOrEnd; 
-[3Pl]:%:ata   EncliticOrEnd; [1Pl]:-mta    EncliticOrEnd; [2Pl]:+peci  EncliticOrEnd; [4Pl]:+meng EncliticOrEnd; 
-[3Du]:%:agnek EncliticOrEnd; [1Du]:-megnuk EncliticOrEnd; [2Du]:+petek EncliticOrEnd; [4Du]:+mek  EncliticOrEnd; 
+[3Sg]:%:an    EncliticOrEnd; [1Sg]:+ma     EncliticOrEnd; [2Sg]:+pet   EncliticOrEnd; [4Sg]:+mi   EncliticOrEnd;
+[3Pl]:%:ata   EncliticOrEnd; [1Pl]:-mta    EncliticOrEnd; [2Pl]:+peci  EncliticOrEnd; [4Pl]:+meng EncliticOrEnd;
+[3Du]:%:agnek EncliticOrEnd; [1Du]:-megnuk EncliticOrEnd; [2Du]:+petek EncliticOrEnd; [4Du]:+mek  EncliticOrEnd;
 !--------------------------|----------------------------|---------------------------|--------------------------|
 
 LEXICON IntransitiveConnectiveCond
 !---------------------------|----------------------------|---------------------------|--------------------------|
-[3Sg]:%:^an    EncliticOrEnd; [1Sg]:+ma     EncliticOrEnd; [2Sg]:.vet   EncliticOrEnd; [4Sg]:+ni   EncliticOrEnd; 
-[3Pl]:%:^ata   EncliticOrEnd; [1Pl]:-mta    EncliticOrEnd; [2Pl]:.veci  EncliticOrEnd; [4Pl]:+neng EncliticOrEnd; 
-[3Du]:%:^agnek EncliticOrEnd; [1Du]:-megnuk EncliticOrEnd; [2Du]:.vtek  EncliticOrEnd; [4Du]:+nek  EncliticOrEnd; 
+[3Sg]:%:^an    EncliticOrEnd; [1Sg]:+ma     EncliticOrEnd; [2Sg]:.vet   EncliticOrEnd; [4Sg]:+ni   EncliticOrEnd;
+[3Pl]:%:^ata   EncliticOrEnd; [1Pl]:-mta    EncliticOrEnd; [2Pl]:.veci  EncliticOrEnd; [4Pl]:+neng EncliticOrEnd;
+[3Du]:%:^agnek EncliticOrEnd; [1Du]:-megnuk EncliticOrEnd; [2Du]:.vtek  EncliticOrEnd; [4Du]:+nek  EncliticOrEnd;
 !---------------------------|----------------------------|---------------------------|--------------------------|
 
 LEXICON IntransitiveConnectiveCtmp
 !--------------------------|----------------------------|-----------------------------|----------------------------|
-[3Sg]:%:ani   EncliticOrEnd; [1Sg]:-mni    EncliticOrEnd; [2Sg]:+peni    EncliticOrEnd; [4Sg]:+mini   EncliticOrEnd; 
-[3Pl]:%:atni  EncliticOrEnd; [1Pl]:-mteńi  EncliticOrEnd; [2Pl]:+peceńi  EncliticOrEnd; [4Pl]:+meggni EncliticOrEnd; 
-[3Du]:%:agni  EncliticOrEnd; [1Du]:-megni  EncliticOrEnd; [2Du]:+petegni EncliticOrEnd; [4Du]:+megni  EncliticOrEnd; 
+[3Sg]:%:ani   EncliticOrEnd; [1Sg]:-mni    EncliticOrEnd; [2Sg]:+peni    EncliticOrEnd; [4Sg]:+mini   EncliticOrEnd;
+[3Pl]:%:atni  EncliticOrEnd; [1Pl]:-mteńi  EncliticOrEnd; [2Pl]:+peceńi  EncliticOrEnd; [4Pl]:+meggni EncliticOrEnd;
+[3Du]:%:agni  EncliticOrEnd; [1Du]:-megni  EncliticOrEnd; [2Du]:+petegni EncliticOrEnd; [4Du]:+megni  EncliticOrEnd;
 !--------------------------|----------------------------|-----------------------------|----------------------------|
 
 
 LEXICON TransitiveConnectiveVEnd
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][3Sg]:%:^aku     EncliticOrEnd; [3Sg][3Pl]:%:^aki     EncliticOrEnd; [3Sg][3Du]:%:^akek     EncliticOrEnd; 
-[3Pl][3Sg]:%:^atgu    EncliticOrEnd; [3Pl][3Pl]:%:^atki    EncliticOrEnd; [3Pl][3Du]:%:^atkek    EncliticOrEnd; 
-[3Du][3Sg]:%:^agnegu  EncliticOrEnd; [3Du][3Pl]:%:^agki    EncliticOrEnd; [3Du][3Du]:%:^agkek    EncliticOrEnd; 
+[3Sg][3Sg]:%:^aku     EncliticOrEnd; [3Sg][3Pl]:%:^aki     EncliticOrEnd; [3Sg][3Du]:%:^akek     EncliticOrEnd;
+[3Pl][3Sg]:%:^atgu    EncliticOrEnd; [3Pl][3Pl]:%:^atki    EncliticOrEnd; [3Pl][3Du]:%:^atkek    EncliticOrEnd;
+[3Du][3Sg]:%:^agnegu  EncliticOrEnd; [3Du][3Pl]:%:^agki    EncliticOrEnd; [3Du][3Du]:%:^agkek    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][3Sg]:-mku       EncliticOrEnd; [1Sg][3Pl]:-mki       EncliticOrEnd; [1Sg][3Du]:-mkek       EncliticOrEnd; 
-[1Pl][3Sg]:-mteggu    EncliticOrEnd; [1Pl][3Pl]:-mteki     EncliticOrEnd; [1Pl][3Du]:-mtekek     EncliticOrEnd; 
-[1Du][3Sg]:-megnegu   EncliticOrEnd; [1Du][3Pl]:-megki     EncliticOrEnd; [1Du][3Du]:-megkek     EncliticOrEnd; 
+[1Sg][3Sg]:-mku       EncliticOrEnd; [1Sg][3Pl]:-mki       EncliticOrEnd; [1Sg][3Du]:-mkek       EncliticOrEnd;
+[1Pl][3Sg]:-mteggu    EncliticOrEnd; [1Pl][3Pl]:-mteki     EncliticOrEnd; [1Pl][3Du]:-mtekek     EncliticOrEnd;
+[1Du][3Sg]:-megnegu   EncliticOrEnd; [1Du][3Pl]:-megki     EncliticOrEnd; [1Du][3Du]:-megkek     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][3Sg]:.vgu       EncliticOrEnd; [2Sg][3Pl]:.vki       EncliticOrEnd; [2Sg][3Du]:.vkek       EncliticOrEnd; 
-[2Pl][3Sg]:.vciu      EncliticOrEnd; [2Pl][3Pl]:.vciki     EncliticOrEnd; [2Pl][3Du]:.vcikek     EncliticOrEnd; 
-[2Du][3Sg]:.vtegnegu  EncliticOrEnd; [2Du][3Pl]:.vtegki    EncliticOrEnd; [2Du][3Du]:.vtegkek    EncliticOrEnd; 
+[2Sg][3Sg]:.vgu       EncliticOrEnd; [2Sg][3Pl]:.vki       EncliticOrEnd; [2Sg][3Du]:.vkek       EncliticOrEnd;
+[2Pl][3Sg]:.vciu      EncliticOrEnd; [2Pl][3Pl]:.vciki     EncliticOrEnd; [2Pl][3Du]:.vcikek     EncliticOrEnd;
+[2Du][3Sg]:.vtegnegu  EncliticOrEnd; [2Du][3Pl]:.vtegki    EncliticOrEnd; [2Du][3Du]:.vtegkek    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][3Sg]:+miu       EncliticOrEnd; [4Sg][3Pl]:+miki      EncliticOrEnd; [4Sg][3Du]:+mikek      EncliticOrEnd; 
-[4Pl][3Sg]:+megteggu  EncliticOrEnd; [4Pl][3Pl]:+megteki   EncliticOrEnd; [4Pl][3Du]:+megtekek   EncliticOrEnd; 
-[4Du][3Sg]:+megnegu   EncliticOrEnd; [4Du][3Pl]:+megneki   EncliticOrEnd; [4Du][3Du]:+megnekek   EncliticOrEnd; 
+[4Sg][3Sg]:+miu       EncliticOrEnd; [4Sg][3Pl]:+miki      EncliticOrEnd; [4Sg][3Du]:+mikek      EncliticOrEnd;
+[4Pl][3Sg]:+megteggu  EncliticOrEnd; [4Pl][3Pl]:+megteki   EncliticOrEnd; [4Pl][3Du]:+megtekek   EncliticOrEnd;
+[4Du][3Sg]:+megnegu   EncliticOrEnd; [4Du][3Pl]:+megneki   EncliticOrEnd; [4Du][3Du]:+megnekek   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][1Sg]:%:^anga    EncliticOrEnd; [3Sg][1Pl]:%:^akut    EncliticOrEnd; [3Sg][1Du]:%:^akuk     EncliticOrEnd; 
-[3Pl][1Sg]:%:^atnga   EncliticOrEnd; [3Pl][1Pl]:%:^atkut   EncliticOrEnd; [3Pl][1Du]:%:^atkuk    EncliticOrEnd; 
-[3Du][1Sg]:%:^agnga   EncliticOrEnd; [3Du][1Pl]:%:^agkut   EncliticOrEnd; [3Du][1Du]:%:^agkuk    EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][1Sg]:.vnga      EncliticOrEnd; [2Sg][1Pl]:.vkut      EncliticOrEnd; [2Sg][1Du]:.vkuk       EncliticOrEnd; 
-[2Pl][1Sg]:.vcia      EncliticOrEnd; [2Pl][1Pl]:.vcikut    EncliticOrEnd; [2Pl][1Du]:.vcikuk     EncliticOrEnd; 
-[2Du][1Sg]:.vtegnga   EncliticOrEnd; [2Du][1Pl]:.vtegkut   EncliticOrEnd; [2Du][1Du]:.vtegkuk    EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][1Sg]:+mia       EncliticOrEnd; [4Sg][1Pl]:+mikut     EncliticOrEnd; [4Sg][1Du]:+mikuk      EncliticOrEnd; 
-[4Pl][1Sg]:+megtenga  EncliticOrEnd; [4Pl][1Pl]:+megtekut  EncliticOrEnd; [4Pl][1Du]:+megtekuk   EncliticOrEnd; 
-[4Du][1Sg]:+megnenga  EncliticOrEnd; [4Du][1Pl]:+megnekut  EncliticOrEnd; [4Du][1Du]:+megnekuk   EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][2Sg]:%:^aten    EncliticOrEnd; [3Sg][2Pl]:%:^aci     EncliticOrEnd; [3Sg][2Du]:%:^atek     EncliticOrEnd; 
-[3Pl][2Sg]:%:^atgen   EncliticOrEnd; [3Pl][2Pl]:%:^aceci   EncliticOrEnd; [3Pl][2Du]:%:^acetek   EncliticOrEnd; 
-[3Du][2Sg]:%:^agten   EncliticOrEnd; [3Du][2Pl]:%:^agci    EncliticOrEnd; [3Du][2Du]:%:^agtek    EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][2Sg]:-mken      EncliticOrEnd; [1Sg][2Pl]:-mci       EncliticOrEnd; [1Sg][2Du]:-mtek       EncliticOrEnd; 
-[1Pl][2Sg]:-mteggen   EncliticOrEnd; [1Pl][2Pl]:-mceci     EncliticOrEnd; [1Pl][2Du]:-mcetek     EncliticOrEnd; 
-[1Du][2Sg]:-megten    EncliticOrEnd; [1Du][2Pl]:-megci     EncliticOrEnd; [1Du][2Du]:-megtek     EncliticOrEnd; 
+[3Sg][1Sg]:%:^anga    EncliticOrEnd; [3Sg][1Pl]:%:^akut    EncliticOrEnd; [3Sg][1Du]:%:^akuk     EncliticOrEnd;
+[3Pl][1Sg]:%:^atnga   EncliticOrEnd; [3Pl][1Pl]:%:^atkut   EncliticOrEnd; [3Pl][1Du]:%:^atkuk    EncliticOrEnd;
+[3Du][1Sg]:%:^agnga   EncliticOrEnd; [3Du][1Pl]:%:^agkut   EncliticOrEnd; [3Du][1Du]:%:^agkuk    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
 !----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][2Sg]:+miten     EncliticOrEnd; [4Sg][2Pl]:+mici      EncliticOrEnd; [4Sg][2Du]:+mitek      EncliticOrEnd; 
-[4Pl][2Sg]:+megteggen EncliticOrEnd; [4Pl][2Pl]:+megceci   EncliticOrEnd; [4Pl][2Du]:+megcetek   EncliticOrEnd; 
-[4Du][2Sg]:+megnegen  EncliticOrEnd; [4Du][2Pl]:+megneci   EncliticOrEnd; [4Du][2Du]:+megnetek   EncliticOrEnd; 
+[2Sg][1Sg]:.vnga      EncliticOrEnd; [2Sg][1Pl]:.vkut      EncliticOrEnd; [2Sg][1Du]:.vkuk       EncliticOrEnd;
+[2Pl][1Sg]:.vcia      EncliticOrEnd; [2Pl][1Pl]:.vcikut    EncliticOrEnd; [2Pl][1Du]:.vcikuk     EncliticOrEnd;
+[2Du][1Sg]:.vtegnga   EncliticOrEnd; [2Du][1Pl]:.vtegkut   EncliticOrEnd; [2Du][1Du]:.vtegkuk    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][4Sg]:%:^ani     EncliticOrEnd; [3Sg][4Pl]:%:^ateng   EncliticOrEnd; [3Sg][4Du]:%:^atek     EncliticOrEnd; 
-[3Pl][4Sg]:%:^atni    EncliticOrEnd; [3Pl][4Pl]:%:^aceteng EncliticOrEnd; [3Pl][4Du]:%:^acetek   EncliticOrEnd; 
-[3Du][4Sg]:%:^agni    EncliticOrEnd; [3Du][4Pl]:%:^agteng  EncliticOrEnd; [3Du][4Du]:%:^agtek    EncliticOrEnd; 
+[4Sg][1Sg]:+mia       EncliticOrEnd; [4Sg][1Pl]:+mikut     EncliticOrEnd; [4Sg][1Du]:+mikuk      EncliticOrEnd;
+[4Pl][1Sg]:+megtenga  EncliticOrEnd; [4Pl][1Pl]:+megtekut  EncliticOrEnd; [4Pl][1Du]:+megtekuk   EncliticOrEnd;
+[4Du][1Sg]:+megnenga  EncliticOrEnd; [4Du][1Pl]:+megnekut  EncliticOrEnd; [4Du][1Du]:+megnekuk   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][4Sg]:-mni       EncliticOrEnd; [1Sg][4Pl]:-mteng     EncliticOrEnd; [1Sg][4Du]:-mtek       EncliticOrEnd; 
-[1Pl][4Sg]:-mteńi     EncliticOrEnd; [1Pl][4Pl]:-mceteng   EncliticOrEnd; [1Pl][4Du]:-mcetek     EncliticOrEnd; 
-[1Du][4Sg]:-megni     EncliticOrEnd; [1Du][4Pl]:-megteng   EncliticOrEnd; [1Du][4Du]:-megtek     EncliticOrEnd; 
+[3Sg][2Sg]:%:^aten    EncliticOrEnd; [3Sg][2Pl]:%:^aci     EncliticOrEnd; [3Sg][2Du]:%:^atek     EncliticOrEnd;
+[3Pl][2Sg]:%:^atgen   EncliticOrEnd; [3Pl][2Pl]:%:^aceci   EncliticOrEnd; [3Pl][2Du]:%:^acetek   EncliticOrEnd;
+[3Du][2Sg]:%:^agten   EncliticOrEnd; [3Du][2Pl]:%:^agci    EncliticOrEnd; [3Du][2Du]:%:^agtek    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][4Sg]:.vni       EncliticOrEnd; [2Sg][4Pl]:.vteng     EncliticOrEnd; [2Sg][4Du]:.vtek       EncliticOrEnd; 
-[2Pl][4Sg]:.vcini     EncliticOrEnd; [2Pl][4Pl]:.vciteng   EncliticOrEnd; [2Pl][4Du]:.vcitek     EncliticOrEnd; 
-[2Du][4Sg]:.vtegni    EncliticOrEnd; [2Du][4Pl]:.vtegteng  EncliticOrEnd; [2Du][4Du]:.vtegtek    EncliticOrEnd; 
+[1Sg][2Sg]:-mken      EncliticOrEnd; [1Sg][2Pl]:-mci       EncliticOrEnd; [1Sg][2Du]:-mtek       EncliticOrEnd;
+[1Pl][2Sg]:-mteggen   EncliticOrEnd; [1Pl][2Pl]:-mceci     EncliticOrEnd; [1Pl][2Du]:-mcetek     EncliticOrEnd;
+[1Du][2Sg]:-megten    EncliticOrEnd; [1Du][2Pl]:-megci     EncliticOrEnd; [1Du][2Du]:-megtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+!                                  |                                    |                                     |
+!                                  |                                    |                                     |
+!                                  |                                    |                                     |
+!----------------------------------|------------------------------------|-------------------------------------|
+[4Sg][2Sg]:+miten     EncliticOrEnd; [4Sg][2Pl]:+mici      EncliticOrEnd; [4Sg][2Du]:+mitek      EncliticOrEnd;
+[4Pl][2Sg]:+megteggen EncliticOrEnd; [4Pl][2Pl]:+megceci   EncliticOrEnd; [4Pl][2Du]:+megcetek   EncliticOrEnd;
+[4Du][2Sg]:+megnegen  EncliticOrEnd; [4Du][2Pl]:+megneci   EncliticOrEnd; [4Du][2Du]:+megnetek   EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[3Sg][4Sg]:%:^ani     EncliticOrEnd; [3Sg][4Pl]:%:^ateng   EncliticOrEnd; [3Sg][4Du]:%:^atek     EncliticOrEnd;
+[3Pl][4Sg]:%:^atni    EncliticOrEnd; [3Pl][4Pl]:%:^aceteng EncliticOrEnd; [3Pl][4Du]:%:^acetek   EncliticOrEnd;
+[3Du][4Sg]:%:^agni    EncliticOrEnd; [3Du][4Pl]:%:^agteng  EncliticOrEnd; [3Du][4Du]:%:^agtek    EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[1Sg][4Sg]:-mni       EncliticOrEnd; [1Sg][4Pl]:-mteng     EncliticOrEnd; [1Sg][4Du]:-mtek       EncliticOrEnd;
+[1Pl][4Sg]:-mteńi     EncliticOrEnd; [1Pl][4Pl]:-mceteng   EncliticOrEnd; [1Pl][4Du]:-mcetek     EncliticOrEnd;
+[1Du][4Sg]:-megni     EncliticOrEnd; [1Du][4Pl]:-megteng   EncliticOrEnd; [1Du][4Du]:-megtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[2Sg][4Sg]:.vni       EncliticOrEnd; [2Sg][4Pl]:.vteng     EncliticOrEnd; [2Sg][4Du]:.vtek       EncliticOrEnd;
+[2Pl][4Sg]:.vcini     EncliticOrEnd; [2Pl][4Pl]:.vciteng   EncliticOrEnd; [2Pl][4Du]:.vcitek     EncliticOrEnd;
+[2Du][4Sg]:.vtegni    EncliticOrEnd; [2Du][4Pl]:.vtegteng  EncliticOrEnd; [2Du][4Du]:.vtegtek    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
@@ -14299,65 +14367,65 @@ LEXICON TransitiveConnectiveVEnd
 
 LEXICON TransitiveConnectiveCEnd
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][3Sg]:%:aku      EncliticOrEnd; [3Sg][3Pl]:%:aki      EncliticOrEnd; [3Sg][3Du]:%:akek      EncliticOrEnd; 
-[3Pl][3Sg]:%:atgu     EncliticOrEnd; [3Pl][3Pl]:%:atki     EncliticOrEnd; [3Pl][3Du]:%:atkek     EncliticOrEnd; 
-[3Du][3Sg]:%:agnegu   EncliticOrEnd; [3Du][3Pl]:%:agki     EncliticOrEnd; [3Du][3Du]:%:agkek     EncliticOrEnd; 
+[3Sg][3Sg]:%:aku      EncliticOrEnd; [3Sg][3Pl]:%:aki      EncliticOrEnd; [3Sg][3Du]:%:akek      EncliticOrEnd;
+[3Pl][3Sg]:%:atgu     EncliticOrEnd; [3Pl][3Pl]:%:atki     EncliticOrEnd; [3Pl][3Du]:%:atkek     EncliticOrEnd;
+[3Du][3Sg]:%:agnegu   EncliticOrEnd; [3Du][3Pl]:%:agki     EncliticOrEnd; [3Du][3Du]:%:agkek     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][3Sg]:-mku       EncliticOrEnd; [1Sg][3Pl]:-mki       EncliticOrEnd; [1Sg][3Du]:-mkek       EncliticOrEnd; 
-[1Pl][3Sg]:-mteggu    EncliticOrEnd; [1Pl][3Pl]:-mteki     EncliticOrEnd; [1Pl][3Du]:-mtekek     EncliticOrEnd; 
-[1Du][3Sg]:-megnegu   EncliticOrEnd; [1Du][3Pl]:-megki     EncliticOrEnd; [1Du][3Du]:-megkek     EncliticOrEnd; 
+[1Sg][3Sg]:-mku       EncliticOrEnd; [1Sg][3Pl]:-mki       EncliticOrEnd; [1Sg][3Du]:-mkek       EncliticOrEnd;
+[1Pl][3Sg]:-mteggu    EncliticOrEnd; [1Pl][3Pl]:-mteki     EncliticOrEnd; [1Pl][3Du]:-mtekek     EncliticOrEnd;
+[1Du][3Sg]:-megnegu   EncliticOrEnd; [1Du][3Pl]:-megki     EncliticOrEnd; [1Du][3Du]:-megkek     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][3Sg]:+pegu      EncliticOrEnd; [2Sg][3Pl]:+peki      EncliticOrEnd; [2Sg][3Du]:+pekek      EncliticOrEnd; 
-[2Pl][3Sg]:+peciu     EncliticOrEnd; [2Pl][3Pl]:+peciki    EncliticOrEnd; [2Pl][3Du]:+pecikek    EncliticOrEnd; 
-[2Du][3Sg]:+petegnegu EncliticOrEnd; [2Du][3Pl]:+petegki   EncliticOrEnd; [2Du][3Du]:+petegkek   EncliticOrEnd; 
+[2Sg][3Sg]:+pegu      EncliticOrEnd; [2Sg][3Pl]:+peki      EncliticOrEnd; [2Sg][3Du]:+pekek      EncliticOrEnd;
+[2Pl][3Sg]:+peciu     EncliticOrEnd; [2Pl][3Pl]:+peciki    EncliticOrEnd; [2Pl][3Du]:+pecikek    EncliticOrEnd;
+[2Du][3Sg]:+petegnegu EncliticOrEnd; [2Du][3Pl]:+petegki   EncliticOrEnd; [2Du][3Du]:+petegkek   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][3Sg]:+miu       EncliticOrEnd; [4Sg][3Pl]:+miki      EncliticOrEnd; [4Sg][3Du]:+mikek      EncliticOrEnd; 
-[4Pl][3Sg]:+megteggu  EncliticOrEnd; [4Pl][3Pl]:+megteki   EncliticOrEnd; [4Pl][3Du]:+megtekek   EncliticOrEnd; 
-[4Du][3Sg]:+megnegu   EncliticOrEnd; [4Du][3Pl]:+megneki   EncliticOrEnd; [4Du][3Du]:+megnekek   EncliticOrEnd; 
+[4Sg][3Sg]:+miu       EncliticOrEnd; [4Sg][3Pl]:+miki      EncliticOrEnd; [4Sg][3Du]:+mikek      EncliticOrEnd;
+[4Pl][3Sg]:+megteggu  EncliticOrEnd; [4Pl][3Pl]:+megteki   EncliticOrEnd; [4Pl][3Du]:+megtekek   EncliticOrEnd;
+[4Du][3Sg]:+megnegu   EncliticOrEnd; [4Du][3Pl]:+megneki   EncliticOrEnd; [4Du][3Du]:+megnekek   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][1Sg]:%:anga     EncliticOrEnd; [3Sg][1Pl]:%:akut     EncliticOrEnd; [3Sg][1Du]:%:akuk      EncliticOrEnd; 
-[3Pl][1Sg]:%:atnga    EncliticOrEnd; [3Pl][1Pl]:%:atkut    EncliticOrEnd; [3Pl][1Du]:%:atkuk     EncliticOrEnd; 
-[3Du][1Sg]:%:agnga    EncliticOrEnd; [3Du][1Pl]:%:agkut    EncliticOrEnd; [3Du][1Du]:%:agkuk     EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][1Sg]:+penga     EncliticOrEnd; [2Sg][1Pl]:+pekut     EncliticOrEnd; [2Sg][1Du]:+pekuk      EncliticOrEnd; 
-[2Pl][1Sg]:+pecia     EncliticOrEnd; [2Pl][1Pl]:+pecikut   EncliticOrEnd; [2Pl][1Du]:+pecikuk    EncliticOrEnd; 
-[2Du][1Sg]:+petegnga  EncliticOrEnd; [2Du][1Pl]:+petegkut  EncliticOrEnd; [2Du][1Du]:+petegkuk   EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][1Sg]:+mia       EncliticOrEnd; [4Sg][1Pl]:+mikut     EncliticOrEnd; [4Sg][1Du]:+mikuk      EncliticOrEnd; 
-[4Pl][1Sg]:+megtenga  EncliticOrEnd; [4Pl][1Pl]:+megtekut  EncliticOrEnd; [4Pl][1Du]:+megtekuk   EncliticOrEnd; 
-[4Du][1Sg]:+megnenga  EncliticOrEnd; [4Du][1Pl]:+megnekut  EncliticOrEnd; [4Du][1Du]:+megnekuk   EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][2Sg]:%:aten     EncliticOrEnd; [3Sg][2Pl]:%:aci      EncliticOrEnd; [3Sg][2Du]:%:atek      EncliticOrEnd; 
-[3Pl][2Sg]:%:atgen    EncliticOrEnd; [3Pl][2Pl]:%:aceci    EncliticOrEnd; [3Pl][2Du]:%:acetek    EncliticOrEnd; 
-[3Du][2Sg]:%:agten    EncliticOrEnd; [3Du][2Pl]:%:agci     EncliticOrEnd; [3Du][2Du]:%:agtek     EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][2Sg]:-mken      EncliticOrEnd; [1Sg][2Pl]:-mci       EncliticOrEnd; [1Sg][2Du]:-mtek       EncliticOrEnd; 
-[1Pl][2Sg]:-mteggen   EncliticOrEnd; [1Pl][2Pl]:-mceci     EncliticOrEnd; [1Pl][2Du]:-mcetek     EncliticOrEnd; 
-[1Du][2Sg]:-megten    EncliticOrEnd; [1Du][2Pl]:-megci     EncliticOrEnd; [1Du][2Du]:-megtek     EncliticOrEnd; 
+[3Sg][1Sg]:%:anga     EncliticOrEnd; [3Sg][1Pl]:%:akut     EncliticOrEnd; [3Sg][1Du]:%:akuk      EncliticOrEnd;
+[3Pl][1Sg]:%:atnga    EncliticOrEnd; [3Pl][1Pl]:%:atkut    EncliticOrEnd; [3Pl][1Du]:%:atkuk     EncliticOrEnd;
+[3Du][1Sg]:%:agnga    EncliticOrEnd; [3Du][1Pl]:%:agkut    EncliticOrEnd; [3Du][1Du]:%:agkuk     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
 !----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][2Sg]:+miten     EncliticOrEnd; [4Sg][2Pl]:+mici      EncliticOrEnd; [4Sg][2Du]:+mitek      EncliticOrEnd; 
-[4Pl][2Sg]:+megteggen EncliticOrEnd; [4Pl][2Pl]:+megceci   EncliticOrEnd; [4Pl][2Du]:+megcetek   EncliticOrEnd; 
-[4Du][2Sg]:+megnegen  EncliticOrEnd; [4Du][2Pl]:+megneci   EncliticOrEnd; [4Du][2Du]:+megnetek   EncliticOrEnd; 
+[2Sg][1Sg]:+penga     EncliticOrEnd; [2Sg][1Pl]:+pekut     EncliticOrEnd; [2Sg][1Du]:+pekuk      EncliticOrEnd;
+[2Pl][1Sg]:+pecia     EncliticOrEnd; [2Pl][1Pl]:+pecikut   EncliticOrEnd; [2Pl][1Du]:+pecikuk    EncliticOrEnd;
+[2Du][1Sg]:+petegnga  EncliticOrEnd; [2Du][1Pl]:+petegkut  EncliticOrEnd; [2Du][1Du]:+petegkuk   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][4Sg]:%:ani      EncliticOrEnd; [3Sg][4Pl]:%:ateng    EncliticOrEnd; [3Sg][4Du]:%:atek      EncliticOrEnd; 
-[3Pl][4Sg]:%:atni     EncliticOrEnd; [3Pl][4Pl]:%:aceteng  EncliticOrEnd; [3Pl][4Du]:%:acetek    EncliticOrEnd; 
-[3Du][4Sg]:%:agni     EncliticOrEnd; [3Du][4Pl]:%:agteng   EncliticOrEnd; [3Du][4Du]:%:agtek     EncliticOrEnd; 
+[4Sg][1Sg]:+mia       EncliticOrEnd; [4Sg][1Pl]:+mikut     EncliticOrEnd; [4Sg][1Du]:+mikuk      EncliticOrEnd;
+[4Pl][1Sg]:+megtenga  EncliticOrEnd; [4Pl][1Pl]:+megtekut  EncliticOrEnd; [4Pl][1Du]:+megtekuk   EncliticOrEnd;
+[4Du][1Sg]:+megnenga  EncliticOrEnd; [4Du][1Pl]:+megnekut  EncliticOrEnd; [4Du][1Du]:+megnekuk   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][4Sg]:-mni       EncliticOrEnd; [1Sg][4Pl]:-mteng     EncliticOrEnd; [1Sg][4Du]:-mtek       EncliticOrEnd; 
-[1Pl][4Sg]:-mteńi     EncliticOrEnd; [1Pl][4Pl]:-mceteng   EncliticOrEnd; [1Pl][4Du]:-mcetek     EncliticOrEnd; 
-[1Du][4Sg]:-megni     EncliticOrEnd; [1Du][4Pl]:-megteng   EncliticOrEnd; [1Du][4Du]:-megtek     EncliticOrEnd; 
+[3Sg][2Sg]:%:aten     EncliticOrEnd; [3Sg][2Pl]:%:aci      EncliticOrEnd; [3Sg][2Du]:%:atek      EncliticOrEnd;
+[3Pl][2Sg]:%:atgen    EncliticOrEnd; [3Pl][2Pl]:%:aceci    EncliticOrEnd; [3Pl][2Du]:%:acetek    EncliticOrEnd;
+[3Du][2Sg]:%:agten    EncliticOrEnd; [3Du][2Pl]:%:agci     EncliticOrEnd; [3Du][2Du]:%:agtek     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][4Sg]:+peni      EncliticOrEnd; [2Sg][4Pl]:+peteng    EncliticOrEnd; [2Sg][4Du]:+petek      EncliticOrEnd; 
-[2Pl][4Sg]:+pecini    EncliticOrEnd; [2Pl][4Pl]:+peciteng  EncliticOrEnd; [2Pl][4Du]:+pecitek    EncliticOrEnd; 
-[2Du][4Sg]:+petegni   EncliticOrEnd; [2Du][4Pl]:+petegteng EncliticOrEnd; [2Du][4Du]:+petegtek   EncliticOrEnd; 
+[1Sg][2Sg]:-mken      EncliticOrEnd; [1Sg][2Pl]:-mci       EncliticOrEnd; [1Sg][2Du]:-mtek       EncliticOrEnd;
+[1Pl][2Sg]:-mteggen   EncliticOrEnd; [1Pl][2Pl]:-mceci     EncliticOrEnd; [1Pl][2Du]:-mcetek     EncliticOrEnd;
+[1Du][2Sg]:-megten    EncliticOrEnd; [1Du][2Pl]:-megci     EncliticOrEnd; [1Du][2Du]:-megtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+!                                  |                                    |                                     |
+!                                  |                                    |                                     |
+!                                  |                                    |                                     |
+!----------------------------------|------------------------------------|-------------------------------------|
+[4Sg][2Sg]:+miten     EncliticOrEnd; [4Sg][2Pl]:+mici      EncliticOrEnd; [4Sg][2Du]:+mitek      EncliticOrEnd;
+[4Pl][2Sg]:+megteggen EncliticOrEnd; [4Pl][2Pl]:+megceci   EncliticOrEnd; [4Pl][2Du]:+megcetek   EncliticOrEnd;
+[4Du][2Sg]:+megnegen  EncliticOrEnd; [4Du][2Pl]:+megneci   EncliticOrEnd; [4Du][2Du]:+megnetek   EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[3Sg][4Sg]:%:ani      EncliticOrEnd; [3Sg][4Pl]:%:ateng    EncliticOrEnd; [3Sg][4Du]:%:atek      EncliticOrEnd;
+[3Pl][4Sg]:%:atni     EncliticOrEnd; [3Pl][4Pl]:%:aceteng  EncliticOrEnd; [3Pl][4Du]:%:acetek    EncliticOrEnd;
+[3Du][4Sg]:%:agni     EncliticOrEnd; [3Du][4Pl]:%:agteng   EncliticOrEnd; [3Du][4Du]:%:agtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[1Sg][4Sg]:-mni       EncliticOrEnd; [1Sg][4Pl]:-mteng     EncliticOrEnd; [1Sg][4Du]:-mtek       EncliticOrEnd;
+[1Pl][4Sg]:-mteńi     EncliticOrEnd; [1Pl][4Pl]:-mceteng   EncliticOrEnd; [1Pl][4Du]:-mcetek     EncliticOrEnd;
+[1Du][4Sg]:-megni     EncliticOrEnd; [1Du][4Pl]:-megteng   EncliticOrEnd; [1Du][4Du]:-megtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[2Sg][4Sg]:+peni      EncliticOrEnd; [2Sg][4Pl]:+peteng    EncliticOrEnd; [2Sg][4Du]:+petek      EncliticOrEnd;
+[2Pl][4Sg]:+pecini    EncliticOrEnd; [2Pl][4Pl]:+peciteng  EncliticOrEnd; [2Pl][4Du]:+pecitek    EncliticOrEnd;
+[2Du][4Sg]:+petegni   EncliticOrEnd; [2Du][4Pl]:+petegteng EncliticOrEnd; [2Du][4Du]:+petegtek   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
@@ -14366,65 +14434,65 @@ LEXICON TransitiveConnectiveCEnd
 
 LEXICON TransitiveConnectiveCond
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][3Sg]:%:^aku     EncliticOrEnd; [3Sg][3Pl]:%:^aki     EncliticOrEnd; [3Sg][3Du]:%:^akek     EncliticOrEnd; 
-[3Pl][3Sg]:%:^atgu    EncliticOrEnd; [3Pl][3Pl]:%:^atki    EncliticOrEnd; [3Pl][3Du]:%:^atkek    EncliticOrEnd; 
-[3Du][3Sg]:%:^agnegu  EncliticOrEnd; [3Du][3Pl]:%:^agki    EncliticOrEnd; [3Du][3Du]:%:^agkek    EncliticOrEnd; 
+[3Sg][3Sg]:%:^aku     EncliticOrEnd; [3Sg][3Pl]:%:^aki     EncliticOrEnd; [3Sg][3Du]:%:^akek     EncliticOrEnd;
+[3Pl][3Sg]:%:^atgu    EncliticOrEnd; [3Pl][3Pl]:%:^atki    EncliticOrEnd; [3Pl][3Du]:%:^atkek    EncliticOrEnd;
+[3Du][3Sg]:%:^agnegu  EncliticOrEnd; [3Du][3Pl]:%:^agki    EncliticOrEnd; [3Du][3Du]:%:^agkek    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][3Sg]:-mku       EncliticOrEnd; [1Sg][3Pl]:-mki       EncliticOrEnd; [1Sg][3Du]:-mkek       EncliticOrEnd; 
-[1Pl][3Sg]:-mteggu    EncliticOrEnd; [1Pl][3Pl]:-mteki     EncliticOrEnd; [1Pl][3Du]:-mtekek     EncliticOrEnd; 
-[1Du][3Sg]:-megnegu   EncliticOrEnd; [1Du][3Pl]:-megki     EncliticOrEnd; [1Du][3Du]:-megkek     EncliticOrEnd; 
+[1Sg][3Sg]:-mku       EncliticOrEnd; [1Sg][3Pl]:-mki       EncliticOrEnd; [1Sg][3Du]:-mkek       EncliticOrEnd;
+[1Pl][3Sg]:-mteggu    EncliticOrEnd; [1Pl][3Pl]:-mteki     EncliticOrEnd; [1Pl][3Du]:-mtekek     EncliticOrEnd;
+[1Du][3Sg]:-megnegu   EncliticOrEnd; [1Du][3Pl]:-megki     EncliticOrEnd; [1Du][3Du]:-megkek     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][3Sg]:.vgu       EncliticOrEnd; [2Sg][3Pl]:.vki       EncliticOrEnd; [2Sg][3Du]:.vkek       EncliticOrEnd; 
-[2Pl][3Sg]:.vciu      EncliticOrEnd; [2Pl][3Pl]:.vciki     EncliticOrEnd; [2Pl][3Du]:.vcikek     EncliticOrEnd; 
-[2Du][3Sg]:.vtegnegu  EncliticOrEnd; [2Du][3Pl]:.vtegki    EncliticOrEnd; [2Du][3Du]:.vtegkek    EncliticOrEnd; 
+[2Sg][3Sg]:.vgu       EncliticOrEnd; [2Sg][3Pl]:.vki       EncliticOrEnd; [2Sg][3Du]:.vkek       EncliticOrEnd;
+[2Pl][3Sg]:.vciu      EncliticOrEnd; [2Pl][3Pl]:.vciki     EncliticOrEnd; [2Pl][3Du]:.vcikek     EncliticOrEnd;
+[2Du][3Sg]:.vtegnegu  EncliticOrEnd; [2Du][3Pl]:.vtegki    EncliticOrEnd; [2Du][3Du]:.vtegkek    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][3Sg]:+niu       EncliticOrEnd; [4Sg][3Pl]:+niki      EncliticOrEnd; [4Sg][3Du]:+nikek      EncliticOrEnd; 
-[4Pl][3Sg]:+negteggu  EncliticOrEnd; [4Pl][3Pl]:+negteki   EncliticOrEnd; [4Pl][3Du]:+negtekek   EncliticOrEnd; 
-[4Du][3Sg]:+negnegu   EncliticOrEnd; [4Du][3Pl]:+negneki   EncliticOrEnd; [4Du][3Du]:+negnekek   EncliticOrEnd; 
+[4Sg][3Sg]:+niu       EncliticOrEnd; [4Sg][3Pl]:+niki      EncliticOrEnd; [4Sg][3Du]:+nikek      EncliticOrEnd;
+[4Pl][3Sg]:+negteggu  EncliticOrEnd; [4Pl][3Pl]:+negteki   EncliticOrEnd; [4Pl][3Du]:+negtekek   EncliticOrEnd;
+[4Du][3Sg]:+negnegu   EncliticOrEnd; [4Du][3Pl]:+negneki   EncliticOrEnd; [4Du][3Du]:+negnekek   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][1Sg]:%:^anga    EncliticOrEnd; [3Sg][1Pl]:%:^akut    EncliticOrEnd; [3Sg][1Du]:%:^akuk     EncliticOrEnd; 
-[3Pl][1Sg]:%:^atnga   EncliticOrEnd; [3Pl][1Pl]:%:^atkut   EncliticOrEnd; [3Pl][1Du]:%:^atkuk    EncliticOrEnd; 
-[3Du][1Sg]:%:^agnga   EncliticOrEnd; [3Du][1Pl]:%:^agkut   EncliticOrEnd; [3Du][1Du]:%:^agkuk    EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][1Sg]:.vnga      EncliticOrEnd; [2Sg][1Pl]:.vkut      EncliticOrEnd; [2Sg][1Du]:.vkuk       EncliticOrEnd; 
-[2Pl][1Sg]:.vcia      EncliticOrEnd; [2Pl][1Pl]:.vcikut    EncliticOrEnd; [2Pl][1Du]:.vcikuk     EncliticOrEnd; 
-[2Du][1Sg]:.vtegnga   EncliticOrEnd; [2Du][1Pl]:.vtegkut   EncliticOrEnd; [2Du][1Du]:.vtegkuk    EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][1Sg]:+nia       EncliticOrEnd; [4Sg][1Pl]:+nikut     EncliticOrEnd; [4Sg][1Du]:+nikuk      EncliticOrEnd; 
-[4Pl][1Sg]:+negtenga  EncliticOrEnd; [4Pl][1Pl]:+negtekut  EncliticOrEnd; [4Pl][1Du]:+negtekuk   EncliticOrEnd; 
-[4Du][1Sg]:+negnenga  EncliticOrEnd; [4Du][1Pl]:+negnekut  EncliticOrEnd; [4Du][1Du]:+negnekuk   EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][2Sg]:%:^aten    EncliticOrEnd; [3Sg][2Pl]:%:^aci     EncliticOrEnd; [3Sg][2Du]:%:^atek     EncliticOrEnd; 
-[3Pl][2Sg]:%:^atgen   EncliticOrEnd; [3Pl][2Pl]:%:^aceci   EncliticOrEnd; [3Pl][2Du]:%:^acetek   EncliticOrEnd; 
-[3Du][2Sg]:%:^agten   EncliticOrEnd; [3Du][2Pl]:%:^agci    EncliticOrEnd; [3Du][2Du]:%:^agtek    EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][2Sg]:-mken      EncliticOrEnd; [1Sg][2Pl]:-mci       EncliticOrEnd; [1Sg][2Du]:-mtek       EncliticOrEnd; 
-[1Pl][2Sg]:-mteggen   EncliticOrEnd; [1Pl][2Pl]:-mceci     EncliticOrEnd; [1Pl][2Du]:-mcetek     EncliticOrEnd; 
-[1Du][2Sg]:-megten    EncliticOrEnd; [1Du][2Pl]:-megci     EncliticOrEnd; [1Du][2Du]:-megtek     EncliticOrEnd; 
+[3Sg][1Sg]:%:^anga    EncliticOrEnd; [3Sg][1Pl]:%:^akut    EncliticOrEnd; [3Sg][1Du]:%:^akuk     EncliticOrEnd;
+[3Pl][1Sg]:%:^atnga   EncliticOrEnd; [3Pl][1Pl]:%:^atkut   EncliticOrEnd; [3Pl][1Du]:%:^atkuk    EncliticOrEnd;
+[3Du][1Sg]:%:^agnga   EncliticOrEnd; [3Du][1Pl]:%:^agkut   EncliticOrEnd; [3Du][1Du]:%:^agkuk    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
 !----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][2Sg]:+niten     EncliticOrEnd; [4Sg][2Pl]:+nici      EncliticOrEnd; [4Sg][2Du]:+nitek      EncliticOrEnd; 
-[4Pl][2Sg]:+negteggen EncliticOrEnd; [4Pl][2Pl]:+negceci   EncliticOrEnd; [4Pl][2Du]:+negcetek   EncliticOrEnd; 
-[4Du][2Sg]:+negnegen  EncliticOrEnd; [4Du][2Pl]:+negneci   EncliticOrEnd; [4Du][2Du]:+negnetek   EncliticOrEnd; 
+[2Sg][1Sg]:.vnga      EncliticOrEnd; [2Sg][1Pl]:.vkut      EncliticOrEnd; [2Sg][1Du]:.vkuk       EncliticOrEnd;
+[2Pl][1Sg]:.vcia      EncliticOrEnd; [2Pl][1Pl]:.vcikut    EncliticOrEnd; [2Pl][1Du]:.vcikuk     EncliticOrEnd;
+[2Du][1Sg]:.vtegnga   EncliticOrEnd; [2Du][1Pl]:.vtegkut   EncliticOrEnd; [2Du][1Du]:.vtegkuk    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][4Sg]:%:^ani     EncliticOrEnd; [3Sg][4Pl]:%:^ateng   EncliticOrEnd; [3Sg][4Du]:%:^atek     EncliticOrEnd; 
-[3Pl][4Sg]:%:^atni    EncliticOrEnd; [3Pl][4Pl]:%:^aceteng EncliticOrEnd; [3Pl][4Du]:%:^acetek   EncliticOrEnd; 
-[3Du][4Sg]:%:^agni    EncliticOrEnd; [3Du][4Pl]:%:^agteng  EncliticOrEnd; [3Du][4Du]:%:^agtek    EncliticOrEnd; 
+[4Sg][1Sg]:+nia       EncliticOrEnd; [4Sg][1Pl]:+nikut     EncliticOrEnd; [4Sg][1Du]:+nikuk      EncliticOrEnd;
+[4Pl][1Sg]:+negtenga  EncliticOrEnd; [4Pl][1Pl]:+negtekut  EncliticOrEnd; [4Pl][1Du]:+negtekuk   EncliticOrEnd;
+[4Du][1Sg]:+negnenga  EncliticOrEnd; [4Du][1Pl]:+negnekut  EncliticOrEnd; [4Du][1Du]:+negnekuk   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][4Sg]:-mni       EncliticOrEnd; [1Sg][4Pl]:-mteng     EncliticOrEnd; [1Sg][4Du]:-mtek       EncliticOrEnd; 
-[1Pl][4Sg]:-mteńi     EncliticOrEnd; [1Pl][4Pl]:-mceteng   EncliticOrEnd; [1Pl][4Du]:-mcetek     EncliticOrEnd; 
-[1Du][4Sg]:-megni     EncliticOrEnd; [1Du][4Pl]:-megteng   EncliticOrEnd; [1Du][4Du]:-megtek     EncliticOrEnd; 
+[3Sg][2Sg]:%:^aten    EncliticOrEnd; [3Sg][2Pl]:%:^aci     EncliticOrEnd; [3Sg][2Du]:%:^atek     EncliticOrEnd;
+[3Pl][2Sg]:%:^atgen   EncliticOrEnd; [3Pl][2Pl]:%:^aceci   EncliticOrEnd; [3Pl][2Du]:%:^acetek   EncliticOrEnd;
+[3Du][2Sg]:%:^agten   EncliticOrEnd; [3Du][2Pl]:%:^agci    EncliticOrEnd; [3Du][2Du]:%:^agtek    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][4Sg]:.vni       EncliticOrEnd; [2Sg][4Pl]:.vteng     EncliticOrEnd; [2Sg][4Du]:.vtek       EncliticOrEnd; 
-[2Pl][4Sg]:.vcini     EncliticOrEnd; [2Pl][4Pl]:.vciteng   EncliticOrEnd; [2Pl][4Du]:.vcitek     EncliticOrEnd; 
-[2Du][4Sg]:.vtegni    EncliticOrEnd; [2Du][4Pl]:.vtegteng  EncliticOrEnd; [2Du][4Du]:.vtegtek    EncliticOrEnd; 
+[1Sg][2Sg]:-mken      EncliticOrEnd; [1Sg][2Pl]:-mci       EncliticOrEnd; [1Sg][2Du]:-mtek       EncliticOrEnd;
+[1Pl][2Sg]:-mteggen   EncliticOrEnd; [1Pl][2Pl]:-mceci     EncliticOrEnd; [1Pl][2Du]:-mcetek     EncliticOrEnd;
+[1Du][2Sg]:-megten    EncliticOrEnd; [1Du][2Pl]:-megci     EncliticOrEnd; [1Du][2Du]:-megtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+!                                  |                                    |                                     |
+!                                  |                                    |                                     |
+!                                  |                                    |                                     |
+!----------------------------------|------------------------------------|-------------------------------------|
+[4Sg][2Sg]:+niten     EncliticOrEnd; [4Sg][2Pl]:+nici      EncliticOrEnd; [4Sg][2Du]:+nitek      EncliticOrEnd;
+[4Pl][2Sg]:+negteggen EncliticOrEnd; [4Pl][2Pl]:+negceci   EncliticOrEnd; [4Pl][2Du]:+negcetek   EncliticOrEnd;
+[4Du][2Sg]:+negnegen  EncliticOrEnd; [4Du][2Pl]:+negneci   EncliticOrEnd; [4Du][2Du]:+negnetek   EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[3Sg][4Sg]:%:^ani     EncliticOrEnd; [3Sg][4Pl]:%:^ateng   EncliticOrEnd; [3Sg][4Du]:%:^atek     EncliticOrEnd;
+[3Pl][4Sg]:%:^atni    EncliticOrEnd; [3Pl][4Pl]:%:^aceteng EncliticOrEnd; [3Pl][4Du]:%:^acetek   EncliticOrEnd;
+[3Du][4Sg]:%:^agni    EncliticOrEnd; [3Du][4Pl]:%:^agteng  EncliticOrEnd; [3Du][4Du]:%:^agtek    EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[1Sg][4Sg]:-mni       EncliticOrEnd; [1Sg][4Pl]:-mteng     EncliticOrEnd; [1Sg][4Du]:-mtek       EncliticOrEnd;
+[1Pl][4Sg]:-mteńi     EncliticOrEnd; [1Pl][4Pl]:-mceteng   EncliticOrEnd; [1Pl][4Du]:-mcetek     EncliticOrEnd;
+[1Du][4Sg]:-megni     EncliticOrEnd; [1Du][4Pl]:-megteng   EncliticOrEnd; [1Du][4Du]:-megtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[2Sg][4Sg]:.vni       EncliticOrEnd; [2Sg][4Pl]:.vteng     EncliticOrEnd; [2Sg][4Du]:.vtek       EncliticOrEnd;
+[2Pl][4Sg]:.vcini     EncliticOrEnd; [2Pl][4Pl]:.vciteng   EncliticOrEnd; [2Pl][4Du]:.vcitek     EncliticOrEnd;
+[2Du][4Sg]:.vtegni    EncliticOrEnd; [2Du][4Pl]:.vtegteng  EncliticOrEnd; [2Du][4Du]:.vtegtek    EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
@@ -14433,65 +14501,65 @@ LEXICON TransitiveConnectiveCond
 
 LEXICON TransitiveConnectiveCtmp
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][3Sg]:%:aku      EncliticOrEnd; [3Sg][3Pl]:%:aki      EncliticOrEnd; [3Sg][3Du]:%:akek      EncliticOrEnd; 
-[3Pl][3Sg]:%:atgu     EncliticOrEnd; [3Pl][3Pl]:%:atki     EncliticOrEnd; [3Pl][3Du]:%:atkek     EncliticOrEnd; 
-[3Du][3Sg]:%:agnegu   EncliticOrEnd; [3Du][3Pl]:%:agki     EncliticOrEnd; [3Du][3Du]:%:agkek     EncliticOrEnd; 
+[3Sg][3Sg]:%:aku      EncliticOrEnd; [3Sg][3Pl]:%:aki      EncliticOrEnd; [3Sg][3Du]:%:akek      EncliticOrEnd;
+[3Pl][3Sg]:%:atgu     EncliticOrEnd; [3Pl][3Pl]:%:atki     EncliticOrEnd; [3Pl][3Du]:%:atkek     EncliticOrEnd;
+[3Du][3Sg]:%:agnegu   EncliticOrEnd; [3Du][3Pl]:%:agki     EncliticOrEnd; [3Du][3Du]:%:agkek     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][3Sg]:-mku       EncliticOrEnd; [1Sg][3Pl]:-mki       EncliticOrEnd; [1Sg][3Du]:-mkek       EncliticOrEnd; 
-[1Pl][3Sg]:-mteggu    EncliticOrEnd; [1Pl][3Pl]:-mteki     EncliticOrEnd; [1Pl][3Du]:-mtekek     EncliticOrEnd; 
-[1Du][3Sg]:-megnegu   EncliticOrEnd; [1Du][3Pl]:-megki     EncliticOrEnd; [1Du][3Du]:-megkek     EncliticOrEnd; 
+[1Sg][3Sg]:-mku       EncliticOrEnd; [1Sg][3Pl]:-mki       EncliticOrEnd; [1Sg][3Du]:-mkek       EncliticOrEnd;
+[1Pl][3Sg]:-mteggu    EncliticOrEnd; [1Pl][3Pl]:-mteki     EncliticOrEnd; [1Pl][3Du]:-mtekek     EncliticOrEnd;
+[1Du][3Sg]:-megnegu   EncliticOrEnd; [1Du][3Pl]:-megki     EncliticOrEnd; [1Du][3Du]:-megkek     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][3Sg]:+pegu      EncliticOrEnd; [2Sg][3Pl]:+peki      EncliticOrEnd; [2Sg][3Du]:+pekek      EncliticOrEnd; 
-[2Pl][3Sg]:+peciu     EncliticOrEnd; [2Pl][3Pl]:+peciki    EncliticOrEnd; [2Pl][3Du]:+pecikek    EncliticOrEnd; 
-[2Du][3Sg]:+petegnegu EncliticOrEnd; [2Du][3Pl]:+petegki   EncliticOrEnd; [2Du][3Du]:+petegkek   EncliticOrEnd; 
+[2Sg][3Sg]:+pegu      EncliticOrEnd; [2Sg][3Pl]:+peki      EncliticOrEnd; [2Sg][3Du]:+pekek      EncliticOrEnd;
+[2Pl][3Sg]:+peciu     EncliticOrEnd; [2Pl][3Pl]:+peciki    EncliticOrEnd; [2Pl][3Du]:+pecikek    EncliticOrEnd;
+[2Du][3Sg]:+petegnegu EncliticOrEnd; [2Du][3Pl]:+petegki   EncliticOrEnd; [2Du][3Du]:+petegkek   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][3Sg]:+miniu     EncliticOrEnd; [4Sg][3Pl]:+miniki    EncliticOrEnd; [4Sg][3Du]:+minikek    EncliticOrEnd; 
-[4Pl][3Sg]:+megteggu  EncliticOrEnd; [4Pl][3Pl]:+megteki   EncliticOrEnd; [4Pl][3Du]:+megtekek   EncliticOrEnd; 
-[4Du][3Sg]:+megnegu   EncliticOrEnd; [4Du][3Pl]:+megneki   EncliticOrEnd; [4Du][3Du]:+megnekek   EncliticOrEnd; 
+[4Sg][3Sg]:+miniu     EncliticOrEnd; [4Sg][3Pl]:+miniki    EncliticOrEnd; [4Sg][3Du]:+minikek    EncliticOrEnd;
+[4Pl][3Sg]:+megteggu  EncliticOrEnd; [4Pl][3Pl]:+megteki   EncliticOrEnd; [4Pl][3Du]:+megtekek   EncliticOrEnd;
+[4Du][3Sg]:+megnegu   EncliticOrEnd; [4Du][3Pl]:+megneki   EncliticOrEnd; [4Du][3Du]:+megnekek   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][1Sg]:%:anga     EncliticOrEnd; [3Sg][1Pl]:%:akut     EncliticOrEnd; [3Sg][1Du]:%:akuk      EncliticOrEnd; 
-[3Pl][1Sg]:%:atnga    EncliticOrEnd; [3Pl][1Pl]:%:atkut    EncliticOrEnd; [3Pl][1Du]:%:atkuk     EncliticOrEnd; 
-[3Du][1Sg]:%:agnga    EncliticOrEnd; [3Du][1Pl]:%:agkut    EncliticOrEnd; [3Du][1Du]:%:agkuk     EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][1Sg]:+penga     EncliticOrEnd; [2Sg][1Pl]:+pekut     EncliticOrEnd; [2Sg][1Du]:+pekuk      EncliticOrEnd; 
-[2Pl][1Sg]:+pecia     EncliticOrEnd; [2Pl][1Pl]:+pecikut   EncliticOrEnd; [2Pl][1Du]:+pecikuk    EncliticOrEnd; 
-[2Du][1Sg]:+petegnga  EncliticOrEnd; [2Du][1Pl]:+petegkut  EncliticOrEnd; [2Du][1Du]:+petegkuk   EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][1Sg]:+minia     EncliticOrEnd; [4Sg][1Pl]:+minikut   EncliticOrEnd; [4Sg][1Du]:+minikuk    EncliticOrEnd; 
-[4Pl][1Sg]:+megtenga  EncliticOrEnd; [4Pl][1Pl]:+megtekut  EncliticOrEnd; [4Pl][1Du]:+megtekuk   EncliticOrEnd; 
-[4Du][1Sg]:+megnenga  EncliticOrEnd; [4Du][1Pl]:+megnekut  EncliticOrEnd; [4Du][1Du]:+megnekuk   EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][2Sg]:%:aten     EncliticOrEnd; [3Sg][2Pl]:%:aci      EncliticOrEnd; [3Sg][2Du]:%:atek      EncliticOrEnd; 
-[3Pl][2Sg]:%:atgen    EncliticOrEnd; [3Pl][2Pl]:%:aceci    EncliticOrEnd; [3Pl][2Du]:%:acetek    EncliticOrEnd; 
-[3Du][2Sg]:%:agten    EncliticOrEnd; [3Du][2Pl]:%:agci     EncliticOrEnd; [3Du][2Du]:%:agtek     EncliticOrEnd; 
-!----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][2Sg]:-mken      EncliticOrEnd; [1Sg][2Pl]:-mci       EncliticOrEnd; [1Sg][2Du]:-mtek       EncliticOrEnd; 
-[1Pl][2Sg]:-mteggen   EncliticOrEnd; [1Pl][2Pl]:-mceci     EncliticOrEnd; [1Pl][2Du]:-mcetek     EncliticOrEnd; 
-[1Du][2Sg]:-megten    EncliticOrEnd; [1Du][2Pl]:-megci     EncliticOrEnd; [1Du][2Du]:-megtek     EncliticOrEnd; 
+[3Sg][1Sg]:%:anga     EncliticOrEnd; [3Sg][1Pl]:%:akut     EncliticOrEnd; [3Sg][1Du]:%:akuk      EncliticOrEnd;
+[3Pl][1Sg]:%:atnga    EncliticOrEnd; [3Pl][1Pl]:%:atkut    EncliticOrEnd; [3Pl][1Du]:%:atkuk     EncliticOrEnd;
+[3Du][1Sg]:%:agnga    EncliticOrEnd; [3Du][1Pl]:%:agkut    EncliticOrEnd; [3Du][1Du]:%:agkuk     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
 !----------------------------------|------------------------------------|-------------------------------------|
-[4Sg][2Sg]:+miniten   EncliticOrEnd; [4Sg][2Pl]:+minici    EncliticOrEnd; [4Sg][2Du]:+minitek    EncliticOrEnd; 
-[4Pl][2Sg]:+megteggen EncliticOrEnd; [4Pl][2Pl]:+megceci   EncliticOrEnd; [4Pl][2Du]:+megcetek   EncliticOrEnd; 
-[4Du][2Sg]:+megnegen  EncliticOrEnd; [4Du][2Pl]:+megneci   EncliticOrEnd; [4Du][2Du]:+megnetek   EncliticOrEnd; 
+[2Sg][1Sg]:+penga     EncliticOrEnd; [2Sg][1Pl]:+pekut     EncliticOrEnd; [2Sg][1Du]:+pekuk      EncliticOrEnd;
+[2Pl][1Sg]:+pecia     EncliticOrEnd; [2Pl][1Pl]:+pecikut   EncliticOrEnd; [2Pl][1Du]:+pecikuk    EncliticOrEnd;
+[2Du][1Sg]:+petegnga  EncliticOrEnd; [2Du][1Pl]:+petegkut  EncliticOrEnd; [2Du][1Du]:+petegkuk   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[3Sg][4Sg]:%:ani      EncliticOrEnd; [3Sg][4Pl]:%:ateng    EncliticOrEnd; [3Sg][4Du]:%:atek      EncliticOrEnd; 
-[3Pl][4Sg]:%:atni     EncliticOrEnd; [3Pl][4Pl]:%:aceteng  EncliticOrEnd; [3Pl][4Du]:%:acetek    EncliticOrEnd; 
-[3Du][4Sg]:%:agni     EncliticOrEnd; [3Du][4Pl]:%:agteng   EncliticOrEnd; [3Du][4Du]:%:agtek     EncliticOrEnd; 
+[4Sg][1Sg]:+minia     EncliticOrEnd; [4Sg][1Pl]:+minikut   EncliticOrEnd; [4Sg][1Du]:+minikuk    EncliticOrEnd;
+[4Pl][1Sg]:+megtenga  EncliticOrEnd; [4Pl][1Pl]:+megtekut  EncliticOrEnd; [4Pl][1Du]:+megtekuk   EncliticOrEnd;
+[4Du][1Sg]:+megnenga  EncliticOrEnd; [4Du][1Pl]:+megnekut  EncliticOrEnd; [4Du][1Du]:+megnekuk   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[1Sg][4Sg]:-mni       EncliticOrEnd; [1Sg][4Pl]:-mteng     EncliticOrEnd; [1Sg][4Du]:-mtek       EncliticOrEnd; 
-[1Pl][4Sg]:-mteńi     EncliticOrEnd; [1Pl][4Pl]:-mceteng   EncliticOrEnd; [1Pl][4Du]:-mcetek     EncliticOrEnd; 
-[1Du][4Sg]:-megni     EncliticOrEnd; [1Du][4Pl]:-megteng   EncliticOrEnd; [1Du][4Du]:-megtek     EncliticOrEnd; 
+[3Sg][2Sg]:%:aten     EncliticOrEnd; [3Sg][2Pl]:%:aci      EncliticOrEnd; [3Sg][2Du]:%:atek      EncliticOrEnd;
+[3Pl][2Sg]:%:atgen    EncliticOrEnd; [3Pl][2Pl]:%:aceci    EncliticOrEnd; [3Pl][2Du]:%:acetek    EncliticOrEnd;
+[3Du][2Sg]:%:agten    EncliticOrEnd; [3Du][2Pl]:%:agci     EncliticOrEnd; [3Du][2Du]:%:agtek     EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
-[2Sg][4Sg]:+peni      EncliticOrEnd; [2Sg][4Pl]:+peteng    EncliticOrEnd; [2Sg][4Du]:+petek      EncliticOrEnd; 
-[2Pl][4Sg]:+pecini    EncliticOrEnd; [2Pl][4Pl]:+peciteng  EncliticOrEnd; [2Pl][4Du]:+pecitek    EncliticOrEnd; 
-[2Du][4Sg]:+petegni   EncliticOrEnd; [2Du][4Pl]:+petegteng EncliticOrEnd; [2Du][4Du]:+petegtek   EncliticOrEnd; 
+[1Sg][2Sg]:-mken      EncliticOrEnd; [1Sg][2Pl]:-mci       EncliticOrEnd; [1Sg][2Du]:-mtek       EncliticOrEnd;
+[1Pl][2Sg]:-mteggen   EncliticOrEnd; [1Pl][2Pl]:-mceci     EncliticOrEnd; [1Pl][2Du]:-mcetek     EncliticOrEnd;
+[1Du][2Sg]:-megten    EncliticOrEnd; [1Du][2Pl]:-megci     EncliticOrEnd; [1Du][2Du]:-megtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+!                                  |                                    |                                     |
+!                                  |                                    |                                     |
+!                                  |                                    |                                     |
+!----------------------------------|------------------------------------|-------------------------------------|
+[4Sg][2Sg]:+miniten   EncliticOrEnd; [4Sg][2Pl]:+minici    EncliticOrEnd; [4Sg][2Du]:+minitek    EncliticOrEnd;
+[4Pl][2Sg]:+megteggen EncliticOrEnd; [4Pl][2Pl]:+megceci   EncliticOrEnd; [4Pl][2Du]:+megcetek   EncliticOrEnd;
+[4Du][2Sg]:+megnegen  EncliticOrEnd; [4Du][2Pl]:+megneci   EncliticOrEnd; [4Du][2Du]:+megnetek   EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[3Sg][4Sg]:%:ani      EncliticOrEnd; [3Sg][4Pl]:%:ateng    EncliticOrEnd; [3Sg][4Du]:%:atek      EncliticOrEnd;
+[3Pl][4Sg]:%:atni     EncliticOrEnd; [3Pl][4Pl]:%:aceteng  EncliticOrEnd; [3Pl][4Du]:%:acetek    EncliticOrEnd;
+[3Du][4Sg]:%:agni     EncliticOrEnd; [3Du][4Pl]:%:agteng   EncliticOrEnd; [3Du][4Du]:%:agtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[1Sg][4Sg]:-mni       EncliticOrEnd; [1Sg][4Pl]:-mteng     EncliticOrEnd; [1Sg][4Du]:-mtek       EncliticOrEnd;
+[1Pl][4Sg]:-mteńi     EncliticOrEnd; [1Pl][4Pl]:-mceteng   EncliticOrEnd; [1Pl][4Du]:-mcetek     EncliticOrEnd;
+[1Du][4Sg]:-megni     EncliticOrEnd; [1Du][4Pl]:-megteng   EncliticOrEnd; [1Du][4Du]:-megtek     EncliticOrEnd;
+!----------------------------------|------------------------------------|-------------------------------------|
+[2Sg][4Sg]:+peni      EncliticOrEnd; [2Sg][4Pl]:+peteng    EncliticOrEnd; [2Sg][4Du]:+petek      EncliticOrEnd;
+[2Pl][4Sg]:+pecini    EncliticOrEnd; [2Pl][4Pl]:+peciteng  EncliticOrEnd; [2Pl][4Du]:+pecitek    EncliticOrEnd;
+[2Du][4Sg]:+petegni   EncliticOrEnd; [2Du][4Pl]:+petegteng EncliticOrEnd; [2Du][4Du]:+petegtek   EncliticOrEnd;
 !----------------------------------|------------------------------------|-------------------------------------|
 !                                  |                                    |                                     |
 !                                  |                                    |                                     |
