@@ -20,7 +20,7 @@ Sets
     VlessNasal = ḿ ń ńg ;
 
     VoicedCns = VoiceFric VoiceNasal ;
-    VlessCns = VlessFric VlessNasal ;
+    VlessCns = VlessFric VlessNasal Stop ;
 
     Fric = VoiceFric VlessFric ;
     Nasal = VoiceNasal VlessNasal ;
@@ -31,11 +31,6 @@ Sets
     Vow = FVow e ;
 
 Rules 
-
-! uita+'(g/t)uq
-! uita<0 0   uq
-!"Only one boundary"
-!Bndry:0 <=> Bndry:%> _ ;
 
 ! aqume+'(g/t)uq
 ! aqum0<0 0   uq
@@ -77,6 +72,14 @@ Cx:0 <=> _ Bndry:* %–: ;
         \Vow FVow _ [Bndry: - %*:]* %%: ; ! "Rule for Percent"
     where Cx in ( g r gg rr ) ; 
 
+"Rule for Double Minus" ! - optional drop preceding vowel also
+Vx:0 => _ Cns:0 Bndry:* %–: %–: l:0 ;
+    where Vx in ( a e i u ) ;
+"Rule for Double Minus - l drop" ! - optional drop preceding vowel also
+l:0 => Vow:0 Cns:0 Bndry:* %–: %–: _ ;
+"Rule for Double Minus - ti to ci" ! - optional drop preceding vowel also
+t:c => _ Vow:0 Cns:0 Bndry:* %–: %–: l:0 ;
+
 
 ! arnar[N][Abl_Mod][Unpd][Sg]
 ! arnar%~mek
@@ -111,6 +114,12 @@ r:0 <=> \Vow FVow _ [Bndry: - %*:]* %%: ;
 ! qia<0 g   uq
 "Rule (g):g" ! - double vowel ending base
 [ %(g%/t%):g | %(g%):g ] <=> :Vow [:%>|:0]* :Vow [:%>|:0]* _ ;
+
+
+"Rule (ng):ng" ! - bases ending in a vowel
+%(ng%):ng <=> Vow: Bndry:* _ ;
+
+
 
 
 
