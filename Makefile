@@ -4,7 +4,7 @@
 #	esu.seg.hfst: Morphological segmenter
 
 all: esu.mor.hfst esu.gen.hfst esu.seg.hfst \
-	esu.mor.hfstol
+	esu.mor.hfstol esu.seg.hfstol
 
 # This is the lexicon 
 #	evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu
@@ -41,10 +41,16 @@ esu.mor.hfst: esu.gen.hfst
 # This is a segmenter which takes surface forms and produces segmented forms
 #	wöʼöndeyë꞉s:>wö>ʼön>deyë꞉s
 esu.seg.hfst: esu.mor.hfst esu.gen.seg.hfst esu.seg.twol.hfst
-	hfst-compose -F -1 esu.mor.hfst -2 esu.gen.seg.hfst | hfst-compose-intersect -1 - -2 esu.seg.twol.hfst | hfst-minimise -o esu.seg.hfst
+#	hfst-compose -F -1 esu.mor.hfst -2 esu.gen.seg.hfst | hfst-compose-intersect -1 - -2 esu.seg.twol.hfst | hfst-minimise -o esu.seg.hfst
+	hfst-compose -F -1 esu.mor.hfst -2 esu.gen.seg.hfst -o tmp.hfst
+	hfst-compose-intersect -1 tmp.hfst -2 esu.seg.twol.hfst -o esu.seg.hfst
+	@rm tmp.hfst
 
 esu.mor.hfstol: esu.mor.hfst
-	hfst-fst2fst -O esu.mor.hfst -o esu.mor.hfstol
+	hfst-fst2fst -w esu.mor.hfst -o esu.mor.hfstol
+
+esu.seg.hfstol: esu.seg.hfst
+	hfst-fst2fst -w esu.seg.hfst -o esu.seg.hfstol
 
 clean:
 	rm *.hfst *.hfstol
