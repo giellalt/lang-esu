@@ -19,6 +19,10 @@ esu.twol.hfst: esu.twol
 esu.mor.twol.hfst: esu.mor.twol
 	hfst-twolc -i esu.mor.twol -o esu.mor.twol.hfst
 
+# This is the phonology file, which collapses morpheme boundaries
+esu.seg.twol.hfst: esu.seg.twol
+	hfst-twolc -i esu.seg.twol -o esu.seg.twol.hfst
+
 # This is the generator that still has morpheme boundaries
 #	<past><s_sg3><f>deyë꞉s<v><tv>:>wö>ʼön>deyë꞉s
 esu.gen.seg.hfst: esu.lexc.hfst esu.twol.hfst
@@ -36,8 +40,8 @@ esu.mor.hfst: esu.gen.hfst
 
 # This is a segmenter which takes surface forms and produces segmented forms
 #	wöʼöndeyë꞉s:>wö>ʼön>deyë꞉s
-esu.seg.hfst: esu.mor.hfst esu.gen.seg.hfst
-	hfst-compose -F -1 esu.mor.hfst -2 esu.gen.seg.hfst | hfst-minimise -o esu.seg.hfst
+esu.seg.hfst: esu.mor.hfst esu.gen.seg.hfst esu.seg.twol.hfst
+	hfst-compose -F -1 esu.mor.hfst -2 esu.gen.seg.hfst | hfst-compose-intersect -1 - -2 esu.seg.twol.hfst | hfst-minimise -o esu.seg.hfst
 
 esu.mor.hfstol: esu.mor.hfst
 	hfst-fst2fst -O esu.mor.hfst -o esu.mor.hfstol
