@@ -3,6 +3,7 @@
 
 Multichar_Symbols
 vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
+Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 
 [N]                         ! Nominal
 [V]                         ! Verbal
@@ -97,7 +98,7 @@ vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
 [Opt_PRS_2Sg]               !
 [Opt_PRS_2Sg_3Sg]           !
 [Opt_PRS_2Sg_1Sg]           !
-
+@~+lu/@na                   ! subordinative mood marker
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
