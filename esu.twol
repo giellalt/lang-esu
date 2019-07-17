@@ -34,12 +34,17 @@ Rules
 
 "a:0"
 a:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        _ g:0 Bndry:* %(e%):i ; ! age -> ii
+
+"a:i"
+a:i <=> _ g:0 Bndry:* %(e%):i ; ! age -> ii 
 
 "e:0"
 e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
         Vow t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
         _ [ Bndry: - %~: ]+ Vow ; ! "vowel postbases are e deleters"
-        _ [ r:r | g:g ] Bndry:* %%: Bndry:* %(e%):e ; ! "Rule (e):e"
+        _ [ r | g ] Bndry:* %%:0 Bndry:* %(e%):e ; ! "Rule (e):e"
     except
         .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ; ! "Rule for Apostrophe"
 
@@ -69,7 +74,7 @@ ng:0 <=> \Vow Bndry:* FVow Bndry:* _ Bndry:* %:: Bndry:* :FVow Bndry:* \Vow ; ! 
 
 "r:0"
 r:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
-        FVow _ [Bndry: - %*:]* %%: ; ! Rule for Percent
+        FVow _ [Bndry: - %*:]* %%:%> ; ! Rule for Percent
         \Vow Bndry:* FVow Bndry:* _ Bndry:* %:: Bndry:* :FVow Bndry:* \Vow ; ! Rule for Colon
         \Vow Bndry:* FVow Bndry:* %:: Bndry:* _ Bndry:* :FVow Bndry:* \Vow ; ! Rule for Colon
 
@@ -80,7 +85,7 @@ r:q <=> _ (%*:) [ .#. | %= ] ; ! Word Final changes
 rr:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
 
 "ti to ci" ! - optional drop preceding vowel also
-t:c => _ Vow:0 Cns:0 Bndry:* %–: %–: l:0 ; ! Rule for Double Minus -
+t:c <=> _ Vow:0 Cns:0 Bndry:* %–: %–: l:0 ; ! Rule for Double Minus -
 
 "Word final Vte -> t:n"
 t:n <=> Vow _ e:0 [ .#. | %= ] ;
@@ -93,15 +98,14 @@ u:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 "Rule (e):e" ! - bases kept with percent
-%(e%):e <=> FVow FVow [ r | g ] Bndry:* %%: Bndry:* _ ;
-            e:0 [ r | g ] Bndry:* %%: Bndry:* _ ;
+%(e%):e <=> FVow FVow [ r | g ] Bndry:* %%:0 Bndry:* _ ;
+                  e:0 [ r | g ] Bndry:* %%:0 Bndry:* _ ;
 
+"(e):i"
+%(e%):i <=> a:i g:0 Bndry:* %%:0 Bndry:* _ ; ! age -> ii 
 
 "Rule (e):FV" ! - bases kept with percent and dropped by colon
-%(e%):Vy <=> \Vow Vx g:0  Bndry:* %%: Bndry:* %:: Bndry:* _ ; !Bndry:* \Vow ;
-    except
-    r:0 Bndry:* _ ; 
-!        a:i g:0 Bndry:* %%: Bndry:* _ ;
+%(e%):Vy <=> \Vow Vx [ g:0 | r:0 ] Bndry:* %%:0 Bndry:* %:: Bndry:* _ Bndry:* \Vow ;
     where Vx in ( a i u )
           Vy in ( a i u )
     matched ;
@@ -125,6 +129,15 @@ Gx:g <=> :Vow [:%>|:0]* :Vow [:%>|:0]* _ ;
 "Rule (ng):ng" ! - bases ending in a vowel
 %(ng%):ng <=> Vow: Bndry:* _ ;
 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!     OPERATOR      !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"%:0 instead" ! percent not used
+%%:0 <=> g: Bndry:* _ ;
+         e: r: Bndry:* _ ;
+         r: %*: Bndry:* _ ;
 
 
 ! aqume+'(g/t)uq
