@@ -108,8 +108,9 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 (ar*)                       ! 
 (ur)                        ! 
 
+
 !!!!!!! ALLOPHONE OPERATORS !!!!!!
-(e)                         ! 
+(e)                         ! is used only when a strong base-final consonant is kept
 (g)                         ! is used with bases ending in two vowels
 (i)                         ! is used with bases ending in te
 (ng)                        ! is used with bases ending in a vowel
@@ -5553,7 +5554,7 @@ qag’erner              NounPostbase; ! hernia
 qaillukuarte           NounPostbase; ! ‘council member’
 qaillute               NounPostbase; ! how
 qaill’                 NounPostbase; ! how
-qair                   NounPostbase; ! wave
+qair*                  NounPostbase; ! wave
 qairvaar               NounPostbase; ! big wave capable of breaking shore-fast ice
 qairvag                NounPostbase; ! big wave
 qaitar                 NounPostbase; ! beanbag-like toy

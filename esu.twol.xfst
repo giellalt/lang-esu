@@ -1,0 +1,27 @@
+! LANGUAGE: "esu"
+! AUTHOR: "Lonny Strunk"
+
+
+define Stop               [ p | t | c | k | q ];
+define VoicedFricative    [ v | l | s | g | r | u͡g | u͡r ];
+define VoicelessFricative [ vv | ll | ss | gg | rr | u͡gg | u͡rr ];
+define VoicedNasal        [ m | n | ng ];
+define VoicelessNasal     [ ḿ | ń | ńg ];
+
+define VoicedC    [ VoicedFricative | VoicedNasal ];
+define VoicelessC [ VoicelessFricative | VoicelessNasal | Stop ];
+
+define Fricative  [ VoicelessFricative | VoicedFricative ];
+define Nasal      [ VoicelessNasal     | VoicedNasal     ];
+
+define Con          [ Stop | Fricative | Nasal | w | y ];
+
+define FullVowel   [ a | i | u ];
+define Vow           [ e | FullVowel ];
+
+
+define TripleConsonant [..] (->) e || Con _ Con Con .o.
+                       [..]  ->  e || Con Con _ Con ;
+
+
+regex TripleConsonant ;

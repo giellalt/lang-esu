@@ -1,3 +1,6 @@
+! LANGUAGE: "esu"
+! AUTHOR: "Lonny Strunk"
+
 Alphabet
     a c e g i k l m n p q r s t u v w y ḿ ń
     vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
@@ -35,10 +38,16 @@ Rules
 "a:0"
 a:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
     except
-        _ g:0 Bndry:* %(e%):i ; ! age -> ii
+        _ g:0 Bndry:* %(e%):i ; ! age -> ii 
+        _ g:0 Bndry:* a:i ; ! aga -> ii 
+        _ Bndry:* %(ng%):0 Bndry:* a:i ; ! anga -> ii
+        a:i Bndry:* [ g:0 | %(ng%):0 ] Bndry:* _ ; ! anga -> ii
 
 "a:i"
 a:i <=> _ g:0 Bndry:* %(e%):i ; ! age -> ii 
+        _ g:0 Bndry:* a:i ; ! aga -> ii 
+        _ Bndry:* %(ng%):0 Bndry:* a:i ; ! anga -> ii
+        a:i Bndry:* [ g:0 | %(ng%):0 ] Bndry:* _ ; ! anga, aga -> ii
 
 "e:0"
 e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
@@ -47,9 +56,15 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
         _ [ r | g ] Bndry:* %%:0 Bndry:* %(e%):e ; ! "Rule (e):e"
     except
         .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ; ! "Rule for Apostrophe"
+        _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
 
 "e:a"
 e:a <=> .#. ~[ :* Vow t:n] _ [ .#. | %= ] ; ! "Word final e:a"
+
+"e:i"
+e:i <=> _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
+    except
+        .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ; ! "Rule for Apostrophe - short bases"
 
 "e:%ʼ"
 e:%ʼ <=> .#. (Cns) Vow Cns _ [ Bndry: - %~: ]* %': ; ! "Rule for Apostrophe - short bases"
@@ -128,7 +143,13 @@ Gx:g <=> :Vow [:%>|:0]* :Vow [:%>|:0]* _ ;
 
 "Rule (ng):ng" ! - bases ending in a vowel
 %(ng%):ng <=> Vow: Bndry:* _ ;
+    except
+        \Vow Bndry:* FVow Bndry:* _ Bndry:* %:: Bndry:* :FVow ;! Bndry:* \Vow ; ! Rule for Colon
+        \Vow Bndry:* FVow Bndry:* %:: Bndry:* _ Bndry:* :FVow ;! Bndry:* \Vow ; ! Rule for Colon
 
+"Rule (ng):0" ! - bases that get added then dropped after single vowel
+%(ng%):0 <=> \Vow Bndry:* FVow Bndry:* _ Bndry:* %:: Bndry:* :FVow ;! Bndry:* \Vow ; ! Rule for Colon
+             \Vow Bndry:* FVow Bndry:* %:: Bndry:* _ Bndry:* :FVow ;! Bndry:* \Vow ; ! Rule for Colon
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!     OPERATOR      !!!!!

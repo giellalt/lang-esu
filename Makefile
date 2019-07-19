@@ -8,8 +8,9 @@ all: esu.mor.hfst esu.gen.hfst esu.seg.hfst \
 
 # This is the lexicon 
 #	evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu
-esu.lexc.hfst: esu.lexc
-	hfst-lexc --Werror esu.lexc -o esu.lexc.hfst
+esu.lexc.hfst: esu.lexc esu.lexc.xfst.hfst 
+	hfst-lexc --Werror esu.lexc | hfst-compose -1 - -2 esu.lexc.xfst.hfst -o esu.lexc.hfst
+#	hfst-lexc --Werror esu.lexc  -o esu.lexc.hfst
 
 # This is the phonology file, which maintains morpheme boundaries
 esu.twol.hfst: esu.twol
@@ -23,10 +24,16 @@ esu.mor.twol.hfst: esu.mor.twol
 esu.seg.twol.hfst: esu.seg.twol
 	hfst-twolc -i esu.seg.twol -o esu.seg.twol.hfst
 
+esu.lexc.xfst.hfst: esu.lexc.xfst
+	hfst-xfst -p -e "source $<" -e "save stack $@" -E "hyvästi" #"exit"
+
+esu.twol.xfst.hfst: esu.twol.xfst
+	hfst-xfst -p -e "source $<" -e "save stack $@" -E "hyvästi" #"exit"
+
 # This is the generator that still has morpheme boundaries
 #	<past><s_sg3><f>deyë꞉s<v><tv>:>wö>ʼön>deyë꞉s
-esu.gen.seg.hfst: esu.lexc.hfst esu.twol.hfst
-	hfst-compose-intersect -1 esu.lexc.hfst -2 esu.twol.hfst | hfst-minimise -o esu.gen.seg.hfst
+esu.gen.seg.hfst: esu.lexc.hfst esu.twol.hfst esu.twol.xfst.hfst 
+	hfst-compose-intersect -1 esu.lexc.hfst -2 esu.twol.hfst | hfst-compose -1 - -2 esu.twol.xfst.hfst | hfst-minimise -o esu.gen.seg.hfst
 
 # This is the generator that does not have morpheme boundaries
 #	<past><s_sg3><f>deyë꞉s<v><tv>:wöʼöndeyë꞉s
