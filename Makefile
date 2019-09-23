@@ -4,7 +4,8 @@
 #	esu.seg.hfst: Morphological segmenter
 
 all: esu.mor.hfst esu.gen.hfst esu.seg.hfst \
-	esu.mor.hfstol esu.seg.hfstol
+	esu.mor.hfstol esu.seg.hfstol esu.gen.hfstol \
+	test
 
 # This is the lexicon 
 #	evcug[V][Intr][Ind][2Pl]=llu[Encl]:evcug+'(g/t)uci=llu
@@ -58,6 +59,14 @@ esu.mor.hfstol: esu.mor.hfst
 
 esu.seg.hfstol: esu.seg.hfst
 	hfst-fst2fst -w esu.seg.hfst -o esu.seg.hfstol
+
+esu.gen.hfstol: esu.gen.hfst
+	hfst-fst2fst -w esu.gen.hfst -o esu.gen.hfstol
+
+test: test-ch2
+
+test-ch2: esu.pairs.gold/Ch2.V_IntrInd.tsv esu.gen.hfst
+	@cut -f 1 esu.pairs.gold/Ch2.V_IntrInd.tsv | hfst-lookup --pipe-mode esu.gen.hfst | gsed -z 's/\n\n/\n/g' | cut -f1-2 | diff - esu.pairs.gold/Ch2.V_IntrInd.tsv
 
 clean:
 	rm *.hfst *.hfstol
