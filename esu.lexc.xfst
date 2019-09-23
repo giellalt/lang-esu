@@ -60,20 +60,20 @@ define Lowercase "A"   -> a,
                  "U͡rr" -> u͡rr;
 
 define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
-                     "[Opt_PRS_2Sg]" -> "+" n               || t e  _                   .o.
-                     t e "*" "[Opt_PRS_2Sg]" -> l u                                     .o.
-                     "[Opt_PRS_2Sg]" -> ":" a               || Con  _                     .o.
-                     "[Opt_PRS_2Sg]" -> 0                                               .o.
+                     "[Opt_PRS_2Sg]" -> "+" n               || t e  _                         .o.
+                     t e "*" "[Opt_PRS_2Sg]" -> l u                                           .o.
+                     "[Opt_PRS_2Sg]" -> ":" a               || Con  _                         .o.
+                     "[Opt_PRS_2Sg]" -> 0                                                     .o.
                      "[Opt_PRS_2Sg_3Sg]" -> "~" "(g)" i u   || [ Vow Vow | [ Con - t ] e ] _  .o.
-                     t e "[Opt_PRS_2Sg_3Sg]" -> s g u                                   .o.
-                     t e "*" "[Opt_PRS_2Sg_3Sg]" -> l g u                               .o.
-                     "[Opt_PRS_2Sg_3Sg]" -> "–" gg u        || g _                      .o.
-                     "[Opt_PRS_2Sg_3Sg]" -> "–" rr u        || r _                      .o.
-                     "[Opt_PRS_2Sg_3Sg]" -> u                                           .o.
+                     t e "[Opt_PRS_2Sg_3Sg]" -> s g u                                         .o.
+                     t e "*" "[Opt_PRS_2Sg_3Sg]" -> l g u                                     .o.
+                     "[Opt_PRS_2Sg_3Sg]" -> "–" gg u        || g _                            .o.
+                     "[Opt_PRS_2Sg_3Sg]" -> "–" rr u        || r _                            .o.
+                     "[Opt_PRS_2Sg_3Sg]" -> u                                                 .o.
                      "[Opt_PRS_2Sg_1Sg]" (->) "~" "(g)" i a || [ Vow Vow | [ Con - t ] e ] _  .o.
-                     "[Opt_PRS_2Sg_1Sg]" -> "@" "+" ng a                                .o.
-                     "@~+lu/@na" -> "@" n a                 || t e "*" _                .o.
-                     "@~+lu/@na" -> "@" "~" "+" l u                                     ;
+                     "[Opt_PRS_2Sg_1Sg]" -> "@" "+" ng a                                      .o.
+                     "@~+lu/@na" -> "@" n a                 || t e "*" _                      .o.
+                     "@~+lu/@na" -> "@" "~" "+" l u                                            ;
 
 
 regex Lowercase .o. MultipleForms ; 
