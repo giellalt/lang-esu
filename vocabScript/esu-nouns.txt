@@ -4976,7 +4976,6 @@ piyagar*               NounPostbase; ! baby animal; baby bird; chick; cub
 piyuayarar             NounPostbase; ! footpath
 piyunarqucir           NounPostbase; ! authorization; rights when used in the plural
 piyuute                NounPostbase; ! proposal; wish
-post;                  NounPostbase; ! support
 pucengllug             NounPostbase; ! barrel
 pucickar               NounPostbase; ! (NUN form) to fall down head- or face-first
 puckacuar(ar*)         NounPostbase; ! condenser
