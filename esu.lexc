@@ -1022,6 +1022,9 @@ akagyaraleg            NounPostbase; ! all-terrain vehicle
 akakcukuar             NounPostbase; ! biscuit; muffin
 akakiig                NounPostbase; ! broad whitefish (Coregonus nasus)
 akakupag               NounPostbase; ! small hard, round piece of feces
+akʼallar               NounPostbase; ! old thing; thing of the past
+akʼallar*              NounPostbase; ! old thing; thing of the past
+akʼallar(ar*)          NounPostbase; ! old person
 akalria                NounPostbase; ! wheel; roller; rolling things; automobile (K additional meaning); fish wheel (Y additional meaning)
 akangluaryug           NounPostbase; ! pancake ice; rounded sheet of floating ice that can tip
 akanqur                NounPostbase; ! knot in wood
@@ -4986,6 +4989,7 @@ nuliariuteller         NounPostbase; ! widower
 nulirkaute             NounPostbase; ! bride-to-be
 nulirqellriig          NounPostbase; ! (married) couple; man and wife
 nulirqucarar           NounPostbase; ! marriage
+nulirr                 NounPostbase; ! wife
 nulirte                NounPostbase; ! bull (caribou, moose, cattle)
 nullug                 NounPostbase; ! buttock
 nullutuuyag            NounPostbase; ! snowshoe hare; varying hare (Lepus americanus)
@@ -7660,6 +7664,7 @@ yuaruksualler(ar*)     NounPostbase; ! song during the Kevgiq (“Messenger Feas
 yuarullug              NounPostbase; ! ritual song; song used to obtain what is desired
 yuarute                NounPostbase; ! song; music
 yug                    NounPostbase; ! person; human being
+yugʼ                   NounPostbase; ! person; human being
 yugar                  NounPostbase; ! doll; human figurine
 yugarar                NounPostbase; ! digit; finger; toe
 yuggʼacngiar(ar*)      NounPostbase; ! elf; one of the legendary “little people”
@@ -10977,7 +10982,6 @@ nuleg                  VerbPostbase; ! to crack; to split
 nulgair                VerbPostbase; ! to become facially expressionless, unsmiling
 nulgaite               VerbPostbase; ! to be facially expressionless, unsmiling
 nuliqliute             VerbPostbase; ! to get as a wife
-nulirr                 VerbPostbase; ! wife
 nulirrniar             VerbPostbase; ! to ask to marry
 nulirruar              VerbPostbase; ! to be deranged, thinking one has a wife when he does not
 nulirrucir             VerbPostbase; ! to provide a bride with new clothing
