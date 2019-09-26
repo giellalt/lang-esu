@@ -72,6 +72,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [Abs]                       ! Absolutive Case
 [Rel]                       ! Relative Case
 [Abl_Mod]                   ! Ablative-Modalis Case
+[Abl]                       ! Ablative Case
 [Loc]                       ! Locative Case
 [Ter]                       ! Terminalis Case
 [Sec_Ter]                   ! Second Terminalis
@@ -102,6 +103,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [Opt_PRS_2Sg_3Sg]           !
 [Opt_PRS_2Sg_1Sg]           !
 @~+lu/@na                   ! subordinative mood marker
+(ʼa)                        ! used for [DemAdv][Loc] %~nete 
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -109,7 +111,8 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 (aa)                        ! 
 (ar)                        ! 
 (ar*)                       ! 
-(ur)                        ! 
+(ur)                        !
+
 
 
 !!!!!!! ALLOPHONE OPERATORS !!!!!!
@@ -14697,9 +14700,10 @@ qii                  DemAdv;
 !-------------------------------------------------------|-----------------------------|
 ! DOWN BELOW OR DOWN THE SLOPE                                                        |
 !-------------------------------------------------------------------------------------|
-unʼa[DemPro][Abs][Unpd][Sg]:unʼa           EncliticOrEnd; 
-kanʼa[DemPro][Abs][Unpd][Sg]:kanʼa         EncliticOrEnd;  
-                                                          cam                 DemAbsSg;
+un-na[DemPro][Abs][Unpd][Sg]:unʼa           EncliticOrEnd; 
+un-@+yuuq[DemPro][Abs][Unpd][Sg]:unyuuq    EncliticOrEnd;  
+un-@+suuq[DemPro][Abs][Unpd][Sg]:unsuuq    EncliticOrEnd;  
+                             ka              DemAbsSgIrr; cam                 DemAbsSg;
 unʼu            DemNonAbsSg; katʼu           DemNonAbsSg; camʼu            DemNonAbsSg;
 unku       DemIntermedNonSg; kanku      DemIntermedNonSg; camku       DemIntermedNonSg;
 una                  DemAdv; kana                 DemAdv; cama                  DemAdv; 
@@ -14714,13 +14718,16 @@ unʼgaa               DemAdv;
 !-------------------------------------------------------|-----------------------------|
 ! HERE, NEAR SPEAKER                                                                  |
 !-------------------------------------------------------------------------------------|
-manʼa[DemPro][Abs][Unpd][Sg]:manʼa         EncliticOrEnd;  
-                             u                  DemAbsSg; im                  DemAbsSg;
+uu-ggun[DemPro][Via][Unpd][Sg]:uuggun       EncliticOrEnd;  
+uu-ggun[DemAdv][Via]:uuggun                 EncliticOrEnd;
+ma              DemAbsSgIrr; u                  DemAbsSg; im                  DemAbsSg;
 matʼu           DemNonAbsSg; uu              DemNonAbsSg; imʼu             DemNonAbsSg;
                                                           imu              DemNonAbsSg;
 maku       DemIntermedNonSg; uku        DemIntermedNonSg; imku        DemIntermedNonSg;
 maa                  DemAdv; wa                   DemAdv; 
-                                                          ima                   DemAdv; 
+                                                          ima                   DemAdv;
+maa-ten[DemAdv][Equ]:maaten                EncliticOrEnd;
+wa-ten[DemAdv][Equ]:waten                  EncliticOrEnd;
 !-------------------------------------------------------|-----------------------------|
 ! THERE, NEAR LISTENER OR IN CONTEXT                                                  |
 !-------------------------------------------------------------------------------------|
@@ -14730,6 +14737,8 @@ tamaku     DemIntermedNonSg; tauku      DemIntermedNonSg;
 tamaa                DemAdv; tua                  DemAdv;  
                              tava                 DemAdv; tayima         EncliticOrEnd;
                                                           taima          EncliticOrEnd;
+tua-ten[DemAdv][Equ]:tuaten                EncliticOrEnd;
+tava-ten[DemAdv][Equ]:tavaten              EncliticOrEnd;
 !-------------------------------------------------------|-----------------------------|
 ! COMING THIS WAY                                                                     |
 !-------------------------------------------------------------------------------------|
@@ -14742,44 +14751,52 @@ uka                  DemAdv;
 !-------------------------------------------------------|-----------------------------|
 
 
-
 LEXICON DemAbsSg
-na[DemPro][Abs][Unpd][Sg]:na           EncliticOrEnd;
+-na[DemPro][Abs][Unpd][Sg]:na           EncliticOrEnd;
+-@+yuuq[DemPro][Voc][Unpd][Sg]:@+yuuq   EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+-@+suuq[DemPro][Voc][Unpd][Sg]:@+suuq   EncliticOrEnd; ! singular vocative (calling) form
+
+LEXICON DemAbsSgIrr
+t-na[DemPro][Abs][Unpd][Sg]:nʼa         EncliticOrEnd;
+t-@+yuuq[DemPro][Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+t-@+suuq[DemPro][Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! singular vocative (calling) form
 
 LEXICON DemNonAbsSg
-m[DemPro][Rel][Unpd][Sg]:m             EncliticOrEnd;
-mek[DemPro][Abl_Mod][Unpd][Sg]:mek     EncliticOrEnd;
-mi[DemPro][Loc][Unpd][Sg]:mi           EncliticOrEnd;
-mun[DemPro][Ter][Unpd][Sg]:mun         EncliticOrEnd;
-kun[DemPro][Via][Unpd][Sg]:kun         EncliticOrEnd;
-tun[DemPro][Equ][Unpd][Sg]:tun         EncliticOrEnd;
+-m[DemPro][Rel][Unpd][Sg]:m             EncliticOrEnd;
+-mek[DemPro][Abl_Mod][Unpd][Sg]:mek     EncliticOrEnd;
+-mi[DemPro][Loc][Unpd][Sg]:mi           EncliticOrEnd;
+-mun[DemPro][Ter][Unpd][Sg]:mun         EncliticOrEnd;
+-kun[DemPro][Via][Unpd][Sg]:kun         EncliticOrEnd;
+-tun[DemPro][Equ][Unpd][Sg]:tun         EncliticOrEnd;
 
 LEXICON DemIntermedNonSg
-t[DemPro][Abs][Unpd][Pl]:t             EncliticOrEnd;
-k[DemPro][Abs][Unpd][Du]:k             EncliticOrEnd;
-t[DemPro][Rel][Unpd][Pl]:t             EncliticOrEnd;
-k[DemPro][Rel][Unpd][Du]:k             EncliticOrEnd;
-nek[DemPro][Abl_Mod][Unpd][Pl]:nek     EncliticOrEnd;
-gnek[DemPro][Abl_Mod][Unpd][Du]:gnek   EncliticOrEnd;
-ni[DemPro][Loc][Unpd][Pl]:ni           EncliticOrEnd;
-gni[DemPro][Loc][Unpd][Du]:gni         EncliticOrEnd;
-nun[DemPro][Ter][Unpd][Pl]:nun         EncliticOrEnd;
-gnun[DemPro][Ter][Unpd][Du]:gnun       EncliticOrEnd;
-tgun[DemPro][Via][Unpd][Pl]:tgun       EncliticOrEnd;
-negnun[DemPro][Via][Unpd][Du]:negnun   EncliticOrEnd;
-cetun[DemPro][Equ][Unpd][Pl]:cetun     EncliticOrEnd;
-gcetun[DemPro][Equ][Unpd][Du]:gcetun   EncliticOrEnd;
--~+miu[N→N]:~+miu                      NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
-
+-t[DemPro][Abs][Unpd][Pl]:t             EncliticOrEnd;
+-k[DemPro][Abs][Unpd][Du]:k             EncliticOrEnd;
+-t[DemPro][Rel][Unpd][Pl]:t             EncliticOrEnd;
+-k[DemPro][Rel][Unpd][Du]:k             EncliticOrEnd;
+-nek[DemPro][Abl_Mod][Unpd][Pl]:nek     EncliticOrEnd;
+-gnek[DemPro][Abl_Mod][Unpd][Du]:gnek   EncliticOrEnd;
+-ni[DemPro][Loc][Unpd][Pl]:ni           EncliticOrEnd;
+-gni[DemPro][Loc][Unpd][Du]:gni         EncliticOrEnd;
+-nun[DemPro][Ter][Unpd][Pl]:nun         EncliticOrEnd;
+-gnun[DemPro][Ter][Unpd][Du]:gnun       EncliticOrEnd;
+-tgun[DemPro][Via][Unpd][Pl]:tgun       EncliticOrEnd;
+-negnun[DemPro][Via][Unpd][Du]:negnun   EncliticOrEnd;
+-cetun[DemPro][Equ][Unpd][Pl]:cetun     EncliticOrEnd;
+-gcetun[DemPro][Equ][Unpd][Du]:gcetun   EncliticOrEnd;
+-ut[DemPro][Voc][Unpd][Pl]:ut           EncliticOrEnd;
+-uk[DemPro][Voc][Unpd][Du]:uk           EncliticOrEnd;
+[DemPro]-~+miu[N→N]:~+miu               NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
 
 LEXICON DemAdv
-ni[DemAdv][Loc]:ni                     EncliticOrEnd;
-vet[DemAdv][Ter]:vet                   EncliticOrEnd;
-tmun[DemAdv][Sec_Ter]:tmun             EncliticOrEnd;
-ken[DemAdv][Abl]:ken                   EncliticOrEnd;
-ggun[DemAdv][Via]:ggun                 EncliticOrEnd;
-[DemAdv][Predicative]=i[Encl]:=i       EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
-
+-ni[DemAdv][Loc]:ni                     EncliticOrEnd;
+-vet[DemAdv][Ter]:vet                   EncliticOrEnd;
+-tmun[DemAdv][Sec_Ter]:tmun             EncliticOrEnd;
+-ken[DemAdv][Abl]:ken                   EncliticOrEnd;
+-ggun[DemAdv][Via]:ggun                 EncliticOrEnd;
+[DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+[DemAdv][Loc]:%%~nete                   VerbPostbase;
+[DemAdv][Loc]:(ʼa)nte                   VerbPostbase;
 
 
 LEXICON EncliticOrEnd
