@@ -9,6 +9,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [V]                         ! Verbal
 [DemPro]                    ! Demonstrative Pronoun
 [DemAdv]                    ! Demonstrative Adverb
+[Positional]                ! Positional
 [Sg]                        ! Singular
 [Pl]                        ! Plural
 [Du]                        ! Dual
@@ -160,6 +161,7 @@ LEXICON Root
 !    PersonalPronoun ;
 !    QuantQual       ;
     Demonstrative   ;
+    Positional      ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -884,7 +886,6 @@ acalur                 NounPostbase; ! tray on front of kayak for coiled harpoon
 acalurnar              NounPostbase; ! skin container
 acaluruar              NounPostbase; ! snowshoe with upturned front end
 aceturute              NounPostbase; ! twined grass wall mat
-aci                    NounPostbase; ! area below; area under (positional base used only with a possessed ending); mattress; bed; wild potato Hedysarum sp. (additional LI meaning)
 acigʼar                NounPostbase; ! wading boot
 acigʼar                NounPostbase; ! younger sibling
 aciirucarar            NounPostbase; ! portal of the underground below our world for the “little people” (“ircenrrat”)
@@ -1093,7 +1094,6 @@ akqur                  NounPostbase; ! knot in wood
 akqute                 NounPostbase; ! promise; promised thing
 aku                    NounPostbase; ! lower part of garment
 akucissuute            NounPostbase; ! eggbeater; mixing bowl
-akule                  NounPostbase; ! midsection; area between; land between two topographical features such as the river and the ocean; tundra
 akuleqlir*             NounPostbase; ! middle one
 akuliper               NounPostbase; ! middle finger
 akuliprar              NounPostbase; ! middle finger
@@ -1260,7 +1260,6 @@ amaqsur                NounPostbase; ! pink salmon (locally humpback salmon or h
 amaquayaar             NounPostbase; ! backstrap of dog harness
 amar                   NounPostbase; ! load carried on the back; stone of a ring
 amarcuute              NounPostbase; ! backpack
-amate                  NounPostbase; ! area behind; area beyond; area on the far side
 amaunqigtar            NounPostbase; ! great-great-grandparent
 amauqigtar             NounPostbase; ! great-great-grandparent
 amaur*                 NounPostbase; ! great-grandparent
@@ -1513,7 +1512,7 @@ apamar                 NounPostbase; ! gunwale of kayak
 apar                   NounPostbase; ! grandfather
 aparrlugar*            NounPostbase; ! grandfather
 apaurlur               NounPostbase; ! (in EG) grandfather; grandparents (when used in the plural)
-apaʼurlur              NounPostbase; ! (in EG) grandfather; grandparents (when used in the plural)
+apaʼurlur              NounPostbase; ! grandfather; grandparents (when used in the plural)
 apertuaciste           NounPostbase; ! guide
 apertuateste           NounPostbase; ! guide
 aperyarar              NounPostbase; ! pronunciation; terminology
@@ -1809,8 +1808,7 @@ avaqutarkartar         NounPostbase; ! adopted son
 avar                   NounPostbase; ! cyst
 avatar                 NounPostbase; ! bladder float; sealskin float; boat bumper
 avatarpag              NounPostbase; ! bladder float; sealskin float; boat bumper
-avate                  NounPostbase; ! (au͡gata^e) area around positional base; one of a pair of tassels on the sides of the piece of calfskin in the middle of a traditional Yupʼik parka
-avate                  NounPostbase; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
+avate                  NounPostbase; ! to place pressure on the carotid artery; loosely strangle
 avatmute               NounPostbase; ! (au͡gatmun) toward the entire area over there or to over there
 avayaciller            NounPostbase; ! knot in wood
 avayar                 NounPostbase; ! branch; limb of tree; knot in wood (in NUN)
@@ -1982,7 +1980,6 @@ caniqayagar            NounPostbase; ! bacon
 caniqlir*              NounPostbase; ! thing right beside
 caniqtar               NounPostbase; ! door bolt
 caniquyar              NounPostbase; ! crosspiece on bed of sled
-canir                  NounPostbase; ! area beside; space next to
 canircuute             NounPostbase; ! broom
 canirrsuute            NounPostbase; ! broom
 canirtar               NounPostbase; ! windbreak; log cabin shelter
@@ -2351,7 +2348,6 @@ cituar                 NounPostbase; ! beluga; white whale (Delphinapterus leuca
 citug                  NounPostbase; ! fingernail; toenail; claw
 citukvagar*            NounPostbase; ! young beluga
 cituryar               NounPostbase; ! front area of kayak
-ciu                    NounPostbase; ! area in front (of it); time preceding (it); bow of a boat; forepart
 ciucekaar              NounPostbase; ! candle
 ciucite                NounPostbase; ! earring
 ciukarar               NounPostbase; ! lovage (Ligusticam hultenii)
@@ -2621,7 +2617,6 @@ elalirner              NounPostbase; ! outside; outer thigh
 elaner                 NounPostbase; ! dug-out grave; pit; dug hole in the ground
 elaqlir*               NounPostbase; ! the one immediately outside, such as a next-door neighbor
 elaqvaar*              NounPostbase; ! the area farther away; quite a distance
-elate                  NounPostbase; ! area outside of
 elaturrar              NounPostbase; ! enclosed entry porch
 elautar                NounPostbase; ! grave
 elautar                NounPostbase; ! root digger
@@ -3762,7 +3757,6 @@ kelliqutar             NounPostbase; ! bouy at the end of a fishnet away from th
 kellir*                NounPostbase; ! the one toward the river; the one farthest from the wall as on a shared bed
 kellirner              NounPostbase; ! area toward the river; lefthand side (UY meaning)
 kelngunrilngur*        NounPostbase; ! place where something is found when it is least expected to be found there
-kelu                   NounPostbase; ! area behind, back from the house and away from the river
 kelucairissuute        NounPostbase; ! key
 kelucar                NounPostbase; ! lock; padlock; key
 kelug                  NounPostbase; ! stitch; weft strand in twining grass
@@ -3854,7 +3848,6 @@ kepʼissuute            NounPostbase; ! cross-cut saw
 kepʼiyuli              NounPostbase; ! beaver (Castor canadensis)
 kepʼner                NounPostbase; ! section of a fish just in front of the tail; cut off thing
 kerʼar                 NounPostbase; ! fish-rack
-kete                   NounPostbase; ! area down toward the river or sea; area away from the wall; area down from and in front
 ketekner               NounPostbase; ! manʼs hairdo with long locks over each ear
 ketetmute              NounPostbase; ! toward the water
 keteʼar                NounPostbase; ! sandbar exposed at low tide; beach; mudflat
@@ -3900,7 +3893,6 @@ kiam                   NounPostbase; ! who; whose
 kianer                 NounPostbase; ! naturally occurring open hole in the ice in winter
 kiapaur                NounPostbase; ! spring season
 kiarner                NounPostbase; ! unsalted strip or fillet of fish flesh without skin, cut from along the backbone and hung to dry
-kiate                  NounPostbase; ! area up river of –; inside area of — (house of the like)
 kicaqutar              NounPostbase; ! net sinker
 kicar                  NounPostbase; ! anchor
 kicigglug              NounPostbase; ! swampy place
@@ -3933,7 +3925,6 @@ kinercissuute          NounPostbase; ! clothes dryer
 kinertallug            NounPostbase; ! dried meat
 kinertar               NounPostbase; ! dried meat
 kineryar               NounPostbase; ! dried salmon egg(s)
-kingu                  NounPostbase; ! rear; back part; area behind; stern; time after
 kingug                 NounPostbase; ! worm (species ?)
 kinguliar              NounPostbase; ! descendant
 kinguliraleg           NounPostbase; ! arrow with a line attached
@@ -4291,7 +4282,6 @@ manignaalleryag        NounPostbase; ! pacific cod (Godus macrocephalus)
 manignar               NounPostbase; ! loche; burbot (Lota lota)
 manigngalngur          NounPostbase; ! oval
 mantiikar              NounPostbase; ! shortening; lard
-manu                   NounPostbase; ! front side of something
 manuilitar*            NounPostbase; ! apron; bib
 manulqar               NounPostbase; ! front of porch of house; floor be fireplace in menʼs commnal house (NUN meaning)
 manumig                NounPostbase; ! brooch; pin (jewelry); one of three strands of beads on the chest of the traditional Yupʼik qaliq parka
@@ -6970,7 +6960,6 @@ tungayaag              NounPostbase; ! relative; cousin
 tungayag               NounPostbase; ! relative; cousin
 tungayar               NounPostbase; ! relative; cousin
 tungayʼag              NounPostbase; ! relative; cousin
-tunge                  NounPostbase; ! direction of; area toward
 tungelqur              NounPostbase; ! relative; cousin; someone who acts like a relative
 tunger                 NounPostbase; ! menstrual pad
 tungimar               NounPostbase; ! insulating mat
@@ -7006,7 +6995,6 @@ tuntussiig             NounPostbase; ! yellowlegs (Tringa sp.); solitary sandpip
 tuntussiikar           NounPostbase; ! yellowlegs (Tringa sp.); solitary sandpiper (Tringa solitaria)
 tuntussuliangaleg      NounPostbase; ! yellowlegs (Tringa sp.); solitary sandpiper (Tringa solitaria)
 tuntuvag               NounPostbase; ! moose (Alces alces)
-tunu                   NounPostbase; ! back of; area in back of
 tunucelleg             NounPostbase; ! (HBC form) arctic loon (Gavia arctica)
 tunucilleg             NounPostbase; ! (HBC form) arctic loon (Gavia arctica)
 tunucug                NounPostbase; ! back of head just above the neck; occipital bump
@@ -7124,7 +7112,6 @@ uaqvaar*               NounPostbase; ! area far downriver
 uassaar                NounPostbase; ! horse
 uassiar                NounPostbase; ! west; west wind (NSU meaning); north; north wind (NUN meaning)
 uatar                  NounPostbase; ! cotton
-uate                   NounPostbase; ! area downriver or toward the exit from possessor
 uate                   NounPostbase; ! body from the waist down; skirt; haunch
 uci                    NounPostbase; ! load; cargo; burden
 uciirte                NounPostbase; ! longshoreman; cargo handler
@@ -11081,7 +11068,6 @@ paci                   VerbPostbase; ! to blame; to accuse; to suspect
 pacikcar               VerbPostbase; ! to chop up
 pacike                 VerbPostbase; ! to blame; to accuse; to suspect
 pacsaqar               VerbPostbase; ! to suffer a chill from going outside when sweaty; to get pneumonia
-pai                    VerbPostbase; ! mouth of river; outlet; opening of den, bottle, etc., cockpit of kayak
 pai                    VerbPostbase; ! to stay behind with; to babysit
 paicir                 VerbPostbase; ! to leave an inheritance for (him); to bequeath something to (him)
 paigi                  VerbPostbase; ! to babysit
@@ -11548,7 +11534,6 @@ qagte                  VerbPostbase; ! to protrude or curve out
 qagte                  VerbPostbase; ! to speak Inupiaq
 qagʼerte               VerbPostbase; ! to explode; to burst; to pop
 qagʼpag                VerbPostbase; ! to explode violently
-qai                    VerbPostbase; ! surface; top
 qailir                 VerbPostbase; ! to be rough (of water); to have lots of waves
 qailiur                VerbPostbase; ! to deal with rough water
 qaillukuar             VerbPostbase; ! to mess around; to tinker; to plot; to deliberate; to confer
@@ -12673,7 +12658,6 @@ ukakarar               VerbPostbase; ! a little on the side toward speaker (or f
 ukamar                 VerbPostbase; ! to tow a boat with a rope while walking along the shore
 ukangiir               VerbPostbase; ! to obtain what one can (of food) by doing oneʼs best
 ukaqsig                VerbPostbase; ! to be close (to here)
-ukate                  VerbPostbase; ! this side # ukatiini ‘on this side of itʼ
 ukatrute               VerbPostbase; ! to shoot short of a target
 uki                    VerbPostbase; ! to get a hole (in it); to get pierced
 ukii                   VerbPostbase; ! to pierce a hole through
@@ -13027,7 +13011,6 @@ yaaqliqe               VerbPostbase; ! to be situated in a line (not necessarily
 yaaqsig                VerbPostbase; ! to be distant
 yaarui                 VerbPostbase; ! to use a story knife to draw pictures on mud or snow and tell a story to go along with it
 yaassiigenqegg         VerbPostbase; ! to be square
-yaate                  VerbPostbase; ! area beyond
 yaatiir                VerbPostbase; ! to speak to a group of people directing oneʼs words at a particular person in the group; to look at while passing by; to go beyond
 yaaveskanir            VerbPostbase; ! to go further
 yaaveskaniur           VerbPostbase; ! to save food for later
@@ -14641,120 +14624,124 @@ LEXICON TransitiveConnectiveCtmp
 
 
 LEXICON Demonstrative
-!-------------------------------------------------------|-----------------------------|
+!--------------------------|----------------------------|-----------------------------|
 !          extended        |         restricted         |           obscured          |
-!-------------------------------------------------------|-----------------------------|
+!--------------------------|----------------------------|-----------------------------|
 ! OVER THERE                                                                          |
-! or GOING AWAY (au⁀g)     |                                                          |
-!-------------------------------------------------------------------------------------|
-au⁀g               DemAbsSg; ing                DemAbsSg; am                  DemAbsSg;
-au⁀gʼu          DemNonAbsSg; ingʼu           DemNonAbsSg; amʼu             DemNonAbsSg;
-au⁀gku     DemIntermedNonSg; ingku      DemIntermedNonSg; amku        DemIntermedNonSg;
-awku       DemIntermedNonSg;
-ava                  DemAdv; yaa                  DemAdv; ama                   DemAdv; 
-!-------------------------------------------------------|-----------------------------|
+! or GOING AWAY (au͡g)                                                                 |
+!--------------------------|----------------------------|-----------------------------|
+au͡g                DemAbsSg; ing                DemAbsSg; am                  DemAbsSg;
+au͡gʼu           DemNonAbsSg; ingʼu           DemNonAbsSg; amʼu             DemNonAbsSg;
+au͡gku      DemIntermedNonSg; ingku      DemIntermedNonSg; amku        DemIntermedNonSg;
+awku       DemIntermedNonSg;                                                                
+ava              DemAdv2Ter; yaa             DemAdv2Ter; ama                   DemAdv; 
+!--------------------------|----------------------------|-----------------------------|
 ! ACROSS THERE                                                                        |
-!-------------------------------------------------------------------------------------|
+!--------------------------|----------------------------|-----------------------------|
 ag                 DemAbsSg; ik                 DemAbsSg; akem                DemAbsSg;
-                             ikegg              DemAbsSg;
+                             ikegg              DemAbsSg;                             
 agʼu            DemNonAbsSg; ikʼu            DemNonAbsSg; akʼmu            DemNonAbsSg;
-                             ikgu            DemNonAbsSg;
+                             ikgu            DemNonAbsSg;                             
 agku       DemIntermedNonSg; ikegku     DemIntermedNonSg; akemku      DemIntermedNonSg;
-agaa                 DemAdv; ika                  DemAdv; akma                  DemAdv;
-ii                   DemAdv; 
-!-------------------------------------------------------|-----------------------------|
+agaa             DemAdv2Ter; ika              DemAdv2Ter; akma                  DemAdv;
+ii               DemAdv2Ter;                                                         
+!--------------------------|----------------------------|-----------------------------|
 ! UP THE SLOPE                                                                        |
-!-------------------------------------------------------------------------------------|
-pau⁀g              DemAbsSg; ping               DemAbsSg; pam                 DemAbsSg;
-pau⁀gʼu         DemNonAbsSg; pingʼu          DemNonAbsSg; pamʼu            DemNonAbsSg;
-pau⁀gku    DemIntermedNonSg; pingku     DemIntermedNonSg; pamku       DemIntermedNonSg;
-pava                 DemAdv; pia                  DemAdv; pama                  DemAdv; 
-!-------------------------------------------------------|-----------------------------|
+!--------------------------|----------------------------|-----------------------------|
+pau͡g               DemAbsSg; ping               DemAbsSg; pam                 DemAbsSg;
+pau͡gʼu          DemNonAbsSg; pingʼu          DemNonAbsSg; pamʼu            DemNonAbsSg;
+pau͡gku     DemIntermedNonSg; pingku     DemIntermedNonSg; pamku       DemIntermedNonSg;
+pava             DemAdv2Ter; pia              DemAdv2Ter; pama                  DemAdv; 
+!--------------------------|----------------------------|-----------------------------|
 ! UP ABOVE                                                                            |
-!-------------------------------------------------------------------------------------|
+!--------------------------|----------------------------|-----------------------------|
 pag                DemAbsSg; pik                DemAbsSg; pakem               DemAbsSg;
                              pikegg             DemAbsSg;
 pagʼu           DemNonAbsSg; pikʼu           DemNonAbsSg; pakʼmu           DemNonAbsSg;
                              pikgu           DemNonAbsSg;
 pagku      DemIntermedNonSg; pikegku    DemIntermedNonSg; pakemku     DemIntermedNonSg;
-pagaa                DemAdv; pika                 DemAdv; pakma                 DemAdv; 
-pii                  DemAdv;
-!-------------------------------------------------------|-----------------------------|
+pagaa            DemAdv2Ter; pika             DemAdv2Ter; pakma                 DemAdv; 
+pii              DemAdv2Ter;
+!--------------------------|----------------------------|-----------------------------|
 ! INSIDE, INLAND, OR UPRIVER                                                          |
-!-------------------------------------------------------------------------------------|
-qau⁀g              DemAbsSg; kiug               DemAbsSg; qam                 DemAbsSg;
-                             kiu⁀g              DemAbsSg;
-qau⁀gʼu         DemNonAbsSg; kiugu           DemNonAbsSg; qamʼu            DemNonAbsSg;
-                             kiu⁀gʼu         DemNonAbsSg;
-qau⁀gku    DemIntermedNonSg; kiugku     DemIntermedNonSg; qamku       DemIntermedNonSg;
-                             kiu⁀gku    DemIntermedNonSg;
-qava                 DemAdv; kia                  DemAdv; qama                  DemAdv; 
-!-------------------------------------------------------|-----------------------------|
+!--------------------------|----------------------------|-----------------------------|
+qau͡g               DemAbsSg; kiug               DemAbsSg; qam                 DemAbsSg;
+                             kiu͡g               DemAbsSg;
+qau͡gʼu          DemNonAbsSg; kiugu           DemNonAbsSg; qamʼu            DemNonAbsSg;
+                             kiu͡gʼu          DemNonAbsSg;
+qau͡gku     DemIntermedNonSg; kiugku     DemIntermedNonSg; qamku       DemIntermedNonSg;
+                             kiu͡gku     DemIntermedNonSg;
+qava             DemAdv2Ter; kia              DemAdv2Ter; qama                  DemAdv; 
+!--------------------------|----------------------------|-----------------------------|
 ! OUTSIDE                                                                             |
-!-------------------------------------------------------------------------------------|
+!--------------------------|----------------------------|-----------------------------|
 qag                DemAbsSg; kegg               DemAbsSg; qakem               DemAbsSg;
 qagʼu           DemNonAbsSg; keggʼu          DemNonAbsSg; qakʼmu           DemNonAbsSg;
 qagku      DemIntermedNonSg; kegku      DemIntermedNonSg; qakemku     DemIntermedNonSg;
-qagaa                DemAdv; kegga                DemAdv; qakma                 DemAdv; 
-qii                  DemAdv;
-!-------------------------------------------------------|-----------------------------|
+qagaa            DemAdv2Ter; kegga            DemAdv2Ter; qakma                 DemAdv; 
+qii              DemAdv2Ter;
+!--------------------------|----------------------------|-----------------------------|
 ! DOWN BELOW OR DOWN THE SLOPE                                                        |
-!-------------------------------------------------------------------------------------|
-un[DemPro][Abs][Unpd][Sg]:unʼa             EncliticOrEnd; 
-un-@+yuuq[DemPro][Abs][Unpd][Sg]:unyuuq    EncliticOrEnd;  
-un-@+suuq[DemPro][Abs][Unpd][Sg]:unsuuq    EncliticOrEnd;  
+!--------------------------|----------------------------|-----------------------------| 
                              ka              DemAbsSgIrr; cam                 DemAbsSg;
 unʼu            DemNonAbsSg; katʼu           DemNonAbsSg; camʼu            DemNonAbsSg;
 unku       DemIntermedNonSg; kanku      DemIntermedNonSg; camku       DemIntermedNonSg;
-una                  DemAdv; kana                 DemAdv; cama                  DemAdv; 
-!-------------------------------------------------------|-----------------------------|
+una              DemAdv2Ter; kana             DemAdv2Ter; cama                  DemAdv;
+un[DemPro][Abs][Unpd][Sg]:unʼa             EncliticOrEnd; 
+un-@+yuuq[DemPro][Abs][Unpd][Sg]:unyuuq    EncliticOrEnd;  
+un-@+suuq[DemPro][Abs][Unpd][Sg]:unsuuq    EncliticOrEnd;  
+!--------------------------|----------------------------|-----------------------------|
 ! DOWNRIVER OR NEAR THE EXIT                                                          |
-!-------------------------------------------------------------------------------------|
+!--------------------------|----------------------------|-----------------------------|
 uneg               DemAbsSg; ug                 DemAbsSg; cakem               DemAbsSg;
 ungʼu           DemNonAbsSg; ugʼu            DemNonAbsSg; cakʼmu           DemNonAbsSg;
 unegku     DemIntermedNonSg; ugku       DemIntermedNonSg; cakemku     DemIntermedNonSg;
-unʼga                DemAdv; ua                   DemAdv; cakma                 DemAdv; 
-unʼgaa               DemAdv;
-!-------------------------------------------------------|-----------------------------|
+unʼga            DemAdv2Ter; ua               DemAdv2Ter; cakma                 DemAdv; 
+unʼgaa           DemAdv2Ter;
+!--------------------------|----------------------------|-----------------------------|
 ! HERE, NEAR SPEAKER                                                                  |
-!-------------------------------------------------------------------------------------|
-uu-ggun[DemPro][Via][Unpd][Sg]:uuggun       EncliticOrEnd;  
-uu-ggun[DemAdv][Via]:uuggun                 EncliticOrEnd;
+!--------------------------|----------------------------|-----------------------------|
 ma              DemAbsSgIrr; u                  DemAbsSg; im                  DemAbsSg;
 matʼu           DemNonAbsSg; uu              DemNonAbsSg; imʼu             DemNonAbsSg;
                                                           imu              DemNonAbsSg;
 maku       DemIntermedNonSg; uku        DemIntermedNonSg; imku        DemIntermedNonSg;
-maa                  DemAdv; wa                   DemAdv; 
+maa              DemAdv2Ter; wa                   DemAdv; 
                                                           ima                   DemAdv;
+uu-ggun[DemPro][Via][Unpd][Sg]:uuggun      EncliticOrEnd;  
+uu-ggun[DemAdv][Via]:uuggun                EncliticOrEnd;                                                          
 maa[DemAdv][Equ]:maaten                    EncliticOrEnd;
 wa[DemAdv][Equ]:waten                      EncliticOrEnd;
-!-------------------------------------------------------|-----------------------------|
+
+!--------------------------|----------------------------|-----------------------------|
 ! THERE, NEAR LISTENER OR IN CONTEXT                                                  |
-!-------------------------------------------------------------------------------------|
+!--------------------------|----------------------------|-----------------------------|
 tama               DemAbsSg; tau                DemAbsSg; 
 tamatu          DemNonAbsSg; tau             DemNonAbsSg; 
 tamaku     DemIntermedNonSg; tauku      DemIntermedNonSg; 
-tamaa                DemAdv; tua                  DemAdv;  
-                             tava                 DemAdv; tayima         EncliticOrEnd;
-                                                          taima          EncliticOrEnd;
+tamaa            DemAdv2Ter; tua                  DemAdv;  
+                             tava                 DemAdv;
+                                                         
 tua[DemAdv][Equ]:tuaten                    EncliticOrEnd;
 tava[DemAdv][Equ]:tavaten                  EncliticOrEnd;
-!-------------------------------------------------------|-----------------------------|
+tayima         EncliticOrEnd;
+taima          EncliticOrEnd;
+!--------------------------|----------------------------|-----------------------------|
 ! COMING THIS WAY                                                                     |
-!-------------------------------------------------------------------------------------|
+!--------------------------|----------------------------|-----------------------------|
 uk                 DemAbsSg;
 ukegg              DemAbsSg; 
 ukʼu            DemNonAbsSg;
 ukgu            DemNonAbsSg;
 ukegku     DemIntermedNonSg; 
-uka                  DemAdv;  
-!-------------------------------------------------------|-----------------------------|
+uka              DemAdv2Ter;  
+!--------------------------|----------------------------|-----------------------------|
 
 
 LEXICON DemAbsSg
 [DemPro][Abs][Unpd][Sg]:+na             EncliticOrEnd;
-[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+yuuq   EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+[DemPro]-–kucir[N→N]:–kucir             NounPostbase; ! one of the same kind as N
 [DemPro]-@+suuq[Voc][Unpd][Sg]:@+suuq   EncliticOrEnd; ! singular vocative (calling) form
+[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+yuuq   EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
 
 LEXICON DemAbsSgIrr
 t[DemPro][Abs][Unpd][Sg]:+nʼa           EncliticOrEnd;
@@ -14762,41 +14749,76 @@ t[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! (Y and HBC form) singul
 t[DemPro]-@+suuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! singular vocative (calling) form
 
 LEXICON DemNonAbsSg
-[DemPro][Rel][Unpd][Sg]:+m              EncliticOrEnd;
-[DemPro][Abl_Mod][Unpd][Sg]:+mek        EncliticOrEnd;
-[DemPro][Loc][Unpd][Sg]:+mi             EncliticOrEnd;
-[DemPro][Ter][Unpd][Sg]:+mun            EncliticOrEnd;
-[DemPro][Via][Unpd][Sg]:+kun            EncliticOrEnd;
-[DemPro][Equ][Unpd][Sg]:+tun            EncliticOrEnd;
+[DemPro][Rel][Unpd][Sg]:.m              EncliticOrEnd;
+[DemPro][Abl_Mod][Unpd][Sg]:.mek        EncliticOrEnd;
+[DemPro][Loc][Unpd][Sg]:.mi             EncliticOrEnd;
+[DemPro][Ter][Unpd][Sg]:.mun            EncliticOrEnd;
+[DemPro][Via][Unpd][Sg]:.kun            EncliticOrEnd;
+[DemPro][Equ][Unpd][Sg]:.tun            EncliticOrEnd;
 
 LEXICON DemIntermedNonSg 
-[DemPro][Abs][Unpd][Pl]:+t              EncliticOrEnd;
-[DemPro][Abs][Unpd][Du]:+k              EncliticOrEnd;
-[DemPro][Rel][Unpd][Pl]:+t              EncliticOrEnd;
-[DemPro][Rel][Unpd][Du]:+k              EncliticOrEnd;
-[DemPro][Abl_Mod][Unpd][Pl]:+nek        EncliticOrEnd;
-[DemPro][Abl_Mod][Unpd][Du]:+gnek       EncliticOrEnd;
-[DemPro][Loc][Unpd][Pl]:+ni             EncliticOrEnd;
-[DemPro][Loc][Unpd][Du]:+gni            EncliticOrEnd;
-[DemPro][Ter][Unpd][Pl]:+nun            EncliticOrEnd;
-[DemPro][Ter][Unpd][Du]:+gnun           EncliticOrEnd;
-[DemPro][Via][Unpd][Pl]:+tgun           EncliticOrEnd;
-[DemPro][Via][Unpd][Du]:+negnun         EncliticOrEnd;
-[DemPro][Equ][Unpd][Pl]:+cetun          EncliticOrEnd;
-[DemPro][Equ][Unpd][Du]:+gcetun         EncliticOrEnd;
-[DemPro][Voc][Unpd][Pl]:+ut             EncliticOrEnd;
-[DemPro][Voc][Unpd][Du]:+uk             EncliticOrEnd;
+[DemPro][Abs][Unpd][Pl]:.t              EncliticOrEnd;
+[DemPro][Abs][Unpd][Du]:.k              EncliticOrEnd;
+[DemPro][Rel][Unpd][Pl]:.t              EncliticOrEnd;
+[DemPro][Rel][Unpd][Du]:.k              EncliticOrEnd;
+[DemPro][Abl_Mod][Unpd][Pl]:.nek        EncliticOrEnd;
+[DemPro][Abl_Mod][Unpd][Du]:.gnek       EncliticOrEnd;
+[DemPro][Loc][Unpd][Pl]:.ni             EncliticOrEnd;
+[DemPro][Loc][Unpd][Du]:.gni            EncliticOrEnd;
+[DemPro][Ter][Unpd][Pl]:.nun            EncliticOrEnd;
+[DemPro][Ter][Unpd][Du]:.gnun           EncliticOrEnd;
+[DemPro][Via][Unpd][Pl]:.tgun           EncliticOrEnd;
+[DemPro][Via][Unpd][Du]:.negnun         EncliticOrEnd;
+[DemPro][Equ][Unpd][Pl]:.cetun          EncliticOrEnd;
+[DemPro][Equ][Unpd][Du]:.gcetun         EncliticOrEnd;
+[DemPro][Voc][Unpd][Pl]:.ut             EncliticOrEnd;
+[DemPro][Voc][Unpd][Du]:.uk             EncliticOrEnd;
 [DemPro]-~+miu[N→N]:~+miu               NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
 
+
+LEXICON DemAdv2Ter
+DemAdv;
+[DemAdv][Sec_Ter]:.tmun                 EncliticOrEnd;
+
 LEXICON DemAdv
-[DemAdv][Loc]:+ni                       EncliticOrEnd;
-[DemAdv][Ter]:+vet                      EncliticOrEnd;
-[DemAdv][Sec_Ter]:+tmun                 EncliticOrEnd;
-[DemAdv][Abl]:+ken                      EncliticOrEnd;
-[DemAdv][Via]:+ggun                     EncliticOrEnd;
+[DemAdv][Loc]:.ni                       EncliticOrEnd;
+[DemAdv][Ter]:.vet                      EncliticOrEnd;
+[DemAdv][Abl]:.ken                      EncliticOrEnd;
+[DemAdv][Via]:.ggun                     EncliticOrEnd;
 [DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
 [DemAdv][Loc]-ete:%%~nete               VerbPostbase;
 [DemAdv][Loc]-ete:(ʼa)+nte              VerbPostbase;
+
+
+LEXICON Positional
+aci                    PositionalPostbase; ! area below; area under (positional base used only with a possessed ending); mattress; bed; wild potato Hedysarum sp. (additional LI meaning)
+aki                    PositionalPostbase; ! other side; area across; reponse; equivalent; value; coin; money
+akule                  NounPostbase; ! midsection; area between; land between two topographical features such as the river and the ocean; tundra
+canir                  PositionalPostbase; ! area beside; space next to
+ciu                    PositionalPostbase; ! area in front (of it); time preceding (it); bow of a boat; forepart
+elate                  PositionalPostbase; ! area outside of
+ilu                    PositionalPostbase; ! interior; area inside; upriver area; inner feelings; intestinal tract
+kelu                   PositionalPostbase; ! area behind, back from the house and away from the river
+kete                   PositionalPostbase; ! area down toward the river or sea; area away from the wall; area down from and in front
+kingu                  PositionalPostbase; ! rear; back part; area behind; stern; time after
+manu                   PositionalPostbase; ! front side of something
+pai                    PositionalPostbase; ! mouth of river; outlet; opening of den, bottle, etc., cockpit of kayak
+qai                    PositionalPostbase; ! surface; top
+qule                   PositionalPostbase; ! area above; ten; ten in cards
+tunge                  PositionalPostbase; ! direction of; area toward
+tunu                   PositionalPostbase; ! back of; area in back of
+
+amate                  NounInflection; ! area behind; area beyond; area on the far side
+au͡gate                 NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
+avate                  NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
+kiate                  NounInflection; ! area up river of –; inside area of — (house of the like)
+uate                   NounInflection; ! area downriver or toward the exit from possessor
+ukate                  NounInflection; ! this side # ukatiini ‘on this side of itʼ
+yaate                  NounInflection; ! area beyond
+
+LEXICON PositionalPostbase
+NounInflection;
+[Positional][Sec_Ter]:.tmun                 EncliticOrEnd;
 
 
 LEXICON EncliticOrEnd
