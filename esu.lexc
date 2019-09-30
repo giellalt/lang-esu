@@ -14707,8 +14707,8 @@ matʼu           DemNonAbsSg; uu              DemNonAbsSg; imʼu             Dem
 maku       DemIntermedNonSg; uku        DemIntermedNonSg; imku        DemIntermedNonSg;
 maa              DemAdv2Ter; wa                   DemAdv; 
                                                           ima                   DemAdv;
-uu-ggun[DemPro][Via][Unpd][Sg]:uuggun      EncliticOrEnd;  
-uu-ggun[DemAdv][Via]:uuggun                EncliticOrEnd;                                                          
+uu[DemPro][Via][Unpd][Sg]:uuggun      EncliticOrEnd;  
+uu[DemAdv][Via]:uuggun                EncliticOrEnd;                                                          
 maa[DemAdv][Equ]:maaten                    EncliticOrEnd;
 wa[DemAdv][Equ]:waten                      EncliticOrEnd;
 
