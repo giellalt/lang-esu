@@ -31,9 +31,9 @@ pikʼu[DemPro][Abl_Mod][Unpd][Sg]	pikʼumek
 kat[DemPro][Abs][Unpd][Sg]	kanʼa
 kanku[DemPro][Abs][Unpd][Pl]	kankut
 katʼu[DemPro][Abl_Mod][Unpd][Sg]	katʼumek
-au⁀g[DemPro][Abs][Unpd][Sg]	au⁀gna
-au⁀gku[DemPro][Abs][Unpd][Pl]	au⁀gkut
-au⁀gʼu[DemPro][Abl_Mod][Unpd][Sg]	au⁀gʼumek
+au͡g[DemPro][Abs][Unpd][Sg]	au͡gna
+au͡gku[DemPro][Abs][Unpd][Pl]	au͡gkut
+au͡gʼu[DemPro][Abl_Mod][Unpd][Sg]	au͡gʼumek
 kiug[DemPro][Abs][Unpd][Sg]	kiugna
 kiugku[DemPro][Abs][Unpd][Pl]	kiugkut
 kiugu[DemPro][Abl_Mod][Unpd][Sg]	kiugumek
@@ -83,7 +83,7 @@ wa[DemAdv][Loc]-ete[V][Intr][Ind][S_3Sg]	wantuq
 tua[DemAdv][Loc]-ete[V][Intr][Ind][S_3Sg]	tuantuq
 kipusvig[Loc][Unpd][Sg]-ete[V][Intr][Ind][S_3Sg]	kipusvigmetuq
 u[DemPro]-@+suuq[Voc][Unpd][Sg]	usuuq
-au⁀g[DemPro]-@+suuq[Voc][Unpd][Sg]	au⁀gsuuq
+au͡g[DemPro]-@+suuq[Voc][Unpd][Sg]	au͡gsuuq
 pik[DemPro]-@+suuq[Voc][Unpd][Sg]	piksuuq
 kat[DemPro]-@+suuq[Voc][Unpd][Sg]	kacuuq
 kana[DemAdv]=i[Encl]	kana-i
