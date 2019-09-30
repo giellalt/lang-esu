@@ -91,6 +91,6 @@ tua[DemAdv]=i[Encl]	tua-i
 tua[DemAdv]=i[Encl]=llu[Encl]	tua-i-llu
 tua[DemAdv]=i[Encl]=qaa[Encl]	tua-i-qaa
 tua[DemAdv]=i[Encl]-%:~(ng)u[N→V]-–nrite[V→V][V][Intr][Ind][S_3Sg]	tua-i-ngunrituq
-wa-ten[DemAdv][Equ]	waten
-tua-ten[DemAdv][Equ]	tuaten
-maa-ten[DemAdv][Equ]	maaten
+wa[DemAdv][Equ]	waten
+tua[DemAdv][Equ]	tuaten
+maa[DemAdv][Equ]	maaten
