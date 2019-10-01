@@ -53,6 +53,8 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [N→V]                       ! Denominal Verb Derivation
 [V→N]                       ! Deverbal Noun Derivation
 [V→V]                       ! Deverbal Verb Derivation
+[V→XCLM]                    ! Verb -> Exclamation Derivation
+[how.V]                     ! [how.V][V→XCLM] used together
 [Imprs_Agnt]                ! Impersonal Agent
 [Unpd]                      ! Unpossessed
 [SgPosd]                    ! Possessed - Singular
@@ -13329,6 +13331,12 @@ VerbEte;
 
 LEXICON VerbPostbase
 VerbInflection;
+
+-@~+(t)vaa[how.V][V→XCLM]:@+paa/~vaa          EncliticOrEnd; ! oh, how V!; my, how V!
+-@~+(t)vag[how.V][V→XCLM]:@+paa/~vaa          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
+-@+paa/~vaa[how.V][V→XCLM]:@+paa/~vaa         EncliticOrEnd; ! oh, how V!; my, how V!
+-@+pag/~vag[how.V][V→XCLM]:@+pag/~vag         EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
+
 -+a–/+aar[V→V]:+a–/+aar                       VerbPostbase; ! to V repeatedly
 -+'(g)aqe[V→V]:+'(g)aqe                       VerbPostbase; ! to usually V; to repeatedly V; to habitually V
 -+'(g)ar(ar)[V→V]:+'(g)ar(ar)                 VerbPostbase; ! to just barely V; to hardly V; to gradually V; leisurely V; With adjectival verbs ending in te-, this postbase means to be a little V
