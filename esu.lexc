@@ -10,6 +10,9 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [DemPro]                    ! Demonstrative Pronoun
 [DemAdv]                    ! Demonstrative Adverb
 [Positional]                ! Positional
+[Num]                       ! Number
+[Cardinal]                  ! Cardinal Number
+[Ordinal]                   ! Ordinal Number
 [Sg]                        ! Singular
 [Pl]                        ! Plural
 [Du]                        ! Dual
@@ -153,17 +156,17 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 
 LEXICON Root
     Particle        ;
+    Interrogative   ;
     ProperNoun      ;
     NounBase        ;
     VerbBase        ;
 !    PosturalRoot    ;
 !    EmotionalRoot   ;
-!    Numeral         ;
-!    Interrogative   ;
 !    PersonalPronoun ;
 !    QuantQual       ;
     Demonstrative   ;
     Positional      ;
+    Numeral         ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -439,8 +442,21 @@ yaaliaku               EncliticOrEnd; ! day after tomorrow or year after next (K
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!LEXICON Interrogative
-
+LEXICON Interrogative
+ca                  EncliticOrEnd;
+ca                  VerbPostbase;
+cakucir             NounPostbase;
+ciin                EncliticOrEnd;
+kina[??][Abs][Sg]   EncliticOrEnd;
+kituu               VerbPostbase;
+nalir               NounPostbase;
+nani                EncliticOrEnd;
+nante               VerbPostbase;
+qaillun             EncliticOrEnd;
+qaillʼ              EncliticOrEnd;
+qaku                EncliticOrEnd;
+qangvaq             EncliticOrEnd;
+qavcin              EncliticOrEnd;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1655,10 +1671,8 @@ arvag                  NounPostbase; ! palm of hand # arvaka ‘my palmʼ; arvii
 arver                  NounPostbase; ! black or bowhead whale (Balaena mysticetus)
 arviir                 NounPostbase; ! a particular type of dark-colored whetstone; a particular type of dark-colored sharpening stone
 arvinelgat             NounPostbase; ! sixth one
-arvinelgete            NounPostbase; ! six
 arviner                NounPostbase; ! sixth one
 arvinlegat             NounPostbase; ! sixth one
-arvinlegete            NounPostbase; ! six
 arviqercarar           NounPostbase; ! portage
 arviqrute              NounPostbase; ! crosspiece pole for hanging fish
 arvirute               NounPostbase; ! crosspiece of a boat
@@ -1725,7 +1739,6 @@ atateg                 NounPostbase; ! red-necked grebe (Podiceps grisegena)
 atauciig               NounPostbase; ! one pair
 atauciite              NounPostbase; ! one group; a single set
 atauciqerrnar          NounPostbase; ! arrow with point that detaches in the quarry
-ataucir                NounPostbase; ! one
 atawa                  NounPostbase; ! benefit; goodness
 atawaqaute             NounPostbase; ! blessing
 atayuag                NounPostbase; ! dual summer pants
@@ -2120,7 +2133,6 @@ cetaar                 NounPostbase; ! little bird
 cetaar(ar*)            NounPostbase; ! little bird
 cetamaite              NounPostbase; ! four groups or pairs or bundles
 cetamarrar             NounPostbase; ! four in cards
-cetamate               NounPostbase; ! four
 cetamii                NounPostbase; ! fourth time; its fourth
 cetamiit               NounPostbase; ! fourth one of them
 cetegner               NounPostbase; ! monkshood (Actonitun delphinifolium)
@@ -3206,7 +3218,6 @@ ipgeryag               NounPostbase; ! rock that is jutting out
 ipgukar(ar*)           NounPostbase; ! dime; diamond
 ipgutʼleg              NounPostbase; ! three-cornered skin-sewing needle
 ipi                    NounPostbase; ! limb of quadruped or insect; limb of the body; finger or phalange (NUN meaning)
-ipiar                  NounPostbase; ! unit of twenty
 ipig                   NounPostbase; ! limb of quadruped or insect; limb of the body; finger or phalange (NUN meaning)
 ipililria              NounPostbase; ! octopus
 ipiutar                NounPostbase; ! fishing line
@@ -4237,11 +4248,8 @@ mallruungite           NounPostbase; ! seven
 mallu                  NounPostbase; ! beached carcass or other thing found while one is beachcombing
 mallug                 NounPostbase; ! beached carcass or other thing found while one is beachcombing
 malri                  NounPostbase; ! twin
-malrug                 NounPostbase; ! two
 malruite               NounPostbase; ! two groups or pairs
-malrunelgete           NounPostbase; !
 malruner               NounPostbase; ! measurement of the width at their ends of the index finger and the middle finger held next to each other
-malrunlegete           NounPostbase; !
 malruyagar*            NounPostbase; ! deuce in cards
 mamcar                 NounPostbase; ! spleen
 mamcartar              NounPostbase; ! upper tie beam of menʼs community house or small semi-subterranean house
@@ -5372,11 +5380,8 @@ pingasuite             NounPostbase; ! three groups or pairs
 pingayuat              NounPostbase; ! the third one
 pingayuite             NounPostbase; ! three groups or pairs
 pingayuleg             NounPostbase; ! triangle
-pingayunelgete         NounPostbase; ! eight
 pingayuner             NounPostbase; ! measurement of the width at their ends of the index finger, the middle finger, and the ring finger held next to each other
-pingayunlegete         NounPostbase; ! eight
 pingayupegcetaar       NounPostbase; ! arrow with three-pronged point
-pingayute              NounPostbase; ! three
 pingcir                NounPostbase; ! half-dried, smoked, packed-together Dolly Varden
 pingna                 NounPostbase; ! the one back there away from the —
 pingnatugte            NounPostbase; ! breadwinner; provider
@@ -6229,7 +6234,6 @@ qulirar*               NounPostbase; ! very old dwelling site, said to be of fir
 qulirarte              NounPostbase; ! storyteller; Protestant minister (in some areas where agayulirta (q.v.) is reserved for a Roman Catholic or Russian Orthodox priest)
 qulitar                NounPostbase; ! design from caribou fawn skin sewn onto a parka; type of traditional Yupʼik parka with two pieces of calfskin on the back (called by the same name as the parka design), and two calfskin pieces on the chest (called cauyak)
 qullir*                NounPostbase; ! top one; upper one; attic
-qulngunritara(ar*)     NounPostbase; ! nine
 qulngurutailnguut      NounPostbase; ! nine
 qulngurute             NounPostbase; ! tenth (one or part)
 qulnguyate             NounPostbase; ! nine
@@ -6540,7 +6544,6 @@ tallimaat              NounPostbase; ! fifth one
 tallimaite             NounPostbase; ! five groups or pairs
 tallimar               NounPostbase; ! one dollar
 tallimarrar            NounPostbase; ! five in cards
-tallimate              NounPostbase; ! five
 talliner               NounPostbase; ! measurement from oneʼs fingertips to his armpit with the arm (and hand) outstretched
 tallinite              NounPostbase; ! measurement from the extremity of oneʼs fist to his armpit with the arm outstretched
 talliqiute             NounPostbase; ! corner timber in a kashim (menʼs community house)
@@ -6888,7 +6891,6 @@ tiig                   NounPostbase; ! mattress ticking; striped cloth; calico
 tiigglug               NounPostbase; ! mattress ticking; striped cloth; calico
 tiiguayaar             NounPostbase; ! striped broadcloth
 tiissir                NounPostbase; ! legendary large, caterpillar-like creature that leaves a scorched trail
-tiissitsaar            NounPostbase; ! one thousand
 tiiviir                NounPostbase; ! television
 tiiyar                 NounPostbase; ! tiny usually black sea anemone
 titir                  NounPostbase; ! otitus; runny ear
@@ -7677,9 +7679,6 @@ yugʼapiar              NounPostbase; ! a regular person; real person
 yugʼar                 NounPostbase; ! shamanʼs mask or representation of his familiar spirit
 yuilqur                NounPostbase; ! wilderness; uninhabited place
 yuilrir                NounPostbase; ! witch or ghost that walks in the air above the ground and has no liver; a large monster that lives in the mountains and eats people (LI meaning)
-yuinar*                NounPostbase; ! twenty
-yuinaunritaraate       NounPostbase; ! nineteen
-yuinaunriteʼar         NounPostbase; ! nineteen
 yukutar                NounPostbase; ! moisture; dampness; mildew
 yuliar                 NounPostbase; ! adopted child
 yullʼitar              NounPostbase; ! human sounds or other indications of human presence
@@ -14827,6 +14826,47 @@ yaate                  NounInflection; ! area beyond
 LEXICON PositionalPostbase
 NounInflection;
 [Positional][Sec_Ter]:.tmun                 EncliticOrEnd;
+
+
+LEXICON Numeral
+ataucir[Num][Cardinal][Sg]:atauciq                          EncliticOrEnd;
+malrur[Num][Cardinal][Du]:malruk                            EncliticOrEnd;
+pingayur[Num][Cardinal][Pl]:pingayun                        EncliticOrEnd;
+cetamar[Num][Cardinal][Pl]:cetaman                          EncliticOrEnd;
+tallimar[Num][Cardinal][Pl]:talliman                        EncliticOrEnd;
+arvinleg[Num][Cardinal][Pl]:arvinlegen                      EncliticOrEnd;
+arvinleg[Num][Cardinal][Pl]:arvinelgen                      EncliticOrEnd;
+malrunleg[Num][Cardinal][Pl]:malrunlegen                    EncliticOrEnd;
+malrunleg[Num][Cardinal][Pl]:malrunelgen                    EncliticOrEnd;
+pingayunleg[Num][Cardinal][Pl]:pingayunlegen                EncliticOrEnd;
+pingayunleg[Num][Cardinal][Pl]:pingayunelgen                EncliticOrEnd;
+qulngunritar(ar*)[Num][Cardinal][Pl]:qulngunritaʼar         EncliticOrEnd;
+qule[Num][Cardinal][Sg]:qula                                EncliticOrEnd;
+akimiarunritar(ar*)[Num][Cardinal][Pl]:akimiarunritaʼar     EncliticOrEnd;
+akimiar[Num][Cardinal][Pl]:akimiaq                          EncliticOrEnd;
+yuinaunritar(ar*)[Num][Cardinal][Pl]:yuinaunritaʼar         EncliticOrEnd;
+ipiarunritar(ar*)[Num][Cardinal][Pl]:ipiarunritaʼar         EncliticOrEnd;
+yuinar*[Num][Cardinal][Sg]:yuinaq                           EncliticOrEnd;
+ipiar[Num][Cardinal][Sg]:ipiaq                              EncliticOrEnd;
+tiissitsaar[Num][Cardinal][Sg]:tiissitsaaq                  EncliticOrEnd;
+
+ataucir             NounPostbase;
+malrur              NounPostbase;
+pingayur            NounPostbase;
+cetamar             NounPostbase;
+tallimar            NounPostbase;
+arvinleg            NounPostbase;
+malrunleg           NounPostbase;
+pingayunleg         NounPostbase;
+qulngunritar(ar*)   NounPostbase;
+qule                NounPostbase;
+akimiarunritar(ar*) NounPostbase;
+akimiar             NounPostbase;
+yuinaunritar(ar*)   NounPostbase;
+ipiarunritar(ar*)   NounPostbase;
+yuinar              NounPostbase;
+ipiar               NounPostbase;
+tiissitsaar         NounPostbase;
 
 
 LEXICON EncliticOrEnd
