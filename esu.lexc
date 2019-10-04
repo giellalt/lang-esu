@@ -13161,8 +13161,8 @@ VerbEte;
 -–ngiar(ar*)[N→N]:–ngiar(ar*)                 NounPostbase; ! old N (person)
 -+nir[N→N]:+nir                               NounPostbase; ! since N; since some time in the N
 -+nir[N→N]:+nir                               NounPostbase; ! the smell of N
--%:(e)nkut[N→N]:%:(e)nkut                     NounPostbase; ! (plural) N and family; N and companion
--%:(e)nkug[N→N]:%:(e)nkug                     NounPostbase; ! (dual) N and family; N and companion
+-%:(e)nkut[N→N]:%:(e)nkut                     EncliticOrEnd; ! (plural) N and family; N and companion
+-%:(e)nkuk[N→N]:%:(e)nkuk                     EncliticOrEnd; ! (dual) N and family; N and companion
 -–paarrlug[N→N]:–paarrlug                     NounPostbase; ! big N
 -–pig[N→N]:–pig                               NounPostbase; ! genuine N; real N; authentic N
 -–piar[N→N]:–piar                             NounPostbase; ! genuine N; real N; authentic N
@@ -13283,8 +13283,6 @@ VerbEte;
 -+nite[N→V]:+nite                             VerbPostbase; ! to smell or taste like N
 -–nqar[N→V]:–nqar                             VerbPostbase; ! to unintentionally hit (it) in the N with a projectile
 -–qliarte[N→V]:–qliarte                       VerbPostbase; ! to reach the N of; to extend to the N of
--–qsig[N→V]:–qsig                             VerbPostbase; ! to be far in the direction denoted by N
--–qsigi[N→V]:–qsigi                           VerbPostbase; ! to get farther into the area denoted by N
 -–qu[N→V]:–qu                                 VerbPostbase; ! to hunt with N or at N
 -+(a)r[N→V]:+(a)r                             VerbPostbase; ! to say or “go”. . . (word or sound)
 -–rpagninarqe[N→V]:–rpagninarqe               VerbPostbase; ! to smell strongly of N
@@ -14785,10 +14783,13 @@ LEXICON DemIntermedNonSg
 [DemPro][Voc][Unpd][Du]:.uk             EncliticOrEnd;
 [DemPro]-~+miu[N→N]:~+miu               NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
 
-
 LEXICON DemAdv2Ter
 DemAdv;
 [DemAdv][Sec_Ter]:.tmun                 EncliticOrEnd;
+[DemAdv][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
+[DemAdv]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
+[DemAdv]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
+
 
 LEXICON DemAdv
 [DemAdv][Loc]:.ni                       EncliticOrEnd;
@@ -14796,14 +14797,15 @@ LEXICON DemAdv
 [DemAdv][Abl]:.ken                      EncliticOrEnd;
 [DemAdv][Via]:.ggun                     EncliticOrEnd;
 [DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
-[DemAdv][Loc]-ete:%%~nete               VerbPostbase;
-[DemAdv][Loc]-ete:(ʼa)+nte              VerbPostbase;
-
+[DemAdv][Loc]-ete[N→V]:%%~nete          VerbPostbase;
+[DemAdv][Loc]-ete[N→V]:(ʼa)+nte         VerbPostbase;
+[DemAdv][Ter]+virte[N→V]:.virte         VerbPostbase;
+[DemAdv][Via]+gguir[N→V]:.gguir         VerbPostbase;
 
 LEXICON Positional
 aci                    PositionalPostbase; ! area below; area under (positional base used only with a possessed ending); mattress; bed; wild potato Hedysarum sp. (additional LI meaning)
 aki                    PositionalPostbase; ! other side; area across; reponse; equivalent; value; coin; money
-akule                  NounPostbase; ! midsection; area between; land between two topographical features such as the river and the ocean; tundra
+akule                  PositionalPostbase; ! midsection; area between; land between two topographical features such as the river and the ocean; tundra
 canir                  PositionalPostbase; ! area beside; space next to
 ciu                    PositionalPostbase; ! area in front (of it); time preceding (it); bow of a boat; forepart
 elate                  PositionalPostbase; ! area outside of
@@ -14829,6 +14831,9 @@ yaate                  NounInflection; ! area beyond
 LEXICON PositionalPostbase
 NounInflection;
 [Positional][Sec_Ter]:.tmun                 EncliticOrEnd;
+[Positional][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
+[Positional]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
+[Positional]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
 
 
 LEXICON Numeral
