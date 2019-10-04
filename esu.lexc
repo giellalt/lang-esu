@@ -14016,8 +14016,11 @@ LEXICON VerbInflection
 [V][Intr][Opt][FUT]:@~-ki                  IntransitiveFutureOptative;
 [V][Trns][Opt][FUT]:@~-ki                  TransitiveFutureOptative;
 
-[V][Intr][Opt][FUT][NEG]:@~+yaquna         IntransitiveNegativeFutureOptative;
-[V][Trns][Opt][FUT][NEG]:@~+yaquna         TransitiveNegativeFutureOptative;
+[V][Intr][Opt][PRS][NEG]:@~+(t)viiqna      IntransitiveNegativeOptative;
+[V][Trns][Opt][PRS][NEG]:@~+(t)viiqna      TransitiveNegativeOptative;
+
+[V][Intr][Opt][FUT][NEG]:@~+yaquna         IntransitiveNegativeOptative;
+[V][Trns][Opt][FUT][NEG]:@~+yaquna         TransitiveNegativeOptative;
 
 [V][Intr][Ptcp]:-lria/@+ngur*              IntransitiveParticipial;
 ![V][Trns][Ptcp]:@~-ke                      TransitiveParticipial;
@@ -14279,14 +14282,14 @@ LEXICON TransitiveFutureOptative
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
 
 
-LEXICON IntransitiveNegativeFutureOptative
+LEXICON IntransitiveNegativeOptative
 !------------------------|
 [S_2Sg]:k   EncliticOrEnd;
 [S_2Pl]:ci  EncliticOrEnd;
 [S_2Du]:tek EncliticOrEnd;
 !------------------------|
 
-LEXICON TransitiveNegativeFutureOptative
+LEXICON TransitiveNegativeOptative
 !----------------------------------|------------------------------------|------------------------------------|
 [A_2Sg][P_3Sg]:ku     EncliticOrEnd; [A_2Sg][P_3Pl]:ki     EncliticOrEnd; [A_2Sg][P_3Du]:kek    EncliticOrEnd;
 [A_2Pl][P_3Sg]:ciu    EncliticOrEnd; [A_2Pl][P_3Pl]:ciki   EncliticOrEnd; [A_2Pl][P_3Du]:cikek  EncliticOrEnd;
