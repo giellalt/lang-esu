@@ -1,6 +1,9 @@
 ! LANGUAGE: "esu"
 ! AUTHOR: "Lonny Strunk"
 
+! TODO:
+! 	- from -rraar-: terr -> q ; e.g. inarterraarluni -> inarqaarluni
+
 
 define Stop               [ p | t | c | k | q ];
 define VoicedFricative    [ v | l | s | g | r | u͡g | u͡r ];
