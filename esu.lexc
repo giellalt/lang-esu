@@ -166,6 +166,7 @@ LEXICON Root
     ProperNoun      ;
     NounBase        ;
     VerbBase        ;
+    DimensionalRoot ;
 !    PosturalRoot    ;
 !    EmotionalRoot   ;
 !    PersonalPronoun ;
@@ -250,7 +251,6 @@ ataam                  EncliticOrEnd; ! again
 atak                   EncliticOrEnd; ! let me see; well then; come on
 ataki                  EncliticOrEnd; ! let me see; well then; come on
 ataku                  EncliticOrEnd; ! (this) evening (noun (especially when with final q) and adverbial particle)
-ataku-                 EncliticOrEnd; ! to be evening
 atakuq                 EncliticOrEnd; ! (this) evening (noun (especially when with final q) and adverbial particle)
 atam                   EncliticOrEnd; ! notice!; look!
 atata                  EncliticOrEnd; ! later on
@@ -8427,6 +8427,7 @@ asvaite                VerbPostbase; ! to be solid; to be stable; to be immovabl
 asʼercir               VerbPostbase; ! to act mischievously; to be naughty
 at                     VerbPostbase; ! deep root: down; below; under
 ata                    VerbPostbase; ! to be attached; to be dependent; to be connected
+ataku                  VerbPostbase; ! to be evening
 atakuar(ar)            VerbPostbase; ! to be evening; to be dusk; to be twilight time
 atakutar               VerbPostbase; ! to eat supper
 atakuyartur            VerbPostbase; ! for it to be twilight time; for it to be late afternoon
@@ -14352,7 +14353,7 @@ LEXICON IntransitiveSubordinative
 !-------------------------|----------------------------|---------------------------|
 
 LEXICON TransitiveSubordinative
-!----------------------- --|-------------------------|---------------------------|
+!--------------------------|-------------------------|---------------------------|
 [P_3Sg]:ku    EncliticOrEnd; [P_3Pl]:ki EncliticOrEnd; [P_3Du]:kek  EncliticOrEnd;
 [P_1Sg]:%:nga EncliticOrEnd; [P_1Pl]:ta EncliticOrEnd; [P_1Du]:nuk  EncliticOrEnd;
                                                        [P_1Du]:nung EncliticOrEnd;
@@ -14902,6 +14903,180 @@ ipiarunritar(ar*)   NounPostbase;
 yuinar              NounPostbase;
 ipiar               NounPostbase;
 tiissitsaar         NounPostbase;
+
+
+LEXICON DimensionalRoot
+aki             DimensionalPostbase; ! value*
+akur            DimensionalPostbase; ! length of a garment*
+amel            DimensionalPostbase; ! width, especially of a creek
+cacet           DimensionalPostbase; ! fortitude
+cace(t)         DimensionalPostbase; ! fortitude
+cas             DimensionalPostbase; ! fortitude
+taces           DimensionalPostbase; ! fortitude
+cug             DimensionalPostbase; ! human height
+sug             DimensionalPostbase; ! human height
+elur            DimensionalPostbase; ! width, especially of a garment 
+lur             DimensionalPostbase; ! width, especially of a garment 
+ilu             DimensionalPostbase; ! interior capacity or size*
+imar            DimensionalPostbase; ! capacity*
+iq              DimensionalPostbase; ! width
+kanag           DimensionalPostbase; ! leg length
+lur             DimensionalPostbase; ! width, especially of a garment 
+elur            DimensionalPostbase; ! width, especially of a garment 
+mam             DimensionalPostbase; ! thickness
+mar             DimensionalPostbase; ! length, distance overland
+mig             DimensionalPostbase; ! loudness of a thudding noise
+mis             DimensionalPostbase; ! perceptibility 
+marrlu          DimensionalPostbase; ! depth of a net 
+nequ            DimensionalPostbase; ! width
+qas             DimensionalPostbase; ! loudness
+qecig           DimensionalPostbase; ! thickness of a skin, cloth, etc.* 
+qer             DimensionalPostbase; ! height
+qur             DimensionalPostbase; ! height
+sug             DimensionalPostbase; ! human height
+cug             DimensionalPostbase; ! human height
+tume            DimensionalPostbase; ! foot length*
+tuner           DimensionalPostbase; ! impact
+umyuar          DimensionalPostbase; ! mental ability*
+usvi            DimensionalPostbase; ! wisdom, cleverness* 
+uyvi            DimensionalPostbase; ! wisdom, cleverness* 
+uya             DimensionalPostbase; ! width, especially of a river*
+
+LEXICON DimensionalPostbase
+-+tu[N→V]:+tu          VerbPostbase; ! to be well endowed with N, to have N to a large extent
+-+kite[N→V]:+kite      VerbPostbase; ! to have N to a small degree; to have only a small amount of N 
+
+LEXICON EmotionalRoot
+aar             EmotionalPostbase; ! frightened, endangered
+alag            EmotionalPostbase; ! finding something feasible 
+alia            EmotionalPostbase; ! lonely
+alai            EmotionalPostbase; ! lonely
+ancurtu(r)      EmotionalPostbase; ! hesitant*
+asgura          EmotionalPostbase; ! doubting
+augtar          EmotionalPostbase; ! inhibited
+canga           EmotionalPostbase; ! disliking
+caperr          EmotionalPostbase; ! finding something difficult 
+cikna           EmotionalPostbase; ! jealous*
+cumaci          EmotionalPostbase; ! repulsed
+ekli            EmotionalPostbase; ! sexually attracted, lustful 
+elingra         EmotionalPostbase; ! grateful
+eqʼu            EmotionalPostbase; ! hating
+iilla           EmotionalPostbase; ! amazed
+ira             EmotionalPostbase; ! amazed
+irra            EmotionalPostbase; ! amazed
+kama            EmotionalPostbase; ! suspicious
+kasngu          EmotionalPostbase; ! ashamed, embarrassed 
+kapegcug        EmotionalPostbase; ! dreading
+kemyu           EmotionalPostbase; ! relying on someone 
+kencig          EmotionalPostbase; ! respectful*
+keneg           EmotionalPostbase; ! loving
+kumeg           EmotionalPostbase; ! attracted to a baby 
+kusgur          EmotionalPostbase; ! protective* 
+kuygur          EmotionalPostbase; ! protective* 
+nakleg          EmotionalPostbase; ! compassionate
+nalluyur        EmotionalPostbase; ! unwelcome
+nangru          EmotionalPostbase; ! critical
+nangyar         EmotionalPostbase; ! afraid of heights
+neka            EmotionalPostbase; ! emotionally pained
+papsi           EmotionalPostbase; ! finding something a nuisance 
+paqna           EmotionalPostbase; ! curious
+peller          EmotionalPostbase; ! repulsed
+pengeg          EmotionalPostbase; ! worried
+qessa           EmotionalPostbase; ! disinclined to act*
+qigcig          EmotionalPostbase; ! respectful
+qingar          EmotionalPostbase; ! rejecting*
+qitngir         EmotionalPostbase; ! dazzled
+qivru           EmotionalPostbase; ! grieving*
+quinag          EmotionalPostbase; ! repulsed
+qumli           EmotionalPostbase; ! frustrated
+qungvag         EmotionalPostbase; ! tickled
+qunu            EmotionalPostbase; ! possessive*
+qusva           EmotionalPostbase; ! happy
+quyva           EmotionalPostbase; ! happy
+quya            EmotionalPostbase; ! thankful*
+takar           EmotionalPostbase; ! shy, inhibited, respectful 
+takumcu         EmotionalPostbase; ! pitying, compassionate 
+tallur          EmotionalPostbase; ! shy, inhibited, respectful 
+temci           EmotionalPostbase; ! finding something funny 
+tengru          EmotionalPostbase; ! enthusiastic*
+tunrir          EmotionalPostbase; ! beholden*
+tuvqa           EmotionalPostbase; ! generous
+ucur            EmotionalPostbase; ! praising
+ukver           EmotionalPostbase; ! believing*
+ulurya          EmotionalPostbase; ! afraid of being hit
+uumi            EmotionalPostbase; ! frustrated
+
+LEXICON EmotionalPostbase
+-@~+yug[V→V]:@~+yug          VerbPostbase; ! to want to V; to tend to V; to feel V (with “emotional roots”)
+-@–ke[V→V]:@–ke              VerbPostbase; ! to find (it) to be V
+-@~+narqe[V→V]:@~+narqe      VerbPostbase; ! to tend to cause one to V; to be able to be V-ed
+-@~+naite[V→V]:@~+naite      VerbPostbase; ! to tend not to cause one to V
+-+tar[V→V]:+tar              VerbPostbase; ! to tend by oneʼs disposition or nature to V a lot
+
+
+LEXICON PosturalRoot
+aatar           PosturalPostbase; ! open-mouthed 
+agar            PosturalPostbase; ! hanging
+aitar           PosturalPostbase; ! open-mouthed 
+alar            PosturalPostbase; ! erring
+amag            PosturalPostbase; ! curving
+angpar          PosturalPostbase; ! open
+angvar          PosturalPostbase; ! open
+aqum            PosturalPostbase; ! sitting*
+avler           PosturalPostbase; ! spread-legged
+ayalur          PosturalPostbase; ! losing balance
+callar          PosturalPostbase; ! spread open
+cangur          PosturalPostbase; ! lacking symmetry
+canir           PosturalPostbase; ! on the side
+caqir           PosturalPostbase; ! turning
+caqvir          PosturalPostbase; ! splay-footed, with shoes on the wrong feet 
+cetur           PosturalPostbase; ! with legs outstretched
+ciisqumig       PosturalPostbase; ! kneeling
+cilig           PosturalPostbase; ! tilting
+ciug            PosturalPostbase; ! with head lifted
+civug           PosturalPostbase; ! with head lifted
+cuqir           PosturalPostbase; ! having bends
+cuqlur          PosturalPostbase; ! out of shape
+elgar           PosturalPostbase; ! settled down
+enlur           PosturalPostbase; ! dented
+[e]nglur        PosturalPostbase; ! dented
+ever            PosturalPostbase; ! slanting
+iggag           PosturalPostbase; ! leaning against something
+igag            PosturalPostbase; ! leaning against something
+ikig            PosturalPostbase; ! bending forward with buttocks projecting 
+ikir            PosturalPostbase; ! open
+illug           PosturalPostbase; ! tilting
+inar            PosturalPostbase; ! lying down
+irir            PosturalPostbase; ! tilting sideways 
+isser           PosturalPostbase; ! undressed
+itum            PosturalPostbase; ! breaking*
+kalug           PosturalPostbase; ! empty
+kamilar         PosturalPostbase; ! barefoot
+kanar           PosturalPostbase; ! bending forward 
+katur           PosturalPostbase; ! gathering
+kiipir          PosturalPostbase; ! standing on toes 
+luqir           PosturalPostbase; ! slanting
+matar           PosturalPostbase; ! undressing 
+melug           PosturalPostbase; ! dented
+merig           PosturalPostbase; ! hemmed
+mumig           PosturalPostbase; ! turned over 
+nanger          PosturalPostbase; ! standing
+napar           PosturalPostbase; ! upright
+never           PosturalPostbase; ! lying on back 
+ngelʼur         PosturalPostbase; ! dented
+nungir          PosturalPostbase; ! putting on a belt 
+palur           PosturalPostbase; ! lying face down 
+qemag           PosturalPostbase; ! stored away 
+qeter           PosturalPostbase; ! lying on back 
+qungcur         PosturalPostbase; ! flexing knees 
+quyur           PosturalPostbase; ! gathering
+tuig            PosturalPostbase; ! turned around 
+uver            PosturalPostbase; ! slanting
+
+LEXICON PosturalPostbase
+! Quantifier/Qualifier Endings
+-+te[V→V]:+te             VerbPostbase; ! to act on one so as to cause it to V
+-@–ngqa[V→V]:@–ngqa       VerbPostbase; ! to be in a state of V or of having V-ed or having been V-ed
 
 
 LEXICON EncliticOrEnd
