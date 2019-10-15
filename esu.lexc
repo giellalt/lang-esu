@@ -13668,11 +13668,13 @@ VerbInflection;
 -+karar[V→N]:+karar                           NounPostbase; ! exact area denoted by N with respect to possessor
 -@~–ke[V→N]:@~–ke                             NounPostbase; ! (@~-ke-1) the one or ones that the possessor is V-ing
 -@~–kengar[V→N]:@~–kengar                     NounPostbase; ! one that is being V-ed
+-–ller[V→N]:–ller                             NounPostbase; ! former N; one that V-ed or was V-ed; act or state of V-ing
 -@ller[V→N]:@ller                             NounPostbase; ! one more V than possessor(s), the most V of the possessors
 -–llerkar[V→N]:–llerkar                       NounPostbase; ! future act of V-ing; unrealized act of V-ing
 -–llgute[V→N]:–llgute                         NounPostbase; ! fellow V-er; V-ing partner
 -–lqurrar*[V→N]:–lqurrar*                     NounPostbase; ! the one(s) most V
 -–lria[V→N]:–lria                             NounPostbase; ! the one who is V-ing
+-–lrii[V→N]:–lrii                             NounPostbase; ! the one who is V-ing (used with endings %:(e)m, %:(e)t, and all dual endings)
 -@(u)te[V→N]:@(u)te                           NounPostbase; ! (also @3(u)taq) instrument or device for V-ing; time of V-ing
 -@~+natkar[V→N]:@~+natkar                     NounPostbase; ! future time of V-ing
 -@~+ner[V→N]:@~+ner                           NounPostbase; ! thing that results from V-ing
@@ -14813,10 +14815,11 @@ LEXICON DemIntermedNonSg
 
 LEXICON DemAdv2Ter
 DemAdv;
-[DemAdv][Sec_Ter]:.tmun                 EncliticOrEnd;
-[DemAdv][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
+[DemAdv]-–qlir*[N→N]:–qlir*             NounPostbase; ! the one located far in the area or space or time denoted by N
 [DemAdv]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
 [DemAdv]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
+[DemAdv][Sec_Ter]:.tmun                 EncliticOrEnd;
+[DemAdv][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
 
 
 LEXICON DemAdv
@@ -14858,10 +14861,11 @@ yaate                  NounInflection; ! area beyond
 
 LEXICON PositionalPostbase
 NounInflection;
-[Positional][Sec_Ter]:.tmun                 EncliticOrEnd;
-[Positional][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
+[Positional]-–qlir*[N→N]:–qlir*             NounPostbase; ! the one located far in the area or space or time denoted by N
 [Positional]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
 [Positional]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
+[Positional][Sec_Ter]:.tmun                 EncliticOrEnd;
+[Positional][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
 
 
 LEXICON Numeral
