@@ -167,8 +167,8 @@ LEXICON Root
     NounBase        ;
     VerbBase        ;
     DimensionalRoot ;
-!    PosturalRoot    ;
-!    EmotionalRoot   ;
+    PosturalRoot    ;
+    EmotionalRoot   ; 
 !    PersonalPronoun ;
 !    QuantQual       ;
     Demonstrative   ;
