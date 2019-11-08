@@ -8,7 +8,7 @@ tangerr[V][Trns][Ind][A_3Sg][P_2Pl]	tangrraaci
 tangerr[V][Trns][Ind][A_3Pl][P_2Pl]	tangrraiceci
 kegge-@~+yug[V→V][V][Trns][Ind][A_3Sg][P_1Sg]	keggsugaanga
 qilug[V][Trns][Ind][A_3Pl][P_1Pl]	qilugaitkut
-cikir-+ciqe–/@ciiqe[V→V][V][Trns][Ind][A_3Sg][P_2Sg]
+cikir-+ciqe–/@ciiqe[V→V][V][Trns][Ind][A_3Sg][P_2Sg]	cikirciqaaten
 igar-@~+ngaite[V→V][V][Trns][Ind][A_3Pl][P_2Pl]	igarngaitaiceci
 qerrute[V][Trns][Ind][A_3Sg][P_1Sg]	qerrutaanga
 ciku[V][Trns][Ind][A_3Sg][P_3Sg]	cikua
@@ -55,8 +55,8 @@ ikayur-–ngnaqe[V→V][V][Trns][Ind][A_3Sg][P_2Sg]	ikayungnaqaaten
 iter-@~+yaaqe[V→V][V][Intr][Ind][S_3Sg]	iteryaaquq
 qanrute-@~+yaaqe[V→V][V][Trns][Ind][A_1Sg][P_3Sg]	qanrucaaqaqa
 angyar-––li[N→V]-–ngnaqe[V→V]-@~+yaaqe[V→V]-–llru[V→V][V][Intr][Ind][S_3Sg]	angyalingnaqsaaqellruuq
-alinge-@~+yaaqe[V→V]-–llru[V→V][V][Intr][Ind][S_1Pl] alingyaaqellruukut
-alinge-–llru[V→V]-@~+yaaqe[V→V][V][Intr][Ind][S_1Pl] alingellruyaaqukut
+alinge-@~+yaaqe[V→V]-–llru[V→V][V][Intr][Ind][S_1Pl]	alingyaaqellruukut
+alinge-–llru[V→V]-@~+yaaqe[V→V][V][Intr][Ind][S_1Pl]	alingellruyaaqukut
 nere-@~+yug[V→V]-@~+yaaqe[V→V][V][Intr][Ind][S_1Sg]	neryugyaaqua
 ayag-–llru[V→V]-–llini[V→V][V][Intr][Ind][S_3Sg]	ayallrulliniuq
 nere-–llini[V→V][V][Trns][Ind][A_3Sg][P_3Pl]	nerrlinii
