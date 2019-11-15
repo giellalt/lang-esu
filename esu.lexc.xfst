@@ -8,6 +8,9 @@
     ! for [Opt_PRS_2Sg_1Sg]
     ! multi-form postbases ciqe/ciiqe ...
     ! multi-form inflections .vet/+pet ...
+    ! for lria/lrii/ngur*
+    ! for nru/llru
+    ! 
 ! change the multi-char symbols to single char??
 ! change capital to lowercase
 ! give to twolc
@@ -43,7 +46,7 @@ define Lowercase "A"   -> a,
                  "R"   -> r,
                  "S"   -> s,
                  "T"   -> t,
-                 "U"   -> u, 
+                 "U"   -> u,
                  "V"   -> v,
                  "W"   -> w,
                  "Y"   -> y,
@@ -60,6 +63,21 @@ define Lowercase "A"   -> a,
                  "U͡r"  -> u͡r,
                  "U͡gg" -> u͡gg,
                  "U͡rr" -> u͡rr;
+
+define AutomaticDevoicing v -> vv,
+                          l -> ll,
+                          s -> ss,
+                          g -> gg,
+                          r -> rr,
+                          u͡g -> u͡gg,
+                          u͡r -> u͡rr || [ Stop | VoicelessFricative ] _  ,
+                                       _ [ Stop ]                      .o.
+                          m -> ḿ,
+                          n -> ń,
+                          ng -> ńg || [ Stop | VoicelessFricative ] _  .o.
+                          r -> rr  || _ .#.                            .o.
+                          s -> ss  || .#. _                             ;
+
 
 define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
                      "[Opt_PRS_2Sg]" -> "+" n               || t e  _                         .o.
@@ -80,4 +98,6 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "(ʼa)" -> 0                                                               ;
 
 
-regex Lowercase .o. MultipleForms ; 
+regex Lowercase          .o.
+      AutomaticDevoicing .o. 
+      MultipleForms       ; 
