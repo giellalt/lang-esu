@@ -17,14 +17,45 @@ define VoicelessC [ VoicelessFricative | VoicelessNasal | Stop ];
 define Fricative  [ VoicelessFricative | VoicedFricative ];
 define Nasal      [ VoicelessNasal     | VoicedNasal     ];
 
-define Con          [ Stop | Fricative | Nasal | w | y ];
+define Con        [ Stop | Fricative | Nasal | w | y ];
 
 define FullVowel   [ a | i | u ];
-define Vow           [ e | FullVowel ];
+define Vow         [ e | FullVowel ];
 
+define AutomaticDevoicing v -> vv,
+                          l -> ll,
+                          s -> ss,
+                          g -> gg,
+                          r -> rr,
+                          u͡g -> u͡gg,
+                          u͡r -> u͡rr || [ Stop | VoicelessFricative ] ">"* _  ,
+                                     _ ">"* [ Stop ]                        .o.
+                          m -> ḿ,
+                          n -> ń,
+                          ng -> ńg || [ Stop | VoicelessFricative ] ">"* _  .o.
+                          r -> rr  || _ ">"* .#.                            .o.
+                          s -> ss  || .#. ">"* _                             ;
 
-define TripleConsonant [..] (->) e || Con _ Con Con .o.
-                       [..]  ->  e || Con Con _ Con ;
+define TripleConsonant [..] (->) e || Con ">"* _ ">"* Con ">"* Con .o.
+                       [..]  ->  e || Con ">"* Con ">"* _ ">"* Con  ;
 
+define RemoveGeminatedApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* Vow ">"* Con ">"* _ ">"* Vow ">"* Vow ;
 
-regex TripleConsonant ;
+define ToOrthography  vv -> v,
+                      ll -> l,
+                      ss -> s,
+                      gg -> g,
+                      rr -> r,
+                      u͡gg -> u͡g,
+                      u͡rr -> u͡r || [ Stop | VoicelessFricative ] ">"* _  ,
+                                 _ ">"* [ Stop ]                        .o.
+                      ḿ -> m,
+                      ń -> n,
+                      ńg -> ng || [ Stop | VoicelessFricative ] ">"* _  .o.
+                      rr -> r  || _ ">"* .#.                            .o.
+                      ss -> s  || .#. ">"*  _                             ;
+
+regex AutomaticDevoicing        .o. 
+      TripleConsonant           .o.
+      RemoveGeminatedApostrophe .o.
+      ToOrthography              ;
