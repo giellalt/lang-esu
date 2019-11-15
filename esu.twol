@@ -4,7 +4,7 @@
 Alphabet
     a c e g i k l m n p q r s t u v w y ḿ ń
     vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
-    %[e%]:e %[e%]:0 
+    %[e%]:e %[e%]:0 ʼ
     
     %(a%):%> %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%> 
     %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> %(ur%):%>
@@ -35,14 +35,14 @@ Sets
 
 Rules 
 
-!"a:0"
-!a:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
-!    except
-!        _ g:0 Bndry:* %(e%):i ; ! age -> ii 
-!        _ g:0 Bndry:* a:i ; ! aga -> ii 
-!        _ Bndry:* [ g:0 | %(ng%):0 ] Bndry:* a:i ; ! anga, aga -> ii
-!        a:i Bndry:* [ g:0 | %(ng%):0 ] Bndry:* _ ; ! anga, aga -> ii
-!        e:i Bndry:* %(ng%):0 Bndry:* _ ; ! enga -> ii
+"a:0 = --"
+a:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        _ g:0 Bndry:* %(e%):i ; ! age -> ii 
+        _ g:0 Bndry:* a:i ; ! aga -> ii 
+        _ Bndry:* [ g:0 | %(ng%):0 ] Bndry:* a:i ; ! anga, aga -> ii
+        a:i Bndry:* [ g:0 | %(ng%):0 ] Bndry:* _ ; ! anga, aga -> ii
+        e:i Bndry:* %(ng%):0 Bndry:* _ ; ! enga -> ii
 
 "a:i = age/ii | aga/ii | anga/ii | aga/ii | enga/ii"
 a:i <=> _ g:0 Bndry:* %(e%):i ; ! age -> ii 
@@ -55,7 +55,9 @@ a:i <=> _ g:0 Bndry:* %(e%):i ; ! age -> ii
 e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
         Vow t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
         _ [ Bndry: - %~: ]+ Vow ; ! "vowel postbases are e deleters"
+        _ [ r | g ] Bndry:+ Vow ; ! "vowel postbases are semi-final e deleters"
         _ [ r | g ] Bndry:* %%:0 Bndry:* %(e%):e ; ! "Rule (e):e"
+        _ (Cns:0) Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
     except
         _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
         _ Bndry:* %(ng%):0 Bndry:* i ; ! engi -> ai
@@ -75,11 +77,11 @@ g:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
 "g:k = word#"
 g:k <=> _ (%*:) [ .#. | %= ] ; ! Word Final changes
 
-!"i:0"
-!i:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
-!
-!"l drop" ! - optional drop preceding vowel also
-!l:0 => Vow:0 Cns:0 Bndry:* %–: %–: _ ; ! Rule for Double Minus - 
+"i:0 = --"
+i:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+
+"l drop = --" ! - optional drop preceding vowel also
+l:0 => Vow:0 (Cns:0) Bndry:* %–: %–: _ ; ! Rule for Double Minus - 
 
 "ng:0 = :"
 ng:0 <=> [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
@@ -97,17 +99,23 @@ r:q <=> _ (%*:) [ .#. | %= ] ; ! Word Final changes
 "rr:0 = -"
 rr:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
 
-!"ti to ci" ! - optional drop preceding vowel also
-!t:c <=> _ Vow:0 Cns:0 Bndry:* %–: %–: l:0 ; ! Rule for Double Minus -
+"t:c = tV--li/ci" ! - optional drop preceding vowel also
+t:c <=> _ Vow:0 (Cns:0) Bndry:* %–: %–: l:0 i ; ! Rule for Double Minus -
+
+"t:0 = te@y/c"
+t:0 <=> _ e:0 Bndry:* %@: Bndry:* y:c ; ! te@y/c
 
 "Word final Vte -> t:n"
 t:n <=> Vow _ e:0 [ .#. | %= ] ;
 
-!"u:0"
-!u:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+"u:0 = --"
+u:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
 
-!"y:c = @~+y"
+"y:c = te@y"
+y:c <=> t:0 e:0 Bndry:* %@: Bndry:* _ ; ! te@y/c
 
+"y:s = Stop@y" 
+y:s <=> VlessCns (e:0) Bndry:* %@: Bndry:* _; ! Stop@y/s
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!     ALLOMORPHS    !!!!!
