@@ -74,9 +74,9 @@ define AutomaticDevoicing v -> vv,
                                        _ [ Stop ]                      .o.
                           m -> ḿ,
                           n -> ń,
-                          ng -> ńg || [ Stop | VoicelessFricative ] _  .o.
-                          r -> rr  || _ .#.                            .o.
-                          s -> ss  || .#. _                             ;
+                          ng -> ńg || [ Stop | VoicelessFricative ] _   ;
+!                          r -> rr  || _ .#.                            .o.
+!                          s -> ss  || .#. _                             ;
 
 
 define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
