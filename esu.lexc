@@ -3116,6 +3116,7 @@ imaqcaar(ar*)          NounPostbase; ! red-necked phalarope (Phalaropus lobatus)
 imaqlir                NounPostbase; ! kayak part, piece on each side, up from keel, in front of tracking stabilizer
 imaqucug               NounPostbase; ! undesirable contents; phlegm; pus
 imaqur                 NounPostbase; ! undesirable contents; phlegm; pus
+imar                   NounPostbase; ! contents; bullet; pus; ocean; water
 imar*                  NounPostbase; ! contents; bullet; pus; ocean; water
 imarkaner              NounPostbase; ! exactly enough to fill (it/them)
 imarkar                NounPostbase; ! future content; lead (metal)
@@ -13387,6 +13388,7 @@ VerbInflection;
 -%:(ng)illiqe[V→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
 -–inar[V→V]:–inar                             VerbPostbase; ! to finally V
 -%:(ng)i%:rute[V→V]:%:(ng)i%:rute             VerbPostbase; ! to not have N any more; to no longer be V (adjectival verbs only)
+-%:(ng)ite[V→V]:%:(ng)ite                     VerbPostbase; ! to lack N or V; to have no N or V
 -–kaca(g)ar[V→V]:–kaca(g)ar                   VerbPostbase; ! to be very V
 -–kacagar[V→V]:–kacagar                       VerbPostbase; ! to be very V
 -–kacgar[V→V]:–kacgar                         VerbPostbase; ! to be very V
