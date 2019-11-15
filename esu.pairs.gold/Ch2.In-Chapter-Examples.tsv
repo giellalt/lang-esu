@@ -24,7 +24,7 @@ kaig[V][Intr][Ind][S_2Pl]	kaigtuci
 cali[V][Intr][Ind][S_2Du]	caliutek
 kaig[V][Intr][Ind][S_2Sg]=qaa[Encl]	kaigtuten-qaa
 ataam=qaa[Encl]	ataam-qaa
-iter[V][Intr][Ind][S_2Pl]	itertuci-qaa
+iter[V][Intr][Ind][S_2Pl]=qaa[Encl]	itertuci-qaa
 assir[V][Intr][Ind][S_3Sg]=qaa[Encl]	assirtuq-qaa
 cali-@~+yug[V→V][V][Intr][Ind][S_3Sg]	caliyugtuq
 cali-@~+yug[V→V][V][Intr][Ind][S_1Sg]	caliyugtua
