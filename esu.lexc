@@ -116,18 +116,19 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [Opt_PRS_2Sg_1Sg]           !
 @~+lu/@na                   ! subordinative mood marker
 (ʼa)                        ! used for [DemAdv][Loc] %~nete 
+–rpag/@vag                  ! big N; large N
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
 (a)                         ! 
 (aa)                        ! 
-(ar)                        ! 
-(ar*)                       ! 
+(ar)                        ! (aq*)/(ar*)/(ar) - NounDicForm/NounBaseForm/VerbBaseForm
+(ar*)                       ! (aq*)/(ar*)/(ar) - NounDicForm/NounBaseForm/VerbBaseForm
 (ur)                        !
 
 
 
-!!!!!!! ALLOPHONE OPERATORS !!!!!!
+!!!!!!! ALLOMORPH OPERATORS !!!!!!
 (e)                         ! is used only when a strong base-final consonant is kept
 (g)                         ! is used with bases ending in two vowels
 (i)                         ! is used with bases ending in te
@@ -155,12 +156,13 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 
 
 !!! Other !!!
-! ʼ modifier letter
+! ʼ modifier letter indicating gemination, automatic gemination and automatic devoicing separator, separator for nʼg
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Root
+    Exceptions      ;
     Particle        ;
     Interrogative   ;
     ProperNoun      ;
@@ -174,6 +176,17 @@ LEXICON Root
     Demonstrative   ;
     Positional      ;
     Numeral         ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                       !!!!!!
+!!!!!!               Exceptions              !!!!!!
+!!!!!!                                       !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Exceptions
+qimugte-–rpag/@vag[N→N]:qimute@vag         NounPostbase; ! qimulvak
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -286,8 +299,8 @@ elatmun                EncliticOrEnd; ! (to or toward) outside # adverbial parti
 elliinginaq            EncliticOrEnd; ! in vain; without purpose
 elliitau͡gaten          EncliticOrEnd; ! just in case itʼs possible # particle
 ellma                  EncliticOrEnd; ! a little bit
-ellmaar(aq*)           EncliticOrEnd; ! a little bit
-ellmacuar(aq*)         EncliticOrEnd; ! a little bit
+ellmaar(ar*)           EncliticOrEnd; ! a little bit
+ellmacuar(ar*)         EncliticOrEnd; ! a little bit
 envanek                EncliticOrEnd; ! from time immemorial; from long ago; from far in the distance
 ernequ                 EncliticOrEnd; ! later today
 ernerpak               EncliticOrEnd; ! all day; today (additional Y, NS meaning)
@@ -599,7 +612,7 @@ Ircaqurrlug            NounPostbase; ! a certain legendary hero
 Ircaqurrnar            NounPostbase; ! Heart Lake
 Ississaayug            NounPostbase; ! a certain legendary shaman who, among other deeds, foretold the coming of white people
 Ississaayur            NounPostbase; ! a certain legendary shaman who, among other deeds, foretold the coming of white people
-Itrukaʼar              NounPostbase; ! (Itrukar(aq*) indigenous Yupʼik holiday, called the “Inviting-In Feast” in English; small gift, usually food, brought to get into a dance or feast
+Itrukaʼar              NounPostbase; ! (Itrukar(aq*)) indigenous Yupʼik holiday, called the “Inviting-In Feast” in English; small gift, usually food, brought to get into a dance or feast
 Iyussiir               NounPostbase; ! Igushik
 KRistussaar            NounPostbase; ! Christ
 Kanaqnar               NounPostbase; ! Kanaknak
@@ -5233,7 +5246,8 @@ paug                   NounPostbase; ! support
 paugna                 NounPostbase; ! (NSU form) the one back up away from the river
 paugnar*               NounPostbase; ! bear (Ursus sp.)
 paular                 NounPostbase; ! spark from a fire
-paunrar*               NounPostbase; ! (NS, LY, EG form) paunr(aq*) (NUN form) crowberry locally: blackberry (Empetrum nigrum)
+paunrar*               NounPostbase; ! (NS, LY, EG form) crowberry locally: blackberry (Empetrum nigrum)
+paunr(ar*)             NounPostbase; ! (NUN form) crowberry locally: blackberry (Empetrum nigrum)
 pautar                 NounPostbase; ! powder
 pau͡gkumiu              NounPostbase; ! mainlander; inlander
 pau͡gna                 NounPostbase; ! (NSU form) the one back up away from the river
@@ -5484,8 +5498,9 @@ pupsugcetaar           NounPostbase; ! snowshoe
 pupsugyugualeg         NounPostbase; ! kayak end part
 pupsuleg               NounPostbase; ! crab
 pupsuner               NounPostbase; ! measurement from the thumb (outer edge of nail) to the second joint of the index finger curled up with section from tip to first joint along inner edge of thumb
-pupungluar(ar*)        NounPostbase; ! (K, CAN, Y form), pupumeluar(aq*) (BB form) white spot, possibly a mold, inside the gill covers of an aged fish head
-pupungluur(ar*)        NounPostbase; ! (K, CAN, Y form), pupumeluar(aq*) (BB form) white spot, possibly a mold, inside the gill covers of an aged fish head
+pupungluar(ar*)        NounPostbase; ! (K, CAN, Y form) white spot, possibly a mold, inside the gill covers of an aged fish head
+pupungluur(ar*)        NounPostbase; ! (K, CAN, Y form) white spot, possibly a mold, inside the gill covers of an aged fish head
+pupumeluar(ar*)        NounPostbase; ! (BB form) white spot, possibly a mold, inside the gill covers of an aged fish head
 puqigli                NounPostbase; ! one who is very intelligent
 puqigner               NounPostbase; ! wisdom
 puqla                  NounPostbase; ! warmth; heat; hot water; the living spirit or lifeʼs force of an individual person
@@ -6605,6 +6620,8 @@ tangercetaar           NounPostbase; ! movie
 tangercetaarvig        NounPostbase; ! movie theater
 tanʼgerlir             NounPostbase; ! black bear (Ursus americanus)
 tanʼgerpag             NounPostbase; ! crowberry; curlewberry (Empetrum nigrum); locally: blackberry 
+tanʼgurrar*            NounPostbase; ! boy; lad; jack in cards; child of either sex (NUN meaning) 
+tanʼgute               NounPostbase; ! washcloth, scrub brush 
 tangerrsailkutar       NounPostbase; ! camouflage
 tangerrsuuteg          NounPostbase; ! binoculars
 tangevkayag            NounPostbase; ! strip of seal blubber from which oil has been rendered; seal cracklings
@@ -6787,10 +6804,12 @@ tegute                 NounPostbase; ! recovery hook, used to take killed seals 
 teguteguar             NounPostbase; ! pectoral sandpiper (Calidris melanotos);
 teguyarar              NounPostbase; ! handle
 tekallngar             NounPostbase; ! one who messes around, is careless in a silly way
-tekcitag               NounPostbase; ! (CAN form), tekcika(aq*) (NUN form), tekcilunaq savannah sparrow (Passerculus sandwichensis)
-tekciug                NounPostbase; ! (CAN form), tekcika(aq*) (NUN form), tekcilunaq savannah sparrow (Passerculus sandwichensis)
-tekciugar              NounPostbase; ! (CAN form), tekcika(aq*) (NUN form), tekcilunaq savannah sparrow (Passerculus sandwichensis)
-tekciugglugar          NounPostbase; ! (CAN form), tekcika(aq*) (NUN form), tekcilunaq savannah sparrow (Passerculus sandwichensis)
+tekcitag               NounPostbase; ! (CAN form) savannah sparrow (Passerculus sandwichensis)
+tekciug                NounPostbase; ! (CAN form) savannah sparrow (Passerculus sandwichensis)
+tekciugar              NounPostbase; ! (CAN form) savannah sparrow (Passerculus sandwichensis)
+tekciugglugar          NounPostbase; ! (CAN form) savannah sparrow (Passerculus sandwichensis)
+tekcika(ar*)           NounPostbase; ! (NUN form) savannah sparrow (Passerculus sandwichensis)
+tekcilunar             NounPostbase; ! savannah sparrow (Passerculus sandwichensis)
 teker                  NounPostbase; ! index finger; thimble (additional meaning in Y, UK, HBC, NR, LI, EG)
 tekeryug               NounPostbase; ! wingtip feather
 teki                   NounPostbase; ! hard white bone inside the cranium of fish
@@ -6822,7 +6841,8 @@ tengayug               NounPostbase; ! throat hair of caribou
 tengempag              NounPostbase; ! giant bird
 tengesqaar(ar*)        NounPostbase; ! green-winged teal (Anas crecca)
 tengessuute            NounPostbase; ! airplane
-tengleryar             NounPostbase; ! (HBC form), tengleryagar(aq*) (NUN form) gnat found on beaches, gets in eyes
+tengleryar             NounPostbase; ! (HBC form) gnat found on beaches, gets in eyes
+tengleryagar(ar*)      NounPostbase; ! (NUN form) gnat found on beaches, gets in eyes
 tenglug                NounPostbase; ! fist
 tengmiacuar(ar*)       NounPostbase; ! sharp-shinned hawk (Accipiter striatus)
 tengmialler(ar*)       NounPostbase; ! raven (Corvus corax)
@@ -7284,7 +7304,8 @@ uluggsuute             NounPostbase; ! washboard
 ulugtalria             NounPostbase; ! twinkling star or beacon; the Morning Star
 ulukar                 NounPostbase; ! slate stone formerly used to make semilunar knives
 ulunaleg               NounPostbase; ! three-cornered needle
-ulungayarar            NounPostbase; ! (HBC form), ulunguyar(aq*) (NI, CAN, NUN form) uvula
+ulungayarar            NounPostbase; ! (HBC form) uvula
+ulunguyar(ar*)         NounPostbase; ! (NI, CAN, NUN form) uvula
 uluqar                 NounPostbase; ! something or someone that one can or should turn oneʼs head and eyes away from
 uluqur                 NounPostbase; ! lee side
 ulur                   NounPostbase; ! tongue
@@ -13191,7 +13212,8 @@ VerbEte;
 -–qvaar*[N→N]:–qvaar*                         NounPostbase; ! area far in the direction of N
 -–rʼayaʼar[N→N]:–rʼayaʼar                     NounPostbase; ! multitude of Ns; lots of Ns
 -–rpaa(ar*)[N→N]:–rpaa(ar*)                   NounPostbase; ! great N; oldest N (with kinship terms)
--–rpag[N→N]:–rpag                             NounPostbase; ! large N; big N
+-–rpag/@vag[N→N]:–rpag/@vag                   NounPostbase; ! large N; big N
+!-@vag/?vag[N→N]:@vag/?vag                     NounPostbase; ! big N; large N
 -–rpallr(ar*)[N→N]:–rpallr(ar*)               NounPostbase; ! very large N
 -–rpallug[N→N]:–rpallug                       NounPostbase; ! one that is primarily or mostly N
 -–rqu[N→N]:–rqu                               NounPostbase; ! N times
@@ -13215,7 +13237,6 @@ VerbEte;
 -%:(ng)uteller[N→N]:%:(ng)uteller             NounPostbase; ! empty container that held N
 -%:~(ng)uteller[N→N]:%:~(ng)uteller           NounPostbase; ! empty container that held N
 -–vaarrlug[N→N]:–vaarrlug                     NounPostbase; ! big N; huge N
--@vag/?vag[N→N]:@vag/?vag                     NounPostbase; ! big N; large N
 -–vialug[N→N]:–vialug                         NounPostbase; ! shabby N; funny old N; worthless N
 -@~+viutar[N→N]:@~+viutar                     NounPostbase; ! container for N
 -–ya(g)ar*[N→N]:–ya(g)ar*                     NounPostbase; ! baby N; little N
