@@ -19,8 +19,8 @@ define Nasal      [ VoicelessNasal     | VoicedNasal     ];
 
 define Con        [ Stop | Fricative | Nasal | w | y ];
 
-define FullVowel   [ a | i | u ];
-define Vow         [ e | FullVowel ];
+define FVow       [ a | i | u ];
+define Vow        [ e | FVow ];
 
 define AutomaticDevoicing v -> vv,
                           l -> ll,
@@ -35,6 +35,11 @@ define AutomaticDevoicing v -> vv,
                           ng -> ńg || [ Stop | VoicelessFricative ] ">"* _   ;
 !                          r -> rr  || _ ">"* .#.                            .o.
 !                          s -> ss  || .#. ">"* _                             ;
+
+define WeakInitialE [..] -> "ʼ" || "[e]" [Con]+ [Vow]+ ">"+ Con _ ">"* FVow  .o.
+                    [..] -> "ʼ" || "[e]" [Con]+ [Vow]+ ">"* Con _ ">"+ FVow  .o.
+                    "[e]" -> 0  || _ [Con|Vow]+ ">"                          .o. 
+                    "[e]" -> e                                                ;
 
 define DropHattedE e -> 0 || .#. ">"* [Vow ">"* Con ">"* Vow ">"* Con ">"*]* Vow ">"* Con ">"* _ ">"* Con ">"* Vow                   ,  ! #(VCVC)*VCeCV
                              [Con|.#.] ">"* Con ">"* [Vow ">"* Con ">"* Vow ">"* Con ">"*]* Vow ">"* Con ">"* _ ">"* Con ">"* Vow   .o. ! [#/C]C(VCVC)*VCeCV
@@ -66,7 +71,8 @@ define ToOrthography [..] -> "ʼ" || Stop _ ">"* VoicedC , n _ ">"* g          .
                       ss -> s  || .#. ">"*  _                            ;
                     
 
-regex AutomaticDevoicing        .o. 
+regex AutomaticDevoicing        .o.
+      WeakInitialE              .o. 
       DropHattedE               .o.
       TripleConsonant           .o.
       RemoveGeminatedApostrophe .o.
