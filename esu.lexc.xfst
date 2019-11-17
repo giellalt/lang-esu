@@ -95,7 +95,9 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "@~+lu/@na" -> "@" n a                 || t e "*" _                      .o.
                      "@~+lu/@na" -> "@" "~" "+" l u                                           .o.
                      "(ʼa)" -> ʼ a                          || Con a _                        .o.
-                     "(ʼa)" -> 0                                                               ;
+                     "(ʼa)" -> 0                                                              .o.
+                     "–rpag/@vag" (->) "@" v a g            || Vow t e _                      .o.
+                     "–rpag/@vag"  ->  "–" r p a g                                             ;
 
 
 regex Lowercase          .o.
