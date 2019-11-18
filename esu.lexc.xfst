@@ -78,6 +78,10 @@ define AutomaticDevoicing v -> vv,
 !                          r -> rr  || _ .#.                            .o.
 !                          s -> ss  || .#. _                             ;
 
+define AllomorphDecouple "(g/t)" -> "(g)" "(t)" .o. 
+                         "(r/l)" -> "(r)" "(l)" .o. 
+                         "(u/i)" -> "(u)" "(i)"  ; 
+
 
 define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
                      "[Opt_PRS_2Sg]" -> "+" n               || t e  _                         .o.
@@ -101,5 +105,6 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
 
 
 regex Lowercase          .o.
-      AutomaticDevoicing .o. 
-      MultipleForms       ; 
+      AutomaticDevoicing .o.
+      AllomorphDecouple  .o.
+      MultipleForms       ;
