@@ -8,9 +8,9 @@ Alphabet
     ʼ                                           ! Keep apostrophe from lexical entries
     
     ! All operators and allomorph operators map to morpheme segmenter 
-    %(a%):%> %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%> 
+    %(a%):%> %(e%):%> %(g%):%> %(i%):%> %(l%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%> 
     %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> %(ur%):%>
-    %(g%/t%):%> %(r%/l%):%> %(u%/i%):%>
+    ! %(g%/t%):%> %(r%/l%):%> %(u%/i%):%>
     
     %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %@:%> %*:%>
     %= ; 
@@ -24,13 +24,13 @@ Sets
     VoiceNasal = m n ng ;
     VlessNasal = ḿ ń ńg ;
 
-    VoicedCns = VoiceFric VoiceNasal ;
-    VlessCns = VlessFric VlessNasal Stop ;
+    VoicedCon = VoiceFric VoiceNasal ;
+    VlessCon = VlessFric VlessNasal Stop ;
 
     Fric = VoiceFric VlessFric ;
     Nasal = VoiceNasal VlessNasal ;
 
-    Cns = Stop Fric Nasal w y ;
+    Con = Stop Fric Nasal w y ;
 
     FVow = a i u ;
     Vow = FVow e ;
@@ -38,7 +38,7 @@ Sets
 Rules 
 
 "a:0 = --"
-a:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+a:0 <=> _ Con:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
     except
         _ g:0 Bndry:* %(e%):i ; ! age -> ii 
         _ g:0 Bndry:* a:i ; ! aga -> ii 
@@ -59,7 +59,7 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
         _ [ Bndry: - %~: ]+ Vow ; ! "vowel postbases are e deleters"
         _ [ r | g ] Bndry:+ Vow ; ! "vowel postbases are semi-final e deleters"
         _ [ r | g ] Bndry:* %%:0 Bndry:* %(e%):e ; ! "Rule (e):e"
-        _ (Cns:0) Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+        _ (Con:0) Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
     except
         _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
         _ Bndry:* %(ng%):0 Bndry:* i ; ! engi -> ai
@@ -73,8 +73,8 @@ e:i <=> _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
 
 "g:0 = - | :"
 g:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
-        [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
-        [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
+        [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
+        [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
     except
         [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
@@ -90,17 +90,17 @@ g:k <=> _ [ .#. | %= ] ; ! Word Final changes
 gg:rr <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "i:0 = --"
-i:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+i:0 <=> _ Con:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
 
 "k:q = Uvular/VelarAgreement"
 k:q <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "l:0 = --" ! - optional drop preceding vowel also
-l:0 => Vow:0 (Cns:0) Bndry:* %–: %–: _ ; ! Rule for Double Minus - 
+l:0 => Vow:0 (Con:0) Bndry:* %–: %–: _ ; ! Rule for Double Minus - 
 
 "ng:0 = :"
-ng:0 <=> [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
-         [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
+ng:0 <=> [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
+         [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
 
 "q:k = Uvular/VelarAgreement"
 q:k <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
@@ -108,8 +108,8 @@ q:k <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 "r:0 = - | % | :"
 r:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
         FVow _ [Bndry: - %*:]* %%:%> ; ! Rule for Percent
-        [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
-        [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
+        [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
+        [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
     except
         g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
@@ -129,23 +129,28 @@ rr:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
 "rr:gg = Uvular/VelarAgreement"
 rr:gg <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
-"t:c = tV--li/ci | te@y/c" ! - optional drop preceding vowel also
-t:c <=> _ Vow:0 (Cns:0) Bndry:* %–: %–: l:0 i ; ! Rule for Double Minus -
-        _ e:0 Bndry:* %@: Bndry:* y:0 ; ! te@y/c
+"t:c = tV--li/ci | te@y/c | te~s/c" ! - optional drop preceding vowel also
+t:c <=> _ Vow:0 (Con:0) Bndry:* %–: %–: l:0 i ; ! Rule for Double Minus -
+        _ (ʼ) e:0 Bndry:* %@: Bndry:* y:0 ; ! te@y/c
+        _ (ʼ) e:0 Bndry:* s:0 ; ! te~s/c
 
 "t:n = WordFinalVte"
-t:n <=> Vow _ e:0 [ .#. | %= ] ;
+t:n <=> Vow _ e:0 [ .#. | %= ] ; ! Word final Vte
+
+"s:0 = te~s/c | (t)s/c"
+s:0 <=> t:c (ʼ) e:0 Bndry:* _ ; ! te~s/c
+        %(t%):c Bndry:* _ ; ! (t)s/c
 
 "u:0 = --"
-u:0 <=> _ Cns:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+u:0 <=> _ Con:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
 
 "y:0 = te@y"
-y:0 <=> t:c e:0 Bndry:* %@: Bndry:* _ ; ! te@y/c
+y:0 <=> t:c (ʼ) e:0 Bndry:* %@: Bndry:* _ ; ! te@y/c
 
 "y:s = Stop@y" 
-y:s <=> VlessCns (e:0) Bndry:* %@: Bndry:* _; ! Stop@y/s
+y:s <=> VlessCon (ʼ) (e:0) Bndry:* %@: Bndry:* _; ! Stop@y/s
     except
-        t:c e:0 Bndry:* %@: Bndry:* _ ; ! te@y/c
+        t:c (ʼ) e:0 Bndry:* %@: Bndry:* _ ; ! te@y/c
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!     ALLOMORPHS    !!!!!
@@ -159,7 +164,7 @@ y:s <=> VlessCns (e:0) Bndry:* %@: Bndry:* _; ! Stop@y/s
 %(e%):i <=> a:i g:0 Bndry:* %%:0 Bndry:* _ ; ! age -> ii 
 
 "(e):FV = %/:" ! - bases kept with percent and dropped by colon
-%(e%):Vy <=> [:Cns|.#.] Vx [ g:0 | r:0 ] Bndry:* %%:0 Bndry:* %:: Bndry:* _ Bndry:* [:Cns|.#.] ;
+%(e%):Vy <=> [:Con|.#.] Vx [ g:0 | r:0 ] Bndry:* %%:0 Bndry:* %:: Bndry:* _ Bndry:* [:Con|.#.] ;
     where Vx in ( a i u )
           Vy in ( a i u )
     matched ;
@@ -167,29 +172,33 @@ y:s <=> VlessCns (e:0) Bndry:* %@: Bndry:* _; ! Stop@y/s
 ! kaig+'(g/t)uq
 ! kaig>0 t   uq
 "(t):t = CFinalBase" ! - consonant ending base
-Tx:t <=> Cns Bndry:* _ ;
+%(t%):t <=> Con Bndry:* _ ;
     except
-        :Vow [:%>|:0]* :Vow [:%>|:0]* _ ; ! "Rule (g):g"
-    where Tx in ( %(g%/t%) %(t%) ) ;
+        Con Bndry:* _ Bndry:* s:0 ; ! (t)s/c
+!    except
+!        :Vow [:%>|:0]* :Vow [:%>|:0]* _ ; ! "Rule (g):g"
+!    where Tx in ( %(g%/t%) %(t%) ) ;
+
+"(t):c = (t)s/c"
+%(t%):c <=> Con Bndry:* _ Bndry:* s:0 ; ! (t)s/c
 
 ! qia+'(g/t)uq
 ! qia>0 g   uq
 "(g):g = VVFinalBase" ! - double vowel ending base
-Gx:g <=> :Vow [:%>|:0]* :Vow [:%>|:0]* _ ;
-    where
-        Gx in ( %(g%/t%) %(g%) ) ;
+%(g%):g <=> :Vow [:%>|:0]* :Vow [:%>|:0]* _ ;
+!    where Gx in ( %(g%/t%) %(g%) ) ;
 
 ! cali+'(g/t)u:nga
 ! cali>0 t   u:
 "(ng):ng = VFinalBase" ! - bases ending in a vowel
 %(ng%):ng <=> Vow: Bndry:* _ ;
     except
-        [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
-        [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
+        [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
+        [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
 
 "(ng):0 = :" ! - bases that get added then dropped after single vowel
-%(ng%):0 <=> [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
-             [:Cns|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Cns|.#.] ; ! Rule for Colon
+%(ng%):0 <=> [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
+             [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!     OPERATOR      !!!!!
@@ -204,7 +213,7 @@ Gx:g <=> :Vow [:%>|:0]* :Vow [:%>|:0]* _ ;
          r: %*: Bndry:* _ ;
 
 "':ʼ = ApostropheRule"
-%':%ʼ <=> .#. (Cns) Vow Cns e:0 [ Bndry: - %~: ]* _ ; ! "Rule for Apostrophe - short bases"
+%':%ʼ <=> .#. (Con) Vow Con e:0 [ Bndry: - %~: ]* _ ; ! "Rule for Apostrophe - short bases"
 
 ! aqume+'(g/t)uq
 ! aqum0>0 0   uq
