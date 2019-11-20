@@ -69,7 +69,7 @@ pai[N][Abs][3SgPoss][SgPosd]	painga
 qai[N][Abs][3SgPoss][SgPosd]	qainga
 qule[N][Abs][3SgPoss][SgPosd]	qulii
 qule[N][Loc][3SgPoss][SgPosd]	quliini
-qule[Loc][3SgPoss][SgPosd]-ete[V][Intr][Ind][S_3Sg]	quliinetuq
+qule[Loc][3SgPoss][SgPosd]-ete[N→V][V][Intr][Ind][S_3Sg]	quliinetuq
 aci[N][Ter][3SgPoss][SgPosd]	acianun
 pai[N][Loc][3SgPoss][SgPosd]	paingani
 ciu[N][Loc][3SgPoss][SgPosd]	ciungani
