@@ -54,6 +54,8 @@ define TripleConsonant [..]  ->  e || Con _ ">"* ss ">"* Con   .o.
                        [..] (->) e || Con ">"* Con _ ">"* Con .o.
                        [..]  ->  e || Con _ ">"* Con ">"* Con  ;
 
+define TetToCet t (->) c || _ e ">"* t ;
+
 define RemoveGeminatedApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* Vow ">"* Con ">"* _ ">"* Vow ">"* Vow ;
 
 define ToOrthography [..] -> "ʼ" || Stop _ ">"* VoicedC , n _ ">"* g          .o.
@@ -76,5 +78,6 @@ regex AutomaticDevoicing        .o.
       WeakInitialE              .o. 
       DropHattedE               .o.
       TripleConsonant           .o.
+      TetToCet                  .o.
       RemoveGeminatedApostrophe .o.
       ToOrthography              ;
