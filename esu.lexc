@@ -13996,35 +13996,35 @@ LEXICON NounInflection
 
 LEXICON VerbEte
 
-[Quant_Qual][4Sg]-ete:%%~mete  VerbPostbase;
+[Quant_Qual][4Sg]-ete[N→V]:%%~mete  VerbPostbase;
 
 ! ------------------------------------------------------|
 !              Localis Case + -ete- Contractions        |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 !                  singular possessed                   |                     plural possessed                  |                         dual possessed                       |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[Loc][Unpd][Sg]-ete:%%~mete                 VerbPostbase; [Loc][Unpd][Pl]-ete:%%~nete               VerbPostbase; [Loc][Unpd][Du]-ete:%%%:(e)gnete                 VerbPostbase; ! unpossessed   |
+[Loc][Unpd][Sg]-ete[N→V]:%%~mete                 VerbPostbase; [Loc][Unpd][Pl]-ete[N→V]:%%~nete               VerbPostbase; [Loc][Unpd][Du]-ete[N→V]:%%%:(e)gnete                 VerbPostbase; ! unpossessed   |
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[Loc][3SgPoss][SgPosd]-ete:%:(ng)anete      VerbPostbase; [Loc][3SgPoss][PlPosd]-ete:%:(ng)inete    VerbPostbase; [Loc][3SgPoss][DuPosd]-ete:%%%:(e)gkenete        VerbPostbase; ! 3Sg possessor |
-[Loc][3PlPoss][SgPosd]-ete:%:(ng)atnete     VerbPostbase; [Loc][3PlPoss][PlPosd]-ete:%:(ng)itnete   VerbPostbase; [Loc][3PlPoss][DuPosd]-ete:%%%:(e)gketnete       VerbPostbase; ! 3Pl possessor |
-[Loc][3DuPoss][SgPosd]-ete:%:(ng)agnete     VerbPostbase; [Loc][3DuPoss][PlPosd]-ete:–kegnete       VerbPostbase; [Loc][3DuPoss][DuPosd]-ete:%%%:(e)gkegnete       VerbPostbase; ! 3Du possessor |
+[Loc][3SgPoss][SgPosd]-ete[N→V]:%:(ng)anete      VerbPostbase; [Loc][3SgPoss][PlPosd]-ete[N→V]:%:(ng)inete    VerbPostbase; [Loc][3SgPoss][DuPosd]-ete[N→V]:%%%:(e)gkenete        VerbPostbase; ! 3Sg possessor |
+[Loc][3PlPoss][SgPosd]-ete[N→V]:%:(ng)atnete     VerbPostbase; [Loc][3PlPoss][PlPosd]-ete[N→V]:%:(ng)itnete   VerbPostbase; [Loc][3PlPoss][DuPosd]-ete[N→V]:%%%:(e)gketnete       VerbPostbase; ! 3Pl possessor |
+[Loc][3DuPoss][SgPosd]-ete[N→V]:%:(ng)agnete     VerbPostbase; [Loc][3DuPoss][PlPosd]-ete[N→V]:–kegnete       VerbPostbase; [Loc][3DuPoss][DuPosd]-ete[N→V]:%%%:(e)gkegnete       VerbPostbase; ! 3Du possessor |
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[Loc][1SgPoss][SgPosd]-ete:–mnete           VerbPostbase; [Loc][1SgPoss][PlPosd]-ete:–mnete         VerbPostbase; [Loc][1SgPoss][DuPosd]-ete:%%%:(e)gemnete        VerbPostbase; ! 1Sg possessor |
-[Loc][1PlPoss][SgPosd]-ete:–mteńete         VerbPostbase; [Loc][1PlPoss][PlPosd]-ete:–mteńete       VerbPostbase; [Loc][1PlPoss][DuPosd]-ete:%%%:(e)gemteńete      VerbPostbase; ! 1Pl possessor |
-[Loc][1DuPoss][SgPosd]-ete:–megnete         VerbPostbase; [Loc][1DuPoss][PlPosd]-ete:–megnete       VerbPostbase; [Loc][1DuPoss][DuPosd]-ete:%%%:(e)gmegnete       VerbPostbase; ! 1Du possessor |
+[Loc][1SgPoss][SgPosd]-ete[N→V]:–mnete           VerbPostbase; [Loc][1SgPoss][PlPosd]-ete[N→V]:–mnete         VerbPostbase; [Loc][1SgPoss][DuPosd]-ete[N→V]:%%%:(e)gemnete        VerbPostbase; ! 1Sg possessor |
+[Loc][1PlPoss][SgPosd]-ete[N→V]:–mteńete         VerbPostbase; [Loc][1PlPoss][PlPosd]-ete[N→V]:–mteńete       VerbPostbase; [Loc][1PlPoss][DuPosd]-ete[N→V]:%%%:(e)gemteńete      VerbPostbase; ! 1Pl possessor |
+[Loc][1DuPoss][SgPosd]-ete[N→V]:–megnete         VerbPostbase; [Loc][1DuPoss][PlPosd]-ete[N→V]:–megnete       VerbPostbase; [Loc][1DuPoss][DuPosd]-ete[N→V]:%%%:(e)gmegnete       VerbPostbase; ! 1Du possessor |
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[Loc][2SgPoss][SgPosd]-ete:–vnete           VerbPostbase; [Loc][2SgPoss][PlPosd]-ete:–vnete         VerbPostbase; [Loc][2SgPoss][DuPosd]-ete:%%%:(e)gpenete        VerbPostbase; ! 2Sg possessor |
-[Loc][2SgPoss][SgPosd]-ete:+penete          VerbPostbase; [Loc][2SgPoss][PlPosd]-ete:+penete        VerbPostbase;
-[Loc][2PlPoss][SgPosd]-ete:–vceńete         VerbPostbase; [Loc][2PlPoss][PlPosd]-ete:–vceńete       VerbPostbase; [Loc][2PlPoss][DuPosd]-ete:%%%:(e)gpeceńete      VerbPostbase; ! 2Pl possessor |
-[Loc][2PlPoss][SgPosd]-ete:+peceńete        VerbPostbase; [Loc][2PlPoss][PlPosd]-ete:+peceńete      VerbPostbase;
-[Loc][2PlPoss][SgPosd]-ete:–vcinete         VerbPostbase; [Loc][2PlPoss][PlPosd]-ete:–vcinete       VerbPostbase; [Loc][2PlPoss][DuPosd]-ete:%%%:(e)gpecinete      VerbPostbase; ! 2Pl possessor |
-[Loc][2PlPoss][SgPosd]-ete:+peceńete        VerbPostbase; [Loc][2PlPoss][PlPosd]-ete:+peceńete      VerbPostbase;
-[Loc][2DuPoss][SgPosd]-ete:–vtegnete        VerbPostbase; [Loc][2DuPoss][PlPosd]-ete:–vtegnete      VerbPostbase; [Loc][2DuPoss][DuPosd]-ete:%%%:(e)gpetegnete     VerbPostbase; ! 2Du possessor |
-[Loc][2DuPoss][SgPosd]-ete:+petegnete       VerbPostbase; [Loc][2DuPoss][PlPosd]-ete:+petegnete     VerbPostbase;
+[Loc][2SgPoss][SgPosd]-ete[N→V]:–vnete           VerbPostbase; [Loc][2SgPoss][PlPosd]-ete[N→V]:–vnete         VerbPostbase; [Loc][2SgPoss][DuPosd]-ete[N→V]:%%%:(e)gpenete        VerbPostbase; ! 2Sg possessor |
+[Loc][2SgPoss][SgPosd]-ete[N→V]:+penete          VerbPostbase; [Loc][2SgPoss][PlPosd]-ete[N→V]:+penete        VerbPostbase;
+[Loc][2PlPoss][SgPosd]-ete[N→V]:–vceńete         VerbPostbase; [Loc][2PlPoss][PlPosd]-ete[N→V]:–vceńete       VerbPostbase; [Loc][2PlPoss][DuPosd]-ete[N→V]:%%%:(e)gpeceńete      VerbPostbase; ! 2Pl possessor |
+[Loc][2PlPoss][SgPosd]-ete[N→V]:+peceńete        VerbPostbase; [Loc][2PlPoss][PlPosd]-ete[N→V]:+peceńete      VerbPostbase;
+[Loc][2PlPoss][SgPosd]-ete[N→V]:–vcinete         VerbPostbase; [Loc][2PlPoss][PlPosd]-ete[N→V]:–vcinete       VerbPostbase; [Loc][2PlPoss][DuPosd]-ete[N→V]:%%%:(e)gpecinete      VerbPostbase; ! 2Pl possessor |
+[Loc][2PlPoss][SgPosd]-ete[N→V]:+peceńete        VerbPostbase; [Loc][2PlPoss][PlPosd]-ete[N→V]:+peceńete      VerbPostbase;
+[Loc][2DuPoss][SgPosd]-ete[N→V]:–vtegnete        VerbPostbase; [Loc][2DuPoss][PlPosd]-ete[N→V]:–vtegnete      VerbPostbase; [Loc][2DuPoss][DuPosd]-ete[N→V]:%%%:(e)gpetegnete     VerbPostbase; ! 2Du possessor |
+[Loc][2DuPoss][SgPosd]-ete[N→V]:+petegnete       VerbPostbase; [Loc][2DuPoss][PlPosd]-ete[N→V]:+petegnete     VerbPostbase;
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[Loc][4SgPoss][SgPosd]-ete:–minete          VerbPostbase; [Loc][4SgPoss][PlPosd]-ete:–minete        VerbPostbase; [Loc][4SgPoss][DuPosd]-ete:%%%:(e)gminete        VerbPostbase; ! 4Sg possessor |
-[Loc][4PlPoss][SgPosd]-ete:–meggnete        VerbPostbase; [Loc][4PlPoss][PlPosd]-ete:–meggnete      VerbPostbase; [Loc][4PlPoss][DuPosd]-ete:%%%:(e)gmeggnete      VerbPostbase; ! 4Pl possessor |
-[Loc][4DuPoss][SgPosd]-ete:–megnete         VerbPostbase; [Loc][4DuPoss][PlPosd]-ete:–megnete       VerbPostbase; [Loc][4DuPoss][DuPosd]-ete:%%%:(e)gmegnete       VerbPostbase; ! 4Du possessor |
+[Loc][4SgPoss][SgPosd]-ete[N→V]:–minete          VerbPostbase; [Loc][4SgPoss][PlPosd]-ete[N→V]:–minete        VerbPostbase; [Loc][4SgPoss][DuPosd]-ete[N→V]:%%%:(e)gminete        VerbPostbase; ! 4Sg possessor |
+[Loc][4PlPoss][SgPosd]-ete[N→V]:–meggnete        VerbPostbase; [Loc][4PlPoss][PlPosd]-ete[N→V]:–meggnete      VerbPostbase; [Loc][4PlPoss][DuPosd]-ete[N→V]:%%%:(e)gmeggnete      VerbPostbase; ! 4Pl possessor |
+[Loc][4DuPoss][SgPosd]-ete[N→V]:–megnete         VerbPostbase; [Loc][4DuPoss][PlPosd]-ete[N→V]:–megnete       VerbPostbase; [Loc][4DuPoss][DuPosd]-ete[N→V]:%%%:(e)gmegnete       VerbPostbase; ! 4Du possessor |
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
 
 
@@ -14853,7 +14853,7 @@ LEXICON DemAdv
 [DemAdv][Via]:.ggun                     EncliticOrEnd;
 [DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
 [DemAdv][Loc]-ete[N→V]:%%~nete          VerbPostbase;
-[DemAdv][Loc]-ete[N→V]:(ʼa)+nte         VerbPostbase;
+![DemAdv][Loc]-ete[N→V]:(ʼa)+nte         VerbPostbase;
 [DemAdv][Ter]+virte[N→V]:.virte         VerbPostbase;
 [DemAdv][Via]+gguir[N→V]:.gguir         VerbPostbase;
 
