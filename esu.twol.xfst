@@ -49,7 +49,8 @@ define DropHattedE e -> 0 || .#. ">"* [Vow ">"* Con ">"* Vow ">"* Con ">"*]* Vow
                              m _ ">"* m , n _ ">"* n , ng _ ">"* ng , ḿ _ ">"* ḿ , ń _ ">"* ń , ńg _ ">"* ńg , 
                              w _ ">"* w , y _ ">"* y , c _ ">"* t , t _ ">"* c , c _ ">"* n , n _ ">"* c                               ;
 
-define TripleConsonant [..]  ->  e || Con ">"* t _ ">"* Con   .o.
+define TripleConsonant [..]  ->  e || Con _ ">"* ss ">"* Con   .o.
+                       [..]  ->  e || Con ">"* t _ ">"* Con   .o.
                        [..] (->) e || Con ">"* Con _ ">"* Con .o.
                        [..]  ->  e || Con _ ">"* Con ">"* Con  ;
 
