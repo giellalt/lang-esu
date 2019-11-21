@@ -66,8 +66,10 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
         _ Bndry:* %(ng%):0 Bndry:* i ; ! engi -> ai
 
 "e:a = e^a | engi/ai"
-e:a <=> .#. ~[ :* Vow t:n] _ [ .#. | %= ] ; ! "Word final e:a"
+e:a <=> _ [ .#. | %= ] ; ! "Word final e:a"
         _ Bndry:* %(ng%):0 Bndry:* i ; ! engi -> ai
+    except
+        Vow t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
 
 "e:i = enga/ii"
 e:i <=> _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
@@ -135,7 +137,8 @@ t:0 <=> _ e:0 Bndry:* %@: Bndry:* c ; ! te@c
         Con _ e:0 Bndry:* %@: Bndry:* [ ng | v | m ] ; ! Cte@ng|v|m/0
 
 "t:c = tV--li/ci | te@y/c | te~s/c" ! - optional drop preceding vowel also
-t:c <=> _ Vow:0 (Con:0) Bndry:* %–: %–: l:0 i ; ! Rule for Double Minus -
+t:c <=> _ Vow:0 (Con:0) Bndry:* %–: %–: l:0 i ; ! te--li/ci
+        _ (ʼ) e:0 Bndry:* i ; ! te~i/ci
         _ (ʼ) e:0 Bndry:* %@: Bndry:* y:0 ; ! te@y/c
         _ (ʼ) e:0 Bndry:* s:0 ; ! te~s/c
 
@@ -178,9 +181,12 @@ y:s <=> VlessCon (ʼ) (e:0) Bndry:* %@: Bndry:* _; ! Stop@y/s
           Vy in ( a i u )
     matched ;
 
+"(s):s = VFinalBase"
+%(s%):s <=> Vow: Bndry:* _ ; ! bases ending in a vowel
+
 ! kaig+'(g/t)uq
 ! kaig>0 t   uq
-"(t):t = CFinalBase" ! - consonant ending base
+"(t):t = CFinalBase"
 %(t%):t <=> Con Bndry:* _ ;
     except
         Con Bndry:* _ Bndry:* s:0 ; ! (t)s/c
@@ -193,13 +199,13 @@ y:s <=> VlessCon (ʼ) (e:0) Bndry:* %@: Bndry:* _; ! Stop@y/s
 
 ! qia+'(g/t)uq
 ! qia>0 g   uq
-"(g):g = VVFinalBase" ! - double vowel ending base
+"(g):g = VVFinalBase"
 %(g%):g <=> :Vow [:%>|:0]* :Vow [:%>|:0]* _ ;
 !    where Gx in ( %(g%/t%) %(g%) ) ;
 
 ! cali+'(g/t)u:nga
 ! cali>0 t   u:
-"(ng):ng = VFinalBase" ! - bases ending in a vowel
+"(ng):ng = VFinalBase"
 %(ng%):ng <=> Vow: Bndry:* _ ;
     except
         [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [Bndry:|:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
