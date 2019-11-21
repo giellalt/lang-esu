@@ -117,6 +117,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 @~+lu/@na                   ! subordinative mood marker
 (ʼa)                        ! used for [DemAdv][Loc] %~nete 
 –rpag/@vag                  ! big N; large N
++ciqe/@ciiqe                ! to V in the future; will V
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -13257,7 +13258,7 @@ VerbEte;
 -–cugninarqe[N→V]:–cugninarqe                 VerbPostbase; ! (K form) to smell or taste like N
 -+cugnite[N→V]:+cugnite                       VerbPostbase; ! to smell or taste like N
 -–culngu[N→V]:–culngu                         VerbPostbase; ! to be indisposed with respect to oneʼs N; to have trouble V-ing
--+cur–/+ssur[N→V]:+cur–/+ssur                 VerbPostbase; ! to hunt N; to seek N; to check N (game-catching implement)
+-+cur/+ssur[N→V]:+cur/+ssur                   VerbPostbase; ! to hunt N; to seek N; to check N (game-catching implement)
 -%:(ng)icag[N→V]:%:(ng)icag                   VerbPostbase; ! to be in need of N; to lack N
 -%:(ng)illiqe[N→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
 -–ir[N→V]:–ir                                 VerbPostbase; ! N (natural phenomenon) is occurring; to set N (game capturing device); to provide or be provided with N (but not in the sense of giving N to someone)
@@ -13372,7 +13373,7 @@ VerbInflection;
 -@+paa/~vaa[how.V][V→XCLM]:@+paa/~vaa         EncliticOrEnd; ! oh, how V!; my, how V!
 -@+pag/~vag[how.V][V→XCLM]:@+pag/~vag         EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
 
--+a–/+aar[V→V]:+a–/+aar                       VerbPostbase; ! to V repeatedly
+-+a/+aar[V→V]:+a/+aar                         VerbPostbase; ! to V repeatedly
 -+'(g)aqe[V→V]:+'(g)aqe                       SubordinativeVerbInflection; ! to usually V; to repeatedly V; to habitually V
 -+'(g)ar(ar)[V→V]:+'(g)ar(ar)                 VerbPostbase; ! to just barely V; to hardly V; to gradually V; leisurely V; With adjectival verbs ending in te-, this postbase means to be a little V
 -@+(g)ar(ar)te[V→V]:@+(g)ar(ar)te             VerbPostbase; ! to suddenly or immediately V; to V with short duration of action
@@ -13391,9 +13392,9 @@ VerbInflection;
 -@%:(u)ciirute[V→V]:@%:(u)ciirute             VerbPostbase; ! to become unknowing concerning whether or how one is V-ing
 -@%:(u)ciite[V→V]:@%:(u)ciite                 VerbPostbase; ! to not know whether one is V-ing, to not know how one is with respect to V-ing
 -–cilli[V→V]:–cilli                           VerbPostbase; ! to appear to have been V-ing; to appear to have been V-ed
--+ciqe–/@ciiqe[V→V]:+ciqe–/@ciiqe             VerbPostbase; ! to V in the future; will V
--+ciqiar–/@ciiqiar[V→V]:+ciqiar–/@ciiqiar     VerbPostbase; ! to be about to V; to be going to V
--+ciqli–/@ciiqli[V→V]:+ciqli–/@ciiqli         VerbPostbase; ! to probably be going to V
+-+ciqe/@ciiqe[V→V]:+ciqe/@ciiqe               VerbPostbase; ! to V in the future; will V
+-+ciqiar/@ciiqiar[V→V]:+ciqiar/@ciiqiar       VerbPostbase; ! to be about to V; to be going to V
+-+ciqli/@ciiqli[V→V]:+ciqli/@ciiqli           VerbPostbase; ! to probably be going to V
 -@~+cir[V→V]:@~+cir                           VerbPostbase; ! to let (it) V; to wait for (it) to V; to make (it) V
 -+(s)cir[V→V]:+(s)cir                         VerbPostbase; ! to get V-ed (usually to oneʼs detriment)
 -+(s)ciryar[V→V]:+(s)ciryar                   VerbPostbase; ! to be easily V-ed
@@ -13544,15 +13545,15 @@ VerbInflection;
 -–nritar(ar)[V→V]:–nritar(ar)                 VerbPostbase; ! to almost V; to not quite V; to barely keep from V-ing
 -–nrite[V→V]:–nrite                           VerbPostbase; ! to not V
 -–nru[V→V]:–nru                               VerbPostbase; ! to be more V
--@+paalug–/~vaalug[V→V]:@+paalug–/~vaalug     VerbPostbase; ! to V for the first time, or for the first time in a long time
--@+pailug–/~vailug[V→V]:@+pailug–/~vailug     VerbPostbase; ! to V for the first time, or for the first time in a long time
+-@+paalug/~vaalug[V→V]:@+paalug/~vaalug       VerbPostbase; ! to V for the first time, or for the first time in a long time
+-@+pailug/~vailug[V→V]:@+pailug/~vailug       VerbPostbase; ! to V for the first time, or for the first time in a long time
 -–pacug[V→V]:–pacug                           VerbPostbase; ! poor dear one Vs
--@+pag–/~vag[V→V]:@+pag–/~vag                 VerbPostbase; ! to V so well
--@+pakar–/~vakar[V→V]:@+pakar–/~vakar         VerbPostbase; ! to V so long; to V so much
+-@+pag/~vag[V→V]:@+pag/~vag                   VerbPostbase; ! to V so well
+-@+pakar/~vakar[V→V]:@+pakar/~vakar           VerbPostbase; ! to V so long; to V so much
 -–qpakar[V→V]:–qpakar                         VerbPostbase; ! to V so long; to V so much
--@+pallag–/~vallag[V→V]:@+pallag–/~vallag     VerbPostbase; ! to V intensely; to V excessively
--@+pallug–/~vallug[V→V]:@+pallug–/~vallug     VerbPostbase; ! to V most; to V mostly
--@+pallur–/~vallur[V→V]:@+pallur–/~vallur     VerbPostbase; ! to V most; to V mostly
+-@+pallag/~vallag[V→V]:@+pallag/~vallag       VerbPostbase; ! to V intensely; to V excessively
+-@+pallug/~vallug[V→V]:@+pallug/~vallug       VerbPostbase; ! to V most; to V mostly
+-@+pallur/~vallur[V→V]:@+pallur/~vallur       VerbPostbase; ! to V most; to V mostly
 -+pigainar[V→V]:+pigainar                     VerbPostbase; ! to actually V (after hesitation; or surprising as it may seem)
 -–pigainar[V→V]:–pigainar                     VerbPostbase; ! to actually V (after hesitation; or surprising as it may seem)
 -–pig[V→V]:–pig                               VerbPostbase; ! to be really V; to be very V
@@ -14807,6 +14808,7 @@ LEXICON DemAbsSg
 
 LEXICON DemAbsSgIrr
 t[DemPro][Abs][Unpd][Sg]:+nʼa           EncliticOrEnd;
+t[DemPro]-–kucir[N→N]:–kucir            NounPostbase;  ! one of the same kind as N
 t[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
 t[DemPro]-@+suuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! singular vocative (calling) form
 
