@@ -8,7 +8,7 @@ tangerr[V][Trns][Ind][A_3Sg][P_2Pl]	tangrraaci
 tangerr[V][Trns][Ind][A_3Pl][P_2Pl]	tangrraiceci
 kegge-@~+yug[V→V][V][Trns][Ind][A_3Sg][P_1Sg]	keggsugaanga
 qilug[V][Trns][Ind][A_3Pl][P_1Pl]	qilugaitkut
-cikir-+ciqe–/@ciiqe[V→V][V][Trns][Ind][A_3Sg][P_2Sg]	cikirciqaaten
+cikir-+ciqe/@ciiqe[V→V][V][Trns][Ind][A_3Sg][P_2Sg]	cikirciqaaten
 igar-@~+ngaite[V→V][V][Trns][Ind][A_3Pl][P_2Pl]	igarngaitaiceci
 qerrute[V][Trns][Ind][A_3Sg][P_1Sg]	qerrutaanga
 ciku[V][Trns][Ind][A_3Sg][P_3Sg]	cikua
@@ -48,9 +48,9 @@ egate[N][Via][Unpd][Sg]	egatekun
 nuteg[N][Via][Unpd][Sg]	nutegkun
 egaler[N][Via][Unpd][Sg]	egalerkun
 ayag-–llru[V→V]-@~+yugnarqe[V→V][V][Intr][Ind][S_3Sg]	ayallruyugnarquq
-atur-+ciqe–/@ciiqe[V→V]-@~+yugnarqe[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	aturciqsugnarqaa
+atur-+ciqe/@ciiqe[V→V]-@~+yugnarqe[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	aturciqsugnarqaa
 tangerr-–ksaite[V→V]-@~+yugnarqe[V→V][V][Trns][Ind][A_3Pl][P_2Pl]	tangeqsaicugnarqaiceci
-angyar-––li[N→V]-–ngnaqe[V→V]-+ciqe–/@ciiqe[V→V][V][Intr][Ind][S_1Sg]	angyalingnaqciqua
+angyar-––li[N→V]-–ngnaqe[V→V]-+ciqe/@ciiqe[V→V][V][Intr][Ind][S_1Sg]	angyalingnaqciqua
 ikayur-–ngnaqe[V→V][V][Trns][Ind][A_3Sg][P_2Sg]	ikayungnaqaaten
 iter-@~+yaaqe[V→V][V][Intr][Ind][S_3Sg]	iteryaaquq
 qanrute-@~+yaaqe[V→V][V][Trns][Ind][A_1Sg][P_3Sg]	qanrucaaqaqa
