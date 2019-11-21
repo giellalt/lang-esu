@@ -53,13 +53,14 @@ a:i <=> _ g:0 Bndry:* %(e%):i ; ! age -> ii
         a:i Bndry:* [ g:0 | %(ng%):0 ] Bndry:* _ ; ! anga, aga -> ii
         e:i Bndry:* %(ng%):0 Bndry:* _ ; ! enga -> ii
 
-"e:0 = ~ | word# | VowPostbase | (e):e"
+"e:0 = ~ | word# | eVowPostbase | semifinaleVowPostbase | (e):e | -- | te@"
 e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
         Vow t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
         _ [ Bndry: - %~: ]+ Vow ; ! "vowel postbases are e deleters"
         _ [ r | g ] Bndry:+ Vow ; ! "vowel postbases are semi-final e deleters"
         [[Vow Con]|[Con VoiceCon]] _ [ r | g ] Bndry:* %%:0 Bndry:* %(e%):e ; ! "Rule (e):e"
         _ (Con:0) Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+        t: _ Bndry:* %@: ; ! te@
     except
         _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
         _ Bndry:* %(ng%):0 Bndry:* i ; ! engi -> ai
@@ -129,6 +130,10 @@ rr:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
 "rr:gg = Uvular/VelarAgreement"
 rr:gg <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
+"t:0 = te@c"
+t:0 <=> _ e:0 Bndry:* %@: Bndry:* c ; ! te@c
+        Con _ e:0 Bndry:* %@: Bndry:* [ ng | v | m ] ; ! Cte@ng|v|m/0
+
 "t:c = tV--li/ci | te@y/c | te~s/c" ! - optional drop preceding vowel also
 t:c <=> _ Vow:0 (Con:0) Bndry:* %–: %–: l:0 i ; ! Rule for Double Minus -
         _ (ʼ) e:0 Bndry:* %@: Bndry:* y:0 ; ! te@y/c
@@ -139,6 +144,7 @@ t:n <=> Vow _ e:0 [ .#. | %= ] ; ! Word final Vte
 
 "t:s = te@k/s"
 t:s <=> _ (ʼ) e:0 Bndry:* %@: Bndry:* k ; ! te@k/s
+        Vow _ (ʼ) e:0 Bndry:* %@: Bndry:* [ ng | v | m ] ; ! Vte@ng|v|m/s
 
 "s:0 = te~s/c | (t)s/c"
 s:0 <=> t:c (ʼ) e:0 Bndry:* _ ; ! te~s/c
