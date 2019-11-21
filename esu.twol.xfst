@@ -56,12 +56,15 @@ define TripleConsonant [..]  ->  e || Con _ ">"* ss ">"* Con  .o.
                        [..] (->) e || Con ">"* Con _ ">"* Con .o.
                        [..]  ->  e || Con _ ">"* Con ">"* Con  ;
 
-define TetToCet t (->) c || _ e ">"* t ;
+define TripleVowel FVow -> 0 || FVow ">"* _ ">"* FVow ;
+
+define TetToCet t (->) c || _ e ">"* t ,
+                            _ e ">"* ss ">"* c ; ! kitugtesciigataqa -> kitugcesciigataqa
 
 define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* Vow ">"* Con ">"* _ ">"* Vow ">"* Vow ,
                                     VoiceCon ">"*  _ ">"* VoiceCon                           ;
 
-define ToOrthography [..] -> "ʼ" || Stop _ ">"* VoiceCon , n _ ">"* g   .o.
+define ToOrthography [..] -> "ʼ" || VlessCon _ ">"* VoiceCon , VoiceFric _ ">"* VlessCon , n _ ">"* g   .o.
                       vv -> v,
                       ll -> l,
                       ss -> s,
@@ -81,6 +84,7 @@ regex AutomaticDevoicing   .o.
       WeakInitialE         .o. 
       DropHattedE          .o.
       TripleConsonant      .o.
+      TripleVowel          .o.
       TetToCet             .o.
       RemoveApostrophe     .o.
       ToOrthography         ;
