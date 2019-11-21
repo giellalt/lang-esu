@@ -103,7 +103,9 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "–rpag/@vag" (->) "@" v a g            || Vow t e _                      .o.
                      "–rpag/@vag"  ->  "–" r p a g                                            .o.
                      "+ciqe/@ciiqe" -> "@" c i i q e        || t e ("*") _                    .o. 
-                     "+ciqe/@ciiqe" -> "+" c i q e          ;
+                     "+ciqe/@ciiqe" -> "+" c i q e                                            .o. 
+                     "+cuute/+ssuute" -> "." ss u u t e     || Vow _                          .o.
+                     "+cuute/+ssuute" -> "+" c u u t e      ;
 
 
 regex Lowercase          .o.
