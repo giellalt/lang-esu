@@ -15,22 +15,22 @@
 ! change capital to lowercase
 ! give to twolc
 
-define Stop               [ p | t | c | k | q ];
-define VoicedFricative    [ v | l | s | g | r | u͡g | u͡r ];
-define VoicelessFricative [ vv | ll | ss | gg | rr | u͡gg | u͡rr ];
-define VoicedNasal        [ m | n | ng ];
-define VoicelessNasal     [ ḿ | ń | ńg ];
+define Stop       [ p | t | c | k | q ];
+define VoiceFric  [ v | l | s | g | r | u͡g | u͡r ];
+define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr ];
+define VoiceNasal [ m | n | ng ];
+define VlessNasal [ ḿ | ń | ńg ];
 
-define VoicedC    [ VoicedFricative | VoicedNasal ];
-define VoicelessC [ VoicelessFricative | VoicelessNasal | Stop ];
+define VoiceCon   [ VoiceFric | VoiceNasal ];
+define VlessCon   [ VlessFric | VlessNasal | Stop ];
 
-define Fricative  [ VoicelessFricative | VoicedFricative ];
-define Nasal      [ VoicelessNasal     | VoicedNasal     ];
+define Fric       [ VlessFric  | VoiceFric  ];
+define Nasal      [ VlessNasal | VoiceNasal ];
 
-define Con        [ Stop | Fricative | Nasal | w | y ];
+define Con        [ Stop | Fric | Nasal | w | y ];
 
-define FullVowel   [ a | i | u ];
-define Vow         [ e | FullVowel ];
+define FVow       [ a | i | u ];
+define Vow        [ e | FVow ];
 
 define Lowercase "A"   -> a,
                  "C"   -> c,
@@ -70,11 +70,11 @@ define AutomaticDevoicing v -> vv,
                           g -> gg,
                           r -> rr,
                           u͡g -> u͡gg,
-                          u͡r -> u͡rr || [ Stop | VoicelessFricative ] _  ,
+                          u͡r -> u͡rr || [ Stop | VlessFric ] _  ,
                                        _ [ Stop ]                      .o.
                           m -> ḿ,
                           n -> ń,
-                          ng -> ńg || [ Stop | VoicelessFricative ] _   ;
+                          ng -> ńg || [ Stop | VlessFric ] _   ;
 !                          r -> rr  || _ .#.                            .o.
 !                          s -> ss  || .#. _                             ;
 
@@ -101,7 +101,9 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "(ʼa)" -> ʼ a                          || Con a _                        .o.
                      "(ʼa)" -> 0                                                              .o.
                      "–rpag/@vag" (->) "@" v a g            || Vow t e _                      .o.
-                     "–rpag/@vag"  ->  "–" r p a g                                             ;
+                     "–rpag/@vag"  ->  "–" r p a g                                            .o.
+                     "+ciqe/@ciiqe" -> "@" c i i q e        || t e ("*") _                    .o. 
+                     "+ciqe/@ciiqe" -> "+" c i q e          ;
 
 
 regex Lowercase          .o.
