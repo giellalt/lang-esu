@@ -120,6 +120,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 +ciqe/@ciiqe                ! to V in the future; will V
 +cuute/+ssuute              ! device for V-ing; device associated with N
 
+
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
 (a)                         ! 
@@ -13369,10 +13370,10 @@ VerbInflection;
 -+peke/.vke[V→V]:+peke/.vke                   SubordinativeVerbInflection; ! to not V   
 -+pege/.vke[V→V]:+pege/.vke                   SubordinativeVerbInflection; ! (NI, HBC, NUN form) to not V
 
--@~+(t)vaa[how.V][V→XCLM]:@+paa/~vaa          EncliticOrEnd; ! oh, how V!; my, how V!
--@~+(t)vag[how.V][V→XCLM]:@+paa/~vaa          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
--@+paa/~vaa[how.V][V→XCLM]:@+paa/~vaa         EncliticOrEnd; ! oh, how V!; my, how V!
--@+pag/~vag[how.V][V→XCLM]:@+pag/~vag         EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
+-@~+(t)vaa[how.V][V→XCLM]:@~+(t)vaa           EncliticOrEnd; ! oh, how V!; my, how V!
+-@~+(t)vag[how.V][V→XCLM]:@~+(t)vag           EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
+-@+paa/~vaa[how.V][V→XCLM]:@~+(t)vaa          EncliticOrEnd; ! oh, how V!; my, how V!
+-@+pag/~vag[how.V][V→XCLM]:@~+(t)vag          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
 
 -+a/+aar[V→V]:+a/+aar                         VerbPostbase; ! to V repeatedly
 -+'(g)aqe[V→V]:+'(g)aqe                       SubordinativeVerbInflection; ! to usually V; to repeatedly V; to habitually V
@@ -13614,7 +13615,7 @@ VerbInflection;
 -@+tassiir[V→V]:@+tassiir                     VerbPostbase; ! to test or determine how V (it) is
 -@+tassiar[V→V]:@+tassiar                     VerbPostbase; ! to test or determine how V (it) is
 -@+taciar[V→V]:@+taciar                       VerbPostbase; ! to test or determine how V (it) is
--@+tateke[V→V]:@+tateke                       VerbPostbase; ! to be V to the same extent
+-@+tateke[V→V]:@+tateke                       VerbPostbase; ! to be V to the same extent           
 -@%:(u)te[V→V]:@%:(u)te                       VerbPostbase; ! to V with another; to V for the sake of; to V reciprocally; to V (it) along with oneself or others
 -@(u)teke[V→V]:@(u)teke                       VerbPostbase; ! to V on account of (it); to V concerning (it)
 -+ter[V→V]:+ter                               VerbPostbase; ! to V suddenly and willfully
