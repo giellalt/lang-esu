@@ -51,10 +51,11 @@ define DropHattedE e -> 0 || .#. [Vow ">"* Con ">"* Vow ">"* Con ">"*]* Vow ">"*
                              m _ ">"* m , n _ ">"* n , ng _ ">"* ng , ḿ _ ">"* ḿ , ń _ ">"* ń , ńg _ ">"* ńg , 
                              w _ ">"* w , y _ ">"* y , c _ ">"* t , t _ ">"* c                                                       ; ! maybe c _ ">"* n , n _ ">"* c ??
 
-define TripleConsonant [..]  ->  e || Con _ ">"* [s|ss] ">"* Con  .o.
-                       [..]  ->  e || Con ">"* t _ ">"* Con   .o.
-                       [..] (->) e || Con ">"* Con _ ">"* Con .o.
-                       [..]  ->  e || Con _ ">"* Con ">"* Con  ;
+define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o.
+                       [..]  ->  e || Con _ ">"* [s|ss] ">"* Con  .o.
+                       [..]  ->  e || Con ">"* t _ ">"* Con       .o.
+                       [..] (->) e || Con ">"* Con _ ">"* Con     .o.
+                       [..]  ->  e || Con _ ">"* Con ">"* Con      ;
 
 define TripleVowel FVow -> 0 || FVow ">"* _ ">"* FVow ;
 
