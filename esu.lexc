@@ -119,7 +119,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 –rpag/@vag                  ! big N; large N
 +ciqe/@ciiqe                ! to V in the future; will V
 +cuute/+ssuute              ! device for V-ing; device associated with N
-
+@+p/~v                      ! instead of @~+(t)v postbase representations
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -13370,10 +13370,10 @@ VerbInflection;
 -+peke/.vke[V→V]:+peke/.vke                   SubordinativeVerbInflection; ! to not V   
 -+pege/.vke[V→V]:+pege/.vke                   SubordinativeVerbInflection; ! (NI, HBC, NUN form) to not V
 
--@~+(t)vaa[how.V][V→XCLM]:@~+(t)vaa           EncliticOrEnd; ! oh, how V!; my, how V!
--@~+(t)vag[how.V][V→XCLM]:@~+(t)vag           EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
--@+paa/~vaa[how.V][V→XCLM]:@~+(t)vaa          EncliticOrEnd; ! oh, how V!; my, how V!
--@+pag/~vag[how.V][V→XCLM]:@~+(t)vag          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
+!-@~+(t)vaa[how.V][V→XCLM]:@~+(t)vaa           EncliticOrEnd; ! oh, how V!; my, how V!
+!-@~+(t)vag[how.V][V→XCLM]:@~+(t)vag           EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
+-@+paa/~vaa[how.V][V→XCLM]:@+p/~vaa          EncliticOrEnd; ! oh, how V!; my, how V!
+-@+pag/~vag[how.V][V→XCLM]:@+p/~vag          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
 
 -+a/+aar[V→V]:+a/+aar                         VerbPostbase; ! to V repeatedly
 -+'(g)aqe[V→V]:+'(g)aqe                       SubordinativeVerbInflection; ! to usually V; to repeatedly V; to habitually V
@@ -13547,15 +13547,15 @@ VerbInflection;
 -–nritar(ar)[V→V]:–nritar(ar)                 VerbPostbase; ! to almost V; to not quite V; to barely keep from V-ing
 -–nrite[V→V]:–nrite                           VerbPostbase; ! to not V
 -–nru[V→V]:–nru                               VerbPostbase; ! to be more V
--@+paalug/~vaalug[V→V]:@+paalug/~vaalug       VerbPostbase; ! to V for the first time, or for the first time in a long time
--@+pailug/~vailug[V→V]:@+pailug/~vailug       VerbPostbase; ! to V for the first time, or for the first time in a long time
+-@+paalug/~vaalug[V→V]:@+p/~vaalug            VerbPostbase; ! to V for the first time, or for the first time in a long time
+-@+pailug/~vailug[V→V]:@+p/~vailug            VerbPostbase; ! to V for the first time, or for the first time in a long time
 -–pacug[V→V]:–pacug                           VerbPostbase; ! poor dear one Vs
 -@+pag/~vag[V→V]:@+pag/~vag                   VerbPostbase; ! to V so well
--@+pakar/~vakar[V→V]:@+pakar/~vakar           VerbPostbase; ! to V so long; to V so much
+-@+pakar/~vakar[V→V]:@+p/~vakar               VerbPostbase; ! to V so long; to V so much
 -–qpakar[V→V]:–qpakar                         VerbPostbase; ! to V so long; to V so much
--@+pallag/~vallag[V→V]:@+pallag/~vallag       VerbPostbase; ! to V intensely; to V excessively
--@+pallug/~vallug[V→V]:@+pallug/~vallug       VerbPostbase; ! to V most; to V mostly
--@+pallur/~vallur[V→V]:@+pallur/~vallur       VerbPostbase; ! to V most; to V mostly
+-@+pallag/~vallag[V→V]:@+p/~vallag            VerbPostbase; ! to V intensely; to V excessively
+-@+pallug/~vallug[V→V]:@+p/~vallug            VerbPostbase; ! to V most; to V mostly
+-@+pallur/~vallur[V→V]:@+p/~vallur            VerbPostbase; ! to V most; to V mostly
 -+pigainar[V→V]:+pigainar                     VerbPostbase; ! to actually V (after hesitation; or surprising as it may seem)
 -–pigainar[V→V]:–pigainar                     VerbPostbase; ! to actually V (after hesitation; or surprising as it may seem)
 -–pig[V→V]:–pig                               VerbPostbase; ! to be really V; to be very V
@@ -13716,7 +13716,7 @@ VerbInflection;
 -@ngur*[V→N]:@ngur*                           NounPostbase; ! one that is V; one that is V-ing
 -–nqegcaar(ar*)[V→N]:–nqegcaar(ar*)           NounPostbase; ! one who Vs thoroughly
 -–nqurrar*[V→N]:–nqurrar*                     NounPostbase; ! the one(s) most V
--@+piiner/~viiner[V→N]:@+piiner/~viiner       NounPostbase; ! incident of V-ing
+-@+piiner/~viiner[V→N]:@+p/~viiner            NounPostbase; ! incident of V-ing
 -–qetaar[V→N]:–qetaar                         NounPostbase; ! device that alternately Vs and does the reverse
 -–rraaner[V→N]:–rraaner                       NounPostbase; ! past time of V-ing
 -+ssuute[V→N]:+ssuute                         NounPostbase; ! device for V-ing; device associated with N
@@ -14066,8 +14066,8 @@ OptativeVerbInflection;
 
 SubordinativeVerbInflection;
 
-[V][Intr][Prec]:@~(t)vaileg      IntransitiveConnectiveCEnd;
-[V][Trns][Prec]:@~(t)vaileg      TransitiveConnectiveCEnd;
+[V][Intr][Prec]:@+p/~vaileg      IntransitiveConnectiveCEnd;
+[V][Trns][Prec]:@+p/~vaileg      TransitiveConnectiveCEnd;
 
 [V][Intr][Cnsq]:@~%:(ng)a        IntransitiveConnectiveVEnd;
 [V][Trns][Cnsq]:@~%:(ng)a        TransitiveConnectiveVEnd;
@@ -14101,8 +14101,8 @@ LEXICON OptativeVerbInflection
 [V][Intr][Opt][FUT]:@~–ki                  IntransitiveFutureOptative;
 [V][Trns][Opt][FUT]:@~–ki                  TransitiveFutureOptative;
 
-[V][Intr][Opt][PRS][NEG]:@~+(t)viiqna      IntransitiveNegativeOptative;
-[V][Trns][Opt][PRS][NEG]:@~+(t)viiqna      TransitiveNegativeOptative;
+[V][Intr][Opt][PRS][NEG]:@+p/~viiqna       IntransitiveNegativeOptative;
+[V][Trns][Opt][PRS][NEG]:@+p/~viiqna       TransitiveNegativeOptative;
 
 [V][Intr][Opt][FUT][NEG]:@~+yaquna         IntransitiveNegativeOptative;
 [V][Trns][Opt][FUT][NEG]:@~+yaquna         TransitiveNegativeOptative;
