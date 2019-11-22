@@ -2,11 +2,7 @@
 ! AUTHOR: "Lonny Strunk"
 
 ! define MultipleForms
-    ! for @~+lu/@na (ch) and others with \w/\w !!!!TODO!!!!
-    ! for [Opt_PRS_2Sg] (ch5 pg67)
-    ! for [Opt_PRS_2Sg_3Sg]
     ! for [Opt_PRS_2Sg_1Sg]
-    ! multi-form postbases ciqe/ciiqe ...
     ! multi-form inflections .vet/+pet ...
     ! for lria/lrii/ngur*
     ! for nru/llru
@@ -64,24 +60,9 @@ define Lowercase "A"   -> a,
                  "U͡gg" -> u͡gg,
                  "U͡rr" -> u͡rr;
 
-define AutomaticDevoicing v -> vv,
-                          l -> ll,
-                          s -> ss,
-                          g -> gg,
-                          r -> rr,
-                          u͡g -> u͡gg,
-                          u͡r -> u͡rr || [ Stop | VlessFric ] _  ,
-                                       _ [ Stop ]                      .o.
-                          m -> ḿ,
-                          n -> ń,
-                          ng -> ńg || [ Stop | VlessFric ] _   ;
-!                          r -> rr  || _ .#.                            .o.
-!                          s -> ss  || .#. _                             ;
-
 define AllomorphDecouple "(g/t)" -> "(g)" "(t)" .o. 
                          "(r/l)" -> "(r)" "(l)" .o. 
                          "(u/i)" -> "(u)" "(i)"  ; 
-
 
 define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
                      "[Opt_PRS_2Sg]" -> "+" n               || t e  _                         .o.
@@ -98,6 +79,8 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "[Opt_PRS_2Sg_1Sg]" -> "@" "+" ng a                                      .o.
                      "@~+lu/@na" -> "@" n a                 || t e "*" _                      .o.
                      "@~+lu/@na" -> "@" "~" "+" l u                                           .o.
+                     "@+p/~v" -> "@" "+" p                  || [ t e ("*") | Con ] _          .o.
+                     "@+p/~v" -> "~" v                                                        .o.
                      "(ʼa)" -> ʼ a                          || Con a _                        .o.
                      "(ʼa)" -> 0                                                              .o.
                      "–rpag/@vag" (->) "@" v a g            || Vow t e _                      .o.
@@ -108,7 +91,21 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "+cuute/+ssuute" -> "+" c u u t e      ;
 
 
+define AutomaticDevoicing v -> vv,
+                          l -> ll,
+                          s -> ss,
+                          g -> gg,
+                          r -> rr,
+                          u͡g -> u͡gg,
+                          u͡r -> u͡rr || [ Stop | VlessFric ] _  ,
+                                       _ [ Stop ]                      .o.
+                          m -> ḿ,
+                          n -> ń,
+                          ng -> ńg || [ Stop | VlessFric ] _   ;
+!                          r -> rr  || _ .#.                            .o.
+!                          s -> ss  || .#. _                             ;
+
 regex Lowercase          .o.
-      AutomaticDevoicing .o.
       AllomorphDecouple  .o.
-      MultipleForms       ;
+      MultipleForms      .o.  
+      AutomaticDevoicing  ;
