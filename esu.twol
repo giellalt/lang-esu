@@ -60,7 +60,7 @@ e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
         _ [ r | g ] Bndry:+ :Vow ; ! "vowel postbases are semi-final e deleters"
         [[Vow Con]|[Con VoiceCon]] _ [ r | g ] Bndry:* %%:0 Bndry:* %(e%):e ; ! "Rule (e):e"
         _ (Con:0) Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
-        t: _ Bndry:* %@: ; ! te@
+        [t:-t] _ Bndry:* %@: ; ! te@
     except
         _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
         _ Bndry:* %(ng%):0 Bndry:* i ; ! engi -> ai
@@ -148,9 +148,9 @@ rr:r <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
     except
         g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
-"t:0 = te@c | Cte@ng|v|m/0 | Cte@(u)/Cu"
-t:0 <=> _ e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* c ; ! te@c
-        Con _ e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [ ng | v | m ] ; ! Cte@ng|v|m/0
+"t:0 = te@c|p/0 | Cte@ng|v|m/0 | Cte@(u)/Cu"
+t:0 <=> _ e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [c|p] ; ! te@c|p/0
+        Con _ e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [ng|v|m] ; ! Cte@ng|v|m/0
         VlessFric:VoiceFric _ e:0 [Bndry:-%*:]* %@: Bndry:* %(u%):u ; ! Cte@(u)/Cu
 
 "t:c = tV--li/ci | te@y/c | te~s/c" 
@@ -167,7 +167,7 @@ t:n <=> Vow _ e:0 [ .#. | %= ] ; ! Word final Vte
 
 "t:s = te@k/s | Vte@ng|v|m/s | tʼe@(u)/sʼu "
 t:s <=> [VlessFric:VoiceFric|Vow|Stop] _ (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
-        Vow _ (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [ ng | v | m ] ; ! Vte@ng|v|m/s
+        Vow _ (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [ng|v|m] ; ! Vte@ng|v|m/s
         _ ʼ e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! tʼe@(u)/sʼu
 
 "t:y = Vte@(u)/Vy"
