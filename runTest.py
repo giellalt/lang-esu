@@ -41,7 +41,7 @@ def runTests(testFile):
         print("\n########## {} ##########".format(testFile))
     currentTests = []
     for underlying, surface in testFileData:
-        completedProcess = subprocess.run(["echo \"{}\" | hfst-lookup {}".format(underlying, args.hfstName)], shell=True, capture_output=True)
+        completedProcess = subprocess.run(["echo \"{}\" | hfst-lookup {}".format(underlying.replace("@:","@%:"), args.hfstName)], shell=True, capture_output=True)
         processResults = [line.decode("utf-8") for line in completedProcess.stdout.split()][1::3]
 
         testResultCode = -1
