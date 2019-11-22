@@ -8,7 +8,7 @@ qimugte[N][Rel][3SgPoss][SgPosd]	qimugtiin
 anngar[N][Rel][1SgPoss][SgPosd]	anngama
 qetunrar*[N][Rel][3SgPoss][PlPosd]	qetunrain
 qimugte[N][Rel][3PlPoss][PlPosd]	qimugtaita
-qantar[N][Rel][3PlPoss][SgPosd]	qantaat
+qantar[N][Abs][3PlPoss][SgPosd]	qantaat
 elitnauriste[N][Rel][1PlPoss][PlPosd]	elitnauristemta
 irniar[N][Rel][3PlPoss][PlPosd]	irniarita
 ila[N][Rel][3PlPoss][SgPosd]	iliita
@@ -81,7 +81,7 @@ nuliar-–nge[N→V]-@~+yuumiite[V→V][V][Intr][Ind][S_3Sg]	nuliangyuumiituq
 nengllir-–nge[V→V][V][Intr][Ind][S_3Sg]	nengllinguq
 qia-–nge[V→V][V][Intr][Ind][S_3Pl]	qiangut
 qilug-–nge[V→V]-–llru[V→V][V][Trns][Ind][A_3Sg][P_1Pl]	qilungellruakut
-kai-–nge[V→V]-–ksaite[V→V][V][Intr][Ind][S_1Sg]	kaingeksaitua
+kaig-–nge[V→V]-–ksaite[V→V][V][Intr][Ind][S_1Sg]	kaingeksaitua
 imar-–nge[N→V][V][Intr][Ind][S_3Sg]	imanguq
 aana-–ke[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	aanakaa
 alqar-–ke[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	alqaqaa
@@ -117,7 +117,7 @@ uneg[DemPro][Abs][Unpd][Sg]	unegna
 unegku[DemPro][Abs][Unpd][Pl]	unegkut
 unʼga[DemAdv][Loc]	unʼgani
 ik[DemPro][Abs][Unpd][Sg]	ikna
-ikegku[DemPro][Abs][Unpd][Pl]	ikegku
+ikegku[DemPro][Abs][Unpd][Pl]	ikegkut
 ika[DemAdv][Loc]	ikani
 ping[DemPro][Abs][Unpd][Sg]	pingna
 pingku[DemPro][Abs][Unpd][Pl]	pingkut
