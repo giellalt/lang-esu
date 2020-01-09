@@ -62,7 +62,9 @@ define Lowercase "A"   -> a,
 
 define AllomorphDecouple "(g/t)" -> "(g)" "(t)" .o. 
                          "(r/l)" -> "(r)" "(l)" .o. 
-                         "(u/i)" -> "(u)" "(i)"  ; 
+                         "(u/i)" -> "(u)" "(i)" .o.
+                         "(ar)"  -> a r "*"     .o.
+                         "(ar*)" -> a r "*"      ; 
 
 define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
                      "[Opt_PRS_2Sg]" -> "+" n               || t e  _                         .o.
@@ -81,14 +83,14 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "@~+lu/@na" -> "@" "~" "+" l u                                           .o.
                      "@+p/~v" -> "@" "+" p                  || [ t e ("*") | Con ] _          .o.
                      "@+p/~v" -> "~" v                                                        .o.
-                     "(ʼa)" -> ʼ a                          || Con a _                        .o.
-                     "(ʼa)" -> 0                                                              .o.
+!                     "(ʼa)" -> ʼ a                          || Con a _                        .o.
+!                     "(ʼa)" -> 0                                                              .o.
                      "–rpag/@vag" (->) "@" v a g            || Vow t e _                      .o.
                      "–rpag/@vag"  ->  "–" r p a g                                            .o.
                      "+ciqe/@ciiqe" -> "@" c i i q e        || t e ("*") _                    .o. 
                      "+ciqe/@ciiqe" -> "+" c i q e                                            .o. 
-                     "+cuute/+ssuute" -> "." ss u u t e     || Vow _                          .o.
-                     "+cuute/+ssuute" -> "+" c u u t e      ;
+                     "+c/.ss" -> "." ss                     || Vow _                          .o.
+                     "+c/.ss" -> "+" c                      ;
 
 
 define AutomaticDevoicing v -> vv,
