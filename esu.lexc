@@ -115,10 +115,10 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [Opt_PRS_2Sg_3Sg]           !
 [Opt_PRS_2Sg_1Sg]           !
 @~+lu/@na                   ! subordinative mood marker
-(ʼa)                        ! used for [DemAdv][Loc] %~nete 
+!(ʼa)                        ! used for [DemAdv][Loc] %~nete 
 –rpag/@vag                  ! big N; large N
 +ciqe/@ciiqe                ! to V in the future; will V
-+cuute/+ssuute              ! device for V-ing; device associated with N
++c/.ss                      ! +cuute/+ssuute and +cur/+ssur
 @+p/~v                      ! instead of @~+(t)v postbase representations
 
 !!!!!!! Multiple Forms !!!!!!
@@ -191,6 +191,7 @@ LEXICON Root
 
 LEXICON Exceptions
 qimugte-–rpag/@vag[N→N]:qimute@vag         NounPostbase; ! qimulvak
+tai[V][Intr][Opt][PRS][S_2Sg]:taitai       EncliticOrEnd; ! come here!
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -466,7 +467,7 @@ yaaliaku               EncliticOrEnd; ! day after tomorrow or year after next (K
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Interrogative
-ca                  EncliticOrEnd;
+ca                  NounPostbase;
 ca                  VerbPostbase;
 cakucir             NounPostbase;
 ciin                EncliticOrEnd;
@@ -478,8 +479,12 @@ nante               VerbPostbase;
 qaillun             EncliticOrEnd;
 qaillʼ              EncliticOrEnd;
 qaku                EncliticOrEnd;
-qangvaq             EncliticOrEnd;
+qangvar             NounPostbase;
 qavcin              EncliticOrEnd;
+qavcir              NounPostbase;
+qavcir              VerbPostbase;
+
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -6543,7 +6548,6 @@ taima                  NounPostbase; ! elsewhere
 taimiurte              NounPostbase; ! choir director
 taingkar               NounPostbase; ! oil drum; tank
 tair                   NounPostbase; ! inner layer of sealgut removed before further processing
-taitai                 NounPostbase; ! come here!
 taitug                 NounPostbase; ! fog; mist
 taituir(ar*)           NounPostbase; ! Kittlitzʼs murrelet (Brachyramphus brevirostris) (identification uncertain)
 takaner                NounPostbase; ! stick poked into the ground at an angle and used to hold a pot over a fire
@@ -13260,7 +13264,7 @@ VerbEte;
 -–cugninarqe[N→V]:–cugninarqe                 VerbPostbase; ! (K form) to smell or taste like N
 -+cugnite[N→V]:+cugnite                       VerbPostbase; ! to smell or taste like N
 -–culngu[N→V]:–culngu                         VerbPostbase; ! to be indisposed with respect to oneʼs N; to have trouble V-ing
--+cur/+ssur[N→V]:+cur/+ssur                   VerbPostbase; ! to hunt N; to seek N; to check N (game-catching implement)
+-+cur/+ssur[N→V]:+c/.ssur                     VerbPostbase; ! to hunt N; to seek N; to check N (game-catching implement)
 -%:(ng)icag[N→V]:%:(ng)icag                   VerbPostbase; ! to be in need of N; to lack N
 -%:(ng)illiqe[N→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
 -–ir[N→V]:–ir                                 VerbPostbase; ! N (natural phenomenon) is occurring; to set N (game capturing device); to provide or be provided with N (but not in the sense of giving N to someone)
@@ -13625,6 +13629,7 @@ VerbInflection;
 -+tuinar[V→V]:+tuinar                         VerbPostbase; ! to always V
 -–turnike[V→V]:–turnike                       VerbPostbase; ! to feel that object can V proficiently
 -–turnir[V→V]:–turnir                         VerbPostbase; ! to be able to V proficiently
+-@~+(ng)uar[V→V]:@~+(ng)uar                   VerbPostbase; ! to pretend to V; to V without serious purpose or without the normal purpose of such V-ing
 -@+'(g/t)ur(ar)[V→V]:@+'(g/t)ur(ar)           VerbPostbase; ! to keep on V-ing; to continue to V; to V though no one else does; to be a little V (with adjectival verbs); to V leisurely (addition NSU meaning)
 -@+'(g/t)urainar[V→V]:@+'(g/t)urainar         VerbPostbase; ! to finally V after desiring to do so but being prevented by circumstances
 -@+'(g/t)uralar[V→V]:@+'(g/t)uralar           VerbPostbase; ! (K, BB form) to always V
@@ -13690,7 +13695,7 @@ VerbInflection;
 -@%:(u)cirkar[V→N]:@%:(u)cirkar               NounPostbase; ! future condition of possessor with respect to V
 -@~+citaar[V→N]:@~+citaar                     NounPostbase; ! something used to cause one to V
 -–curlag[V→N]:–curlag                         NounPostbase; ! misfortune in V-ing
--+cuute/+ssuute[V→N]:+cuute/+ssuute           NounPostbase; ! device for V-ing, device associated with N
+-+cuute/+ssuute[V→N]:+c/.ssuute               NounPostbase; ! device for V-ing, device associated with N
 -+(s)kar(ar*)[V→N]:+(s)kar(ar*)               NounPostbase; ! one who Vs; the only one who Vs
 -+karar[V→N]:+karar                           NounPostbase; ! exact area denoted by N with respect to possessor
 -@~–ke[V→N]:@~–ke                             NounPostbase; ! (@~-ke-1) the one or ones that the possessor is V-ing
@@ -13730,6 +13735,7 @@ VerbInflection;
 -~%:(u)tnguarkar[V→N]:~%:(u)tnguarkar         NounPostbase; ! potential/necessary aid to V-ing
 -–tuke[V→N]:–tuke                             NounPostbase; ! possessorʼs normal, regular, or customary one to V
 -–tuli[V→N]:–tuli                             NounPostbase; ! one that customarily Vs; one that is fully capable of V-ing
+-+(ng)uar[V→N]:+(ng)uar                       NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
 -@~+vig[V→N]:@~+vig                           NounPostbase; ! place to V; place or time of V-ing
 -+(r)vig[V→N]:+(r)vig                         NounPostbase; ! place for N
 -@~+yailkutar[V→N]:@~+yailkutar               NounPostbase; ! device to prevent V-ing
