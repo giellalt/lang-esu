@@ -13337,6 +13337,7 @@ VerbEte;
 -–ssaag[N→V]:–ssaag                           VerbPostbase; ! to fetch some N from an easily accessible place
 -–ssaar[N→V]:–ssaar                           VerbPostbase; ! to hunt N
 -+ssur[N→V]:+ssur                             VerbPostbase; ! to hunt N; to seek N; to check N (game-capturing implement)
+-–ssur[N→V]:–ssur                             VerbPostbase; ! to hunt N; to seek N; to check N (game-capturing implement)
 -+tairute[N→V]:+tairute                       VerbPostbase; ! (for there) to be no more N
 -+taite[N→V]:+taite                           VerbPostbase; ! (for there) to be no N
 -+taknaggaite[N→V]:+taknaggaite               VerbPostbase; ! for there to be absolutely no N
@@ -13554,7 +13555,7 @@ VerbInflection;
 -@+paalug/~vaalug[V→V]:@+p/~vaalug            VerbPostbase; ! to V for the first time, or for the first time in a long time
 -@+pailug/~vailug[V→V]:@+p/~vailug            VerbPostbase; ! to V for the first time, or for the first time in a long time
 -–pacug[V→V]:–pacug                           VerbPostbase; ! poor dear one Vs
--@+pag/~vag[V→V]:@+pag/~vag                   VerbPostbase; ! to V so well
+-@+pag/~vag[V→V]:@+p/~vag                     VerbPostbase; ! to V so well
 -@+pakar/~vakar[V→V]:@+p/~vakar               VerbPostbase; ! to V so long; to V so much
 -–qpakar[V→V]:–qpakar                         VerbPostbase; ! to V so long; to V so much
 -@+pallag/~vallag[V→V]:@+p/~vallag            VerbPostbase; ! to V intensely; to V excessively
@@ -13621,7 +13622,7 @@ VerbInflection;
 -@+taciar[V→V]:@+taciar                       VerbPostbase; ! to test or determine how V (it) is
 -@+tateke[V→V]:@+tateke                       VerbPostbase; ! to be V to the same extent           
 -@%:(u)te[V→V]:@%:(u)te                       VerbPostbase; ! to V with another; to V for the sake of; to V reciprocally; to V (it) along with oneself or others
--@(u)teke[V→V]:@(u)teke                       VerbPostbase; ! to V on account of (it); to V concerning (it)
+-@%:(u)teke[V→V]:@%:(u)teke                   VerbPostbase; ! to V on account of (it); to V concerning (it)
 -+ter[V→V]:+ter                               VerbPostbase; ! to V suddenly and willfully
 -–tngurte[V→V]:–tngurte                       VerbPostbase; ! to V unexpectedly; to V after changing oneʼs mind
 -–tmurte[V→V]:–tmurte                         VerbPostbase; ! (HBC form) to V unexpectedly; to V after changing oneʼs mind
@@ -13707,7 +13708,7 @@ VerbInflection;
 -–lqurrar*[V→N]:–lqurrar*                     NounPostbase; ! the one(s) most V
 -–lria[V→N]:–lria                             NounPostbase; ! the one who is V-ing
 -–lrii[V→N]:–lrii                             NounPostbase; ! the one who is V-ing (used with endings %:(e)m, %:(e)t, and all dual endings)
--@(u)te[V→N]:@(u)te                           NounPostbase; ! (also @3(u)taq) instrument or device for V-ing; time of V-ing
+-@%:(u)te[V→N]:@%:(u)te                       NounPostbase; ! (also @3(u)taq) instrument or device for V-ing; time of V-ing
 -@~+natkar[V→N]:@~+natkar                     NounPostbase; ! future time of V-ing
 -@~+ner[V→N]:@~+ner                           NounPostbase; ! thing that results from V-ing
 -@–ner[V→N]:@–ner                             NounPostbase; ! the activity, art, or process of V-ing
