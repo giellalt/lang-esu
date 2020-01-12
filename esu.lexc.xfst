@@ -89,6 +89,9 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "–rpag/@vag"  ->  "–" r p a g                                            .o.
                      "+ciqe/@ciiqe" -> "@" c i i q e        || t e ("*") _                    .o. 
                      "+ciqe/@ciiqe" -> "+" c i q e                                            .o. 
+                     "@+cete/.vkar" -> "@" "+" c e t e      || Con _                          .o.
+                     "@+cete/.vkar" (->) "@" "+" c e t e    || t e ("*") _                    .o.
+                     "@+cete/.vkar" -> "." v k a r                                            .o.
                      "+c/.ss" -> "." ss                     || Vow _                          .o.
                      "+c/.ss" -> "+" c                      ;
 
