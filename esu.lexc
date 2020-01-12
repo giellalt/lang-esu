@@ -118,6 +118,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 !(ʼa)                        ! used for [DemAdv][Loc] %~nete 
 –rpag/@vag                  ! big N; large N
 +ciqe/@ciiqe                ! to V in the future; will V
+@+cete/.vkar                ! to let, allow, permit, cause, or compel one to V
 +c/.ss                      ! +cuute/+ssuute and +cur/+ssur
 @+p/~v                      ! instead of @~+(t)v postbase representations
 
@@ -13391,7 +13392,7 @@ VerbInflection;
 -@~+caar(ar)[V→V]:@~+caar(ar)                 VerbPostbase; ! to endeavor to V, to undertake the act of V-ing, to try to V (with a high probability of success)
 -@+car[V→V]:@+car                             VerbPostbase; ! to cause to V, to try to induce to V
 -@~+cetaar[V→V]:@~+cetaar                     VerbPostbase; ! to try to cause one to V
--@+cete[V→V]:@+cete                           VerbPostbase; ! to let, allow, permit, cause, or compel one to V
+-@+cete/.vkar[V→V]:@+cete/.vkar               VerbPostbase; ! to let, allow, permit, cause, or compel one to V
 -@~+ciar(ar)[V→V]:@~+ciar(ar)                 VerbPostbase; ! to wait patiently for object to V
 -+(s)ciigali[V→V]:+(s)ciigali                 VerbPostbase; ! to not be able to V any longer
 -+(s)ciigalli[V→V]:+(s)ciigalli               VerbPostbase; ! (additional NI form) to not be able to V any longer
@@ -13640,7 +13641,6 @@ VerbInflection;
 -–vialug[V→V]:–vialug                         VerbPostbase; ! to V clumsily or sloppily
 -–viite[V→V]:–viite                           VerbPostbase; ! to leave no room, space, place, realm for V-ing
 -@~+vike[V→V]:@~+vike                         VerbPostbase; ! to have (it) as the place or site of V-ing; to have (him) as the person toward whom one is V-ing
--+vkar[V→V]:+vkar                             VerbPostbase; ! to let, allow, cause, or compel one to V
 -–vlaag[V→V]:–vlaag                           VerbPostbase; ! to V insufficiently; to not V enough
 -–vlugte[V→V]:–vlugte                         VerbPostbase; ! to V sloppily
 -–vsiar[V→V]:–vsiar                           VerbPostbase; ! to V more toward completion; to V even more; to V more thoroughly
