@@ -121,6 +121,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 @+cete/.vkar                ! to let, allow, permit, cause, or compel one to V
 +c/.ss                      ! +cuute/+ssuute and +cur/+ssur
 @+p/~v                      ! instead of @~+(t)v postbase representations
++p/.v                       ! Noun & QuantQual Inflection Chart
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -193,6 +194,11 @@ LEXICON Root
 LEXICON Exceptions
 qimugte-–rpag/@vag[N→N]:qimute@vag         NounPostbase; ! qimulvak
 tai[V][Intr][Opt][PRS][S_2Sg]:taitai       EncliticOrEnd; ! come here!
+iqsur-–lirner[N→N]:iqsur–lirner            NounPostbase; ! thing of the left side
+tallirpig-–lirner[N→N]:tallirpig–lirner    NounPostbase; ! right-hand side
+aqum-@–ngqa[V→V]:aqumgar                   QuantQualInflection; ! sitting
+ugaani[N][Loc][3SgPoss][SgPosd]:ugaani     EncliticOrEnd; ! because of; as a consequence of; on account of
+ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ     EncliticOrEnd; ! because of; as a consequence of; on account of
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -7174,8 +7180,6 @@ ucukcar                NounPostbase; ! nail; peg
 ucumqatag              NounPostbase; ! anal fin
 ucurnarqucir           NounPostbase; ! glory
 ucurnarqute            NounPostbase; ! glory
-ugaani                 NounPostbase; ! because of; as a consequence of; on account of
-ugaateʼ                NounPostbase; ! because of; as a consequence of; on account of
 uginagumar             NounPostbase; ! mother bearded seal swimming near an ice floe on which her pup is lying
 uginar                 NounPostbase; ! sea lion (Eumetopias jubatus)
 ugke                   NounPostbase; ! cooked food
@@ -13353,7 +13357,8 @@ VerbEte;
 -–trute[N→V]:–trute                           VerbPostbase; ! to miss by passing through the N area, or the N area of it
 -+tu[N→V]:+tu                                 VerbPostbase; ! to be well endowed with N, to have N to a large extent
 -+tur[N→V]:+tur                               VerbPostbase; ! to eat N (food); to wear N (clothing); to use N (limited usage with this meaning)
--+(r)tuuma(r)[N→V]:+(r)tuuma(r)               VerbPostbase; ! to act together with oneʼs N or Ns
+-+(r)tuuma(r)[N→V]:+(r)tuuma                  SubordinativeVerbInflection; ! to act together with oneʼs N or Ns
+-+(r)tuuma(r)[N→V]:+(r)tuumar                 QuantQualInflection; ! to act together with oneʼs N or Ns
 -%:~(ng)u[N→V]:%:~(ng)u                       VerbPostbase; ! to be N
 -%:(ng)ucir[N→V]:%:(ng)ucir                   VerbPostbase; ! to have lots of N
 -%:~(ng)urte[N→V]:%:~(ng)urte                 VerbPostbase; ! to become N; to expose the N of (it)
@@ -13373,13 +13378,11 @@ VerbEte;
 LEXICON VerbPostbase
 VerbInflection;
 
--+peke/.vke[V→V]:+peke/.vke                   SubordinativeVerbInflection; ! to not V   
--+pege/.vke[V→V]:+pege/.vke                   SubordinativeVerbInflection; ! (NI, HBC, NUN form) to not V
-
+[V→N][N][Rel][Unpd][Sg]:%%%:(e)m              EncliticOrEnd; ! V-ing (understood in nominal sense); V-ness
 !-@~+(t)vaa[how.V][V→XCLM]:@~+(t)vaa           EncliticOrEnd; ! oh, how V!; my, how V!
 !-@~+(t)vag[how.V][V→XCLM]:@~+(t)vag           EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
--@+paa/~vaa[how.V][V→XCLM]:@+p/~vaa          EncliticOrEnd; ! oh, how V!; my, how V!
--@+pag/~vag[how.V][V→XCLM]:@+p/~vag          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
+-@+paa/~vaa[how.V][V→XCLM]:@+p/~vaa           EncliticOrEnd; ! oh, how V!; my, how V!
+-@+pag/~vag[how.V][V→XCLM]:@+p/~vag           EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
 
 -+a/+aar[V→V]:+a/+aar                         VerbPostbase; ! to V repeatedly
 -+'(g)aqe[V→V]:+'(g)aqe                       SubordinativeVerbInflection; ! to usually V; to repeatedly V; to habitually V
@@ -13556,12 +13559,14 @@ VerbInflection;
 -@+paalug/~vaalug[V→V]:@+p/~vaalug            VerbPostbase; ! to V for the first time, or for the first time in a long time
 -@+pailug/~vailug[V→V]:@+p/~vailug            VerbPostbase; ! to V for the first time, or for the first time in a long time
 -–pacug[V→V]:–pacug                           VerbPostbase; ! poor dear one Vs
--@+pag/~vag[V→V]:@+p/~vag                     VerbPostbase; ! to V so well
+-@+pag/~vag[V→V]:@+p/~vag                     VerbPostbase; ! to V so well    ! interrogative mood only
 -@+pakar/~vakar[V→V]:@+p/~vakar               VerbPostbase; ! to V so long; to V so much
 -–qpakar[V→V]:–qpakar                         VerbPostbase; ! to V so long; to V so much
 -@+pallag/~vallag[V→V]:@+p/~vallag            VerbPostbase; ! to V intensely; to V excessively
 -@+pallug/~vallug[V→V]:@+p/~vallug            VerbPostbase; ! to V most; to V mostly
 -@+pallur/~vallur[V→V]:@+p/~vallur            VerbPostbase; ! to V most; to V mostly
+-+peke/.vke[V→V]:+peke/.vke                   SubordinativeVerbInflection; ! to not V   
+-+pege/.vke[V→V]:+pege/.vke                   SubordinativeVerbInflection; ! (NI, HBC, NUN form) to not V
 -+pigainar[V→V]:+pigainar                     VerbPostbase; ! to actually V (after hesitation; or surprising as it may seem)
 -–pigainar[V→V]:–pigainar                     VerbPostbase; ! to actually V (after hesitation; or surprising as it may seem)
 -–pig[V→V]:–pig                               VerbPostbase; ! to be really V; to be very V
@@ -14865,8 +14870,48 @@ LEXICON DemAdv
 [DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
 [DemAdv][Loc]-ete[N→V]:%%~nete          VerbPostbase;
 ![DemAdv][Loc]-ete[N→V]:(ʼa)+nte         VerbPostbase;
+[DemAdv]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
 [DemAdv][Ter]+virte[N→V]:.virte         VerbPostbase;
 [DemAdv][Via]+gguir[N→V]:.gguir         VerbPostbase;
+
+
+LEXICON QuantQual
+allakar        QuantQualPostbase; ! separately
+kesir          QuantQualPostbase; ! only; alone
+keyir          QuantQualPostbase; ! only; alone
+kii            QuantQualPostbase; ! only; alone
+kii            VerbEte; ! only; alone
+kiir           QuantQualPostbase; ! only; alone
+tamar          QuantQualPostbase; ! all; whole; entire; every
+tamalkur       QuantQualPostbase; ! all; whole; entire; every
+
+
+LEXICON QuantQualPostbase
+QuantQualInflection;
+-–rrar*[N→N]:–rrar*      QuantQualPostbase; ! just a little N; a little bit of N; a few N; and -rrar-to V a little; to just barely V
+
+
+LEXICON QuantQualInflection
+!---------------------------------|
+!  Quantifier-Qualifier Endings   |
+!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+                                                                                                [Quant_Qual][P_3Sg]:%:(ng)an      EncliticOrEnd;
+                                                                                                [Quant_Qual][P_3Pl]:%:(ng)ita     EncliticOrEnd;
+                                                                                                [Quant_Qual][P_3Du]:%%%:(e)gkenka EncliticOrEnd;
+!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+[Quant_Qual][S_1Sg]:+ma           EncliticOrEnd;[Quant_Qual][A_1Sg]:+ma           EncliticOrEnd;[Quant_Qual][P_1Sg]:+ma           EncliticOrEnd;
+[Quant_Qual][S_1Pl]:–mta          EncliticOrEnd;[Quant_Qual][A_1Pl]:–mta          EncliticOrEnd;[Quant_Qual][P_1Pl]:–mta          EncliticOrEnd;
+[Quant_Qual][S_1Du]:–megnuk       EncliticOrEnd;[Quant_Qual][A_1Du]:–megnuk       EncliticOrEnd;[Quant_Qual][P_1Du]:–megnuk       EncliticOrEnd;
+!----------------------------------------------|!----------------------------------------------|-----------------------------------------------|
+[Quant_Qual][S_2Sg]:+p/.vet       EncliticOrEnd;[Quant_Qual][A_2Sg]:+p/.vet       EncliticOrEnd;[Quant_Qual][P_2Sg]:+p/.vet       EncliticOrEnd;
+[Quant_Qual][S_2Pl]:+p/.vci       EncliticOrEnd;[Quant_Qual][A_2Pl]:+p/.vci       EncliticOrEnd;[Quant_Qual][P_2Pl]:+p/.vci       EncliticOrEnd;
+[Quant_Qual][S_2Du]:+p/.vtek      EncliticOrEnd;[Quant_Qual][A_2Du]:+p/.vtek      EncliticOrEnd;[Quant_Qual][P_2Du]:+p/.vtek      EncliticOrEnd;
+!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+[Quant_Qual][S_4Sg]:+mi           EncliticOrEnd;[Quant_Qual][A_4Sg]:+mi           EncliticOrEnd;
+[Quant_Qual][S_4Pl]:+meng         EncliticOrEnd;[Quant_Qual][A_4Pl]:+meng         EncliticOrEnd;
+[Quant_Qual][S_4Du]:+mek          EncliticOrEnd;[Quant_Qual][A_4Du]:+mek          EncliticOrEnd;
+!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+
 
 LEXICON Positional
 aci                    PositionalPostbase; ! area below; area under (positional base used only with a possessed ending); mattress; bed; wild potato Hedysarum sp. (additional LI meaning)
@@ -14896,11 +14941,13 @@ yaate                  NounInflection; ! area beyond
 
 LEXICON PositionalPostbase
 NounInflection;
+[Positional]-–lirner[N→N]:–lirner           NounPostbase; ! area in the N direction; one of the N direction
 [Positional]-–qlir*[N→N]:–qlir*             NounPostbase; ! the one located far in the area or space or time denoted by N
 [Positional]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
 [Positional]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
 [Positional][Sec_Ter]:.tmun                 EncliticOrEnd;
 [Positional][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
+[Positional]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
 
 
 LEXICON Numeral
@@ -15113,9 +15160,10 @@ tuig            PosturalPostbase; ! turned around
 uver            PosturalPostbase; ! slanting
 
 LEXICON PosturalPostbase
-! Quantifier/Qualifier Endings
+QuantQualInflection;
 -+te[V→V]:+te             VerbPostbase; ! to act on one so as to cause it to V
 -@–ngqa[V→V]:@–ngqa       VerbPostbase; ! to be in a state of V or of having V-ed or having been V-ed
+-@–ngqa[V→V]:@–ngqar      QuantQualInflection; ! to be in a state of V or of having V-ed or having been V-ed
 
 
 LEXICON EncliticOrEnd
