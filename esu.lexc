@@ -115,6 +115,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [Opt_PRS_2Sg_3Sg]           !
 [Opt_PRS_2Sg_1Sg]           !
 @~+lu/@na                   ! subordinative mood marker
+–lria/@+ngur*               ! 
 !(ʼa)                        ! used for [DemAdv][Loc] %~nete 
 –rpag/@vag                  ! big N; large N
 +ciqe/@ciiqe                ! to V in the future; will V
@@ -13384,6 +13385,10 @@ VerbInflection;
 -@+paa/~vaa[how.V][V→XCLM]:@+p/~vaa           EncliticOrEnd; ! oh, how V!; my, how V!
 -@+pag/~vag[how.V][V→XCLM]:@+p/~vag           EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
 
+-–lria[V→N]:–lria                             NounPostbase; ! the one who is V-ing
+-–lrii[V→N]:–lrii                             NounPostbase; ! the one who is V-ing (used with endings %:(e)m, %:(e)t, and all dual endings)
+-@ngur*[V→N]:@ngur*                           NounPostbase; ! one that is V; one that is V-ing
+
 -+a/+aar[V→V]:+a/+aar                         VerbPostbase; ! to V repeatedly
 -+'(g)aqe[V→V]:+'(g)aqe                       SubordinativeVerbInflection; ! to usually V; to repeatedly V; to habitually V
 -+'(g)ar(ar)[V→V]:+'(g)ar(ar)                 VerbPostbase; ! to just barely V; to hardly V; to gradually V; leisurely V; With adjectival verbs ending in te-, this postbase means to be a little V
@@ -13711,8 +13716,6 @@ VerbInflection;
 -–llerkar[V→N]:–llerkar                       NounPostbase; ! future act of V-ing; unrealized act of V-ing
 -–llgute[V→N]:–llgute                         NounPostbase; ! fellow V-er; V-ing partner
 -–lqurrar*[V→N]:–lqurrar*                     NounPostbase; ! the one(s) most V
--–lria[V→N]:–lria                             NounPostbase; ! the one who is V-ing
--–lrii[V→N]:–lrii                             NounPostbase; ! the one who is V-ing (used with endings %:(e)m, %:(e)t, and all dual endings)
 -@%:(u)te[V→N]:@%:(u)te                       NounPostbase; ! (also @3(u)taq) instrument or device for V-ing; time of V-ing
 -@~+natkar[V→N]:@~+natkar                     NounPostbase; ! future time of V-ing
 -@~+ner[V→N]:@~+ner                           NounPostbase; ! thing that results from V-ing
@@ -13724,7 +13727,6 @@ VerbInflection;
 -@~+ngalngur*[V→N]:@~+ngalngur*               NounPostbase; ! one that seems to be V-ing
 -–ngssag[V→N]:–ngssag                         NounPostbase; ! small non-vital V-ing
 -–nguar[V→N]:–nguar                           NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
--@ngur*[V→N]:@ngur*                           NounPostbase; ! one that is V; one that is V-ing
 -–nqegcaar(ar*)[V→N]:–nqegcaar(ar*)           NounPostbase; ! one who Vs thoroughly
 -–nqurrar*[V→N]:–nqurrar*                     NounPostbase; ! the one(s) most V
 -@+piiner/~viiner[V→N]:@+p/~viiner            NounPostbase; ! incident of V-ing
