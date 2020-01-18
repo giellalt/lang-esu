@@ -13,6 +13,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 
 [N]                         ! Nominal
 [V]                         ! Verbal
+[PerPro]                    ! Personal Pronoun
 [DemPro]                    ! Demonstrative Pronoun
 [DemAdv]                    ! Demonstrative Adverb
 [Positional]                ! Positional
@@ -22,6 +23,18 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [Sg]                        ! Singular
 [Pl]                        ! Plural
 [Du]                        ! Dual
+[1Sg]                       ! 1st Person - Singular
+[1Pl]                       ! 1st Person - Plural
+[1Du]                       ! 1st Person - Dual
+[2Sg]                       ! 2nd Person - Singular
+[2Pl]                       ! 2nd Person - Plural
+[2Du]                       ! 2nd Person - Dual
+[3Sg]                       ! 3rd Person - Singular
+[3Pl]                       ! 3rd Person - Plural
+[3Du]                       ! 3rd Person - Dual
+[4Sg]                       ! 4th Person - Singular
+[4Pl]                       ! 4th Person - Plural
+[4Du]                       ! 4th Person - Dual
 [S_1Sg]                     ! Subject - 1st Person - Singular
 [S_1Pl]                     ! Subject - 1st Person - Plural
 [S_1Du]                     ! Subject - 1st Person - Dual
@@ -178,8 +191,8 @@ LEXICON Root
     DimensionalRoot ;
     PosturalRoot    ;
     EmotionalRoot   ; 
-!    PersonalPronoun ;
-!    QuantQual       ;
+    PersonalPronoun ;
+    QuantQual       ;
     Demonstrative   ;
     Positional      ;
     Numeral         ;
@@ -13564,7 +13577,7 @@ VerbInflection;
 -@+paalug/~vaalug[V→V]:@+p/~vaalug            VerbPostbase; ! to V for the first time, or for the first time in a long time
 -@+pailug/~vailug[V→V]:@+p/~vailug            VerbPostbase; ! to V for the first time, or for the first time in a long time
 -–pacug[V→V]:–pacug                           VerbPostbase; ! poor dear one Vs
--@+pag/~vag[V→V]:@+p/~vag                     VerbPostbase; ! to V so well    ! interrogative mood only
+-@+pag/~vag[V→V]:@+p/~vag                     InterrogativeVerbInflection; ! to V so well    ! interrogative mood only
 -@+pakar/~vakar[V→V]:@+p/~vakar               VerbPostbase; ! to V so long; to V so much
 -–qpakar[V→V]:–qpakar                         VerbPostbase; ! to V so long; to V so much
 -@+pallag/~vallag[V→V]:@+p/~vallag            VerbPostbase; ! to V intensely; to V excessively
@@ -14064,13 +14077,12 @@ LEXICON VerbInflection
 [V][Intr][Ind]:+'(g/t)u                    IntransitiveIndicative;
 [V][Trns][Ind]:+'(g)a                      TransitiveIndicative;
 
-[V][Intr][Intrg]:                          IntransitiveInterrogative;
-[V][Trns][Intrg]:                          TransitiveInterrogative;
+InterrogativeVerbInflection;
 
 OptativeVerbInflection;
 
 [V][Intr][Ptcp]:–lria/@+ngur*              IntransitiveParticipial;
-![V][Trns][Ptcp]:@~–ke                      TransitiveParticipial;
+[V][Trns][Ptcp]:@~–ke                      TransitiveParticipial;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                 !!!
@@ -14088,7 +14100,6 @@ SubordinativeVerbInflection;
 [V][Intr][Cnsq]:@+nga            IntransitiveConnectiveVEnd;
 [V][Trns][Cnsq]:@+nga            TransitiveConnectiveVEnd;
 
-
 [V][Intr][Cont]:+'(g)aqa         IntransitiveConnectiveVEnd;
 [V][Trns][Cont]:+'(g)aqa         TransitiveConnectiveVEnd;
 
@@ -14105,6 +14116,12 @@ SubordinativeVerbInflection;
 [V][Trns][CtmpII]:@%:(ng)inaner  TransitiveConnectiveCtmp;
 [V][Intr][CtmpII]:@+nginaner     IntransitiveConnectiveCtmp;
 [V][Trns][CtmpII]:@+nginaner     TransitiveConnectiveCtmp;
+
+
+LEXICON InterrogativeVerbInflection
+
+[V][Intr][Intrg]:                          IntransitiveInterrogative;
+[V][Trns][Intrg]:                          TransitiveInterrogative;
 
 
 LEXICON OptativeVerbInflection
@@ -14375,6 +14392,46 @@ LEXICON IntransitiveParticipial
 [S_3Pl]:t  EncliticOrEnd; [S_1Pl]:kut   EncliticOrEnd; [S_2Pl]:si   EncliticOrEnd;
 [S_3Du]:k  EncliticOrEnd; [S_1Du]:kung  EncliticOrEnd; [S_2Du]:tek  EncliticOrEnd;
 !-----------------------|----------------------------|---------------------------|
+
+LEXICON TransitiveParticipial
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[A_3Sg][P_3Sg]:ii         EncliticOrEnd; [A_3Sg][P_3Pl]:ai         EncliticOrEnd; [A_3Sg][P_3Du]:k           EncliticOrEnd;
+[A_3Pl][P_3Sg]:iit        EncliticOrEnd; [A_3Pl][P_3Pl]:ait        EncliticOrEnd; [A_3Pl][P_3Du]:gket        EncliticOrEnd;
+[A_3Du][P_3Sg]:iik        EncliticOrEnd; [A_3Du][P_3Pl]:kek        EncliticOrEnd; [A_3Du][P_3Du]:gkek        EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[A_1Sg][P_3Sg]:ka         EncliticOrEnd; [A_1Sg][P_3Pl]:nka        EncliticOrEnd; [A_1Sg][P_3Du]:gka         EncliticOrEnd;
+[A_1Pl][P_3Sg]:vvut       EncliticOrEnd; [A_1Pl][P_3Pl]:put        EncliticOrEnd; [A_1Pl][P_3Du]:gput        EncliticOrEnd;
+[A_1Du][P_3Sg]:vvuk       EncliticOrEnd; [A_1Du][P_3Pl]:puk        EncliticOrEnd; [A_1Du][P_3Du]:gpuk        EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[A_2Sg][P_3Sg]:n          EncliticOrEnd; [A_2Sg][P_3Pl]:ten        EncliticOrEnd; [A_2Sg][P_3Du]:gken        EncliticOrEnd;
+[A_2Pl][P_3Sg]:ssi        EncliticOrEnd; [A_2Pl][P_3Pl]:ci         EncliticOrEnd; [A_2Pl][P_3Du]:gci         EncliticOrEnd;
+[A_2Du][P_3Sg]:ssek       EncliticOrEnd; [A_2Du][P_3Pl]:tek        EncliticOrEnd; [A_2Du][P_3Du]:gtek        EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[A_3Sg][P_1Sg]:iinga      EncliticOrEnd; [A_3Sg][P_1Pl]:iikut      EncliticOrEnd; [A_3Sg][P_1Du]:iikuk       EncliticOrEnd;
+[A_3Pl][P_1Sg]:iitnga     EncliticOrEnd; [A_3Pl][P_1Pl]:aitkut     EncliticOrEnd; [A_3Pl][P_1Du]:aitkuk      EncliticOrEnd;
+[A_3Du][P_1Sg]:iignga     EncliticOrEnd; [A_3Du][P_1Pl]:iigkut     EncliticOrEnd; [A_3Du][P_1Du]:iigkuk      EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+!                                      |                                        |                                         |
+!                                      |                                        |                                         |
+!                                      |                                        |                                         |
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[A_2Sg][P_1Sg]:vnga       EncliticOrEnd; [A_2Sg][P_1Pl]:vkut       EncliticOrEnd; [A_2Sg][P_1Du]:vkuk        EncliticOrEnd;
+[A_2Pl][P_1Sg]:vcia       EncliticOrEnd; [A_2Pl][P_1Pl]:vcikut     EncliticOrEnd; [A_2Pl][P_1Du]:vcikuk      EncliticOrEnd;
+[A_2Du][P_1Sg]:vtegnga    EncliticOrEnd; [A_2Du][P_1Pl]:vtegkut    EncliticOrEnd; [A_2Du][P_1Du]:vtegkuk     EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[A_3Sg][P_2Sg]:iiten      EncliticOrEnd; [A_3Sg][P_2Pl]:iici       EncliticOrEnd; [A_3Sg][P_2Du]:iitek       EncliticOrEnd;
+[A_3Pl][P_2Sg]:iitgen     EncliticOrEnd; [A_3Pl][P_2Pl]:aiceci     EncliticOrEnd; [A_3Pl][P_2Du]:aicetek     EncliticOrEnd;
+[A_3Du][P_2Sg]:iigten     EncliticOrEnd; [A_3Du][P_2Pl]:iigci      EncliticOrEnd; [A_3Du][P_2Du]:iigtek      EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[A_1Sg][P_2Sg]:mken       EncliticOrEnd; [A_1Sg][P_2Pl]:mci        EncliticOrEnd; [A_1Sg][P_2Du]:mtek        EncliticOrEnd;
+[A_1Pl][P_2Sg]:mteggen    EncliticOrEnd; [A_1Pl][P_2Pl]:mceci      EncliticOrEnd; [A_1Pl][P_2Du]:mcetek      EncliticOrEnd;
+[A_1Du][P_2Sg]:megten     EncliticOrEnd; [A_1Du][P_2Pl]:megci      EncliticOrEnd; [A_1Du][P_2Du]:megtek      EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+!                                      |                                        |                                         |
+!                                      |                                        |                                         |
+!                                      |                                        |                                         |
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -14701,298 +14758,6 @@ LEXICON TransitiveConnectiveCtmp
 !                                      |                                        |                                         |
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 
-
-LEXICON Demonstrative
-!--------------------------|----------------------------|-----------------------------|
-!          extended        |         restricted         |           obscured          |
-!--------------------------|----------------------------|-----------------------------|
-! OVER THERE                                                                          |
-! or GOING AWAY (au͡g)                                                                 |
-!--------------------------|----------------------------|-----------------------------|
-au͡g                DemAbsSg; ing                DemAbsSg; am                  DemAbsSg;
-au͡gʼu           DemNonAbsSg; ingʼu           DemNonAbsSg; amʼu             DemNonAbsSg;
-au͡gku      DemIntermedNonSg; ingku      DemIntermedNonSg; amku        DemIntermedNonSg;
-awku       DemIntermedNonSg;                                                                
-ava              DemAdv2Ter; yaa             DemAdv2Ter; ama                   DemAdv; 
-!--------------------------|----------------------------|-----------------------------|
-! ACROSS THERE                                                                        |
-!--------------------------|----------------------------|-----------------------------|
-ag                 DemAbsSg; ik                 DemAbsSg; akem                DemAbsSg;
-                             ikegg              DemAbsSg;                             
-agʼu            DemNonAbsSg; ikʼu            DemNonAbsSg; akʼmu            DemNonAbsSg;
-                             ikgu            DemNonAbsSg;                             
-agku       DemIntermedNonSg; ikegku     DemIntermedNonSg; akemku      DemIntermedNonSg;
-agaa             DemAdv2Ter; ika              DemAdv2Ter; akma                  DemAdv;
-ii               DemAdv2Ter;                                                         
-!--------------------------|----------------------------|-----------------------------|
-! UP THE SLOPE                                                                        |
-!--------------------------|----------------------------|-----------------------------|
-pau͡g               DemAbsSg; ping               DemAbsSg; pam                 DemAbsSg;
-pau͡gʼu          DemNonAbsSg; pingʼu          DemNonAbsSg; pamʼu            DemNonAbsSg;
-pau͡gku     DemIntermedNonSg; pingku     DemIntermedNonSg; pamku       DemIntermedNonSg;
-pava             DemAdv2Ter; pia              DemAdv2Ter; pama                  DemAdv; 
-!--------------------------|----------------------------|-----------------------------|
-! UP ABOVE                                                                            |
-!--------------------------|----------------------------|-----------------------------|
-pag                DemAbsSg; pik                DemAbsSg; pakem               DemAbsSg;
-                             pikegg             DemAbsSg;
-pagʼu           DemNonAbsSg; pikʼu           DemNonAbsSg; pakʼmu           DemNonAbsSg;
-                             pikgu           DemNonAbsSg;
-pagku      DemIntermedNonSg; pikegku    DemIntermedNonSg; pakemku     DemIntermedNonSg;
-pagaa            DemAdv2Ter; pika             DemAdv2Ter; pakma                 DemAdv; 
-pii              DemAdv2Ter;
-!--------------------------|----------------------------|-----------------------------|
-! INSIDE, INLAND, OR UPRIVER                                                          |
-!--------------------------|----------------------------|-----------------------------|
-qau͡g               DemAbsSg; kiug               DemAbsSg; qam                 DemAbsSg;
-                             kiu͡g               DemAbsSg;
-qau͡gʼu          DemNonAbsSg; kiugu           DemNonAbsSg; qamʼu            DemNonAbsSg;
-                             kiu͡gʼu          DemNonAbsSg;
-qau͡gku     DemIntermedNonSg; kiugku     DemIntermedNonSg; qamku       DemIntermedNonSg;
-                             kiu͡gku     DemIntermedNonSg;
-qava             DemAdv2Ter; kia              DemAdv2Ter; qama                  DemAdv; 
-!--------------------------|----------------------------|-----------------------------|
-! OUTSIDE                                                                             |
-!--------------------------|----------------------------|-----------------------------|
-qag                DemAbsSg; kegg               DemAbsSg; qakem               DemAbsSg;
-qagʼu           DemNonAbsSg; keggʼu          DemNonAbsSg; qakʼmu           DemNonAbsSg;
-qagku      DemIntermedNonSg; kegku      DemIntermedNonSg; qakemku     DemIntermedNonSg;
-qagaa            DemAdv2Ter; kegga            DemAdv2Ter; qakma                 DemAdv; 
-qii              DemAdv2Ter;
-!--------------------------|----------------------------|-----------------------------|
-! DOWN BELOW OR DOWN THE SLOPE                                                        |
-!--------------------------|----------------------------|-----------------------------| 
-                             ka              DemAbsSgIrr; cam                 DemAbsSg;
-unʼu            DemNonAbsSg; katʼu           DemNonAbsSg; camʼu            DemNonAbsSg;
-unku       DemIntermedNonSg; kanku      DemIntermedNonSg; camku       DemIntermedNonSg;
-una              DemAdv2Ter; kana             DemAdv2Ter; cama                  DemAdv;
-un[DemPro][Abs][Unpd][Sg]:unʼa             EncliticOrEnd; 
-un-@+yuuq[DemPro][Abs][Unpd][Sg]:unyuuq    EncliticOrEnd;  
-un-@+suuq[DemPro][Abs][Unpd][Sg]:unsuuq    EncliticOrEnd;  
-!--------------------------|----------------------------|-----------------------------|
-! DOWNRIVER OR NEAR THE EXIT                                                          |
-!--------------------------|----------------------------|-----------------------------|
-uneg               DemAbsSg; ug                 DemAbsSg; cakem               DemAbsSg;
-ungʼu           DemNonAbsSg; ugʼu            DemNonAbsSg; cakʼmu           DemNonAbsSg;
-unegku     DemIntermedNonSg; ugku       DemIntermedNonSg; cakemku     DemIntermedNonSg;
-unʼga            DemAdv2Ter; ua               DemAdv2Ter; cakma                 DemAdv; 
-unʼgaa           DemAdv2Ter;
-!--------------------------|----------------------------|-----------------------------|
-! HERE, NEAR SPEAKER                                                                  |
-!--------------------------|----------------------------|-----------------------------|
-ma              DemAbsSgIrr; u                  DemAbsSg; im                  DemAbsSg;
-matʼu           DemNonAbsSg; uu              DemNonAbsSg; imʼu             DemNonAbsSg;
-                                                          imu              DemNonAbsSg;
-maku       DemIntermedNonSg; uku        DemIntermedNonSg; imku        DemIntermedNonSg;
-maa              DemAdv2Ter; wa                   DemAdv; 
-                                                          ima                   DemAdv;
-uu[DemPro][Via][Unpd][Sg]:uuggun      EncliticOrEnd;  
-uu[DemAdv][Via]:uuggun                EncliticOrEnd;                                                          
-maa[DemAdv][Equ]:maaten                    EncliticOrEnd;
-wa[DemAdv][Equ]:waten                      EncliticOrEnd;
-
-!--------------------------|----------------------------|-----------------------------|
-! THERE, NEAR LISTENER OR IN CONTEXT                                                  |
-!--------------------------|----------------------------|-----------------------------|
-tama               DemAbsSg; tau                DemAbsSg; 
-tamatu          DemNonAbsSg; tau             DemNonAbsSg; 
-tamaku     DemIntermedNonSg; tauku      DemIntermedNonSg; 
-tamaa            DemAdv2Ter; tua                  DemAdv;  
-                             tava                 DemAdv;
-                                                         
-tua[DemAdv][Equ]:tuaten                    EncliticOrEnd;
-tava[DemAdv][Equ]:tavaten                  EncliticOrEnd;
-tayima         EncliticOrEnd;
-taima          EncliticOrEnd;
-!--------------------------|----------------------------|-----------------------------|
-! COMING THIS WAY                                                                     |
-!--------------------------|----------------------------|-----------------------------|
-uk                 DemAbsSg;
-ukegg              DemAbsSg; 
-ukʼu            DemNonAbsSg;
-ukgu            DemNonAbsSg;
-ukegku     DemIntermedNonSg; 
-uka              DemAdv2Ter;  
-!--------------------------|----------------------------|-----------------------------|
-
-
-LEXICON DemAbsSg
-[DemPro][Abs][Unpd][Sg]:+na             EncliticOrEnd;
-[DemPro]-–kucir[N→N]:–kucir             NounPostbase; ! one of the same kind as N
-[DemPro]-@+suuq[Voc][Unpd][Sg]:@+suuq   EncliticOrEnd; ! singular vocative (calling) form
-[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+yuuq   EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
-
-LEXICON DemAbsSgIrr
-t[DemPro][Abs][Unpd][Sg]:+nʼa           EncliticOrEnd;
-t[DemPro]-–kucir[N→N]:–kucir            NounPostbase;  ! one of the same kind as N
-t[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
-t[DemPro]-@+suuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! singular vocative (calling) form
-
-LEXICON DemNonAbsSg
-[DemPro][Rel][Unpd][Sg]:.m              EncliticOrEnd;
-[DemPro][Abl_Mod][Unpd][Sg]:.mek        EncliticOrEnd;
-[DemPro][Loc][Unpd][Sg]:.mi             EncliticOrEnd;
-[DemPro][Ter][Unpd][Sg]:.mun            EncliticOrEnd;
-[DemPro][Via][Unpd][Sg]:.kun            EncliticOrEnd;
-[DemPro][Equ][Unpd][Sg]:.tun            EncliticOrEnd;
-
-LEXICON DemIntermedNonSg 
-[DemPro][Abs][Unpd][Pl]:.t              EncliticOrEnd;
-[DemPro][Abs][Unpd][Du]:.k              EncliticOrEnd;
-[DemPro][Rel][Unpd][Pl]:.t              EncliticOrEnd;
-[DemPro][Rel][Unpd][Du]:.k              EncliticOrEnd;
-[DemPro][Abl_Mod][Unpd][Pl]:.nek        EncliticOrEnd;
-[DemPro][Abl_Mod][Unpd][Du]:.gnek       EncliticOrEnd;
-[DemPro][Loc][Unpd][Pl]:.ni             EncliticOrEnd;
-[DemPro][Loc][Unpd][Du]:.gni            EncliticOrEnd;
-[DemPro][Ter][Unpd][Pl]:.nun            EncliticOrEnd;
-[DemPro][Ter][Unpd][Du]:.gnun           EncliticOrEnd;
-[DemPro][Via][Unpd][Pl]:.tgun           EncliticOrEnd;
-[DemPro][Via][Unpd][Du]:.negnun         EncliticOrEnd;
-[DemPro][Equ][Unpd][Pl]:.cetun          EncliticOrEnd;
-[DemPro][Equ][Unpd][Du]:.gcetun         EncliticOrEnd;
-[DemPro][Voc][Unpd][Pl]:.ut             EncliticOrEnd;
-[DemPro][Voc][Unpd][Du]:.uk             EncliticOrEnd;
-[DemPro]-~+miu[N→N]:~+miu               NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
-
-LEXICON DemAdv2Ter
-DemAdv;
-[DemAdv]-–qlir*[N→N]:–qlir*             NounPostbase; ! the one located far in the area or space or time denoted by N
-[DemAdv]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
-[DemAdv]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
-[DemAdv][Sec_Ter]:.tmun                 EncliticOrEnd;
-[DemAdv][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
-
-
-LEXICON DemAdv
-[DemAdv][Loc]:.ni                       EncliticOrEnd;
-[DemAdv][Ter]:.vet                      EncliticOrEnd;
-[DemAdv][Abl]:.ken                      EncliticOrEnd;
-[DemAdv][Via]:.ggun                     EncliticOrEnd;
-[DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
-[DemAdv][Loc]-ete[N→V]:%%~nete          VerbPostbase;
-![DemAdv][Loc]-ete[N→V]:(ʼa)+nte         VerbPostbase;
-[DemAdv]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
-[DemAdv][Ter]+virte[N→V]:.virte         VerbPostbase;
-[DemAdv][Via]+gguir[N→V]:.gguir         VerbPostbase;
-
-
-LEXICON QuantQual
-allakar        QuantQualPostbase; ! separately
-kesir          QuantQualPostbase; ! only; alone
-keyir          QuantQualPostbase; ! only; alone
-kii            QuantQualPostbase; ! only; alone
-kii            VerbEte; ! only; alone
-kiir           QuantQualPostbase; ! only; alone
-tamar          QuantQualPostbase; ! all; whole; entire; every
-tamalkur       QuantQualPostbase; ! all; whole; entire; every
-
-
-LEXICON QuantQualPostbase
-QuantQualInflection;
--–rrar*[N→N]:–rrar*      QuantQualPostbase; ! just a little N; a little bit of N; a few N; and -rrar-to V a little; to just barely V
-
-
-LEXICON QuantQualInflection
-!---------------------------------|
-!  Quantifier-Qualifier Endings   |
-!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-                                                                                                [Quant_Qual][P_3Sg]:%:(ng)an      EncliticOrEnd;
-                                                                                                [Quant_Qual][P_3Pl]:%:(ng)ita     EncliticOrEnd;
-                                                                                                [Quant_Qual][P_3Du]:%%%:(e)gkenka EncliticOrEnd;
-!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-[Quant_Qual][S_1Sg]:+ma           EncliticOrEnd;[Quant_Qual][A_1Sg]:+ma           EncliticOrEnd;[Quant_Qual][P_1Sg]:+ma           EncliticOrEnd;
-[Quant_Qual][S_1Pl]:–mta          EncliticOrEnd;[Quant_Qual][A_1Pl]:–mta          EncliticOrEnd;[Quant_Qual][P_1Pl]:–mta          EncliticOrEnd;
-[Quant_Qual][S_1Du]:–megnuk       EncliticOrEnd;[Quant_Qual][A_1Du]:–megnuk       EncliticOrEnd;[Quant_Qual][P_1Du]:–megnuk       EncliticOrEnd;
-!----------------------------------------------|!----------------------------------------------|-----------------------------------------------|
-[Quant_Qual][S_2Sg]:+p/.vet       EncliticOrEnd;[Quant_Qual][A_2Sg]:+p/.vet       EncliticOrEnd;[Quant_Qual][P_2Sg]:+p/.vet       EncliticOrEnd;
-[Quant_Qual][S_2Pl]:+p/.vci       EncliticOrEnd;[Quant_Qual][A_2Pl]:+p/.vci       EncliticOrEnd;[Quant_Qual][P_2Pl]:+p/.vci       EncliticOrEnd;
-[Quant_Qual][S_2Du]:+p/.vtek      EncliticOrEnd;[Quant_Qual][A_2Du]:+p/.vtek      EncliticOrEnd;[Quant_Qual][P_2Du]:+p/.vtek      EncliticOrEnd;
-!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-[Quant_Qual][S_4Sg]:+mi           EncliticOrEnd;[Quant_Qual][A_4Sg]:+mi           EncliticOrEnd;
-[Quant_Qual][S_4Pl]:+meng         EncliticOrEnd;[Quant_Qual][A_4Pl]:+meng         EncliticOrEnd;
-[Quant_Qual][S_4Du]:+mek          EncliticOrEnd;[Quant_Qual][A_4Du]:+mek          EncliticOrEnd;
-!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-
-
-LEXICON Positional
-aci                    PositionalPostbase; ! area below; area under (positional base used only with a possessed ending); mattress; bed; wild potato Hedysarum sp. (additional LI meaning)
-aki                    PositionalPostbase; ! other side; area across; reponse; equivalent; value; coin; money
-akule                  PositionalPostbase; ! midsection; area between; land between two topographical features such as the river and the ocean; tundra
-canir                  PositionalPostbase; ! area beside; space next to
-ciu                    PositionalPostbase; ! area in front (of it); time preceding (it); bow of a boat; forepart
-elate                  PositionalPostbase; ! area outside of
-ilu                    PositionalPostbase; ! interior; area inside; upriver area; inner feelings; intestinal tract
-kelu                   PositionalPostbase; ! area behind, back from the house and away from the river
-kete                   PositionalPostbase; ! area down toward the river or sea; area away from the wall; area down from and in front
-kingu                  PositionalPostbase; ! rear; back part; area behind; stern; time after
-manu                   PositionalPostbase; ! front side of something
-pai                    PositionalPostbase; ! mouth of river; outlet; opening of den, bottle, etc., cockpit of kayak
-qai                    PositionalPostbase; ! surface; top
-qule                   PositionalPostbase; ! area above; ten; ten in cards
-tunge                  PositionalPostbase; ! direction of; area toward
-tunu                   PositionalPostbase; ! back of; area in back of
-
-amate                  NounInflection; ! area behind; area beyond; area on the far side
-au͡gate                 NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
-avate                  NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
-kiate                  NounInflection; ! area up river of –; inside area of — (house of the like)
-uate                   NounInflection; ! area downriver or toward the exit from possessor
-ukate                  NounInflection; ! this side # ukatiini ‘on this side of itʼ
-yaate                  NounInflection; ! area beyond
-
-LEXICON PositionalPostbase
-NounInflection;
-[Positional]-–lirner[N→N]:–lirner           NounPostbase; ! area in the N direction; one of the N direction
-[Positional]-–qlir*[N→N]:–qlir*             NounPostbase; ! the one located far in the area or space or time denoted by N
-[Positional]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
-[Positional]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
-[Positional][Sec_Ter]:.tmun                 EncliticOrEnd;
-[Positional][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
-[Positional]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
-
-
-LEXICON Numeral
-ataucir[Num][Cardinal][Sg]:atauciq                          EncliticOrEnd;
-malrur[Num][Cardinal][Du]:malruk                            EncliticOrEnd;
-pingayur[Num][Cardinal][Pl]:pingayun                        EncliticOrEnd;
-cetamar[Num][Cardinal][Pl]:cetaman                          EncliticOrEnd;
-tallimar[Num][Cardinal][Pl]:talliman                        EncliticOrEnd;
-arvinleg[Num][Cardinal][Pl]:arvinlegen                      EncliticOrEnd;
-arvinleg[Num][Cardinal][Pl]:arvinelgen                      EncliticOrEnd;
-malrunleg[Num][Cardinal][Pl]:malrunlegen                    EncliticOrEnd;
-malrunleg[Num][Cardinal][Pl]:malrunelgen                    EncliticOrEnd;
-pingayunleg[Num][Cardinal][Pl]:pingayunlegen                EncliticOrEnd;
-pingayunleg[Num][Cardinal][Pl]:pingayunelgen                EncliticOrEnd;
-qulngunritar(ar*)[Num][Cardinal][Pl]:qulngunritaʼar         EncliticOrEnd;
-qule[Num][Cardinal][Sg]:qula                                EncliticOrEnd;
-akimiarunritar(ar*)[Num][Cardinal][Pl]:akimiarunritaʼar     EncliticOrEnd;
-akimiar[Num][Cardinal][Pl]:akimiaq                          EncliticOrEnd;
-yuinaunritar(ar*)[Num][Cardinal][Pl]:yuinaunritaʼar         EncliticOrEnd;
-ipiarunritar(ar*)[Num][Cardinal][Pl]:ipiarunritaʼar         EncliticOrEnd;
-yuinar*[Num][Cardinal][Sg]:yuinaq                           EncliticOrEnd;
-ipiar[Num][Cardinal][Sg]:ipiaq                              EncliticOrEnd;
-tiissitsaar[Num][Cardinal][Sg]:tiissitsaaq                  EncliticOrEnd;
-
-ataucir             NounPostbase;
-malrur              NounPostbase;
-pingayur            NounPostbase;
-cetamar             NounPostbase;
-tallimar            NounPostbase;
-arvinleg            NounPostbase;
-malrunleg           NounPostbase;
-pingayunleg         NounPostbase;
-qulngunritar(ar*)   NounPostbase;
-qule                NounPostbase;
-akimiarunritar(ar*) NounPostbase;
-akimiar             NounPostbase;
-yuinaunritar(ar*)   NounPostbase;
-ipiarunritar(ar*)   NounPostbase;
-yuinar              NounPostbase;
-ipiar               NounPostbase;
-tiissitsaar         NounPostbase;
-
-
 LEXICON DimensionalRoot
 aki             DimensionalPostbase; ! value*
 akur            DimensionalPostbase; ! length of a garment*
@@ -15166,6 +14931,361 @@ QuantQualInflection;
 -+te[V→V]:+te             VerbPostbase; ! to act on one so as to cause it to V
 -@–ngqa[V→V]:@–ngqa       VerbPostbase; ! to be in a state of V or of having V-ed or having been V-ed
 -@–ngqa[V→V]:@–ngqar      QuantQualInflection; ! to be in a state of V or of having V-ed or having been V-ed
+
+
+LEXICON PersonalPronoun
+
+!-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
+!                singular                       |                     plural                         |                      dual                          |                |
+!-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
+!                                               |                                                    |                                                    |  ! 1st Person  |
+wang[PerPro][Abs][1Sg]:wii         EncliticOrEnd; wang[PerPro][Abs][1Pl]:wangkuta       EncliticOrEnd; wang[PerPro][Abs][1Du]:wangkuk        EncliticOrEnd;  ! Abs         |
+wang[PerPro][Abs][1Sg]:wiinga      EncliticOrEnd;                                                    !                                                    !                |
+wang[PerPro][Rel][1Sg]:wii         EncliticOrEnd; wang[PerPro][Rel][1Pl]:wangkuta       EncliticOrEnd; wang[PerPro][Rel][1Du]:wangkuk        EncliticOrEnd;  ! Rel         |
+wang[PerPro][Rel][1Sg]:wiinga      EncliticOrEnd;                                                    !                                                    !                |
+wang[PerPro][Abl_Mod][1Sg]:wangnek EncliticOrEnd; wang[PerPro][Abl_Mod][1Pl]:wangkutnek EncliticOrEnd; wang[PerPro][Abl_Mod][1Du]:wangkugnek EncliticOrEnd;  ! Abl_Mod     |
+wang[PerPro][Loc][1Sg]:wangni      EncliticOrEnd; wang[PerPro][Loc][1Pl]:wangkutni      EncliticOrEnd; wang[PerPro][Loc][1Du]:wangkugni      EncliticOrEnd;  ! Loc         |
+wang[PerPro][Ter][1Sg]:wangnun     EncliticOrEnd; wang[PerPro][Ter][1Pl]:wangkutnun     EncliticOrEnd; wang[PerPro][Ter][1Du]:wangkugnun     EncliticOrEnd;  ! Ter         |
+wang[PerPro][Via][1Sg]:wangkun     EncliticOrEnd; wang[PerPro][Via][1Pl]:wangkutgun     EncliticOrEnd; wang[PerPro][Via][1Du]:wangkugnegun   EncliticOrEnd;  ! Via         |
+wang[PerPro][Equ][1Sg]:wangtun     EncliticOrEnd; wang[PerPro][Equ][1Pl]:wangkutun      EncliticOrEnd; wang[PerPro][Equ][1Du]:wangkugtun     EncliticOrEnd;  ! Equ         |
+wang[PerPro][Equ][1Sg]:wangcetun   EncliticOrEnd; wang[PerPro][Equ][1Pl]:wangkucetun    EncliticOrEnd; wang[PerPro][Equ][1Du]:wangkugcetun   EncliticOrEnd;                !
+!-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
+!                                               |                                                    |                                                    |  ! 2nd Person  |
+ell[PerPro][Abs][2Sg]:elpet        EncliticOrEnd; ell[PerPro][Abs][2Pl]:elpeci          EncliticOrEnd; ell[PerPro][Abs][2Du]:elpetek         EncliticOrEnd;  ! Abs         |
+ell[PerPro][Rel][2Sg]:elpet        EncliticOrEnd; ell[PerPro][Rel][2Pl]:elpeci          EncliticOrEnd; ell[PerPro][Rel][2Du]:elpetek         EncliticOrEnd;  ! Rel         |
+ell[PerPro][Abl_Mod][2Sg]:elpenek  EncliticOrEnd; ell[PerPro][Abl_Mod][2Pl]:elpeceńek   EncliticOrEnd; ell[PerPro][Abl_Mod][2Du]:elpetegnek  EncliticOrEnd;  ! Abl_Mod     |
+ell[PerPro][Loc][2Sg]:elpeni       EncliticOrEnd; ell[PerPro][Loc][2Pl]:elpeceńi        EncliticOrEnd; ell[PerPro][Loc][2Du]:elpetegni       EncliticOrEnd;  ! Loc         |
+ell[PerPro][Ter][2Sg]:elpenun      EncliticOrEnd; ell[PerPro][Ter][2Pl]:elpeceńun       EncliticOrEnd; ell[PerPro][Ter][2Du]:elpetegnun      EncliticOrEnd;  ! Ter         |
+ell[PerPro][Via][2Sg]:elpetgun     EncliticOrEnd; ell[PerPro][Via][2Pl]:elpecetgun      EncliticOrEnd; ell[PerPro][Via][2Du]:elpetegnegun    EncliticOrEnd;  ! Via         |
+ell[PerPro][Equ][2Sg]:elpetun      EncliticOrEnd; ell[PerPro][Equ][2Pl]:elpecitun       EncliticOrEnd; ell[PerPro][Equ][2Du]:elpetegtun      EncliticOrEnd;  ! Equ         |
+ell[PerPro][Equ][2Sg]:elpecetun    EncliticOrEnd; ell[PerPro][Equ][2Pl]:elpecicetun     EncliticOrEnd; ell[PerPro][Equ][2Du]:elpetegcetun    EncliticOrEnd;                !
+!-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
+!                                               |                                                    |                                                    |  ! 3rd Person  |
+ell[PerPro][Abs][3Sg]:ellii        EncliticOrEnd; ell[PerPro][Abs][3Pl]:ellait          EncliticOrEnd; ell[PerPro][Abs][3Du]:elkek           EncliticOrEnd;  ! Abs         |
+ell[PerPro][Rel][3Sg]:elliin       EncliticOrEnd; ell[PerPro][Rel][3Pl]:ellaita         EncliticOrEnd; ell[PerPro][Rel][3Du]:elkenka         EncliticOrEnd;  ! Rel         |
+ell[PerPro][Abl_Mod][3Sg]:elliinek EncliticOrEnd; ell[PerPro][Abl_Mod][3Pl]:ellaitnek   EncliticOrEnd; ell[PerPro][Abl_Mod][3Du]:elkegnek    EncliticOrEnd;  ! Abl_Mod     |
+ell[PerPro][Loc][3Sg]:elliini      EncliticOrEnd; ell[PerPro][Loc][3Pl]:ellaitni        EncliticOrEnd; ell[PerPro][Loc][3Du]:elkegni         EncliticOrEnd;  ! Loc         |
+ell[PerPro][Ter][3Sg]:elliinun     EncliticOrEnd; ell[PerPro][Ter][3Pl]:ellaitnun       EncliticOrEnd; ell[PerPro][Ter][3Du]:elkegnun        EncliticOrEnd;  ! Ter         |
+ell[PerPro][Via][3Sg]:elliikun     EncliticOrEnd; ell[PerPro][Via][3Pl]:ellaitgun       EncliticOrEnd; ell[PerPro][Via][3Du]:elkegnegun      EncliticOrEnd;  ! Via         |
+ell[PerPro][Equ][3Sg]:elliitun     EncliticOrEnd; ell[PerPro][Equ][3Pl]:ellaitun        EncliticOrEnd; ell[PerPro][Equ][3Du]:elkegtun        EncliticOrEnd;  ! Equ         |
+ell[PerPro][Equ][3Sg]:elliicetun   EncliticOrEnd; ell[PerPro][Equ][3Pl]:ellaicetun      EncliticOrEnd; ell[PerPro][Equ][3Du]:elkegcetun      EncliticOrEnd;                !
+!-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
+!                                               |                                                    |                                                    |  ! 4th Person  |
+ell[PerPro][Abs][4Sg]:ellmi        EncliticOrEnd; ell[PerPro][Abs][4Pl]:ellmeng         EncliticOrEnd; ell[PerPro][Abs][4Du]:ellmek          EncliticOrEnd;  ! Abs         |
+ell[PerPro][Rel][4Sg]:ellmi        EncliticOrEnd; ell[PerPro][Rel][4Pl]:ellmeng         EncliticOrEnd; ell[PerPro][Rel][4Du]:ellmek          EncliticOrEnd;  ! Rel         |
+ell[PerPro][Abl_Mod][4Sg]:ellminek EncliticOrEnd; ell[PerPro][Abl_Mod][4Pl]:ellmeggnek  EncliticOrEnd; ell[PerPro][Abl_Mod][4Du]:ellmegnek   EncliticOrEnd;  ! Abl_Mod     |
+ell[PerPro][Loc][4Sg]:ellmini      EncliticOrEnd; ell[PerPro][Loc][4Pl]:ellmeggni       EncliticOrEnd; ell[PerPro][Loc][4Du]:ellmegni        EncliticOrEnd;  ! Loc         |
+ell[PerPro][Ter][4Sg]:ellminun     EncliticOrEnd; ell[PerPro][Ter][4Pl]:ellmeggnun      EncliticOrEnd; ell[PerPro][Ter][4Du]:ellmegnun       EncliticOrEnd;  ! Ter         |
+ell[PerPro][Via][4Sg]:ellmikun     EncliticOrEnd; ell[PerPro][Via][4Pl]:ellmegteggun    EncliticOrEnd; ell[PerPro][Via][4Du]:ellmegnegun     EncliticOrEnd;  ! Via         |
+ell[PerPro][Equ][4Sg]:ellmitun     EncliticOrEnd; ell[PerPro][Equ][4Pl]:ellmegtun       EncliticOrEnd; ell[PerPro][Equ][4Du]:ellmegnegun     EncliticOrEnd;  ! Equ         |
+ell[PerPro][Equ][4Sg]:ellmicetun   EncliticOrEnd; ell[PerPro][Equ][4Pl]:ellmegcetun     EncliticOrEnd;                                                    !                |
+!-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
+
+wang[PerPro][1Sg]-%:~(ng)u[N→V]:wangʼu    VerbPostbase;
+!wang[PerPro][1Pl]-%:~(ng)u[N→V]:          VerbPostbase;
+!wang[PerPro][1Du]-%:~(ng)u[N→V]:          VerbPostbase;
+ell[PerPro][2Sg]-%:~(ng)u[N→V]:elpengu    VerbPostbase;
+!ell[PerPro][2Pl]-%:~(ng)u[N→V]:           VerbPostbase;
+!ell[PerPro][2Du]-%:~(ng)u[N→V]:           VerbPostbase;
+ell[PerPro][3Sg]-%:~(ng)u[N→V]:elliingu   VerbPostbase;
+!ell[PerPro][3Pl]-%:~(ng)u[N→V]:           VerbPostbase;
+!ell[PerPro][3Du]-%:~(ng)u[N→V]:           VerbPostbase;
+!ell[PerPro][4Sg]-%:~(ng)u[N→V]:           VerbPostbase;
+!ell[PerPro][4Pl]-%:~(ng)u[N→V]:           VerbPostbase;
+!ell[PerPro][4Du]-%:~(ng)u[N→V]:           VerbPostbase;
+
+
+LEXICON QuantQual
+allakar        QuantQualPostbase; ! separately
+kesir          QuantQualPostbase; ! only; alone
+keyir          QuantQualPostbase; ! only; alone
+kii            QuantQualPostbase; ! only; alone
+kii            VerbEte; ! only; alone
+kiir           QuantQualPostbase; ! only; alone
+tamar          QuantQualPostbase; ! all; whole; entire; every
+tamalkur       QuantQualPostbase; ! all; whole; entire; every
+
+
+LEXICON QuantQualPostbase
+QuantQualInflection;
+-–rrar*[N→N]:–rrar*      QuantQualPostbase; ! just a little N; a little bit of N; a few N; and -rrar-to V a little; to just barely V
+
+
+LEXICON QuantQualInflection
+!---------------------------------|
+!  Quantifier-Qualifier Endings   |
+!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+                                                                                                [Quant_Qual][P_3Sg]:%:(ng)an      EncliticOrEnd;
+                                                                                                [Quant_Qual][P_3Pl]:%:(ng)ita     EncliticOrEnd;
+                                                                                                [Quant_Qual][P_3Du]:%%%:(e)gkenka EncliticOrEnd;
+!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+[Quant_Qual][S_1Sg]:+ma           EncliticOrEnd;[Quant_Qual][A_1Sg]:+ma           EncliticOrEnd;[Quant_Qual][P_1Sg]:+ma           EncliticOrEnd;
+[Quant_Qual][S_1Pl]:–mta          EncliticOrEnd;[Quant_Qual][A_1Pl]:–mta          EncliticOrEnd;[Quant_Qual][P_1Pl]:–mta          EncliticOrEnd;
+[Quant_Qual][S_1Du]:–megnuk       EncliticOrEnd;[Quant_Qual][A_1Du]:–megnuk       EncliticOrEnd;[Quant_Qual][P_1Du]:–megnuk       EncliticOrEnd;
+!----------------------------------------------|!----------------------------------------------|-----------------------------------------------|
+[Quant_Qual][S_2Sg]:+p/.vet       EncliticOrEnd;[Quant_Qual][A_2Sg]:+p/.vet       EncliticOrEnd;[Quant_Qual][P_2Sg]:+p/.vet       EncliticOrEnd;
+[Quant_Qual][S_2Pl]:+p/.vci       EncliticOrEnd;[Quant_Qual][A_2Pl]:+p/.vci       EncliticOrEnd;[Quant_Qual][P_2Pl]:+p/.vci       EncliticOrEnd;
+[Quant_Qual][S_2Du]:+p/.vtek      EncliticOrEnd;[Quant_Qual][A_2Du]:+p/.vtek      EncliticOrEnd;[Quant_Qual][P_2Du]:+p/.vtek      EncliticOrEnd;
+!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+[Quant_Qual][S_4Sg]:+mi           EncliticOrEnd;[Quant_Qual][A_4Sg]:+mi           EncliticOrEnd;
+[Quant_Qual][S_4Pl]:+meng         EncliticOrEnd;[Quant_Qual][A_4Pl]:+meng         EncliticOrEnd;
+[Quant_Qual][S_4Du]:+mek          EncliticOrEnd;[Quant_Qual][A_4Du]:+mek          EncliticOrEnd;
+!----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+
+
+LEXICON Demonstrative
+!--------------------------|----------------------------|-----------------------------|
+!          extended        |         restricted         |           obscured          |
+!--------------------------|----------------------------|-----------------------------|
+! OVER THERE                                                                          |
+! or GOING AWAY (au͡g)                                                                 |
+!--------------------------|----------------------------|-----------------------------|
+au͡g                DemAbsSg; ing                DemAbsSg; am                  DemAbsSg;
+au͡gʼu           DemNonAbsSg; ingʼu           DemNonAbsSg; amʼu             DemNonAbsSg;
+au͡gku      DemIntermedNonSg; ingku      DemIntermedNonSg; amku        DemIntermedNonSg;
+awku       DemIntermedNonSg;                                                                
+ava              DemAdv2Ter; yaa             DemAdv2Ter; ama                   DemAdv; 
+!--------------------------|----------------------------|-----------------------------|
+! ACROSS THERE                                                                        |
+!--------------------------|----------------------------|-----------------------------|
+ag                 DemAbsSg; ik                 DemAbsSg; akem                DemAbsSg;
+                             ikegg              DemAbsSg;                             
+agʼu            DemNonAbsSg; ikʼu            DemNonAbsSg; akʼmu            DemNonAbsSg;
+                             ikgu            DemNonAbsSg;                             
+agku       DemIntermedNonSg; ikegku     DemIntermedNonSg; akemku      DemIntermedNonSg;
+agaa             DemAdv2Ter; ika              DemAdv2Ter; akma                  DemAdv;
+ii               DemAdv2Ter;                                                         
+!--------------------------|----------------------------|-----------------------------|
+! UP THE SLOPE                                                                        |
+!--------------------------|----------------------------|-----------------------------|
+pau͡g               DemAbsSg; ping               DemAbsSg; pam                 DemAbsSg;
+pau͡gʼu          DemNonAbsSg; pingʼu          DemNonAbsSg; pamʼu            DemNonAbsSg;
+pau͡gku     DemIntermedNonSg; pingku     DemIntermedNonSg; pamku       DemIntermedNonSg;
+pava             DemAdv2Ter; pia              DemAdv2Ter; pama                  DemAdv; 
+!--------------------------|----------------------------|-----------------------------|
+! UP ABOVE                                                                            |
+!--------------------------|----------------------------|-----------------------------|
+pag                DemAbsSg; pik                DemAbsSg; pakem               DemAbsSg;
+                             pikegg             DemAbsSg;
+pagʼu           DemNonAbsSg; pikʼu           DemNonAbsSg; pakʼmu           DemNonAbsSg;
+                             pikgu           DemNonAbsSg;
+pagku      DemIntermedNonSg; pikegku    DemIntermedNonSg; pakemku     DemIntermedNonSg;
+pagaa            DemAdv2Ter; pika             DemAdv2Ter; pakma                 DemAdv; 
+pii              DemAdv2Ter;
+!--------------------------|----------------------------|-----------------------------|
+! INSIDE, INLAND, OR UPRIVER                                                          |
+!--------------------------|----------------------------|-----------------------------|
+qau͡g               DemAbsSg; kiug               DemAbsSg; qam                 DemAbsSg;
+                             kiu͡g               DemAbsSg;
+qau͡gʼu          DemNonAbsSg; kiugu           DemNonAbsSg; qamʼu            DemNonAbsSg;
+                             kiu͡gʼu          DemNonAbsSg;
+qau͡gku     DemIntermedNonSg; kiugku     DemIntermedNonSg; qamku       DemIntermedNonSg;
+                             kiu͡gku     DemIntermedNonSg;
+qava             DemAdv2Ter; kia              DemAdv2Ter; qama                  DemAdv; 
+!--------------------------|----------------------------|-----------------------------|
+! OUTSIDE                                                                             |
+!--------------------------|----------------------------|-----------------------------|
+qag                DemAbsSg; kegg               DemAbsSg; qakem               DemAbsSg;
+qagʼu           DemNonAbsSg; keggʼu          DemNonAbsSg; qakʼmu           DemNonAbsSg;
+qagku      DemIntermedNonSg; kegku      DemIntermedNonSg; qakemku     DemIntermedNonSg;
+qagaa            DemAdv2Ter; kegga            DemAdv2Ter; qakma                 DemAdv; 
+qii              DemAdv2Ter;
+!--------------------------|----------------------------|-----------------------------|
+! DOWN BELOW OR DOWN THE SLOPE                                                        |
+!--------------------------|----------------------------|-----------------------------| 
+                             ka              DemAbsSgIrr; cam                 DemAbsSg;
+unʼu            DemNonAbsSg; katʼu           DemNonAbsSg; camʼu            DemNonAbsSg;
+unku       DemIntermedNonSg; kanku      DemIntermedNonSg; camku       DemIntermedNonSg;
+una              DemAdv2Ter; kana             DemAdv2Ter; cama                  DemAdv;
+un[DemPro][Abs][Unpd][Sg]:unʼa             EncliticOrEnd; 
+un-@+yuuq[DemPro][Abs][Unpd][Sg]:unyuuq    EncliticOrEnd;  
+un-@+suuq[DemPro][Abs][Unpd][Sg]:unsuuq    EncliticOrEnd;  
+!--------------------------|----------------------------|-----------------------------|
+! DOWNRIVER OR NEAR THE EXIT                                                          |
+!--------------------------|----------------------------|-----------------------------|
+uneg               DemAbsSg; ug                 DemAbsSg; cakem               DemAbsSg;
+ungʼu           DemNonAbsSg; ugʼu            DemNonAbsSg; cakʼmu           DemNonAbsSg;
+unegku     DemIntermedNonSg; ugku       DemIntermedNonSg; cakemku     DemIntermedNonSg;
+unʼga            DemAdv2Ter; ua               DemAdv2Ter; cakma                 DemAdv; 
+unʼgaa           DemAdv2Ter;
+!--------------------------|----------------------------|-----------------------------|
+! HERE, NEAR SPEAKER                                                                  |
+!--------------------------|----------------------------|-----------------------------|
+ma              DemAbsSgIrr; u                  DemAbsSg; im                  DemAbsSg;
+matʼu           DemNonAbsSg; uu              DemNonAbsSg; imʼu             DemNonAbsSg;
+                                                          imu              DemNonAbsSg;
+maku       DemIntermedNonSg; uku        DemIntermedNonSg; imku        DemIntermedNonSg;
+maa              DemAdv2Ter; wa                   DemAdv; 
+                                                          ima                   DemAdv;
+uu[DemPro][Via][Unpd][Sg]:uuggun      EncliticOrEnd;  
+uu[DemAdv][Via]:uuggun                EncliticOrEnd;                                                          
+maa[DemAdv][Equ]:maaten                    EncliticOrEnd;
+wa[DemAdv][Equ]:waten                      EncliticOrEnd;
+
+!--------------------------|----------------------------|-----------------------------|
+! THERE, NEAR LISTENER OR IN CONTEXT                                                  |
+!--------------------------|----------------------------|-----------------------------|
+tama               DemAbsSg; tau                DemAbsSg; 
+tamatu          DemNonAbsSg; tau             DemNonAbsSg; 
+tamaku     DemIntermedNonSg; tauku      DemIntermedNonSg; 
+tamaa            DemAdv2Ter; tua                  DemAdv;  
+                             tava                 DemAdv;
+                                                         
+tua[DemAdv][Equ]:tuaten                    EncliticOrEnd;
+tava[DemAdv][Equ]:tavaten                  EncliticOrEnd;
+tayima         EncliticOrEnd;
+taima          EncliticOrEnd;
+!--------------------------|----------------------------|-----------------------------|
+! COMING THIS WAY                                                                     |
+!--------------------------|----------------------------|-----------------------------|
+uk                 DemAbsSg;
+ukegg              DemAbsSg; 
+ukʼu            DemNonAbsSg;
+ukgu            DemNonAbsSg;
+ukegku     DemIntermedNonSg; 
+uka              DemAdv2Ter;  
+!--------------------------|----------------------------|-----------------------------|
+
+
+LEXICON DemAbsSg
+[DemPro][Abs][Unpd][Sg]:+na             EncliticOrEnd;
+[DemPro][Abs][Unpd][Sg]-–lkug[N→N]:+na–lkug  EncliticOrEnd; ! no-good, darned N
+[DemPro]-–kucir[N→N]:–kucir             NounPostbase; ! one of the same kind as N
+[DemPro]-@+suuq[Voc][Unpd][Sg]:@+suuq   EncliticOrEnd; ! singular vocative (calling) form
+[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+yuuq   EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+
+LEXICON DemAbsSgIrr
+t[DemPro][Abs][Unpd][Sg]:+nʼa           EncliticOrEnd;
+t[DemPro]-–kucir[N→N]:–kucir            NounPostbase;  ! one of the same kind as N
+t[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+t[DemPro]-@+suuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! singular vocative (calling) form
+
+LEXICON DemNonAbsSg
+[DemPro][Rel][Unpd][Sg]:.m              EncliticOrEnd;
+[DemPro][Abl_Mod][Unpd][Sg]:.mek        EncliticOrEnd;
+[DemPro][Loc][Unpd][Sg]:.mi             EncliticOrEnd;
+[DemPro][Ter][Unpd][Sg]:.mun            EncliticOrEnd;
+[DemPro][Via][Unpd][Sg]:.kun            EncliticOrEnd;
+[DemPro][Equ][Unpd][Sg]:.tun            EncliticOrEnd;
+
+LEXICON DemIntermedNonSg 
+[DemPro][Abs][Unpd][Pl]:.t              EncliticOrEnd;
+[DemPro][Abs][Unpd][Du]:.k              EncliticOrEnd;
+[DemPro][Rel][Unpd][Pl]:.t              EncliticOrEnd;
+[DemPro][Rel][Unpd][Du]:.k              EncliticOrEnd;
+[DemPro][Abl_Mod][Unpd][Pl]:.nek        EncliticOrEnd;
+[DemPro][Abl_Mod][Unpd][Du]:.gnek       EncliticOrEnd;
+[DemPro][Loc][Unpd][Pl]:.ni             EncliticOrEnd;
+[DemPro][Loc][Unpd][Du]:.gni            EncliticOrEnd;
+[DemPro][Ter][Unpd][Pl]:.nun            EncliticOrEnd;
+[DemPro][Ter][Unpd][Du]:.gnun           EncliticOrEnd;
+[DemPro][Via][Unpd][Pl]:.tgun           EncliticOrEnd;
+[DemPro][Via][Unpd][Du]:.negnun         EncliticOrEnd;
+[DemPro][Equ][Unpd][Pl]:.cetun          EncliticOrEnd;
+[DemPro][Equ][Unpd][Du]:.gcetun         EncliticOrEnd;
+[DemPro][Voc][Unpd][Pl]:.ut             EncliticOrEnd;
+[DemPro][Voc][Unpd][Du]:.uk             EncliticOrEnd;
+[DemPro]-~+miu[N→N]:~+miu               NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
+
+LEXICON DemAdv2Ter
+DemAdv;
+[DemAdv]-–qlir*[N→N]:–qlir*             NounPostbase; ! the one located far in the area or space or time denoted by N
+[DemAdv]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
+[DemAdv]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
+[DemAdv][Sec_Ter]:.tmun                 EncliticOrEnd;
+[DemAdv][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
+
+
+LEXICON DemAdv
+[DemAdv][Loc]:.ni                       EncliticOrEnd;
+[DemAdv][Ter]:.vet                      EncliticOrEnd;
+[DemAdv][Abl]:.ken                      EncliticOrEnd;
+[DemAdv][Via]:.ggun                     EncliticOrEnd;
+[DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+[DemAdv][Loc]-ete[N→V]:%%~nete          VerbPostbase;
+![DemAdv][Loc]-ete[N→V]:(ʼa)+nte         VerbPostbase;
+[DemAdv]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
+[DemAdv][Ter]+virte[N→V]:.virte         VerbPostbase;
+[DemAdv][Via]+gguir[N→V]:.gguir         VerbPostbase;
+
+
+LEXICON Positional
+aci                    PositionalPostbase; ! area below; area under (positional base used only with a possessed ending); mattress; bed; wild potato Hedysarum sp. (additional LI meaning)
+aki                    PositionalPostbase; ! other side; area across; reponse; equivalent; value; coin; money
+akule                  PositionalPostbase; ! midsection; area between; land between two topographical features such as the river and the ocean; tundra
+canir                  PositionalPostbase; ! area beside; space next to
+ciu                    PositionalPostbase; ! area in front (of it); time preceding (it); bow of a boat; forepart
+elate                  PositionalPostbase; ! area outside of
+ilu                    PositionalPostbase; ! interior; area inside; upriver area; inner feelings; intestinal tract
+kelu                   PositionalPostbase; ! area behind, back from the house and away from the river
+kete                   PositionalPostbase; ! area down toward the river or sea; area away from the wall; area down from and in front
+kingu                  PositionalPostbase; ! rear; back part; area behind; stern; time after
+manu                   PositionalPostbase; ! front side of something
+pai                    PositionalPostbase; ! mouth of river; outlet; opening of den, bottle, etc., cockpit of kayak
+qai                    PositionalPostbase; ! surface; top
+qule                   PositionalPostbase; ! area above; ten; ten in cards
+tunge                  PositionalPostbase; ! direction of; area toward
+tunu                   PositionalPostbase; ! back of; area in back of
+
+amate                  NounInflection; ! area behind; area beyond; area on the far side
+au͡gate                 NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
+avate                  NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
+kiate                  NounInflection; ! area up river of –; inside area of — (house of the like)
+uate                   NounInflection; ! area downriver or toward the exit from possessor
+ukate                  NounInflection; ! this side # ukatiini ‘on this side of itʼ
+yaate                  NounInflection; ! area beyond
+
+LEXICON PositionalPostbase
+NounInflection;
+[Positional]-–lirner[N→N]:–lirner           NounPostbase; ! area in the N direction; one of the N direction
+[Positional]-–qlir*[N→N]:–qlir*             NounPostbase; ! the one located far in the area or space or time denoted by N
+[Positional]-–qsig[N→V]:–qsig               VerbPostbase; ! to be far in the direction denoted by N
+[Positional]-–qsigi[N→V]:–qsigi             VerbPostbase; ! to get farther into the area denoted by N
+[Positional][Sec_Ter]:.tmun                 EncliticOrEnd;
+[Positional][Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
+[Positional]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
+
+
+LEXICON Numeral
+ataucir[Num][Cardinal][Sg]:atauciq                          EncliticOrEnd;
+malrur[Num][Cardinal][Du]:malruk                            EncliticOrEnd;
+pingayur[Num][Cardinal][Pl]:pingayun                        EncliticOrEnd;
+cetamar[Num][Cardinal][Pl]:cetaman                          EncliticOrEnd;
+tallimar[Num][Cardinal][Pl]:talliman                        EncliticOrEnd;
+arvinleg[Num][Cardinal][Pl]:arvinlegen                      EncliticOrEnd;
+arvinleg[Num][Cardinal][Pl]:arvinelgen                      EncliticOrEnd;
+malrunleg[Num][Cardinal][Pl]:malrunlegen                    EncliticOrEnd;
+malrunleg[Num][Cardinal][Pl]:malrunelgen                    EncliticOrEnd;
+pingayunleg[Num][Cardinal][Pl]:pingayunlegen                EncliticOrEnd;
+pingayunleg[Num][Cardinal][Pl]:pingayunelgen                EncliticOrEnd;
+qulngunritar(ar*)[Num][Cardinal][Pl]:qulngunritaʼar         EncliticOrEnd;
+qule[Num][Cardinal][Sg]:qula                                EncliticOrEnd;
+akimiarunritar(ar*)[Num][Cardinal][Pl]:akimiarunritaʼar     EncliticOrEnd;
+akimiar[Num][Cardinal][Pl]:akimiaq                          EncliticOrEnd;
+yuinaunritar(ar*)[Num][Cardinal][Pl]:yuinaunritaʼar         EncliticOrEnd;
+ipiarunritar(ar*)[Num][Cardinal][Pl]:ipiarunritaʼar         EncliticOrEnd;
+yuinar*[Num][Cardinal][Sg]:yuinaq                           EncliticOrEnd;
+ipiar[Num][Cardinal][Sg]:ipiaq                              EncliticOrEnd;
+tiissitsaar[Num][Cardinal][Sg]:tiissitsaaq                  EncliticOrEnd;
+
+ataucir             NounPostbase;
+malrur              NounPostbase;
+pingayur            NounPostbase;
+cetamar             NounPostbase;
+tallimar            NounPostbase;
+arvinleg            NounPostbase;
+malrunleg           NounPostbase;
+pingayunleg         NounPostbase;
+qulngunritar(ar*)   NounPostbase;
+qule                NounPostbase;
+akimiarunritar(ar*) NounPostbase;
+akimiar             NounPostbase;
+yuinaunritar(ar*)   NounPostbase;
+ipiarunritar(ar*)   NounPostbase;
+yuinar              NounPostbase;
+ipiar               NounPostbase;
+tiissitsaar         NounPostbase;
+
 
 
 LEXICON EncliticOrEnd
