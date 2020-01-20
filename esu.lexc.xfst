@@ -81,6 +81,8 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "[Opt_PRS_2Sg_1Sg]" -> "@" "+" ng a                                      .o.
                      "@~+lu/@na" -> "@" n a                 || t e "*" _                      .o.
                      "@~+lu/@na" -> "@" "~" "+" l u                                           .o.
+                     "–lria/@+ngur*" -> "@" "+" ng u r "*"  || t e "*" _                      .o.
+                     "–lria/@+ngur*" -> "–" l r i a                                           .o.
                      "@+p/~v" -> "@" "+" p                  || [ t e ("*") | Con ] _          .o.
                      "@+p/~v" -> "~" v                                                        .o.
                      "+p/.v" -> "+" p e                     || Con _ Con                      .o.
@@ -95,6 +97,14 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "@+cete/.vkar" -> "@" "+" c e t e      || Con _                          .o.
                      "@+cete/.vkar" (->) "@" "+" c e t e    || t e ("*") _                    .o.
                      "@+cete/.vkar" -> "." v k a r                                            .o.
+                     "+a/+aar" -> "@" a a r                 || t e ("*") _                    .o.
+                     "+a/+aar" -> "+" a                                                       .o.
+                     t e ("*") "@+–'(g)ar(ar)te" -> g "+" a r "(ar)" t e   || Vow _           .o. ! Vte -> Vg
+                     t e ("*") "@+–'(g)ar(ar)te" -> "+" a r "(ar)" t e     || Con _           .o. ! Cte -> C
+                     t "ʼ" e "@+–'(g)ar(ar)te" -> s "ʼ" "+" a r "(ar)" t e                    .o. ! tʼe -> sʼ
+                     "@+–'(g)ar(ar)te" -> "–" a r "(ar)" t e               || r _             .o. ! r -> -
+                     "@+–'(g)ar(ar)te" -> "+" a r "(ar)" t e               || g _             .o. ! g -> +
+                     "@+–'(g)ar(ar)te" -> "+" "'" "(g)" a r "(ar)" t e     || Vow _           .o. ! Vow -> +'(g)
                      "+c/.ss" -> "." ss                     || Vow _                          .o.
                      "+c/.ss" -> "+" c                      ;
 
