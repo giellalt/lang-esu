@@ -104,11 +104,11 @@ atur-@~–ke[V→N][N][Abs][1SgPoss][SgPosd]	atunrilkeka
 atur-@~–kengar[V→N][N][Abs][1SgPoss][SgPosd]	atunrilkengaqa
 atur-?pag[V→V][V][Intr][Ind][S_3Sg]	aturpagtuq
 qaner-?pag[V→V][V][Intr][Ind][S_3Sg]	qanpagtuq
-qaner-?pag[V→V][V][Intr][Ind][S_3Sg]	qanpautaa
+qaner-?pag[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	qanpautaa
 nere-?pag[V→V][V][Intr][Ind][S_3Sg]	nerepʼagtuq
-pupsug-?pag[V→V][V][Intr][Ind][S_3Sg]	pupcepʼagaa
-pupsug-?pag[V→V][V][Intr][Ind][S_3Sg]	pupespagaa
-pupsug-?pag[V→V][V][Intr][Ind][S_3Sg]	pupesvagaa
+pupsug-?pag[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	pupcepʼagaa
+pupsug-?pag[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	pupespagaa
+pupsug-?pag[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	pupesvagaa
 alleg-?pag[V→V][V][Intr][Ind][S_3Sg]	alpagtuq
 quser-?pag[V→V][V][Intr][Ind][S_3Sg]	quspagtuq
 nengle-?pag[N→V][V][Intr][Ind][S_3Sg]	nengelvagtuq
@@ -131,7 +131,7 @@ ulte-@nga[V→V][V][Intr][Ind][S_3Sg]	ullesngauq
 ulte-@nga[V→V][V][Intr][Ind][S_3Sg]	ullingauq
 kia[DemAdv]-+var[N→V][V][Intr][Ind][S_3Sg]	kiavartuq
 qule[Positional]-+var[N→V][V][Intr][Ind][S_3Sg]	qulvartuq
-qule[Positional]-+var[N→V][V][Intr][Ind][S_3Sg]	qulvaraa
+qule[Positional]-+var[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	qulvaraa
 nat-+var[N→V][V][Intr][Intrg][S_2Sg]	natvarcit
 kaig-–nrir[V→V][V][Intr][Ind][S_1Sg]	kainrirtua
 nere-–nrir[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	nerenriraa
