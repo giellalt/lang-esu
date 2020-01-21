@@ -209,13 +209,15 @@ LEXICON Root
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Exceptions
-qimugte-–rpag/@vag[N→N]:qimute@vag         NounPostbase; ! qimulvak
-tai[V][Intr][Opt][PRS][S_2Sg]:taitai       EncliticOrEnd; ! come here!
-iqsur-–lirner[N→N]:iqsur–lirner            NounPostbase; ! thing of the left side
-tallirpig-–lirner[N→N]:tallirpig–lirner    NounPostbase; ! right-hand side
-aqum-@–ngqa[V→V]:aqumgar                   QuantQualInflection; ! sitting
-ugaani[N][Loc][3SgPoss][SgPosd]:ugaani     EncliticOrEnd; ! because of; as a consequence of; on account of
-ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ     EncliticOrEnd; ! because of; as a consequence of; on account of
+qimugte-–rpag/@vag[N→N]:qimute@vag                      NounPostbase; ! qimulvak
+tai[V][Intr][Opt][PRS][S_2Sg]:taitai                    EncliticOrEnd; ! come here!
+iqsur-–lirner[N→N]:iqsur–lirner                         NounPostbase; ! thing of the left side
+tallirpig-–lirner[N→N]:tallirpig–lirner                 NounPostbase; ! right-hand side
+aqum-@–ngqa[V→V]:aqumgar                                QuantQualInflection; ! sitting
+ugaani[N][Loc][3SgPoss][SgPosd]:ugaani                  EncliticOrEnd; ! because of; as a consequence of; on account of
+ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ                  EncliticOrEnd; ! because of; as a consequence of; on account of
+wataime-+(a)r[N→V][V][Intr][Intrg][S_3Sg]:wataimarte    EncliticOrEnd; ! what time is it?
+
 
 ! Irregular -–a/–ar/–aa 'to V repeatedly'
 qalrir-–a/–ar/–aa/+a/+aar[V→V]:qalria       VerbPostbase; ! 
@@ -7696,7 +7698,6 @@ wakencuillag           NounPostbase; ! one who reacts or retaliates immediately 
 wangkug                NounPostbase; ! wedual; usdual
 wangkute               NounPostbase; ! weplural; usplural
 wani                   NounPostbase; ! here; now
-wataimarte?            NounPostbase; ! what time is it?
 watpig                 NounPostbase; ! never ever!; without fail!
 watqapig               NounPostbase; ! never ever!; without fail!
 wii                    NounPostbase; ! I; me
@@ -13337,6 +13338,7 @@ VerbEte;
 -+killi[N→V]:+killi                           VerbPostbase; ! to have N to a decreasing degree
 -+kite[N→V]:+kite                             VerbPostbase; ! to give N to object to use or possess; to supply object with N
 -+kiur[N→V]:+kiur                             VerbPostbase; ! to prepare something to be N
+-–klaag[N→V]:–klaag                           VerbPostbase; ! to hit N o'clock
 -–kliute[N→V]:–kliute                         VerbPostbase; ! to have obtained or claimed as oneʼs N
 -–knaggair[N→V]:–knaggair                     VerbPostbase; ! to take away all N from (it)
 -–knaggairute[N→V]:–knaggairute               VerbPostbase; ! to have come to totally lack N
@@ -15283,6 +15285,7 @@ NounInflection;
 
 
 LEXICON Numeral
+! Counting From
 ataucir[Num][Cardinal][Sg]:atauciq                          EncliticOrEnd;
 malrur[Num][Cardinal][Du]:malruk                            EncliticOrEnd;
 pingayur[Num][Cardinal][Pl]:pingayun                        EncliticOrEnd;
@@ -15294,34 +15297,69 @@ malrunleg[Num][Cardinal][Pl]:malrunlegen                    EncliticOrEnd;
 malrunleg[Num][Cardinal][Pl]:malrunelgen                    EncliticOrEnd;
 pingayunleg[Num][Cardinal][Pl]:pingayunlegen                EncliticOrEnd;
 pingayunleg[Num][Cardinal][Pl]:pingayunelgen                EncliticOrEnd;
-qulngunritar(ar*)[Num][Cardinal][Pl]:qulngunritaʼar         EncliticOrEnd;
+qulngunritar(ar*)[Num][Cardinal][Sg]:qulngunritaʼar         EncliticOrEnd;
 qule[Num][Cardinal][Sg]:qula                                EncliticOrEnd;
-akimiarunritar(ar*)[Num][Cardinal][Pl]:akimiarunritaʼar     EncliticOrEnd;
-akimiar[Num][Cardinal][Pl]:akimiaq                          EncliticOrEnd;
-yuinaunritar(ar*)[Num][Cardinal][Pl]:yuinaunritaʼar         EncliticOrEnd;
-ipiarunritar(ar*)[Num][Cardinal][Pl]:ipiarunritaʼar         EncliticOrEnd;
+akimiarunritar(ar*)[Num][Cardinal][Sg]:akimiarunritaʼar     EncliticOrEnd;
+akimiar[Num][Cardinal][Sg]:akimiaq                          EncliticOrEnd;
+yuinaunritar(ar*)[Num][Cardinal][Sg]:yuinaunritaʼar         EncliticOrEnd;
+ipiarunritar(ar*)[Num][Cardinal][Sg]:ipiarunritaʼar         EncliticOrEnd;
 yuinar*[Num][Cardinal][Sg]:yuinaq                           EncliticOrEnd;
 ipiar[Num][Cardinal][Sg]:ipiaq                              EncliticOrEnd;
 tiissitsaar[Num][Cardinal][Sg]:tiissitsaaq                  EncliticOrEnd;
 
-ataucir             NounPostbase;
-malrur              NounPostbase;
-pingayur            NounPostbase;
-cetamar             NounPostbase;
-tallimar            NounPostbase;
-arvinleg            NounPostbase;
-malrunleg           NounPostbase;
-pingayunleg         NounPostbase;
-qulngunritar(ar*)   NounPostbase;
-qule                NounPostbase;
-akimiarunritar(ar*) NounPostbase;
-akimiar             NounPostbase;
-yuinaunritar(ar*)   NounPostbase;
-ipiarunritar(ar*)   NounPostbase;
-yuinar              NounPostbase;
-ipiar               NounPostbase;
-tiissitsaar         NounPostbase;
+! Appositive Form
+pingayur[Num][Cardinal][Pl]:pingayut                        EncliticOrEnd;
+cetamar[Num][Cardinal][Pl]:cetamat                          EncliticOrEnd;
+tallimar[Num][Cardinal][Pl]:tallimat                        EncliticOrEnd;
+arvinleg[Num][Cardinal][Pl]:arvinleget                      EncliticOrEnd;
+arvinleg[Num][Cardinal][Pl]:arvinelget                      EncliticOrEnd;
+malrunleg[Num][Cardinal][Pl]:malrunleget                    EncliticOrEnd;
+malrunleg[Num][Cardinal][Pl]:malrunelget                    EncliticOrEnd;
+pingayunleg[Num][Cardinal][Pl]:pingayunleget                EncliticOrEnd;
+pingayunleg[Num][Cardinal][Pl]:pingayunelget                EncliticOrEnd;
+qulngunritar(ar*)[Num][Cardinal][Pl]:qulngunritaraan        EncliticOrEnd;
+qulngunritar(ar*)[Num][Cardinal][Pl]:qulngunritaraat        EncliticOrEnd;
+qule[Num][Cardinal][Du]:qulek                               EncliticOrEnd;
+qule[Num][Cardinal][Pl]:qulen                               EncliticOrEnd;
+qule[Num][Cardinal][Pl]:qulet                               EncliticOrEnd;
+akimiarunritar(ar*)[Num][Cardinal][Pl]:akimiarunritaraan    EncliticOrEnd;
+akimiarunritar(ar*)[Num][Cardinal][Pl]:akimiarunritaraat    EncliticOrEnd;
+akimiar[Num][Cardinal][Pl]:akimiaret                        EncliticOrEnd;
+yuinaunritar(ar*)[Num][Cardinal][Pl]:yuinaunritaraan        EncliticOrEnd;
+yuinaunritar(ar*)[Num][Cardinal][Pl]:yuinaunritaraat        EncliticOrEnd;
+ipiarunritar(ar*)[Num][Cardinal][Pl]:ipiarunritaraan        EncliticOrEnd;
+ipiarunritar(ar*)[Num][Cardinal][Pl]:ipiarunritaraat        EncliticOrEnd;
+yuinar*[Num][Cardinal][Du]:yuinaak                          EncliticOrEnd;
+yuinar*[Num][Cardinal][Pl]:yuinaat                          EncliticOrEnd;
+ipiar[Num][Cardinal][Du]:ipiak                              EncliticOrEnd;
+ipiar[Num][Cardinal][Pl]:ipiat                              EncliticOrEnd;
+tiissitsaar[Num][Cardinal][Du]:tiissitsaak                  EncliticOrEnd;
+tiissitsaar[Num][Cardinal][Pl]:tiissitsaat                  EncliticOrEnd;
 
+ataucir                 NumeralPostbase; ! 1
+malrur                  NumeralPostbase; ! 2
+pingayur                NumeralPostbase; ! 3
+cetamar                 NumeralPostbase; ! 4
+tallimar                NumeralPostbase; ! 5
+arvinleg                NumeralPostbase; ! 6
+malrunleg               NumeralPostbase; ! 7
+pingayunleg             NumeralPostbase; ! 8
+qulngunritar(ar*)       NumeralPostbase; ! 9
+qule                    NumeralPostbase; ! 10
+akimiarunritar(ar*)     NumeralPostbase; ! 14
+akimiar                 NumeralPostbase; ! 15
+yuinaunritar(ar*)       NumeralPostbase; ! 19
+ipiarunritar(ar*)       NumeralPostbase; ! 19
+yuinar*                 NumeralPostbase; ! 20
+ipiar                   NumeralPostbase; ! 20
+tiissitsaar             NumeralPostbase; ! Thousand
+!miilitsaar              NumeralPostbase; ! Million?
+!piilitsaar              NumeralPostbase; ! Billion?
+
+LEXICON NumeralPostbase
+[Num]:                      NounPostbase;
+[Num]-–qlir*[N→N]:–qlir*    NounPostbase; ! the one located far in the area or space or time denoted by N
+[Num]-–rqu[N→N]:–rqu        NounPostbase; ! N times
 
 
 LEXICON EncliticOrEnd
