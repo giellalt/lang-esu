@@ -2520,7 +2520,6 @@ cuggʼalir              NounPostbase; ! cracker; pilot bread
 cuggʼelurnar           NounPostbase; ! triangle
 cuggʼer                NounPostbase; ! upper or lower part of a snout or beak; lip
 cuginqurrar            NounPostbase; ! tallest one
-cugite                 NounPostbase; ! to get a sudden sharp pain
 cugtuvig               NounPostbase; ! common snipe (Gallinago gallinago)
 cugʼar                 NounPostbase; ! small doll; figurine
 cugʼar(ar*)            NounPostbase; ! fist or knuckle of hand
@@ -2529,7 +2528,6 @@ cuicekaarkar           NounPostbase; ! wax
 cuicuicuar             NounPostbase; ! type of small bird (species ?)
 cuignilngur*           NounPostbase; ! land otter (Lontra canadensis)
 cuinar                 NounPostbase; ! twenty
-cuite-to               NounPostbase; ! get a sudden sharp pain
 cukacarissuute         NounPostbase; ! accelerator
 cukangegautar          NounPostbase; ! sinew-backed bow
 cukar                  NounPostbase; ! (NUN form) post; pole; stake
@@ -9095,9 +9093,11 @@ cucuklir               VerbPostbase; ! to choose something; to prefer something;
 cugayunar              VerbPostbase; ! to appear large (of waves on the horizon)
 cugir                  VerbPostbase; ! to remove the facial area of a seal before reaching into it
 cugirte                VerbPostbase; ! to be sharply peaked
+cugite                 VerbPostbase; ! to get a sudden sharp pain
 cugkite°               VerbPostbase; ! to be short in stature
 cugnir                 VerbPostbase; ! to have rosy cheeks
 cugtu                  VerbPostbase; ! to be tall
+cuite                  VerbPostbase; ! to get a sudden sharp pain
 cuka                   VerbPostbase; ! to be fast
 cukacar                VerbPostbase; ! to cause to be fast; to accelerate
 cukaite°               VerbPostbase; ! to be slow
@@ -14147,16 +14147,16 @@ SubordinativeVerbInflection;
 [V][Intr][Prec]:@⁵+p/~vaileg            IntransitiveConnectiveCEnd;
 [V][Trns][Prec]:@⁵+p/~vaileg            TransitiveConnectiveCEnd;
 
-[V][Intr][Cnsq]:@%:(ng)a                IntransitiveConnectiveVEnd; (@ te->c and te°->l)
-[V][Trns][Cnsq]:@%:(ng)a                TransitiveConnectiveVEnd;   (@ te->c and te°->l)
+[V][Intr][Cnsq]:@%:(ng)a                IntransitiveConnectiveVEnd; ! (@ te->c and te°->l)
+[V][Trns][Cnsq]:@%:(ng)a                TransitiveConnectiveVEnd;   ! (@ te->c and te°->l)
 [V][Intr][Cnsq]:@²~+nga                 IntransitiveConnectiveVEnd;
 [V][Trns][Cnsq]:@²~+nga                 TransitiveConnectiveVEnd;
 
 [V][Intr][Cont]:+'(g)aqa                IntransitiveConnectiveVEnd;
 [V][Trns][Cont]:+'(g)aqa                TransitiveConnectiveVEnd;
 
-[V][Intr][Conc]:@+ngr(ar)               IntransitiveConnectiveCEnd; (@ te unchanged and te°->le)
-[V][Trns][Conc]:@+ngr(ar)               TransitiveConnectiveCEnd;   (@ te unchanged and te°->le)
+[V][Intr][Conc]:@+ngr(ar)               IntransitiveConnectiveCEnd; ! (@ te unchanged and te°->le)
+[V][Trns][Conc]:@+ngr(ar)               TransitiveConnectiveCEnd;   ! (@ te unchanged and te°->le)
 
 [V][Intr][Cond]:@⁴~–k̲u                  IntransitiveConnectiveCond;
 [V][Trns][Cond]:@⁴~–k̲u                  TransitiveConnectiveCond;
@@ -14193,7 +14193,7 @@ LEXICON OptativeVerbInflection
 
 LEXICON SubordinativeVerbInflection
 
-[V][Intr][Sbrd]:@ˡ~+lu/@⁵na       IntransitiveSubordinative; (te@lu tl->ll  te°@na)
+[V][Intr][Sbrd]:@ˡ~+lu/@⁵na       IntransitiveSubordinative; ! (te@lu tl->ll  te°@na)
 [V][Trns][Sbrd]:@ˡ~+lu/@⁵na       TransitiveSubordinative;
 
 
