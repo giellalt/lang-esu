@@ -60,11 +60,6 @@ define Lowercase "A"   -> a,
                  "U͡gg" -> u͡gg,
                  "U͡rr" -> u͡rr;
 
-define AllomorphDecouple "(g/t)" -> "(g)" "(t)" .o. 
-                         "(r/l)" -> "(r)" "(l)" .o. 
-                         "(u/i)" -> "(u)" "(i)" .o.
-                         "(ar)"  -> a r "*"     .o.
-                         "(ar*)" -> a r "*"      ; 
 
 define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
                      "[Opt_PRS_2Sg]" -> "+" n               || t e  _                         .o.
@@ -106,10 +101,16 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      t "ʼ" e "@+–'(g)ar(ar)te" -> s "ʼ" "+" a r "(ar)" t e                    .o. ! tʼe -> sʼ
                      "@+–'(g)ar(ar)te" -> "–" a r "(ar)" t e               || r _             .o. ! r -> -
                      "@+–'(g)ar(ar)te" -> "+" a r "(ar)" t e               || g _             .o. ! g -> +
-                     "@+–'(g)ar(ar)te" -> "+" "'" "(g)" a r "(ar)" t e     || Vow _           .o. ! Vow -> +'(g)
+                     "@+–'(g)ar(ar)te" -> "+" "'" "(g)" a r "(ar)" t e                        .o. ! Vow -> +'(g)
                      "+c/.ss" -> "." ss                     || Vow _                          .o.
                      "+c/.ss" -> "+" c                      ;
 
+
+define AllomorphDecouple "(g/t)" -> "(g)" "(t)" .o. 
+                         "(r/l)" -> "(r)" "(l)" .o. 
+                         "(u/i)" -> "(u)" "(i)" .o.
+                         "(ar)"  -> a r         .o.
+                         "(ar*)" -> a r "*"      ; 
 
 define AutomaticDevoicing v -> vv,
                           l -> ll,
@@ -128,6 +129,6 @@ define AutomaticDevoicing v -> vv,
 !                          s -> ss  || .#. _                             ;
 
 regex Lowercase          .o.
-      AllomorphDecouple  .o.
       MultipleForms      .o.  
+      AllomorphDecouple  .o.
       AutomaticDevoicing  ;
