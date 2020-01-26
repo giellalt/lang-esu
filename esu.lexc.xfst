@@ -11,9 +11,9 @@
 ! change capital to lowercase
 ! give to twolc
 
-define Stop       [ p | t | c | k | q ];
-define VoiceFric  [ v | l | s | g | r | u͡g | u͡r ];
-define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr ];
+define Stop       [ p | t | c | k | q | k̲ | q̲ ];
+define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | g̲ | r̲ ];
+define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr | g̲g̲ | r̲r̲ ];
 define VoiceNasal [ m | n | ng ];
 define VlessNasal [ ḿ | ń | ńg ];
 
@@ -78,29 +78,31 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "[Opt_PRS_2Sg_3Sg]" -> "–" rr u        || r _                            .o.
                      "[Opt_PRS_2Sg_3Sg]" -> u                                                 .o.
                      "[Opt_PRS_2Sg_1Sg]" (->) "~" "(g)" i a || [ Vow Vow | [ Con - t ] e ] _  .o.
-                     "[Opt_PRS_2Sg_1Sg]" -> "@" "+" ng a                                      .o.
-                     "@~+lu/@na" -> "@" n a                 || t e "*" _                      .o.
-                     "@~+lu/@na" -> "@" "~" "+" l u                                           .o.
-                     "–lria/@+ngur*" -> "@" "+" ng u r "*"  || t e "*" _                      .o.
-                     "–lria/@+ngur*" -> "–" l r i a                                           .o.
-                     "@+p/~v" -> "@" "+" p                  || [ t e ("*") | Con ] _          .o.
-                     "@+p/~v" -> "~" v                                                        .o.
-                     "+p/.v" -> "+" p e                     || Con _ Con                      .o.
-                     "+p/.v" -> "+" p                       || Con _ Vow                      .o.
+                     "[Opt_PRS_2Sg_1Sg]" -> "@²" "+" ng a                                     .o.
+
+                     "@ˡ~+lu/@⁵na" -> "@⁵" n a                || t e "°" _                    .o.
+                     "@ˡ~+lu/@⁵na" -> "@ˡ" "~" "+" l u                                        .o.
+                     "–lria/@⁴+ngur*" -> "@⁴" "+" ng u r "*"  || t e "°" _                    .o.
+                     "–lria/@⁴+ngur*" -> "–" l r i a                                          .o.
+                     "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
+                     "@⁵+p/~v" -> "~" v                                                       .o.
+                     "+p/.v" -> "+" p e                       || Con _ Con                    .o.
+                     "+p/.v" -> "+" p                         || Con _ Vow                    .o.
                      "+p/.v" -> "." v                                                         .o.
-!                     "(ʼa)" -> ʼ a                          || Con a _                        .o.
-!                     "(ʼa)" -> 0                                                              .o.
-                     "–rpag/@vag" (->) "@" v a g            || Vow t e _                      .o.
-                     "–rpag/@vag"  ->  "–" r p a g                                            .o.
-                     "+ciqe/@ciiqe" -> "@" c i i q e        || t e ("*") _                    .o. 
-                     "+ciqe/@ciiqe" -> "+" c i q e                                            .o. 
-                     "@+cete/.vkar" -> "@" "+" c e t e      || Con _                          .o.
-                     "@+cete/.vkar" (->) "@" "+" c e t e    || t e ("*") _                    .o.
-                     "@+cete/.vkar" -> "." v k a r                                            .o.
-                     "+a/+aar" -> "@" a a r                 || t e ("*") _                    .o.
+!                     "(ʼa)" -> ʼ a                           || Con a _                      .o.
+!                     "(ʼa)" -> 0                                                             .o.
+                     "–r̲pag/@²vag" (->) "@²" v a g            || Vow t e _                    .o.
+                     "–r̲pag/@²vag"  ->  "–" r p a g                                           .o.
+                     "+ciqe/@⁵ciiqe" -> "@⁵" c i i q e        || t e ("°") _                  .o. 
+                     "+ciqe/@⁵ciiqe" -> "+" c i q e                                           .o. 
+                     "@⁵+cete/.vkar" -> "@⁵" "+" c e t e      || Con _                        .o.
+                     "@⁵+cete/.vkar" (->) "@⁵" "+" c e t e    || t e ("°") _                  .o.
+                     "@⁵+cete/.vkar" -> "." v k a r                                           .o.
+                     "+a/+aar" -> "@" a a r                   || t e ("°") _                  .o.
                      "+a/+aar" -> "+" a                                                       .o.
-                     t e ("*") "@+–'(g)ar(ar)te" -> g "+" a r "(ar)" t e   || Vow _           .o. ! Vte -> Vg
-                     t e ("*") "@+–'(g)ar(ar)te" -> "+" a r "(ar)" t e     || Con _           .o. ! Cte -> C
+
+                     t e ("°") "@+–'(g)ar(ar)te" -> g "+" a r "(ar)" t e   || Vow _           .o. ! Vte -> Vg
+                     t e ("°") "@+–'(g)ar(ar)te" -> "+" a r "(ar)" t e     || Con _           .o. ! Cte -> C
                      t "ʼ" e "@+–'(g)ar(ar)te" -> s "ʼ" "+" a r "(ar)" t e                    .o. ! tʼe -> sʼ
                      "@+–'(g)ar(ar)te" -> "–" a r "(ar)" t e               || r _             .o. ! r -> -
                      "@+–'(g)ar(ar)te" -> "+" a r "(ar)" t e               || g _             .o. ! g -> +
@@ -113,7 +115,9 @@ define AutomaticDevoicing v -> vv,
                           l -> ll,
                           s -> ss,
                           g -> gg,
+                          g̲ -> g̲g̲,
                           r -> rr,
+                          r̲ -> r̲r̲,
                           u͡g -> u͡gg,
                           u͡r -> u͡rr || [ Stop | VlessFric ] _  ,
                                        _ [ Stop ]                      .o.
