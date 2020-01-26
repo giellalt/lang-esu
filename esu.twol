@@ -4,6 +4,7 @@
 Alphabet
     a c e g i k l m n p q r s t u v w y ḿ ń
     vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
+    k̲:k q̲:q g̲:g r̲:r g̲g̲:gg r̲r̲:rr
     %[e%] %[e%]:e                               ! HBC/Nun: initial e is not weak
     ʼ                                           ! Keep apostrophe from lexical entries
     
@@ -11,12 +12,17 @@ Alphabet
     %(a%):%> %(e%):%> %(g%):%> %(i%):%> %(l%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%> 
     %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> %(ur%):%>
     ! %(g%/t%):%> %(r%/l%):%> %(u%/i%):%>
-    
-    %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %@:%> %*:%>
+
+    %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %*:%> %°:%> %@:%>
+    %@¹:%> %@²:%> %@³:%> %@⁴:%> %@⁵:%> %@ˡ:%> %@ˁ:%> %@ʸ:%>    
     %= ; 
 
 Sets 
-    Bndry = %+ %– %~ %% %: %' %. %@ %* %(a%) %(e%) %(g%) %(r%) %(s%) %(t%) %(u%) %(aa%) %(ar%) %(ar%*%) %(ng%) %(ur%) %(g%/t%) %(r%/l%) %(u%/i%) ;
+    Bndry = %+ %– %~ %% %: %' %. %* %° %@
+        %@¹ %@² %@³ %@⁴ %@⁵ %@ˡ %@ˁ %@ʸ
+        %(a%) %(e%) %(g%) %(r%) %(s%) %(t%) %(u%)
+        %(aa%) %(ar%) %(ar%*%) %(ng%) %(ur%) %(g%/t%) %(r%/l%) %(u%/i%) ;
+    AtSign = %@¹ %@² %@³ %@⁴ %@⁵ %@ˡ %@ˁ %@ʸ ;
 
     Stop = p t c k q ;
     VoiceFric = v l s g r u͡g u͡r ; 
@@ -78,31 +84,25 @@ e:i <=> _ Bndry:* %(ng%):0 Bndry:* a:i ; ! enga -> ii
 g:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
         [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [[Bndry:|:0]-e:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
         [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
-    except
-        [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
-"g:r = Uvular/VelarAgreement"
-g:r <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+"g̲:r = Uvular/VelarAgreement"
+g̲:r <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "g:k = word#"
 g:k <=> _ [ .#. | %= ] ; ! Word Final changes
-    except
-        [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "gg:g = gte@(u)"
 gg:g <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
          _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
-    except
-        [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
-"gg:rr = Uvular/VelarAgreement"
-gg:rr <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+"g̲g̲:rr = Uvular/VelarAgreement"
+g̲g̲:rr <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "i:0 = --"
 i:0 <=> _ Con:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
 
-"k:q = Uvular/VelarAgreement"
-k:q <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+"k̲:q = Uvular/VelarAgreement"
+k̲:q <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "l:0 = --" ! - optional drop preceding vowel also
 l:0 => Vow:0 (Con:0) Bndry:* %–: %–: _ ; ! Rule for Double Minus - 
@@ -115,38 +115,30 @@ ll:l <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
 ng:0 <=> [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [[Bndry:|:0]-e:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
          [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
 
-"q:k = Uvular/VelarAgreement"
-q:k <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+"q̲:k = Uvular/VelarAgreement"
+q̲:k <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "r:0 = - | % | :"
 r:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
         FVow _ [Bndry: - %*:]* %%:%> ; ! Rule for Percent
         [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [[Bndry:|:0]-e:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
         [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
-    except
-        g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
-"r:g = Uvular/VelarAgreement"
-r:g <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+"r̲:g = Uvular/VelarAgreement"
+r̲:g <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "r:q = word#"
 r:q <=> _ (%*:) [ .#. | %= ] ; ! Word Final changes
-    except
-        g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "rr:0 = -"
 rr:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
-    except
-        g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
-"rr:gg = Uvular/VelarAgreement"
-rr:gg <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+"r̲r̲:gg = Uvular/VelarAgreement"
+r̲r̲:gg <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "rr:r = rte@(u)"
 rr:r <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
          _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
-    except
-        g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "t:0 = te@c|p/0 | Cte@ng|v|m/0 | Cte@(u)/Cu"
 t:0 <=> _ e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [c|p] ; ! te@c|p/0
