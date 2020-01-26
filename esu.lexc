@@ -128,16 +128,16 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [Opt_PRS_2Sg]               !
 [Opt_PRS_2Sg_3Sg]           !
 [Opt_PRS_2Sg_1Sg]           !
-@~+lu/@na                   ! Subordinative Mood marker
+@ˡ~+lu/@⁵na                 ! Subordinative Mood marker
 –lria/@⁴+ngur*              ! Participial Mood marker
 +p/.v                       ! Noun & QuantQual Inflection Chart
 @⁵+p/~v                     ! instead of @~+(t)v postbase representations
 +c/.ss                      ! +cuute/+ssuute and +cur/+ssur
-–r̲pag/@vag                  ! big N; large N
+–r̲pag/@²vag                 ! big N; large N
 +a/+aar                     ! to V repeatedly
 @+–'(g)ar(ar)te             ! to suddenly or immediately V; to V with short duration of action
-@+cete/.vkar                ! to let, allow, permit, cause, or compel one to V
-+ciqe/@ciiqe                ! to V in the future; will V
+@⁵+cete/.vkar               ! to let, allow, permit, cause, or compel one to V
++ciqe/@⁵ciiqe               ! to V in the future; will V
 !(ʼa)                        ! used for [DemAdv][Loc] %~nete 
 
 !!!!!!! Multiple Forms !!!!!!
@@ -179,8 +179,9 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 @³                          ! (@(u)c|t) drops t when the t is preceded by a fricative which then becomes voiced, and changes t to y if preceded by a vowel, but to s (except in HBC) if the t is geminated on the base, unless the base is marked with °, in which case t is changed to l
 @⁴                          ! (@ng|k|t) changes t to s (y in HBC) whether preceded by a vowel or fricative, unless the base is marked with °, in whcih case t is changed to l
 @⁵                          ! (@c|l|ll|k|ng|p|t) drops any t
-@ʸ                          ! (@y postbases) ty->c 
+@ˡ                          ! (@l postbases) tl->ll
 @ˁ                          ! (@ur postbases) te->q                    
+@ʸ                          ! (@y postbases) ty->c 
 ! *                         ! base final r marked with asterisk to indicate "strong" base
 ! °                         ! special te
 k̲ q̲ g̲ r̲ g̲g̲ r̲r̲               ! velar/uvular (front/back velar) assimilation
@@ -217,7 +218,7 @@ LEXICON Root
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Exceptions
-qimugte-–r̲pag/@²vag[N→N]:qimute@vag                     NounPostbase; ! qimulvak
+qimugte-–rpag/@vag[N→N]:qimute@²vag                     NounPostbase; ! qimulvak
 tai[V][Intr][Opt][PRS][S_2Sg]:taitai                    EncliticOrEnd; ! come here!
 iqsur-–lirner[N→N]:iqsur–lirner                         NounPostbase; ! thing of the left side
 tallirpig-–lirner[N→N]:tallirpig–lirner                 NounPostbase; ! right-hand side
@@ -13210,7 +13211,7 @@ VerbEte;
 -–ar(ar*)[N→N]:–ar(ar*)                       NounPostbase; ! little piece of N
 -–cengar*[N→N]:–cengar*                       NounPostbase; ! one with a small N
 -–ciller[N→N]:–ciller                         NounPostbase; ! worthless N; dilapidated N
--@–ckegg[N→N]:@–ckegg                         NounPostbase; ! to be very V, to have good N
+-@–ckegg[N→N]:@⁵–ckegg                        NounPostbase; ! to be very V, to have good N
 -–cuar(ar*)[N→N]:–cuar(ar*)                   NounPostbase; ! small N; tiny N; little N
 -–cug[N→N]:–cug                               NounPostbase; ! unpleasing N; ugly old N; bad result of V-ing
 -–cungar[N→N]:–cungar                         NounPostbase; ! cute little N; little N (NSU meaning)
@@ -13225,8 +13226,8 @@ VerbEte;
 -–kegtaar(ar*)[N→N]:–k̲egtaar(ar*)             NounPostbase; ! good N; nice N; new N
 !-–kellriig[N→N]:–kellriig                     NounPostbase; ! the pair or group whereof one member has the other as his N
 !-–kellriit[N→N]:–kellriit                     NounPostbase; ! the pair or group whereof one member has the other as his N
--@–ksagar[N→N]:@–ksagar                       NounPostbase; ! very ugly N
--@ksuar(ar*)[N→N]:@⁵ksuar(ar*)                 NounPostbase; ! small N
+-@–ksagar[N→N]:@⁵–ksagar                      NounPostbase; ! very ugly N
+-@ksuar(ar*)[N→N]:@⁵ksuar(ar*)                NounPostbase; ! small N
 -+kuar[N→N]:+kuar                             NounPostbase; ! leftover N
 -–kucir[N→N]:–kucir                           NounPostbase; ! one of the same kind as N
 -–kuiner(ar*)[N→N]:–kuiner(ar*)               NounPostbase; ! small amount of N
@@ -13285,7 +13286,7 @@ VerbEte;
 -–qvaar*[N→N]:–q̲vaar*                         NounPostbase; ! area far in the direction of N
 -–rʼayaʼar[N→N]:–r̲ʼayaʼar                     NounPostbase; ! multitude of Ns; lots of Ns
 -–rpaa(ar*)[N→N]:–r̲paa(ar*)                   NounPostbase; ! great N; oldest N (with kinship terms)
--–rpag/@vag[N→N]:–r̲pag/@vag                   NounPostbase; ! large N; big N
+-–rpag/@vag[N→N]:–r̲pag/@²vag                  NounPostbase; ! large N; big N
 !-@vag/?vag[N→N]:@vag/?vag                     NounPostbase; ! big N; large N
 -–rpallr(ar*)[N→N]:–r̲pallr(ar*)               NounPostbase; ! very large N
 -–rpallug[N→N]:–r̲pallug                       NounPostbase; ! one that is primarily or mostly N
@@ -13312,7 +13313,7 @@ VerbEte;
 -%:~(ng)uteller[N→N]:%:~(ng)uteller           NounPostbase; ! empty container that held N
 -–vaarrlug[N→N]:–vaarrlug                     NounPostbase; ! big N; huge N
 -–vialug[N→N]:–vialug                         NounPostbase; ! shabby N; funny old N; worthless N
--@~+viutar[N→N]:@~+viutar                     NounPostbase; ! container for N
+-@~+viutar[N→N]:@²~+viutar                    NounPostbase; ! container for N
 -–ya(g)ar*[N→N]:–ya(g)ar*                     NounPostbase; ! baby N; little N
 -–yagar*[N→N]:–yagar*                         NounPostbase; ! baby N; little N
 -+yag[N→N]:+yag                               NounPostbase; ! thing similar to N; thing that acts as if it were V; small N
@@ -13377,7 +13378,7 @@ VerbEte;
 -+mig[N→V]:+mig                               VerbPostbase; ! to put in oneʼs N
 -+miu[N→V]:+miu                               VerbPostbase; ! to be at N; to stay at N
 -+miuyaar[N→V]:+miuyaar                       VerbPostbase; ! to speak the language or dialect of the residents of N
--@~+ngari[N→V]:@~+ngari                       VerbPostbase; ! to seem to be becoming V; to begin to be like N
+-@~+ngari[N→V]:@²~+ngari                      VerbPostbase; ! to seem to be becoming V; to begin to be like N
 -+ngate[N→V]:+ngate                           VerbPostbase; ! to seem like N
 -–nge[N→V]:–nge                               VerbPostbase; ! to acquire N; to begin to V
 -–ngqerr[N→V]:–ngqerr                         VerbPostbase; ! to have N
@@ -13496,7 +13497,7 @@ VerbInflection;
 -+kaniir(ar)[V→V]:+kaniir(ar)                 VerbPostbase; ! to become more V
 -+kanir[V→V]:+kanir                           VerbPostbase; ! to V more with greater intensity
 -+kanir(ar)[V→V]:+kanir(ar)                   VerbPostbase; ! to V more and more, with greater intensity
--–@kaunrir[V→V]:–@kaunrir                     VerbPostbase; ! to be unable to V on account of some inhibiting factor
+-–@kaunrir[V→V]:–@⁴k̲aunrir                    VerbPostbase; ! to be unable to V on account of some inhibiting factor
 -–kayag[V→V]:–kayag                           VerbPostbase; ! to V (of “darned” one, one toward whom the speaker has negative feelings)
 -–keckacagar[V→V]:–keckacagar                 VerbPostbase; ! to be very V
 -@–ke[V→V]:@⁴–ke                              VerbPostbase; ! to find (it) to be V
@@ -13505,7 +13506,7 @@ VerbInflection;
 -–ksaar(ar)[V→V]:–ksaar(ar)                   VerbPostbase; ! to V in a small and unnoticeable way
 -–ksaite[V→V]:–k̲saite°                        VerbPostbase; ! to not have V-ed (yet)
 -–ksaitelar[V→V]:–k̲saitelar                   VerbPostbase; ! (K, BB form) to have never V-ed
--–ksaitlar[V→V]:–ks_aitlar                     VerbPostbase; ! (Y form) to have never V-ed
+-–ksaitlar[V→V]:–k̲saitlar                     VerbPostbase; ! (Y form) to have never V-ed
 -–ksuar(ar)[V→V]:–k̲suar(ar)                   VerbPostbase; ! to V in a small and not very noticeable way
 -–ksuar(ar)[V→V]:–ksuar(ar)                   VerbPostbase; ! to V in a small and not very noticeable way
 -–kugte[V→V]:–kugte                           VerbPostbase; ! to be about to V; to be going to V; to plan to V
@@ -13515,15 +13516,15 @@ VerbInflection;
 -–kutar(ar)[V→V]:–kutar(ar)                   VerbPostbase; ! to plan to V
 -–laag[V→V]:–laag                             VerbPostbase; ! to V quickly; to V in a hurry
 -~+lallru[V→V]:~+lallru                       VerbPostbase; ! (Y, UK, NI form) to formerly, regularly have V-ed
--@~+lallru[V→V]:@~+lallru                     VerbPostbase; ! (NS form) to formerly, regularly have V-ed
+-@~+lallru[V→V]:@ˡ~+lallru                    VerbPostbase; ! (NS form) to formerly, regularly have V-ed
 -–lallru[V→V]:–lallru                         VerbPostbase; ! (NI, CAN, K, BB, NR, LI, EG form) to formerly, regularly have V-ed
 -~+lar[V→V]:~+lar                             VerbPostbase; ! (Y, UK, NI form) to V customarily; to V regularly
--@~+lar[V→V]:@~+lar                           VerbPostbase; ! (NS form) to V customarily; to V regularly
+-@~+lar[V→V]:@ˡ~+lar                          VerbPostbase; ! (NS form) to V customarily; to V regularly
 -–lar[V→V]:–lar                               VerbPostbase; ! (NI, CAN, K, BB, NR, LI, EG form) to V customarily; to V regularly
 -~+laryaaqe[V→V]:~+laryaaqe                   VerbPostbase; ! (Y, UK, NI form) to usually V (though not at this time)
--@~+laryaaqe[V→V]:@~+laryaaqe                 VerbPostbase; ! (NS form) to usually V (though not at this time)
+-@~+laryaaqe[V→V]:@ˡ~+laryaaqe                VerbPostbase; ! (NS form) to usually V (though not at this time)
 -–laryaaqe[V→V]:–laryaaqe                     VerbPostbase; ! (NI, CAN, K, BB, NR, LI, EG form) to usually V (though not at this time)
--–ler[V→V]:@–ler                              VerbPostbase; ! (K, BB form) to V suddenly and willfully
+-–ler[V→V]:–ler                               VerbPostbase; ! (K, BB form) to V suddenly and willfully
 -~+ler[V→V]:~+ler                             VerbPostbase; ! (Y form) to V suddenly and willfully
 -–leryag[V→V]:–leryag                         VerbPostbase; ! (K, BB form) to V abruptly; to V in a huff
 -~+leryag[V→V]:~+leryag                       VerbPostbase; ! (Y form) to V abruptly; to V in a huff
@@ -13573,11 +13574,11 @@ VerbInflection;
 -@~+nake[V→V]:@¹~+nake                        VerbPostbase; ! to consider (it) to tend to cause one to V
 -@~+nanrir[V→V]:@¹~+nanrir                    VerbPostbase; ! to cease V-ing; to stop V-ing forever; to not V any more
 -@~+naqsaaqe[V→V]:@¹~+naqsaaqe                VerbPostbase; ! to be feasible to V now
--@~+narcar[V→V]:@~+narcar                     VerbPostbase; ! to try to cause one to V
+-@~+narcar[V→V]:@¹~+narcar                    VerbPostbase; ! to try to cause one to V
 -@~+nari[V→V]:@¹~+nari                        VerbPostbase; ! to be time to V
 -@~+narqe[V→V]:@¹~+narqe                      VerbPostbase; ! to tend to cause one to V; to be able to be V-ed
 -@~+nartaar[V→V]:@¹~+nartaar                  VerbPostbase; ! to act so as to try to cause others to think that one is such as to cause them to V
--@~+naur[V→V]:@~+naur                         VerbPostbase; ! to customarily or habitually V (if other conditions hold)
+-@~+naur[V→V]:@¹~+naur                        VerbPostbase; ! to customarily or habitually V (if other conditions hold)
 -@~+nayuke[V→V]:@¹~+nayuke                    VerbPostbase; ! to think that oneself or another might V
 -@–nercir[V→V]:@¹–nercir                      VerbPostbase; ! to wait for (it) to V
 -@–nerkite[V→V]:@¹–nerkite°                   VerbPostbase; ! to habitually V only a little
@@ -13772,7 +13773,7 @@ VerbInflection;
 -+cuute/+ssuute[V→N]:+c/.ssuute               NounPostbase; ! device for V-ing, device associated with N
 -+(s)kar(ar*)[V→N]:+(s)kar(ar*)               NounPostbase; ! one who Vs; the only one who Vs
 -+karar[V→N]:+karar                           NounPostbase; ! exact area denoted by N with respect to possessor
--@~–ke[V→N]:@⁴~–k̲e                           NounPostbase; ! (@~-ke-1) the one or ones that the possessor is V-ing
+-@~–ke[V→N]:@⁴~–k̲e                            NounPostbase; ! (@~-ke-1) the one or ones that the possessor is V-ing
 -@~–kengar[V→N]:@⁵~–kengar                    NounPostbase; ! one that is being V-ed
 -–ller[V→N]:–ller                             NounPostbase; ! former N; one that V-ed or was V-ed; act or state of V-ing
 -@ller[V→N]:@⁵ller                            NounPostbase; ! one more V than possessor(s), the most V of the possessors
@@ -13801,7 +13802,7 @@ VerbInflection;
 -@+tacir[V→N]:@²+tacir                        NounPostbase; ! extent of possessorʼs V-ing
 -@%:(u)tar[V→N]:@³%:(u)tar                    NounPostbase; ! device for V-ing
 -@+tassiigute[V→N]:@²+tassiigute              NounPostbase; ! something for determining V-ness
--@+taciigute[V→N]:@+2taciigute                NounPostbase; ! something for determining V-ness
+-@+taciigute[V→N]:@²+taciigute                NounPostbase; ! something for determining V-ness
 -@+tate[V→N]:@²+tate                          NounPostbase; ! one that is V to the same extent as possessor
 -@%:(u)tiir[V→N]:@³%:(u)tiir                  NounPostbase; ! celebration of V-ing
 -~%:(u)tnguarkar[V→N]:~%:(u)tnguarkar         NounPostbase; ! potential/necessary aid to V-ing
@@ -14143,30 +14144,30 @@ OptativeVerbInflection;
 
 SubordinativeVerbInflection;
 
-[V][Intr][Prec]:@⁵+p/~vaileg     IntransitiveConnectiveCEnd;
-[V][Trns][Prec]:@⁵+p/~vaileg     TransitiveConnectiveCEnd;
+[V][Intr][Prec]:@⁵+p/~vaileg            IntransitiveConnectiveCEnd;
+[V][Trns][Prec]:@⁵+p/~vaileg            TransitiveConnectiveCEnd;
 
-[V][Intr][Cnsq]:@~%:(ng)a        IntransitiveConnectiveVEnd;
-[V][Trns][Cnsq]:@~%:(ng)a        TransitiveConnectiveVEnd;
-[V][Intr][Cnsq]:@+nga            IntransitiveConnectiveVEnd;
-[V][Trns][Cnsq]:@+nga            TransitiveConnectiveVEnd;
+[V][Intr][Cnsq]:@%:(ng)a                IntransitiveConnectiveVEnd; (@ te->c and te°->l)
+[V][Trns][Cnsq]:@%:(ng)a                TransitiveConnectiveVEnd;   (@ te->c and te°->l)
+[V][Intr][Cnsq]:@²~+nga                 IntransitiveConnectiveVEnd;
+[V][Trns][Cnsq]:@²~+nga                 TransitiveConnectiveVEnd;
 
-[V][Intr][Cont]:+'(g)aqa         IntransitiveConnectiveVEnd;
-[V][Trns][Cont]:+'(g)aqa         TransitiveConnectiveVEnd;
+[V][Intr][Cont]:+'(g)aqa                IntransitiveConnectiveVEnd;
+[V][Trns][Cont]:+'(g)aqa                TransitiveConnectiveVEnd;
 
-[V][Intr][Conc]:@+ngr(ar)        IntransitiveConnectiveCEnd;
-[V][Trns][Conc]:@+ngr(ar)        TransitiveConnectiveCEnd;
+[V][Intr][Conc]:@+ngr(ar)               IntransitiveConnectiveCEnd; (@ te unchanged and te°->le)
+[V][Trns][Conc]:@+ngr(ar)               TransitiveConnectiveCEnd;   (@ te unchanged and te°->le)
 
-[V][Intr][Cond]:@~–ku            IntransitiveConnectiveCond;
-[V][Trns][Cond]:@~–ku            TransitiveConnectiveCond;
+[V][Intr][Cond]:@⁴~–k̲u                  IntransitiveConnectiveCond;
+[V][Trns][Cond]:@⁴~–k̲u                  TransitiveConnectiveCond;
 
-[V][Intr][CtmpI]:–ller           IntransitiveConnectiveCtmp;
-[V][Trns][CtmpI]:–ller           TransitiveConnectiveCtmp;
+[V][Intr][CtmpI]:–ller                  IntransitiveConnectiveCtmp;
+[V][Trns][CtmpI]:–ller                  TransitiveConnectiveCtmp;
 
-[V][Intr][CtmpII]:@%:(ng)inaner  IntransitiveConnectiveCtmp;
-[V][Trns][CtmpII]:@%:(ng)inaner  TransitiveConnectiveCtmp;
-[V][Intr][CtmpII]:@+nginaner     IntransitiveConnectiveCtmp;
-[V][Trns][CtmpII]:@+nginaner     TransitiveConnectiveCtmp;
+[V][Intr][CtmpII]:@²%:(ng)inaner        IntransitiveConnectiveCtmp;
+[V][Trns][CtmpII]:@²%:(ng)inaner        TransitiveConnectiveCtmp;
+[V][Intr][CtmpII]:@²~+nginaner          IntransitiveConnectiveCtmp;
+[V][Trns][CtmpII]:@²~+nginaner          TransitiveConnectiveCtmp;
 
 
 LEXICON InterrogativeVerbInflection
@@ -14186,14 +14187,14 @@ LEXICON OptativeVerbInflection
 [V][Intr][Opt][PRS][NEG]:@⁵+p/~viiqna      IntransitiveNegativeOptative;
 [V][Trns][Opt][PRS][NEG]:@⁵+p/~viiqna      TransitiveNegativeOptative;
 
-[V][Intr][Opt][FUT][NEG]:@~+yaquna         IntransitiveNegativeOptative;
-[V][Trns][Opt][FUT][NEG]:@~+yaquna         TransitiveNegativeOptative;
+[V][Intr][Opt][FUT][NEG]:@ʸ~+yaquna        IntransitiveNegativeOptative;
+[V][Trns][Opt][FUT][NEG]:@ʸ~+yaquna        TransitiveNegativeOptative;
 
 
 LEXICON SubordinativeVerbInflection
 
-[V][Intr][Sbrd]:@~+lu/@na        IntransitiveSubordinative;
-[V][Trns][Sbrd]:@~+lu/@na        TransitiveSubordinative;
+[V][Intr][Sbrd]:@ˡ~+lu/@⁵na       IntransitiveSubordinative; (te@lu tl->ll  te°@na)
+[V][Trns][Sbrd]:@ˡ~+lu/@⁵na       TransitiveSubordinative;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -14317,50 +14318,50 @@ LEXICON TransitiveInterrogative
 
 LEXICON IntransitivePresentOptative
 !----------------------------|-------------------------------|------------------------------------|
-[S_3Sg]:@~+li   EncliticOrEnd; [S_1Sg]:@~+lii   EncliticOrEnd; [S_2Sg]:[Opt_PRS_2Sg] EncliticOrEnd;
-[S_3Pl]:@~+lit  EncliticOrEnd; [S_1Pl]:–lta     EncliticOrEnd; [S_2Pl]:@+ci          EncliticOrEnd;
+[S_3Sg]:@ˡ~+li  EncliticOrEnd; [S_1Sg]:@ˡ~+lii  EncliticOrEnd; [S_2Sg]:[Opt_PRS_2Sg] EncliticOrEnd;
+[S_3Pl]:@ˡ~+lit EncliticOrEnd; [S_1Pl]:–lta     EncliticOrEnd; [S_2Pl]:@⁵+ci         EncliticOrEnd;
                                [S_1Pl]:%%(e)lta EncliticOrEnd;
-[S_3Du]:@~+lik  EncliticOrEnd; [S_1Du]:@~+luk   EncliticOrEnd; [S_2Du]:@+tek         EncliticOrEnd;
+[S_3Du]:@ˡ~+lik EncliticOrEnd; [S_1Du]:@ˡ~+luk  EncliticOrEnd; [S_2Du]:@⁵+tek        EncliticOrEnd;
 !----------------------------|-------------------------------|------------------------------------|
 
 LEXICON TransitivePresentOptative
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_3Sg][P_3Sg]:@~+liku             EncliticOrEnd; [A_3Sg][P_3Pl]:@~+liki          EncliticOrEnd; [A_3Sg][P_3Du]:@~+likek          EncliticOrEnd;
-[A_3Pl][P_3Sg]:@~+litgu            EncliticOrEnd; [A_3Pl][P_3Pl]:@~+litki         EncliticOrEnd; [A_3Pl][P_3Du]:@~+litkek         EncliticOrEnd;
-[A_3Du][P_3Sg]:@~+lignegu          EncliticOrEnd; [A_3Du][P_3Pl]:@~+ligki         EncliticOrEnd; [A_3Du][P_3Du]:@~+ligkek         EncliticOrEnd;
-[A_3Du][P_3Sg]:@~linʼgu            EncliticOrEnd; [A_3Du][P_3Pl]:@~+ligneki       EncliticOrEnd; [A_3Du][P_3Du]:@~+lignekek       EncliticOrEnd;
+[A_3Sg][P_3Sg]:@ˡ~+liku            EncliticOrEnd; [A_3Sg][P_3Pl]:@ˡ~+liki         EncliticOrEnd; [A_3Sg][P_3Du]:@ˡ~+likek         EncliticOrEnd;
+[A_3Pl][P_3Sg]:@ˡ~+litgu           EncliticOrEnd; [A_3Pl][P_3Pl]:@ˡ~+litki        EncliticOrEnd; [A_3Pl][P_3Du]:@ˡ~+litkek        EncliticOrEnd;
+[A_3Du][P_3Sg]:@ˡ~+lignegu         EncliticOrEnd; [A_3Du][P_3Pl]:@ˡ~+ligki        EncliticOrEnd; [A_3Du][P_3Du]:@ˡ~+ligkek        EncliticOrEnd;
+[A_3Du][P_3Sg]:@ˡ~linʼgu           EncliticOrEnd; [A_3Du][P_3Pl]:@ˡ~+ligneki      EncliticOrEnd; [A_3Du][P_3Du]:@ˡ~+lignekek      EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_1Sg][P_3Sg]:@~+laku             EncliticOrEnd; [A_1Sg][P_3Pl]:@~+laki          EncliticOrEnd; [A_1Sg][P_3Du]:@~+lakek          EncliticOrEnd;
-[A_1Pl][P_3Sg]:@~+laut             EncliticOrEnd; [A_1Pl][P_3Pl]:@~+laput         EncliticOrEnd; [A_1Pl][P_3Du]:@~+lagput         EncliticOrEnd;
-[A_1Du][P_3Sg]:@~+lauk             EncliticOrEnd; [A_1Du][P_3Pl]:@~+lapuk         EncliticOrEnd; [A_1Du][P_3Du]:@~+lagpuk         EncliticOrEnd;
+[A_1Sg][P_3Sg]:@ˡ~+laku            EncliticOrEnd; [A_1Sg][P_3Pl]:@ˡ~+laki         EncliticOrEnd; [A_1Sg][P_3Du]:@ˡ~+lakek         EncliticOrEnd;
+[A_1Pl][P_3Sg]:@ˡ~+laut            EncliticOrEnd; [A_1Pl][P_3Pl]:@ˡ~+laput        EncliticOrEnd; [A_1Pl][P_3Du]:@ˡ~+lagput        EncliticOrEnd;
+[A_1Du][P_3Sg]:@ˡ~+lauk            EncliticOrEnd; [A_1Du][P_3Pl]:@ˡ~+lapuk        EncliticOrEnd; [A_1Du][P_3Du]:@ˡ~+lagpuk        EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_2Sg][P_3Sg]:[Opt_PRS_2Sg_3Sg]   EncliticOrEnd; [A_2Sg][P_3Pl]:@+ki             EncliticOrEnd; [A_2Sg][P_3Du]:@+kek             EncliticOrEnd;
-[A_2Pl][P_3Sg]:@+ciu               EncliticOrEnd; [A_2Pl][P_3Pl]:@+ciki           EncliticOrEnd; [A_2Pl][P_3Du]:@+cikek           EncliticOrEnd;
-[A_2Du][P_3Sg]:@+tegu              EncliticOrEnd; [A_2Du][P_3Pl]:@+tegki          EncliticOrEnd; [A_2Du][P_3Du]:@+tegkek          EncliticOrEnd;
+[A_2Sg][P_3Sg]:[Opt_PRS_2Sg_3Sg]   EncliticOrEnd; [A_2Sg][P_3Pl]:@⁴+ki            EncliticOrEnd; [A_2Sg][P_3Du]:@⁴+kek            EncliticOrEnd;
+[A_2Pl][P_3Sg]:@⁵+ciu              EncliticOrEnd; [A_2Pl][P_3Pl]:@⁵+ciki          EncliticOrEnd; [A_2Pl][P_3Du]:@⁵+cikek          EncliticOrEnd;
+[A_2Du][P_3Sg]:@⁵+tegu             EncliticOrEnd; [A_2Du][P_3Pl]:@⁵+tegki         EncliticOrEnd; [A_2Du][P_3Du]:@⁵+tegkek         EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_3Sg][P_1Sg]:@~+linga            EncliticOrEnd; [A_3Sg][P_1Pl]:@~+likut         EncliticOrEnd; [A_3Sg][P_1Du]:@~+likuk          EncliticOrEnd;
-[A_3Pl][P_1Sg]:@~+litnga           EncliticOrEnd; [A_3Pl][P_1Pl]:@~+litkut        EncliticOrEnd; [A_3Pl][P_1Du]:@~+litkuk         EncliticOrEnd;
-[A_3Du][P_1Sg]:@~+lignga           EncliticOrEnd; [A_3Du][P_1Pl]:@~+ligkut        EncliticOrEnd; [A_3Du][P_1Du]:@~+ligkuk         EncliticOrEnd;
-[A_3Du][P_1Sg]:@~+lignenga         EncliticOrEnd; [A_3Du][P_1Pl]:@~+lignekut      EncliticOrEnd; [A_3Du][P_1Du]:@~+lignekuk       EncliticOrEnd;
+[A_3Sg][P_1Sg]:@ˡ~+linga           EncliticOrEnd; [A_3Sg][P_1Pl]:@ˡ~+likut        EncliticOrEnd; [A_3Sg][P_1Du]:@ˡ~+likuk         EncliticOrEnd;
+[A_3Pl][P_1Sg]:@ˡ~+litnga          EncliticOrEnd; [A_3Pl][P_1Pl]:@ˡ~+litkut       EncliticOrEnd; [A_3Pl][P_1Du]:@ˡ~+litkuk        EncliticOrEnd;
+[A_3Du][P_1Sg]:@ˡ~+lignga          EncliticOrEnd; [A_3Du][P_1Pl]:@ˡ~+ligkut       EncliticOrEnd; [A_3Du][P_1Du]:@ˡ~+ligkuk        EncliticOrEnd;
+[A_3Du][P_1Sg]:@ˡ~+lignenga        EncliticOrEnd; [A_3Du][P_1Pl]:@ˡ~+lignekut     EncliticOrEnd; [A_3Du][P_1Du]:@ˡ~+lignekuk      EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
 !                                               |                                              |                                               |
 !                                               |                                              |                                               |
 !                                               |                                              |                                               |
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_2Sg][P_1Sg]:@+nga               EncliticOrEnd; [A_2Sg][P_1Pl]:@+kut            EncliticOrEnd; [A_2Sg][P_1Du]:@+kuk             EncliticOrEnd;
+[A_2Sg][P_1Sg]:@⁴+nga              EncliticOrEnd; [A_2Sg][P_1Pl]:@⁴+kut           EncliticOrEnd; [A_2Sg][P_1Du]:@⁴+kuk            EncliticOrEnd;
 [A_2Sg][P_1Sg]:[Opt_PRS_2Sg_1Sg]   EncliticOrEnd;
-[A_2Pl][P_1Sg]:@+cia               EncliticOrEnd; [A_2Pl][P_1Pl]:@+cikut          EncliticOrEnd; [A_2Pl][P_1Du]:@+cikuk           EncliticOrEnd;
-[A_2Du][P_1Sg]:@+tegnga            EncliticOrEnd; [A_2Du][P_1Pl]:@+tegkut         EncliticOrEnd; [A_2Du][P_1Du]:@+tegkuk          EncliticOrEnd;
+[A_2Pl][P_1Sg]:@⁵+cia              EncliticOrEnd; [A_2Pl][P_1Pl]:@⁵+cikut         EncliticOrEnd; [A_2Pl][P_1Du]:@⁵+cikuk          EncliticOrEnd;
+[A_2Du][P_1Sg]:@⁵+tegnga           EncliticOrEnd; [A_2Du][P_1Pl]:@⁵+tegkut        EncliticOrEnd; [A_2Du][P_1Du]:@⁵+tegkuk         EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_3Sg][P_2Sg]:@~+liten            EncliticOrEnd; [A_3Sg][P_2Pl]:@~+lici          EncliticOrEnd; [A_3Sg][P_2Du]:@~+litek          EncliticOrEnd;
-[A_3Pl][P_2Sg]:@~+litgen           EncliticOrEnd; [A_3Pl][P_2Pl]:@~+liceci        EncliticOrEnd; [A_3Pl][P_2Du]:@~+licetek        EncliticOrEnd;
-[A_3Du][P_2Sg]:@~+ligten           EncliticOrEnd; [A_3Du][P_2Pl]:@~+ligci         EncliticOrEnd; [A_3Du][P_2Du]:@~+ligtek         EncliticOrEnd;
-[A_3Du][P_2Sg]:@~+ligneten         EncliticOrEnd; [A_3Du][P_2Pl]:@~+ligneci       EncliticOrEnd; [A_3Du][P_2Du]:@~+lignetek       EncliticOrEnd;
+[A_3Sg][P_2Sg]:@ˡ~+liten           EncliticOrEnd; [A_3Sg][P_2Pl]:@ˡ~+lici         EncliticOrEnd; [A_3Sg][P_2Du]:@ˡ~+litek         EncliticOrEnd;
+[A_3Pl][P_2Sg]:@ˡ~+litgen          EncliticOrEnd; [A_3Pl][P_2Pl]:@ˡ~+liceci       EncliticOrEnd; [A_3Pl][P_2Du]:@ˡ~+licetek       EncliticOrEnd;
+[A_3Du][P_2Sg]:@ˡ~+ligten          EncliticOrEnd; [A_3Du][P_2Pl]:@ˡ~+ligci        EncliticOrEnd; [A_3Du][P_2Du]:@ˡ~+ligtek        EncliticOrEnd;
+[A_3Du][P_2Sg]:@ˡ~+ligneten        EncliticOrEnd; [A_3Du][P_2Pl]:@ˡ~+ligneci      EncliticOrEnd; [A_3Du][P_2Du]:@ˡ~+lignetek      EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_1Sg][P_2Sg]:@~+lamken           EncliticOrEnd; [A_1Sg][P_2Pl]:@~+lamci         EncliticOrEnd; [A_1Sg][P_2Du]:@~+lamtek         EncliticOrEnd;
-[A_1Sg][P_2Sg]:@~+laken            EncliticOrEnd;
-[A_1Pl][P_2Sg]:@~+lamteggen        EncliticOrEnd; [A_1Pl][P_2Pl]:@~+lamceci       EncliticOrEnd; [A_1Pl][P_2Du]:@~+lamcetek       EncliticOrEnd;
-[A_1Du][P_2Sg]:@~+lamegten         EncliticOrEnd; [A_1Du][P_2Pl]:@~+lamegci       EncliticOrEnd; [A_1Du][P_2Du]:@~+lamegtek       EncliticOrEnd;
+[A_1Sg][P_2Sg]:@ˡ~+lamken          EncliticOrEnd; [A_1Sg][P_2Pl]:@ˡ~+lamci        EncliticOrEnd; [A_1Sg][P_2Du]:@ˡ~+lamtek        EncliticOrEnd;
+[A_1Sg][P_2Sg]:@ˡ~+laken           EncliticOrEnd;
+[A_1Pl][P_2Sg]:@ˡ~+lamteggen       EncliticOrEnd; [A_1Pl][P_2Pl]:@ˡ~+lamceci      EncliticOrEnd; [A_1Pl][P_2Du]:@ˡ~+lamcetek      EncliticOrEnd;
+[A_1Du][P_2Sg]:@ˡ~+lamegten        EncliticOrEnd; [A_1Du][P_2Pl]:@ˡ~+lamegci      EncliticOrEnd; [A_1Du][P_2Du]:@ˡ~+lamegtek      EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
 !                                               |                                              |                                               |
 !                                               |                                              |                                               |
@@ -14911,9 +14912,9 @@ ulurya          EmotionalPostbase; ! afraid of being hit
 uumi            EmotionalPostbase; ! frustrated
 
 LEXICON EmotionalPostbase
--@–ke[V→V]:@–k̲e              VerbPostbase; ! to find (it) to be V
--@~+narqe[V→V]:@~+narqe      VerbPostbase; ! to tend to cause one to V; to be able to be V-ed
--@~+naite[V→V]:@~+naite      VerbPostbase; ! to tend not to cause one to V
+-@–ke[V→V]:@⁴–k̲e             VerbPostbase; ! to find (it) to be V
+-@~+narqe[V→V]:@¹~+narqe     VerbPostbase; ! to tend to cause one to V; to be able to be V-ed
+-@~+naite[V→V]:@¹~+naite     VerbPostbase; ! to tend not to cause one to V
 -+tar[V→V]:+tar              VerbPostbase; ! to tend by oneʼs disposition or nature to V a lot
 -+taite[V→V]:+taite°         VerbPostbase; ! to tend by oneʼs disposition or nature not to V
 -@~+yug[V→V]:@ʸ~+yug         VerbPostbase; ! to want to V; to tend to V; to feel V (with “emotional roots”)
