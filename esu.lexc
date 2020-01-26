@@ -14259,6 +14259,7 @@ LEXICON TransitiveInterrogative
 ![A_1Du][P_3Sg]: EncliticOrEnd; [A_1Du][P_3Pl]: EncliticOrEnd; [A_1Du][P_3Du]: EncliticOrEnd;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
 [A_2Sg][P_3Sg]:~+(t)siu       EncliticOrEnd; [A_2Sg][P_3Pl]:~+(t)siki      EncliticOrEnd; [A_2Sg][P_3Du]:~+(t)sikek      EncliticOrEnd;
+[A_2Sg][P_3Sg]:~+(t)yiu       EncliticOrEnd; [A_2Sg][P_3Pl]:~+(t)yiki      EncliticOrEnd; [A_2Sg][P_3Du]:~+(t)yikek      EncliticOrEnd;
 [A_2Pl][P_3Sg]:@⁵~+ceciu      EncliticOrEnd; [A_2Pl][P_3Pl]:@⁵~+ceciki     EncliticOrEnd; [A_2Pl][P_3Du]:@⁵~+cecikek     EncliticOrEnd;
 [A_2Du][P_3Sg]:@⁵~+cetegnegu  EncliticOrEnd; [A_2Du][P_3Pl]:@⁵~+cetegki    EncliticOrEnd; [A_2Du][P_3Du]:@⁵~+cetegkek    EncliticOrEnd;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
@@ -14272,6 +14273,7 @@ LEXICON TransitiveInterrogative
 !                                          |                                            |                                             |
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
 [A_2Sg][P_1Sg]:~+(t)sia       EncliticOrEnd; [A_2Sg][P_1Pl]:~+(t)sikut     EncliticOrEnd; [A_2Sg][P_1Du]:~+(t)sikuk      EncliticOrEnd;
+[A_2Sg][P_1Sg]:~+(t)yia       EncliticOrEnd; [A_2Sg][P_1Pl]:~+(t)yikut     EncliticOrEnd; [A_2Sg][P_1Du]:~+(t)yikuk      EncliticOrEnd;
 [A_2Pl][P_1Sg]:@⁵~+cecia      EncliticOrEnd; [A_2Pl][P_1Pl]:@⁵~+cecikut    EncliticOrEnd; [A_2Pl][P_1Du]:@⁵~+cecikuk     EncliticOrEnd;
 [A_2Du][P_1Sg]:@⁵~+cetegnga   EncliticOrEnd; [A_2Du][P_1Pl]:@⁵~+cetegkut   EncliticOrEnd; [A_2Du][P_1Du]:@⁵~+cetegkuk    EncliticOrEnd;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
@@ -14281,8 +14283,9 @@ LEXICON TransitiveInterrogative
 [A_3Du][P_2Sg]:+'(g/t)agneten EncliticOrEnd; [A_3Du][P_2Pl]:+'(g/t)agneci  EncliticOrEnd; [A_3Du][P_2Du]:+'(g/t)agnetek  EncliticOrEnd;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
 [A_1Sg][P_2Sg]:~+(t)siken     EncliticOrEnd;                                            !                                             |
-![A_1Pl][P_2Sg]:               EncliticOrEnd;                                        !                                         |
-![A_1Du][P_2Sg]:               EncliticOrEnd;                                        !                                         |
+[A_1Sg][P_2Sg]:~+(t)yiken     EncliticOrEnd;                                            !                                             |
+![A_1Pl][P_2Sg]:               EncliticOrEnd;                                          !                                            |
+![A_1Du][P_2Sg]:               EncliticOrEnd;                                          !                                            |
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
 !                                          |                                            |                                             |
 !                                          |                                            |                                             |
