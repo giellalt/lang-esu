@@ -92,8 +92,8 @@ g̲:r <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 g:k <=> _ [ .#. | %= ] ; ! Word Final changes
 
 "gg:g = gte@(u)"
-gg:g <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
-         _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
+gg:g <=> _ t:0 e:0 (°) Bndry:* %@³: ; ! CCte@³(u)/Cu
+         _ t:s (ʼ) e:0 [Bndry:-%°]* %@⁴: ; ! Cte@⁴gkng/s
 
 "g̲g̲:rr = Uvular/VelarAgreement"
 g̲g̲:rr <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
@@ -107,13 +107,27 @@ k̲:q <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 "l:0 = --" ! - optional drop preceding vowel also
 l:0 => Vow:0 (Con:0) Bndry:* %–: %–: _ ; ! Rule for Double Minus - 
 
+"l:ll = te@ˡl/ll"
+l:ll <=> t:0 (ʼ) e:0 (°) Bndry:* %@ˡ: Bndry:* _ ; ! te@ˡl/ll
+
 "ll:l = lte@(u)"
-ll:l <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
-         _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
+ll:l <=> _ t:0 e:0 (°) Bndry:* %@³: ; ! CCte@³(u)/Cu
+         _ t:s (ʼ) e:0 [Bndry:-%°]* %@⁴: ; ! Cte@⁴gkng/s
+
+"m:ḿ = @²m"
+m:ḿ <=> Con t:0 e:0 [Bndry:-%°:]* %@²: Bndry:* _ ; ! Cte@²m/Cḿ
+
+"n:ń = @¹n"
+n:ń <=> Con t:0 e:0 (°) Bndry:* %@¹: Bndry:* _ ; ! Cte@¹n/Cń
 
 "ng:0 = :"
 ng:0 <=> [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* _ [[Bndry:|:0]-e:0]* %:: [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
          [:Con|.#.] [Bndry:|:0]* :FVow [Bndry:|:0]* %:: [Bndry:|:0]* _ [Bndry:|:0]* :FVow [Bndry:|:0]* [:Con|.#.] ; ! Rule for Colon
+    except
+         Con t:0 e:0 [Bndry:-%°:]* %@²: Bndry:* _ ; ! Cte@²ng/Cńg
+
+"ng:ńg = @²ng"
+ng:ńg <=> Con t:0 e:0 [Bndry:-%°:]* %@²: Bndry:* _ ; ! Cte@²ng/Cńg
 
 "q̲:k = Uvular/VelarAgreement"
 q̲:k <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
@@ -137,56 +151,69 @@ rr:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
 r̲r̲:gg <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "rr:r = rte@(u)"
-rr:r <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
-         _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
+rr:r <=> _ t:0 e:0 (°) Bndry:* %@³: ; ! CCte@³(u)/Cu
+         _ t:s (ʼ) e:0 [Bndry:-%°]* %@⁴: ; ! Cte@⁴gkng/s
 
-"t:0 = te@c|p/0 | Cte@ng|v|m/0 | Cte@(u)/Cu"
-t:0 <=> _ e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [c|p] ; ! te@c|p/0
-        Con _ e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [ng|v|m] ; ! Cte@ng|v|m/0
-        VlessFric:VoiceFric _ e:0 [Bndry:-%*:]* %@: Bndry:* %(u%):u ; ! Cte@(u)/Cu
+"t:0 = Cte@¹n/CCń | Cte@²mngv/CCḿńgvv | Cte@³(u)/Cu"
+t:0 <=> Con _ e:0 (°) [Bndry:-AtSign:]* %@¹: ; ! Cte@¹n/CCń
+        Con _ e:0 (°) [Bndry:-AtSign:]* %@²: ; ! Cte@²mngv/CCḿńgvv
+        VlessFric:VoiceFric _ e:0 (°) [Bndry:-AtSign:]* %@³: ; ! Cte@³(u)/Cu
+        _ (ʼ) e:0 (°) [Bndry:-AtSign:]* %@⁵: ;
+        _ (ʼ) e:0 (°) [Bndry:-AtSign:]* %@ˡ: ;
 
 "t:c = tV--li/ci | te@y/c | te~s/c" 
-t:c <=> _ Vow:0 (Con:0) [Bndry:-%(u%):]* %–: %–: l:0 i ; ! te--li/ci
-        _ (ʼ) e:0 [Bndry:-%(u%):]* i ; ! te~i/ci
-        _ (ʼ) e:0 [Bndry:-%(u%):]* %@ʸ: [Bndry:-%(u%):]* y:0 ; ! te@y/c
-        _ (ʼ) e:0 [Bndry:-%(u%):]* s:0 ; ! te~s/c
+t:c <=> _ Vow:0 (Con:0) [Bndry:-%(u%):-AtSign:]* %–: %–: l:0 i ; ! te--li/ci
+        _ (ʼ) e:0 [Bndry:-%(u%):-AtSign:]* i ; ! te~i/ci
+        _ (ʼ) e:0 [Bndry:-%(u%):-AtSign:]* %@ʸ: [Bndry:-%(u%):-AtSign:]* y:0 ; ! te@y/c
+        _ (ʼ) e:0 [Bndry:-%(u%):-AtSign:]* s:0 ; ! te~s/c
 
-"t:l = te*@(u)"
-t:l <=> _ e:0 %*: Bndry:* %@: Bndry:* %(u%): ; ! te*@(u)/lu
+"t:l = Vte@²/l | te*@³(u)/l | te°@⁴gkng/l"
+t:l <=> Vow _ (ʼ) e:0 %°: [Bndry:-AtSign:]* %@²: ; ! Vte°@²mngv/l
+        Vow _ (ʼ) e:0 %°: [Bndry:-AtSign:]* %@³: ; ! Vte°@³(u)/l
+        _ (ʼ) e:0 %°: [Bndry:-AtSign:]* %@⁴: ; ! te°@⁴gkng/l
 
 "t:n = WordFinalVte"
 t:n <=> Vow _ e:0 [ .#. | %= ] ; ! Word final Vte
 
-"t:s = te@k/s | Vte@ng|v|m/s | tʼe@(u)/sʼu "
-t:s <=> [VlessFric:VoiceFric|Vow|Stop] _ (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
-        Vow _ (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* [ng|v|m] ; ! Vte@ng|v|m/s
-        _ ʼ e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! tʼe@(u)/sʼu
+"t:q = te@ˁ/q"
+t:q <=> _ (ʼ) e:0 (°) [Bndry:-AtSign:]* %@ˁ: ; ! te@ˁ/q
 
-"t:y = Vte@(u)/Vy"
-t:y <=> [Vow|Stop] _ e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! Vte@(u)/Vyu
+"t:s = Vte@²/s | Vtʼe@³(u)/sʼu | Cte@⁴gkng/s"
+t:s <=> Vow _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@²: ; ! Vte@²mngv/s
+        Vow _ ʼ e:0 [Bndry:-%°:-AtSign:]* %@³: ; ! Vtʼe@³(u)/sʼu
+        [Vow|VlessFric:VoiceFric|Nasal|Stop] _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
+
+"t:y = Vte@³(u)/Vy"
+t:y <=> 
+!        Vow _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@²: ; ! Vte@²mngv/y  (for HBC)
+        [Vow|Nasal|Stop] _ e:0 [Bndry:-%°:-AtSign:]* %@³: ; ! Vte@³(u)/Vy    TODO: Add t'e/y' also for HBC
+!        [Vow|VlessFric:VoiceFric|Nasal|Stop] _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/y for HBC  
 
 "s:0 = te~s/c | (t)s/c"
 s:0 <=> t:c (ʼ) e:0 Bndry:* _ ; ! te~s/c
         %(t%):c Bndry:* _ ; ! (t)s/c
 
 "ss:s = ste@(u)"
-ss:s <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
-         _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
+ss:s <=> _ t:0 e:0 (°) Bndry:* %@³: ; ! CCte@³(u)/Cu
+         _ t:s (ʼ) e:0 [Bndry:-%°]* %@⁴: ; ! Cte@⁴gkng/s
 
 "u:0 = --"
 u:0 <=> _ Con:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
 
 "u͡gg:u͡g = u͡gte@(u)"
-u͡gg:u͡g <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
-           _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
+u͡gg:u͡g <=> _ t:0 e:0 (°) Bndry:* %@³: ; ! CCte@³(u)/Cu
+           _ t:s (ʼ) e:0 [Bndry:-%°]* %@⁴: ; ! Cte@⁴gkng/s
 
 "u͡rr:u͡r = u͡rte@(u)"
-u͡rr:u͡r <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
-           _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
+u͡rr:u͡r <=> _ t:0 e:0 (°) Bndry:* %@³: ; ! CCte@³(u)/Cu
+           _ t:s (ʼ) e:0 [Bndry:-%°]* %@⁴: ; ! Cte@⁴gkng/s
+
+"v:vv = @²v"
+v:vv <=> Con t:0 e:0 [Bndry:-%°:]* %@²: Bndry:* _ ; ! Cte@²v/Cvv
 
 "vv:v = vte@(u)"
-vv:v <=> _ t:0 e:0 [Bndry:-%*:]* %@: Bndry:* %(u%): ; ! CC:Cte@(u)/Cu
-         _ t:s (ʼ) e:0 [Bndry:-%(u%):]* %@: [Bndry:-%(u%):]* k ; ! te@k/s
+vv:v <=> _ t:0 e:0 (°) Bndry:* %@³: ; ! CCte@³(u)/Cu
+         _ t:s (ʼ) e:0 [Bndry:-%°]* %@⁴: ; ! Cte@⁴gkng/s
 
 "y:0 = te@y"
 y:0 <=> t:c (ʼ) e:0 (°) Bndry:* %@ʸ: Bndry:* _ ; ! te@y/c
