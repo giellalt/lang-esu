@@ -29,7 +29,7 @@ define AutomaticDevoicing v -> vv,
                           r -> rr,
                           u͡g -> u͡gg,
                           u͡r -> u͡rr || [ Stop | VlessFric ] ">"* _  ,
-                                     _ ">"* [ Stop ]                        .o.
+                                     _ ">"* [ Stop | VlessFric ]             .o.
                           m -> ḿ,
                           n -> ń,
                           ng -> ńg || [ Stop | VlessFric ] ">"* _   ;
@@ -62,11 +62,17 @@ define TripleVowel FVow -> 0 || FVow ">"* _ ">"* FVow ;
 define TetToCet t (->) c || _ e ">"* t ,
                             _ e ">"* ss ">"* c ; ! kitugtesciigataqa -> kitugcesciigataqa
 
+define arDeletion  "a̲" r -> 0 || _ ">"* Con   .o.
+                   "a̲" rr -> 0 || _ ">"* Con   .o.
+                   "a̲" q -> 0 || _ ">"* .#.    ;
+
+
 define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* Vow ">"* Con ">"* _ ">"* Vow ">"* Vow ,
                                     VoiceCon ">"*  _ ">"* VoiceCon                           ;
 
-define ToOrthography [..] -> "ʼ" || VlessCon _ ">"* VoiceCon , VoiceFric _ ">"* VlessCon , n _ ">"* g   .o.
-                      vv -> v,
+define AddApostrophe [..] -> "ʼ" || VlessCon _ ">"* VoiceCon , n _ ">"* g   ;      ! maybe VoiceFric _ ">"* VlessCon  ???
+
+define ToOrthography  vv -> v,
                       ll -> l,
                       ss -> s,
                       gg -> g,
@@ -78,7 +84,8 @@ define ToOrthography [..] -> "ʼ" || VlessCon _ ">"* VoiceCon , VoiceFric _ ">"*
                       ń -> n,
                       ńg -> ng || [ Stop | VlessFric ] ">"* _           .o.
                       rr -> r  || _ ">"* .#.                            .o.
-                      ss -> s  || .#. ">"*  _                            ;
+                      ss -> s  || .#. ">"*  _                           .o.
+                      a̲ -> a                                             ;
                     
 
 regex AutomaticDevoicing   .o.
@@ -87,5 +94,8 @@ regex AutomaticDevoicing   .o.
       TripleConsonant      .o.
       TripleVowel          .o.
       TetToCet             .o.
+      arDeletion           .o.
       RemoveApostrophe     .o.
+      AddApostrophe        .o.
+      AutomaticDevoicing   .o.
       ToOrthography         ;
