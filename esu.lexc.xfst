@@ -63,19 +63,19 @@ define Lowercase "A"   -> a,
 
 define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
                      "[Opt_PRS_2Sg]" -> "+" n               || t e  _                         .o.
-                     t e "*" "[Opt_PRS_2Sg]" -> l u                                           .o.
+                     t e "°" "[Opt_PRS_2Sg]" -> l u                                           .o.
                      "[Opt_PRS_2Sg]" -> ":" a               || Con  _                         .o.
                      "[Opt_PRS_2Sg]" -> 0                                                     .o.
                      "[Opt_PRS_2Sg_3Sg]" -> "~" "(g)" i u   || [ Vow Vow | [ Con - t ] e ] _  .o.
                      t e "[Opt_PRS_2Sg_3Sg]" -> s g u                                         .o.
-                     t e "*" "[Opt_PRS_2Sg_3Sg]" -> l g u                                     .o.
+                     t e "°" "[Opt_PRS_2Sg_3Sg]" -> l g u                                     .o.
                      "[Opt_PRS_2Sg_3Sg]" -> "–" gg u        || g _                            .o.
                      "[Opt_PRS_2Sg_3Sg]" -> "–" rr u        || r _                            .o.
                      "[Opt_PRS_2Sg_3Sg]" -> u                                                 .o.
                      "[Opt_PRS_2Sg_1Sg]" (->) "~" "(g)" i a || [ Vow Vow | [ Con - t ] e ] _  .o.
                      "[Opt_PRS_2Sg_1Sg]" -> "@²" "+" ng a                                     .o.
 
-                     "@ˡ~+lu/@⁵na" -> "@⁵" n a                || t e "°" _                    .o.
+                     "@ˡ~+lu/@⁵na" -> "@⁵" n a                || "°" _                        .o.
                      "@ˡ~+lu/@⁵na" -> "@ˡ" "~" "+" l u                                        .o.
                      "–lria/@⁴+ngur*" -> "@⁴" "+" ng u r "*"  || t e "°" _                    .o.
                      "–lria/@⁴+ngur*" -> "–" l r i a                                          .o.
@@ -91,13 +91,13 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
 !                     "(ʼa)" -> ʼ a                           || Con a _                      .o.
 !                     "(ʼa)" -> 0                                                             .o.
                      "–r̲pag/@²vag" (->) "@²" v a g            || Vow t e _                    .o.
-                     "–r̲pag/@²vag"  ->  "–" r p a g                                           .o.
+                     "–r̲pag/@²vag"  ->  "–" r̲ p a g                                           .o.
                      "+ciqe/@⁵ciiqe" -> "@⁵" c i i q e        || t e ("°") _                  .o. 
                      "+ciqe/@⁵ciiqe" -> "+" c i q e                                           .o. 
                      "@⁵+cete/.vkar" -> "@⁵" "+" c e t e      || Con _                        .o.
                      "@⁵+cete/.vkar" (->) "@⁵" "+" c e t e    || t e ("°") _                  .o.
                      "@⁵+cete/.vkar" -> "." v k a r                                           .o.
-                     "+a/+aar" -> "@" a a r                   || t e ("°") _                  .o.
+                     "+a/+aar" -> "+" a a r                   || t e ("°") _                  .o.
                      "+a/+aar" -> "+" a                                                       .o.
 
                      t e ("°") "@+–'(g)ar(ar)te" -> g "+" a r "(ar)" t e   || Vow _           .o. ! Vte -> Vg
