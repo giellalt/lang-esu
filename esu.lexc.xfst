@@ -113,8 +113,8 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
 define AllomorphDecouple "(g/t)" -> "(g)" "(t)" .o. 
                          "(r/l)" -> "(r)" "(l)" .o. 
                          "(u/i)" -> "(u)" "(i)" .o.
-                         "(ar)"  -> "a̲" r       .o.
-                         "(ar*)" -> "a̲" r "*"    ; 
+                         "(ar)"  -> "ạ" r       .o.
+                         "(ar*)" -> "ạ" r "*"    ; 
 
 define AutomaticDevoicing v -> vv,
                           l -> ll,

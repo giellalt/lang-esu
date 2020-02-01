@@ -62,9 +62,9 @@ define TripleVowel FVow -> 0 || FVow ">"* _ ">"* FVow ;
 define TetToCet t (->) c || _ e ">"* t ,
                             _ e ">"* ss ">"* c ; ! kitugtesciigataqa -> kitugcesciigataqa
 
-define arDeletion  "a̲" r -> 0 || _ ">"* Con   .o.
-                   "a̲" rr -> 0 || _ ">"* Con   .o.
-                   "a̲" q -> 0 || _ ">"* .#.    ;
+define arDeletion  "ạ" r -> 0 || _ ">"* Con   .o.
+                   "ạ" rr -> 0 || _ ">"* Con   .o.
+                   "ạ" q -> 0 || _ ">"* .#.    ;
 
 
 define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* Vow ">"* Con ">"* _ ">"* Vow ">"* Vow ,
@@ -85,7 +85,7 @@ define ToOrthography  vv -> v,
                       ńg -> ng || [ Stop | VlessFric ] ">"* _           .o.
                       rr -> r  || _ ">"* .#.                            .o.
                       ss -> s  || .#. ">"*  _                           .o.
-                      a̲ -> a                                             ;
+                      ạ -> a                                             ;
                     
 
 regex AutomaticDevoicing   .o.
