@@ -50,7 +50,7 @@ Vx:Vy <=> [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con 
 
 "a:á"
 Vx:Vy <=> :Vow B:* _ ; !VV́(C)                                                                                         ! Rule 2
-          :Con B:* _ B:* :Con B:* ([:Con|:ʼ]) B:* :Vow B:* :AllVow ; ! CV́C(C)VV́                                   ! Rule 3
+          [.#.|:Con] B:* _ B:* :Con B:* ([:Con|:ʼ]) B:* :Vow B:* :AllVow ; ! CV́C(C)VV́                                   ! Rule 3
           .#. (:Con) B:* _ B:* :Con B:* [:Con|:ʼ] ; ! #(C)V́C[Cʼ]                                               ! Rule 4
           [.#.|:Con|:ʼ] B:* :Vow B:* (:Con) B:* :Con B:* _ B:* :Con B:* :Con ; ! every 2nd closed syllable
           :Con B:* _ B:* :Con B:* :Con B:* :Vow B:* :Con B:* :AllVow ; ! 1st syllable if second syllable open
