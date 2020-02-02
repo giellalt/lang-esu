@@ -19,8 +19,14 @@ define Nasal      [ VlessNasal | VoiceNasal ];
 
 define Con        [ Stop | Fric | Nasal | w | y ];
 
-define FVow       [ a | i | u ];
-define Vow        [ e | FVow ];
+define FVow       [ a | i | u | ạ ];
+define FVowStress [ á | í | ú | ạ́ ];
+define FVowHatted [ â | î | û | ậ ];
+define AllFVow    [ FVow | FVowStress | FVowHatted ];
+define Vow        [ FVow | e ];
+define VowStress  [ FVowStress | é ];
+define VowHatted  [ FVowHatted | ê ];
+define AllVow     [ Vow | VowStress | VowHatted ];
 
 define AutomaticDevoicing v -> vv,
                           l -> ll,
@@ -38,13 +44,12 @@ define AutomaticDevoicing v -> vv,
 !                          r -> rr  || _ ">"* .#.                            .o.
 !                          s -> ss  || .#. ">"* _                             ;
 
-define WeakInitialE [..] -> "ʼ" || "[e]" [Con]+ [Vow]+ ">"+ Con _ ">"* FVow  .o.
-                    [..] -> "ʼ" || "[e]" [Con]+ [Vow]+ ">"* Con _ ">"+ FVow  .o.
-                    "[e]" -> 0  || _ [Con|Vow]+ ">"                          .o. 
+define WeakInitialE [..] -> "ʼ" || "[e]" [Con]+ [AllVow]+ ">"+ Con _ ">"* AllFVow  .o.
+                    [..] -> "ʼ" || "[e]" [Con]+ [AllVow]+ ">"* Con _ ">"+ AllFVow  .o.
+                    "[e]" -> 0  || _ [Con|AllVow]+ ">"                          .o. 
                     "[e]" -> e                                                ;
 
-define DropHattedE e -> 0 || .#. [Vow ">"* Con ">"* Vow ">"* Con ">"*]* Vow ">"* Con ">"* _ ">"* Con ">"* Vow                        ,  ! #(VCVC)*VCeCV
-                             [Con|.#.] ">"* Con ">"* [Vow ">"* Con ">"* Vow ">"* Con ">"*]* Vow ">"* Con ">"* _ ">"* Con ">"* Vow   .o. ! [#/C]C(VCVC)*VCeCV
+define DropHattedE ê -> 0 .o.
                 [..] -> e || p _ ">"* p , t _ ">"* t , c _ ">"* c , k _ ">"* k , q _ ">"* q , 
                              v _ ">"* v , l _ ">"* l , s _ ">"* s , g _ ">"* g , r _ ">"* r , u͡g _ ">"* u͡g , u͡r _ ">"* u͡r ,
                              vv _ ">"* vv , ll _ ">"* ll , ss _ ">"* ss, gg _ ">"* gg , rr _ ">"* rr , u͡gg _ ">"* u͡gg , u͡rr _ ">"* u͡rr ,
@@ -57,17 +62,27 @@ define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o.
                        [..] (->) e || Con ">"* Con _ ">"* Con     .o.
                        [..]  ->  e || Con _ ">"* Con ">"* Con      ;
 
-define TripleVowel FVow -> 0 || FVow ">"* _ ">"* FVow ;
+define TripleVowel AllFVow -> 0 || AllFVow ">"* _ ">"* AllFVow ;
 
 define TetToCet t (->) c || _ e ">"* t ,
                             _ e ">"* ss ">"* c ; ! kitugtesciigataqa -> kitugcesciigataqa
 
-define arDeletion  "ạ" r -> 0 || _ ">"* Con   .o.
-                   "ạ" rr -> 0 || _ ">"* Con   .o.
-                   "ạ" q -> 0 || _ ">"* .#.    ;
+define arDeletion  "ạ" q -> 0 || _ ">"* .#.                                             .o. ! wordFinal
+                   "ạ" [r|rr] -> 0 || Vow ">"* VowStress ">"* Con ">"* _ ">"* Con       .o. ! VV́r(ar) -> VV́r
+                   "ạ" [r|rr] -> 0 || Con ">"* VowStress ">"* Con ">"* _ ">"* Con       .o. ! CV́r(ar) -> CV́r
+                   "â" -> a "ʼ" á,
+                   "î" -> i "ʼ" í,
+                   "û" -> u "ʼ" ú  || _ ">"* Con ">"* ["ạ"|"ạ́"] [r|rr] ">"* Con         .o. ! V̂r(ar) -> V'Vr
+                   ["ạ"|"ạ́"] [r|rr] -> 0 || Vow "ʼ" VowStress ">"* Con ">"* _ ">"* Con  .o. ! V̂r(ar) -> V'Vr
+                   a -> á "ʼ",
+                   e -> é "ʼ",
+                   i -> í "ʼ",
+                   u -> ú "ʼ" || _ ">"* Con ">"* "ạ́" [r|rr] ">"* Con                     .o. ! Vr(ár) -> V́(ʼ)r
+                   "ạ́" [r|rr] -> 0 || VowStress "ʼ" ">"* Con ">"* _ ">"* Con             .o. ! Vr(ár) -> V́(ʼ)r
+                   "ʼ" (->) 0 || VowStress _ ">"* Con                                     ;  ! Vr(ár) -> V́(ʼ)r
 
 
-define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* Vow ">"* Con ">"* _ ">"* Vow ">"* Vow ,
+define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* AllVow ">"* Con ">"* _ ">"* AllVow ">"* AllVow ,
                                     VoiceCon ">"*  _ ">"* VoiceCon                           ;
 
 define AddApostrophe [..] -> "ʼ" || VlessCon _ ">"* VoiceCon , n _ ">"* g   ;      ! maybe VoiceFric _ ">"* VlessCon  ???
@@ -85,7 +100,10 @@ define ToOrthography  vv -> v,
                       ńg -> ng || [ Stop | VlessFric ] ">"* _           .o.
                       rr -> r  || _ ">"* .#.                            .o.
                       ss -> s  || .#. ">"*  _                           .o.
-                      ạ -> a                                             ;
+                      [â|á|ạ|ậ|ạ́] -> a                                  .o.
+                      [ê|é] -> e                                        .o.
+                      [î|í] -> i                                        .o.
+                      [û|ú] -> u                                         ;
                     
 
 regex AutomaticDevoicing   .o.
