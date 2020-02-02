@@ -23,6 +23,12 @@ esu.lexc.xfst.hfst: esu.lexc.xfst
 esu.twol.hfst: esu.twol
 	hfst-twolc -i esu.twol -o esu.twol.hfst
 
+# This is the phonology file, which assigns stress to vowels
+#   cali>nrit0>>>uq
+#   calí>nrit0>>>uq
+esu.stress.hfst: esu.stress.twol
+	hfst-twolc -i esu.stress.twol -o esu.stress.hfst
+
 # This is the phonology xfst file, which handles cases twol isn't suited for
 # 	e.g. tripleConsonantCluster e-insertion (CCC -> CeCC or CCec)
 esu.twol.xfst.hfst: esu.twol.xfst
@@ -31,8 +37,8 @@ esu.twol.xfst.hfst: esu.twol.xfst
 # This is the generator that still has morpheme boundaries
 #	cali-–nrite[V→V][V][Intr][Ind][S_3Sg]
 #   cali>nrit>>>uq
-esu.gen.seg.hfst: esu.lexc.hfst esu.twol.hfst esu.twol.xfst.hfst 
-	hfst-compose-intersect -1 esu.lexc.hfst -2 esu.twol.hfst | hfst-compose -1 - -2 esu.twol.xfst.hfst | hfst-minimise -o esu.gen.seg.hfst
+esu.gen.seg.hfst: esu.lexc.hfst esu.twol.hfst esu.stress.hfst esu.twol.xfst.hfst 
+	hfst-compose-intersect -1 esu.lexc.hfst -2 esu.twol.hfst | hfst-compose-intersect -1 - -2 esu.stress.hfst | hfst-compose -1 - -2 esu.twol.xfst.hfst | hfst-minimise -o esu.gen.seg.hfst
 
 # This is the phonology file, which removes morpheme boundaries
 #   cali>nrit>>>uq
