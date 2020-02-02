@@ -1,0 +1,63 @@
+! LANGUAGE: "esu"
+! AUTHOR: "Lonny Strunk"
+
+Alphabet
+    a c e g i k l m n p q r s t u v w y ḿ ń
+    vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
+    %[e%]
+    ʼ                                           ! Keep apostrophe from lexical entries
+    ạ                                           ! for (ar) droppping
+    á í ú ạ́ â î û ậ é ê
+    %> 
+    %= %- ;
+
+Sets 
+    Bndry = %> %= %- ;
+
+    Stop = p t c k q ;
+    VoiceFric = v l s g r u͡g u͡r ; 
+    VlessFric = vv ll ss gg rr u͡gg u͡rr ;
+    VoiceNasal = m n ng ;
+    VlessNasal = ḿ ń ńg ;
+
+    VoiceCon = VoiceFric VoiceNasal ;
+    VlessCon = VlessFric VlessNasal Stop ;
+
+    Fric = VoiceFric VlessFric ;
+    Nasal = VoiceNasal VlessNasal ;
+
+    Con = Stop Fric Nasal w y ;
+
+    FVow = a i u ạ ;
+    FVowStress = á í ú ạ́ ;
+    FVowHatted = â î û ậ ;
+    AllFVow = FVow FVowStress FVowHatted ;
+    Vow = FVow e ;
+    VowStress = FVowStress é ;
+    VowHatted = FVowHatted ê ;
+    AllVow = Vow VowStress VowHatted ;
+
+Rules 
+! From pg 55 in practical grammar book (Jacobson, 1995)
+
+"a:â"
+Vx:Vy <=> [.#.|:Con] :Vow :Con _ ~[ :Con :Con :* | :Con :ʼ :* ] .#. ; !CVCV̂            ! Rule 1
+    except
+        _ (:Vow|:Con) [.#.|%-] ;
+    where Vx in Vow
+          Vy in VowHatted
+    matched;
+
+"a:á"
+Vx:Vy <=> :Vow _ ; !VV́(C)                                                              ! Rule 2
+          :Con _ :Con ([:Con|:ʼ]) :Vow :AllVow ; ! CV́C(C)VV́                         ! Rule 3
+          .#. (:Con) _ :Con [:Con|:ʼ] ; ! #(C)V́C[Cʼ]                                   ! Rule 4
+          [.#.|:Con|:ʼ] :Vow (:Con) :Con _ :Con :Con ; ! every 2nd closed syllable
+          :Con _ :Con :Con :Vow :Con :AllVow ; ! 1st syllable if second syllable open
+    except
+        _ (:Con) [.#.|%-] ;
+        [.#.|:Con] :Vow :Con _ ~[ :Con :Con :* | :Con :ʼ :* ] .#. ; !CVCV̂
+    where Vx in Vow
+          Vy in VowStress
+    matched;
+
