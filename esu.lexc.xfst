@@ -88,8 +88,8 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "+t/.s" -> "." s                                                         .o.
                      "+c/.s" -> "+" c                         || Con _                        .o.
                      "+c/.s" -> "." s                                                         .o.
-!                     "(ʼa)" -> ʼ a                           || Con a _                      .o.
-!                     "(ʼa)" -> 0                                                             .o.
+                     "(ʼa)" -> ʼ a                            || \.#. Con a _                 .o.
+                     "(ʼa)" -> 0                                                              .o.
                      "–r̲pag/@²vag" (->) "@²" v a g            || Vow t e _                    .o.
                      "–r̲pag/@²vag"  ->  "–" r̲ p a g                                           .o.
                      "+ciqe/@⁵ciiqe" -> "@⁵" c i i q e        || t e ("°") _                  .o. 
