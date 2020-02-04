@@ -138,8 +138,8 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 @+–'(g)ar(ar)te             ! to suddenly or immediately V; to V with short duration of action
 @⁵+cete/.vkar               ! to let, allow, permit, cause, or compel one to V
 +ciqe/@⁵ciiqe               ! to V in the future; will V
+(ʼa)                        ! used for [DemAdv][Loc] %~nete 
 
-!(ʼa)                        ! used for [DemAdv][Loc] %~nete 
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -259,6 +259,25 @@ qaner-–a/–ar/–aa/+a/+aar[V→V]:qanaa         VerbPostbase; !
 uver-–a/–ar/–aa/+a/+aar[V→V]:uvaa           VerbPostbase; ! 
 nasper-–a/–ar/–aa/+a/+aar[V→V]:naspaa       VerbPostbase; ! 
 
+! non-productive -+te[V→V] 'to act on one so as to cause it to V'
+tuqu-+te[V→V]:tuqute        VerbPostbase; !            
+nala-+te[V→V]:nalate        VerbPostbase; ! 
+nipe-+te[V→V]:nipte         VerbPostbase; ! 
+qame-+te[V→V]:qamte         VerbPostbase; ! 
+ane-+te[V→V]:ante           VerbPostbase; ! 
+iter-+te[V→V]:iterte        VerbPostbase; ! 
+tatame-+te[V→V]:tatamete    VerbPostbase; ! 
+tatame-+te[V→V]:tatamte     VerbPostbase; ! 
+uive-+te[V→V]:uivte         VerbPostbase; ! 
+mayur-+te[V→V]:mayurte      VerbPostbase; ! 
+atrar-+te[V→V]:atrarte      VerbPostbase; ! 
+akag-+te[V→V]:akagte        VerbPostbase; ! 
+tupag-+te[V→V]:tupagte      VerbPostbase; ! 
+kiner-+te[V→V]:kinerte      VerbPostbase; ! 
+asme-+te[V→V]:asemte        VerbPostbase; ! 
+uita-+te[V→V]:uitate        VerbPostbase; !   
+igte-+te[V→V]:igcete        VerbPostbase; ! 
+urug-+te[V→V]:urugte        VerbPostbase; !   
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -8322,7 +8341,7 @@ anqerte                VerbPostbase; ! to dash out
 anqur                  VerbPostbase; ! to remove items one after another from a container, a house, etc.; to move from one house to another with oneʼs possessions
 anssiir                VerbPostbase; ! to hunt seal downriver
 anssiur                VerbPostbase; ! to hunt seal downriver
-ante                   VerbPostbase; ! to put out(side) # antaa ‘he put it outʼ
+ante                   VerbPostbase; ! to put out(side)
 anucimirqe             VerbPostbase; ! to repent; to want not to repeat oneʼs actions; to learn from oneʼs mistake
 anucimirqecetaar       VerbPostbase; ! to reprove; to chastise; to rebuke
 anucinge               VerbPostbase; ! to become wiser through experience; to learn oneʼs lesson
@@ -8338,7 +8357,7 @@ anuqʼvag               VerbPostbase; ! to be very windy
 anura                  VerbPostbase; ! to keep going out
 anuraqe                VerbPostbase; ! to want to do something but feel constrained by circumstances or authority; to wait patiently
 anurvag                VerbPostbase; ! to be very windy
-anute                  VerbPostbase; ! to take out(side) # anutaa ‘he took it outʼ
+anute                  VerbPostbase; ! to take out(side)
 anutiir                VerbPostbase; ! to have a birthday
 anyaqturte             VerbPostbase; ! to not come out from the house to welcome a visitor
 anyarar(ar)            VerbPostbase; ! be born prematurely; go out too early
@@ -13687,9 +13706,9 @@ VerbInflection;
 -–rvaar[V→V]:–r̲vaar                           VerbPostbase; ! to be very V
 -–rvag[V→V]:–r̲vag                             VerbPostbase; ! to be very V
 -–sciigate[V→V]:–sciigate°                    VerbPostbase; ! to be unable to V
--%%(e)sqe[V→V]:%%(e)sqe                       VerbPostbase; ! to want one to V; to ask one to V
+-%%(e)sqe[V→V]:%%%:(e)sqe                     VerbPostbase; ! to want one to V; to ask one to V
 -–sqe[V→V]:–sqe                               VerbPostbase; ! to want one to V; to ask one to V
--%%(e)squma[V→V]:%%(e)squma                   VerbPostbase; ! to want one to V; to encourage one to V; to wish or desire that one should V
+-%%(e)squma[V→V]:%%%:(e)squma                 VerbPostbase; ! to want one to V; to encourage one to V; to wish or desire that one should V
 -–squma[V→V]:–squma                           VerbPostbase; ! to want one to V; to encourage one to V; to wish or desire that one should V
 -–ssaag[V→V]:–ssaag                           VerbPostbase; ! to try to V
 -–ssaag[V→V]:–ssaag                           VerbPostbase; ! to be too V
@@ -14326,7 +14345,7 @@ LEXICON IntransitivePresentOptative
 !----------------------------|-------------------------------|------------------------------------|
 [S_3Sg]:@ˡ~+li  EncliticOrEnd; [S_1Sg]:@ˡ~+lii  EncliticOrEnd; [S_2Sg]:[Opt_PRS_2Sg] EncliticOrEnd;
 [S_3Pl]:@ˡ~+lit EncliticOrEnd; [S_1Pl]:–lta     EncliticOrEnd; [S_2Pl]:@⁵+ci         EncliticOrEnd;
-                               [S_1Pl]:%%(e)lta EncliticOrEnd;
+                               [S_1Pl]:%%%:(e)lta EncliticOrEnd;
 [S_3Du]:@ˡ~+lik EncliticOrEnd; [S_1Du]:@ˡ~+luk  EncliticOrEnd; [S_2Du]:@⁵+tek        EncliticOrEnd;
 !----------------------------|-------------------------------|------------------------------------|
 
@@ -15264,8 +15283,8 @@ LEXICON DemAdv
 [DemAdv][Abl]:.ken                      EncliticOrEnd;
 [DemAdv][Via]:.ggun                     EncliticOrEnd;
 [DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
-[DemAdv][Loc]-ete[N→V]:%%~nete°         VerbPostbase;
-![DemAdv][Loc]-ete[N→V]:(ʼa)+nte°        VerbPostbase;
+![DemAdv][Loc]-ete[N→V]:%%~nete°         VerbPostbase;
+[DemAdv][Loc]-ete[N→V]:(ʼa)+nte°        VerbPostbase;
 [DemAdv]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
 [DemAdv][Ter]+virte[N→V]:.virte         VerbPostbase;
 [DemAdv][Via]+gguir[N→V]:.gguir         VerbPostbase;
