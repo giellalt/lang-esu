@@ -122,13 +122,16 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 [Quant_Qual]                ! Quantifier/Qualifier Construction
 [Encl]                      ! Enclitic
 
+
 !!!!!!! MultipleForms xfst rule variables !!!!!!
 [Opt_PRS_2Sg]               !
 [Opt_PRS_2Sg_3Sg]           !
 [Opt_PRS_2Sg_1Sg]           !
 @ˡ~+lu/@⁵na                 ! Subordinative Mood marker
+[STE_2Sg]                   ! Subordinative/Optative Special Te + 2Sg
 –lria/@⁴+ngur*              ! Participial Mood marker
 +p/.v                       ! Noun & QuantQual Inflection Chart ; peke/vkar postbase
++pegun/.vkun                ! [N][Via][2SgPoss][SgPosd]
 +t/.s                       ! Abs Inflection Chart
 +c/.s                       ! Abs Inflection Chart
 @⁵+p/~v                     ! instead of @~+(t)v postbase representations
@@ -427,6 +430,7 @@ keggu                    ParticleEnd; ! whew (itʼs heavy)
 kepelmun                 ParticleEnd; ! marking, cutting, moving, etc. widthwise, across something
 kesianek                 ParticleEnd; ! always
 kesiani                  ParticleEnd; ! only then
+kiaku                    ParticleEnd; ! next summer
 kiika=wa                 ParticleEnd; ! I too wish it were so!
 kiiki                    ParticleEnd; ! hurry!
 kiitau͡gani               ParticleEnd; ! (HBC,NS, NUN form), kiituanʼ finally; thereafter
@@ -500,6 +504,7 @@ ukaqvaggun               ParticleEnd; ! in the near future; recently
 ukatmun                  ParticleEnd; ! toward here; this way; on this side
 uksuaqu                  ParticleEnd; ! this coming autumn
 uksuarpak                ParticleEnd; ! all autumn
+uksuqu                   ParticleEnd; ! this coming winter
 uksurpak                 ParticleEnd; ! all winter
 umiqvanek                ParticleEnd; ! from the distance; from out of sight
 unuaku                   ParticleEnd; ! in the morning
@@ -4016,7 +4021,6 @@ kiagpag                NounPostbase; ! the whole summer; all this present summer
 kiagtar                NounPostbase; ! summer thing; king salmon (Oncorhynchus tschawytscha) (additional Y meaning)
 kiagvig                NounPostbase; ! summer fish camp
 kiakiar                NounPostbase; ! solitary sandpiper (Tringa solitaria)
-kiaku                  NounPostbase; ! next summer
 kiakvar                NounPostbase; ! all last summer
 kiallar*               NounPostbase; ! thing of last summer
 kiam                   NounPostbase; ! who; whose
@@ -7337,7 +7341,6 @@ uksuar*                NounPostbase; ! fall; autumn; last autumn
 uksuiller              NounPostbase; ! fall camp
 uksuivig               NounPostbase; ! fall camp
 uksullar*              NounPostbase; ! thing of last winter
-uksuqu                 NounPostbase; ! this coming winter
 uksur                  NounPostbase; ! winter; last winter; year
 uksurtar               NounPostbase; ! thing of winter; snow bunting (Plectrophenax nivalis)
 uksussar               NounPostbase; ! vinegar
@@ -9297,7 +9300,7 @@ ellamiu                VerbPostbase; ! to be outside
 ellanarqe              VerbPostbase; ! to be suitable weather for outdoor activity
 ellangcar              VerbPostbase; ! to reprimand; to teach a lesson; to instill awareness (of what one has done but shouldnʼt have done)
 ellange                VerbPostbase; ! to obtain awareness; to have oneʼs first experience(s) that leave(s) a lasting memory
-ellangeksaite          VerbPostbase; ! to (still) be in a coma or otherwise unconscious
+ellangeksaite          VerbSpecialT; ! to (still) be in a coma or otherwise unconscious
 ellangpar              VerbPostbase; ! to act crazy, playing instead of trying to accomplish things; to misbehave
 ellaqerrute            VerbPostbase; ! for weather to suddenly turn bad on one
 ellaqʼer               VerbPostbase; ! to fade from sight becoming smaller and smaller
@@ -9348,7 +9351,7 @@ elpegniur              VerbPostbase; ! to taste; to try to identify a taste
 elpeke                 VerbPostbase; ! to sense; to feel; to discern
 elpengcar              VerbPostbase; ! to notify; to make aware; to revive from unconsciousness
 elpenge                VerbPostbase; ! to acquire sensation; to come to oneʼs senses
-elpengeksaite          VerbPostbase; ! to be unconsious; to be in a coma
+elpengeksaite          VerbSpecialT; ! to be unconsious; to be in a coma
 elraur                 VerbPostbase; ! to move around; to travel
 elri                   VerbPostbase; ! to celebrate the Great Feast for the Dead
 elrikaute              VerbPostbase; ! to spend all; to use up; to give out and have no more; to squander
@@ -12952,6 +12955,7 @@ uniurte                VerbPostbase; ! to overlook; to miss the mark
 univkar                VerbPostbase; ! to tell; to relate
 unuakutar              VerbPostbase; ! to eat breakfast
 unuaqute               VerbPostbase; ! to make plans for the next day
+unug                   VerbPostbase; ! for night to fall
 unugi                  VerbPostbase; ! to spend the night
 unʼgarte               VerbPostbase; ! to abruptly stay or be left behind
 upag                   VerbPostbase; ! to change oneʼs place of residence; to move; to run toward someone (NSU meaning)
@@ -14049,7 +14053,7 @@ LEXICON NounInflection
 [N][Via][1PlPoss][SgPosd]:–mteggun          EncliticOrEnd; [N][Via][1PlPoss][PlPosd]:–mteggun        EncliticOrEnd; [N][Via][1PlPoss][DuPosd]:%%%:(e)gemteggun       EncliticOrEnd; ! 1Pl possessor |
 [N][Via][1DuPoss][SgPosd]:–megnegun         EncliticOrEnd; [N][Via][1DuPoss][PlPosd]:–megnegun       EncliticOrEnd; [N][Via][1DuPoss][DuPosd]:%%%:(e)gmegnegun       EncliticOrEnd; ! 1Du possessor |
 ! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
-[N][Via][2SgPoss][SgPosd]:+p/.vkun          EncliticOrEnd; [N][Via][2SgPoss][PlPosd]:+p/.vkun        EncliticOrEnd; [N][Via][2SgPoss][DuPosd]:%%%:(e)gpegun          EncliticOrEnd; ! 2Sg possessor |
+[N][Via][2SgPoss][SgPosd]:+pegun/.vkun      EncliticOrEnd; [N][Via][2SgPoss][PlPosd]:+pegun/.vkun    EncliticOrEnd; [N][Via][2SgPoss][DuPosd]:%%%:(e)gpegun          EncliticOrEnd; ! 2Sg possessor |
 [N][Via][2SgPoss][SgPosd]:–vkun             EncliticOrEnd; [N][Via][2SgPoss][PlPosd]:–vkun           EncliticOrEnd; 
 [N][Via][2PlPoss][SgPosd]:+p/.vcetgun       EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:+p/.vcetgun     EncliticOrEnd; [N][Via][2PlPoss][DuPosd]:%%%:(e)gpecetgun       EncliticOrEnd; ! 2Pl possessor |
 [N][Via][2PlPoss][SgPosd]:–vcetgun          EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:–vcetgun        EncliticOrEnd; 
@@ -14522,8 +14526,8 @@ LEXICON TransitiveParticipial
 
 LEXICON IntransitiveSubordinative
 !-------------------------|----------------------------|---------------------------|
-[S_3Sg]:ni   EncliticOrEnd; [S_1Sg]:%:nga EncliticOrEnd; [S_2Sg]:ten  EncliticOrEnd;
-                                                         [S_2Sg]:k    EncliticOrEnd; ! for special te with na
+[S_3Sg]:ni   EncliticOrEnd; [S_1Sg]:%:nga EncliticOrEnd; [S_2Sg]:[STE_2Sg]  EncliticOrEnd;
+!                                                         [S_2Sg]:k    EncliticOrEnd; ! for special te with na
 [S_3Pl]:teng EncliticOrEnd; [S_1Pl]:ta    EncliticOrEnd; [S_2Pl]:ci   EncliticOrEnd;
 [S_3Du]:tek  EncliticOrEnd; [S_1Du]:nuk   EncliticOrEnd; [S_2Du]:tek  EncliticOrEnd;
                             [S_1Du]:nung  EncliticOrEnd;
