@@ -78,7 +78,7 @@ arenqiate[V][Intr][Cnsq][S_4Sg]=wa[Encl]	arenqialami-wa
 ayag-@~+niarar[V→V][V][Intr][Cnsq][S_4Pl]	ayagniaraameng
 uterte-@~+niarar[V→V][V][Intr][Cnsq][S_3Sg]	uterrniaraan
 keggute-+(ng)uar[N→N][N][Abs][Unpd][Sg]	keggutnguaq
-nuyar-+(ng)uar[N→N][N][Abs][Unpd][Sg]	nuyaruat
+nuyar-+(ng)uar[N→N][N][Abs][Unpd][Pl]	nuyaruat
 kuuvviar-+(ng)uar[N→N][N][Abs][Unpd][Sg]	kuuvviaruaq
 nuna-+(ng)uar[N→N][N][Abs][Unpd][Sg]	nunanguaq
 irniar-+(ng)uar[N→N][N][Abs][Unpd][Sg]	irniaruaq
@@ -90,12 +90,12 @@ qavar-@~+(ng)uar[V→V][V][Intr][Ind][S_3Sg]	qavaruartuq
 cali-@~+(ng)uar[V→V][V][Intr][Ind][S_3Sg]	calinguartuq
 atʼe-@~+(ng)uar[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	asnguaraa
 maqar-+(ng)uar[N→N][N][Abs][Unpd][Sg]	maqaruaq
-nayir-+tur[N→V][V][Intr][Ind][S_3Sg]	nayirturtuq
+nayir*-+tur[N→V][V][Intr][Ind][S_3Sg]	nayirturtuq
 atsar-+tur[N→V]-@~+yug[V→V]-@~+yaaqe[V→V]-–llru[V→V][V][Intr][Ind][S_1Sg]	atsarturyugyaaqellruunga
 kuuvviar-+tur[N→V][V][Intr][Ind][S_3Sg]	kuuvviarturtuq
 anger-+tur[N→V][V][Intr][Ind][S_3Sg]	angerturtuq
 qavangur-+tur[N→V][V][Intr][Ind][S_3Sg]	qavangurturtuq
-nayir-+cur/+ssur[N→V][V][Intr][Ind][S_3Sg]	nayircurtuq
+nayir*-+cur/+ssur[N→V][V][Intr][Ind][S_3Sg]	nayircurtuq
 tuntu-+cur/+ssur[N→V][V][Intr][Ind][S_3Sg]	tuntussurtuq
 neqe-+cur/+ssur[N→V][V][Intr][Ind][S_3Sg]	neqsurtuq
 pi-+cur/+ssur[N→V][V][Intr][Ind][S_3Sg]	pissurtuq

@@ -1,5 +1,5 @@
-kiag[N][Abs][Unpd][Sg]	kaik
-uksuar[N][Abs][Unpd][Sg]	uksuaq
+kiag[N][Abs][Unpd][Sg]	kiak
+uksuar*[N][Abs][Unpd][Sg]	uksuaq
 uksur[N][Abs][Unpd][Sg]	uksuq
 upʼnerkar[N][Abs][Unpd][Sg]	upʼnerkaq
 kiag[N][Loc][Unpd][Sg]	kiagmi
@@ -8,9 +8,9 @@ uksur[N][Loc][Unpd][Sg]	uksumi
 uksur-–rpag/@vag[N→N][N][Abs][Unpd][Sg]	uksurpak
 unug-–rpag/@vag[N→N][N][Abs][Unpd][Sg]	unugpak
 erner-–rpag/@vag[N→N][N][Abs][Unpd][Sg]	ernerpak
-kiaku[N][Abs][Unpd][Sg]	kiaku
-uksuqu[N][Abs][Unpd][Sg]	uksuqu
-unuku[N][Abs][Unpd][Sg]	unuku
+kiaku[Particle]	kiaku
+uksuqu[Particle]	uksuqu
+unuku[Particle]	unuku
 uksur[V][Intr][Ind][S_3Sg]	uksurtuq
 unug[V][Trns][Ind][A_3Sg][P_1Pl]	unugaakut
 erte[V][Intr][Ind][S_3Sg]	ertuq
