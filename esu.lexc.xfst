@@ -1,16 +1,6 @@
 ! LANGUAGE: "esu"
 ! AUTHOR: "Lonny Strunk"
 
-! define MultipleForms
-    ! for [Opt_PRS_2Sg_1Sg]
-    ! multi-form inflections .vet/+pet ...
-    ! for lria/lrii/ngur*
-    ! for nru/llru
-    ! 
-! change the multi-char symbols to single char??
-! change capital to lowercase
-! give to twolc
-
 define Stop       [ p | t | c | k | q | k̲ | q̲ ];
 define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | g̲ | r̲ ];
 define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr | g̲g̲ | r̲r̲ ];
@@ -77,6 +67,9 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
 
                      "@ˡ~+lu/@⁵na" -> "@⁵" n a                || "°" _                        .o.
                      "@ˡ~+lu/@⁵na" -> "@ˡ" "~" "+" l u                                        .o.
+                     "[STE_2Sg]" -> k                         || n a _                        .o.
+                     "[STE_2Sg]" -> t e n                                                     .o.
+                     i (->) u                                 || \[i] _ t e "°" "@⁵" n a      .o. ! (e.g nereksainani (->) nereksaunani)
                      "–lria/@⁴+ngur*" -> "@⁴" "+" ng u r "*"  || t e "°" _                    .o.
                      "–lria/@⁴+ngur*" -> "–" l r i a                                          .o.
                      "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
@@ -84,6 +77,8 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "+p/.v" -> "+" p e                       || Con _ Con                    .o.
                      "+p/.v" -> "+" p                         || Con _ Vow                    .o.
                      "+p/.v" -> "." v                                                         .o.
+                     "+pegun/.vkun" -> "+" p e g u n          || Con _                        .o.
+                     "+pegun/.vkun" -> "." v k u n                                            .o.
                      "+t/.s" -> "+" t                         || Con _                        .o.
                      "+t/.s" -> "." s                                                         .o.
                      "+c/.s" -> "+" c                         || Con _                        .o.
@@ -110,8 +105,7 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "+c/.ss" -> "+" c                      ;
 
 
-define AllomorphDecouple "(g/t)" -> "(g)" "(t)" .o. 
-                         "(r/l)" -> "(r)" "(l)" .o. 
+define AllomorphDecouple "(r/l)" -> "(r)" "(l)" .o. ! "(g/t)" -> "(g)" "(t)" .o.
                          "(u/i)" -> "(u)" "(i)" .o.
                          "(ar)"  -> "ạ" r       .o.
                          "(ar*)" -> "ạ" r "*"    ; 
