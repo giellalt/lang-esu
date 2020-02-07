@@ -50,20 +50,27 @@ define Lowercase "A"   -> a,
                  "U͡gg" -> u͡gg,
                  "U͡rr" -> u͡rr;
 
+define AllomorphDecouple "(r/l)" -> "(r)" "(l)" .o. ! "(g/t)" -> "(g)" "(t)" .o. "(u/i)" -> "(u)" "(i)" .o.
+                         "(ar)"  -> "ạ" r       .o.
+                         "(ar*)" -> "ạ" r "*"    ; 
 
-define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _  .o.
-                     "[Opt_PRS_2Sg]" -> "+" n               || t e  _                         .o.
-                     t e "°" "[Opt_PRS_2Sg]" -> l u                                           .o.
-                     "[Opt_PRS_2Sg]" -> ":" a               || Con  _                         .o.
-                     "[Opt_PRS_2Sg]" -> 0                                                     .o.
-                     "[Opt_PRS_2Sg_3Sg]" -> "~" "(g)" i u   || [ Vow Vow | [ Con - t ] e ] _  .o.
-                     t e "[Opt_PRS_2Sg_3Sg]" -> s g u                                         .o.
-                     t e "°" "[Opt_PRS_2Sg_3Sg]" -> l g u                                     .o.
-                     "[Opt_PRS_2Sg_3Sg]" -> "–" gg u        || g _                            .o.
-                     "[Opt_PRS_2Sg_3Sg]" -> "–" rr u        || r _                            .o.
-                     "[Opt_PRS_2Sg_3Sg]" -> u                                                 .o.
-                     "[Opt_PRS_2Sg_1Sg]" (->) "~" "(g)" i a || [ Vow Vow | [ Con - t ] e ] _  .o.
-                     "[Opt_PRS_2Sg_1Sg]" -> "@²" "+" ng a                                     .o.
+define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_S_2Sg]" -> "+" n               || t e  _                           .o.
+                     t e "°" "[Opt_PRS_S_2Sg]" -> l u                                             .o.
+                     "[Opt_PRS_S_2Sg]" -> ":" a               || Con  _                           .o.
+                     "[Opt_PRS_S_2Sg]" -> 0                                                       .o.
+                     "[Opt_PRS_S_2PlDu]" (->) "~" "(g)" i     || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_S_2PlDu]" -> "@⁵" "+"                                              .o.
+                     "[Opt_PRS_A_2Sg]" (->) "~" "(g)" i       || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_A_2Sg]" -> "@⁴" "+"                                                .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "~" "(g)" i u || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     t e "[Opt_PRS_A_2Sg_P_3Sg]" -> s g u                                         .o.
+                     t e "°" "[Opt_PRS_A_2Sg_P_3Sg]" -> l g u                                     .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "–" gg u      || g _                              .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "–" rr u      || r _                              .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> u                                                 .o.
+                     "[Opt_PRS_A_2Sg_P_1Sg]" (->) "~" "(g)" i a || [ Vow Vow | [ Con - t ] e ] _  .o.
+                     "[Opt_PRS_A_2Sg_P_1Sg]" -> "@⁴" "+" ng a                                     .o.
 
                      "@ˡ~+lu/@⁵na" -> "@⁵" n a                || "°" _                        .o.
                      "@ˡ~+lu/@⁵na" -> "@ˡ" "~" "+" l u                                        .o.
@@ -95,20 +102,14 @@ define MultipleForms "[Opt_PRS_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con
                      "+a/+aar" -> "+" a a r                   || t e ("°") _                  .o.
                      "+a/+aar" -> "+" a                                                       .o.
 
-                     t e ("°") "@+–'(g)ar(ar)te" -> g "+" a r "(ar)" t e   || Vow _           .o. ! Vte -> Vg
-                     t e ("°") "@+–'(g)ar(ar)te" -> "+" a r "(ar)" t e     || Con _           .o. ! Cte -> C
-                     t "ʼ" e "@+–'(g)ar(ar)te" -> s "ʼ" "+" a r "(ar)" t e                    .o. ! tʼe -> sʼ
-                     "@+–'(g)ar(ar)te" -> "–" a r "(ar)" t e               || r _             .o. ! r -> -
-                     "@+–'(g)ar(ar)te" -> "+" a r "(ar)" t e               || g _             .o. ! g -> +
-                     "@+–'(g)ar(ar)te" -> "+" "'" "(g)" a r "(ar)" t e                        .o. ! Vow -> +'(g)
+                     t e ("°") "@+–'(g)ar(ar)te" -> g "+" a r "ạ" r t e    || Vow _           .o. ! Vte -> Vg
+                     t e ("°") "@+–'(g)ar(ar)te" -> "+" a r "ạ" r t e      || Con _           .o. ! Cte -> C
+                     t "ʼ" e "@+–'(g)ar(ar)te" -> s "ʼ" "+" a r "ạ" r t e                     .o. ! tʼe -> sʼ
+                     "@+–'(g)ar(ar)te" -> "–" a r "ạ" r t e                || r _             .o. ! r -> -
+                     "@+–'(g)ar(ar)te" -> "+" a r "ạ" r t e                || g _             .o. ! g -> +
+                     "@+–'(g)ar(ar)te" -> "+" "'" "(g)" a r "ạ" r t e                         .o. ! Vow -> +'(g)
                      "+c/.ss" -> "." ss                     || Vow _                          .o.
                      "+c/.ss" -> "+" c                      ;
-
-
-define AllomorphDecouple "(r/l)" -> "(r)" "(l)" .o. ! "(g/t)" -> "(g)" "(t)" .o.
-                         "(u/i)" -> "(u)" "(i)" .o.
-                         "(ar)"  -> "ạ" r       .o.
-                         "(ar*)" -> "ạ" r "*"    ; 
 
 define AutomaticDevoicing v -> vv,
                           l -> ll,
@@ -127,6 +128,6 @@ define AutomaticDevoicing v -> vv,
 !                          s -> ss  || .#. _                             ;
 
 regex Lowercase          .o.
-      MultipleForms      .o.  
       AllomorphDecouple  .o.
+      MultipleForms      .o.  
       AutomaticDevoicing  ;
