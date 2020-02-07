@@ -1,9 +1,12 @@
 ! LANGUAGE: "esu"
 ! AUTHOR: "Lonny Strunk"
 
+!! NOTE !!!
+! 1. Morpheme Operators are indicated by ">"
+! 2. Vowels may be hatted or stressed (i.e. a -> [â|á])
+
 ! TODO:
 !   - from -rraar-: terr -> q ; e.g. inarterraarluni -> inarqaarluni
-
 
 define Stop       [ p | t | c | k | q ];
 define VoiceFric  [ v | l | s | g | r | u͡g | u͡r ];
@@ -56,7 +59,7 @@ define DropHattedE ê -> 0 .o.
                              m _ ">"* m , n _ ">"* n , ng _ ">"* ng , ḿ _ ">"* ḿ , ń _ ">"* ń , ńg _ ">"* ńg , 
                              w _ ">"* w , y _ ">"* y , c _ ">"* t , t _ ">"* c                                                       ; ! maybe c _ ">"* n , n _ ">"* c ??
 
-define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o.
+define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o. ! rqe- bases drop r
                        [..]  ->  e || Con _ ">"* [s|ss] ">"* Con  .o.
                        [..]  ->  e || Con ">"* t _ ">"* Con       .o.
                        [..] (->) e || Con ">"* Con _ ">"* Con     .o.
@@ -64,11 +67,13 @@ define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o.
 
 define TripleVowel AllFVow -> 0 || AllFVow ">"* _ ">"* AllFVow ;
 
-define TetToCet t (->) c || _ e ">"* t ,
-                            _ e ">"* ss ">"* c ; ! kitugtesciigataqa -> kitugcesciigataqa
+define WordAdjustments t (->) c     || _ [e|é] ">"* t ,               ! angutet -> angucet
+                                       _ [e|é] ">"* ss ">"* c     .o. ! kitugtesciigataqa -> kitugcesciigataqa
+                       [a|â|á] -> e || ">" q _ ">"* [r|rr]         ;  ! apteqarru -> apteqerru for -qar- postbase
+
 
 define arDeletion  "ạ" q -> 0 || _ ">"* .#.                                             .o. ! wordFinal
-                   "ạ" [r|rr] -> 0 || Vow ">"* VowStress ">"* Con ">"* _ ">"* Con       .o. ! VV́r(ar) -> VV́r
+                   ["ạ"|"ạ́"] [r|rr] -> 0 || Vow ">"* VowStress ">"* Con ">"* _ ">"* Con .o. ! VV́r(ar) -> VV́r
                    "ạ" [r|rr] -> 0 || Con ">"* VowStress ">"* Con ">"* _ ">"* Con       .o. ! CV́r(ar) -> CV́r
                    "â" -> a "ʼ" á,
                    "î" -> i "ʼ" í,
@@ -111,7 +116,7 @@ regex AutomaticDevoicing   .o.
       DropHattedE          .o.
       TripleConsonant      .o.
       TripleVowel          .o.
-      TetToCet             .o.
+      WordAdjustments      .o.
       arDeletion           .o.
       RemoveApostrophe     .o.
       AddApostrophe        .o.
