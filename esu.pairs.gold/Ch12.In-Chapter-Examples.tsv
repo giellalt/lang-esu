@@ -44,7 +44,7 @@ alike-–nrite[V→V][V][Trns][Opt][PRS][A_2Sg][P_3Pl]	alikenrilki
 alike-–nrite[V→V][V][Trns][Opt][PRS][A_2Sg][P_1Sg]	alikenrilnga
 neqliur[V][Trns][Opt][PRS][A_2Sg][P_3Pl]	neqliurki
 callmag[V][Trns][Opt][PRS][A_2Sg][P_3Du]	callmagkek
-ikayur[V][Trns][Opt][PRS][A_2Sg][P_1Pl]	ikayurkuk
+ikayur[V][Trns][Opt][PRS][A_2Sg][P_1Du]	ikayurkuk
 ikayur[V][Trns][Opt][PRS][A_2Sg][P_1Sg]	ikayurnga
 utaqa[V][Trns][Opt][PRS][A_2Sg][P_1Sg]	utaqanga
 niicugni[V][Trns][Opt][PRS][A_2Sg][P_1Sg]	niicugninga
@@ -86,14 +86,14 @@ ceńirte[V][Trns][Opt][FUT][A_2Sg][P_1Sg]	ceńireskia
 ayag[V][Intr][Opt][FUT][S_1Pl]	ayakilta
 nere[V][Trns][Opt][FUT][NEG][A_2Sg][P_3Pl]	neryaqunaki
 alike[V][Trns][Opt][FUT][NEG][A_2Sg][P_1Pl]	aliksaqunakut
-unite[V][Trns][Opt][FUT][NEG][A_2Sg][P_1Sg]	unicaqunacia
+unite[V][Trns][Opt][FUT][NEG][A_2Pl][P_1Sg]	unicaqunacia
 ayag[V][Intr][Opt][FUT][NEG][S_2Pl]	ayagyaqunaci
 ayag-–nrite[V→V][V][Intr][Opt][FUT][S_1Pl]	ayanrilkilta
 nere[V][Intr][Opt][FUT][NEG][S_2Sg]	neryaqunak
 nere[V][Trns][Opt][FUT][NEG][A_2Sg][P_3Sg]	neryaqunaku
 alike[V][Trns][Opt][FUT][NEG][A_2Sg][P_1Sg]	aliksaqunii
 qia[V][Intr][Opt][PRS][NEG][S_2Sg]	qiaviiqnak
-kuuvviar[V][Intr][Opt][FUT][NEG][S_2Pl]	kuuvviarpiiqnaci
+kuuvviar[V][Intr][Opt][PRS][NEG][S_2Pl]	kuuvviarpiiqnaci
 nere-@~+naur[V→V][V][Intr][Ind][S_1Pl]	nernaurtukut
 tai-–qar[V→V][V][Intr][Opt][PRS][S_2Sg]	taiqaa
 callmag-–qar[V→V][V][Trns][Opt][PRS][A_2Sg][P_3Sg]	callmakarru
@@ -108,9 +108,9 @@ amir-:(ng)ir[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	amiiraa
 ungag-:(ng)ir[N→V][V][Intr][Ind][S_3Sg]	ungairtuq
 ii-:(ng)ir[N→V][V][Intr][Ind][S_3Sg]	iingirtuq
 [e]ne-:(ng)ir[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	enairaa
-paltuug-:(ng)ir[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	paltuugia
-qule-:(ng)ir[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	qulairaa
-canir-:(ng)ir[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	caniiraa
+paltuug-:(ng)ir[N→V][V][Intr][Opt][PRS][S_2Sg]	paltuugia
+qule[Positional]-:(ng)ir[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	qulairaa
+canir[Positional]-:(ng)ir[N→V][V][Trns][Ind][A_3Sg][P_3Sg]	caniiraa
 itʼgar-:(ng)ir(ar)[N→V][V][Intr][Ind][S_1Sg]	itʼgairtua
 itʼgar-:(ng)ir(ar)[N→V][V][Trns][Ind][A_3Sg][P_1Sg]	itʼgairaraanga
 itʼgar-:(ng)ir(ar)[N→V]-–llru[V→V][V][Intr][Ind][S_1Sg]	itʼgairallruunga
@@ -126,7 +126,6 @@ iter-:(u/i)ma[V→V][V][Intr][Ind][S_3Sg]	itrumauq
 makte-:(u/i)ma[V→V][V][Intr][Ind][S_3Sg]	makcimauq
 kitugte-:(u/i)ma[V→V][V][Intr][Ind][S_3Sg]	kitugcimauq
 aqume-:(u/i)ma[V→V][V][Intr][Ind][S_3Sg]	aqumumauq
-aqume-:(u/i)ma[V→V][V][Intr][Ind][S_3Sg]	aqumgauq
 aqumga[V][Intr][Ind][S_3Sg]	aqumgauq
 nere[V][Intr][Opt][FUT][S_2Sg]=gguq[Encl]	nerkina-gguq
 taqe-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]=gguq[Encl]	taqngaituq-gguq
