@@ -124,9 +124,11 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 
 
 !!!!!!! MultipleForms xfst rule variables !!!!!!
-[Opt_PRS_2Sg]               !
-[Opt_PRS_2Sg_3Sg]           !
-[Opt_PRS_2Sg_1Sg]           !
+[Opt_PRS_S_2Sg]             !
+[Opt_PRS_S_2PlDu]           !
+[Opt_PRS_A_2Sg]             !
+[Opt_PRS_A_2Sg_P_3Sg]       !
+[Opt_PRS_A_2Sg_P_1Sg]       !
 @ˡ~+lu/@⁵na                 ! Subordinative Mood marker
 [STE_2Sg]                   ! Subordinative/Optative Special Te + 2Sg
 –lria/@⁴+ngur*              ! Participial Mood marker
@@ -222,7 +224,8 @@ LEXICON Root
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Exceptions
-qimugte-–rpag/@vag[N→N]:qimute@²vag                     NounPostbase; ! qimulvak
+qimugte-–rpag/@vag[N→N]:qimulvag                        NounPostbase; ! qimulvak
+pi-@+'(g/t)ur(ar)[V→V][V][Intr][Opt][PRS][S_2Sg]:piura  EncliticOrEnd; ! goodbye (lit. keep on doing (as you've been doing))
 tai[V][Intr][Opt][PRS][S_2Sg]:taitai                    EncliticOrEnd; ! come here!
 iqsur-–lirner[N→N]:iqsur–lirner                         NounPostbase; ! thing of the left side
 tallirpig-–lirner[N→N]:tallirpig–lirner                 NounPostbase; ! right-hand side
@@ -230,7 +233,6 @@ aqum-@–ngqa[V→V]:aqumgar                                QuantQualInflection;
 ugaani[N][Loc][3SgPoss][SgPosd]:ugaani                  EncliticOrEnd; ! because of; as a consequence of; on account of
 ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ                  EncliticOrEnd; ! because of; as a consequence of; on account of
 wataime-+(a)r[N→V][V][Intr][Intrg][S_3Sg]:wataimarte    EncliticOrEnd; ! what time is it?
-
 
 ! Irregular -–a/–ar/–aa 'to V repeatedly'
 qalrir-–a/–ar/–aa/+a/+aar[V→V]:qalria       VerbPostbase; ! 
@@ -14346,12 +14348,12 @@ LEXICON TransitiveInterrogative
 
 
 LEXICON IntransitivePresentOptative
-!----------------------------|-------------------------------|------------------------------------|
-[S_3Sg]:@ˡ~+li  EncliticOrEnd; [S_1Sg]:@ˡ~+lii  EncliticOrEnd; [S_2Sg]:[Opt_PRS_2Sg] EncliticOrEnd;
-[S_3Pl]:@ˡ~+lit EncliticOrEnd; [S_1Pl]:–lta     EncliticOrEnd; [S_2Pl]:@⁵+ci         EncliticOrEnd;
+!----------------------------|---------------------------------|-------------------------------------------|
+[S_3Sg]:@ˡ~+li  EncliticOrEnd; [S_1Sg]:@ˡ~+lii    EncliticOrEnd; [S_2Sg]:[Opt_PRS_S_2Sg]      EncliticOrEnd;
+[S_3Pl]:@ˡ~+lit EncliticOrEnd; [S_1Pl]:–lta       EncliticOrEnd; [S_2Pl]:[Opt_PRS_S_2PlDu]ci  EncliticOrEnd;
                                [S_1Pl]:%%%:(e)lta EncliticOrEnd;
-[S_3Du]:@ˡ~+lik EncliticOrEnd; [S_1Du]:@ˡ~+luk  EncliticOrEnd; [S_2Du]:@⁵+tek        EncliticOrEnd;
-!----------------------------|-------------------------------|------------------------------------|
+[S_3Du]:@ˡ~+lik EncliticOrEnd; [S_1Du]:@ˡ~+luk    EncliticOrEnd; [S_2Du]:[Opt_PRS_S_2PlDu]tek EncliticOrEnd;
+!----------------------------|---------------------------------|-------------------------------------------|
 
 LEXICON TransitivePresentOptative
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
@@ -14364,9 +14366,9 @@ LEXICON TransitivePresentOptative
 [A_1Pl][P_3Sg]:@ˡ~+laut            EncliticOrEnd; [A_1Pl][P_3Pl]:@ˡ~+laput        EncliticOrEnd; [A_1Pl][P_3Du]:@ˡ~+lagput        EncliticOrEnd;
 [A_1Du][P_3Sg]:@ˡ~+lauk            EncliticOrEnd; [A_1Du][P_3Pl]:@ˡ~+lapuk        EncliticOrEnd; [A_1Du][P_3Du]:@ˡ~+lagpuk        EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_2Sg][P_3Sg]:[Opt_PRS_2Sg_3Sg]   EncliticOrEnd; [A_2Sg][P_3Pl]:@⁴+ki            EncliticOrEnd; [A_2Sg][P_3Du]:@⁴+kek            EncliticOrEnd;
-[A_2Pl][P_3Sg]:@⁵+ciu              EncliticOrEnd; [A_2Pl][P_3Pl]:@⁵+ciki          EncliticOrEnd; [A_2Pl][P_3Du]:@⁵+cikek          EncliticOrEnd;
-[A_2Du][P_3Sg]:@⁵+tegu             EncliticOrEnd; [A_2Du][P_3Pl]:@⁵+tegki         EncliticOrEnd; [A_2Du][P_3Du]:@⁵+tegkek         EncliticOrEnd;
+[A_2Sg][P_3Sg]:[Opt_PRS_A_2Sg_P_3Sg] EncliticOrEnd; [A_2Sg][P_3Pl]:[Opt_PRS_A_2Sg]ki EncliticOrEnd; [A_2Sg][P_3Du]:[Opt_PRS_A_2Sg]kek EncliticOrEnd;
+[A_2Pl][P_3Sg]:@⁵+ciu                EncliticOrEnd; [A_2Pl][P_3Pl]:@⁵+ciki           EncliticOrEnd; [A_2Pl][P_3Du]:@⁵+cikek           EncliticOrEnd;
+[A_2Du][P_3Sg]:@⁵+tegu               EncliticOrEnd; [A_2Du][P_3Pl]:@⁵+tegki          EncliticOrEnd; [A_2Du][P_3Du]:@⁵+tegkek          EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
 [A_3Sg][P_1Sg]:@ˡ~+linga           EncliticOrEnd; [A_3Sg][P_1Pl]:@ˡ~+likut        EncliticOrEnd; [A_3Sg][P_1Du]:@ˡ~+likuk         EncliticOrEnd;
 [A_3Pl][P_1Sg]:@ˡ~+litnga          EncliticOrEnd; [A_3Pl][P_1Pl]:@ˡ~+litkut       EncliticOrEnd; [A_3Pl][P_1Du]:@ˡ~+litkuk        EncliticOrEnd;
@@ -14377,10 +14379,9 @@ LEXICON TransitivePresentOptative
 !                                               |                                              |                                               |
 !                                               |                                              |                                               |
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
-[A_2Sg][P_1Sg]:@⁴+nga              EncliticOrEnd; [A_2Sg][P_1Pl]:@⁴+kut           EncliticOrEnd; [A_2Sg][P_1Du]:@⁴+kuk            EncliticOrEnd;
-[A_2Sg][P_1Sg]:[Opt_PRS_2Sg_1Sg]   EncliticOrEnd;
-[A_2Pl][P_1Sg]:@⁵+cia              EncliticOrEnd; [A_2Pl][P_1Pl]:@⁵+cikut         EncliticOrEnd; [A_2Pl][P_1Du]:@⁵+cikuk          EncliticOrEnd;
-[A_2Du][P_1Sg]:@⁵+tegnga           EncliticOrEnd; [A_2Du][P_1Pl]:@⁵+tegkut        EncliticOrEnd; [A_2Du][P_1Du]:@⁵+tegkuk         EncliticOrEnd;
+[A_2Sg][P_1Sg]:[Opt_PRS_A_2Sg_P_1Sg] EncliticOrEnd; [A_2Sg][P_1Pl]:[Opt_PRS_A_2Sg]kut EncliticOrEnd; [A_2Sg][P_1Du]:[Opt_PRS_A_2Sg]kuk EncliticOrEnd;
+[A_2Pl][P_1Sg]:@⁵+cia                EncliticOrEnd; [A_2Pl][P_1Pl]:@⁵+cikut           EncliticOrEnd; [A_2Pl][P_1Du]:@⁵+cikuk           EncliticOrEnd;
+[A_2Du][P_1Sg]:@⁵+tegnga             EncliticOrEnd; [A_2Du][P_1Pl]:@⁵+tegkut          EncliticOrEnd; [A_2Du][P_1Du]:@⁵+tegkuk          EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
 [A_3Sg][P_2Sg]:@ˡ~+liten           EncliticOrEnd; [A_3Sg][P_2Pl]:@ˡ~+lici         EncliticOrEnd; [A_3Sg][P_2Du]:@ˡ~+litek         EncliticOrEnd;
 [A_3Pl][P_2Sg]:@ˡ~+litgen          EncliticOrEnd; [A_3Pl][P_2Pl]:@ˡ~+liceci       EncliticOrEnd; [A_3Pl][P_2Du]:@ˡ~+licetek       EncliticOrEnd;
@@ -15322,6 +15323,7 @@ yaate                  NounInflection; ! area beyond
 
 LEXICON PositionalPostbase
 NounInflection;
+[Positional]-%:(ng)ir[N→V]:%:(ng)ir         VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
 [Positional]-–lirner[N→N]:–lirner           NounPostbase; ! area in the N direction; one of the N direction
 [Positional]-–qlikacaar(ar*)[N→N]:–q̲likacaar(ar*)  NounPostbase; ! one that is the farthest in the area denoted by N
 [Positional]-–qlir*[N→N]:–q̲lir*             NounPostbase; ! the one located far in the area or space or time denoted by N
