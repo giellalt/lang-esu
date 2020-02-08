@@ -6,7 +6,7 @@
 ! 2. Vowels may be hatted or stressed (i.e. a -> [â|á])
 
 ! TODO:
-!   - from -rraar-: terr -> q ; e.g. inarterraarluni -> inarqaarluni
+!   - 
 
 define Stop       [ p | t | c | k | q ];
 define VoiceFric  [ v | l | s | g | r | u͡g | u͡r ];
@@ -56,6 +56,7 @@ define DropHattedE ê -> 0 .o.
                 [..] -> e || p _ ">"* p , t _ ">"* t , c _ ">"* c , k _ ">"* k , q _ ">"* q , 
                              v _ ">"* v , l _ ">"* l , s _ ">"* s , g _ ">"* g , r _ ">"* r , u͡g _ ">"* u͡g , u͡r _ ">"* u͡r ,
                              vv _ ">"* vv , ll _ ">"* ll , ss _ ">"* ss, gg _ ">"* gg , rr _ ">"* rr , u͡gg _ ">"* u͡gg , u͡rr _ ">"* u͡rr ,
+                             v _ ">"* vv , l _ ">"* ll , s _ ">"* ss, g _ ">"* gg , r _ ">"* rr , u͡g _ ">"* u͡gg , u͡r _ ">"* u͡rr ,
                              m _ ">"* m , n _ ">"* n , ng _ ">"* ng , ḿ _ ">"* ḿ , ń _ ">"* ń , ńg _ ">"* ńg , 
                              w _ ">"* w , y _ ">"* y , c _ ">"* t , t _ ">"* c                                                       ; ! maybe c _ ">"* n , n _ ">"* c ??
 
@@ -69,7 +70,11 @@ define TripleVowel AllFVow -> 0 || AllFVow ">"* _ ">"* AllFVow ;
 
 define WordAdjustments t (->) c     || _ [e|é] ">"* t ,               ! angutet -> angucet
                                        _ [e|é] ">"* ss ">"* c     .o. ! kitugtesciigataqa -> kitugcesciigataqa
+                       t [e|é] ">" rr (->) ">" q                  .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
+                       â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q    .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
+                       [a|á] r [a|á] (->) a   || ">" [q|k] _ q    .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
                        [a|â|á] -> e || ">" q _ ">"* [r|rr]         ;  ! apteqarru -> apteqerru for -qar- postbase
+
 
 
 define arDeletion  "ạ" q -> 0 || _ ">"* .#.                                             .o. ! wordFinal
