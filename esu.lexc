@@ -144,7 +144,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 @⁵+cete/.vkar               ! to let, allow, permit, cause, or compel one to V
 +ciqe/@⁵ciiqe               ! to V in the future; will V
 (ʼa)                        ! used for [DemAdv][Loc] %~nete 
-
+@+(r/l)i                    ! to become or cause to become V
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -159,17 +159,15 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 !!!!!!! ALLOMORPH OPERATORS !!!!!!
 (e)                         ! is used only when a strong base-final consonant is kept
 (g)                         ! is used with bases ending in two vowels
-(i)                         ! is used with bases ending in te
-(l)                         ! @+(r/l)i-1 to become or cause to become V # used with adjectival verbs; the (r) is used with bases ending in a prime vowel, and the (l) with bases ending in e (but (special) te changes to l)
 (ng)                        ! is used with bases ending in a vowel
 (r)                         ! is used with bases ending in te, and by some speakers in e not preceded by t
 (s)                         ! is used with bases ending in a vowel
 (t)                         ! is used with bases ending in a consonant
 (u)                         ! is used with bases ending in a consonant or e
 
-(g/t)                       ! (g)(t)
-(r/l)                       ! (r)(l)
-(u/i)                       ! (u)(i)
+(g/t)                       ! (g)(t) 
+(r/l)                       ! @+(r/l)i-1 to become or cause to become V # used with adjectival verbs; the r is used with bases ending in a prime vowel, and the l with bases ending in e (but (special) te changes to l)
+(u/i)                       ! consonant and e-ending bases (not te) use u ; te bases use i
 
 !!!!!!! OPERATORS !!!!!!
 ! +                         ! keep final consonants of bases
@@ -13236,7 +13234,7 @@ LEXICON VerbSpecialT
 LEXICON NounPostbase
 NounInflection;
 VerbEte;
--–ngqerr[N→V]:                                SubordinativeVerbInflection; ! to have N
+-–ngqerr[N→V]:+(r)                            SubordinativeVerbInflection; ! to have N
 
 
 -–ar[N→N]:–ar                                 NounPostbase; ! (usually does not alter meaning of noun base)
@@ -13479,10 +13477,10 @@ VerbInflection;
 -@+paa/~vaa[how.V][V→XCLM]:@⁵+p/~vaa          EncliticOrEnd; ! oh, how V!; my, how V!
 -@+pag/~vag[how.V][V→XCLM]:@⁵+p/~vag          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
 
--–lria[V→N]:–lria                             NounPostbase; ! the one who is V-ing
--–lrii[V→N]:–lrii                             NounPostbase; ! the one who is V-ing (used with endings %:(e)m, %:(e)t, and all dual endings)
--@ngur*[V→N]:@⁴ngur*                          NounPostbase; ! one that is V; one that is V-ing
-
+-–lria/@ngur*[V→N]:–lria/@⁴+ngur*             NounPostbase; ! the one who is V-ing
+!-–lria[V→N]:–lria                             NounPostbase; ! the one who is V-ing
+!-–lrii[V→N]:–lrii                             NounPostbase; ! the one who is V-ing (used with endings %:(e)m, %:(e)t, and all dual endings)
+!-@ngur*[V→N]:@⁴ngur*                          NounPostbase; ! one that is V; one that is V-ing
 
 -–a/–ar/–aa/+a/+aar[V→V]:+a/+aar              VerbPostbase; ! to V repeatedly
 -+'(g)aqe[V→V]:+'(g)aqe                       SubordinativeVerbInflection; ! to usually V; to repeatedly V; to habitually V
@@ -13516,7 +13514,7 @@ VerbInflection;
 -+(s)ciur[V→V]:+(s)ciur                       VerbPostbase; ! to get V-ed (usually to oneʼs detriment)
 -@–ckegg[V→V]:@⁵–ckegg                        VerbPostbase; ! to be very V, to have good N
 -–curlag[V→V]:–curlag                         VerbPostbase; ! to be interfered with while V-ing; to V with unsatisfactory results
--@+(r/l)i[V→V]:@²+(r/l)i                      VerbPostbase; ! to become or cause to become V
+-@+(r/l)i[V→V]:@+(r/l)i                       VerbPostbase; ! to become or cause to become V
 -+'(g)i[V→V]:+'(g)i                           VerbPostbase; ! to V something; to do some V-ing; to suffer the V-ing of something
 -@~+(ng)iinar[V→V]:@²~+(ng)iinar              VerbPostbase; ! to V more and more
 -%:(ng)illiqe[V→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
@@ -13667,7 +13665,7 @@ VerbInflection;
 -@+pallug/~vallug[V→V]:@⁵+p/~vallug           VerbPostbase; ! to V most; to V mostly
 -@+pallur/~vallur[V→V]:@⁵+p/~vallur           VerbPostbase; ! to V most; to V mostly
 -+peke/.vke[V→V]:+p/.vke°                     SubordinativeVerbInflection; ! to not V   
--+pege/.vke[V→V]:+p/.vke°                     SubordinativeVerbInflection; ! (NI, HBC, NUN form) to not V
+-+pege/.vke[V→V]:+p/.vge°                     SubordinativeVerbInflection; ! (NI, HBC, NUN form) to not V
 -+pigainar[V→V]:+pigainar                     VerbPostbase; ! to actually V (after hesitation; or surprising as it may seem)
 -–pigainar[V→V]:–pigainar                     VerbPostbase; ! to actually V (after hesitation; or surprising as it may seem)
 -–pig[V→V]:–pig                               VerbPostbase; ! to be really V; to be very V
@@ -14886,7 +14884,8 @@ aar             EmotionalPostbase; ! frightened, endangered
 alag            EmotionalPostbase; ! finding something feasible 
 alia            EmotionalPostbase; ! lonely
 alai            EmotionalPostbase; ! lonely
-ancurtu(r)      EmotionalPostbase; ! hesitant*
+ancurtu         EmotionalPostbase; ! hesitant*
+ancurtur        EmotionalPostbase; ! hesitant*
 asgura          EmotionalPostbase; ! doubting
 augtar          EmotionalPostbase; ! inhibited
 canga           EmotionalPostbase; ! disliking
