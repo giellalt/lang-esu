@@ -50,9 +50,8 @@ define Lowercase "A"   -> a,
                  "U͡gg" -> u͡gg,
                  "U͡rr" -> u͡rr;
 
-define AllomorphDecouple "(r/l)" -> "(r)" "(l)" .o. ! "(g/t)" -> "(g)" "(t)" .o. "(u/i)" -> "(u)" "(i)" .o.
-                         "(ar)"  -> "ạ" r       .o.
-                         "(ar*)" -> "ạ" r "*"    ; 
+define arExpansion "(ar)"  -> "ạ" r       .o.
+                   "(ar*)" -> "ạ" r "*"    ; 
 
 define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
                      "[Opt_PRS_S_2Sg]" -> "+" n               || t e  _                           .o.
@@ -77,8 +76,13 @@ define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ C
                      "[STE_2Sg]" -> k                         || n a _                        .o.
                      "[STE_2Sg]" -> t e n                                                     .o.
                      i (->) u                                 || \[i] _ t e "°" "@⁵" n a      .o. ! (e.g nereksainani (->) nereksaunani)
-                     "–lria/@⁴+ngur*" -> "@⁴" "+" ng u r "*"  || t e "°" _                    .o.
-                     "–lria/@⁴+ngur*" -> "–" l r i a                                          .o.
+
+                     "–lria/@⁴+ngur*" (->) "@⁴" "+" ng u r "*"  || t e "°" _                                          .o.
+                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i i || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _ "%" ":" "(e)" .o.
+                     "–lria/@⁴+ngur*" -> "–" l r i i || _ "%" ":" "(e)"                                               .o.
+                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i a || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _               .o.
+                     "–lria/@⁴+ngur*" -> "–" l r i a                                                                  .o.
+
                      "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
                      "@⁵+p/~v" -> "~" v                                                       .o.
                      "+p/.v" -> "+" p e                       || Con _ Con                    .o.
@@ -108,6 +112,11 @@ define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ C
                      "@+–'(g)ar(ar)te" -> "–" a r "ạ" r t e                || r _             .o. ! r -> -
                      "@+–'(g)ar(ar)te" -> "+" a r "ạ" r t e                || g _             .o. ! g -> +
                      "@+–'(g)ar(ar)te" -> "+" "'" "(g)" a r "ạ" r t e                         .o. ! Vow -> +'(g)
+                     i t e ("°") "@+(r/l)i" -> [i|e] ll i   || k _                            .o. ! kite -> k[e|i]lli
+                     t ("ʼ") e ("°") "@+(r/l)i" -> l i                                        .o. ! te -> li
+                     e "@+(r/l)i" -> l i                                                      .o. ! e -> li
+                     "@+(r/l)i" -> r i                      || FVow _                         .o. ! FV -> ri
+                     "@+(r/l)i" -> i                                                          .o. ! r/g -> i
                      "+c/.ss" -> "." ss                     || Vow _                          .o.
                      "+c/.ss" -> "+" c                      ;
 
@@ -128,6 +137,6 @@ define AutomaticDevoicing v -> vv,
 !                          s -> ss  || .#. _                             ;
 
 regex Lowercase          .o.
-      AllomorphDecouple  .o.
+      arExpansion        .o.
       MultipleForms      .o.  
       AutomaticDevoicing  ;
