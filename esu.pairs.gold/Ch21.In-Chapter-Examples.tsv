@@ -1,7 +1,7 @@
 yug-–ngqerr[N→V]-–llini[V→V][V][Intr][Ptcp][S_3Sg]	yungqellinilria
 piyua[V][Intr][Ptcp][S_3Sg]	piyualria
 ane[V][Intr][Ptcp][S_3Sg]	anelria
-tegleg[V][Intr][Ptcp][S_3Pl]	teglekiit
+tegleg[V][Trns][Ptcp][A_3Pl][P_3Sg]	teglekiit
 aqumga[V][Intr][Ptcp][S_3Sg]	aqumgalria
 qercua-–qar[V→V]-–llini[V→V][V][Trns][Ptcp][A_3Sg][P_3Pl]	qercuaqallinikai
 pekte[V][Intr][Ptcp][S_3Pl]	pektellriit
@@ -65,7 +65,7 @@ atsar-–ya(g)ar*[N→N][N][Abs][Unpd][Sg]	atsayagaq
 iqvar-–ya(g)ar[V→V][V][Intr][Ind][S_3Sg]	iqvayagartuq
 qavar-–ya(g)ar[V→V][V][Intr][Ind][S_3Sg]	qavayaartuq
 qavar-–ya(g)ar[V→V][V][Intr][Cnsq][S_3Sg]	qavayagaan
-mikelngur-–ya(g)ar*[N→N][N][Abs][Unpd][Sg]	mikelnguyagaq
+mikelngur*-–ya(g)ar*[N→N][N][Abs][Unpd][Sg]	mikelnguyagaq
 arnar-–lkug[N→N][N][Abs][Unpd][Sg]	arnalkuk
 qenerte-–lkug[V→V][V][Intr][Ind][S_3Sg]	qenertelkugtuq
 ing[DemPro][Abs][Unpd][Sg]-–lkug[N→N]	ingnalkuk
@@ -77,7 +77,7 @@ mingqute-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	mingquteu͡rluq
 mingqute-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	mingquteʼu͡rluq
 mingqute-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	mingqutʼeu͡rluq
 mingqute-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	mingqutʼeʼu͡rluq
-kaviar-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	kaviau͡rluq
+kaviar*-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	kaviau͡rluq
 iqvar-–q(ur)lur[V→V][V][Intr][Ind][S_3Sg]	iqvau͡rlurtuq
 iqvar-–q(ur)lur[V→V][V][Intr][Ind][S_3Sg]	iqvaʼu͡rlurtuq
 arnar-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	arnau͡rluq
@@ -93,8 +93,8 @@ angyar-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	angyaʼu͡rluq
 apa-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	apaʼurluq
 tutgar(ar*)-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	tutgaraʼurluq
 ciin-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	ciiu͡rluq
-ell[PerPro][2Sg]-–r(ur)lur*[N→N]	elpeu͡rluq
-ell[PerPro][2Sg]-–r(ur)lur*[N→N]	elpeʼu͡rluq
+ell[PerPro][2Sg]-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	elpeu͡rluq
+ell[PerPro][2Sg]-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]	elpeʼu͡rluq
 maku[DemPro]-~+miu[N→N][N][Loc][Unpd][Pl]	makumiuni
 asgur-–lria/@ngur*[V→N][N][Loc][Unpd][Pl]	asgulriani
 kaig-–lli[V→V][V][Intr][Ind][S_2Sg]	kailliuten
