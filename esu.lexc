@@ -231,6 +231,7 @@ aqum-@–ngqa[V→V]:aqumgar                                QuantQualInflection;
 ugaani[N][Loc][3SgPoss][SgPosd]:ugaani                  EncliticOrEnd; ! because of; as a consequence of; on account of
 ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ                  EncliticOrEnd; ! because of; as a consequence of; on account of
 wataime-+(a)r[N→V][V][Intr][Intrg][S_3Sg]:wataimarte    EncliticOrEnd; ! what time is it?
+ell[PerPro][Abs][2Sg]=mi[Encl]:elpesmi                  EncliticOrEnd;
 
 ! Irregular -–a/–ar/–aa 'to V repeatedly'
 qalrir-–a/–ar/–aa/+a/+aar[V→V]:qalria       VerbPostbase; ! 
@@ -14467,29 +14468,31 @@ LEXICON TransitiveNegativeOptative
 
 
 LEXICON IntransitiveParticipial
-!-----------------------|----------------------------|---------------------------|
-[S_3Sg]:0  EncliticOrEnd; [S_1Sg]:nga   EncliticOrEnd; [S_2Sg]:ten  EncliticOrEnd;
-[S_3Pl]:t  EncliticOrEnd; [S_1Pl]:kut   EncliticOrEnd; [S_2Pl]:si   EncliticOrEnd;
-[S_3Du]:k  EncliticOrEnd; [S_1Du]:kung  EncliticOrEnd; [S_2Du]:tek  EncliticOrEnd;
-!-----------------------|----------------------------|---------------------------|
+!------------------------------|------------------------------|----------------------------|
+[S_3Sg]:0         EncliticOrEnd; [S_1Sg]:%:(ng)a EncliticOrEnd; [S_2Sg]:–ten  EncliticOrEnd;
+[S_3Pl]:%%%:(e)t  EncliticOrEnd; [S_1Pl]:–kut    EncliticOrEnd; [S_2Pl]:–si   EncliticOrEnd;
+[S_3Du]:%%%:(e)k  EncliticOrEnd; [S_1Du]:–kuk    EncliticOrEnd; [S_2Du]:–tek  EncliticOrEnd;
+!------------------------------|------------------------------|----------------------------|
 
 LEXICON TransitiveParticipial
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[A_3Sg][P_3Sg]:ii         EncliticOrEnd; [A_3Sg][P_3Pl]:ai         EncliticOrEnd; [A_3Sg][P_3Du]:k           EncliticOrEnd;
-[A_3Pl][P_3Sg]:iit        EncliticOrEnd; [A_3Pl][P_3Pl]:ait        EncliticOrEnd; [A_3Pl][P_3Du]:gket        EncliticOrEnd;
-[A_3Du][P_3Sg]:iik        EncliticOrEnd; [A_3Du][P_3Pl]:kek        EncliticOrEnd; [A_3Du][P_3Du]:gkek        EncliticOrEnd;
+[A_3Sg][P_3Sg]:~ii        EncliticOrEnd; [A_3Sg][P_3Pl]:~ai        EncliticOrEnd; [A_3Sg][P_3Du]:k           EncliticOrEnd;
+[A_3Pl][P_3Sg]:~iit       EncliticOrEnd; [A_3Pl][P_3Pl]:~ait       EncliticOrEnd; [A_3Pl][P_3Du]:gket        EncliticOrEnd;
+[A_3Du][P_3Sg]:~iik       EncliticOrEnd; [A_3Du][P_3Pl]:kek        EncliticOrEnd; [A_3Du][P_3Du]:gkek        EncliticOrEnd;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [A_1Sg][P_3Sg]:ka         EncliticOrEnd; [A_1Sg][P_3Pl]:nka        EncliticOrEnd; [A_1Sg][P_3Du]:gka         EncliticOrEnd;
 [A_1Pl][P_3Sg]:vvut       EncliticOrEnd; [A_1Pl][P_3Pl]:put        EncliticOrEnd; [A_1Pl][P_3Du]:gput        EncliticOrEnd;
+[A_1Pl][P_3Sg]:vut        EncliticOrEnd;
 [A_1Du][P_3Sg]:vvuk       EncliticOrEnd; [A_1Du][P_3Pl]:puk        EncliticOrEnd; [A_1Du][P_3Du]:gpuk        EncliticOrEnd;
+[A_1Du][P_3Sg]:vuk        EncliticOrEnd;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [A_2Sg][P_3Sg]:n          EncliticOrEnd; [A_2Sg][P_3Pl]:ten        EncliticOrEnd; [A_2Sg][P_3Du]:gken        EncliticOrEnd;
 [A_2Pl][P_3Sg]:ssi        EncliticOrEnd; [A_2Pl][P_3Pl]:ci         EncliticOrEnd; [A_2Pl][P_3Du]:gci         EncliticOrEnd;
 [A_2Du][P_3Sg]:ssek       EncliticOrEnd; [A_2Du][P_3Pl]:tek        EncliticOrEnd; [A_2Du][P_3Du]:gtek        EncliticOrEnd;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[A_3Sg][P_1Sg]:iinga      EncliticOrEnd; [A_3Sg][P_1Pl]:iikut      EncliticOrEnd; [A_3Sg][P_1Du]:iikuk       EncliticOrEnd;
-[A_3Pl][P_1Sg]:iitnga     EncliticOrEnd; [A_3Pl][P_1Pl]:aitkut     EncliticOrEnd; [A_3Pl][P_1Du]:aitkuk      EncliticOrEnd;
-[A_3Du][P_1Sg]:iignga     EncliticOrEnd; [A_3Du][P_1Pl]:iigkut     EncliticOrEnd; [A_3Du][P_1Du]:iigkuk      EncliticOrEnd;
+[A_3Sg][P_1Sg]:~iinga     EncliticOrEnd; [A_3Sg][P_1Pl]:~iikut     EncliticOrEnd; [A_3Sg][P_1Du]:~iikuk      EncliticOrEnd;
+[A_3Pl][P_1Sg]:~iitnga    EncliticOrEnd; [A_3Pl][P_1Pl]:~aitkut    EncliticOrEnd; [A_3Pl][P_1Du]:~aitkuk     EncliticOrEnd;
+[A_3Du][P_1Sg]:~iignga    EncliticOrEnd; [A_3Du][P_1Pl]:~iigkut    EncliticOrEnd; [A_3Du][P_1Du]:~iigkuk     EncliticOrEnd;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 !                                      |                                        |                                         |
 !                                      |                                        |                                         |
@@ -14499,9 +14502,9 @@ LEXICON TransitiveParticipial
 [A_2Pl][P_1Sg]:vcia       EncliticOrEnd; [A_2Pl][P_1Pl]:vcikut     EncliticOrEnd; [A_2Pl][P_1Du]:vcikuk      EncliticOrEnd;
 [A_2Du][P_1Sg]:vtegnga    EncliticOrEnd; [A_2Du][P_1Pl]:vtegkut    EncliticOrEnd; [A_2Du][P_1Du]:vtegkuk     EncliticOrEnd;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[A_3Sg][P_2Sg]:iiten      EncliticOrEnd; [A_3Sg][P_2Pl]:iici       EncliticOrEnd; [A_3Sg][P_2Du]:iitek       EncliticOrEnd;
-[A_3Pl][P_2Sg]:iitgen     EncliticOrEnd; [A_3Pl][P_2Pl]:aiceci     EncliticOrEnd; [A_3Pl][P_2Du]:aicetek     EncliticOrEnd;
-[A_3Du][P_2Sg]:iigten     EncliticOrEnd; [A_3Du][P_2Pl]:iigci      EncliticOrEnd; [A_3Du][P_2Du]:iigtek      EncliticOrEnd;
+[A_3Sg][P_2Sg]:~iiten     EncliticOrEnd; [A_3Sg][P_2Pl]:~iici      EncliticOrEnd; [A_3Sg][P_2Du]:~iitek      EncliticOrEnd;
+[A_3Pl][P_2Sg]:~iitgen    EncliticOrEnd; [A_3Pl][P_2Pl]:~aiceci    EncliticOrEnd; [A_3Pl][P_2Du]:~aicetek    EncliticOrEnd;
+[A_3Du][P_2Sg]:~iigten    EncliticOrEnd; [A_3Du][P_2Pl]:~iigci     EncliticOrEnd; [A_3Du][P_2Du]:~iigtek     EncliticOrEnd;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [A_1Sg][P_2Sg]:mken       EncliticOrEnd; [A_1Sg][P_2Pl]:mci        EncliticOrEnd; [A_1Sg][P_2Du]:mtek        EncliticOrEnd;
 [A_1Pl][P_2Sg]:mteggen    EncliticOrEnd; [A_1Pl][P_2Pl]:mceci      EncliticOrEnd; [A_1Pl][P_2Du]:mcetek      EncliticOrEnd;
