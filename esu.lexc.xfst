@@ -1,6 +1,9 @@
 ! LANGUAGE: "esu"
 ! AUTHOR: "Lonny Strunk"
 
+define Bndry ["[e]"|"(a)"|"(aa)"|"(ar)"|"(ar*)"|"(ur)"|"(e)"|"(g)"|"(ng)"|"(r)"|"(s)"|"(t)"|"(u)"|"(g/t)"|"(r/l)"|"(u/i)"|"+"|"–"|"~"|"%"|":"|"'"|"."|"@"|"@¹"|"@²"|"@³"|"@⁴"|"@⁵"|"@ˡ"|"@ˁ"|"@ʸ"|"*"|"°"|"^"];
+
+
 define Stop       [ p | t | c | k | q | k̲ | q̲ ];
 define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | g̲ | r̲ ];
 define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr | g̲g̲ | r̲r̲ ];
@@ -77,11 +80,21 @@ define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ C
                      "[STE_2Sg]" -> t e n                                                     .o.
                      i (->) u                                 || \[i] _ t e "°" "@⁵" n a      .o. ! (e.g nereksainani (->) nereksaunani)
 
-                     "–lria/@⁴+ngur*" (->) "@⁴" "+" ng u r "*"  || t e "°" _                                          .o.
-                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i i || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _ "%" ":" "(e)" .o.
-                     "–lria/@⁴+ngur*" -> "–" l r i i || _ "%" ":" "(e)"                                               .o.
-                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i a || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _               .o.
-                     "–lria/@⁴+ngur*" -> "–" l r i a                                                                  .o.
+                     "–lria/@⁴+ngur*" (->) "@⁴" "+" ng u r "*"  || t e "°" _                                          .o. ! te° (->) @ngur*
+                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i i || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _ "%" ":" "(e)" .o. ! llrii/lrii
+                     "–lria/@⁴+ngur*" -> "–" l r i i || _ "%" ":" "(e)"                                               .o. ! lrii
+                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i a || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _               .o. ! llria/lria
+                     "–lria/@⁴+ngur*" -> "–" l r i a                                                                  .o. ! lria
+
+                     t e "°" "@%:~(ng)ạ" -> l "+" ạ                                           .o. ! te° -> l
+                     t "ʼ" e "@%:~(ng)ạ" -> c "ʼ" ạ                                           .o. ! tʼe -> cʼ
+                     t e "@%:~(ng)ạ" -> c ạ                                                   .o. ! te -> c
+                     ng e "@%:~(ng)ạ" (->) ng ạ         || \.#. Con Vow (Con) Bndry* _        .o. ! ngenge -> nge
+                     "@%:~(ng)ạ" -> ":" "~" "(ng)" ạ                                          .o.
+
+                     t e "°" -> l e || _ "@–ngr(ar)"                                          .o. ! te° -> l
+                     "@–ngr(ar)" -> "–" ng r a r || _ ["–"|":"]                               .o. ! not ar dropping
+                     "@–ngr(ar)" -> "–" ng e r                                                .o. ! ar dropping with +
 
                      "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
                      "@⁵+p/~v" -> "~" v                                                       .o.
@@ -96,6 +109,7 @@ define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ C
                      "+c/.s" -> "." s                                                         .o.
                      "(ʼa)" -> ʼ a                            || \.#. Con a _                 .o.
                      "(ʼa)" -> 0                                                              .o.
+
                      "–r̲pag/@²vag" (->) "@²" v a g            || Vow t e _                    .o.
                      "–r̲pag/@²vag"  ->  "–" r̲ p a g                                           .o.
                      "+ciqe/@⁵ciiqe" -> "@⁵" c i i q e        || t e ("°") _                  .o. 
