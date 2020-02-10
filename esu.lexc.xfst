@@ -18,7 +18,7 @@ define Nasal      [ VlessNasal | VoiceNasal ];
 
 define Con        [ Stop | Fric | Nasal | w | y ];
 
-define FVow       [ a | i | u ];
+define FVow       [ a | i | u | ạ | ụ ];
 define Vow        [ e | FVow ];
 
 define Lowercase "A"   -> a,
@@ -56,7 +56,21 @@ define Lowercase "A"   -> a,
 define arExpansion "(ar)"  -> "ạ" r       .o.
                    "(ar*)" -> "ạ" r "*"    ; 
 
-define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
+define MultipleForms "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
+                     "@⁵+p/~v" -> "~" v                                                       .o.
+                     "+p/.v" -> "+" p e                       || [Con|"@–ngr(ar)"] _ Con      .o. ! for Connective Mood - "@–ngr(ar)"
+                     "+p/.v" -> "+" p                         || [Con|"@–ngr(ar)"] _ Vow      .o.
+                     "+p/.v" -> "." v                                                         .o. ! for Connective Mood - "@%:~(ng)ạ"
+                     "+pegun/.vkun" -> "+" p e g u n          || Con _                        .o.
+                     "+pegun/.vkun" -> "." v k u n                                            .o.
+                     "+t/.s" -> "+" t                         || Con _                        .o.
+                     "+t/.s" -> "." s                                                         .o.
+                     "+c/.s" -> "+" c                         || Con _                        .o.
+                     "+c/.s" -> "." s                                                         .o.
+                     "+c/.ss" -> "." ss                       || Vow _                        .o.
+                     "+c/.ss" -> "+" c                                                        .o.
+
+                     "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
                      "[Opt_PRS_S_2Sg]" -> "+" n               || t e  _                           .o.
                      t e "°" "[Opt_PRS_S_2Sg]" -> l u                                             .o.
                      "[Opt_PRS_S_2Sg]" -> ":" a               || Con  _                           .o.
@@ -96,27 +110,16 @@ define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ C
                      "@–ngr(ar)" -> "–" ng r a r || _ ["–"|":"]                               .o. ! not ar dropping
                      "@–ngr(ar)" -> "–" ng e r                                                .o. ! ar dropping with +
 
-                     "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
-                     "@⁵+p/~v" -> "~" v                                                       .o.
-                     "+p/.v" -> "+" p e                       || Con _ Con                    .o.
-                     "+p/.v" -> "+" p                         || Con _ Vow                    .o.
-                     "+p/.v" -> "." v                                                         .o.
-                     "+pegun/.vkun" -> "+" p e g u n          || Con _                        .o.
-                     "+pegun/.vkun" -> "." v k u n                                            .o.
-                     "+t/.s" -> "+" t                         || Con _                        .o.
-                     "+t/.s" -> "." s                                                         .o.
-                     "+c/.s" -> "+" c                         || Con _                        .o.
-                     "+c/.s" -> "." s                                                         .o.
-                     "(ʼa)" -> ʼ a                            || \.#. Con a _                 .o.
-                     "(ʼa)" -> 0                                                              .o.
-
                      "–r̲pag/@²vag" (->) "@²" v a g            || Vow t e _                    .o.
                      "–r̲pag/@²vag"  ->  "–" r̲ p a g                                           .o.
+
                      "+ciqe/@⁵ciiqe" -> "@⁵" c i i q e        || t e ("°") _                  .o. 
                      "+ciqe/@⁵ciiqe" -> "+" c i q e                                           .o. 
+
                      "@⁵+cete/.vkar" -> "@⁵" "+" c e t e      || Con _                        .o.
                      "@⁵+cete/.vkar" (->) "@⁵" "+" c e t e    || t e ("°") _                  .o.
                      "@⁵+cete/.vkar" -> "." v k a r                                           .o.
+
                      "+a/+aar" -> "+" a a r                   || t e ("°") _                  .o.
                      "+a/+aar" -> "+" a                                                       .o.
 
@@ -126,13 +129,16 @@ define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ C
                      "@+–'(g)ar(ar)te" -> "–" a r "ạ" r t e                || r _             .o. ! r -> -
                      "@+–'(g)ar(ar)te" -> "+" a r "ạ" r t e                || g _             .o. ! g -> +
                      "@+–'(g)ar(ar)te" -> "+" "'" "(g)" a r "ạ" r t e                         .o. ! Vow -> +'(g)
+
                      i t e ("°") "@+(r/l)i" -> [i|e] ll i   || k _                            .o. ! kite -> k[e|i]lli
                      t ("ʼ") e ("°") "@+(r/l)i" -> l i                                        .o. ! te -> li
                      e "@+(r/l)i" -> l i                                                      .o. ! e -> li
                      "@+(r/l)i" -> r i                      || FVow _                         .o. ! FV -> ri
                      "@+(r/l)i" -> i                                                          .o. ! r/g -> i
-                     "+c/.ss" -> "." ss                     || Vow _                          .o.
-                     "+c/.ss" -> "+" c                      ;
+
+                     "(ʼa)" -> ʼ a                            || \.#. Con a _                 .o.
+                     "(ʼa)" -> 0                                                               ;
+
 
 define AutomaticDevoicing v -> vv,
                           l -> ll,
