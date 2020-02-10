@@ -136,6 +136,14 @@ define MultipleForms "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°"
                      "@+(r/l)i" -> r i                      || FVow _                         .o. ! FV -> ri
                      "@+(r/l)i" -> i                                                          .o. ! r/g -> i
 
+                     t ("ʼ") e ("°") "@nga" -> s "+" ng a  || FVow _                          .o. ! elite -> elisnga
+                     l t ("ʼ") e ("°") "@nga" -> ll [[e s]| i] "+" ng a                       .o. ! ulte -> ullesnga | ullinga
+                     s t ("ʼ") e ("°") "@nga" -> ss [[e s]| i] "+" ng a                       .o. ! caste -> cassesnga | cassinga
+                     t ("ʼ") e ("°") "@nga" -> i "+" ng a  || .#. (Con) Vow Con _             .o. ! sagte -> saginga
+                     t ("ʼ") e ("°") "@nga" -> "+" ng a                                       .o. ! kitugte -> kitugnga (|| Con _ )
+                     "@nga" -> "+" ng a                                                       .o. ! TODO: How to disallow not te bases?
+
+
                      "(ʼa)" -> ʼ a                            || \.#. Con a _                 .o.
                      "(ʼa)" -> 0                                                               ;
 
