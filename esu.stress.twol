@@ -6,8 +6,8 @@ Alphabet
     vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
     %[e%]
     ʼ                                           ! Keep apostrophe from lexical entries
-    ạ                                           ! for (ar) droppping
-    á í ú ạ́ â î û ậ é ê
+    ạ ụ                                         ! for (ar) droppping
+    á í ú ạ́ ụ́ â î û ậ ụ̂ é ê
     %> 
     %= ;
 
@@ -28,9 +28,9 @@ Sets
 
     Con = Stop Fric Nasal w y ;
 
-    FVow = a i u ạ ;
-    FVowStress = á í ú ạ́ ;
-    FVowHatted = â î û ậ ;
+    FVow = a i u ạ ụ ;
+    FVowStress = á í ú ạ́ ụ́ ;
+    FVowHatted = â î û ậ ụ̂ ;
     AllFVow = FVow FVowStress FVowHatted ;
     Vow = FVow e ;
     VowStress = FVowStress é ;
