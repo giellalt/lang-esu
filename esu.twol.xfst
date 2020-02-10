@@ -74,7 +74,7 @@ define ConnectiveMood  ạ -> 0               || _ ">" [a|á]                  
                        [e|é] -> "ʼ" e ("ʼ") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvangʼe(ʼ)rma
 
 define WordAdjustments t (->) c     || _ [e|é] ">"* t ,               ! angutet -> angucet
-                                       _ [e|é] ">"* ss ">"* c     .o. ! kitugtesciigataqa -> kitugcesciigataqa
+                                       _ [e|é] ">"* ss ">"* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
                        t [e|é] ">" rr (->) ">" q                  .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
                        â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q    .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
                        [a|á] r [a|á] (->) a   || ">" [q|k] _ q    .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
