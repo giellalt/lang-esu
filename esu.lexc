@@ -147,7 +147,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 @+(r/l)i                    ! to become or cause to become V
 @%:~(ng)ạ                   ! Consequential Mood @ for te->c and te°->l
 @–ngr(ar)                   ! Concessive Mood @ for te unchanged and te°->le
-
+@nga                        ! to be in a state of having V-ed; or having been V-ed
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -283,6 +283,26 @@ asme-+te[V→V]:asemte        VerbPostbase; !
 uita-+te[V→V]:uitate        VerbPostbase; !   
 igte-+te[V→V]:igcete        VerbPostbase; ! 
 urug-+te[V→V]:urugte        VerbPostbase; !   
+
+atur-?pag[V→V]: aturpag     VerbPostbase; !
+qaner-?pag[V→V]:qanpag	    VerbPostbase; !
+qaner-?pag[V→V]:qanpaut     VerbPostbase; !
+nere-?pag[V→V]: nerepʼag	VerbPostbase; !
+pupsug-?pag[V→V]:pupcepʼag  VerbPostbase; !
+pupsug-?pag[V→V]:pupespag   VerbPostbase; !
+pupsug-?pag[V→V]:pupesvag   VerbPostbase; !
+alleg-?pag[V→V]:alpag	    VerbPostbase; !
+quser-?pag[V→V]:quspag	    VerbPostbase; !
+nengle-?pag[N→V]:nengelvag	VerbPostbase; !
+nengle-?pag[N→V]:nengelpag	VerbPostbase; !
+akerta-?pag[N→V]:akervag	VerbPostbase; !
+kiir-?pag[N→V]:kiirpag	    VerbPostbase; !
+kiir-?pag[N→V]:kiirvag	    VerbPostbase; !
+anuqe-?pag[N→V]:anurvag	    VerbPostbase; !
+anuqe-?pag[N→V]:anuqvag	    VerbPostbase; !
+anuqe-?pag[N→V]:anuqʼvag	VerbPostbase; !
+ella-?pag[N→V]: ellarvag	VerbPostbase; !
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
