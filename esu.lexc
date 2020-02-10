@@ -13704,8 +13704,9 @@ VerbInflection;
 -@–rqe[V→V]:@–rqe                             VerbPostbase; ! to V one after another; to V time after time; to V all of them
 -–rqe[V→V]:–r̲qe                               VerbPostbase; ! to intentionally or deliberately cause one to V (often repeatedly)
 -–rqe[V→V]:–rqe                               VerbPostbase; ! to intentionally or deliberately cause one to V (often repeatedly)
--–rraar[V→V]:–r̲r̲aar                           SubordinativeVerbInflection; ! to V first; to V before doing something else; after V-ing
--–rraar[V→V]:–r̲r̲aar                           OptativeVerbInflection; ! to V first; to V before doing something else; after V-ing
+-–rraar[V→V]:–r̲r̲aar                           VerbPostbase; ! to V first; to V before doing something else; after V-ing
+!-–rraar[V→V]:–r̲r̲aar                           SubordinativeVerbInflection; ! to V first; to V before doing something else; after V-ing
+!-–rraar[V→V]:–r̲r̲aar                           OptativeVerbInflection; ! to V first; to V before doing something else; after V-ing
 -–rrlainar[V→V]:–r̲r̲lainar                     VerbPostbase; ! to constantly V; to only V; to act solely by V-ing; to do nothing but V
 -–rrluar(ar)[V→V]:–r̲r̲luar(ar)                 VerbPostbase; ! to be a little bit V
 -–rrlug[V→V]:–r̲r̲lug                           VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in oneʼs N or in respect to N; to have bad N
