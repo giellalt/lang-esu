@@ -22,9 +22,9 @@ define Nasal      [ VlessNasal | VoiceNasal ];
 
 define Con        [ Stop | Fric | Nasal | w | y ];
 
-define FVow       [ a | i | u | ạ ];
-define FVowStress [ á | í | ú | ạ́ ];
-define FVowHatted [ â | î | û | ậ ];
+define FVow       [ a | i | u | ạ | ụ ];
+define FVowStress [ á | í | ú | ạ́ | ụ́ ];
+define FVowHatted [ â | î | û | ậ | ụ̂ ];
 define AllFVow    [ FVow | FVowStress | FVowHatted ];
 define Vow        [ FVow | e ];
 define VowStress  [ FVowStress | é ];
@@ -66,7 +66,12 @@ define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o. ! rqe- bas
                        [..] (->) e || Con ">"* Con _ ">"* Con     .o.
                        [..]  ->  e || Con _ ">"* Con ">"* Con      ;
 
-define TripleVowel AllFVow -> 0 || AllFVow ">"* _ ">"* AllFVow ;
+define TripleVowel  AllFVow -> 0 || AllFVow ">"* _ ">"* AllFVow  ;
+
+define ConnectiveMood  ạ -> 0               || _ ">" [a|á]                               .o. ! caliạan -> calian 
+                       ụ -> 0               || _ ">" [a|á]                               .o. ! calikụan -> calikan 
+                       [e|é] -> e ("ʼ")     || [VowStress|VowHatted|Con] ">" ng _ [r|rr] .o. ! qavangrarpet -> qavange(ʼ)rpet
+                       [e|é] -> "ʼ" e ("ʼ") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvangʼe(ʼ)rma
 
 define WordAdjustments t (->) c     || _ [e|é] ">"* t ,               ! angutet -> angucet
                                        _ [e|é] ">"* ss ">"* c     .o. ! kitugtesciigataqa -> kitugcesciigataqa
@@ -74,8 +79,6 @@ define WordAdjustments t (->) c     || _ [e|é] ">"* t ,               ! angute
                        â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q    .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
                        [a|á] r [a|á] (->) a   || ">" [q|k] _ q    .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
                        [a|â|á] -> e || ">" q _ ">"* [r|rr]         ;  ! apteqarru -> apteqerru for -qar- postbase
-
-
 
 define arDeletion  "ạ" q -> 0 || _ ">"* .#.                                             .o. ! wordFinal
                    ["ạ"|"ạ́"] [r|rr] -> 0 || Vow ">"* VowStress ">"* Con ">"* _ ">"* Con .o. ! VV́r(ar) -> VV́r
@@ -92,8 +95,8 @@ define arDeletion  "ạ" q -> 0 || _ ">"* .#.                                   
                    "ʼ" (->) 0 || VowStress _ ">"* Con                                     ;  ! Vr(ár) -> V́(ʼ)r
 
 
-define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* AllVow ">"* Con ">"* _ ">"* AllVow ">"* AllVow ,
-                                    VoiceCon ">"*  _ ">"* VoiceCon                           ;
+define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* AllVow ">"* Con ">"* _ ">"* AllVow ">"* AllVow , ! [#|C]VCʼVV
+                                    VoiceCon ">"*  _ ">"* VoiceCon                                    ; 
 
 define AddApostrophe [..] -> "ʼ" || VlessCon _ ">"* VoiceCon , n _ ">"* g   ;      ! maybe VoiceFric _ ">"* VlessCon  ???
 
@@ -113,7 +116,7 @@ define ToOrthography  vv -> v,
                       [â|á|ạ|ậ|ạ́] -> a                                  .o.
                       [ê|é] -> e                                        .o.
                       [î|í] -> i                                        .o.
-                      [û|ú] -> u                                         ;
+                      [û|ú|ụ|ụ́|ụ̂] -> u                                   ;
                     
 
 regex AutomaticDevoicing   .o.
@@ -121,6 +124,7 @@ regex AutomaticDevoicing   .o.
       DropHattedE          .o.
       TripleConsonant      .o.
       TripleVowel          .o.
+      ConnectiveMood       .o.
       WordAdjustments      .o.
       arDeletion           .o.
       RemoveApostrophe     .o.
