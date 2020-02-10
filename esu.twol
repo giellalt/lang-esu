@@ -73,10 +73,10 @@ a:i <=> [:Con|.#.] _ g: %%: %:: %(e%):i [:Con] ; ! ag%:(e) -> ii
 
 "e:0 = ~ | word# | eVowPostbase | semifinaleVowPostbase | (e):e | -- | te@ "
 e:0 <=> _ [ Bndry: - %': - %(r%): ]* %~: ; ! "Rule for Tilde"
-        Vow t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
+        :Vow [Bndry:%>|:0]* t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
         _ Bndry:+ :Vow ; ! "vowel postbases are e deleters" "(u):u"
         .#. ~[ :* :Con :VlessCon] _ [ r | g ] [ Bndry: - %(t%): - %(g%/t%): ]+ :Vow ; ! "vowel postbases are semi-final e deleters" "(u):u"   !maybe ~[:Con :VlessCon] for amlleret ? 
-        [[:Vow :Con]|[:Con :VoiceCon]] _ [ r | g ] Bndry:* %%:%> Bndry:* %(e%):e ; ! "Rule (e):e"
+        [[Vow Con]|[Con VoiceCon]] _ [ r | g ] Bndry:* %%:%> Bndry:* %(e%):e ; ! "Rule (e):e"
         _ (Con:0) Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
         t: _ [Bndry:-AtSign:]* AtSign: ; ! te@
     except
@@ -87,7 +87,7 @@ e:0 <=> _ [ Bndry: - %': - %(r%): ]* %~: ; ! "Rule for Tilde"
 e:a <=> _ [ .#. | %= ] ; ! "Word final e:a"
         [:Con|.#.] _ %:: [ng:|%(ng%):] [i:|u:] [Bndry:|:Con|.#.] ; ! e:(ng)i -> ai ; e:(ng)u -> au
     except
-        Vow t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
+        :Vow [Bndry:%>|:0]* t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
 
 "e:i = enga/ii"
 e:i <=> [:Con|.#.] _ %:: [ng:|%(ng%):] [a:|ạ:] [Bndry:|:Con|.#.] ; ! e:(ng)a -> ii
@@ -182,39 +182,39 @@ ss:s <=> _ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ; ! CCte@³(u)/Cu
          _ t:s (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
 
 "t:0 = Cte@¹n/CCń | Cte@²mngv/CCḿńgvv | Cte@³(u)/Cu"
-t:0 <=> :Con _ e: (%°:) [Bndry:-AtSign:]* %@¹: ; ! Cte@¹n/CCń
-        :Con _ e: (%°:) [Bndry:-AtSign:]* %@²: ; ! Cte@²mngv/CCḿńgvv
+t:0 <=> Con _ e: (%°:) [Bndry:-AtSign:]* %@¹: ; ! Cte@¹n/CCń
+        Con _ e: (%°:) [Bndry:-AtSign:]* %@²: ; ! Cte@²mngv/CCḿńgvv
         VlessFric:VoiceFric _ e: (%°:) [Bndry:-AtSign:]* %@³: ; ! Cte@³(u)/Cu
         _ (ʼ) e: (%°:) [Bndry:-AtSign:]* %@⁵: ;
         _ (ʼ) e: (%°:) [Bndry:-AtSign:-%(r%):]* %@ˡ: ;
 
 "t:c = tV--li/ci | te@y/c | te~s/c" 
 t:c <=> _ Vow:0 (Con:0) [Bndry:-%(u%):-AtSign:]* %–: %–: l:0 i ; ! te--li/ci
-        _ (ʼ) e: [Bndry:-%(u%):-AtSign:]* i ; ! te~i/ci
+        _ (ʼ) e:0 [Bndry:-%(u%):-AtSign:]* i ; ! te~i/ci
         _ (ʼ) e: (%°:) %:: %(u%/i%): m: ; ! te:(u/i)/ci
         _ (ʼ) e: (%°:) [Bndry:-%(u%):-AtSign:]* %@ʸ: [Bndry:-%(u%):-AtSign:]* y: ; ! te@y/c
         _ (ʼ) e: [Bndry:-%(u%):-AtSign:]* [s:|y:] ; ! te~s/c
 
 "t:l = Vte@²/l | te*@³(u)/l | te°@⁴gkng/l"
-t:l <=> :Vow _ (ʼ) e: %°: [Bndry:-AtSign:]* %@²: ; ! Vte°@²mngv/l
-        :Vow _ (ʼ) e: %°: [Bndry:-AtSign:]* %@³: ; ! Vte°@³(u)/l
+t:l <=> Vow _ (ʼ) e: %°: [Bndry:-AtSign:]* %@²: ; ! Vte°@²mngv/l
+        Vow _ (ʼ) e: %°: [Bndry:-AtSign:]* %@³: ; ! Vte°@³(u)/l
         _ (ʼ) e: %°: [Bndry:-AtSign:]* %@⁴: ; ! te°@⁴gkng/l
 
 "t:n = WordFinalVte"
-t:n <=> Vow _ e: [ .#. | %= ] ; ! Word final Vte
+t:n <=> :Vow [Bndry:%>|:0]* _ e: [ .#. | %= ] ; ! Word final Vte
 
 "t:q = te@ˁ/q"
 t:q <=> _ (ʼ) e: (%°:) [Bndry:-AtSign:]* %@ˁ: ; ! te@ˁ/q
 
 "t:s = Vte@²/s | Vtʼe@³(u)/sʼu | Cte@⁴gkng/s"
-t:s <=> :Vow _ (ʼ) e: [Bndry:-%°:-AtSign:]* %@²: ; ! Vte@²mngv/s
-        :Vow _ ʼ e: [Bndry:-%°:-AtSign:]* %@³: ; ! Vtʼe@³(u)/sʼu
-        [:Vow|VlessFric:VoiceFric|:Nasal|:Stop] _ (ʼ) e: [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
+t:s <=> Vow _ (ʼ) e: [Bndry:-%°:-AtSign:]* %@²: ; ! Vte@²mngv/s
+        Vow _ ʼ e: [Bndry:-%°:-AtSign:]* %@³: ; ! Vtʼe@³(u)/sʼu
+        [Vow|VlessFric:VoiceFric|Nasal|Stop] _ (ʼ) e: [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
 
 "t:y = Vte@³(u)/Vy"
 t:y <=> 
 !        Vow _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@²: ; ! Vte@²mngv/y  (for HBC)
-        [:Vow|:Nasal|:Stop] _ e: [Bndry:-%°:-AtSign:]* %@³: ; ! Vte@³(u)/Vy    TODO: Add t'e/y' also for HBC
+        [Vow|Nasal|Stop] _ e: [Bndry:-%°:-AtSign:]* %@³: ; ! Vte@³(u)/Vy    TODO: Add t'e/y' also for HBC
 !        [Vow|VlessFric:VoiceFric|Nasal|Stop] _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/y for HBC  
 
 "u:0 = --"
