@@ -22,10 +22,10 @@ tage[V][Intr][Ptcp][S_3Sg]	tagelria
 nere-@+cete/.vkar[V→V]-–llini[V→V][V][Trns][Ptcp][A_3Pl][P_3Sg]	nerevkallinikiit
 unite-–llru[V→V]-–llini[V→V][V][Trns][Ptcp][A_3Sg][P_3Sg]	unitellrullinikii
 ane-–llru[V→V]-–lli[V→V][V][Intr][Ptcp][S_3Sg]	anellrullilria
-tai-@%:(u)te[V→V]-+ciqe/@ciiqe[V→V]-–lli[V→V][V][Trns][Ptcp][A_3Sg][P_3Pl]=wa[Encl]	taiciiqellikai-wa
-tai-@%:(u)te[V→V]-+ciqe/@ciiqe[V→V]-–lli[V→V][V][Trns][Ptcp][A_3Sg][P_3Pl]=wa[Encl]	taiciiqlikai-wa
+tai-@:(u)te[V→V]-+ciqe/@ciiqe[V→V]-–lli[V→V][V][Trns][Ptcp][A_3Sg][P_3Pl]=wa[Encl]	taiciiqellikai-wa
+tai-@:(u)te[V→V]-+ciqe/@ciiqe[V→V]-–lli[V→V][V][Trns][Ptcp][A_3Sg][P_3Pl]=wa[Encl]	taiciiqlikai-wa
 pi-–lli[V→V][V][Intr][Ptcp][S_3Sg]=wa[Encl]	pillilria-wa
-tupag-%:(u/i)ma[V→V][V][Intr][Ptcp][S_1Sg]	tupaumalrianga
+tupag-:(u/i)ma[V→V][V][Intr][Ptcp][S_1Sg]	tupaumalrianga
 keveg-+(s)ciigate[V→V][V][Trns][Ptcp][A_1Sg][P_3Sg]	kevegciigalkeka
 ngelʼar-@+cete/.vkar[V→V][V][Trns][Ptcp][A_3Sg][P_1Sg]	ngelʼarceskiinga
 tekite[V][Intr][Ptcp][S_1Sg]	tekitellrianga
@@ -44,9 +44,9 @@ ell[PerPro][Abs][2Sg]=mi[Encl]	elpesmi
 ell[PerPro][Abl_Mod][2Sg]	elpenek
 wang[PerPro][Abl_Mod][1Sg]	wangnek
 ell[PerPro][Abl_Mod][4Sg]	ellminek
-wang[PerPro][1Sg]-%:~(ng)u[N→V]-–llru[V→V][V][Intr][Ind][S_3Sg]	wangʼullruuq
-ell[PerPro][2Sg]-%:~(ng)u[N→V]-–llru[V→V][V][Intr][Ind][S_3Sg]=qaa[Encl]	elpengullruuq-qaa
-ell[PerPro][3Sg]-%:~(ng)u[N→V][V][Intr][Ind][S_3Sg]	elliinguuq
+wang[PerPro][1Sg]-:~(ng)u[N→V]-–llru[V→V][V][Intr][Ind][S_3Sg]	wangʼullruuq
+ell[PerPro][2Sg]-:~(ng)u[N→V]-–llru[V→V][V][Intr][Ind][S_3Sg]=qaa[Encl]	elpengullruuq-qaa
+ell[PerPro][3Sg]-:~(ng)u[N→V][V][Intr][Ind][S_3Sg]	elliinguuq
 ell[PerPro][Equ][2Pl]	elpecicetun
 wang[PerPro][Abs][1Sg]=llu[Encl]	wii-llu
 ell[PerPro][Ter][2Sg]	elpenun

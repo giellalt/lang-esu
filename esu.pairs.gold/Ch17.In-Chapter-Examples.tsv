@@ -22,8 +22,8 @@ ceńirte[V][Trns][CtmpI][A_3Pl][P_4Sg]	ceńirtellratni
 ceńirte[V][Intr][CtmpI][S_3Pl]	ceńirtellratni
 atur[V][Trns][CtmpI][A_4Sg][P_3Sg]	atullerminiu
 atur[V][Trns][Cnsq][A_4Sg][P_3Sg]	atuamiu
-qalarte-@%:(u)te[V→V][V][Trns][CtmpII][A_4Sg][P_1Sg]	qalarusnginanerminia
-qalarte-@%:(u)te[V→V][V][Trns][Conc][A_4Sg][P_1Sg]	qalarutʼngermia
+qalarte-@:(u)te[V→V][V][Trns][CtmpII][A_4Sg][P_1Sg]	qalarusnginanerminia
+qalarte-@:(u)te[V→V][V][Trns][Conc][A_4Sg][P_1Sg]	qalarutʼngermia
 nere[V][Trns][CtmpI][A_3Sg][P_3Sg]	nerellraniu
 nere[V][Trns][CtmpI][A_3Sg][P_3Sg]	nerellraku
 nere[V][Trns][CtmpI][A_3Sg][P_3Sg]	nerellragu
