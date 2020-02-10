@@ -7,14 +7,14 @@ Alphabet
     k̲:k q̲:q g̲:g r̲:r g̲g̲:gg r̲r̲:rr                 ! for -velar postbase assimilation
     %[e%] %[e%]:e                               ! HBC/Nun: initial e is not weak
     ʼ                                           ! Keep apostrophe from lexical entries
-    ạ                                           ! for (ar) droppping
+    ạ ụ                                         ! for (ar) droppping ; for vowel dropping in connective moods ending in a vowel
 
     ! All operators and allomorph operators map to morpheme segmenter 
     %(a%):%> %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%>
     %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> %(ur%):%>
     %(g%/t%):%> %(r%/l%):%> %(u%/i%):%>
 
-    %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %*:%> %°:%> 
+    %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %*:%> %°:%>
     %@¹:%> %@²:%> %@³:%> %@⁴:%> %@⁵:%> %@ˡ:%> %@ˁ:%> %@ʸ:%> %@:%>  
     %=; 
 
@@ -39,7 +39,7 @@ Sets
 
     Con = Stop Fric Nasal w y ;
 
-    FVow = a i u ạ ;
+    FVow = a i u ạ ụ ;
     Vow = FVow e ;
 
 Rules 
@@ -201,7 +201,7 @@ t:l <=> :Vow _ (ʼ) e: %°: [Bndry:-AtSign:]* %@²: ; ! Vte°@²mngv/l
         _ (ʼ) e: %°: [Bndry:-AtSign:]* %@⁴: ; ! te°@⁴gkng/l
 
 "t:n = WordFinalVte"
-t:n <=> :Vow _ e: [ .#. | %= ] ; ! Word final Vte
+t:n <=> Vow _ e: [ .#. | %= ] ; ! Word final Vte
 
 "t:q = te@ˁ/q"
 t:q <=> _ (ʼ) e: (%°:) [Bndry:-AtSign:]* %@ˁ: ; ! te@ˁ/q
