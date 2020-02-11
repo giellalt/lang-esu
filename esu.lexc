@@ -148,6 +148,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 @%:~(ng)ạ                   ! Consequential Mood @ for te->c and te°->l
 @–ngr(ar)                   ! Concessive Mood @ for te unchanged and te°->le
 @nga                        ! to be in a state of having V-ed; or having been V-ed
+@³%:(u)cir/@⁵cir            ! condition of possessor with respect to V; incidence of V; occurrence of V
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -592,7 +593,7 @@ kina                EncliticOrEnd;
 kituu               VerbPostbase;
 nalir               NounPostbase;
 nani                EncliticOrEnd;
-nante               VerbPostbase;
+nante:nanete        VerbSpecialT; ! to be where
 qaillun             EncliticOrEnd;
 qaillʼ              EncliticOrEnd;
 qaku                EncliticOrEnd;
@@ -10841,7 +10842,6 @@ nanili                 VerbPostbase; ! to become short(er)
 nanilliur              VerbPostbase; ! to be lonesome
 nanite                 VerbSpecialT; ! to be short in extent or duration
 nanrar                 VerbPostbase; ! to praise; to honor
-nante                  VerbPostbase; ! to be where
 nanurte                VerbPostbase; ! to be shining (on)
 napa                   VerbPostbase; ! to stand upright
 napackar               VerbPostbase; ! to get stuck penetrating into something
@@ -13370,6 +13370,7 @@ VerbEte;
 -–ya(g)ar*[N→N]:–ya(g)ar*                     NounPostbase; ! baby N; little N
 -–yagar*[N→N]:–yagar*                         NounPostbase; ! baby N; little N
 -+yag[N→N]:+yag                               NounPostbase; ! thing similar to N; thing that acts as if it were V; small N
+-@~+yarar[N→N]:@ʸ~+yarar                      NounPostbase; ! way of V-ing; how to V; method of V-ing; device for V-ing; way of or device for dealing with N
 -–yaya(g)ar*[N→N]:–yaya(g)ar*                 NounPostbase; ! little baby N
 
 -+'(g)ar(ar)[N→V]:+'(g)ar(ar)                 VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
@@ -13433,7 +13434,7 @@ VerbEte;
 -+miu[N→V]:+miu                               VerbPostbase; ! to be at N; to stay at N
 -+miuyaar[N→V]:+miuyaar                       VerbPostbase; ! to speak the language or dialect of the residents of N
 -@~+ngari[N→V]:@²~+ngari                      VerbPostbase; ! to seem to be becoming V; to begin to be like N
--+ngate[N→V]:+ngate                           VerbPostbase; ! to seem like N
+-+ngate[N→V]:+(r)ngate°                       VerbPostbase; ! to seem like N
 -–nge[N→V]:–nge                               VerbPostbase; ! to acquire N; to begin to V
 -–ngqerr[N→V]:–ngqerr                         VerbPostbase; ! to have N
 -@~+nialke[N→V]:@¹~+nialke                    VerbPostbase; ! to consider object to be unpleasant to V or to be an unpleasant N
@@ -13821,7 +13822,7 @@ VerbInflection;
 -+'(g)arkar[V→N]:+'(g)arkar                   NounPostbase; ! that which is to be V-ed; that which will V
 -+'(g)arkaqenrilke[V→N]:+'(g)arkaqenrilke     NounPostbase; ! that which possessor must, should or would not V
 -@~+cetaar[V→N]:@⁵~+cetaar                    NounPostbase; ! something used to cause one to V
--@%:(u)cir[V→N]:@³%:(u)cir                    NounPostbase; ! condition of possessor with respect to V; incidence of V; occurrence of V
+-@%:(u)cir[V→N]:@³%:(u)cir/@⁵cir              NounPostbase; ! condition of possessor with respect to V; incidence of V; occurrence of V
 -@%:(u)cirkar[V→N]:@³%:(u)cirkar              NounPostbase; ! future condition of possessor with respect to V
 -@~+citaar[V→N]:@⁵~+citaar                    NounPostbase; ! something used to cause one to V
 -–curlag[V→N]:–curlag                         NounPostbase; ! misfortune in V-ing
