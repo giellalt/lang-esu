@@ -56,21 +56,7 @@ define Lowercase "A"   -> a,
 define arExpansion "(ar)"  -> "ạ" r       .o.
                    "(ar*)" -> "ạ" r "*"    ; 
 
-define MultipleForms "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
-                     "@⁵+p/~v" -> "~" v                                                       .o.
-                     "+p/.v" -> "+" p e                       || [Con|"@–ngr(ar)"] _ Con      .o. ! for Connective Mood - "@–ngr(ar)"
-                     "+p/.v" -> "+" p                         || [Con|"@–ngr(ar)"] _ Vow      .o.
-                     "+p/.v" -> "." v                                                         .o. ! for Connective Mood - "@%:~(ng)ạ"
-                     "+pegun/.vkun" -> "+" p e g u n          || Con _                        .o.
-                     "+pegun/.vkun" -> "." v k u n                                            .o.
-                     "+t/.s" -> "+" t                         || Con _                        .o.
-                     "+t/.s" -> "." s                                                         .o.
-                     "+c/.s" -> "+" c                         || Con _                        .o.
-                     "+c/.s" -> "." s                                                         .o.
-                     "+c/.ss" -> "." ss                       || Vow _                        .o.
-                     "+c/.ss" -> "+" c                                                        .o.
-
-                     "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
+define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
                      "[Opt_PRS_S_2Sg]" -> "+" n               || t e  _                           .o.
                      t e "°" "[Opt_PRS_S_2Sg]" -> l u                                             .o.
                      "[Opt_PRS_S_2Sg]" -> ":" a               || Con  _                           .o.
@@ -143,7 +129,22 @@ define MultipleForms "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°"
                      t ("ʼ") e ("°") "@nga" -> "+" ng a                                       .o. ! kitugte -> kitugnga (|| Con _ )
                      "@nga" -> "+" ng a                                                       .o. ! TODO: How to disallow not te bases?
 
+                     "@³%:(u)cir/@⁵cir" -> "@⁵" c i r || c e t e ("°") _                      .o. ! kiircete -> kiircecia
+                     "@³%:(u)cir/@⁵cir" -> "@³" ":" "(u)" c i r                               .o. ! ayuqe -> ayuqucia
 
+                     "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
+                     "@⁵+p/~v" -> "~" v                                                       .o.
+                     "+p/.v" -> "+" p e                       || Con _ Con                    .o.
+                     "+p/.v" -> "+" p                         || Con _ Vow                    .o.
+                     "+p/.v" -> "." v                                                         .o.
+                     "+pegun/.vkun" -> "+" p e g u n          || Con _                        .o.
+                     "+pegun/.vkun" -> "." v k u n                                            .o.
+                     "+t/.s" -> "+" t                         || Con _                        .o.
+                     "+t/.s" -> "." s                                                         .o.
+                     "+c/.s" -> "+" c                         || Con _                        .o.
+                     "+c/.s" -> "." s                                                         .o.
+                     "+c/.ss" -> "." ss                       || Vow _                        .o.
+                     "+c/.ss" -> "+" c                                                        .o.          
                      "(ʼa)" -> ʼ a                            || \.#. Con a _                 .o.
                      "(ʼa)" -> 0                                                               ;
 
