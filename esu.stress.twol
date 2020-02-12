@@ -6,7 +6,7 @@ Alphabet
     vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
     %[e%]
     ʼ                                           ! Keep apostrophe from lexical entries
-    ạ ụ                                         ! for (ar) droppping
+    ạ ụ ġ                                       ! for (ar) droppping
     á í ú ạ́ ụ́ â î û ậ ụ̂ é ê
     %> 
     %= ;
@@ -15,7 +15,7 @@ Sets
     B = %> ;
 
     Stop = p t c k q ;
-    VoiceFric = v l s g r u͡g u͡r ; 
+    VoiceFric = v l s g r u͡g u͡r ġ ; 
     VlessFric = vv ll ss gg rr u͡gg u͡rr ;
     VoiceNasal = m n ng ;
     VlessNasal = ḿ ń ńg ;
