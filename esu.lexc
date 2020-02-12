@@ -13731,7 +13731,7 @@ VerbInflection;
 -–rpaga[V→V]:–r̲paga                           VerbPostbase; ! to V hard at intervals
 -–rpag[V→V]:–r̲pag                             VerbPostbase; ! to V hard; to be very V
 -–rpakar[V→V]:–r̲pakar                         VerbPostbase; ! to V so much; to V for so long
--@–rqe[V→V]:@–rqe                             VerbPostbase; ! to V one after another; to V time after time; to V all of them
+-@–rqe[V→V]:@⁵–rqe                            VerbPostbase; ! to V one after another; to V time after time; to V all of them
 -–rqe[V→V]:–r̲qe                               VerbPostbase; ! to intentionally or deliberately cause one to V (often repeatedly)
 -–rqe[V→V]:–rqe                               VerbPostbase; ! to intentionally or deliberately cause one to V (often repeatedly)
 -–rraar[V→V]:–r̲r̲aar                           VerbPostbase; ! to V first; to V before doing something else; after V-ing
@@ -15324,12 +15324,12 @@ malrunleg[Num][Cardinal][Pl]:malrunlegen                    EncliticOrEnd;
 malrunleg[Num][Cardinal][Pl]:malrunelgen                    EncliticOrEnd;
 pingayunleg[Num][Cardinal][Pl]:pingayunlegen                EncliticOrEnd;
 pingayunleg[Num][Cardinal][Pl]:pingayunelgen                EncliticOrEnd;
-qulngunritar(ar*)[Num][Cardinal][Sg]:qulngunritaʼar         EncliticOrEnd;
+qulngunritar(ar*)[Num][Cardinal][Sg]:qulngunritar(ar*)      EncliticOrEnd;
 qule[Num][Cardinal][Sg]:qula                                EncliticOrEnd;
-akimiarunritar(ar*)[Num][Cardinal][Sg]:akimiarunritaʼar     EncliticOrEnd;
+akimiarunritar(ar*)[Num][Cardinal][Sg]:akimiarunritar(ar*)  EncliticOrEnd;
 akimiar[Num][Cardinal][Sg]:akimiaq                          EncliticOrEnd;
-yuinaunritar(ar*)[Num][Cardinal][Sg]:yuinaunritaʼar         EncliticOrEnd;
-ipiarunritar(ar*)[Num][Cardinal][Sg]:ipiarunritaʼar         EncliticOrEnd;
+yuinaunritar(ar*)[Num][Cardinal][Sg]:yuinaunritar(ar*)      EncliticOrEnd;
+ipiarunritar(ar*)[Num][Cardinal][Sg]:ipiarunritar(ar*)      EncliticOrEnd;
 yuinar*[Num][Cardinal][Sg]:yuinaq                           EncliticOrEnd;
 ipiar[Num][Cardinal][Sg]:ipiaq                              EncliticOrEnd;
 tiissitsaar[Num][Cardinal][Sg]:tiissitsaaq                  EncliticOrEnd;
@@ -15362,6 +15362,9 @@ ipiar[Num][Cardinal][Du]:ipiak                              EncliticOrEnd;
 ipiar[Num][Cardinal][Pl]:ipiat                              EncliticOrEnd;
 tiissitsaar[Num][Cardinal][Du]:tiissitsaak                  EncliticOrEnd;
 tiissitsaar[Num][Cardinal][Pl]:tiissitsaat                  EncliticOrEnd;
+
+cetamar[Num][N][Abs][3PlPoss][SgPosd]:cetamiit              EncliticOrEnd;
+tallimar[Num][N][Abs][3PlPoss][SgPosd]:tallimiit            EncliticOrEnd;
 
 ataucir                 NumeralPostbase; ! 1
 malrur                  NumeralPostbase; ! 2
