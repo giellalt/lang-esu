@@ -31,10 +31,10 @@ tangerr[V][Trns][Opt][PRS][A_1Sg][P_3Sg]=tuq[Encl]	tangerrlaku-tuq
 tai[V][Intr][Opt][PRS][S_3Pl]=tuq[Encl]	tailit-tuq
 tai[V][Intr][Opt][PRS][S_3Pl]=tuq[Encl]	tailistuq
 ayag-@~+naur[V→V][V][Intr][Ind][S_1Pl]	ayagnaurtukut
-ikayur[V][Intr][Ind][S_3Sg][V][Trns][Ind][A_1Sg][P_2Sg]	ikayurnauramken
-ikayur[V][Intr][Ind][S_3Sg][V][Trns][Ind][A_1Sg][P_2Sg]	ikayurnaumken
-ikayur[V][Intr][Ind][S_3Sg][V][Trns][Ind][A_1Sg][P_2Sg]	ikayurnaamken
-avelngar-–rugar*[N→N][N][Abl_Mod][Unpd][Pl]	avelngarugarnek
+ikayur-@~+naur[V→V][V][Trns][Ind][A_1Sg][P_2Sg]	ikayurnauramken
+ikayur-@~+naur[V→V][V][Trns][Ind][A_1Sg][P_2Sg]	ikayurnaumken
+ikayur-@~+naur[V→V][V][Trns][Ind][A_1Sg][P_2Sg]	ikayurnaamken
+avelngar*-–rugar*[N→N][N][Abl_Mod][Unpd][Pl]	avelngarugarnek
 yug-–rugar*[N→N][N][Abs][Unpd][Pl]	yugʼugaat
 yug-–rugar*[N→N][N][Abs][Unpd][Pl]	yugugaat
 kuuvviar-–rugar*[N→N][N][Abl_Mod][Unpd][Sg]	kuuvviarugarmek
@@ -81,7 +81,7 @@ pi-@~+yug[V→V]-–nge[V→V]-@+(g)ar(ar)te[V→V][V][Intr][Ind][S_3Sg]	piyunga
 pi-@~+yug[V→V]-–nge[V→V]-@+(g)ar(ar)te[V→V][V][Intr][Ind][S_3Sg]	piyungaʼrtuq
 temci-@~+yug[V→V]-–nge[V→V]-@+(g)ar(ar)te[V→V][V][Intr][Ind][S_3Sg]	temciyungartuq
 temci-@~+yug[V→V]-–nge[V→V]-@+(g)ar(ar)te[V→V][V][Intr][Ind][S_3Sg]	temciyungaʼrtuq
-alike-–nge[V→V]-@+(g)ar(ar)te[V→V][V][Intr][Ind][S_3Sg]	alikengaʼartaqa
+alike-–nge[V→V]-@+(g)ar(ar)te[V→V][V][Trns][Ind][A_1Sg][P_3Sg]	alikengaʼartaqa
 aug-–nge[N→V]-@+(g)ar(ar)te[V→V][V][Intr][Ind][S_3Sg]	aungartuq
 aug-–nge[N→V]-@+(g)ar(ar)te[V→V][V][Intr][Ind][S_3Sg]	aungaʼrtuq
 cali-+'(g)arkar[V→N]-––lir[N→V]-–nge[V→V]-@+(g)ar(ar)te[V→V][V][Intr][Ind][S_3Sg]	caliarkalingartuq
@@ -102,8 +102,8 @@ nenge-–qerte[V→V][V][Intr][Ind][S_3Sg]	nengqeʼrtuq
 qerar-–qerte[V→V][V][Intr][Ind][S_3Sg]	qerʼaqertuq
 uterte-–qerte[V→V][V][Intr][Ind][S_3Sg]	utqertuq
 qavar-–qar[V→V][V][Intr][Ind][S_3Sg]	qavaqertuq
-qavar-–qar[V→V][V][Intr][Sbrd][P_3Sg]	qavaqerluni
-mayur-–qar[V→V][V][Intr][Sbrd][P_3Sg]	mayʼuqerrluni
+qavar-–qar[V→V][V][Intr][Sbrd][S_4Sg]	qavaqerluni
+mayur-–qerte[V→V][V][Intr][Sbrd][S_4Sg]	mayʼuqerrluni
 ayag-–qar[V→V][V][Intr][Ind][S_3Sg]	ayakartuq
 tupag-–qar[V→V][V][Intr][Ind][S_3Sg]	tupakartuq
 quuyurni-–llag[V→V][V][Intr][Ind][S_3Sg]	quuyurnillagtuq
