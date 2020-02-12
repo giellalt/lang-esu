@@ -7,11 +7,11 @@ Alphabet
     k̲:k q̲:q g̲:g r̲:r g̲g̲:gg r̲r̲:rr                 ! for -velar postbase assimilation
     %[e%] %[e%]:e                               ! HBC/Nun: initial e is not weak
     ʼ                                           ! Keep apostrophe from lexical entries
-    ạ ụ                                         ! for (ar) droppping ; for vowel dropping in connective moods ending in a vowel
+    ạ ụ ġ                                       ! for (ar) droppping ; for vowel dropping in connective moods ending in a vowel ; ya(g)ar*
 
     ! All operators and allomorph operators map to morpheme segmenter 
     %(a%):%> %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%>
-    %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> %(ur%):%>
+    %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> ! %(ur%):%>
     %(g%/t%):%> %(r%/l%):%> %(u%/i%):%>
 
     %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %*:%> %°:%>
@@ -26,7 +26,7 @@ Sets
     AtSign = %@¹ %@² %@³ %@⁴ %@⁵ %@ˡ %@ˁ %@ʸ %@ ;
 
     Stop = p t c k q k̲ q̲ ;
-    VoiceFric = v l s g r u͡g u͡r g̲ r̲ ; 
+    VoiceFric = v l s g r u͡g u͡r g̲ r̲ ġ ; 
     VlessFric = vv ll ss gg rr u͡gg u͡rr g̲g̲ r̲r̲ ;
     VoiceNasal = m n ng ;
     VlessNasal = ḿ ń ńg ;
