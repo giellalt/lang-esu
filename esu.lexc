@@ -149,6 +149,8 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 @–ngr(ar)                   ! Concessive Mood @ for te unchanged and te°->le
 @nga                        ! to be in a state of having V-ed; or having been V-ed
 @³%:(u)cir/@⁵cir            ! condition of possessor with respect to V; incidence of V; occurrence of V
+–r̲(ur)lur                   ! poor dear N ; to V (of poor, dear one)
+
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! e initial bases - optional e used for prosody
@@ -156,7 +158,7 @@ Vv Ll Ss Gg Rr Ng Ńg U͡g U͡r U͡gg U͡rr
 (aa)                        ! 
 (ar)                        ! (aq*)/(ar*)/(ar) - NounDicForm/NounBaseForm/VerbBaseForm
 (ar*)                       ! (aq*)/(ar*)/(ar) - NounDicForm/NounBaseForm/VerbBaseForm
-(ur)                        !
+! (ur)                        ! only in –r̲(ur)lur above
 
 
 !!!!!!! ALLOMORPH OPERATORS !!!!!!
@@ -234,6 +236,12 @@ ugaani[N][Loc][3SgPoss][SgPosd]:ugaani                  EncliticOrEnd; ! because
 ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ                  EncliticOrEnd; ! because of; as a consequence of; on account of
 wataime-+(a)r[N→V][V][Intr][Intrg][S_3Sg]:wataimarte    EncliticOrEnd; ! what time is it?
 ell[PerPro][Abs][2Sg]=mi[Encl]:elpesmi                  EncliticOrEnd;
+ciin-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]:ciiu͡rluq         EncliticOrEnd;
+apa-–r(ur)lur*[N→N]:apaʼurlur*                          EncliticOrEnd;
+ema-–r(ur)lur*[N→N]:maurlur*                            EncliticOrEnd;
+nasʼag-–r(ur)lur*[N→N]:nasaurlur*                       EncliticOrEnd;
+taneg-–r(ur)lur*[N→N]:tanʼgaurlur*                      EncliticOrEnd;
+tutgar(ar*)-–r(ur)lur*[N→N]:tutgaraʼurlur*              EncliticOrEnd;
 
 ! Irregular -–a/–ar/–aa 'to V repeatedly'
 qalrir-–a/–ar/–aa/+a/+aar[V→V]:qalria       VerbPostbase; ! 
@@ -13259,7 +13267,7 @@ VerbEte;
 -–ngqerr[N→V]:+(r)                            SubordinativeVerbInflection; ! to have N
 
 
--–ar[N→N]:–ar                                 NounPostbase; ! (usually does not alter meaning of noun base)
+!-–ar[N→N]:–ar                                 NounPostbase; ! (usually does not alter meaning of noun base)
 -–ar(ar*)[N→N]:–ar(ar*)                       NounPostbase; ! little piece of N
 -–cengar*[N→N]:–cengar*                       NounPostbase; ! one with a small N
 -–ciller[N→N]:–ciller                         NounPostbase; ! worthless N; dilapidated N
@@ -13367,11 +13375,11 @@ VerbEte;
 -–vaarrlug[N→N]:–vaarrlug                     NounPostbase; ! big N; huge N
 -–vialug[N→N]:–vialug                         NounPostbase; ! shabby N; funny old N; worthless N
 -@~+viutar[N→N]:@²~+viutar                    NounPostbase; ! container for N
--–ya(g)ar*[N→N]:–ya(g)ar*                     NounPostbase; ! baby N; little N
+-–ya(g)ar*[N→N]:–yaġar*                       NounPostbase; ! baby N; little N
 -–yagar*[N→N]:–yagar*                         NounPostbase; ! baby N; little N
 -+yag[N→N]:+yag                               NounPostbase; ! thing similar to N; thing that acts as if it were V; small N
 -@~+yarar[N→N]:@ʸ~+yarar                      NounPostbase; ! way of V-ing; how to V; method of V-ing; device for V-ing; way of or device for dealing with N
--–yaya(g)ar*[N→N]:–yaya(g)ar*                 NounPostbase; ! little baby N
+-–yaya(g)ar*[N→N]:–yayaġar*                   NounPostbase; ! little baby N
 
 -+'(g)ar(ar)[N→V]:+'(g)ar(ar)                 VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
 -+arar(ar)[N→V]:+arar(ar)                     VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
@@ -13508,7 +13516,7 @@ VerbInflection;
 !-@ngur*[V→N]:@⁴ngur*                          NounPostbase; ! one that is V; one that is V-ing
 
 -–a/–ar/–aa/+a/+aar[V→V]:+a/+aar              VerbPostbase; ! to V repeatedly
--+'(g)aqe[V→V]:+'(g)aqe                       SubordinativeVerbInflection; ! to usually V; to repeatedly V; to habitually V
+-+'(g)aqe[V→V]:+'(g)aqe                       VerbPostbase; ! to usually V; to repeatedly V; to habitually V
 -+'(g)ar(ar)[V→V]:+'(g)ar(ar)                 VerbPostbase; ! to just barely V; to hardly V; to gradually V; leisurely V; With adjectival verbs ending in te-, this postbase means to be a little V
 -@+(g)ar(ar)te[V→V]:@+–'(g)ar(ar)te           VerbPostbase; ! to suddenly or immediately V; to V with short duration of action
 -+'(g)arkaqe[V→V]:+'(g)arkaqe                 VerbPostbase; ! will V (it); should V (it); to V (it) in the future
@@ -13546,7 +13554,7 @@ VerbInflection;
 -–inar[V→V]:–inar                             VerbPostbase; ! to finally V
 -%:(ng)i%:rute[V→V]:%:(ng)i%:rute             VerbPostbase; ! to not have N any more; to no longer be V (adjectival verbs only)
 -%:(ng)ite[V→V]:%:(ng)ite°                    VerbPostbase; ! to lack N or V; to have no N or V
--–kaca(g)ar[V→V]:–kaca(g)ar                   VerbPostbase; ! to be very V
+-–kaca(g)ar[V→V]:–kacaġar                     VerbPostbase; ! to be very V
 -–kacagar[V→V]:–kacagar                       VerbPostbase; ! to be very V
 -–kacgar[V→V]:–kacgar                         VerbPostbase; ! to be very V
 -+kaniir(ar)[V→V]:+kaniir(ar)                 VerbPostbase; ! to become more V
@@ -13732,7 +13740,7 @@ VerbInflection;
 -–rrluar(ar)[V→V]:–r̲r̲luar(ar)                 VerbPostbase; ! to be a little bit V
 -–rrlug[V→V]:–r̲r̲lug                           VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in oneʼs N or in respect to N; to have bad N
 -–rrlugte[V→V]:–r̲r̲lugte                       VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in oneʼs N or in respect to N; to have bad N
--–q(ur)lur[V→V]:–q̲(ur)lur                     VerbPostbase; ! to V (of poor, dear one)
+-–q(ur)lur[V→V]:–r̲(ur)lur                     VerbPostbase; ! to V (of poor, dear one)
 -–rvaar[V→V]:–r̲vaar                           VerbPostbase; ! to be very V
 -–rvag[V→V]:–r̲vag                             VerbPostbase; ! to be very V
 -–sciigate[V→V]:–sciigate°                    VerbPostbase; ! to be unable to V
@@ -13777,7 +13785,7 @@ VerbInflection;
 -–vyiar[V→V]:–vyiar                           VerbPostbase; ! (HBC form) to V more toward completion; to V even more; to V more thoroughly
 -–vyirte[V→V]:–vyirte                         VerbPostbase; ! to V around here and there
 -@~+yaaqe[V→V]:@ʸ~+yaaqe                      VerbPostbase; ! to V in vain, to no avail, without the intended or expected outcome, fruitlessly
--–ya(g)ar[V→V]:–ya(g)ar                       VerbPostbase; ! for dear little one to be V-ing; to V in a cute little way
+-–ya(g)ar[V→V]:–yaġar                         VerbPostbase; ! for dear little one to be V-ing; to V in a cute little way
 -–yagar[V→V]:–yagar                           VerbPostbase; ! for dear little one to be V-ing; to V in a cute little way
 -@~+yagute[V→V]:@ʸ~+yagute                    VerbPostbase; ! to reach the state of V
 -@~+yalqar[V→V]:@ʸ~+yalqar                    VerbPostbase; ! to V without recompense; to V soon
@@ -15030,6 +15038,15 @@ ell[PerPro][3Sg]-%:~(ng)u[N→V]:elliingu   VerbPostbase;
 !ell[PerPro][4Pl]-%:~(ng)u[N→V]:           VerbPostbase;
 !ell[PerPro][4Du]-%:~(ng)u[N→V]:           VerbPostbase;
 
+wang[PerPro][1Sg]-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]:wiiu͡rluq       EncliticOrEnd;
+wang[PerPro][1Du]-–r(ur)lur*[N→N][N][Abs][Unpd][Du]:wangkurluuk    EncliticOrEnd;
+wang[PerPro][1Pl]-–r(ur)lur*[N→N][N][Abs][Unpd][Pl]:wangkurluut    EncliticOrEnd;
+ell[PerPro][2Sg]-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]:elpeu͡rluq       EncliticOrEnd;
+ell[PerPro][2Sg]-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]:elpeʼu͡rluq      EncliticOrEnd;
+ell[PerPro][2Du]-–r(ur)lur*[N→N][N][Abs][Unpd][Du]:elpeu͡rlurpetek  EncliticOrEnd;
+ell[PerPro][2Du]-–r(ur)lur*[N→N][N][Abs][Unpd][Du]:elpeʼu͡rlurpetek EncliticOrEnd;
+ell[PerPro][2Pl]-–r(ur)lur*[N→N][N][Abs][Unpd][Pl]:elpeciu͡rluut    EncliticOrEnd;
+
 
 LEXICON QuantQual
 allakar        QuantQualPostbase; ! separately
@@ -15184,17 +15201,19 @@ uka              DemAdv2Ter;
 
 
 LEXICON DemAbsSg
-[DemPro][Abs][Unpd][Sg]:+na             EncliticOrEnd;
-[DemPro][Abs][Unpd][Sg]-–lkug[N→N]:+na–lkug  EncliticOrEnd; ! no-good, darned N
-[DemPro]-–kucir[N→N]:–kucir             NounPostbase; ! one of the same kind as N
-[DemPro]-@+suuq[Voc][Unpd][Sg]:@+suuq   EncliticOrEnd; ! singular vocative (calling) form
-[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+yuuq   EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+[DemPro][Abs][Unpd][Sg]:+na                       EncliticOrEnd;
+[DemPro]-–r(ur)lur*[N→N][Abs][Unpd][Sg]:+nau͡rluq  EncliticOrEnd;
+[DemPro][Abs][Unpd][Sg]-–lkug[N→N]:+na–lkug       EncliticOrEnd; ! no-good, darned N
+[DemPro]-–kucir[N→N]:–kucir                       NounPostbase; ! one of the same kind as N
+[DemPro]-@+suuq[Voc][Unpd][Sg]:@+suuq             EncliticOrEnd; ! singular vocative (calling) form
+[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+yuuq             EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
 
 LEXICON DemAbsSgIrr
-t[DemPro][Abs][Unpd][Sg]:+nʼa           EncliticOrEnd;
-t[DemPro]-–kucir[N→N]:–kucir            NounPostbase;  ! one of the same kind as N
-t[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
-t[DemPro]-@+suuq[Voc][Unpd][Sg]:@+cuuq  EncliticOrEnd; ! singular vocative (calling) form
+t[DemPro][Abs][Unpd][Sg]:+nʼa                       EncliticOrEnd;
+t[DemPro]-–r(ur)lur*[N→N][Abs][Unpd][Sg]:+nʼau͡rluq  EncliticOrEnd;
+t[DemPro]-–kucir[N→N]:–kucir                        NounPostbase;  ! one of the same kind as N
+t[DemPro]-@+yuuq[Voc][Unpd][Sg]:@+cuuq              EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+t[DemPro]-@+suuq[Voc][Unpd][Sg]:@+cuuq              EncliticOrEnd; ! singular vocative (calling) form
 
 LEXICON DemNonAbsSg
 [DemPro][Rel][Unpd][Sg]:.m              EncliticOrEnd;
