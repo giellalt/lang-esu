@@ -5,7 +5,7 @@ define Bndry ["[e]"|"(a)"|"(aa)"|"(ar)"|"(ar*)"|"(ur)"|"(e)"|"(g)"|"(ng)"|"(r)"|
 
 
 define Stop       [ p | t | c | k | q | k̲ | q̲ ];
-define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | g̲ | r̲ ];
+define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | g̲ | r̲ | ġ ];
 define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr | g̲g̲ | r̲r̲ ];
 define VoiceNasal [ m | n | ng ];
 define VlessNasal [ ḿ | ń | ńg ];
@@ -132,6 +132,9 @@ define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ C
                      "@³%:(u)cir/@⁵cir" -> "@⁵" c i r || c e t e ("°") _                      .o. ! kiircete -> kiircecia
                      "@³%:(u)cir/@⁵cir" -> "@³" ":" "(u)" c i r                               .o. ! ayuqe -> ayuqucia
 
+                     "–r̲(ur)lur" -> "+" ụ r l u r      || g _                                 .o. ! acag -> acagurluq
+                     "–r̲(ur)lur" -> "–" "r̲" ụ r l u r                                         .o. ! qayar/angyar
+
                      "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
                      "@⁵+p/~v" -> "~" v                                                       .o.
                      "+p/.v" -> "+" p e                       || Con _ Con                    .o.
@@ -162,6 +165,8 @@ define AutomaticDevoicing v -> vv,
                           m -> ḿ,
                           n -> ń,
                           ng -> ńg || [ Stop | VlessFric ] _   ;
+
+! Unnecessary devoicing                           
 !                          r -> rr  || _ .#.                            .o.
 !                          s -> ss  || .#. _                             ;
 
