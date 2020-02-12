@@ -9,7 +9,7 @@
 !   - 
 
 define Stop       [ p | t | c | k | q ];
-define VoiceFric  [ v | l | s | g | r | u͡g | u͡r ];
+define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | ġ ];
 define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr ];
 define VoiceNasal [ m | n | ng ];
 define VlessNasal [ ḿ | ń | ńg ];
@@ -52,6 +52,18 @@ define WeakInitialE [..] -> "ʼ" || "[e]" [Con]+ [AllVow]+ ">"+ Con _ ">"* AllFV
                     "[e]" -> 0  || _ [Con|AllVow]+ ">"                          .o. 
                     "[e]" -> e                                                ;
 
+define urDeletion [ụ|ụ́] r (->) u r                           || g ">" _ l                .o. ! acagurluq (HBC form)
+                  [ụ|ụ́] r -> e ("ʼ") "u͡r"                    || g ">" _ l                .o. ! acageu͡rluq/acageʼu͡rluq
+                  r [ụ|ụ́] r (->) r u                         || Vow Vow ">"+ _ l         .o. ! uiruluq (HBC form)
+                  r [ụ|ụ́] r -> "u͡r"                          || Vow Vow ">"+ _ l         .o. ! uiu͡rluq
+                  ê ">"+ r [ụ|ụ́] r (->)  ">" r u             || _ l                      .o. ! tumruluq (HBC form)
+                  ê ">"+ r [ụ|ụ́] r -> e ">" ("ʼ") "u͡r"       || _ l                      .o. ! tumeu͡rluq/tumeʼu͡rluq
+                  [e|é] ">"+ r [ụ|ụ́] r (->) ">" u "ʼ" r      || _ l                      .o. ! qaspuʼrluq (HBC form)
+                  [e|é] ">"+ r [ụ|ụ́] r (->) e ">" ("ʼ") "u͡r" || _ l                      .o. ! qaspeu͡rluq/qaspeʼu͡rluq
+                  r [ụ|ụ́] r (->) r u                         || VowHatted ">"+ _ l       .o. ! nunaruluq (HBC form)
+                  r [ụ|ụ́] r -> "ʼ" u r                       || VowHatted ">"+ _ l       .o. ! nunaʼurluq
+                  r [ụ|ụ́] r -> ("ʼ") "u͡r"                    || [Vow|VowStress] ">"+ _ l  ;  ! angyau͡rluq/angyaʼu͡rluq
+
 define DropHattedE ê -> 0 .o.
                 [..] -> e || p _ ">"* p , t _ ">"* t , c _ ">"* c , k _ ">"* k , q _ ">"* q , 
                              v _ ">"* v , l _ ">"* l , s _ ">"* s , g _ ">"* g , r _ ">"* r , u͡g _ ">"* u͡g , u͡r _ ">"* u͡r ,
@@ -66,14 +78,15 @@ define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o. ! rqe- bas
                        [..] (->) e || Con ">"* Con _ ">"* Con     .o.
                        [..]  ->  e || Con _ ">"* Con ">"* Con      ;
 
-define TripleVowel  AllFVow -> 0 || AllFVow ">"* _ ">"* AllFVow  ;
+define TripleVowel  AllFVow -> 0 || [Con|.#.] ">"* AllFVow ">"* _ ">"* AllFVow ">"* [Con|.#.] ;
 
 define ConnectiveMood  ạ -> 0               || _ ">" [a|á]                               .o. ! caliạan -> calian 
                        ụ -> 0               || _ ">" [a|á]                               .o. ! calikụan -> calikan 
                        [e|é] -> e ("ʼ")     || [VowStress|VowHatted|Con] ">" ng _ [r|rr] .o. ! qavangrarpet -> qavange(ʼ)rpet
                        [e|é] -> "ʼ" e ("ʼ") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvangʼe(ʼ)rma
 
-define WordAdjustments t (->) c     || _ [e|é] ">"* t ,               ! angutet -> angucet
+define WordAdjustments ġ -> 0       || Vow _                      .o. ! túntuvâyaġaq -> túntuvâyaaq 
+                       t (->) c     || _ [e|é] ">"* t ,               ! angutet -> angucet
                                        _ [e|é] ">"* ss ">"* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
                        t [e|é] ">" rr (->) ">" q                  .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
                        â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q    .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
@@ -116,11 +129,13 @@ define ToOrthography  vv -> v,
                       [â|á|ạ|ậ|ạ́] -> a                                  .o.
                       [ê|é] -> e                                        .o.
                       [î|í] -> i                                        .o.
-                      [û|ú|ụ|ụ́|ụ̂] -> u                                   ;
+                      [û|ú|ụ|ụ́|ụ̂] -> u                                  .o.
+                      ġ -> g                                             ;
                     
 
 regex AutomaticDevoicing   .o.
-      WeakInitialE         .o. 
+      WeakInitialE         .o.
+      urDeletion           .o. 
       DropHattedE          .o.
       TripleConsonant      .o.
       TripleVowel          .o.
