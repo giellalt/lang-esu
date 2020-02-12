@@ -252,6 +252,7 @@ aqvaqur-–a/–ar/–aa/+a/+aar[V→V]:aqvaqua     VerbPostbase; !
 alerqur-–a/–ar/–aa/+a/+aar[V→V]:alerqua     VerbPostbase; ! 
 apertur-–a/–ar/–aa/+a/+aar[V→V]:apertua     VerbPostbase; ! 
 ayalur-–a/–ar/–aa/+a/+aar[V→V]:ayalua       VerbPostbase; ! 
+mayur-–a/–ar/–aa/+a/+aar[V→V]:mayua         VerbPostbase; !
 piyug-–a/–ar/–aa/+a/+aar[V→V]:piyua         VerbPostbase; ! 
 peyug-–a/–ar/–aa/+a/+aar[V→V]:peyua         VerbPostbase; ! 
 qavarni-–a/–ar/–aa/+a/+aar[V→V]:qavaria     VerbPostbase; ! 
@@ -14390,6 +14391,7 @@ LEXICON IntransitivePresentOptative
 LEXICON TransitivePresentOptative
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
 [A_3Sg][P_3Sg]:@ˡ~+liku            EncliticOrEnd; [A_3Sg][P_3Pl]:@ˡ~+liki         EncliticOrEnd; [A_3Sg][P_3Du]:@ˡ~+likek         EncliticOrEnd;
+[A_3Sg][P_3Sg]:@ˡ~+liu             EncliticOrEnd;
 [A_3Pl][P_3Sg]:@ˡ~+litgu           EncliticOrEnd; [A_3Pl][P_3Pl]:@ˡ~+litki        EncliticOrEnd; [A_3Pl][P_3Du]:@ˡ~+litkek        EncliticOrEnd;
 [A_3Du][P_3Sg]:@ˡ~+lignegu         EncliticOrEnd; [A_3Du][P_3Pl]:@ˡ~+ligki        EncliticOrEnd; [A_3Du][P_3Du]:@ˡ~+ligkek        EncliticOrEnd;
 [A_3Du][P_3Sg]:@ˡ~linʼgu           EncliticOrEnd; [A_3Du][P_3Pl]:@ˡ~+ligneki      EncliticOrEnd; [A_3Du][P_3Du]:@ˡ~+lignekek      EncliticOrEnd;
@@ -14403,6 +14405,7 @@ LEXICON TransitivePresentOptative
 [A_2Du][P_3Sg]:@⁵+tegu               EncliticOrEnd; [A_2Du][P_3Pl]:@⁵+tegki          EncliticOrEnd; [A_2Du][P_3Du]:@⁵+tegkek          EncliticOrEnd;
 !-----------------------------------------------|----------------------------------------------|-----------------------------------------------|
 [A_3Sg][P_1Sg]:@ˡ~+linga           EncliticOrEnd; [A_3Sg][P_1Pl]:@ˡ~+likut        EncliticOrEnd; [A_3Sg][P_1Du]:@ˡ~+likuk         EncliticOrEnd;
+[A_3Sg][P_1Sg]:@ˡ~+lia             EncliticOrEnd;
 [A_3Pl][P_1Sg]:@ˡ~+litnga          EncliticOrEnd; [A_3Pl][P_1Pl]:@ˡ~+litkut       EncliticOrEnd; [A_3Pl][P_1Du]:@ˡ~+litkuk        EncliticOrEnd;
 [A_3Du][P_1Sg]:@ˡ~+lignga          EncliticOrEnd; [A_3Du][P_1Pl]:@ˡ~+ligkut       EncliticOrEnd; [A_3Du][P_1Du]:@ˡ~+ligkuk        EncliticOrEnd;
 [A_3Du][P_1Sg]:@ˡ~+lignenga        EncliticOrEnd; [A_3Du][P_1Pl]:@ˡ~+lignekut     EncliticOrEnd; [A_3Du][P_1Du]:@ˡ~+lignekuk      EncliticOrEnd;
@@ -14561,10 +14564,10 @@ LEXICON TransitiveParticipial
 
 LEXICON IntransitiveSubordinative
 !-------------------------|----------------------------|---------------------------|
-[S_3Sg]:ni   EncliticOrEnd; [S_1Sg]:%:nga EncliticOrEnd; [S_2Sg]:[STE_2Sg]  EncliticOrEnd;
+[S_4Sg]:ni   EncliticOrEnd; [S_1Sg]:%:nga EncliticOrEnd; [S_2Sg]:[STE_2Sg]  EncliticOrEnd;
 !                                                         [S_2Sg]:k    EncliticOrEnd; ! for special te with na
-[S_3Pl]:teng EncliticOrEnd; [S_1Pl]:ta    EncliticOrEnd; [S_2Pl]:ci   EncliticOrEnd;
-[S_3Du]:tek  EncliticOrEnd; [S_1Du]:nuk   EncliticOrEnd; [S_2Du]:tek  EncliticOrEnd;
+[S_4Pl]:teng EncliticOrEnd; [S_1Pl]:ta    EncliticOrEnd; [S_2Pl]:ci   EncliticOrEnd;
+[S_4Du]:tek  EncliticOrEnd; [S_1Du]:nuk   EncliticOrEnd; [S_2Du]:tek  EncliticOrEnd;
                             [S_1Du]:nung  EncliticOrEnd;
 !-------------------------|----------------------------|---------------------------|
 
