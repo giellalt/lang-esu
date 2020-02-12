@@ -8,9 +8,9 @@ malrunleg[Num][Cardinal][Pl]	malrunlegen
 pingayunleg[Num][Cardinal][Pl]	pingayunlegen
 qulngunritar(ar*)[Num][Cardinal][Sg]	qulngunritaʼar
 qule[Num][Cardinal][Sg]	qula
-akimarunritar(ar*)[Num][Cardinal][Sg]	akimiarunritaʼar
+akimiarunritar(ar*)[Num][Cardinal][Sg]	akimiarunritaʼar
 akimiar[Num][Cardinal][Sg]	akimiaq
-atucir[Num][N][Abl_Mod][Unpd][Sg]	ataucimek
+ataucir[Num][N][Abl_Mod][Unpd][Sg]	ataucimek
 malrur[Num][N][Abl_Mod][Unpd][Du]	malrugnek
 pingayur[Num][N][Abl_Mod][Unpd][Pl]	pingayunek
 cetamar[Num][N][Abl_Mod][Unpd][Pl]	cetamanek
@@ -33,7 +33,7 @@ tallimar[Num][N][Abs][3PlPoss][SgPosd]	tallimiit
 arvinleg[Num][N][Abs][3PlPoss][SgPosd]	arvinlegat
 ila[N][Abs][3PlPoss][SgPosd]	iliit
 nalir[N][Abs][3PlPoss][SgPosd]	naliat
-ange-–ner[V→N][N][Abs][3PlPoss][SgPosd]	angnerat
+ange-–ner[V→N][N][Abs][3PlPoss][SgPosd]	angenrat
 ciu[Positional]-–qlir*[N→N][N][Abs][Unpd][Sg]	ciuqliq
 tunge[Positional]-–qlir*[N→N][N][Abs][Unpd][Sg]	tungliq
 kingu[Positional]-–qlir*[N→N][N][Abs][Unpd][Sg]	kinguqliq
@@ -65,6 +65,6 @@ maligte-–qcaar(ar)[V→V][V][Trns][Ind][A_3Sg][P_3Sg]	maligteqcaararaa
 cali-–llgute[V→N][N][Abs][3SgPoss][SgPosd]	calillgutii
 nere-–llgute[V→N]-:(ng)ite[N→V][V][Intr][Ind][S_1Sg]	nerellgutaitua
 nuna-–lgute[N→N]-–ke[N→V][V][Trns][Ind][A_1Sg][P_3Sg]	nunalgutkaqa
-[e]ne-–lgute[N→N]-–ke[N→V][V][Intr][Ind][S_3Du]	nelgutkutuk
+[e]ne-–lgute[N→N]-–ke[N→V]-@:(u)te[V→V][V][Intr][Ind][S_3Du]	nelgutkutuk
 ane-–llgute[V→N][N][Abs][Unpd][Sg]	anelgun
 ater-–lgute[N→N][N][Abs][Unpd][Sg]	atellgun
