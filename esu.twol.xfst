@@ -93,7 +93,10 @@ define WordAdjustments ġ -> 0       || Vow _                      .o. ! túntu
                        [a|á] r [a|á] (->) a   || ">" [q|k] _ q    .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
                        [a|â|á] -> e || ">" q _ ">"* [r|rr]         ;  ! apteqarru -> apteqerru for -qar- postbase
 
-define arDeletion  "ạ" q -> 0 || _ ">"* .#.                                             .o. ! wordFinal
+define arDeletion  "â" -> a "ʼ" a,
+                   "î" -> i "ʼ" i,
+                   "û" -> u "ʼ" u  || _ ">"* Con ">"* "ạ" q ">"* .#.                    .o. ! V̂r(ar)# -> V'Vr
+                   "ạ" q -> 0 || _ ">"* .#.                                             .o. ! wordFinal
                    ["ạ"|"ạ́"] [r|rr] -> 0 || Vow ">"* VowStress ">"* Con ">"* _ ">"* Con .o. ! VV́r(ar) -> VV́r
                    "ạ" [r|rr] -> 0 || Con ">"* VowStress ">"* Con ">"* _ ">"* Con       .o. ! CV́r(ar) -> CV́r
                    "â" -> a "ʼ" á,
