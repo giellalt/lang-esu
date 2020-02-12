@@ -56,58 +56,21 @@ define Lowercase "A"   -> a,
 define arExpansion "(ar)"  -> "ạ" r       .o.
                    "(ar*)" -> "ạ" r "*"    ; 
 
-define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
-                     "[Opt_PRS_S_2Sg]" -> "+" n               || t e  _                           .o.
-                     t e "°" "[Opt_PRS_S_2Sg]" -> l u                                             .o.
-                     "[Opt_PRS_S_2Sg]" -> ":" a               || Con  _                           .o.
-                     "[Opt_PRS_S_2Sg]" -> 0                                                       .o.
-                     "[Opt_PRS_S_2PlDu]" (->) "~" "(g)" i     || [ Vow Vow | [ Con - t ] e ] _    .o.
-                     "[Opt_PRS_S_2PlDu]" -> "@⁵" "+"                                              .o.
-                     "[Opt_PRS_A_2Sg]" (->) "~" "(g)" i       || [ Vow Vow | [ Con - t ] e ] _    .o.
-                     "[Opt_PRS_A_2Sg]" -> "@⁴" "+"                                                .o.
-                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "~" "(g)" i u || [ Vow Vow | [ Con - t ] e ] _    .o.
-                     t e "[Opt_PRS_A_2Sg_P_3Sg]" -> s g u                                         .o.
-                     t e "°" "[Opt_PRS_A_2Sg_P_3Sg]" -> l g u                                     .o.
-                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "–" gg u      || g _                              .o.
-                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "–" rr u      || r _                              .o.
-                     "[Opt_PRS_A_2Sg_P_3Sg]" -> u                                                 .o.
-                     "[Opt_PRS_A_2Sg_P_1Sg]" (->) "~" "(g)" i a || [ Vow Vow | [ Con - t ] e ] _  .o.
-                     "[Opt_PRS_A_2Sg_P_1Sg]" -> "@⁴" "+" ng a                                     .o.
-
-                     "@ˡ~+lu/@⁵na" -> "@⁵" n a                || "°" _                        .o.
-                     "@ˡ~+lu/@⁵na" -> "@ˡ" "~" "+" l u                                        .o.
-                     "[STE_2Sg]" -> k                         || n a _                        .o.
-                     "[STE_2Sg]" -> t e n                                                     .o.
-                     i (->) u                                 || \[i] _ t e "°" "@⁵" n a      .o. ! (e.g nereksainani (->) nereksaunani)
-
-                     "–lria/@⁴+ngur*" (->) "@⁴" "+" ng u r "*"  || t e "°" _                                          .o. ! te° (->) @ngur*
-                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i i || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _ "%" ":" "(e)" .o. ! llrii/lrii
-                     "–lria/@⁴+ngur*" -> "–" l r i i || _ "%" ":" "(e)"                                               .o. ! lrii
-                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i a || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _               .o. ! llria/lria
-                     "–lria/@⁴+ngur*" -> "–" l r i a                                                                  .o. ! lria
-
-                     t e "°" "@%:~(ng)ạ" -> l "+" ạ                                           .o. ! te° -> l
-                     t "ʼ" e "@%:~(ng)ạ" -> c "ʼ" ạ                                           .o. ! tʼe -> cʼ
-                     t e "@%:~(ng)ạ" -> c ạ                                                   .o. ! te -> c
-                     ng e "@%:~(ng)ạ" (->) ng ạ         || \.#. Con Vow (Con) Bndry* _        .o. ! ngenge -> nge
-                     "@%:~(ng)ạ" -> ":" "~" "(ng)" ạ                                          .o.
-
-                     t e "°" -> l e || _ "@–ngr(ar)"                                          .o. ! te° -> l
-                     "@–ngr(ar)" -> "–" ng r a r || _ ["–"|":"]                               .o. ! not ar dropping
-                     "@–ngr(ar)" -> "–" ng e r                                                .o. ! ar dropping with +
-
-                     "–r̲pag/@²vag" (->) "@²" v a g            || Vow t e _                    .o.
+define MultipleForms "–r̲pag/@²vag" (->) "@²" v a g            || Vow t e _                    .o.
                      "–r̲pag/@²vag"  ->  "–" r̲ p a g                                           .o.
 
-                     "+ciqe/@⁵ciiqe" -> "@⁵" c i i q e        || t e ("°") _                  .o. 
-                     "+ciqe/@⁵ciiqe" -> "+" c i q e                                           .o. 
+                     "–r̲(ur)lur" -> "+" ụ r l u r      || g _                                 .o. ! acag -> acagurluq
+                     "–r̲(ur)lur" -> "–" "r̲" ụ r l u r                                         .o. ! qayar/angyar
+
+                     "+a/+aar" -> "+" a a r                   || t e ("°") _                  .o.
+                     "+a/+aar" -> "+" a                                                       .o.
 
                      "@⁵+cete/.vkar" -> "@⁵" "+" c e t e      || Con _                        .o.
                      "@⁵+cete/.vkar" (->) "@⁵" "+" c e t e    || t e ("°") _                  .o.
                      "@⁵+cete/.vkar" -> "." v k a r                                           .o.
 
-                     "+a/+aar" -> "+" a a r                   || t e ("°") _                  .o.
-                     "+a/+aar" -> "+" a                                                       .o.
+                     "+ciqe/@⁵ciiqe" -> "@⁵" c i i q e        || t e ("°") _                  .o. 
+                     "+ciqe/@⁵ciiqe" -> "+" c i q e                                           .o. 
 
                      t e ("°") "@+–'(g)ar(ar)te" -> g "+" a r "ạ" r t e    || Vow _           .o. ! Vte -> Vg
                      t e ("°") "@+–'(g)ar(ar)te" -> "+" a r "ạ" r t e      || Con _           .o. ! Cte -> C
@@ -132,8 +95,45 @@ define MultipleForms "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ C
                      "@³%:(u)cir/@⁵cir" -> "@⁵" c i r || c e t e ("°") _                      .o. ! kiircete -> kiircecia
                      "@³%:(u)cir/@⁵cir" -> "@³" ":" "(u)" c i r                               .o. ! ayuqe -> ayuqucia
 
-                     "–r̲(ur)lur" -> "+" ụ r l u r      || g _                                 .o. ! acag -> acagurluq
-                     "–r̲(ur)lur" -> "–" "r̲" ụ r l u r                                         .o. ! qayar/angyar
+                     t e "°" "@%:~(ng)ạ" -> l "+" ạ                                           .o. ! te° -> l
+                     t "ʼ" e "@%:~(ng)ạ" -> c "ʼ" ạ                                           .o. ! tʼe -> cʼ
+                     t e "@%:~(ng)ạ" -> c ạ                                                   .o. ! te -> c
+                     ng e "@%:~(ng)ạ" (->) ng ạ         || \.#. Con Vow (Con) Bndry* _        .o. ! ngenge -> nge
+                     "@%:~(ng)ạ" -> ":" "~" "(ng)" ạ                                          .o.
+
+                     t e "°" -> l e || _ "@–ngr(ar)"                                          .o. ! te° -> l
+                     "@–ngr(ar)" -> "–" ng r a r || _ ["–"|":"]                               .o. ! not ar dropping
+                     "@–ngr(ar)" -> "–" ng e r                                                .o. ! ar dropping with +
+
+                     "@ˡ~+lu/@⁵na" -> "@⁵" n a                || "°" _                        .o.
+                     "@ˡ~+lu/@⁵na" -> "@ˡ" "~" "+" l u                                        .o.
+                     "[STE_2Sg]" -> k                         || n a _                        .o.
+                     "[STE_2Sg]" -> t e n                                                     .o.
+                     i (->) u                                 || \[i] _ t e "°" "@⁵" n a      .o. ! (e.g nereksainani (->) nereksaunani)
+
+                     "–lria/@⁴+ngur*" (->) "@⁴" "+" ng u r "*"  || t e "°" _                                          .o. ! te° (->) @ngur*
+                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i i || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _ "%" ":" "(e)" .o. ! llrii/lrii
+                     "–lria/@⁴+ngur*" -> "–" l r i i || _ "%" ":" "(e)"                                               .o. ! lrii
+                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i a || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _               .o. ! llria/lria
+                     "–lria/@⁴+ngur*" -> "–" l r i a                                                                  .o. ! lria
+
+                     "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_S_2Sg]" -> "+" n               || t e  _                           .o.
+                     t e "°" "[Opt_PRS_S_2Sg]" -> l u                                             .o.
+                     "[Opt_PRS_S_2Sg]" -> ":" a               || Con  _                           .o.
+                     "[Opt_PRS_S_2Sg]" -> 0                                                       .o.
+                     "[Opt_PRS_S_2PlDu]" (->) "~" "(g)" i     || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_S_2PlDu]" -> "@⁵" "+"                                              .o.
+                     "[Opt_PRS_A_2Sg]" (->) "~" "(g)" i       || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_A_2Sg]" -> "@⁴" "+"                                                .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "~" "(g)" i u || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     t e "[Opt_PRS_A_2Sg_P_3Sg]" -> s g u                                         .o.
+                     t e "°" "[Opt_PRS_A_2Sg_P_3Sg]" -> l g u                                     .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "–" gg u      || g _                              .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "–" rr u      || r _                              .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> u                                                 .o.
+                     "[Opt_PRS_A_2Sg_P_1Sg]" (->) "~" "(g)" i a || [ Vow Vow | [ Con - t ] e ] _  .o.
+                     "[Opt_PRS_A_2Sg_P_1Sg]" -> "@⁴" "+" ng a                                     .o.
 
                      "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
                      "@⁵+p/~v" -> "~" v                                                       .o.
