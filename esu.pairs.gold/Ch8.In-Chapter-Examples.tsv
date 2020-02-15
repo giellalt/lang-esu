@@ -31,8 +31,8 @@ nunur[V][Trns][Ind][A_3Pl][P_3Pl]	nunurait
 nunur[V][Trns][Ind][A_1Sg][P_3Sg]	nunuraqa
 nunur[V][Trns][Ind][A_1Sg][P_3Sg]	nunuʼurqa
 nunur[V][Trns][Ind][A_1Sg][P_3Pl]	nunuranka
-ceńirte-@~+yug[V→V][V][Trns][Ind][A_1Du][P_3Pl]	ceńircugapuk
-ceńirte-@~+yug[V→V][V][Trns][Ind][A_3Sg][P_3Pl]	ceńircugai
+cen̄irte-@~+yug[V→V][V][Trns][Ind][A_1Du][P_3Pl]	cen̄ircugapuk
+cen̄irte-@~+yug[V→V][V][Trns][Ind][A_3Sg][P_3Pl]	cen̄ircugai
 tangerr[V][Trns][Ind][A_3Sg][P_3Sg]	tangrraa
 tangerr[V][Trns][Ind][A_3Sg][P_3Pl]	tangrrai
 niicugni-@~+yug[V→V][V][Trns][Ind][A_1Sg][P_3Pl]	niicugniyuganka
@@ -97,7 +97,7 @@ agayu-––lir[N→V]-+(s)te[V→N][N][Abs][Unpd][Sg]	agayulirta
 qimug-+(s)te[V→N][N][Abs][Unpd][Sg]	qimugta
 tegu-+(s)te[V→N][N][Abs][Unpd][Sg]	tegusta
 pai-+'(g)i[V→V]-+(s)te[V→N][N][Abs][Unpd][Sg]	paigista
-yurar-+(s)te[V→N][N][Abl_Mod][Unpd][Pl]	yurarteńek
+yurar-+(s)te[V→N][N][Abl_Mod][Unpd][Pl]	yurarten̄ek
 ikayur-+(s)te[V→N]-–ngqerr[N→V]-+ciqe/@ciiqe[V→V][V][Intr][Ind][S_2Sg]	ikayurtengqerciquten
 cali-+cuute/+ssuute[V→N][N][Abs][Unpd][Sg]	calissuun
 nere-+cuute/+ssuute[V→N][N][Abs][Unpd][Sg]	nerrsuun
@@ -112,7 +112,7 @@ pissur-+cuute/+ssuute[V→N]-:~(ng)u[N→V][V][Intr][Ind][S_3Sg]	pissurcuutnguuq
 niicugni[V][Trns][Opt][PRS][A_2Sg][P_3Sg]	niicugniu
 pai[V][Trns][Opt][PRS][A_2Sg][P_3Sg]	paigiu
 nere[V][Trns][Opt][PRS][A_2Sg][P_3Sg]	neriu
-ceńirte[V][Trns][Opt][PRS][A_2Sg][P_3Sg]	ceńiresgu
+cen̄irte[V][Trns][Opt][PRS][A_2Sg][P_3Sg]	cen̄iresgu
 nere-–nrite[V→V][V][Trns][Opt][PRS][A_2Sg][P_3Sg]	nerenrilgu
 nuteg[V][Trns][Opt][PRS][A_2Sg][P_3Sg]	nutgu
 igar[V][Trns][Opt][PRS][A_2Sg][P_3Sg]	igarru

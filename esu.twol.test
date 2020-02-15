@@ -1,0 +1,15 @@
+! hfst-pair-test -i esu.twol.hfst -I esu.twol.test
+
+c a l i +:> ':> (g):> (t):> u \::> ng a
+
+cali+'(g)(t)u\:nga
+cali>>>>u>nga
+
+nere+'(g)(t)u\:nga
+ner0>ʼ>>u>0a
+
+nere–llrru+'(g)(t)u\:nga
+nere>llrru>>>>u>nga
+
+narug~+(t)sit
+narug>>c0it

@@ -2,8 +2,8 @@
 ! AUTHOR: "Lonny Strunk"
 
 Alphabet
-    a c e g i k l m n p q r s t u v w y ḿ ń
-    vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
+    a c e g i k l m n p q r s t u v w y m̄ n̄
+    vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr
     %[e%]
     ʼ                                           ! Keep apostrophe from lexical entries
     ạ ụ ġ                                       ! for (ar) droppping
@@ -18,7 +18,7 @@ Sets
     VoiceFric = v l s g r u͡g u͡r ġ ; 
     VlessFric = vv ll ss gg rr u͡gg u͡rr ;
     VoiceNasal = m n ng ;
-    VlessNasal = ḿ ń ńg ;
+    VlessNasal = m̄ n̄ n͞g ;
 
     VoiceCon = VoiceFric VoiceNasal ;
     VlessCon = VlessFric VlessNasal Stop ;

@@ -1,0 +1,111 @@
+! echo "?* ;" | hfst-regexp2fst -o univ.hfst 
+! hfst-twolc -i esu.dummy.twol -o esu.dummy.twol.hfst
+! hfst-compose-intersect -1 univ.hfst -2 esu.dummy.twol.hfst -o esu.dummy.hfst 
+! echo "kanaqllag%:(e)t" | hfst-lookup esu.dummy.hfst
+
+! echo "nepauna:nga" | hfst-lookup esu.dummy.hfst
+
+Alphabet
+    a c e g i k l m n p q r s t u v w y m̄ n̄
+    vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr
+    k̲:k q̲:q g̲:g r̲:r g̲g̲:gg r̲r̲:rr                 ! for -velar postbase assimilation
+    %[e%] %[e%]:e                               ! HBC/Nun: initial e is not weak
+    ʼ                                           ! Keep apostrophe from lexical entries
+    ạ                                           ! for (ar) droppping
+
+    ! All operators and allomorph operators map to morpheme segmenter 
+    %(a%):%> %(e%):%> %(g%):%> %(i%):%> %(l%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%> 
+    %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> %(ur%):%>
+    %(g%/t%):%> ! %(r%/l%):%> %(u%/i%):%>
+
+    %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %*:%> %°:%> 
+    %@¹:%> %@²:%> %@³:%> %@⁴:%> %@⁵:%> %@ˡ:%> %@ˁ:%> %@ʸ:%> %@:%>  
+    %=; 
+
+Sets 
+    Bndry = %+ %– %~ %% %: %' %. %* %° 
+        %@¹ %@² %@³ %@⁴ %@⁵ %@ˡ %@ˁ %@ʸ %@
+        %(a%) %(e%) %(g%) %(r%) %(s%) %(t%) %(u%)
+        %(aa%) %(ar%) %(ar%*%) %(ng%) %(ur%) %(g%/t%) %(r%/l%) %(u%/i%) ;
+    AtSign = %@¹ %@² %@³ %@⁴ %@⁵ %@ˡ %@ˁ %@ʸ %@ ;
+
+    Stop = p t c k q k̲ q̲ ;
+    VoiceFric = v l s g r u͡g u͡r g̲ r̲ ; 
+    VlessFric = vv ll ss gg rr u͡gg u͡rr g̲g̲ r̲r̲ ;
+    VoiceNasal = m n ng ;
+    VlessNasal = m̄ n̄ n͞g ;
+
+    VoiceCon = VoiceFric VoiceNasal ;
+    VlessCon = VlessFric VlessNasal Stop ;
+
+    Fric = VoiceFric VlessFric ;
+    Nasal = VoiceNasal VlessNasal ;
+
+    Con = Stop Fric Nasal w y ;
+
+    FVow = a i u ạ ;
+    Vow = FVow e ;
+
+Rules 
+
+"e:0 = ~ | word# | eVowPostbase | semifinaleVowPostbase | (e):e | -- | te@ "
+e:0 <=> _ [ Bndry: - %': ]* %~: ; ! "Rule for Tilde"
+        Vow t:n _ [ .#. | %= ] ; ! "Word final Vte -> e:0"
+        _ Bndry:+ :Vow ; ! "vowel postbases are e deleters" "(u):u"
+        .#. ~[ :* :Con :VlessCon] _ [ r | g ] [ Bndry: - %(t%): - %(g%/t%): ]+ :Vow ; ! "vowel postbases are semi-final e deleters" "(u):u"   !maybe ~[:Con :VlessCon] for amlleret ? 
+        [[:Vow :Con]|[:Con :VoiceCon]] _ [ r | g ] Bndry:* %%:%> Bndry:* %(e%):e ; ! "Rule (e):e"
+        _ (Con:0) Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+        t: _ [Bndry:-AtSign:]* AtSign: ; ! te@
+
+"rr:r = rte@(u)"
+rr:r <=> _ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ; ! CCte@³(u)/Cu
+         _ t:s (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
+
+"s:0 = te~s/c | (t)s/c"
+s:0 <=> t:c (ʼ) e:0 Bndry:* _ ; ! te~s/c
+        %(t%):c Bndry:* _ ; ! (t)s/c
+
+"t:0 = Cte@¹n/CCn̄ | Cte@²mngv/CCm̄n͞gvv | Cte@³(u)/Cu"
+t:0 <=> Con _ e:0 (%°:) [Bndry:-AtSign:]* %@¹: ; ! Cte@¹n/CCn̄
+        Con _ e:0 (%°:) [Bndry:-AtSign:]* %@²: ; ! Cte@²mngv/CCm̄n͞gvv
+        VlessFric:VoiceFric _ e: (%°:) [Bndry:-AtSign:]* %@³: ; ! Cte@³(u)/Cu
+        _ (ʼ) e:0 (%°:) [Bndry:-AtSign:]* %@⁵: ;
+        _ (ʼ) e:0 (%°:) [Bndry:-AtSign:]* %@ˡ: ;
+
+"t:c = tV--li/ci | te@y/c | te~s/c" 
+t:c <=> _ Vow:0 (Con:0) [Bndry:-%(u%):-AtSign:]* %–: %–: l:0 i ; ! te--li/ci
+        _ (ʼ) e:0 [Bndry:-%(u%):-AtSign:]* i ; ! te~i/ci
+        _ (ʼ) e:0 (%°:) [Bndry:-%(u%):-AtSign:]* %@ʸ: [Bndry:-%(u%):-AtSign:]* y: ; ! te@y/c
+        _ (ʼ) e:0 [Bndry:-%(u%):-AtSign:]* s: ; ! te~s/c
+
+"t:l = Vte@²/l | te*@³(u)/l | te°@⁴gkng/l"
+t:l <=> Vow _ (ʼ) e:0 %°: [Bndry:-AtSign:]* %@²: ; ! Vte°@²mngv/l
+        Vow _ (ʼ) e:0 %°: [Bndry:-AtSign:]* %@³: ; ! Vte°@³(u)/l
+        _ (ʼ) e:0 %°: [Bndry:-AtSign:]* %@⁴: ; ! te°@⁴gkng/l
+
+"t:n = WordFinalVte"
+t:n <=> Vow _ e: [ .#. | %= ] ; ! Word final Vte
+
+"t:q = te@ˁ/q"
+t:q <=> _ (ʼ) e:0 (%°:) [Bndry:-AtSign:]* %@ˁ: ; ! te@ˁ/q
+
+"t:s = Vte@²/s | Vtʼe@³(u)/sʼu | Cte@⁴gkng/s"
+t:s <=> Vow _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@²: ; ! Vte@²mngv/s
+        Vow _ ʼ e:0 [Bndry:-%°:-AtSign:]* %@³: ; ! Vtʼe@³(u)/sʼu
+        [Vow|VlessFric:VoiceFric|Nasal|Stop] _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
+
+"t:y = Vte@³(u)/Vy"
+t:y <=> 
+!        Vow _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@²: ; ! Vte@²mngv/y  (for HBC)
+        [Vow|Nasal|Stop] _ e:0 [Bndry:-%°:-AtSign:]* %@³: ; ! Vte@³(u)/Vy    TODO: Add t'e/y' also for HBC
+!        [Vow|VlessFric:VoiceFric|Nasal|Stop] _ (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/y for HBC  
+
+"(t):t = CFinalBase"
+%(t%):t <=> :Con Bndry:* _ ; ! CFinalBase
+    except
+        :Con Bndry:* _ Bndry:* [s:0|y:0] ; ! (t)[sy]/c
+
+"(t):c = (t)s/c"
+%(t%):c <=> :Con Bndry:* _ Bndry:* [s:0|y:0] ; ! (t)[sy]/c
+
+

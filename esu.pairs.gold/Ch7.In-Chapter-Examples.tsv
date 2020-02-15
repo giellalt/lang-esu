@@ -12,8 +12,8 @@ atkug[N][Abs][3SgPoss][SgPosd]	atkua
 atkug[N][Abs][3PlPoss][PlPosd]	atkuit
 nacar[N][Abs][3SgPoss][SgPosd]	nacaa
 nacar[N][Abs][3PlPoss][PlPosd]	nacait
-ceńa[N][Abs][3SgPoss][SgPosd]	ceńii
-ceńa[N][Abs][3PlPoss][PlPosd]	ceńait
+cen̄a[N][Abs][3SgPoss][SgPosd]	cen̄ii
+cen̄a[N][Abs][3PlPoss][PlPosd]	cen̄ait
 tepe[N][Abs][3SgPoss][SgPosd]	tepii
 tepe[N][Abs][3PlPoss][PlPosd]	tepait
 ciute[N][Abs][3SgPoss][SgPosd]	ciutii
@@ -31,7 +31,7 @@ nuussir[N][Abs][3PlPoss][PlPosd]	nuussiit
 nanvar[N][Rel][Unpd][Sg]	nanvam
 ciku[N][Abs][3SgPoss][SgPosd]	cikua
 imarpig[N][Rel][Unpd][Sg]	imarpiim
-ceńa[N][Abs][3SgPoss][SgPosd] ceńii
+cen̄a[N][Abs][3SgPoss][SgPosd] cen̄ii
 egate[N][Rel][Unpd][Sg]	egatem
 patu[N][Abs][3SgPoss][SgPosd]	patua
 uu[DemPro][Rel][Unpd][Sg]	uum
@@ -96,7 +96,7 @@ tekite-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]	tekisngaituq
 mitʼe-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]	misngaituq
 kipute-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]	kipusngaituq
 inarte-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]	inarrngaituq
-ceńirte-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]	ceńirrngaituq
+cen̄irte-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]	cen̄irrngaituq
 igte-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]	iggngaituq
 cali-@~+ngaite[V→V][V][Intr][Ind][S_3Sg]	calingaituq
 ayuqe-@~+ngaite[V→V][V][Intr][Ind][S_3Du]	ayuqngaituk

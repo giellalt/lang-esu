@@ -8,8 +8,8 @@ tume[N][Loc][Unpd][Sg]	tumemi
 tume[N][Loc][Unpd][Pl]	tumni
 ipuute[N][Loc][Unpd][Sg]	ipuutmi
 ipuute[N][Loc][Unpd][Pl]	ipuutni
-ikayurte[N][Loc][Unpd][Sg]	ikayurteḿi
-ikayurte[N][Loc][Unpd][Pl]	ikayurteńi
+ikayurte[N][Loc][Unpd][Sg]	ikayurtem̄i
+ikayurte[N][Loc][Unpd][Pl]	ikayurten̄i
 saskar[N][Loc][Unpd][Sg]	saskami
 saskar[N][Loc][Unpd][Pl]	saskani
 ungag[N][Loc][Unpd][Sg]	ungagmi
@@ -34,8 +34,8 @@ tume[N][Ter][Unpd][Sg]	tumemun
 tume[N][Ter][Unpd][Pl]	tumnun
 ipuute[N][Ter][Unpd][Sg]	ipuutmun
 ipuute[N][Ter][Unpd][Pl]	ipuutnun
-ikayurte[N][Ter][Unpd][Sg]	ikayurteḿun
-ikayurte[N][Ter][Unpd][Pl]	ikayurteńun
+ikayurte[N][Ter][Unpd][Sg]	ikayurtem̄un
+ikayurte[N][Ter][Unpd][Pl]	ikayurten̄un
 saskar[N][Ter][Unpd][Sg]	saskamun
 saskar[N][Ter][Unpd][Pl]	saskanun
 ungag[N][Ter][Unpd][Sg]	ungagmun

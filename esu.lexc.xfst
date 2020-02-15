@@ -8,7 +8,7 @@ define Stop       [ p | t | c | k | q | k̲ | q̲ ];
 define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | g̲ | r̲ | ġ ];
 define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr | g̲g̲ | r̲r̲ ];
 define VoiceNasal [ m | n | ng ];
-define VlessNasal [ ḿ | ń | ńg ];
+define VlessNasal [ m̄ | n̄ | n͞g ];
 
 define VoiceCon   [ VoiceFric | VoiceNasal ];
 define VlessCon   [ VlessFric | VlessNasal | Stop ];
@@ -39,15 +39,15 @@ define Lowercase "A"   -> a,
                  "V"   -> v,
                  "W"   -> w,
                  "Y"   -> y,
-                 "Ḿ"   -> ḿ,
-                 "Ń"   -> ń,
+                 "M̄"   -> m̄,
+                 "N̄"   -> n̄,
                  "Vv"  -> vv,
                  "Ll"  -> ll,
                  "Ss"  -> ss,
                  "Gg"  -> gg,
                  "Rr"  -> rr,
                  "Ng"  -> ng,
-                 "Ńg"  -> ńg,
+                 "N͞g"  -> n͞g,
                  "U͡g"  -> u͡g,
                  "U͡r"  -> u͡r,
                  "U͡gg" -> u͡gg,
@@ -162,9 +162,9 @@ define AutomaticDevoicing v -> vv,
                           u͡g -> u͡gg,
                           u͡r -> u͡rr || [ Stop | VlessFric ] _  ,
                                        _ [ Stop ]                      .o.
-                          m -> ḿ,
-                          n -> ń,
-                          ng -> ńg || [ Stop | VlessFric ] _   ;
+                          m -> m̄,
+                          n -> n̄,
+                          ng -> n͞g || [ Stop | VlessFric ] _   ;
 
 ! Unnecessary devoicing                           
 !                          r -> rr  || _ .#.                            .o.

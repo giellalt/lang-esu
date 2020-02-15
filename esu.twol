@@ -2,16 +2,16 @@
 ! AUTHOR: "Lonny Strunk"
 
 Alphabet
-    a c e g i k l m n p q r s t u v w y ḿ ń
-    vv ll ss gg rr ng ńg u͡g u͡gg u͡r u͡rr
+    a c e g i k l m n p q r s t u v w y m̄ n̄
+    vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr
     k̲:k q̲:q g̲:g r̲:r g̲g̲:gg r̲r̲:rr                 ! for -velar postbase assimilation
     %[e%] %[e%]:e                               ! HBC/Nun: initial e is not weak
     ʼ                                           ! Keep apostrophe from lexical entries
     ạ ụ ġ                                       ! for (ar) droppping ; for vowel dropping in connective moods ending in a vowel ; ya(g)ar*
 
     ! All operators and allomorph operators map to morpheme segmenter 
-    %(a%):%> %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%>
-    %(aa%):%> %(ar%):%> %(ar%*%):%> %(ng%):%> ! %(ur%):%>
+    %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%>
+    %(ar%):%> %(ar%*%):%> %(ng%):%> ! %(ur%):%> %(aa%):%> %(a%):%>
     %(g%/t%):%> %(r%/l%):%> %(u%/i%):%>
 
     %+:%> %–:%> %~:%> %%:%> %::%> %':%> %.:%> %*:%> %°:%>
@@ -29,7 +29,7 @@ Sets
     VoiceFric = v l s g r u͡g u͡r g̲ r̲ ġ ; 
     VlessFric = vv ll ss gg rr u͡gg u͡rr g̲g̲ r̲r̲ ;
     VoiceNasal = m n ng ;
-    VlessNasal = ḿ ń ńg ;
+    VlessNasal = m̄ n̄ n͞g ;
 
     VoiceCon = VoiceFric VoiceNasal ;
     VlessCon = VlessFric VlessNasal Stop ;
@@ -49,10 +49,10 @@ a:0 <=> _ Con:0 (%*:) %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional d
 
 "a:i = age/ii | aga/ii | anga/ii | aga/ii | enga/ii"
 a:i <=> [:Con|.#.] _ g: %%: %:: %(e%):i [:Con] ; ! ag%:(e) -> ii 
-        [:Con|.#.] _ g: %:: (%(ng%):) [a:|ạ:] [Bndry:|:Con|.#.] ; ! ag:(ng)a -> ii ; ag:a -> ii
+        [:Con|.#.] _ g: %:: (%~:) (%(ng%):) [a:|ạ:] [Bndry:|:Con|.#.] ; ! ag:(~)(ng)a -> ii ; ag:a -> ii
         [:Con|.#.] _ %:: [ng:|%(ng%):] [a:|ạ:] [Bndry:|:Con|.#.] ; ! a:nga -> ii ; a:(ng)a -> ii
 
-        [:Con|.#.] [a:|ạ:] g: %:: (%(ng%):) _ [Bndry:|:Con|.#.] ; ! ag:(ng)a -> ii ; ag:a -> ii
+        [:Con|.#.] [a:|ạ:] g: %:: (%~:) (%(ng%):) _ [Bndry:|:Con|.#.] ; ! ag:(ng)a -> ii ; ag:a -> ii
         [:Con|.#.] [a:|ạ:|e:] %:: [ng:|%(ng%):] _ [Bndry:|:Con|.#.] ; ! a:nga -> ii ; a:(ng)a -> ii ; e:(ng)a -> ii
 
     except
@@ -63,10 +63,10 @@ a:i <=> [:Con|.#.] _ g: %%: %:: %(e%):i [:Con] ; ! ag%:(e) -> ii
 
 "ạ:i = age/ii | aga/ii | anga/ii | aga/ii | enga/ii"
 ạ:i <=> [:Con|.#.] _ g: %%: %:: %(e%):i [:Con] ; ! ag%:(e) -> ii 
-        [:Con|.#.] _ g: %:: (%(ng%):) [a:|ạ:] [Bndry:|:Con|.#.] ; ! ag:(ng)a -> ii ; ag:a -> ii
+        [:Con|.#.] _ g: %:: (%~:) (%(ng%):) [a:|ạ:] [Bndry:|:Con|.#.] ; ! ag:(ng)a -> ii ; ag:a -> ii
         [:Con|.#.] _ %:: [ng:|%(ng%):] [a:|ạ:] [Bndry:|:Con|.#.] ; ! a:nga -> ii ; a:(ng)a -> ii
 
-        [:Con|.#.] [a:|ạ:] g: %:: (%(ng%):) _ [Bndry:|:Con|.#.] ; ! ag:(ng)a -> ii ; ag:a -> ii
+        [:Con|.#.] [a:|ạ:] g: %:: (%~:) (%(ng%):) _ [Bndry:|:Con|.#.] ; ! ag:(ng)a -> ii ; ag:a -> ii
         [:Con|.#.] [a:|ạ:|e:] %:: [ng:|%(ng%):] _ [Bndry:|:Con|.#.] ; ! a:nga -> ii ; a:(ng)a -> ii ; e:(ng)a -> ii
     except
         _ Con:0 (%*:) %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
@@ -130,19 +130,19 @@ l:ll <=> t:0 (ʼ) e:0 (%°:) [Bndry:-AtSign:-%(r%):]* %@ˡ: [Bndry:-AtSign:-%(r%
 ll:l <=> _ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ; ! CCte@³(u)/Cu
          _ t:s (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
 
-"m:ḿ = @²m"
-m:ḿ <=> Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: Bndry:* _ ; ! Cte@²m/Cḿ
+"m:m̄ = @²m"
+m:m̄ <=> Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: Bndry:* _ ; ! Cte@²m/Cm̄
 
-"n:ń = @¹n"
-n:ń <=> Con t:0 e:0 (%°:) [Bndry:-AtSign:]* %@¹: [Bndry:-AtSign:]* _ ; ! Cte@¹n/Cń
+"n:n̄ = @¹n"
+n:n̄ <=> Con t:0 e:0 (%°:) [Bndry:-AtSign:]* %@¹: [Bndry:-AtSign:]* _ ; ! Cte@¹n/Cn̄
 
 "ng:0 = :"
 ng:0 <=> [:Con|.#.] [Bndry:|:0]* FVow: %:: _ FVow: [Bndry:|:Con|.#.] ; ! u:nga -> ua ; a:nga -> ii
     except
-         Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* _ ; ! Cte@²ng/Cńg
+         Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* _ ; ! Cte@²ng/Cn͞g
 
-"ng:ńg = @²ng"
-ng:ńg <=> Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* _ ; ! Cte@²ng/Cńg
+"ng:n͞g = @²ng"
+ng:n͞g <=> Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* _ ; ! Cte@²ng/Cn͞g
 
 "q̲:k = Uvular/VelarAgreement"
 q̲:k <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
@@ -181,16 +181,16 @@ s:0 <=> t:c (ʼ) e:0 Bndry:* _ ; ! te~s/c
 ss:s <=> _ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ; ! CCte@³(u)/Cu
          _ t:s (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
 
-"t:0 = Cte@¹n/CCń | Cte@²mngv/CCḿńgvv | Cte@³(u)/Cu"
-t:0 <=> Con _ e: (%°:) [Bndry:-AtSign:]* %@¹: ; ! Cte@¹n/CCń
-        Con _ e: (%°:) [Bndry:-AtSign:]* %@²: ; ! Cte@²mngv/CCḿńgvv
+"t:0 = Cte@¹n/CCn̄ | Cte@²mngv/CCm̄n͞gvv | Cte@³(u)/Cu"
+t:0 <=> Con _ e: (%°:) [Bndry:-AtSign:]* %@¹: ; ! Cte@¹n/CCn̄
+        Con _ e: (%°:) [Bndry:-AtSign:]* %@²: ; ! Cte@²mngv/CCm̄n͞gvv
         VlessFric:VoiceFric _ e: (%°:) [Bndry:-AtSign:]* %@³: ; ! Cte@³(u)/Cu
         _ (ʼ) e: (%°:) [Bndry:-AtSign:]* %@⁵: ;
         _ (ʼ) e: (%°:) [Bndry:-AtSign:-%(r%):]* %@ˡ: ;
 
 "t:c = tV--li/ci | te@y/c | te~s/c" 
 t:c <=> _ Vow:0 (Con:0) [Bndry:-%(u%):-AtSign:]* %–: %–: l:0 i ; ! te--li/ci
-        _ (ʼ) e:0 [Bndry:-%(u%):-AtSign:]* i ; ! te~i/ci
+        _ (ʼ) e:0 [Bndry:-%(u%):-%(ng%):-AtSign:]* i ; ! te~i/ci
         _ (ʼ) e: (%°:) %:: %(u%/i%): m: ; ! te:(u/i)/ci
         _ (ʼ) e: (%°:) [Bndry:-%(u%):-AtSign:]* %@ʸ: [Bndry:-%(u%):-AtSign:]* y: ; ! te@y/c
         _ (ʼ) e: [Bndry:-%(u%):-AtSign:]* [s:|y:] ; ! te~s/c

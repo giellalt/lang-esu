@@ -1,10 +1,10 @@
 nere[V][Trns][CtmpI][A_3Pl][P_3Pl]	nerellratki
 atur[V][Trns][CtmpI][A_2Sg][P_3Du]	atullerpekek
-ceńirte[V][Trns][CtmpI][A_1Sg][P_2Sg]	ceńirtellemken
+cen̄irte[V][Trns][CtmpI][A_1Sg][P_2Sg]	cen̄irtellemken
 neqliur[V][Trns][CtmpI][A_2Pl][P_1Pl]	neqliullerpecikut
 nere[V][Trns][CtmpII][A_3Pl][P_3Pl]	nernginanratki
 atur[V][Trns][CtmpII][A_2Sg][P_3Du]	atuinanerpekek
-ceńirte[V][Trns][CtmpII][A_1Sg][P_2Sg]	ceńirrnginanemken
+cen̄irte[V][Trns][CtmpII][A_1Sg][P_2Sg]	cen̄irrnginanemken
 neqliur[V][Trns][CtmpII][A_2Pl][P_1Pl]	neqliurinanerpecikut
 nere[V][Intr][CtmpI][S_3Sg]	nerellrani
 nere[V][Intr][Cnsq][S_3Sg]	nerngan
@@ -16,10 +16,10 @@ cali[V][Intr][CtmpII][S_1Sg]	caliinanemni
 cali[V][Intr][Cnsq][S_1Sg]	caliama
 ayag[V][Intr][CtmpI][S_4Sg]	ayallermini
 ayag[V][Intr][Cnsq][S_4Sg]	ayiimi
-ceńirte[V][Trns][CtmpI][A_2Pl][P_1Pl]	ceńirtellerpecikut
-ceńirte[V][Trns][CtmpII][A_4Pl][P_3Sg]	ceńirrnginanermegteggu
-ceńirte[V][Trns][CtmpI][A_3Pl][P_4Sg]	ceńirtellratni
-ceńirte[V][Intr][CtmpI][S_3Pl]	ceńirtellratni
+cen̄irte[V][Trns][CtmpI][A_2Pl][P_1Pl]	cen̄irtellerpecikut
+cen̄irte[V][Trns][CtmpII][A_4Pl][P_3Sg]	cen̄irrnginanermegteggu
+cen̄irte[V][Trns][CtmpI][A_3Pl][P_4Sg]	cen̄irtellratni
+cen̄irte[V][Intr][CtmpI][S_3Pl]	cen̄irtellratni
 atur[V][Trns][CtmpI][A_4Sg][P_3Sg]	atullerminiu
 atur[V][Trns][Cnsq][A_4Sg][P_3Sg]	atuamiu
 qalarte-@:(u)te[V→V][V][Trns][CtmpII][A_4Sg][P_1Sg]	qalarusnginanerminia

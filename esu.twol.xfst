@@ -12,7 +12,7 @@ define Stop       [ p | t | c | k | q ];
 define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | ġ ];
 define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr ];
 define VoiceNasal [ m | n | ng ];
-define VlessNasal [ ḿ | ń | ńg ];
+define VlessNasal [ m̄ | n̄ | n͞g ];
 
 define VoiceCon   [ VoiceFric | VoiceNasal ];
 define VlessCon   [ VlessFric | VlessNasal | Stop ];
@@ -39,9 +39,9 @@ define AutomaticDevoicing v -> vv,
                           u͡g -> u͡gg,
                           u͡r -> u͡rr || [ Stop | VlessFric ] ">"* _  ,
                                      _ ">"* [ Stop | VlessFric ]             .o.
-                          m -> ḿ,
-                          n -> ń,
-                          ng -> ńg || [ Stop | VlessFric ] ">"* _   ;
+                          m -> m̄,
+                          n -> n̄,
+                          ng -> n͞g || [ Stop | VlessFric ] ">"* _   ;
 
 ! Unnecessary devoicing                          
 !                          r -> rr  || _ ">"* .#.                            .o.
@@ -69,7 +69,7 @@ define DropHattedE ê -> 0 .o.
                              v _ ">"* v , l _ ">"* l , s _ ">"* s , g _ ">"* g , r _ ">"* r , u͡g _ ">"* u͡g , u͡r _ ">"* u͡r ,
                              vv _ ">"* vv , ll _ ">"* ll , ss _ ">"* ss, gg _ ">"* gg , rr _ ">"* rr , u͡gg _ ">"* u͡gg , u͡rr _ ">"* u͡rr ,
                              v _ ">"* vv , l _ ">"* ll , s _ ">"* ss, g _ ">"* gg , r _ ">"* rr , u͡g _ ">"* u͡gg , u͡r _ ">"* u͡rr ,
-                             m _ ">"* m , n _ ">"* n , ng _ ">"* ng , ḿ _ ">"* ḿ , ń _ ">"* ń , ńg _ ">"* ńg , 
+                             m _ ">"* m , n _ ">"* n , ng _ ">"* ng , m̄ _ ">"* m̄ , n̄ _ ">"* n̄ , n͞g _ ">"* n͞g , 
                              w _ ">"* w , y _ ">"* y , c _ ">"* t , t _ ">"* c                                                       ; ! maybe c _ ">"* n , n _ ">"* c ??
 
 define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o. ! rqe- bases drop r
@@ -80,14 +80,14 @@ define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o. ! rqe- bas
 
 define TripleVowel  AllFVow -> 0 || [Con|.#.] ">"* AllFVow ">"* _ ">"* AllFVow ">"* [Con|.#.] ;
 
-define ConnectiveMood  ạ -> 0               || _ ">" [a|á]                               .o. ! caliạan -> calian 
-                       ụ -> 0               || _ ">" [a|á]                               .o. ! calikụan -> calikan 
+define ConnectiveMood  ạ -> 0               || _ ">" [a|á] \.#.                          .o. ! caliạan -> calian 
+                       ụ -> 0               || _ ">" [a|á] \.#.                          .o. ! calikụan -> calikan 
                        [e|é] -> e ("ʼ")     || [VowStress|VowHatted|Con] ">" ng _ [r|rr] .o. ! qavangrarpet -> qavange(ʼ)rpet
                        [e|é] -> "ʼ" e ("ʼ") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvangʼe(ʼ)rma
 
 define WordAdjustments ġ -> 0       || Vow _                      .o. ! túntuvâyaġaq -> túntuvâyaaq 
-                       t (->) c     || _ [e|é] ">"* t ,               ! angutet -> angucet
-                                       _ [e|é] ">"* ss ">"* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
+                       t (->) c     || \.#. _ [e|é] ">"* t ,               ! angutet -> angucet
+                                       \.#. _ [e|é] ">"* ss ">"* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
                        t [e|é] ">" rr (->) ">" q                  .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
                        â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q    .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
                        [a|á] r [a|á] (->) a   || ">" [q|k] _ q    .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
@@ -124,9 +124,9 @@ define ToOrthography  vv -> v,
                       u͡gg -> u͡g,
                       u͡rr -> u͡r || [ Stop | VlessFric ] ">"* _           ,
                                  _ ">"* [ Stop ]                        .o.
-                      ḿ -> m,
-                      ń -> n,
-                      ńg -> ng || [ Stop | VlessFric ] ">"* _           .o.
+                      m̄ -> m,
+                      n̄ -> n,
+                      n͞g -> ng || [ Stop | VlessFric ] ">"* _           .o.
                       rr -> r  || _ ">"* .#.                            .o.
                       ss -> s  || .#. ">"*  _                           .o.
                       [â|á|ạ|ậ|ạ́] -> a                                  .o.
