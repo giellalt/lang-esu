@@ -6,6 +6,7 @@ import os
 import subprocess
 import json
 import argparse
+from collections import Counter
 
 parser = argparse.ArgumentParser()
 parser.add_argument("hfstName", help="hfst filename to run tests with")
@@ -57,6 +58,7 @@ def runTests(testFile):
             else:
                 testResultCode = 3          # 3 = multiple outputs, including correct
                 if args.verbose:
+                # if not args.quiet:
                     print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
         else:
             testResultCode = 2              # 2 = multiple outputs, none correct
@@ -93,8 +95,7 @@ if __name__ == "__main__":
     if not os.path.exists(args.resultDirectory):
         os.makedirs(args.resultDirectory)
 
-    testsPassed = 0
-    testsCount = 0
+    testsCounter = Counter()
     for testFilePath in args.testFiles:
         testFile = os.path.basename(testFilePath)
         currentTests = runTests(testFilePath)
@@ -112,10 +113,14 @@ if __name__ == "__main__":
         count = len(currentTests)
         if not args.quiet:
             print("Current tests Passed: {}/{}".format(passed, count))
-        testsPassed += passed
-        testsCount += count
+        testsCounter.update([x[2] for x in currentTests])
         
         writeTestFile(currentTests, args.resultDirectory, testFile)
 
     print("\n########## {} TEST SUMMARY ##########".format(len(args.testFiles)))
-    print("Total Passed: {}/{}".format(testsPassed, testsCount))
+    total = sum(testsCounter.values())
+    print("Total Passed: {}/{}".format(testsCounter[1]+testsCounter[3], total))
+    print("0 - {}".format(testsCounter[0]))
+    print("1 - {}".format(testsCounter[1]))
+    print("2 - {}".format(testsCounter[2]))
+    print("3 - {}".format(testsCounter[3]))
