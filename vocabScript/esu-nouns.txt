@@ -208,7 +208,7 @@ Nayipar(ar*)           NounPostbase; ! the constellation of the Little Dipper (E
 Negcig                 NounPostbase; ! a certain constellation
 Negeqliim              NounPostbase; ! Painga Pitka’s Point
 Negeqlir               NounPostbase; ! St. Mary’s; Andreafsky River
-Negteḿiut              NounPostbase; ! Nightmute # village on Nelson Is.
+Negtem̄iut              NounPostbase; ! Nightmute # village on Nelson Is.
 Neqlercurvig           NounPostbase; ! Fish Village
 Ner’arivig             NounPostbase; ! Memorial Day
 Neviarcaurlur          NounPostbase; ! Elim
@@ -1239,7 +1239,7 @@ asvailute              NounPostbase; ! stabilizer; by extension: copyright
 asvairute              NounPostbase; ! reinforcement, stabilizer
 asver                  NounPostbase; ! walrus (Odobenus rosmarus)
 as’arcarar             NounPostbase; ! pullover clothing
-as’arceńa(ar*)         NounPostbase; ! ephod (Biblical priestly vestment)
+as’arcen̄a(ar*)         NounPostbase; ! ephod (Biblical priestly vestment)
 as’ute                 NounPostbase; ! pullover garment; hook of earring
 ataate                 NounPostbase; ! paternal uncle; stepfather
 atailngur*             NounPostbase; ! child of unwed mother
@@ -1700,16 +1700,16 @@ cevag                  NounPostbase; ! low altitude; area near ground or other s
 cevciller              NounPostbase; ! cleft palate; one with a cleft palate
 cevyirar(ar*)          NounPostbase; ! dowitcher (Limnodromus sp.)
 cev’ar                 NounPostbase; ! cut-through place where the river has carved a new channel; manmade channel
-ceńa                   NounPostbase; ! (NUN form) shore; coast; rim; edge
-ceńair(ar*)            NounPostbase; ! western sandpiper (Calidris mauri); yellowlegs (Tringa sp.)
-ceńairpag              NounPostbase; ! dunlin (Calidris alpina)
-ceńaiyaar              NounPostbase; ! western sandpiper (Calidris mauri)
-ceńaqiir               NounPostbase; ! rock sandpiper (Calidris ptilocnemis)
-ceńar                  NounPostbase; ! (NUN form) shore; coast; rim; edge
-ceńarmiu               NounPostbase; ! coast dweller
-ceńartar               NounPostbase; ! wild celery (Heracleum lanatum)
-ceńir’ar               NounPostbase; ! beaver (Castor canadensis) or land otter (Lontra canadensis)
-ceń’ar                 NounPostbase; ! sandy beach
+cen̄a                   NounPostbase; ! (NUN form) shore; coast; rim; edge
+cen̄air(ar*)            NounPostbase; ! western sandpiper (Calidris mauri); yellowlegs (Tringa sp.)
+cen̄airpag              NounPostbase; ! dunlin (Calidris alpina)
+cen̄aiyaar              NounPostbase; ! western sandpiper (Calidris mauri)
+cen̄aqiir               NounPostbase; ! rock sandpiper (Calidris ptilocnemis)
+cen̄ar                  NounPostbase; ! (NUN form) shore; coast; rim; edge
+cen̄armiu               NounPostbase; ! coast dweller
+cen̄artar               NounPostbase; ! wild celery (Heracleum lanatum)
+cen̄ir’ar               NounPostbase; ! beaver (Castor canadensis) or land otter (Lontra canadensis)
+cen̄’ar                 NounPostbase; ! sandy beach
 ciamner                NounPostbase; ! small broken piece of ice
 ciamrur                NounPostbase; ! driftwood
 ciamurrlug             NounPostbase; ! short piece of dried wood found on the ground
@@ -2453,7 +2453,7 @@ igatuli                NounPostbase; ! scribe (as in the Bible)
 igaugeg                NounPostbase; ! eyeglasses; traditional snow goggles; eyeshade
 igcailkute             NounPostbase; ! spear holder on kayak
 igcetaar               NounPostbase; ! traditional pit trap
-igceńer                NounPostbase; ! cliff; bank
+igcen̄er                NounPostbase; ! cliff; bank
 igciner                NounPostbase; ! cliff; bank
 iggiasuli              NounPostbase; ! (NSK form) great horned owl (Bubo virginianus)
 iggiayuli              NounPostbase; ! (NSK form) great horned owl (Bubo virginianus)
@@ -2874,7 +2874,7 @@ itervig                NounPostbase; ! entrance
 iteryarar              NounPostbase; ! entrance
 itgar                  NounPostbase; ! foot
 itguteg                NounPostbase; ! bead decorations over top of foot of boot
-itqerceńar             NounPostbase; ! house with ground-level entrance
+itqercen̄ar             NounPostbase; ! house with ground-level entrance
 itqiirpag              NounPostbase; ! legendary big hand from the ocean with a mouth on each fingertip and a big mouth on the palm
 itrugte                NounPostbase; ! powdery snow that enters through cracks in house
 itrur                  NounPostbase; ! skin or pelt of caribou taken in fall
@@ -3330,7 +3330,7 @@ kemeksungiarar         NounPostbase; ! green-winged teal (Anas crecca)
 kemeqlir*              NounPostbase; ! shirt; undershirt
 kenatagute             NounPostbase; ! sled brake
 keneqpatar             NounPostbase; ! short-eared owl (Asio flammeus)
-kener                  NounPostbase; ! (NS, Y, K, NI, NUN, BB, NR, LI form), keńeq (NSU form) fire; match (additional meaning especially in K and BB)
+kener                  NounPostbase; ! (NS, Y, K, NI, NUN, BB, NR, LI form), ken̄eq (NSU form) fire; match (additional meaning especially in K and BB)
 kener                  NounPostbase; ! horsetail (Equisetum arvense)
 kenercessuute          NounPostbase; ! (NSU form) sled brake
 kenercetaar            NounPostbase; ! cornmeal, starch, etc., used as a thickener in cooking
@@ -3419,8 +3419,8 @@ kevirkar               NounPostbase; ! caulking material; stopper material
 kevraarcinrar*         NounPostbase; ! spruce root
 kevraartur             NounPostbase; ! spruce tree (Picea sp.)
 keyianeng              NounPostbase; ! always
-keńervig               NounPostbase; ! stove
-keńitar                NounPostbase; ! match
+ken̄ervig               NounPostbase; ! stove
+ken̄itar                NounPostbase; ! match
 kia                    NounPostbase; ! who; whose
 kia(ni)                NounPostbase; ! inside; upriver; on the left facing the ocean
 kiacirutar             NounPostbase; ! shelf at front edge of rear storage platform; bottom cupboard
@@ -3622,7 +3622,7 @@ kute’ar*               NounPostbase; ! edible root of spreading wood fern (Dry
 kute’unir              NounPostbase; ! sea creature with human features seen on pack ice; bearded seal seen on ice floe as though it were sitting crouched over like a human
 kutvag                 NounPostbase; ! hunting implement used by boys; arrowhead for hunting birds
 kutyagar               NounPostbase; ! child walking behind parent; common eider chick # slang, literally: ‘little droplet’
-kuuceńag               NounPostbase; ! pelvic bone; hip
+kuucen̄ag               NounPostbase; ! pelvic bone; hip
 kuucnar                NounPostbase; ! pelvic bone; hip
 kuukicaar              NounPostbase; ! button
 kuukissaar             NounPostbase; ! cookie
@@ -4845,8 +4845,8 @@ petugtar               NounPostbase; ! small model of requested item used to req
 petukar                NounPostbase; ! sternum; breastbone
 pet’ngall’ar           NounPostbase; ! adipose fin of fish
 pet’ngercetaar         NounPostbase; ! spring snare designed to hang the catch in midair after springing
-peńair                 NounPostbase; ! Dall sheep (Ovis dalli)
-peńar                  NounPostbase; ! (NS, NUN, NI, CAN, EG form), penaq (NUN form), peń’aq (NSU form) cliff; bluff
+pen̄air                 NounPostbase; ! Dall sheep (Ovis dalli)
+pen̄ar                  NounPostbase; ! (NS, NUN, NI, CAN, EG form), penaq (NUN form), pen̄’aq (NSU form) cliff; bluff
 pi                     NounPostbase; ! thing
 pia(ni)                NounPostbase; ! up there; back away from the river
 piarkar                NounPostbase; ! cross-cousin
@@ -5659,7 +5659,7 @@ qimugkar(ar*)          NounPostbase; ! puppy.
 qimugkarar             NounPostbase; ! puppy.
 qimugkauyar(ar*)       NounPostbase; ! puppy; dog
 qimugte                NounPostbase; ! dog
-qimugteńguar           NounPostbase; ! non-husky dog
+qimugten͞guar           NounPostbase; ! non-husky dog
 qimukcualler(ar*)      NounPostbase; ! puppy; small dog
 qimukcuar(ar*)         NounPostbase; ! puppy; pussy-willow catkin
 qimulurayag            NounPostbase; ! big bad dog
@@ -6110,7 +6110,7 @@ taluyarkaute           NounPostbase; ! chicken wire or wire mesh
 taluyiurute            NounPostbase; ! willow root
 tamaa(ni)              NounPostbase; ! there (at that place or in that situation whose identity is immediately known to listener); back then (in the distant or relatively distant past)
 tamaatete              NounPostbase; ! in Your (God’s) manner; according to Your will
-tamaceńar              NounPostbase; ! bird-skin parka
+tamacen̄ar              NounPostbase; ! bird-skin parka
 tamalkur               NounPostbase; ! one dollar; the whole thing
 tamana                 NounPostbase; ! the one there; that one; the extended thing whose referred to already
 tamaqernikiyagar       NounPostbase; ! skinny young seal in springtime
@@ -6442,7 +6442,7 @@ tua-i                  NounPostbase; ! that’s enough; well then; and then; tha
 tualler                NounPostbase; ! large, moving ice floe that breaks away from shore ice after ocean swell
 tuar                   NounPostbase; ! shore-fast ice on the ocean
 tuc’arar               NounPostbase; ! step; rung of a ladder; rug
-tuc’eńar               NounPostbase; ! (HBC form) insole
+tuc’en̄ar               NounPostbase; ! (HBC form) insole
 tuc’inar               NounPostbase; ! (HBC form) insole
 tuger                  NounPostbase; ! ice chisel for making holes in river, lake, or sea ice
 tugeryarar             NounPostbase; ! large log parallel to the back of a kashim that supports the planks that cover the firepit

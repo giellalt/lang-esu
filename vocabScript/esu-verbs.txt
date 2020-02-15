@@ -1069,10 +1069,10 @@ ceturte                VerbPostbase; ! to sit with legs stretched out
 cevag                  VerbPostbase; ! to flutter near the ground to distract intruders from its young
 ceve                   VerbPostbase; ! to get cut through
 cevv’ar                VerbPostbase; ! to emerge into an open area; to come out into the open
-ceńi                   VerbPostbase; ! to go along the shore; to go along from place to place (within the village)
-ceńingqa               VerbPostbase; ! to be visiting
-ceńirtaar              VerbPostbase; ! to visit around, going from house to house; to walk back and forth along the shore
-ceńirte                VerbPostbase; ! (NUN form) to visit (within a village or city); to walk along the shore
+cen̄i                   VerbPostbase; ! to go along the shore; to go along from place to place (within the village)
+cen̄ingqa               VerbPostbase; ! to be visiting
+cen̄irtaar              VerbPostbase; ! to visit around, going from house to house; to walk back and forth along the shore
+cen̄irte                VerbPostbase; ! (NUN form) to visit (within a village or city); to walk along the shore
 cialiur                VerbPostbase; ! to swiftly walk over thin ice as it makes a waving motion and crackling sound
 ciamci                 VerbPostbase; ! to bring clothes or food for distribution into the kashim during the Nakaciuryaraq (“Bladder Feast”)
 ciame                  VerbPostbase; ! to crush; to break; to crumble
@@ -4139,7 +4139,7 @@ qevli                  VerbPostbase; ! (NUN form), qevlia- (NSU form) to shine; 
 qevte                  VerbPostbase; ! to be angry; to be frustrated
 qevte                  VerbPostbase; ! to neglect; to forsake
 qeya                   VerbPostbase; ! to cry
-qeńarqe                VerbPostbase; ! to be infuriating
+qen̄arqe                VerbPostbase; ! to be infuriating
 qia                    VerbPostbase; ! to cry
 qiacua                 VerbPostbase; ! to be tearful
 qiaculngu              VerbPostbase; ! to feel like crying; to be on the verge of crying
@@ -4507,7 +4507,7 @@ talu                   VerbPostbase; ! (NI, NUN form), talur- (K form) to split 
 talugte                VerbPostbase; ! to go out of sight
 talurte                VerbPostbase; ! to go out of sight
 taluute                VerbPostbase; ! to move (it) around
-tamaceńi               VerbPostbase; ! to make a parka out of various types of bird skin
+tamacen̄i               VerbPostbase; ! to make a parka out of various types of bird skin
 tamak’acagar           VerbPostbase; ! absolutely all
 tamak’ackagar          VerbPostbase; ! absolutely all
 tamak’akackagar        VerbPostbase; ! absolutely all

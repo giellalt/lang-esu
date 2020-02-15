@@ -252,7 +252,7 @@ LEXICON VerbPostbase
 -–nqe[V→V]:–nqe                               VerbPostbase; ! to have (it) as its V-er; for it (object) to be more V than it (subject)
 -–nqegcaar(ar)[V→V]:–nqegcaar(ar)             VerbPostbase; ! to V completely, thoroughly
 -–nqigte[V→V]:–nqigte                         VerbPostbase; ! to V again
--–nriceńar[V→V]:–nriceńar                     VerbPostbase; ! to not V (having changed one’s mind or decided not to)
+-–nricen̄ar[V→V]:–nricen̄ar                     VerbPostbase; ! to not V (having changed one’s mind or decided not to)
 -–nrilkurte[V→V]:–nrilkurte                   VerbPostbase; ! to keep oneself from V-ing; to try not to V
 -–nrir[V→V]:–nrir                             VerbPostbase; ! to no longer V; to stop V-ing
 -–nritar(ar)[V→V]:–nritar(ar)                 VerbPostbase; ! to almost V; to not quite V; to barely keep from V-ing
