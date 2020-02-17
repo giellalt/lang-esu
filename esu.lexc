@@ -226,92 +226,93 @@ LEXICON Root
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Exceptions
-qimugte-–rpag/@vag[N→N]:qimulvag                        NounPostbase; ! qimulvak
-pi-@+'(g/t)ur(ar)[V→V][V][Intr][Opt][PRS][S_2Sg]:piura  EncliticOrEnd; ! goodbye (lit. keep on doing (as you've been doing))
-tai[V][Intr][Opt][PRS][S_2Sg]:taitai                    EncliticOrEnd; ! come here!
-iqsur-–lirner[N→N]:iqsur–lirner                         NounPostbase; ! thing of the left side
-tallirpig-–lirner[N→N]:tallirpig–lirner                 NounPostbase; ! right-hand side
-aqum-@–ngqa[V→V]:aqumgar                                QuantQualInflection; ! sitting
-ugaani[N][Loc][3SgPoss][SgPosd]:ugaani                  EncliticOrEnd; ! because of; as a consequence of; on account of
-ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ                  EncliticOrEnd; ! because of; as a consequence of; on account of
-wataime-+(a)r[N→V][V][Intr][Intrg][S_3Sg]:wataimarte    EncliticOrEnd; ! what time is it?
-ell[PerPro][Abs][2Sg]=mi[Encl]:elpesmi                  EncliticOrEnd;
-ciin-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]:ciiu͡rluq         EncliticOrEnd;
-apa-–r(ur)lur*[N→N]:apaʼurlur*                          EncliticOrEnd;
-ema-–r(ur)lur*[N→N]:maurlur*                            EncliticOrEnd;
-nasʼag-–r(ur)lur*[N→N]:nasaurlur*                       EncliticOrEnd;
-taneg-–r(ur)lur*[N→N]:tanʼgaurlur*                      EncliticOrEnd;
-tutgar(ar*)-–r(ur)lur*[N→N]:tutgaraʼurlur*              EncliticOrEnd;
+qimugte-–rpag/@vag[N→N]:qimul+vag                        NounPostbase; ! qimulvak
+pi-@+'(g/t)ur(ar)[V→V][V][Intr][Opt][PRS][S_2Sg]:pi+ur+a EncliticOrEnd; ! goodbye (lit. keep on doing (as you've been doing))
+tai[V][Intr][Opt][PRS][S_2Sg]:tai+tai                    EncliticOrEnd; ! come here!
+iqsur-–lirner[N→N]:iqsur–lirner                          NounPostbase; ! thing of the left side
+tallirpig-–lirner[N→N]:tallirpig–lirner                  NounPostbase; ! right-hand side
+aqum-@–ngqa[V→V]:aqum+gar                                QuantQualInflection; ! sitting
+ugaani[N][Loc][3SgPoss][SgPosd]:ugaani                   EncliticOrEnd; ! because of; as a consequence of; on account of
+ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ                   EncliticOrEnd; ! because of; as a consequence of; on account of
+wataime-+(a)r[N→V][V][Intr][Intrg][S_3Sg]:wataim+arte    EncliticOrEnd; ! what time is it?
+ell[PerPro][Abs][2Sg]=mi[Encl]:elpes+mi                  EncliticOrEnd;
+ciin-–r(ur)lur*[N→N][N][Abs][Unpd][Sg]:cii+u͡rluq         EncliticOrEnd;
+apa-–r(ur)lur*[N→N]:apa+ʼurlur*                          EncliticOrEnd;
+ema-–r(ur)lur*[N→N]:ma+urlur*                            EncliticOrEnd;
+nasʼag-–r(ur)lur*[N→N]:nasa+urlur*                       EncliticOrEnd;
+taneg-–r(ur)lur*[N→N]:tanʼga+urlur*                      EncliticOrEnd;
+tutgar(ar*)-–r(ur)lur*[N→N]:tutgara+ʼurlur*              EncliticOrEnd;
+tangerr-–nrite[V→V]:tange+nrrite                         VerbSpecialT;
 
 ! Irregular -–a/–ar/–aa 'to V repeatedly'
-qalrir-–a/–ar/–aa/+a/+aar[V→V]:qalria       VerbPostbase; ! 
-akngir-–a/–ar/–aa/+a/+aar[V→V]:akngia       VerbPostbase; ! 
-anglani-–a/–ar/–aa/+a/+aar[V→V]:anglania    VerbPostbase; ! 
-irir-–a/–ar/–aa/+a/+aar[V→V]:iria           VerbPostbase; ! 
-aqvaqur-–a/–ar/–aa/+a/+aar[V→V]:aqvaqua     VerbPostbase; ! 
-alerqur-–a/–ar/–aa/+a/+aar[V→V]:alerqua     VerbPostbase; ! 
-apertur-–a/–ar/–aa/+a/+aar[V→V]:apertua     VerbPostbase; ! 
-ayalur-–a/–ar/–aa/+a/+aar[V→V]:ayalua       VerbPostbase; ! 
-mayur-–a/–ar/–aa/+a/+aar[V→V]:mayua         VerbPostbase; !
-piyug-–a/–ar/–aa/+a/+aar[V→V]:piyua         VerbPostbase; ! 
-peyug-–a/–ar/–aa/+a/+aar[V→V]:peyua         VerbPostbase; ! 
-qavarni-–a/–ar/–aa/+a/+aar[V→V]:qavaria     VerbPostbase; ! 
-tuqu-–a/–ar/–aa/+a/+aar[V→V]:tuqua          VerbPostbase; ! 
-muru-–a/–ar/–aa/+a/+aar[V→V]:murua          VerbPostbase; ! 
-pangaleg-–a/–ar/–aa/+a/+aar[V→V]:pangalga   VerbPostbase; ! 
-yuvrir-–a/–ar/–aa/+a/+aar[V→V]:yuvriar      VerbPostbase; ! 
-piqertur-–a/–ar/–aa/+a/+aar[V→V]:piqertuar  VerbPostbase; ! 
-kaugtur-–a/–ar/–aa/+a/+aar[V→V]:kaugtuar    VerbPostbase; ! 
-pissur-–a/–ar/–aa/+a/+aar[V→V]:pissuar      VerbPostbase; ! 
-iver-–a/–ar/–aa/+a/+aar[V→V]:ivrar          VerbPostbase; ! 
-ater-–a/–ar/–aa/+a/+aar[V→V]:atrar          VerbPostbase; ! 
-iter-–a/–ar/–aa/+a/+aar[V→V]:itrar          VerbPostbase; ! 
-kuime-–a/–ar/–aa/+a/+aar[V→V]:kuimar        VerbPostbase; ! 
-carve-–a/–ar/–aa/+a/+aar[V→V]:carvar        VerbPostbase; ! 
-aper-–a/–ar/–aa/+a/+aar[V→V]:apaa           VerbPostbase; ! 
-cakner-–a/–ar/–aa/+a/+aar[V→V]:caknaa       VerbPostbase; ! 
-qaner-–a/–ar/–aa/+a/+aar[V→V]:qanaa         VerbPostbase; ! 
-uver-–a/–ar/–aa/+a/+aar[V→V]:uvaa           VerbPostbase; ! 
-nasper-–a/–ar/–aa/+a/+aar[V→V]:naspaa       VerbPostbase; ! 
+qalrir-–a/–ar/–aa/+a/+aar[V→V]:qalri+a       VerbPostbase; ! 
+akngir-–a/–ar/–aa/+a/+aar[V→V]:akngi+a       VerbPostbase; ! 
+anglani-–a/–ar/–aa/+a/+aar[V→V]:anglani+a    VerbPostbase; ! 
+irir-–a/–ar/–aa/+a/+aar[V→V]:iri+a           VerbPostbase; ! 
+aqvaqur-–a/–ar/–aa/+a/+aar[V→V]:aqvaqu+a     VerbPostbase; ! 
+alerqur-–a/–ar/–aa/+a/+aar[V→V]:alerqu+a     VerbPostbase; ! 
+apertur-–a/–ar/–aa/+a/+aar[V→V]:apertu+a     VerbPostbase; ! 
+ayalur-–a/–ar/–aa/+a/+aar[V→V]:ayalu+a       VerbPostbase; ! 
+mayur-–a/–ar/–aa/+a/+aar[V→V]:mayu+a         VerbPostbase; !
+piyug-–a/–ar/–aa/+a/+aar[V→V]:piyu+a         VerbPostbase; ! 
+peyug-–a/–ar/–aa/+a/+aar[V→V]:peyu+a         VerbPostbase; ! 
+qavarni-–a/–ar/–aa/+a/+aar[V→V]:qavari+a     VerbPostbase; ! 
+tuqu-–a/–ar/–aa/+a/+aar[V→V]:tuqu+a          VerbPostbase; ! 
+muru-–a/–ar/–aa/+a/+aar[V→V]:muru+a          VerbPostbase; ! 
+pangaleg-–a/–ar/–aa/+a/+aar[V→V]:pangalg+a   VerbPostbase; ! 
+yuvrir-–a/–ar/–aa/+a/+aar[V→V]:yuvri+ar      VerbPostbase; ! 
+piqertur-–a/–ar/–aa/+a/+aar[V→V]:piqertu+ar  VerbPostbase; ! 
+kaugtur-–a/–ar/–aa/+a/+aar[V→V]:kaugtu+ar    VerbPostbase; ! 
+pissur-–a/–ar/–aa/+a/+aar[V→V]:pissu+ar      VerbPostbase; ! 
+iver-–a/–ar/–aa/+a/+aar[V→V]:ivr+ar          VerbPostbase; ! 
+ater-–a/–ar/–aa/+a/+aar[V→V]:atr+ar          VerbPostbase; ! 
+iter-–a/–ar/–aa/+a/+aar[V→V]:itr+ar          VerbPostbase; ! 
+kuime-–a/–ar/–aa/+a/+aar[V→V]:kuim+ar        VerbPostbase; ! 
+carve-–a/–ar/–aa/+a/+aar[V→V]:carv+ar        VerbPostbase; ! 
+aper-–a/–ar/–aa/+a/+aar[V→V]:ap+aa           VerbPostbase; ! 
+cakner-–a/–ar/–aa/+a/+aar[V→V]:cakn+aa       VerbPostbase; ! 
+qaner-–a/–ar/–aa/+a/+aar[V→V]:qan+aa         VerbPostbase; ! 
+uver-–a/–ar/–aa/+a/+aar[V→V]:uv+aa           VerbPostbase; ! 
+nasper-–a/–ar/–aa/+a/+aar[V→V]:nasp+aa       VerbPostbase; ! 
 
 ! non-productive -+te[V→V] 'to act on one so as to cause it to V'
-tuqu-+te[V→V]:tuqute        VerbPostbase; !            
-nala-+te[V→V]:nalate        VerbPostbase; ! 
-nipe-+te[V→V]:nipte         VerbPostbase; ! 
-qame-+te[V→V]:qamte         VerbPostbase; ! 
-ane-+te[V→V]:ante           VerbPostbase; ! 
-iter-+te[V→V]:iterte        VerbPostbase; ! 
-tatame-+te[V→V]:tatamete    VerbPostbase; ! 
-tatame-+te[V→V]:tatamte     VerbPostbase; ! 
-uive-+te[V→V]:uivte         VerbPostbase; ! 
-mayur-+te[V→V]:mayurte      VerbPostbase; ! 
-atrar-+te[V→V]:atrarte      VerbPostbase; ! 
-akag-+te[V→V]:akagte        VerbPostbase; ! 
-tupag-+te[V→V]:tupagte      VerbPostbase; ! 
-kiner-+te[V→V]:kinerte      VerbPostbase; ! 
-asme-+te[V→V]:asemte        VerbPostbase; ! 
-uita-+te[V→V]:uitate        VerbPostbase; !   
-igte-+te[V→V]:igcete        VerbPostbase; ! 
-urug-+te[V→V]:urugte        VerbPostbase; !   
+tuqu-+te[V→V]:tuqu+te        VerbPostbase; !            
+nala-+te[V→V]:nala+te        VerbPostbase; ! 
+nipe-+te[V→V]:nip+te         VerbPostbase; ! 
+qame-+te[V→V]:qam+te         VerbPostbase; ! 
+ane-+te[V→V]:an+te           VerbPostbase; ! 
+iter-+te[V→V]:iter+te        VerbPostbase; ! 
+tatame-+te[V→V]:tatame+te    VerbPostbase; ! 
+tatame-+te[V→V]:tatam+te     VerbPostbase; ! 
+uive-+te[V→V]:uiv+te         VerbPostbase; ! 
+mayur-+te[V→V]:mayur+te      VerbPostbase; ! 
+atrar-+te[V→V]:atrar+te      VerbPostbase; ! 
+akag-+te[V→V]:akag+te        VerbPostbase; ! 
+tupag-+te[V→V]:tupag+te      VerbPostbase; ! 
+kiner-+te[V→V]:kiner+te      VerbPostbase; ! 
+asme-+te[V→V]:asem+te        VerbPostbase; ! 
+uita-+te[V→V]:uita+te        VerbPostbase; !   
+igte-+te[V→V]:igce+te        VerbPostbase; ! 
+urug-+te[V→V]:urug+te        VerbPostbase; !   
 
-atur-?pag[V→V]: aturpag     VerbPostbase; !
-qaner-?pag[V→V]:qanpag	    VerbPostbase; !
-qaner-?pag[V→V]:qanpaut     VerbPostbase; !
-nere-?pag[V→V]: nerepʼag	VerbPostbase; !
-pupsug-?pag[V→V]:pupcepʼag  VerbPostbase; !
-pupsug-?pag[V→V]:pupespag   VerbPostbase; !
-pupsug-?pag[V→V]:pupesvag   VerbPostbase; !
-alleg-?pag[V→V]:alpag	    VerbPostbase; !
-quser-?pag[V→V]:quspag	    VerbPostbase; !
-nengle-?pag[N→V]:nengelvag	VerbPostbase; !
-nengle-?pag[N→V]:nengelpag	VerbPostbase; !
-akerta-?pag[N→V]:akervag	VerbPostbase; !
-kiir-?pag[N→V]:kiirpag	    VerbPostbase; !
-kiir-?pag[N→V]:kiirvag	    VerbPostbase; !
-anuqe-?pag[N→V]:anurvag	    VerbPostbase; !
-anuqe-?pag[N→V]:anuqvag	    VerbPostbase; !
-anuqe-?pag[N→V]:anuqʼvag	VerbPostbase; !
-ella-?pag[N→V]: ellarvag	VerbPostbase; !
+atur-?pag[V→V]: atur+pag     VerbPostbase; !
+qaner-?pag[V→V]:qan+pag      VerbPostbase; !
+qaner-?pag[V→V]:qan+paut     VerbPostbase; !
+nere-?pag[V→V]: nere+pʼag    VerbPostbase; !
+pupsug-?pag[V→V]:pupce+pʼag  VerbPostbase; !
+pupsug-?pag[V→V]:pupes+pag   VerbPostbase; !
+pupsug-?pag[V→V]:pupes+vag   VerbPostbase; !
+alleg-?pag[V→V]:al+pag       VerbPostbase; !
+quser-?pag[V→V]:qus+pag      VerbPostbase; !
+nengle-?pag[N→V]:nengel+vag  VerbPostbase; !
+nengle-?pag[N→V]:nengel+pag  VerbPostbase; !
+akerta-?pag[N→V]:aker+vag    VerbPostbase; !
+kiir-?pag[N→V]:kiir+pag      VerbPostbase; !
+kiir-?pag[N→V]:kiir+vag      VerbPostbase; !
+anuqe-?pag[N→V]:anur+vag     VerbPostbase; !
+anuqe-?pag[N→V]:anuq+vag     VerbPostbase; !
+anuqe-?pag[N→V]:anuqʼ+vag    VerbPostbase; !
+ella-?pag[N→V]:ellar+vag     VerbPostbase; !
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
