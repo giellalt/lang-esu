@@ -102,7 +102,7 @@ g:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
         [:Con|.#.] FVow: _ %:: (%~:) %(ng%): FVow: [Bndry:|Con:|.#.] ; ! Vg:(~)(ng)V -> VV
 
 "g̲:r = Uvular/VelarAgreement"
-g̲:r <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+g̲:r <=> [r:|rr:] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "g:k = word#"
 g:k <=> _ [ .#. | %= ] ; ! Word Final changes
@@ -112,13 +112,13 @@ gg:g <=> _ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ; ! CCte@³(u)/Cu
          _ t:s (ʼ) e:0 [Bndry:-%°:-AtSign:]* %@⁴: ; ! Cte@⁴gkng/s
 
 "g̲g̲:rr = Uvular/VelarAgreement"
-g̲g̲:rr <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+g̲g̲:rr <=> [r:|rr:] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "i:0 = --"
 i:0 <=> _ Con:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
 
 "k̲:q = Uvular/VelarAgreement"
-k̲:q <=> [r:0|rr:0] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+k̲:q <=> [r:|rr:] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "l:0 = --" ! - optional drop preceding vowel also
 l:0 => Vow:0 (Con:0) Bndry:* %–: %–: _ ; ! Rule for Double Minus - 
@@ -145,7 +145,7 @@ ng:0 <=> [:Con|.#.] [Bndry:|:0]* FVow: %:: _ FVow: [Bndry:|Con:|.#.] ; ! u:nga -
 ng:n͞g <=> Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* _ ; ! Cte@²ng/Cn͞g
 
 "q̲:k = Uvular/VelarAgreement"
-q̲:k <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+q̲:k <=> g: Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "r:0 = - | % | :"
 r:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
@@ -158,16 +158,18 @@ r:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
         [:Con|.#.] FVow: _ (%*:) %:: (%~:) %(ng%): FVow: [Bndry:|Con:|.#.] ; ! ar(*):(~)(ng)a -> ii
 
 "r̲:g = Uvular/VelarAgreement"
-r̲:g <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+r̲:g <=> g: Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "r:q = word#"
 r:q <=> _ (%*:) [ .#. | %= ] ; ! Word Final changes
 
 "rr:0 = -"
 rr:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
+    except
+        _ Bndry:* %–: [k:|k̲:|q:|q̲:] Vow: ; ! rr-qa -> rqa
 
 "r̲r̲:gg = Uvular/VelarAgreement"
-r̲r̲:gg <=> g:0 Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
+r̲r̲:gg <=> g: Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "rr:r = rte@(u)"
 rr:r <=> _ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ; ! CCte@³(u)/Cu
