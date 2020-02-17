@@ -52,7 +52,7 @@ def runTests(testFile):
                 print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
         elif surface in processResults:
             if len(processResults) == 1:
-                testResultCode = 1          # 1 = just one answer and correct
+                testResultCode = 2          # 2 = just one answer and correct
                 if args.verbose:
                     print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
             else:
@@ -61,7 +61,7 @@ def runTests(testFile):
                 # if not args.quiet:
                     print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
         else:
-            testResultCode = 2              # 2 = multiple outputs, none correct
+            testResultCode = 1              # 1 = multiple outputs, none correct
             if not args.quiet:
                 print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
 
@@ -87,7 +87,7 @@ def compareTests(previousTests, currentTests):
                                                           json.dumps(previousTests[i][3], ensure_ascii=False), json.dumps(currentTests[i][3], ensure_ascii=False)))
     if not args.quiet:
         print("########## Previous -> Current Test SUMMARY ##########")
-        print("Previous tests Passed: {}/{}".format([x[2] for x in previousTests].count(1) + [x[2] for x in previousTests].count(3) , len(previousTests)))
+        print("Previous tests Passed: {}/{}".format([x[2] for x in previousTests].count(2) + [x[2] for x in previousTests].count(3) , len(previousTests)))
         print("Prev -> Curr Count: {}".format(changesCount))
 
 
@@ -109,7 +109,7 @@ if __name__ == "__main__":
 
         if not args.quiet:
             print("########## {} SUMMARY ##########".format(testFile))
-        passed = [x[2] for x in currentTests].count(1) + [x[2] for x in currentTests].count(3)
+        passed = [x[2] for x in currentTests].count(2) + [x[2] for x in currentTests].count(3)
         count = len(currentTests)
         if not args.quiet:
             print("Current tests Passed: {}/{}".format(passed, count))
