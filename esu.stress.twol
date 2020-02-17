@@ -8,6 +8,7 @@ Alphabet
     ʼ                                           ! Keep apostrophe from lexical entries
     ạ ụ ġ                                       ! for (ar) droppping
     á í ú ạ́ ụ́ â î û ậ ụ̂ é ê
+    %[é%] %[ê%]                                 ! weak initial e cannot be hatted
     %> 
     %= ;
 
@@ -32,9 +33,9 @@ Sets
     FVowStress = á í ú ạ́ ụ́ ;
     FVowHatted = â î û ậ ụ̂ ;
     AllFVow = FVow FVowStress FVowHatted ;
-    Vow = FVow e ;
-    VowStress = FVowStress é ;
-    VowHatted = FVowHatted ê ;
+    Vow = FVow e %[e%] ;
+    VowStress = FVowStress é %[é%] ;
+    VowHatted = FVowHatted ê %[ê%] ; ! weak initial e cannot be hatted
     AllVow = Vow VowStress VowHatted ;
 
 Rules 
