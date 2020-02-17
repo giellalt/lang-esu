@@ -47,10 +47,11 @@ define AutomaticDevoicing v -> vv,
 !                          r -> rr  || _ ">"* .#.                            .o.
 !                          s -> ss  || .#. ">"* _                             ;
 
-define WeakInitialE [..] -> "ʼ" || "[e]" [Con]+ [AllVow]+ ">"+ Con _ ">"* AllFVow  .o.
-                    [..] -> "ʼ" || "[e]" [Con]+ [AllVow]+ ">"* Con _ ">"+ AllFVow  .o.
-                    "[e]" -> 0  || _ [Con|AllVow]+ ">"                          .o. 
-                    "[e]" -> e                                                ;
+define WeakInitialE [..] -> e   || .#. ["[e]"|"[é]"] Con _ ">"* Con                      .o. ! [é]nmek -> [e]nemek
+                       ê -> e   || .#. ["[e]"|"[é]"] Con _ ">"* Con                      .o. ! [e]nêli -> enel'iuq
+                    [..] -> "ʼ" || .#. ["[e]"|"[é]"] Con AllVow ">"+ Con _ ">"* AllVow   .o. ! [e]nemek -> nem'ek
+                    [..] -> "ʼ" || .#. ["[e]"|"[é]"] Con AllVow Con _ ">"+ AllVow        .o. ! [e]mer -> mer'et
+                    ["[e]"|"[é]"] -> 0  || .#. _ Con AllVow ">"* Con                      ;  ! drop weak e ; not [e]nii
 
 define urDeletion [ụ|ụ́] r (->) u r                           || g ">" _ l                .o. ! acagurluq (HBC form)
                   [ụ|ụ́] r -> e ("ʼ") "u͡r"                    || g ">" _ l                .o. ! acageu͡rluq/acageʼu͡rluq
@@ -85,13 +86,13 @@ define ConnectiveMood  ạ -> 0               || _ ">" [a|á] \.#.             
                        [e|é] -> e ("ʼ")     || [VowStress|VowHatted|Con] ">" ng _ [r|rr] .o. ! qavangrarpet -> qavange(ʼ)rpet
                        [e|é] -> "ʼ" e ("ʼ") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvangʼe(ʼ)rma
 
-define WordAdjustments ġ -> 0       || Vow _                      .o. ! túntuvâyaġaq -> túntuvâyaaq 
+define WordAdjustments ġ -> 0       || Vow _                           .o. ! túntuvâyaġaq -> túntuvâyaaq 
                        t (->) c     || \.#. _ [e|é] ">"* t ,               ! angutet -> angucet
                                        \.#. _ [e|é] ">"* ss ">"* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
-                       t [e|é] ">" rr (->) ">" q                  .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
-                       â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q    .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
-                       [a|á] r [a|á] (->) a   || ">" [q|k] _ q    .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
-                       [a|â|á] -> e || ">" q _ ">"* [r|rr]         ;  ! apteqarru -> apteqerru for -qar- postbase
+                       t [e|é] ">" rr (->) ">" q || _ Vow              .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
+                       â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q         .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
+                       [a|á] r [a|á] (->) a   || ">" [q|k] _ q         .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
+                       [a|â|á] -> e || ">" q _ ">"* [r|rr]              ;  ! apteqarru -> apteqerru for -qar- postbase
 
 define arDeletion  "â" -> a "ʼ" a,
                    "î" -> i "ʼ" i,
@@ -133,6 +134,7 @@ define ToOrthography  vv -> v,
                       [ê|é] -> e                                        .o.
                       [î|í] -> i                                        .o.
                       [û|ú|ụ|ụ́|ụ̂] -> u                                  .o.
+                      ["[e]"|"[é]"|"[ê]"] -> e                          .o.
                       ġ -> g                                             ;
                     
 
