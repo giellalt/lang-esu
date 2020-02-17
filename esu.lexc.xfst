@@ -56,7 +56,7 @@ define Lowercase "A"   -> a,
 define arExpansion "(ar)"  -> "ạ" r       .o.
                    "(ar*)" -> "ạ" r "*"    ; 
 
-define MultipleForms "–r̲pag/@²vag" (->) "@²" v a g            || Vow t e _                    .o.
+define MultipleForms t e "–r̲pag/@²vag" (->) l "." v a g            || Vow _                   .o.
                      "–r̲pag/@²vag"  ->  "–" r̲ p a g                                           .o.
 
                      "–r̲(ur)lur" -> "+" ụ r l u r      || g _                                 .o. ! acag -> acagurluq
