@@ -33,7 +33,7 @@ def main():
         totalTypesCounter += fileCounter
 
     outputLines = []
-    totalTypesCounterMostCommon = sorted(totalTypesCounter.most_common(), key=lambda i: (i[1], i[0]), reverse=True)
+    totalTypesCounterMostCommon = sorted(totalTypesCounter.most_common(), key=lambda i: (-i[1], i[0]))
     for types, tokens in totalTypesCounterMostCommon:
         outputLines.append("{:>}\t{}".format(tokens,types))
 
