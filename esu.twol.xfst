@@ -137,6 +137,7 @@ define ToOrthography  vv -> v,
                       ["[e]"|"[é]"|"[ê]"] -> e                          .o.
                       ġ -> g                                             ;
                     
+define FinalWordApostrophe Vow (->) "ʼ" || Con _ .#. ;
 
 regex AutomaticDevoicing   .o.
       WeakInitialE         .o.
@@ -150,4 +151,5 @@ regex AutomaticDevoicing   .o.
       RemoveApostrophe     .o.
       AddApostrophe        .o.
       AutomaticDevoicing   .o.
-      ToOrthography         ;
+      ToOrthography        .o.
+      FinalWordApostrophe   ;
