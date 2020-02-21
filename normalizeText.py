@@ -46,16 +46,27 @@ def processFile(filePath):
         for line in inFile:
             for word in line.split():
                 norm = normalizeRegex(word)
-                if norm != '':
+                if norm != '' and len(norm) > 1 and not isEnglish(norm):
                     fileCounter.update([norm,])
     return fileCounter
 
 def normalizeRegex(word):
-    normL = word.strip().lower()
-    normLP = re.sub('[^\s\w\'-]','', normL) # punctuation without \' and -
-    normLPD = re.sub('[\d]','', normLP) # remove digit
-    normLPDA = re.sub('[\']','ʼ', normLPD) # replace apostrophe
-    return normLPDA
+    norm = word.strip().lower()
+    norm = re.sub('[^\s\w\'-]','', norm) # punctuation without \' and -
+    norm = re.sub('[\d]','', norm) # remove digits, underscore
+    norm = re.sub('^\'','', norm) # remove word initial apostrphe
+    norm = re.sub('[\']','ʼ', norm) # convert apostrophe
+    return norm
+
+def isEnglish(word):
+    for letter in ['b', 'd', 'f', 'h', 'j', 'o', 'x', 'z']:
+        if letter in word:
+            return True
+    if re.search('ee', word) is not None:
+        return True
+#    for enclitic in ['-am','-amta','-ata','-atam','-gga','-ggem','-gguq','-ima','-kin','-kiq','-llam','-lli','-llu','-mi','-naa','-qaa','-tanem','-tang','-tuq','-wa','-gga']:
+    return False
+
 
 if __name__ == '__main__':
     main()
