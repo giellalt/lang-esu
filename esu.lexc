@@ -12,6 +12,7 @@ Vv Ll Ss Gg Rr Ng N͞g U͡g U͡r U͡gg U͡rr M̄ N̄
 [N]                         ! Nominal
 [V]                         ! Verbal
 [Particle]                  ! Particle
+[Ignorative]                ! Ignorative - Question words
 [PerPro]                    ! Personal Pronoun
 [DemPro]                    ! Demonstrative Pronoun
 [DemAdv]                    ! Demonstrative Adverb
@@ -204,7 +205,7 @@ k̲ q̲ g̲ r̲ g̲g̲ r̲r̲               ! velar/uvular (front/back velar) as
 LEXICON Root
     Exceptions      ;
     Particle        ;
-    Interrogative   ;
+    Ignorative      ;
     ProperNoun      ;
     NounBase        ;
     VerbBase        ;
@@ -589,29 +590,72 @@ LEXICON ParticleEnd
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                                 !!!!!!
-!!!!!!               Interrogative Words               !!!!!!
+!!!!!!               Ignorative Words                  !!!!!!
+!!!!!!          (for Interrogative Mood)               !!!!!!
 !!!!!!                                                 !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON Interrogative
-ca                  NounPostbase;
-ca                  VerbPostbase;
-cakucir             NounPostbase;
-ciin                EncliticOrEnd;
-kina                EncliticOrEnd;
-kituu               VerbPostbase;
-nalir               NounPostbase;
-nani                EncliticOrEnd;
-nante:nanete        VerbSpecialT; ! to be where
-qaillun             EncliticOrEnd;
-qaillʼ              EncliticOrEnd;
-qaku                EncliticOrEnd;
-qangvar             NounPostbase;
-qavcin              EncliticOrEnd;
-qavcir              NounPostbase;
-qavcir              VerbPostbase;
+LEXICON Ignorative
+ca[Ignorative]:ca                      NounPostbase;
+ca[Ignorative]:ca                      VerbPostbase;
 
+ciin[Ignorative]:ciin                  EncliticOrEnd;
+
+ki[Ignorative][Abs][Unpd][Sg]:ki+na                       EncliticOrEnd;
+ki[Ignorative]-–r(ur)lur*[N→N][Abs][Unpd][Sg]:ki+nau͡rluq  EncliticOrEnd;
+ki[Ignorative][Abs][Unpd][Sg]-–lkug[N→N]:ki+na–lkug       EncliticOrEnd; ! no-good, darned N
+kitu[Ignorative][Rel][Unpd][Sg]:ki.a                      EncliticOrEnd;
+kitu[Ignorative][Rel][Unpd][Sg]:kitu.m                    EncliticOrEnd;
+kitu[Ignorative][Abl_Mod][Unpd][Sg]:kitu.mek              EncliticOrEnd;
+kitu[Ignorative][Loc][Unpd][Sg]:kitu.mi                   EncliticOrEnd;
+kitu[Ignorative][Ter][Unpd][Sg]:kitu.mun                  EncliticOrEnd;
+kitu[Ignorative][Via][Unpd][Sg]:kitu.kun                  EncliticOrEnd;
+kitu[Ignorative][Equ][Unpd][Sg]:kitu.tun                  EncliticOrEnd;
+kitu[Ignorative]-%:~(ng)u[N→V]:kitu%:~(ng)u               VerbPostbase;
+kinku[Ignorative][Abs][Unpd][Pl]:kinku.t                  EncliticOrEnd;
+kinku[Ignorative][Abs][Unpd][Du]:kinku.k                  EncliticOrEnd;
+kinku[Ignorative][Rel][Unpd][Pl]:kinku.t                  EncliticOrEnd;
+kinku[Ignorative][Rel][Unpd][Du]:kinku.k                  EncliticOrEnd;
+kinku[Ignorative][Abl_Mod][Unpd][Pl]:kinku.nek            EncliticOrEnd;
+kinku[Ignorative][Abl_Mod][Unpd][Du]:kinku.gnek           EncliticOrEnd;
+kinku[Ignorative][Loc][Unpd][Pl]:kinku.ni                 EncliticOrEnd;
+kinku[Ignorative][Loc][Unpd][Du]:kinku.gni                EncliticOrEnd;
+kinku[Ignorative][Ter][Unpd][Pl]:kinku.nun                EncliticOrEnd;
+kinku[Ignorative][Ter][Unpd][Du]:kinku.gnun               EncliticOrEnd;
+kinku[Ignorative][Via][Unpd][Pl]:kinku.tgun               EncliticOrEnd;
+kinku[Ignorative][Via][Unpd][Du]:kinku.negnun             EncliticOrEnd;
+kinku[Ignorative][Equ][Unpd][Pl]:kinku.cetun              EncliticOrEnd;
+kinku[Ignorative][Equ][Unpd][Du]:kinku.gcetun             EncliticOrEnd;
+kinku[Ignorative][Voc][Unpd][Pl]:kinku.ut                 EncliticOrEnd;
+kinku[Ignorative][Voc][Unpd][Du]:kinku.uk                 EncliticOrEnd;
+kinku[Ignorative]-~+miu[N→N]:kinku~+miu                   NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
+kinku[Ignorative]-%:~(ng)u[N→V]:kinku%:~(ng)u             VerbPostbase;
+
+na[Ignorative][Sec_Ter]:na.tmun                 EncliticOrEnd;
+na[Ignorative][Sec_Ter]+tmurte[N→V]:na.tmurte   VerbPostbase;
+na[Ignorative][Loc]:na.ni                       EncliticOrEnd;
+na[Ignorative][Abl]:na.ken                      EncliticOrEnd;
+na[Ignorative][Via]:na.wʼun                     EncliticOrEnd;
+na[Ignorative][Via]:na.ggʼun                    EncliticOrEnd;
+na[Ignorative][Loc]-ete[N→V]:na+nte°            VerbPostbase;
+na[Ignorative]-+var[N→V]:nat+var                VerbPostbase; ! to go or put N-ward
+na[Ignorative][Ter]+virte[N→V]:nat.virte        VerbPostbase;
+na[Ignorative][Via]+gguir[N→V]:na.gguir         VerbPostbase;
+na[Ignorative]=wa[Encl]:nau=wa                  EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]=wa[Encl]:nauwa                   EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]=wa[Encl]:naugga                  EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+nate[Ignorative]:nate                           NounInflection; ! what part?; some part; a certain part
+nalir[Ignorative]:nalir                         NounPostbase;
+
+qaillun[Ignorative]:qaillun            EncliticOrEnd;
+qaillun[Ignorative]:qaillʼ             EncliticOrEnd;
+qaku[Ignorative]:qaku                  EncliticOrEnd;
+qangvar[Ignorative]:qangvar            EncliticOrEnd;
+
+qavcir[Ignorative]:qavcin              EncliticOrEnd;
+qavcir[Ignorative]:qavcir              NounPostbase;
+qavcir[Ignorative]:qavcir              VerbPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -10896,7 +10940,6 @@ nasvite                VerbPostbase; ! to show something to
 nataqe                 VerbPostbase; ! to find; to discover
 nataqii                VerbPostbase; ! to be convicted (of a crime)
 nataqute               VerbPostbase; ! to find something
-nate                   VerbPostbase; ! what part?; some part; a certain part
 natelngu               VerbPostbase; ! to hurt in part of oneʼs body
 naterar                VerbPostbase; ! (NSU form) to sew on a sole
 natke                  VerbPostbase; ! to associated with in some way
@@ -15179,7 +15222,6 @@ uu[DemPro][Via][Unpd][Sg]:uuggun      EncliticOrEnd;
 uu[DemAdv][Via]:uuggun                EncliticOrEnd;                                                          
 maa[DemAdv][Equ]:maaten                    EncliticOrEnd;
 wa[DemAdv][Equ]:waten                      EncliticOrEnd;
-
 !--------------------------|----------------------------|-----------------------------|
 ! THERE, NEAR LISTENER OR IN CONTEXT                                                  |
 !--------------------------|----------------------------|-----------------------------|
@@ -15227,6 +15269,7 @@ LEXICON DemNonAbsSg
 [DemPro][Ter][Unpd][Sg]:.mun            EncliticOrEnd;
 [DemPro][Via][Unpd][Sg]:.kun            EncliticOrEnd;
 [DemPro][Equ][Unpd][Sg]:.tun            EncliticOrEnd;
+[DemPro]-%:~(ng)u[N→V]:%:~(ng)u         VerbPostbase;
 
 LEXICON DemIntermedNonSg 
 [DemPro][Abs][Unpd][Pl]:.t              EncliticOrEnd;
@@ -15246,6 +15289,7 @@ LEXICON DemIntermedNonSg
 [DemPro][Voc][Unpd][Pl]:.ut             EncliticOrEnd;
 [DemPro][Voc][Unpd][Du]:.uk             EncliticOrEnd;
 [DemPro]-~+miu[N→N]:~+miu               NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
+[DemPro]-%:~(ng)u[N→V]:%:~(ng)u         VerbPostbase;
 
 LEXICON DemAdv2Ter
 DemAdv;
@@ -15297,6 +15341,7 @@ kiate                  NounInflection; ! area up river of –; inside area of �
 uate                   NounInflection; ! area downriver or toward the exit from possessor
 ukate                  NounInflection; ! this side # ukatiini ‘on this side of itʼ
 yaate                  NounInflection; ! area beyond
+
 
 LEXICON PositionalPostbase
 NounInflection;
