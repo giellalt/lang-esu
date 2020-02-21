@@ -136,6 +136,14 @@ define ToOrthography  vv -> v,
                       [û|ú|ụ|ụ́|ụ̂] -> u                                  .o.
                       ["[e]"|"[é]"|"[ê]"] -> e                          .o.
                       ġ -> g                                             ;
+
+define RemoveLigature m̄ (->) m     .o.
+                      n̄ (->) n     .o.
+                      n͞g (->) ng   .o.
+                      u͡g (->) u g   .o.
+                      u͡r (->) u r   .o.
+                      u͡gg (->) u gg .o.
+                      u͡rr (->) u rr  ;
                     
 define FinalWordApostrophe Vow (->) "ʼ" || Con _ .#. ;
 
@@ -152,4 +160,5 @@ regex AutomaticDevoicing   .o.
       AddApostrophe        .o.
       AutomaticDevoicing   .o.
       ToOrthography        .o.
+      RemoveLigature       .o.
       FinalWordApostrophe   ;
