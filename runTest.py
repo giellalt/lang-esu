@@ -17,6 +17,40 @@ group.add_argument("-v", "--verbose", action="store_true")
 group.add_argument("-q", "--quiet", action="store_true")
 args = parser.parse_args()
 
+def main():
+    if not os.path.exists(args.resultDirectory):
+        os.makedirs(args.resultDirectory)
+
+    testsCounter = Counter()
+    for testFilePath in args.testFiles:
+        testFile = os.path.basename(testFilePath)
+        currentTests = runTests(testFilePath)
+
+        if os.path.exists(os.path.join(args.resultDirectory, testFile)):
+            previousTests = readPreviousTestFile(os.path.join(args.resultDirectory, testFile))
+            compareTests(previousTests, currentTests)
+        else:
+            if not args.quiet:
+                print("########## No Previous Test ##########".format(testFile))
+
+        if not args.quiet:
+            print("########## {} SUMMARY ##########".format(testFile))
+        passed = [x[2] for x in currentTests].count(2) + [x[2] for x in currentTests].count(3)
+        count = len(currentTests)
+        if not args.quiet:
+            print("Current tests Passed: {}/{}".format(passed, count))
+        testsCounter.update([x[2] for x in currentTests])
+        
+        writeTestFile(currentTests, args.resultDirectory, testFile)
+
+    print("\n########## {} TEST SUMMARY ##########".format(len(args.testFiles)))
+    total = sum(testsCounter.values())
+    print("Total Passed: {}/{}".format(testsCounter[1]+testsCounter[3], total))
+    print("0 - {}".format(testsCounter[0]))
+    print("1 - {}".format(testsCounter[1]))
+    print("2 - {}".format(testsCounter[2]))
+    print("3 - {}".format(testsCounter[3]))
+
 
 def readTestFile(filename):
     testFile = []
@@ -92,35 +126,4 @@ def compareTests(previousTests, currentTests):
 
 
 if __name__ == "__main__":
-    if not os.path.exists(args.resultDirectory):
-        os.makedirs(args.resultDirectory)
-
-    testsCounter = Counter()
-    for testFilePath in args.testFiles:
-        testFile = os.path.basename(testFilePath)
-        currentTests = runTests(testFilePath)
-
-        if os.path.exists(os.path.join(args.resultDirectory, testFile)):
-            previousTests = readPreviousTestFile(os.path.join(args.resultDirectory, testFile))
-            compareTests(previousTests, currentTests)
-        else:
-            if not args.quiet:
-                print("########## No Previous Test ##########".format(testFile))
-
-        if not args.quiet:
-            print("########## {} SUMMARY ##########".format(testFile))
-        passed = [x[2] for x in currentTests].count(2) + [x[2] for x in currentTests].count(3)
-        count = len(currentTests)
-        if not args.quiet:
-            print("Current tests Passed: {}/{}".format(passed, count))
-        testsCounter.update([x[2] for x in currentTests])
-        
-        writeTestFile(currentTests, args.resultDirectory, testFile)
-
-    print("\n########## {} TEST SUMMARY ##########".format(len(args.testFiles)))
-    total = sum(testsCounter.values())
-    print("Total Passed: {}/{}".format(testsCounter[1]+testsCounter[3], total))
-    print("0 - {}".format(testsCounter[0]))
-    print("1 - {}".format(testsCounter[1]))
-    print("2 - {}".format(testsCounter[2]))
-    print("3 - {}".format(testsCounter[3]))
+    main()
