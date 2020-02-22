@@ -500,6 +500,7 @@ qakuan                   ParticleEnd; ! when some time had elapsed
 qakuaqan                 ParticleEnd; ! at what times?; at various times
 qangkun                  ParticleEnd; ! as one usually does
 qangvaq                  ParticleEnd; ! when (in the past); how long ago?; for some time
+qangvarpak               ParticleEnd; ! for how long?; for a long time
 qangʼa=llu               ParticleEnd; ! on the other hand; contrary to what might be thought adverb; or; or else; either . . . or
 qaterpak                 ParticleEnd; ! very white; all white
 qayuwa                   ParticleEnd; ! this time; to my surprise; for some unknown reason; how? (Y, NSU additional meaning)
@@ -648,10 +649,11 @@ na[Ignorative]=wa[Encl]:naugga                  EncliticOrEnd; ! used with demon
 nate[Ignorative]:nate                           NounInflection; ! what part?; some part; a certain part
 nalir[Ignorative]:nalir                         NounPostbase;
 
-qaillun[Ignorative]:qaillun            EncliticOrEnd;
-qaillun[Ignorative]:qaillʼ             EncliticOrEnd;
-qaku[Ignorative]:qaku                  EncliticOrEnd;
-qangvar[Ignorative]:qangvar            EncliticOrEnd;
+qaillun[Ignorative]:qaillun                     EncliticOrEnd;
+qaillun[Ignorative]:qaillʼ                      EncliticOrEnd;
+qaku[Ignorative]:qaku                           EncliticOrEnd;
+qangvar[Ignorative]:qangvar                     EncliticOrEnd;
+qangvar[Ignorative]-–llar*[N→N]:qangvar–llar*   NounPostbase;
 
 qavcir[Ignorative]:qavcin              EncliticOrEnd;
 qavcir[Ignorative]:qavcir              NounPostbase;
@@ -5915,7 +5917,6 @@ qangquar               NounPostbase; ! frozen “Eskimo ice cream” (akutaq)
 qangqulegcitaar        NounPostbase; ! (HBC form) bunchberry or ground dogwood (Cornus canadensis)
 qangqullektaar         NounPostbase; ! (HBC form) bunchberry or ground dogwood (Cornus canadensis)
 qangvallar             NounPostbase; ! ‘thing of when (in the past)ʼ
-qangvarpag             NounPostbase; ! for how long?; for a long time
 qangʼa                 NounPostbase; ! no
 qaniciurte             NounPostbase; ! scavenger; trash collector
 qanikcar*              NounPostbase; ! snow on the ground
