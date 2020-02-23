@@ -1,5 +1,5 @@
 # runTest.py
-# python3 runTest.py esu.gen.hfst esu.pairs.gold/*
+# python3 runTest.py -g esu.gen.hfst -a esu.ana.hfst esu.pairs.gold/*
 
 import sys
 import os
@@ -9,41 +9,55 @@ import argparse
 from collections import Counter
 
 parser = argparse.ArgumentParser()
-parser.add_argument("hfstName", help="hfst filename to run tests with")
-parser.add_argument("testFiles", nargs='+', help="test filenames - 1 or more files")
+parser.add_argument("-g","--generator",nargs="?", help="hfst generator filename to run tests with")
+parser.add_argument("-a","--analyzer",nargs="?", help="hfst analyzer filename to run tests with")
+parser.add_argument("testFiles", nargs='+', help="test filename(s)")
 parser.add_argument("-d", "--resultDirectory", default="esu.pairs.test", help="directory for stored test results")
-group = parser.add_mutually_exclusive_group()
-group.add_argument("-v", "--verbose", action="store_true")
-group.add_argument("-q", "--quiet", action="store_true")
+group1 = parser.add_mutually_exclusive_group()
+group1.add_argument("-v", "--verbose", action="store_true")
+group1.add_argument("-q", "--quiet", action="store_true")
 args = parser.parse_args()
 
 def main():
+    if args.generator is None and args.analyzer is None:
+        print("ERROR: No generator or parser given. Use flags [-g|-a] hfstName")
+
+    if args.generator is not None:
+        runTests("gen", args.generator)
+
+    if args.analyzer is not None:
+        runTests("ana", args.analyzer)
+
+def runTests(genAna, hfstName):
     if not os.path.exists(args.resultDirectory):
         os.makedirs(args.resultDirectory)
 
     testsCounter = Counter()
     for testFilePath in args.testFiles:
         testFile = os.path.basename(testFilePath)
-        currentTests = runTests(testFilePath)
+        currentTests = runTest(genAna, hfstName, testFilePath)
 
-        if os.path.exists(os.path.join(args.resultDirectory, testFile)):
-            previousTests = readPreviousTestFile(os.path.join(args.resultDirectory, testFile))
+        filename, file_extension = os.path.splitext(testFile)
+        testResultFile = ".".join([filename,genAna,file_extension])
+
+        if os.path.exists(os.path.join(args.resultDirectory, testResultFile)):
+            previousTests = readPreviousTestFile(os.path.join(args.resultDirectory, testResultFile))
             compareTests(previousTests, currentTests)
         else:
             if not args.quiet:
                 print("########## No Previous Test ##########".format(testFile))
 
         if not args.quiet:
-            print("########## {} SUMMARY ##########".format(testFile))
+            print("########## {}: {} SUMMARY ##########".format(genAna, testFile))
         passed = [x[2] for x in currentTests].count(2) + [x[2] for x in currentTests].count(3)
         count = len(currentTests)
         if not args.quiet:
             print("Current tests Passed: {}/{}".format(passed, count))
         testsCounter.update([x[2] for x in currentTests])
         
-        writeTestFile(currentTests, args.resultDirectory, testFile)
+        writeTestFile(currentTests, args.resultDirectory, testResultFile)
 
-    print("\n########## {} TEST SUMMARY ##########".format(len(args.testFiles)))
+    print("\n########## {}: {} TEST SUMMARY ##########".format(genAna, len(args.testFiles)))
     total = sum(testsCounter.values())
     print("Total Passed: {}/{}".format(testsCounter[1]+testsCounter[3], total))
     print("0 - {}".format(testsCounter[0]))
@@ -70,21 +84,27 @@ def writeTestFile(outputTest, dirname, filename):
     with open(os.path.join(dirname, filename), 'w') as out:
         out.write("\n".join(outputFile))
 
-def runTests(testFile):
+def runTest(genAna, hfstName, testFile):
     testFileData = readTestFile(testFile)
     if not args.quiet:
-        print("\n########## {} ##########".format(testFile))
+        print("\n########## {}: {} ##########".format(genAna, testFile))
     currentTests = []
     for underlying, surface in testFileData:
-        completedProcess = subprocess.run(["echo \"{}\" | hfst-lookup {}".format(underlying.replace("@:","@%:"), args.hfstName)], shell=True, capture_output=True)
+        if genAna == "gen":
+            inputstring, outputstring = underlying, surface
+        else:
+            inputstring, outputstring = surface, underlying
+
+        completedProcess = subprocess.run(["echo \"{}\" | hfst-lookup {}".format(inputstring.replace("@:","@%:"), hfstName)], shell=True, capture_output=True)
         processResults = [line.decode("utf-8") for line in completedProcess.stdout.split()][1::3]
+        processResults = [parse.replace("@%:","@:") for parse in processResults]
 
         testResultCode = -1
         if "+?" in processResults[0]:
             testResultCode = 0              # 0 = no output
             if not args.quiet:
                 print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
-        elif surface in processResults:
+        elif outputstring in processResults:
             if len(processResults) == 1:
                 testResultCode = 2          # 2 = just one answer and correct
                 if args.verbose:
