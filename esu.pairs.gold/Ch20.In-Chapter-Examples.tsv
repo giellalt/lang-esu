@@ -35,9 +35,9 @@ nengllir-@:(u)cir[V→N][N][Abs][3SgPoss][SgPosd]	nenglliucia
 kegge-–llru[V→V]-@~+ni[V→V][V][Trns][Sbrd][P_3Sg]	keggellruniluku
 kegge-–llru[V→V]-@:(u)cir[V→N][N][Abl_Mod][3SgPoss][SgPosd]	keggellrucianek
 pi-@:(u)cir[V→N][N][Equ][3SgPoss][SgPosd]	piciatun
-nante-@:(u)ciite[V→V][V][Trns][Ind][A_1Sg][P_3Sg]	nanluciitaqa
-nante-@:(u)cir[V→N][N][Abs][3SgPoss][SgPosd]	nanlucia
-nante-@:(u)cir[V→N][N][Abl_Mod][3SgPoss][SgPosd]	nanlucianek
+na[Ignorative][Loc]-ete[N→V]-@:(u)ciite[V→V][V][Trns][Ind][A_1Sg][P_3Sg]	nanluciitaqa
+na[Ignorative][Loc]-ete[N→V]-@:(u)cir[V→N][N][Abs][3SgPoss][SgPosd]	nanlucia
+na[Ignorative][Loc]-ete[N→V]-@:(u)cir[V→N][N][Abl_Mod][3SgPoss][SgPosd]	nanlucianek
 atur-@:(u)ciite[V→V][V][Trns][Ind][A_2Sg][P_3Sg]	atuuciitan
 atur-@:(u)cir[V→N][N][Abs][3SgPoss][SgPosd]	atuucia
 atur-@:(u)cir[V→N][N][Abl_Mod][3SgPoss][SgPosd]	atuucianek

@@ -32,7 +32,7 @@ cetamar[Num][N][Abs][3PlPoss][SgPosd]	cetamiit
 tallimar[Num][N][Abs][3PlPoss][SgPosd]	tallimiit
 arvinleg[Num][N][Abs][3PlPoss][SgPosd]	arvinlegat
 ila[N][Abs][3PlPoss][SgPosd]	iliit
-nalir[N][Abs][3PlPoss][SgPosd]	naliat
+nalir[Ignorative][N][Abs][3PlPoss][SgPosd]	naliat
 ange-–ner[V→N][N][Abs][3PlPoss][SgPosd]	angenrat
 ciu[Positional]-–qlir*[N→N][N][Abs][Unpd][Sg]	ciuqliq
 tunge[Positional]-–qlir*[N→N][N][Abs][Unpd][Sg]	tungliq
@@ -47,11 +47,11 @@ ataucir[Num]-–rqu[N→N]-:~(ng)u[N→V]-–nrite[V→V]-–lria/@ngur*[V→N][
 malrur[Num]-–rqu[N→N][N][Abl_Mod][Unpd][Du]	malrurqugnek
 pingayur[Num]-–rqu[N→N][N][Abl_Mod][Unpd][Pl]	pingayurqunek
 amller-–rqu[N→N][N][Abl_Mod][Unpd][Pl]	amllerqunek
-qavcir-–rqu[N→N][N][Abl_Mod][Unpd][Pl]	qavcirqunek
+qavcir[Ignorative]-–rqu[N→N][N][Abl_Mod][Unpd][Pl]	qavcirqunek
 malrur[Num][N][Equ][Unpd][Du]	malrugtun
-qavcir[N][Ter][Unpd][Pl]	qavcinun
-qavcir[N][Abl_Mod][Unpd][Pl]	qavcinek
-qavcir-–klaag[N→V][V][Intr][Intrg][S_3Sg]	qavciklaagta
+qavcir[Ignorative][N][Ter][Unpd][Pl]	qavcinun
+qavcir[Ignorative][N][Abl_Mod][Unpd][Pl]	qavcinek
+qavcir[Ignorative]-–klaag[N→V][V][Intr][Intrg][S_3Sg]	qavciklaagta
 wataime-+(a)r[N→V][V][Intr][Intrg][S_3Sg]	wataimarta
 pingayur[Num][N][Ter][Unpd][Pl]	pingayunun
 pingayur[Num]-–klaag[N→V][V][Intr][Ind][S_3Sg]	pingayuklaagtuq
