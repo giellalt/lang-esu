@@ -1,0 +1,176 @@
+! LANGUAGE: "esu"
+! AUTHOR: "Lonny Strunk"
+
+define Bndry ["[e]"|"(a)"|"(aa)"|"(ar)"|"(ar*)"|"(ur)"|"(e)"|"(g)"|"(ng)"|"(r)"|"(s)"|"(t)"|"(u)"|"(g/t)"|"(r/l)"|"(u/i)"|"+"|"–"|"~"|"%"|":"|"'"|"."|"@"|"@¹"|"@²"|"@³"|"@⁴"|"@⁵"|"@ˡ"|"@ˁ"|"@ʸ"|"*"|"°"|"^"];
+
+
+define Stop       [ p | t | c | k | q | k̲ | q̲ ];
+define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | g̲ | r̲ | ġ ];
+define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr | g̲g̲ | r̲r̲ ];
+define VoiceNasal [ m | n | ng ];
+define VlessNasal [ m̄ | n̄ | n͞g ];
+
+define VoiceCon   [ VoiceFric | VoiceNasal ];
+define VlessCon   [ VlessFric | VlessNasal | Stop ];
+
+define Fric       [ VlessFric  | VoiceFric  ];
+define Nasal      [ VlessNasal | VoiceNasal ];
+
+define Con        [ Stop | Fric | Nasal | w | y ];
+
+define FVow       [ a | i | u | ạ | ụ ];
+define Vow        [ e | FVow ];
+
+define Lowercase "A"   -> a,
+                 "C"   -> c,
+                 "E"   -> e,
+                 "G"   -> g,
+                 "I"   -> i,
+                 "K"   -> k,
+                 "L"   -> l,
+                 "M"   -> m,
+                 "N"   -> n,
+                 "P"   -> p,
+                 "Q"   -> q,
+                 "R"   -> r,
+                 "S"   -> s,
+                 "T"   -> t,
+                 "U"   -> u,
+                 "V"   -> v,
+                 "W"   -> w,
+                 "Y"   -> y,
+                 "M̄"   -> m̄,
+                 "N̄"   -> n̄,
+                 "Vv"  -> vv,
+                 "Ll"  -> ll,
+                 "Ss"  -> ss,
+                 "Gg"  -> gg,
+                 "Rr"  -> rr,
+                 "Ng"  -> ng,
+                 "N͞g"  -> n͞g,
+                 "U͡g"  -> u͡g,
+                 "U͡r"  -> u͡r,
+                 "U͡gg" -> u͡gg,
+                 "U͡rr" -> u͡rr;
+
+define arExpansion "(ar)"  -> "ạ" r       .o.
+                   "(ar*)" -> "ạ" r "*"    ; 
+
+define MultipleForms t e "–r̲pag/@²vag" (->) l "." v a g            || Vow _                   .o.
+                     "–r̲pag/@²vag"  ->  "–" r̲ p a g                                           .o.
+
+                     "–r̲(ur)lur" -> "+" ụ r l u r      || g _                                 .o. ! acag -> acagurluq
+                     "–r̲(ur)lur" -> "–" "r̲" ụ r l u r                                         .o. ! qayar/angyar
+
+                     "+a/+aar" -> "+" a a r                   || t e ("°") _                  .o.
+                     "+a/+aar" -> "+" a                                                       .o.
+
+                     "@⁵+cete/.vkar" -> "@⁵" "+" c e t e      || Con _                        .o.
+                     "@⁵+cete/.vkar" (->) "@⁵" "+" c e t e    || t e ("°") _                  .o.
+                     "@⁵+cete/.vkar" -> "." v k a r                                           .o.
+
+                     "+ciqe/@⁵ciiqe" -> "@⁵" c i i q e        || t e ("°") _                  .o. 
+                     "+ciqe/@⁵ciiqe" -> "+" c i q e                                           .o. 
+
+                     t e ("°") "@+–'(g)ar(ar)te" -> g "+" a r "ạ" r t e    || Vow _           .o. ! Vte -> Vg
+                     t e ("°") "@+–'(g)ar(ar)te" -> "+" a r "ạ" r t e      || Con _           .o. ! Cte -> C
+                     t "ʼ" e "@+–'(g)ar(ar)te" -> s "ʼ" "+" a r "ạ" r t e                     .o. ! tʼe -> sʼ
+                     "@+–'(g)ar(ar)te" -> "–" a r "ạ" r t e                || r _             .o. ! r -> -
+                     "@+–'(g)ar(ar)te" -> "+" a r "ạ" r t e                || g _             .o. ! g -> +
+                     "@+–'(g)ar(ar)te" -> "+" "'" "(g)" a r "ạ" r t e                         .o. ! Vow -> +'(g)
+
+                     i t e ("°") "@+(r/l)i" -> [i|e] ll i   || k _                            .o. ! kite -> k[e|i]lli
+                     t ("ʼ") e ("°") "@+(r/l)i" -> l i                                        .o. ! te -> li
+                     e "@+(r/l)i" -> l i                                                      .o. ! e -> li
+                     "@+(r/l)i" -> r i                      || FVow _                         .o. ! FV -> ri
+                     "@+(r/l)i" -> i                                                          .o. ! r/g -> i
+
+                     t ("ʼ") e ("°") "@nga" -> s "+" ng a  || FVow _                          .o. ! elite -> elisnga
+                     l t ("ʼ") e ("°") "@nga" -> ll [[e s]| i] "+" ng a                       .o. ! ulte -> ullesnga | ullinga
+                     s t ("ʼ") e ("°") "@nga" -> ss [[e s]| i] "+" ng a                       .o. ! caste -> cassesnga | cassinga
+                     t ("ʼ") e ("°") "@nga" -> i "+" ng a  || .#. (Con) Vow Con _             .o. ! sagte -> saginga
+                     t ("ʼ") e ("°") "@nga" -> "+" ng a                                       .o. ! kitugte -> kitugnga (|| Con _ )
+                     "@nga" -> "+" ng a                                                       .o. ! TODO: How to disallow not te bases?
+
+                     "@³%:(u)cir/@⁵cir" -> "@⁵" c i r || c e t e ("°") _                      .o. ! kiircete -> kiircecia
+                     "@³%:(u)cir/@⁵cir" -> "@³" ":" "(u)" c i r                               .o. ! ayuqe -> ayuqucia
+
+                     t e "°" "@%:~(ng)ạ" -> l "+" ạ                                           .o. ! te° -> l
+                     t "ʼ" e "@%:~(ng)ạ" -> c "ʼ" ạ                                           .o. ! tʼe -> cʼ
+                     t e "@%:~(ng)ạ" -> c ạ                                                   .o. ! te -> c
+                     ng e "@%:~(ng)ạ" (->) ng ạ         || \.#. Con Vow (Con) Bndry* _        .o. ! ngenge -> nge
+                     "@%:~(ng)ạ" -> ":" "~" "(ng)" ạ                                          .o.
+
+                     t e "°" -> l e || _ "@–ngr(ar)"                                          .o. ! te° -> l
+                     "@–ngr(ar)" -> "–" ng r a r || _ ["–"|":"]                               .o. ! not ar dropping
+                     "@–ngr(ar)" -> "–" ng e r                                                .o. ! ar dropping with +
+
+                     "@ˡ~+lu/@⁵na" -> "@⁵" n a                || "°" _                        .o.
+                     "@ˡ~+lu/@⁵na" -> "@ˡ" "~" "+" l u                                        .o.
+                     "[STE_2Sg]" -> k                         || n a _                        .o.
+                     "[STE_2Sg]" -> t e n                                                     .o.
+                     i (->) u                                 || \[i] _ t e "°" "@⁵" n a      .o. ! (e.g nereksainani (->) nereksaunani)
+
+                     "–lria/@⁴+ngur*" (->) "@⁴" "+" ng u r "*"  || t e "°" _                                          .o. ! te° (->) @ngur*
+                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i i || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _ "%" ":" "(e)" .o. ! llrii/lrii
+                     "–lria/@⁴+ngur*" -> "–" l r i i || _ "%" ":" "(e)"                                               .o. ! lrii
+                     "–lria/@⁴+ngur*" -> "–" [l|ll] r i a || [Stop|VlessCon] ("ʼ") e ("°") ([r|rr|g]) _               .o. ! llria/lria
+                     "–lria/@⁴+ngur*" -> "–" l r i a                                                                  .o. ! lria
+
+                     "[Opt_PRS_S_2Sg]" -> "~" "(g)" i         || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_S_2Sg]" -> "+" n               || t e  _                           .o.
+                     t e "°" "[Opt_PRS_S_2Sg]" -> l u                                             .o.
+                     "[Opt_PRS_S_2Sg]" -> ":" a               || Con  _                           .o.
+                     "[Opt_PRS_S_2Sg]" -> 0                                                       .o.
+                     "[Opt_PRS_S_2PlDu]" (->) "~" "(g)" i     || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_S_2PlDu]" -> "@⁵" "+"                                              .o.
+                     "[Opt_PRS_A_2Sg]" (->) "~" "(g)" i       || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     "[Opt_PRS_A_2Sg]" -> "@⁴" "+"                                                .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "~" "(g)" i u || [ Vow Vow | [ Con - t ] e ] _    .o.
+                     t e "[Opt_PRS_A_2Sg_P_3Sg]" -> s g u                                         .o.
+                     t e "°" "[Opt_PRS_A_2Sg_P_3Sg]" -> l g u                                     .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "–" gg u      || g _                              .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> "–" rr u      || r _                              .o.
+                     "[Opt_PRS_A_2Sg_P_3Sg]" -> u                                                 .o.
+                     "[Opt_PRS_A_2Sg_P_1Sg]" (->) "~" "(g)" i a || [ Vow Vow | [ Con - t ] e ] _  .o.
+                     "[Opt_PRS_A_2Sg_P_1Sg]" -> "@⁴" "+" ng a                                     .o.
+
+                     "@⁵+p/~v" -> "@⁵" "+" p                  || [ t e ("°") | Con ] _        .o.
+                     "@⁵+p/~v" -> "~" v                                                       .o.
+                     "+p/.v" -> "+" p e                       || Con _ Con                    .o.
+                     "+p/.v" -> "+" p                         || Con _ Vow                    .o.
+                     "+p/.v" -> "." v                                                         .o.
+                     "+pegun/.vkun" -> "+" p e g u n          || Con _                        .o.
+                     "+pegun/.vkun" -> "." v k u n                                            .o.
+                     "+t/.s" -> "+" t                         || Con _                        .o.
+                     "+t/.s" -> "." s                                                         .o.
+                     "+c/.s" -> "+" c                         || Con _                        .o.
+                     "+c/.s" -> "." s                                                         .o.
+                     "+c/.ss" -> "." ss                       || Vow _                        .o.
+                     "+c/.ss" -> "+" c                                                        .o.          
+                     "(ʼa)" -> ʼ a                            || \.#. Con a _                 .o.
+                     "(ʼa)" -> 0                                                               ;
+
+
+define AutomaticDevoicing v -> vv,
+                          l -> ll,
+                          s -> ss,
+                          g -> gg,
+                          g̲ -> g̲g̲,
+                          r -> rr,
+                          r̲ -> r̲r̲,
+                          u͡g -> u͡gg,
+                          u͡r -> u͡rr || [ Stop | VlessFric ] _  ,
+                                       _ [ Stop ]                      .o.
+                          m -> m̄,
+                          n -> n̄,
+                          ng -> n͞g || [ Stop | VlessFric ] _   ;
+
+! Unnecessary devoicing                           
+!                          r -> rr  || _ .#.                            .o.
+!                          s -> ss  || .#. _                             ;
+
+regex Lowercase          .o.
+      arExpansion        .o.
+      MultipleForms      .o.  
+      AutomaticDevoicing  ;
