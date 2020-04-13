@@ -1,5 +1,5 @@
 # normalizeText.py
-# python3 normalizeText.py textFile
+# python3 script/normalizeText.py textFile.txt -o textFile.out.txt
 
 # Normalize Yup'ik Text
 
@@ -22,7 +22,7 @@ from collections import Counter
 
 parser = argparse.ArgumentParser()
 parser.add_argument("textFiles", nargs='+', help="text filenames - 1 or more files")
-parser.add_argument("-o", "--output", default="normalizeText.out.txt", help="normalized types and tokens per count from input file(s)")
+parser.add_argument("-o", "--output", default="normalizedText.out.txt", help="normalized types and tokens per count from input file(s)")
 args = parser.parse_args()
 
 

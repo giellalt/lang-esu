@@ -1,5 +1,11 @@
 # runTest.py
-# python3 runTest.py -g esu.gen.hfst -a esu.ana.hfst esu.pairs.gold/*
+# python3 script/runTest.py -g esu.gen.hfstol -a esu.ana.hfstol test/esu.pairs.gold/*
+
+# Test Result Code:
+#   0 = no output
+#   1 = multiple outputs, none correct
+#   2 = just one answer and correct
+#   3 = multiple outputs, including correct
 
 import sys
 import os
@@ -12,7 +18,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-g","--generator",nargs="?", help="hfst generator filename to run tests with")
 parser.add_argument("-a","--analyzer",nargs="?", help="hfst analyzer filename to run tests with")
 parser.add_argument("testFiles", nargs='+', help="test filename(s)")
-parser.add_argument("-d", "--resultDirectory", default="esu.pairs.test", help="directory for stored test results")
+parser.add_argument("-d", "--resultDirectory", default="test/esu.pairs.testResults", help="directory for stored test results")
 group1 = parser.add_mutually_exclusive_group()
 group1.add_argument("-v", "--verbose", action="store_true")
 group1.add_argument("-q", "--quiet", action="store_true")
@@ -38,6 +44,7 @@ def runTests(genAna, hfstName):
         currentTests = runTest(genAna, hfstName, testFilePath)
 
         filename, file_extension = os.path.splitext(testFile)
+        file_extension = file_extension[1:]  # remove period in txt
         testResultFile = ".".join([filename,genAna,file_extension])
 
         if os.path.exists(os.path.join(args.resultDirectory, testResultFile)):
@@ -59,7 +66,7 @@ def runTests(genAna, hfstName):
 
     print("\n########## {}: {} TEST SUMMARY ##########".format(genAna, len(args.testFiles)))
     total = sum(testsCounter.values())
-    print("Total Passed: {}/{}".format(testsCounter[1]+testsCounter[3], total))
+    print("Total Passed: {}/{}".format(testsCounter[2]+testsCounter[3], total))
     print("0 - {}".format(testsCounter[0]))
     print("1 - {}".format(testsCounter[1]))
     print("2 - {}".format(testsCounter[2]))
@@ -95,13 +102,14 @@ def runTest(genAna, hfstName, testFile):
         else: # genAna == "ana"
             inputstring, outputstring = surface, underlying
 
-        completedProcess = subprocess.run(["echo \"{}\" | hfst-lookup {}".format(inputstring.replace("@:","@%:"), hfstName)], shell=True, capture_output=True)
-        processResults = [line.decode("utf-8") for line in completedProcess.stdout.split()][1::3]
+        completedProcess = subprocess.run(["echo \"{}\" | hfst-optimized-lookup {}".format(inputstring.replace("@:","@%:"), hfstName)], shell=True, capture_output=True)
+        processResults = [line.decode("utf-8") for line in completedProcess.stdout.split()][1::2]
         processResults = [parse.replace("@%:","@:") for parse in processResults]
 
         testResultCode = -1
-        if "+?" in processResults[0]:
-            testResultCode = 0              # 0 = no output
+        if inputstring == processResults[0]: # not parseable in input has output 'error error +?' so no parse word is duplicated
+            testResultCode = 0               # 0 = no output
+            processResults = []              # remove duplicated input 
             if not args.quiet:
                 print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
         elif outputstring in processResults:
