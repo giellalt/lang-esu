@@ -38,9 +38,9 @@ Usage
 
 In the unix terminal, run this command to use the HFST lookup program:
 
-	echo "wordToInput" | hfst-optimized-lookup -q hfstName
+	echo "wordToInput" | hfst-optimized-lookup hfstName
 
-where `wordToInput` is the Yup'ik word to analyze/generate and the `hfstName` is either: `esu.gen.hfstol | esu.ana.hfstol | esu.seg.hfstol`.
+where `wordToInput` is the Yup'ik word to analyze/generate and the `hfstName` is either: `esu.ana.hfstol | esu.gen.hfstol | esu.seg.hfstol`.
 
 License
 -------
