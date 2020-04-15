@@ -15,7 +15,7 @@ FST Stack
 
 Installation
 ------------
-1. Install dependency: [HFST tools](https://hfst.github.io). Tested with `hfst 3.15.2`
+1. Install dependency: [HFST tools](https://hfst.github.io). Tested with `hfst 3.15.2`. <br> Note: MacOS users may have an easier time installing HFST with this [Homebrew tap](https://github.com/UAlbertaALTLab/homebrew-hfst).
 
 2. Run `make` to run the Makefile and compile the FST stack
 
