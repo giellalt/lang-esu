@@ -23,10 +23,8 @@
 
 !! NOTE !!!
 ! 1. Morpheme Operators are indicated by ">"
-! 2. Vowels may be hatted or stressed (i.e. a -> [â|á])
+! 2. Vowels may be hatted or stressed (i.e. a -> [â|á])
 
-! TODO:
-!   - 
 
 define Stop       [ p | t | c | k | q ];
 define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | ġ ];
@@ -43,12 +41,12 @@ define Nasal      [ VlessNasal | VoiceNasal ];
 define Con        [ Stop | Fric | Nasal | w | y ];
 
 define FVow       [ a | i | u | ạ | ụ ];
-define FVowStress [ á | í | ú | ạ́ | ụ́ ];
-define FVowHatted [ â | î | û | ậ | ụ̂ ];
+define FVowStress [ á | í | ú | ạ́ | ụ́ ];
+define FVowHatted [ â | î | û | ậ | ụ̂ ];
 define AllFVow    [ FVow | FVowStress | FVowHatted ];
 define Vow        [ FVow | e ];
-define VowStress  [ FVowStress | é ];
-define VowHatted  [ FVowHatted | ê ];
+define VowStress  [ FVowStress | é ];
+define VowHatted  [ FVowHatted | ê ];
 define AllVow     [ Vow | VowStress | VowHatted ];
 
 define AutomaticDevoicing v -> vv,
@@ -67,25 +65,25 @@ define AutomaticDevoicing v -> vv,
 !                          r -> rr  || _ ">"* .#.                            .o.
 !                          s -> ss  || .#. ">"* _                             ;
 
-define WeakInitialE [..] -> e   || .#. ["[e]"|"[é]"] Con _ ">"* Con                      .o. ! [é]nmek -> [e]nemek
-                       ê -> e   || .#. ["[e]"|"[é]"] Con _ ">"* Con                      .o. ! [e]nêli -> enel'iuq
-                    [..] -> "ʼ" || .#. ["[e]"|"[é]"] Con AllVow ">"+ Con _ ">"* AllVow   .o. ! [e]nemek -> nem'ek
-                    [..] -> "ʼ" || .#. ["[e]"|"[é]"] Con AllVow Con _ ">"+ AllVow        .o. ! [e]mer -> mer'et
-                    ["[e]"|"[é]"] -> 0  || .#. _ Con AllVow ">"* Con                      ;  ! drop weak e ; not [e]nii
+define WeakInitialE [..] -> e   || .#. ["[e]"|"[é]"] Con _ ">"* Con                      .o. ! [é]nmek -> [e]nemek
+                       ê -> e   || .#. ["[e]"|"[é]"] Con _ ">"* Con                      .o. ! [e]nêli -> enel'iuq
+                    [..] -> "ʼ" || .#. ["[e]"|"[é]"] Con AllVow ">"+ Con _ ">"* AllVow   .o. ! [e]nemek -> nem'ek
+                    [..] -> "ʼ" || .#. ["[e]"|"[é]"] Con AllVow Con _ ">"+ AllVow        .o. ! [e]mer -> mer'et
+                    ["[e]"|"[é]"] -> 0  || .#. _ Con AllVow ">"* Con                      ;  ! drop weak e ; not [e]nii
 
 define urDeletion [ụ|ụ́] r (->) u r                           || g ">" _ l                .o. ! acagurluq (HBC form)
                   [ụ|ụ́] r -> e ("ʼ") "u͡r"                    || g ">" _ l                .o. ! acageu͡rluq/acageʼu͡rluq
                   r [ụ|ụ́] r (->) r u                         || Vow Vow ">"+ _ l         .o. ! uiruluq (HBC form)
                   r [ụ|ụ́] r -> "u͡r"                          || Vow Vow ">"+ _ l         .o. ! uiu͡rluq
-                  ê ">"+ r [ụ|ụ́] r (->)  ">" r u             || _ l                      .o. ! tumruluq (HBC form)
-                  ê ">"+ r [ụ|ụ́] r -> e ">" ("ʼ") "u͡r"       || _ l                      .o. ! tumeu͡rluq/tumeʼu͡rluq
-                  [e|é] ">"+ r [ụ|ụ́] r (->) ">" u "ʼ" r      || _ l                      .o. ! qaspuʼrluq (HBC form)
-                  [e|é] ">"+ r [ụ|ụ́] r (->) e ">" ("ʼ") "u͡r" || _ l                      .o. ! qaspeu͡rluq/qaspeʼu͡rluq
+                  ê ">"+ r [ụ|ụ́] r (->)  ">" r u             || _ l                      .o. ! tumruluq (HBC form)
+                  ê ">"+ r [ụ|ụ́] r -> e ">" ("ʼ") "u͡r"       || _ l                      .o. ! tumeu͡rluq/tumeʼu͡rluq
+                  [e|é] ">"+ r [ụ|ụ́] r (->) ">" u "ʼ" r      || _ l                      .o. ! qaspuʼrluq (HBC form)
+                  [e|é] ">"+ r [ụ|ụ́] r (->) e ">" ("ʼ") "u͡r" || _ l                      .o. ! qaspeu͡rluq/qaspeʼu͡rluq
                   r [ụ|ụ́] r (->) r u                         || VowHatted ">"+ _ l       .o. ! nunaruluq (HBC form)
                   r [ụ|ụ́] r -> "ʼ" u r                       || VowHatted ">"+ _ l       .o. ! nunaʼurluq
                   r [ụ|ụ́] r -> ("ʼ") "u͡r"                    || [Vow|VowStress] ">"+ _ l  ;  ! angyau͡rluq/angyaʼu͡rluq
 
-define DropHattedE ê -> 0 .o.
+define DropHattedE ê -> 0 .o.
                 [..] -> e || p _ ">"* p , t _ ">"* t , c _ ">"* c , k _ ">"* k , q _ ">"* q , 
                              v _ ">"* v , l _ ">"* l , s _ ">"* s , g _ ">"* g , r _ ">"* r , u͡g _ ">"* u͡g , u͡r _ ">"* u͡r ,
                              vv _ ">"* vv , ll _ ">"* ll , ss _ ">"* ss, gg _ ">"* gg , rr _ ">"* rr , u͡gg _ ">"* u͡gg , u͡rr _ ">"* u͡rr ,
@@ -101,35 +99,35 @@ define TripleConsonant  rr   ->  0 || _ q ">"* Con                .o. ! rqe- bas
 
 define TripleVowel  AllFVow -> 0 || [Con|.#.] ">"* AllFVow ">"* _ ">"* AllFVow ">"* [Con|.#.] ;
 
-define ConnectiveMood  ạ -> 0               || _ ">" [a|á] \.#.                          .o. ! caliạan -> calian 
-                       ụ -> 0               || _ ">" [a|á] \.#.                          .o. ! calikụan -> calikan 
-                       [e|é] -> e ("ʼ")     || [VowStress|VowHatted|Con] ">" ng _ [r|rr] .o. ! qavangrarpet -> qavange(ʼ)rpet
-                       [e|é] -> "ʼ" e ("ʼ") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvangʼe(ʼ)rma
+define ConnectiveMood  ạ -> 0               || _ ">" [a|á] \.#.                          .o. ! caliạan -> calian 
+                       ụ -> 0               || _ ">" [a|á] \.#.                          .o. ! calikụan -> calikan 
+                       [e|é] -> e ("ʼ")     || [VowStress|VowHatted|Con] ">" ng _ [r|rr] .o. ! qavangrarpet -> qavange(ʼ)rpet
+                       [e|é] -> "ʼ" e ("ʼ") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvangʼe(ʼ)rma
 
-define WordAdjustments ġ -> 0       || Vow _                           .o. ! túntuvâyaġaq -> túntuvâyaaq 
-                       t (->) c     || \.#. _ [e|é] ">"* t ,               ! angutet -> angucet
-                                       \.#. _ [e|é] ">"* ss ">"* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
-                       t [e|é] ">" rr (->) ">" q || _ Vow              .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
-                       â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q         .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
-                       [a|á] r [a|á] (->) a   || ">" [q|k] _ q         .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
-                       [a|â|á] -> e || ">" q _ ">"* [r|rr]              ;  ! apteqarru -> apteqerru for -qar- postbase
+define WordAdjustments ġ -> 0       || Vow _                           .o. ! túntuvâyaġaq -> túntuvâyaaq 
+                       t (->) c     || \.#. _ [e|é] ">"* t ,               ! angutet -> angucet
+                                       \.#. _ [e|é] ">"* ss ">"* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
+                       t [e|é] ">" rr (->) ">" q || _ Vow              .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
+                       â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q         .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
+                       [a|á] r [a|á] (->) a   || ">" [q|k] _ q         .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
+                       [a|â|á] -> e || ">" q _ ">"* [r|rr]              ;  ! apteqarru -> apteqerru for -qar- postbase
 
-define arDeletion  "â" -> a "ʼ" a,
-                   "î" -> i "ʼ" i,
-                   "û" -> u "ʼ" u  || _ ">"* Con ">"* "ạ" q ">"* .#.                    .o. ! V̂r(ar)# -> V'Vr
+define arDeletion  "â" -> a "ʼ" a,
+                   "î" -> i "ʼ" i,
+                   "û" -> u "ʼ" u  || _ ">"* Con ">"* "ạ" q ">"* .#.                    .o. ! V̂r(ar)# -> V'Vr
                    "ạ" q -> 0 || _ ">"* .#.                                             .o. ! wordFinal
                    ["ạ"|"ạ́"] [r|rr] -> 0 || Vow ">"* VowStress ">"* Con ">"* _ ">"* Con .o. ! VV́r(ar) -> VV́r
                    "ạ" [r|rr] -> 0 || Con ">"* VowStress ">"* Con ">"* _ ">"* Con       .o. ! CV́r(ar) -> CV́r
-                   "â" -> a "ʼ" á,
-                   "î" -> i "ʼ" í,
-                   "û" -> u "ʼ" ú  || _ ">"* Con ">"* ["ạ"|"ạ́"] [r|rr] ">"* Con         .o. ! V̂r(ar) -> V'Vr
+                   "â" -> a "ʼ" á,
+                   "î" -> i "ʼ" í,
+                   "û" -> u "ʼ" ú  || _ ">"* Con ">"* ["ạ"|"ạ́"] [r|rr] ">"* Con         .o. ! V̂r(ar) -> V'Vr
                    ["ạ"|"ạ́"] [r|rr] -> 0 || Vow "ʼ" VowStress ">"* Con ">"* _ ">"* Con  .o. ! V̂r(ar) -> V'Vr
-                   a -> á "ʼ",
-                   e -> é "ʼ",
-                   i -> í "ʼ",
-                   u -> ú "ʼ" || _ ">"* Con ">"* "ạ́" [r|rr] ">"* Con                     .o. ! Vr(ár) -> V́(ʼ)r
-                   "ạ́" [r|rr] -> 0 || VowStress "ʼ" ">"* Con ">"* _ ">"* Con             .o. ! Vr(ár) -> V́(ʼ)r
-                   "ʼ" (->) 0 || VowStress _ ">"* Con                                     ;  ! Vr(ár) -> V́(ʼ)r
+                   a -> á "ʼ",
+                   e -> é "ʼ",
+                   i -> í "ʼ",
+                   u -> ú "ʼ" || _ ">"* Con ">"* "ạ́" [r|rr] ">"* Con                     .o. ! Vr(ár) -> V́(ʼ)r
+                   "ạ́" [r|rr] -> 0 || VowStress "ʼ" ">"* Con ">"* _ ">"* Con             .o. ! Vr(ár) -> V́(ʼ)r
+                   "ʼ" (->) 0 || VowStress _ ">"* Con                                     ;  ! Vr(ár) -> V́(ʼ)r
 
 
 define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* AllVow ">"* Con ">"* _ ">"* AllVow ">"* AllVow , ! [#|C]VCʼVV
@@ -150,11 +148,11 @@ define ToOrthography  vv -> v,
                       n͞g -> ng || [ Stop | VlessFric ] ">"* _           .o.
                       rr -> r  || _ ">"* .#.                            .o.
                       ss -> s  || .#. ">"*  _                           .o.
-                      [â|á|ạ|ậ|ạ́] -> a                                  .o.
-                      [ê|é] -> e                                        .o.
-                      [î|í] -> i                                        .o.
-                      [û|ú|ụ|ụ́|ụ̂] -> u                                  .o.
-                      ["[e]"|"[é]"|"[ê]"] -> e                          .o.
+                      [â|á|ạ|ậ|ạ́] -> a                                  .o.
+                      [ê|é] -> e                                        .o.
+                      [î|í] -> i                                        .o.
+                      [û|ú|ụ|ụ́|ụ̂] -> u                                  .o.
+                      ["[e]"|"[é]"|"[ê]"] -> e                          .o.
                       ġ -> g                                             ;
 
 define RemoveLigature m̄ (->) m     .o.
