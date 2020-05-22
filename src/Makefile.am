@@ -63,6 +63,21 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
+#generator-raw-gt-desc.%: generator-raw-gt-desc.tmp.% \
+#						 fst/esu.stress.compose.% \
+#						 fst/esu.twol.compose.% \
+#						 fst/esu.ana.compose.%
+#	$(AM_V_COMPOSE)$(HFST_COMPOSE_INTERSECT) \
+#						 -1 $< -2 fst/esu.stress.compose.$* \
+#		| $(HFST_COMPOSE) -1 - -2 fst/esu.twol.compose.$* \
+#		| $(HFST_COMPOSE) -2 - -1 fst/esu.ana.compose.$* \
+#		| $(HFST_MINIMIZE) > $@
+#
+#morpher-gt-desc.%: morpher-gt-desc.tmp.% fst/esu.seg.compose.%
+#	$(AM_V_COMPOSE)$(HFST_COMPOSE_INTERSECT) -1 $< \
+#		-2 fst/esu.seg.compose.$* \
+#		-o esu.seg.hfst
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################
