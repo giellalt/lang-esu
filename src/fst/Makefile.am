@@ -21,21 +21,21 @@ HFST_LEXC_LOCAL_FLAGS=
 ####### Morphology source file defs: ########
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
-GT_LEXC_ROOT=$(srcdir)/root.lexc
+GT_LEXC_ROOT=$(srcdir)/orig/src/esu.lexc
 
 # Set this to the names of all regular lexc source files:
-GT_LEXC_SRCS_L1_L2=\
-			 affixes/adjectives.lexc  \
-			 affixes/nouns.lexc       \
-			 affixes/propernouns.lexc \
-			 affixes/symbols.lexc     \
-			 affixes/verbs.lexc       \
-			 stems/adjectives.lexc    \
-			 stems/nouns.lexc         \
-			 stems/numerals.lexc      \
-			 stems/prefixes.lexc      \
-			 stems/pronouns.lexc      \
-			 stems/verbs.lexc
+GT_LEXC_SRCS_L1_L2=
+#			 affixes/adjectives.lexc  \
+#			 affixes/nouns.lexc       \
+#			 affixes/propernouns.lexc \
+#			 affixes/symbols.lexc     \
+#			 affixes/verbs.lexc       \
+#			 stems/adjectives.lexc    \
+#			 stems/nouns.lexc         \
+#			 stems/numerals.lexc      \
+#			 stems/prefixes.lexc      \
+#			 stems/pronouns.lexc      \
+#			 stems/verbs.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -77,6 +77,14 @@ GT_DISTRO_SRCS=
 ### gle/ for an example of how this is used.
 
 GIELLA_LOCAL_TARGETS=
+
+lexicon.hfst: lexicon.tmp.hfst lexicon.cleanup.hfst
+	hfst-compose -1 $< -2 lexicon.cleanup.hfst -o $@
+
+# This is the lexicon xfst file, which handles cases lexc isn't suited for
+# 	e.g. allomorphs for [Opt_PRS_2Sg]
+lexicon.cleanup.hfst: orig/src/esu.lexc.xfst
+	hfst-xfst -p -e "source $<" -e "save stack $@" -E "hyvästi" #"exit"
 
 ### END: Local processing: ###
 
