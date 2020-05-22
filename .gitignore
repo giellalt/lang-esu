@@ -32,3 +32,4 @@ Makefile
 /tools/analysers/*.zcheck
 /tools/analysers/modes
 /tools/grammarcheckers/pipespec.xml
+.DS_Store
