@@ -1,8 +1,8 @@
-template = "https://github.com/giellalt/template-lang-und"
-rev_id = 4
-template_sha = "7c8073e7845ffbd07390fa5641e5cd12abacf5e1"
+template = ""
+rev_id = 5
+template_sha = "1c68715768502701b7f9068c45607a55941d4ab3"
 
 [replacements]
-__UND2C__ = ""
-__UNDEFINED__ = ""
-__UND__ = ""
+__UND2C__ = "esu"
+__UNDEFINED__ = "Central Yupik"
+__UND__ = "esu"
