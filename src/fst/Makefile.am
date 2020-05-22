@@ -79,12 +79,12 @@ GT_DISTRO_SRCS=
 GIELLA_LOCAL_TARGETS=
 
 lexicon.hfst: lexicon.tmp.hfst lexicon.cleanup.hfst
-	hfst-compose -1 $< -2 lexicon.cleanup.hfst -o $@
+	$(AM_V_COMPOSE)$(HFST_COMPOSE) -1 $< -2 lexicon.cleanup.hfst -o $@
 
 # This is the lexicon xfst file, which handles cases lexc isn't suited for
 # 	e.g. allomorphs for [Opt_PRS_2Sg]
 lexicon.cleanup.hfst: orig/src/esu.lexc.xfst
-	hfst-xfst -p -e "source $<" -e "save stack $@" -E "hyvästi" #"exit"
+	$(AM_V_HXFST)$(HFST_XFST) -p -e "source $<" -e "save stack $@" -E "hyvästi" #"exit"
 
 ### END: Local processing: ###
 

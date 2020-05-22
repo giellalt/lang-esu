@@ -21,6 +21,6 @@
 #! @param GT_TWOLC_SUPPLEMENTS optional, other sources to distribute and
 #! 		  compile for other things
 GT_PHONOLOGY_MAIN=orig/src/esu.twol
-GT_PHONOLOGY_SUPPLEMENTS=src/esu.stress.twol orig/src/esu.twol.xfst
+GT_PHONOLOGY_SUPPLEMENTS=orig/src/esu.stress.twolc orig/src/esu.twol.xfst
 
 # vim: set ft=automake:
