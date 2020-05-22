@@ -20,7 +20,25 @@
 #! @param GT_TWOLC_MAIN required, the source of phonology
 #! @param GT_TWOLC_SUPPLEMENTS optional, other sources to distribute and
 #! 		  compile for other things
-GT_PHONOLOGY_MAIN=orig/src/esu.twol
-GT_PHONOLOGY_SUPPLEMENTS=orig/src/esu.stress.twolc orig/src/esu.twol.xfst
+GT_PHONOLOGY_MAIN=phonology.twolc
+GT_PHONOLOGY_SUPPLEMENTS=esu.stress.twolc \
+                         esu.twol.xfscript \
+                         esu.seg.twolc \
+                         esu.ana.twolc
+
+phonology.twolc: $(srcdir)/orig/src/esu.twol
+	$(AM_V_CP)cp -f $< $@
+
+esu.stress.twolc: $(srcdir)/orig/src/esu.stress.twol
+	$(AM_V_CP)cp -f $< $@
+
+esu.twol.xfscript: $(srcdir)/orig/src/esu.twol.xfst
+	$(AM_V_CP)cp -f $< $@
+
+esu.seg.twolc: $(srcdir)/orig/src/esu.seg.twol
+	$(AM_V_CP)cp -f $< $@
+
+esu.ana.twolc: $(srcdir)/orig/src/esu.ana.twol
+	$(AM_V_CP)cp -f $< $@
 
 # vim: set ft=automake:
