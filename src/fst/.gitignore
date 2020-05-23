@@ -1,1 +1,3 @@
 # Language specific ignore patterns:
+phonology.twolc
+esu.*
