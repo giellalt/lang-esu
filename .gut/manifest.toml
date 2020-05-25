@@ -1,7 +1,7 @@
 [package]
 name = "esu"
 human_name = "Central Yupik"
-version = "4.2.0"
+version = "0.1.0"
 
 # Table of speller tag -> filename to include in the bundle
 # filenames depends on specific project
