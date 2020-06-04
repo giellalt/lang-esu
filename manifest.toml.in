@@ -1,0 +1,9 @@
+name = "Central Yupik"
+version = "@SPELLERVERSION@"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.esu"
+
+[windows]
+system_product_code = "60A7E62E-9E4E-11EA-9DCC-FB846BA46895"
+msoffice_product_code = "6DDA6B00-9E4E-11EA-9465-87DB239B8845"
