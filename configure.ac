@@ -23,7 +23,7 @@
 # third is email address for bug reports
 # fourth is name of packages made by make dist, excluding .tar.gz
 # fifth is the project web address
-AC_INIT([Giella esu], [0.1], [feedback@divvun.no], [giella-esu],
+AC_INIT([Giella esu], [0.1.0], [feedback@divvun.no], [giella-esu],
         [http://divvun.no])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
