@@ -84,7 +84,8 @@ lexicon.hfst: lexicon.tmp.hfst lexicon.cleanup.hfst
 # This is the lexicon xfst file, which handles cases lexc isn't suited for
 # 	e.g. allomorphs for [Opt_PRS_2Sg]
 lexicon.cleanup.hfst: orig/src/esu.lexc.xfst
-	$(AM_V_HXFST)$(HFST_XFST) -p -e "source $<" -e "save stack $@" -E "hyvästi" #"exit"
+	$(AM_V_HXFST)$(HFST_XFST) -p $(HFST_FORMAT) \
+		-e "source $<" -e "save stack $@" -E "hyvästi" #"exit"
 
 ### END: Local processing: ###
 
