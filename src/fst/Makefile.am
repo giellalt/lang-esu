@@ -76,7 +76,7 @@ GT_DISTRO_SRCS=
 ### separate fst's that need further treatment in the src/ dir. See the language
 ### gle/ for an example of how this is used.
 
-GIELLA_LOCAL_TARGETS=
+GIELLA_LOCAL_TARGETS=$(srcdir)/root.lexc
 
 lexicon.hfst: lexicon.tmp.hfst lexicon.cleanup.hfst
 	$(AM_V_COMPOSE)$(HFST_COMPOSE) -1 $< -2 lexicon.cleanup.hfst -o $@
@@ -87,6 +87,10 @@ lexicon.hfst: lexicon.tmp.hfst lexicon.cleanup.hfst
 lexicon.cleanup.xfscript: $(srcdir)/orig/src/esu.lexc.xfst
 	$(AM_V_CP)cp -f $< $@
 
+# Just for doc targets:
+$(srcdir)/root.lexc: $(srcdir)/orig/src/esu.lexc
+	$(AM_V_CP)cp -f $< $@
+
 ### END: Local processing: ###
 
 ####### Other targets: ###########
@@ -95,6 +99,9 @@ lexicon.cleanup.xfscript: $(srcdir)/orig/src/esu.lexc.xfst
 clean-local:
 	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
 	-rm -f url.lexc *.tmp.*
+
+maintainer-clean-local:
+	-rm -f $(srcdir)/root.lexc
 
 include $(srcdir)/Makefile.modifications-phon.am
 include $(top_srcdir)/../giella-core/am-shared/src-morphology-dir-include.am
