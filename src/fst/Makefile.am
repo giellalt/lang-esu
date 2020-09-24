@@ -81,11 +81,11 @@ GIELLA_LOCAL_TARGETS=
 lexicon.hfst: lexicon.tmp.hfst lexicon.cleanup.hfst
 	$(AM_V_COMPOSE)$(HFST_COMPOSE) -1 $< -2 lexicon.cleanup.hfst -o $@
 
-# This is the lexicon xfst file, which handles cases lexc isn't suited for
-# 	e.g. allomorphs for [Opt_PRS_2Sg]
-lexicon.cleanup.hfst: orig/src/esu.lexc.xfst
-	$(AM_V_HXFST)$(HFST_XFST) -p $(HFST_FORMAT) \
-		-e "source $<" -e "save stack $@" -E "hyvästi" #"exit"
+# To make the source code compile using VPATH (required for CI on GitHub),
+# just copy the source file to one with the .xfscript extension, and let
+# the premade pattern rules take over from there.
+lexicon.cleanup.xfscript: $(srcdir)/orig/src/esu.lexc.xfst
+	$(AM_V_CP)cp -f $< $@
 
 ### END: Local processing: ###
 
