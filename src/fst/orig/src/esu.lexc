@@ -137,7 +137,7 @@ Vv Ll Ss Gg Rr Ng N͞g U͡g U͡r U͡gg U͡rr M̄ N̄
 [CtmpII]                    ! Second Contemporative - Connective Mood
 [Quant_Qual]                ! Quantifier/Qualifier Construction
 [Encl]                      ! Enclitic
-
+[Symbol]                    ! Symbol
 
 !!!!!!! MultipleForms xfst rule variables !!!!!!
 [Opt_PRS_S_2Sg]             !
@@ -3132,7 +3132,7 @@ gguute                 NounPostbase; ! through here; this way
 ici                    NounPostbase; ! ouch!; itʼs hot (to the touch)!
 iciner                 NounPostbase; ! thin, melting, overhanging ice edge is spring
 icʼukcag               NounPostbase; ! mink scent gland
-igar                   NounPostbase; ! mark; symbol; letter (of alphabet, or correspondence)
+igar                   NounPostbase; ! mark; symb
 igarcuute              NounPostbase; ! (K form), igarrsuun (NI, HBC form), igaraun (BB form) pen; pencil
 igarte                 NounPostbase; ! writer; secretary
 igaruarute             NounPostbase; ! story knife
@@ -15479,3 +15479,9 @@ LEXICON EncliticOrEnd
 =tuq[Encl]:=tuq     EncliticOrEnd; ! I wish; I hope
 =wa[Encl]:=wa       EncliticOrEnd; ! used when answering questions with a verb in the consequential mood, when making statements where the verb is understood from context (usually with the same verbal idea as a preceding sentence), and for making statements involving probability where the verb is in the participial mood with the postbase -lli- ‘maybeʼ (that construction calls for this enclitic); thus, this enclitic implies that there is more involved than that which is explicitly stated;
 =gga[Encl]:=gga     EncliticOrEnd; ! (HBC, NI form) used when answering questions with a verb in the consequential mood, when making statements where the verb is understood from context (usually with the same verbal idea as a preceding sentence), and for making statements involving probability where the verb is in the participial mood with the postbase -lli- ‘maybeʼ (that construction calls for this enclitic); thus, this enclitic implies that there is more involved than that which is explicitly stated;
+
+LEXICON Noun_symbols_possibly_inflected
+[symbol]: # ;
+
+LEXICON Noun_symbols_never_inflected
+[symbol]: # ;
