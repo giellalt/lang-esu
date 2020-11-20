@@ -13392,8 +13392,8 @@ VerbEte;
 -–nguar[N→N]:–nguar                           NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
 -–ngyaar(ar*)[N→N]:–ngyaar(ar*)               NounPostbase; ! old N (person)
 -–ngiar(ar*)[N→N]:–ngiar(ar*)                 NounPostbase; ! old N (person)
--+nir[N→N]:+nir                               NounPostbase; ! since N; since some time in the N
--+nir[N→N]:+nir                               NounPostbase; ! the smell of N
+-+nir1[N→N]:+nir                              NounPostbase; ! since N; since some time in the N
+-+nir2[N→N]:+nir                              NounPostbase; ! the smell of N
 !-%:(e)nkut[N→N]:%:(e)nkut                     EncliticOrEnd; ! (plural) N and family; N and companion
 !-%:(e)nkuk[N→N]:%:(e)nkuk                     EncliticOrEnd; ! (dual) N and family; N and companion
 -–paarrlug[N→N]:–paarrlug                     NounPostbase; ! big N
@@ -13425,10 +13425,10 @@ VerbEte;
 -–r(ur)lur*[N→N]:–r̲(ur)lur*                   NounPostbase; ! poor dear N
 -–ssaarar[N→N]:–ssaarar                       NounPostbase; ! old N
 -+taleg[N→N]:+taleg                           NounPostbase; ! place having N
--+tar[N→N]:+tar                               NounPostbase; ! thing of N; thing pertaining to N
--+tar[N→N]:+tar                               NounPostbase; ! caught N (game animal); N caught by possessor
--+tar[N→N]:+tar                               NounPostbase; ! N part of something
--+tar[N→N]:+tar                               NounPostbase; ! N specifically (exact meaning uncertain); small N
+-+tar2[N→N]:+tar                              NounPostbase; ! thing of N; thing pertaining to N 
+-+tar3[N→N]:+tar                              NounPostbase; ! caught N (game animal); N caught by possessor
+-+tar4[N→N]:+tar                              NounPostbase; ! N part of something
+-+tar5[N→N]:+tar                              NounPostbase; ! N specifically (exact meaning uncertain); small N
 -+tna[N→N]:+tna                               NounPostbase; ! to do like N
 -+tuli[N→N]:+tuli                             NounPostbase; ! one that is well endowed with N
 -+(ng)uar[N→N]:+(ng)uar                       NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
@@ -13477,7 +13477,7 @@ VerbEte;
 -–kiir(ar)[N→V]:–kiir(ar)                     VerbPostbase; ! to be in (water, mud, tall grass, body part, etc.) up to oneʼs N
 -–kaar[N→V]:–kaar                             VerbPostbase; ! to be in (water, mud, tall grass, body part, etc.) up to oneʼs N
 -+killi[N→V]:+killi                           VerbPostbase; ! to have N to a decreasing degree
--+kite[N→V]:+kite                             VerbPostbase; ! to give N to object to use or possess; to supply object with N
+-+kite1[N→V]:+kite                            VerbPostbase; ! to give N to object to use or possess; to supply object with N
 -+kiur[N→V]:+kiur                             VerbPostbase; ! to prepare something to be N
 -–klaag[N→V]:–klaag                           VerbPostbase; ! to hit N o'clock
 -–kliute[N→V]:–k̲liute                         VerbPostbase; ! to have obtained or claimed as oneʼs N
@@ -13490,8 +13490,8 @@ VerbEte;
 -–lgir[N→V]:–lgir                             VerbPostbase; ! to take along N
 -––li[N→V]:––li                               VerbPostbase; ! to make N; to make N for (him); to make N out of (it)
 -––linqigte[N→V]:––linqigte                   VerbPostbase; ! to change oneʼs N; to get another N
--––liqe[N→V]:––liqe                           VerbPostbase; ! to catch a lot of N
--––liqe[N→V]:––liqe                           VerbPostbase; ! to be afflicted in oneʼs N or with respect to N
+-––liqe1[N→V]:––liqe                          VerbPostbase; ! to catch a lot of N
+-––liqe2[N→V]:––liqe                          VerbPostbase; ! to be afflicted in oneʼs N or with respect to N
 -––lir[N→V]:––lir                             VerbPostbase; ! to have lots of N; to provide with or be well provided with N; to add N to (it)
 -––liur[N→V]:––liur                           VerbPostbase; ! to be occupied with N; to work or play with N; to cook N (additional NUN meaning)
 -––liyar[N→V]:––liyar                         VerbPostbase; ! to go to participate in N or V
@@ -13812,8 +13812,8 @@ VerbInflection;
 -–sqe[V→V]:–sqe                               VerbPostbase; ! to want one to V; to ask one to V
 -%%(e)squma[V→V]:%%%:(e)squma                 VerbPostbase; ! to want one to V; to encourage one to V; to wish or desire that one should V
 -–squma[V→V]:–squma                           VerbPostbase; ! to want one to V; to encourage one to V; to wish or desire that one should V
--–ssaag[V→V]:–ssaag                           VerbPostbase; ! to try to V
--–ssaag[V→V]:–ssaag                           VerbPostbase; ! to be too V
+-–ssaag1[V→V]:–ssaag                          VerbPostbase; ! to try to V
+-–ssaag3[V→V]:–ssaag                          VerbPostbase; ! to be too V
 -–ssiyaag[V→V]:–ssiyaag                       VerbPostbase; ! to be too V
 -+(te)staili[V→V]:+(te)staili                 VerbPostbase; ! to prevent oneself or another from V-ing
 -@+ta[V→V]:@²+ta                              VerbPostbase; ! to V or be V to a certain degree; to be that V
@@ -13870,10 +13870,10 @@ VerbInflection;
 -@~+yugcali[V→V]:@ʸ~+yugcali                  VerbPostbase; ! to V heartily; to enjoy oneʼs V-ing
 -@~+yugnaitar[V→V]:@ʸ~+yugnaitar              VerbPostbase; ! just before V-ing
 -@~+yugnairute[V→V]:@ʸ~+yugnairute            VerbPostbase; ! to definitely not be going to V anymore
--@~+yugnaite[V→V]:@ʸ~+yugnaite°               VerbPostbase; ! to definitely not be going to V
--@~+yugnaite[V→V]:@ʸ~+yugnaite°               VerbPostbase; ! to no be such as to make one want to V, or to V it
--@~+yugnarqe[V→V]:@ʸ~+yugnarqe                VerbPostbase; ! to probably V
--@~+yugnarqe[V→V]:@ʸ~+yugnarqe                VerbPostbase; ! to be such as to make one want to V, or to V it
+-@~+yugnaite1[V→V]:@ʸ~+yugnaite°              VerbPostbase; ! to definitely not be going to V
+-@~+yugnaite2[V→V]:@ʸ~+yugnaite°              VerbPostbase; ! to no be such as to make one want to V, or to V it
+-@~+yugnarqe1[V→V]:@ʸ~+yugnarqe               VerbPostbase; ! to probably V
+-@~+yugnarqe2[V→V]:@ʸ~+yugnarqe               VerbPostbase; ! to be such as to make one want to V, or to V it
 -@~+yugnga[V→V]:@ʸ~+yugnga                    VerbPostbase; ! to be able to V
 -@~+yugyaaqe[V→V]:@ʸ~+yugyaaqe                VerbPostbase; ! to want to V, provided it is all right
 -@~–yuirute[V→V]:@ʸ~–yuirute                  VerbPostbase; ! to no longer V
@@ -13994,7 +13994,7 @@ LEXICON NounInflection
 ! ----------------------------------------------------------------------------------------------------------------------------------------------------|
 !               singular possessed                 |                    plural possessed                |               dual possessed                |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
--[N][Rel][SgUnpd]:%%%:(e)m           EncliticOrEnd;[N][Rel][PlUnpd]:%%%:(e)t            EncliticOrEnd; -[N][Rel][DuUnpd]:%%%:(e)k                 EncliticOrEnd; ! unpossessed   |
+-[N][Rel][SgUnpd]:%%%:(e)m           EncliticOrEnd; -[N][Rel][PlUnpd]:%%%:(e)t            EncliticOrEnd; -[N][Rel][DuUnpd]:%%%:(e)k                 EncliticOrEnd; ! unpossessed   |
 ! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
 -[N][Rel][3SgPoss][SgPosd]:%:(ng)an    EncliticOrEnd; -[N][Rel][3SgPoss][PlPosd]:%:(ng)in    EncliticOrEnd; -[N][Rel][3SgPoss][DuPosd]:%%%:(e)gken       EncliticOrEnd; ! 3Sg possessor |
 -[N][Rel][3PlPoss][SgPosd]:%:(ng)ata   EncliticOrEnd; -[N][Rel][3PlPoss][PlPosd]:%:(ng)ita   EncliticOrEnd; -[N][Rel][3PlPoss][DuPosd]:%%%:(e)gketa      EncliticOrEnd; ! 3Pl possessor |
@@ -14905,7 +14905,7 @@ uya             DimensionalPostbase; ! width, especially of a river*
 
 LEXICON DimensionalPostbase
 -+tu[N→V]:+tu          VerbPostbase; ! to be well endowed with N, to have N to a large extent
--+kite[N→V]:+kite°     VerbPostbase; ! to have N to a small degree; to have only a small amount of N 
+-+kite2[N→V]:+kite°    VerbPostbase; ! to have N to a small degree; to have only a small amount of N 
 
 LEXICON EmotionalRoot
 aar             EmotionalPostbase; ! frightened, endangered
@@ -15318,7 +15318,7 @@ DemAdv;
 [DemAdv]-–qva[N→N]:–q̲va                 NounPostbase; ! area far in the direction of N
 [DemAdv]-–qvaar*[N→N]:–q̲vaar*           NounPostbase; ! area far in the direction of N
 [DemAdv]-[Sec_Ter]:.tmun                 EncliticOrEnd;
-[DemAdv]-[Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase;
+[DemAdv]-[Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase; ! to go N-ward; to go in the area described by V
 
 
 LEXICON DemAdv
@@ -15330,8 +15330,8 @@ LEXICON DemAdv
 ![DemAdv]-[Loc]ete[N→V]:%%~nete°         VerbPostbase;
 [DemAdv]-[Loc]ete[N→V]:(ʼa)+nte°        VerbPostbase;
 [DemAdv]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
-[DemAdv]-[Ter]+virte[N→V]:.virte         VerbPostbase;
-[DemAdv]-[Via]+gguir[N→V]:.gguir         VerbPostbase;
+[DemAdv]-[Ter]+virte[N→V]:.virte         VerbPostbase; ! to go to N
+[DemAdv]-[Via]+gguir[N→V]:.gguir         VerbPostbase; ! to go by way of N; to go through N
 
 
 LEXICON Positional
