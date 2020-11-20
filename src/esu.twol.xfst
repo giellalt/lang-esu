@@ -180,5 +180,5 @@ regex AutomaticDevoicing   .o.
       AddApostrophe        .o.
       AutomaticDevoicing   .o.
       ToOrthography        .o.
-      RemoveLigature       .o.
-      FinalWordApostrophe   ;
+      RemoveLigature        ;
+!      FinalWordApostrophe   ;
