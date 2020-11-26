@@ -98,7 +98,8 @@ $(srcdir)/root.lexc: $(srcdir)/orig/src/esu.lexc
 # easily get updates from the template dir through svn merge.
 clean-local:
 	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
-	-rm -f url.lexc *.tmp.*
+	-rm -f url.lexc *.tmp*
+	-rm -f *.relabel lexicon-tags.* lexicon-sigma.*
 
 maintainer-clean-local:
 	-rm -f $(srcdir)/root.lexc
