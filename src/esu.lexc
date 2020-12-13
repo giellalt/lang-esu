@@ -26,6 +26,7 @@ Vv Ll Ss Gg Rr Ng N͞g U͡g U͡r U͡gg U͡rr M̄ N̄
 
 [N]                         ! Nominal
 [V]                         ! Verbal
+[NonYupik]                  ! Non Yup'ik base (e.g. call-allruuq)
 [Particle]                  ! Particle
 [Ignorative]                ! Ignorative - Question words
 [PerPro]                    ! Personal Pronoun
@@ -172,7 +173,7 @@ Vv Ll Ss Gg Rr Ng N͞g U͡g U͡r U͡gg U͡rr M̄ N̄
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! weak e initial bases - optional e used for prosody
-!(a)                         ! 
+(a)                         ! non-Yup'ik bases
 !(aa)                        ! 
 (ar)                        ! (aq*)/(ar*)/(ar) - NounDicForm/NounBaseForm/VerbBaseForm
 (ar*)                       ! (aq*)/(ar*)/(ar) - NounDicForm/NounBaseForm/VerbBaseForm
@@ -221,6 +222,7 @@ k̲ q̲ g̲ r̲ g̲g̲ r̲r̲               ! velar/uvular (front/back velar) as
 
 LEXICON Root
     Exceptions      ;
+    NonYupikBase    ;
     Particle        ;
     Ignorative      ;
     ProperNoun      ;
@@ -244,23 +246,23 @@ LEXICON Root
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Exceptions
-qimugte-–rpag/@vag[N→N]:qimul+vag                        NounPostbase; ! qimulvak
-pi-@+'(g/t)ur(ar)[V→V][V][Opt][Intr][PRS][S_2Sg]:pi+ur+a EncliticOrEnd; ! goodbye (lit. keep on doing (as you've been doing))
-tai[V][Opt][Intr][PRS][S_2Sg]:tai+tai                    EncliticOrEnd; ! come here!
-iqsur-–lirner[N→N]:iqsur–lirner                          NounPostbase; ! thing of the left side
-tallirpig-–lirner[N→N]:tallirpig–lirner                  NounPostbase; ! right-hand side
-aqum-@–ngqa[V→V]:aqum+gar                                QuantQualInflection; ! sitting
-ugaani[N][Loc][3SgPoss][SgPosd]:ugaani                   EncliticOrEnd; ! because of; as a consequence of; on account of
-ugaani[N][Loc][3SgPoss][SgPosd]:ugaanʼ                   EncliticOrEnd; ! because of; as a consequence of; on account of
-wataime-+(a)r[N→V][V][Intrg][Intr][S_3Sg]:wataim+arte    EncliticOrEnd; ! what time is it?
-ell[PerPro][Abs][2Sg]=mi[Encl]:elpes+mi                  EncliticOrEnd;
-ciin-–r(ur)lur*[N→N][N][Abs][SgUnpd]:cii+u͡rluq         EncliticOrEnd;
-apa-–r(ur)lur*[N→N]:apa+ʼurlur*                          EncliticOrEnd;
-ema-–r(ur)lur*[N→N]:ma+urlur*                            EncliticOrEnd;
-nasʼag-–r(ur)lur*[N→N]:nasa+urlur*                       EncliticOrEnd;
-taneg-–r(ur)lur*[N→N]:tanʼga+urlur*                      EncliticOrEnd;
-tutgar(ar*)-–r(ur)lur*[N→N]:tutgara+ʼurlur*              EncliticOrEnd;
-tangerr-–nrite[V→V]:tange+nrrite                         VerbSpecialT;
+qimugte-–rpag/@vag[N→N]:qimul+vag                         NounPostbase; ! qimulvak
+pi-@+'(g/t)ur(ar)[V→V]-[V][Opt][Intr][PRS][S_2Sg]:pi+ur+a EncliticOrEnd; ! goodbye (lit. keep on doing (as you've been doing))
+tai-[V][Opt][Intr][PRS][S_2Sg]:tai+tai                    EncliticOrEnd; ! come here!
+iqsur-–lirner[N→N]:iqsur–lirner                           NounPostbase; ! thing of the left side
+tallirpig-–lirner[N→N]:tallirpig–lirner                   NounPostbase; ! right-hand side
+aqum-@–ngqa[V→V]:aqum+gar                                 QuantQualInflection; ! sitting
+ugaani-[N][Loc][3SgPoss][SgPosd]:ugaani                   EncliticOrEnd; ! because of; as a consequence of; on account of
+ugaani-[N][Loc][3SgPoss][SgPosd]:ugaanʼ                   EncliticOrEnd; ! because of; as a consequence of; on account of
+wataime-+(a)r[N→V]-[V][Intrg][Intr][S_3Sg]:wataim+arta    EncliticOrEnd; ! what time is it?
+ell-[PerPro][Abs][2Sg]=mi[Encl]:elpes+mi                  EncliticOrEnd;
+ciin-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:cii+u͡rluq           EncliticOrEnd;
+apa-–r(ur)lur*[N→N]:apa+ʼurlur*                           EncliticOrEnd;
+ema-–r(ur)lur*[N→N]:ma+urlur*                             EncliticOrEnd;
+nasʼag-–r(ur)lur*[N→N]:nasa+urlur*                        EncliticOrEnd;
+taneg-–r(ur)lur*[N→N]:tanʼga+urlur*                       EncliticOrEnd;
+tutgar(ar*)-–r(ur)lur*[N→N]:tutgara+ʼurlur*               EncliticOrEnd;
+tangerr-–nrite[V→V]:tange+nrrite                          VerbSpecialT;
 
 ! Irregular -–a/–ar/–aa 'to V repeatedly'
 qalrir-–a/–ar/–aa/+a/+aar[V→V]:qalri+a       VerbPostbase; ! 
@@ -331,6 +333,10 @@ anuqe-?pag[N→V]:anur+vag     VerbPostbase; !
 anuqe-?pag[N→V]:anuq+vag     VerbPostbase; !
 anuqe-?pag[N→V]:anuqʼ+vag    VerbPostbase; !
 ella-?pag[N→V]:ellar+vag     VerbPostbase; !
+
+
+LEXICON NonYupikBase
+< [a:A|b:B|c:C|d:D|e:E|f:F|g:G|h:H|i:I|j:J|k:K|l:L|m:M|n:N|o:O|p:P|q:Q|r:R|s:S|t:T|u:U|v:V|w:W|x:X|y:Y|z:Z|vv:Vv|ll:Ll|ss:Ss|gg:Gg|rr:Rr|ng:Ng|n͞g:N͞g|u͡g:U͡g|u͡gg:U͡gg|u͡r:U͡r|u͡rr:U͡rr|m̄:M̄|n̄:N̄]+ %[NonYupik%]:0 >    NonYupikPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -13325,6 +13331,18 @@ LEXICON VerbSpecialT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
+LEXICON NonYupikPostbase
+-+(a)r[N→N]:=(a)r                             NounPostbase; ! used with English words when they are used in Yupʼik speech or writing
+-+(aa)r[N→N]:=aar                             NounPostbase; ! used with English words when they are used in Yupʼik speech or writing
+
+-+(a)r[V→V]:=(a)r                             VerbPostbase; ! used with English words when they are used in Yupʼik speech or writing
+-+(aa)r[V→V]:=aar                             VerbPostbase; ! used with English words when they are used in Yupʼik speech or writing
+
+!-+(a)r[N→V]:+(a)r                             VerbPostbase; ! to say or “go”. . . (word or sound)
+
+
+
 LEXICON NounPostbase
 NounInflection;
 VerbEte;
@@ -13400,8 +13418,6 @@ VerbEte;
 -–pig[N→N]:–pig                               NounPostbase; ! genuine N; real N; authentic N
 -–piar[N→N]:–piar                             NounPostbase; ! genuine N; real N; authentic N
 -–pigar[N→N]:–pigar                           NounPostbase; ! genuine N; real N; authentic N
-!-+(a)r[N→N]:+(a)r                             NounPostbase; ! used with English words when they are used in Yupʼik speech or writing
-!-+(aa)r[N→N]:+(aa)r                           NounPostbase; ! used with English words when they are used in Yupʼik speech or writing
 -–qainar[N→N]:–q̲ainar                         NounPostbase; ! only N; merely N
 -+qar[N→N]:+qar                               NounPostbase; ! N area of possessor; exact area denoted by N with respect to possessor
 -–qlikacaar(ar*)[N→N]:–q̲likacaar(ar*)         NounPostbase; ! one that is the farthest in the area denoted by N
@@ -13523,7 +13539,6 @@ VerbEte;
 -–qsig[N→V]:–q̲sig                             VerbPostbase; ! to be far in the direction denoted by N
 -–qsigi[N→V]:–q̲sigi                           VerbPostbase; ! to get farther into the area denoted by N
 -–qu[N→V]:–qu                                 VerbPostbase; ! to hunt with N or at N
-!-+(a)r[N→V]:+(a)r                             VerbPostbase; ! to say or “go”. . . (word or sound)
 -–rpagninarqe[N→V]:–r̲pagninarqe               VerbPostbase; ! to smell strongly of N
 -–rpagnite[N→V]:–r̲pagnite                     VerbPostbase; ! to smell or taste strongly of N
 -–rpau[N→V]:–r̲pau                             VerbPostbase; ! to be a large N; to have a large N
@@ -13768,8 +13783,6 @@ VerbInflection;
 -–pig[V→V]:–pig                               VerbPostbase; ! to be really V; to be very V
 -–piar[V→V]:–piar                             VerbPostbase; ! to be really V; to be very V
 -–pigar[V→V]:–pigar                           VerbPostbase; ! (NSU form) to be really V; to be very V
-!-+(a)r[V→V]:+(a)r                             VerbPostbase; ! used with English words when they are used in Yupʼik speech or writing
-!-+(aa)r[V→V]:+(aa)r                           VerbPostbase; ! used with English words when they are used in Yupʼik speech or writing
 -–qaci[V→V]:–q̲aci                             VerbPostbase; ! to V in a minor way
 -–qainar[V→V]:–q̲ainar                         VerbPostbase; ! to merely V; to just V
 -–qainaurte[V→V]:–q̲ainaurte                   VerbPostbase; ! to be ready to V

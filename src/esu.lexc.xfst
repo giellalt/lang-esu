@@ -169,7 +169,9 @@ define MultipleForms t e "–r̲pag/@²vag" (->) l "." v a g            || Vow _
                      "+c/.ss" -> "." ss                       || Vow _                        .o.
                      "+c/.ss" -> "+" c                                                        .o.          
                      "(ʼa)" -> ʼ a                            || \.#. Con a _                 .o.
-                     "(ʼa)" -> 0                                                               ;
+                     "(ʼa)" -> 0                                                              .o.
+                     "(a)" (->) a                                                             .o.
+                     "(a)" -> 0                                                                ;
 
 
 define AutomaticDevoicing v -> vv,
@@ -190,7 +192,8 @@ define AutomaticDevoicing v -> vv,
 !                          r -> rr  || _ .#.                            .o.
 !                          s -> ss  || .#. _                             ;
 
-regex Lowercase          .o.
+regex 
+!     Lowercase          .o.
       arExpansion        .o.
       MultipleForms      .o.  
       AutomaticDevoicing  ;
