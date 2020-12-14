@@ -23,9 +23,8 @@
 
 Alphabet
     a c e g i k l m n p q r s t u v w y m̄ n̄
-    vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr
+    vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr '
     %[e%]
-    ʼ                                           ! Keep apostrophe from lexical entries
     ạ ụ ġ                                       ! for (ar) droppping
     á í ú ạ́ ụ́ â î û ậ ụ̂ é ê
     %[é%] %[ê%]                                 ! weak initial e cannot be hatted
@@ -62,7 +61,7 @@ Rules
 ! From pg 55 in practical grammar book (Jacobson, 1995)
 
 "a:â"
-Vx:Vy <=> [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con :* | B:* :Con B:* :ʼ :* ] .#. ; ! CVCV̂~[V|CC|Cʼ] ! Rule 1
+Vx:Vy <=> [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con :* | B:* :Con B:* :' :* ] .#. ; ! CVCV̂~[V|CC|C'] ! Rule 1
     except
         _ B:* (:Vow) B:* (:Con) B:* [.#.|:%=] ; ! final syllable
     where Vx in Vow
@@ -71,13 +70,13 @@ Vx:Vy <=> [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con 
 
 "a:á"
 Vx:Vy <=> :Vow B:* _ ; ! VV́(C)                                                                                 ! Rule 2
-          [.#.|:Con] B:* _ B:* :Con B:* ([:Con|:ʼ]) B:* :Vow B:* :AllVow ; ! CV́C(C)VV́                          ! Rule 3
-          .#. (:Con) B:* _ B:* :Con B:* [:Con|:ʼ] ; ! #(C)V́C[Cʼ]                                               ! Rule 4
-          [.#.|:Con|:ʼ] B:* :Vow B:* (:Con) B:* :Con B:* _ B:* :Con B:* :Con ; ! every 2nd closed syllable     ! Rule 5a 
+          [.#.|:Con] B:* _ B:* :Con B:* ([:Con|:']) B:* :Vow B:* :AllVow ; ! CV́C(C)VV́                          ! Rule 3
+          .#. (:Con) B:* _ B:* :Con B:* [:Con|:'] ; ! #(C)V́C[C']                                               ! Rule 4
+          [.#.|:Con|:'] B:* :Vow B:* (:Con) B:* :Con B:* _ B:* :Con B:* :Con ; ! every 2nd closed syllable     ! Rule 5a 
           :Con B:* _ B:* :Con B:* :Con B:* :Vow B:* :Con B:* :AllVow ; ! 1st syllable if second syllable open  ! Rule 5b
     except
         _ B:* (:Con) B:* [.#.|%-] ; ! final syllable
-        [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con :* | B:* :Con B:* :ʼ :* ] .#. ; ! CVCV̂~[V|CC|Cʼ]  ! Rule 1  
+        [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con :* | B:* :Con B:* :' :* ] .#. ; ! CVCV̂~[V|CC|C']  ! Rule 1  
     where Vx in Vow
           Vy in VowStress
     matched;

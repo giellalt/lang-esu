@@ -69,21 +69,21 @@ define AutomaticDevoicing v -> vv,
 
 define WeakInitialE [..] -> e   || .#. ["[e]"|"[é]"] Con _ ">"* Con                      .o. ! [é]nmek -> [e]nemek
                        ê -> e   || .#. ["[e]"|"[é]"] Con _ ">"* Con                      .o. ! [e]nêli -> enel'iuq
-                    [..] -> "ʼ" || .#. ["[e]"|"[é]"] Con AllVow ">"+ Con _ ">"* AllVow   .o. ! [e]nemek -> nem'ek
-                    [..] -> "ʼ" || .#. ["[e]"|"[é]"] Con AllVow Con _ ">"+ AllVow        .o. ! [e]mer -> mer'et
+                    [..] -> "'" || .#. ["[e]"|"[é]"] Con AllVow ">"+ Con _ ">"* AllVow   .o. ! [e]nemek -> nem'ek
+                    [..] -> "'" || .#. ["[e]"|"[é]"] Con AllVow Con _ ">"+ AllVow        .o. ! [e]mer -> mer'et
                     ["[e]"|"[é]"] -> 0  || .#. _ Con AllVow ">"* Con                      ;  ! drop weak e ; not [e]nii
 
 define urDeletion [ụ|ụ́] r (->) u r                           || g ">" _ l                .o. ! acagurluq (HBC form)
-                  [ụ|ụ́] r -> e ("ʼ") "u͡r"                    || g ">" _ l                .o. ! acageu͡rluq/acageʼu͡rluq
+                  [ụ|ụ́] r -> e ("'") "u͡r"                    || g ">" _ l                .o. ! acageu͡rluq/acage'u͡rluq
                   r [ụ|ụ́] r (->) r u                         || Vow Vow ">"+ _ l         .o. ! uiruluq (HBC form)
                   r [ụ|ụ́] r -> "u͡r"                          || Vow Vow ">"+ _ l         .o. ! uiu͡rluq
                   ê ">"+ r [ụ|ụ́] r (->)  ">" r u             || _ l                      .o. ! tumruluq (HBC form)
-                  ê ">"+ r [ụ|ụ́] r -> e ">" ("ʼ") "u͡r"       || _ l                      .o. ! tumeu͡rluq/tumeʼu͡rluq
-                  [e|é] ">"+ r [ụ|ụ́] r (->) ">" u "ʼ" r      || _ l                      .o. ! qaspuʼrluq (HBC form)
-                  [e|é] ">"+ r [ụ|ụ́] r (->) e ">" ("ʼ") "u͡r" || _ l                      .o. ! qaspeu͡rluq/qaspeʼu͡rluq
+                  ê ">"+ r [ụ|ụ́] r -> e ">" ("'") "u͡r"       || _ l                      .o. ! tumeu͡rluq/tume'u͡rluq
+                  [e|é] ">"+ r [ụ|ụ́] r (->) ">" u "'" r      || _ l                      .o. ! qaspu'rluq (HBC form)
+                  [e|é] ">"+ r [ụ|ụ́] r (->) e ">" ("'") "u͡r" || _ l                      .o. ! qaspeu͡rluq/qaspe'u͡rluq
                   r [ụ|ụ́] r (->) r u                         || VowHatted ">"+ _ l       .o. ! nunaruluq (HBC form)
-                  r [ụ|ụ́] r -> "ʼ" u r                       || VowHatted ">"+ _ l       .o. ! nunaʼurluq
-                  r [ụ|ụ́] r -> ("ʼ") "u͡r"                    || [Vow|VowStress] ">"+ _ l  ;  ! angyau͡rluq/angyaʼu͡rluq
+                  r [ụ|ụ́] r -> "'" u r                       || VowHatted ">"+ _ l       .o. ! nuna'urluq
+                  r [ụ|ụ́] r -> ("'") "u͡r"                    || [Vow|VowStress] ">"+ _ l  ;  ! angyau͡rluq/angya'u͡rluq
 
 define DropHattedE ê -> 0 .o.
                 [..] -> e || p _ ">"* p , t _ ">"* t , c _ ">"* c , k _ ">"* k , q _ ">"* q , 
@@ -103,39 +103,39 @@ define TripleVowel  AllFVow -> 0 || [Con|.#.] ">"* AllFVow ">"* _ ">"* AllFVow "
 
 define ConnectiveMood  ạ -> 0               || _ ">" [a|á] \.#.                          .o. ! caliạan -> calian 
                        ụ -> 0               || _ ">" [a|á] \.#.                          .o. ! calikụan -> calikan 
-                       [e|é] -> e ("ʼ")     || [VowStress|VowHatted|Con] ">" ng _ [r|rr] .o. ! qavangrarpet -> qavange(ʼ)rpet
-                       [e|é] -> "ʼ" e ("ʼ") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvangʼe(ʼ)rma
+                       [e|é] -> e ("'")     || [VowStress|VowHatted|Con] ">" ng _ [r|rr] .o. ! qavangrarpet -> qavange(')rpet
+                       [e|é] -> "'" e ("'") || Vow ">" ng _ [r|rr]                        ;  ! iqvangrarma -> iqvang'e(')rma
 
 define WordAdjustments ġ -> 0       || Vow _                           .o. ! túntuvâyaġaq -> túntuvâyaaq 
                        t (->) c     || \.#. _ [e|é] ">"* t ,               ! angutet -> angucet
                                        \.#. _ [e|é] ">"* ss ">"* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
                        t [e|é] ">" rr (->) ">" q || _ Vow              .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
-                       â r [a|á] (->) a "ʼ" a || ">" [q|k] _ q         .o. ! quuyurniqaraqluni -> quuyurniqaʼaqluni for -qaqe- postbase
+                       â r [a|á] (->) a "'" a || ">" [q|k] _ q         .o. ! quuyurniqaraqluni -> quuyurniqa'aqluni for -qaqe- postbase
                        [a|á] r [a|á] (->) a   || ">" [q|k] _ q         .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
                        [a|â|á] -> e || ">" q _ ">"* [r|rr]              ;  ! apteqarru -> apteqerru for -qar- postbase
 
-define arDeletion  "â" -> a "ʼ" a,
-                   "î" -> i "ʼ" i,
-                   "û" -> u "ʼ" u  || _ ">"* Con ">"* "ạ" q ">"* .#.                    .o. ! V̂r(ar)# -> V'Vr
+define arDeletion  "â" -> a "'" a,
+                   "î" -> i "'" i,
+                   "û" -> u "'" u  || _ ">"* Con ">"* "ạ" q ">"* .#.                    .o. ! V̂r(ar)# -> V'Vr
                    "ạ" q -> 0 || _ ">"* .#.                                             .o. ! wordFinal
                    ["ạ"|"ạ́"] [r|rr] -> 0 || Vow ">"* VowStress ">"* Con ">"* _ ">"* Con .o. ! VV́r(ar) -> VV́r
                    "ạ" [r|rr] -> 0 || Con ">"* VowStress ">"* Con ">"* _ ">"* Con       .o. ! CV́r(ar) -> CV́r
-                   "â" -> a "ʼ" á,
-                   "î" -> i "ʼ" í,
-                   "û" -> u "ʼ" ú  || _ ">"* Con ">"* ["ạ"|"ạ́"] [r|rr] ">"* Con         .o. ! V̂r(ar) -> V'Vr
-                   ["ạ"|"ạ́"] [r|rr] -> 0 || Vow "ʼ" VowStress ">"* Con ">"* _ ">"* Con  .o. ! V̂r(ar) -> V'Vr
-                   a -> á "ʼ",
-                   e -> é "ʼ",
-                   i -> í "ʼ",
-                   u -> ú "ʼ" || _ ">"* Con ">"* "ạ́" [r|rr] ">"* Con                     .o. ! Vr(ár) -> V́(ʼ)r
-                   "ạ́" [r|rr] -> 0 || VowStress "ʼ" ">"* Con ">"* _ ">"* Con             .o. ! Vr(ár) -> V́(ʼ)r
-                   "ʼ" (->) 0 || VowStress _ ">"* Con                                     ;  ! Vr(ár) -> V́(ʼ)r
+                   "â" -> a "'" á,
+                   "î" -> i "'" í,
+                   "û" -> u "'" ú  || _ ">"* Con ">"* ["ạ"|"ạ́"] [r|rr] ">"* Con         .o. ! V̂r(ar) -> V'Vr
+                   ["ạ"|"ạ́"] [r|rr] -> 0 || Vow "'" VowStress ">"* Con ">"* _ ">"* Con  .o. ! V̂r(ar) -> V'Vr
+                   a -> á "'",
+                   e -> é "'",
+                   i -> í "'",
+                   u -> ú "'" || _ ">"* Con ">"* "ạ́" [r|rr] ">"* Con                     .o. ! Vr(ár) -> V́(')r
+                   "ạ́" [r|rr] -> 0 || VowStress "'" ">"* Con ">"* _ ">"* Con             .o. ! Vr(ár) -> V́(')r
+                   "'" (->) 0 || VowStress _ ">"* Con                                     ;  ! Vr(ár) -> V́(')r
 
 
-define RemoveApostrophe "ʼ" -> 0 || [ .#. | Con ] ">"* AllVow ">"* Con ">"* _ ">"* AllVow ">"* AllVow , ! [#|C]VCʼVV
+define RemoveApostrophe "'" -> 0 || [ .#. | Con ] ">"* AllVow ">"* Con ">"* _ ">"* AllVow ">"* AllVow , ! [#|C]VC'VV
                                     VoiceCon ">"*  _ ">"* VoiceCon                                    ; 
 
-define AddApostrophe [..] -> "ʼ" || VlessCon _ ">"* VoiceCon , n _ ">"* g   ;      ! maybe VoiceFric _ ">"* VlessCon  ???
+define AddApostrophe [..] -> "'" || VlessCon _ ">"* VoiceCon , n _ ">"* g   ;      ! maybe VoiceFric _ ">"* VlessCon  ???
 
 define ToOrthography  vv -> v,
                       ll -> l,
@@ -205,7 +205,7 @@ define Lowercase "A"   -> a,
                  "U͡gg" -> u͡gg,
                  "U͡rr" -> u͡rr;
                     
-define FinalWordApostrophe Vow (->) "ʼ" || Con _ .#. ;
+define FinalWordApostrophe Vow (->) "'" || Con _ .#. ;
 
 regex AutomaticDevoicing   .o.
       WeakInitialE         .o.
