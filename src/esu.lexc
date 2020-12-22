@@ -15232,8 +15232,8 @@ un:un+'u        DemNonAbsSg; kan:kat+'u      DemNonAbsSg; cam:cam+'u       DemNo
 un:un+ku   DemIntermedNonSg; kan:kan+ku DemIntermedNonSg; cam:cam+ku  DemIntermedNonSg;
 una              DemAdv2Ter; kana             DemAdv2Ter; cama                  DemAdv;
 un[DemPro]-[Abs][SgUnpd]:un+'a             EncliticOrEnd; 
-un-@+yuuq[DemPro]-[Abs][SgUnpd]:un+yuuq    EncliticOrEnd;  
-un-@+suuq[DemPro]-[Abs][SgUnpd]:un+suuq    EncliticOrEnd;  
+un[DemPro]-[Voc][SgUnpd]:un@+yuuq    EncliticOrEnd;  
+un[DemPro]-[Voc][SgUnpd]:un@+suuq    EncliticOrEnd;  
 !--------------------------|----------------------------|-----------------------------|
 ! DOWNRIVER OR NEAR THE EXIT                                                          |
 !--------------------------|----------------------------|-----------------------------|
@@ -15286,15 +15286,15 @@ LEXICON DemAbsSg
 [DemPro]-–r(ur)lur*[N→N]-[Abs][SgUnpd]:+nau͡rluq  EncliticOrEnd;
 [DemPro]-[Abs][SgUnpd]-–lkug[N→N]:+na–lkug       EncliticOrEnd; ! no-good, darned N
 [DemPro]-–kucir[N→N]:–kucir                       NounPostbase; ! one of the same kind as N
-[DemPro]-@+suuq-[Voc][SgUnpd]:@+suuq             EncliticOrEnd; ! singular vocative (calling) form
-[DemPro]-@+yuuq-[Voc][SgUnpd]:@+yuuq             EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+[DemPro]-[Voc][SgUnpd]:@+suuq             EncliticOrEnd; ! singular vocative (calling) form
+[DemPro]-[Voc][SgUnpd]:@+yuuq             EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
 
 LEXICON DemAbsSgIrr
 n[DemPro]-[Abs][SgUnpd]:+n'a                       EncliticOrEnd;
 n[DemPro]-–r(ur)lur*[N→N]-[Abs][SgUnpd]:+n'au͡rluq  EncliticOrEnd;
 n[DemPro]-–kucir[N→N]:–kucir                        NounPostbase;  ! one of the same kind as N
-n[DemPro]-@+yuuq-[Voc][SgUnpd]:@+cuuq              EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
-n[DemPro]-@+suuq-[Voc][SgUnpd]:@+cuuq              EncliticOrEnd; ! singular vocative (calling) form
+n[DemPro]-[Voc][SgUnpd]:@+cuuq              EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+n[DemPro]-[Voc][SgUnpd]:@+cuuq              EncliticOrEnd; ! singular vocative (calling) form
 
 LEXICON DemNonAbsSg
 [DemPro]-[Rel][SgUnpd]:.m              EncliticOrEnd;
