@@ -255,7 +255,7 @@ aqum-@–ngqa[V→V]:aqum+gar                                 QuantQualInflectio
 ugaani-[N][Loc][3SgPoss][SgPosd]:ugaani                   EncliticOrEnd; ! because of; as a consequence of; on account of
 ugaani-[N][Loc][3SgPoss][SgPosd]:ugaan'                   EncliticOrEnd; ! because of; as a consequence of; on account of
 wataime-+(a)r[N→V]-[V][Intrg][Intr][S_3Sg]:wataim+arta    EncliticOrEnd; ! what time is it?
-ell-[PerPro][Abs][2Sg]=mi[Encl]:elpes+mi                  EncliticOrEnd;
+ell-[PerPro][Abs][2Sg]-=mi[Encl]:elpes+mi                  EncliticOrEnd;
 ciin-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:cii+u͡rluq           EncliticOrEnd;
 apa-–r(ur)lur*[N→N]:apa+'urlur*                           EncliticOrEnd;
 ema-–r(ur)lur*[N→N]:ma+urlur*                             EncliticOrEnd;
@@ -666,9 +666,9 @@ na[Ignorative]-[Loc]ete[N→V]:na+nte°            VerbPostbase;
 na[Ignorative]-+var[N→V]:nat+var                VerbPostbase; ! to go or put N-ward
 na[Ignorative]-[Ter]+virte[N→V]:nat.virte        VerbPostbase;
 na[Ignorative]-[Via]+gguir[N→V]:na.gguir         VerbPostbase;
-na[Ignorative]=wa[Encl]:nau=wa                  EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
-na[Ignorative]=wa[Encl]:nauwa                   EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
-na[Ignorative]=wa[Encl]:naugga                  EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-=wa[Encl]:nau=wa                  EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-=wa[Encl]:nauwa                   EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-=wa[Encl]:naugga                  EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
 nate[Ignorative]:nate                           NounInflection; ! what part?; some part; a certain part
 nalir[Ignorative]:nalir                         NounPostbase;
 
@@ -15173,61 +15173,63 @@ LEXICON Demonstrative
 ! or GOING AWAY (au͡g)                                                                 |
 !--------------------------|----------------------------|-----------------------------|
 au͡g                DemAbsSg; ing                DemAbsSg; am                  DemAbsSg;
-au͡g'u           DemNonAbsSg; ing'u           DemNonAbsSg; am'u             DemNonAbsSg;
-au͡gku      DemIntermedNonSg; ingku      DemIntermedNonSg; amku        DemIntermedNonSg;
-awku       DemIntermedNonSg;                                                                
-ava              DemAdv2Ter; yaa             DemAdv2Ter; ama                   DemAdv; 
+au͡g:au͡g+'u      DemNonAbsSg; ing:ing+'u      DemNonAbsSg; am:am+'u         DemNonAbsSg;
+au͡g:au͡g+ku DemIntermedNonSg; ing:ing+ku DemIntermedNonSg; am:am+ku    DemIntermedNonSg;
+au͡g:aw+ku  DemIntermedNonSg;                                                                
+ava              DemAdv2Ter; yaa             DemAdv2Ter;  ama                   DemAdv; 
 !--------------------------|----------------------------|-----------------------------|
 ! ACROSS THERE                                                                        |
 !--------------------------|----------------------------|-----------------------------|
 ag                 DemAbsSg; ik                 DemAbsSg; akem                DemAbsSg;
                              ikegg              DemAbsSg;                             
-ag'u            DemNonAbsSg; ik'u            DemNonAbsSg; ak'mu            DemNonAbsSg;
-                             ikgu            DemNonAbsSg;                             
-agku       DemIntermedNonSg; ikegku     DemIntermedNonSg; akemku      DemIntermedNonSg;
+ag:ag+'u        DemNonAbsSg; ik:ik+'u        DemNonAbsSg; akem:ak'm+u      DemNonAbsSg;
+                             ikegg:ikg+u     DemNonAbsSg;                             
+ag:ag+ku   DemIntermedNonSg; ik:ikeg+ku DemIntermedNonSg; akem:akem+ku DemIntermedNonSg;
+                             ikegg:ikeg+ku DemIntermedNonSg;
 agaa             DemAdv2Ter; ika              DemAdv2Ter; akma                  DemAdv;
 ii               DemAdv2Ter;                                                         
 !--------------------------|----------------------------|-----------------------------|
 ! UP THE SLOPE                                                                        |
 !--------------------------|----------------------------|-----------------------------|
-pau͡g               DemAbsSg; ping               DemAbsSg; pam                 DemAbsSg;
-pau͡g'u          DemNonAbsSg; ping'u          DemNonAbsSg; pam'u            DemNonAbsSg;
-pau͡gku     DemIntermedNonSg; pingku     DemIntermedNonSg; pamku       DemIntermedNonSg;
-pava             DemAdv2Ter; pia              DemAdv2Ter; pama                  DemAdv; 
+pau͡g                 DemAbsSg; ping                 DemAbsSg; pam                 DemAbsSg;
+pau͡g:pau͡g+'u      DemNonAbsSg; ping:ping+'u      DemNonAbsSg; pam:pam+'u       DemNonAbsSg;
+pau͡g:pau͡g+ku DemIntermedNonSg; ping:ping+ku DemIntermedNonSg; pam:pam+ku  DemIntermedNonSg;
+pava               DemAdv2Ter; pia                DemAdv2Ter; pama                  DemAdv; 
 !--------------------------|----------------------------|-----------------------------|
 ! UP ABOVE                                                                            |
 !--------------------------|----------------------------|-----------------------------|
-pag                DemAbsSg; pik                DemAbsSg; pakem               DemAbsSg;
-                             pikegg             DemAbsSg;
-pag'u           DemNonAbsSg; pik'u           DemNonAbsSg; pak'mu           DemNonAbsSg;
-                             pikgu           DemNonAbsSg;
-pagku      DemIntermedNonSg; pikegku    DemIntermedNonSg; pakemku     DemIntermedNonSg;
-pagaa            DemAdv2Ter; pika             DemAdv2Ter; pakma                 DemAdv; 
+pag                DemAbsSg; pik                  DemAbsSg; pakem                  DemAbsSg;
+                             pikegg               DemAbsSg;
+pag:pag+'u      DemNonAbsSg; pik:pik+'u        DemNonAbsSg; pakem:pak'm+u       DemNonAbsSg;
+                             pikegg:pikg+u     DemNonAbsSg;
+pag:pag+ku DemIntermedNonSg; pik:pikeg+ku DemIntermedNonSg; pakem:pakem+ku DemIntermedNonSg;
+                             pikegg:pikeg+ku DemIntermedNonSg;
+pagaa            DemAdv2Ter; pika               DemAdv2Ter; pakma                    DemAdv; 
 pii              DemAdv2Ter;
 !--------------------------|----------------------------|-----------------------------|
 ! INSIDE, INLAND, OR UPRIVER                                                          |
 !--------------------------|----------------------------|-----------------------------|
-qau͡g               DemAbsSg; kiug               DemAbsSg; qam                 DemAbsSg;
-                             kiu͡g               DemAbsSg;
-qau͡g'u          DemNonAbsSg; kiugu           DemNonAbsSg; qam'u            DemNonAbsSg;
-                             kiu͡g'u          DemNonAbsSg;
-qau͡gku     DemIntermedNonSg; kiugku     DemIntermedNonSg; qamku       DemIntermedNonSg;
-                             kiu͡gku     DemIntermedNonSg;
-qava             DemAdv2Ter; kia              DemAdv2Ter; qama                  DemAdv; 
+qau͡g                 DemAbsSg; kiug                 DemAbsSg; qam                DemAbsSg;
+                               kiu͡g                 DemAbsSg;
+qau͡g:qau͡g+'u      DemNonAbsSg; kiug:kiug+u       DemNonAbsSg; qam:qam+'u      DemNonAbsSg;
+                               kiu͡g:kiu͡g+'u      DemNonAbsSg;
+qau͡g:qau͡g+ku DemIntermedNonSg; kiug:kiug+ku DemIntermedNonSg; qam:qam+ku DemIntermedNonSg;
+                               kiu͡g:kiu͡g+ku DemIntermedNonSg;
+qava             DemAdv2Ter;   kia                DemAdv2Ter; qama                 DemAdv; 
 !--------------------------|----------------------------|-----------------------------|
 ! OUTSIDE                                                                             |
 !--------------------------|----------------------------|-----------------------------|
-qag                DemAbsSg; kegg               DemAbsSg; qakem               DemAbsSg;
-qag'u           DemNonAbsSg; kegg'u          DemNonAbsSg; qak'mu           DemNonAbsSg;
-qagku      DemIntermedNonSg; kegku      DemIntermedNonSg; qakemku     DemIntermedNonSg;
-qagaa            DemAdv2Ter; kegga            DemAdv2Ter; qakma                 DemAdv; 
+qag                DemAbsSg; kegg                DemAbsSg; qakem               DemAbsSg;
+qag:qag+'u      DemNonAbsSg; kegg:kegg+'u     DemNonAbsSg; qakem:qak'm+u     DemNonAbsSg;
+qag:qag+ku DemIntermedNonSg; kegg:keg+ku DemIntermedNonSg; qakem:qakem+ku DemIntermedNonSg;
+qagaa            DemAdv2Ter; kegga             DemAdv2Ter; qakma                 DemAdv; 
 qii              DemAdv2Ter;
 !--------------------------|----------------------------|-----------------------------|
 ! DOWN BELOW OR DOWN THE SLOPE                                                        |
 !--------------------------|----------------------------|-----------------------------| 
                              ka              DemAbsSgIrr; cam                 DemAbsSg;
-un'u            DemNonAbsSg; kat'u           DemNonAbsSg; cam'u            DemNonAbsSg;
-unku       DemIntermedNonSg; kanku      DemIntermedNonSg; camku       DemIntermedNonSg;
+un:un+'u        DemNonAbsSg; kan:kat+'u      DemNonAbsSg; cam:cam+'u       DemNonAbsSg;
+un:un+ku   DemIntermedNonSg; kan:kan+ku DemIntermedNonSg; cam:cam+ku  DemIntermedNonSg;
 una              DemAdv2Ter; kana             DemAdv2Ter; cama                  DemAdv;
 un[DemPro]-[Abs][SgUnpd]:un+'a             EncliticOrEnd; 
 un-@+yuuq[DemPro]-[Abs][SgUnpd]:un+yuuq    EncliticOrEnd;  
@@ -15235,32 +15237,32 @@ un-@+suuq[DemPro]-[Abs][SgUnpd]:un+suuq    EncliticOrEnd;
 !--------------------------|----------------------------|-----------------------------|
 ! DOWNRIVER OR NEAR THE EXIT                                                          |
 !--------------------------|----------------------------|-----------------------------|
-uneg               DemAbsSg; ug                 DemAbsSg; cakem               DemAbsSg;
-ung'u           DemNonAbsSg; ug'u            DemNonAbsSg; cak'mu           DemNonAbsSg;
-unegku     DemIntermedNonSg; ugku       DemIntermedNonSg; cakemku     DemIntermedNonSg;
-un'ga            DemAdv2Ter; ua               DemAdv2Ter; cakma                 DemAdv; 
-un'gaa           DemAdv2Ter;
+uneg                 DemAbsSg; ug                 DemAbsSg; cakem                  DemAbsSg;
+uneg:ung+'u       DemNonAbsSg; ug:ug+'u        DemNonAbsSg; cakem:cak'm+u       DemNonAbsSg;
+uneg:uneg+ku DemIntermedNonSg; ug:ug+ku   DemIntermedNonSg; cakem:cakem+ku DemIntermedNonSg;
+un'ga              DemAdv2Ter; ua               DemAdv2Ter; cakma                    DemAdv; 
+un'gaa             DemAdv2Ter;
 !--------------------------|----------------------------|-----------------------------|
 ! HERE, NEAR SPEAKER                                                                  |
 !--------------------------|----------------------------|-----------------------------|
 ma              DemAbsSgIrr; u                  DemAbsSg; im                  DemAbsSg;
-mat'u           DemNonAbsSg; uu              DemNonAbsSg; im'u             DemNonAbsSg;
+man:mat+'u      DemNonAbsSg; u:u+u           DemNonAbsSg; im'u             DemNonAbsSg;
                                                           imu              DemNonAbsSg;
-maku       DemIntermedNonSg; uku        DemIntermedNonSg; imku        DemIntermedNonSg;
+man:ma+ku  DemIntermedNonSg; u:u+ku     DemIntermedNonSg; imku        DemIntermedNonSg;
 maa              DemAdv2Ter; wa                   DemAdv; 
                                                           ima                   DemAdv;
-uu[DemPro]-[Via][SgUnpd]:uu+ggun      EncliticOrEnd;  
-uu[DemAdv]-[Via]:uu+ggun                EncliticOrEnd;                                                          
-maa[DemAdv]-[Equ]:maa+ten                    EncliticOrEnd;
-wa[DemAdv]-[Equ]:wa+ten                      EncliticOrEnd;
+u[DemPro]-[Via][SgUnpd]:u+u+ggun      EncliticOrEnd;  
+wa[DemAdv]-[Via]:u+u+ggun             EncliticOrEnd;                                                          
+maa[DemAdv]-[Equ]:maa+ten             EncliticOrEnd;
+wa[DemAdv]-[Equ]:wa+ten               EncliticOrEnd;
 !--------------------------|----------------------------|-----------------------------|
 ! THERE, NEAR LISTENER OR IN CONTEXT                                                  |
 !--------------------------|----------------------------|-----------------------------|
-tama               DemAbsSg; tau                DemAbsSg; 
-tamatu          DemNonAbsSg; tau             DemNonAbsSg; 
-tamaku     DemIntermedNonSg; tauku      DemIntermedNonSg; 
-tamaa            DemAdv2Ter; tua                  DemAdv;  
-                             tava                 DemAdv;
+tama                 DemAbsSg; tau                DemAbsSg; 
+tama:tama+tu      DemNonAbsSg; tau             DemNonAbsSg; 
+tama:tama+ku DemIntermedNonSg; tau:tau+ku DemIntermedNonSg; 
+tamaa              DemAdv2Ter; tua                  DemAdv;  
+                               tava                 DemAdv;
                                                          
 tua[DemAdv]-[Equ]:tua+ten                    EncliticOrEnd;
 tava[DemAdv]-[Equ]:tava+ten                  EncliticOrEnd;
@@ -15269,12 +15271,13 @@ taima          EncliticOrEnd;
 !--------------------------|----------------------------|-----------------------------|
 ! COMING THIS WAY                                                                     |
 !--------------------------|----------------------------|-----------------------------|
-uk                 DemAbsSg;
-ukegg              DemAbsSg; 
-uk'u            DemNonAbsSg;
-ukgu            DemNonAbsSg;
-ukegku     DemIntermedNonSg; 
-uka              DemAdv2Ter;  
+uk                    DemAbsSg;
+ukegg                 DemAbsSg; 
+uk:uk+'u           DemNonAbsSg;
+ukegg:ukg+u        DemNonAbsSg;
+uk:ukeg+ku    DemIntermedNonSg; 
+ukegg:ukeg+ku DemIntermedNonSg; 
+uka                 DemAdv2Ter;  
 !--------------------------|----------------------------|-----------------------------|
 
 
@@ -15287,11 +15290,11 @@ LEXICON DemAbsSg
 [DemPro]-@+yuuq-[Voc][SgUnpd]:@+yuuq             EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
 
 LEXICON DemAbsSgIrr
-t[DemPro]-[Abs][SgUnpd]:+n'a                       EncliticOrEnd;
-t[DemPro]-–r(ur)lur*[N→N]-[Abs][SgUnpd]:+n'au͡rluq  EncliticOrEnd;
-t[DemPro]-–kucir[N→N]:–kucir                        NounPostbase;  ! one of the same kind as N
-t[DemPro]-@+yuuq-[Voc][SgUnpd]:@+cuuq              EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
-t[DemPro]-@+suuq-[Voc][SgUnpd]:@+cuuq              EncliticOrEnd; ! singular vocative (calling) form
+n[DemPro]-[Abs][SgUnpd]:+n'a                       EncliticOrEnd;
+n[DemPro]-–r(ur)lur*[N→N]-[Abs][SgUnpd]:+n'au͡rluq  EncliticOrEnd;
+n[DemPro]-–kucir[N→N]:–kucir                        NounPostbase;  ! one of the same kind as N
+n[DemPro]-@+yuuq-[Voc][SgUnpd]:@+cuuq              EncliticOrEnd; ! (Y and HBC form) singular vocative (calling) form
+n[DemPro]-@+suuq-[Voc][SgUnpd]:@+cuuq              EncliticOrEnd; ! singular vocative (calling) form
 
 LEXICON DemNonAbsSg
 [DemPro]-[Rel][SgUnpd]:.m              EncliticOrEnd;
@@ -15339,7 +15342,7 @@ LEXICON DemAdv
 [DemAdv]-[Ter]:.vet                      EncliticOrEnd;
 [DemAdv]-[Abl]:.ken                      EncliticOrEnd;
 [DemAdv]-[Via]:.ggun                     EncliticOrEnd;
-[DemAdv]=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+[DemAdv]-=i[Encl]:=i                     EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
 ![DemAdv]-[Loc]ete[N→V]:%%~nete°         VerbPostbase;
 [DemAdv]-[Loc]ete[N→V]:('a)+nte°        VerbPostbase;
 [DemAdv]-+var[N→V]:+var                 VerbPostbase; ! to go or put N-ward
