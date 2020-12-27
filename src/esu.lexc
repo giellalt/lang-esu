@@ -15062,69 +15062,69 @@ LEXICON PersonalPronoun
 !                singular                       |                     plural                         |                      dual                          |                |
 !-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
 !                                               |                                                    |                                                    |  ! 1st Person  |
-wang[PerPro]-[Abs][1Sg]:wii         EncliticOrEnd; wang[PerPro]-[Abs][1Pl]:wangkuta       EncliticOrEnd; wang[PerPro]-[Abs][1Du]:wangkuk        EncliticOrEnd;  ! Abs         |
-wang[PerPro]-[Abs][1Sg]:wiinga      EncliticOrEnd;                                                    !                                                    !                |
-wang[PerPro]-[Rel][1Sg]:wii         EncliticOrEnd; wang[PerPro]-[Rel][1Pl]:wangkuta       EncliticOrEnd; wang[PerPro]-[Rel][1Du]:wangkuk        EncliticOrEnd;  ! Rel         |
-wang[PerPro]-[Rel][1Sg]:wiinga      EncliticOrEnd;                                                    !                                                    !                |
-wang[PerPro]-[Abl_Mod][1Sg]:wangnek EncliticOrEnd; wang[PerPro]-[Abl_Mod][1Pl]:wangkutnek EncliticOrEnd; wang[PerPro]-[Abl_Mod][1Du]:wangkugnek EncliticOrEnd;  ! Abl_Mod     |
-wang[PerPro]-[Loc][1Sg]:wangni      EncliticOrEnd; wang[PerPro]-[Loc][1Pl]:wangkutni      EncliticOrEnd; wang[PerPro]-[Loc][1Du]:wangkugni      EncliticOrEnd;  ! Loc         |
-wang[PerPro]-[Ter][1Sg]:wangnun     EncliticOrEnd; wang[PerPro]-[Ter][1Pl]:wangkutnun     EncliticOrEnd; wang[PerPro]-[Ter][1Du]:wangkugnun     EncliticOrEnd;  ! Ter         |
-wang[PerPro]-[Via][1Sg]:wangkun     EncliticOrEnd; wang[PerPro]-[Via][1Pl]:wangkutgun     EncliticOrEnd; wang[PerPro]-[Via][1Du]:wangkugnegun   EncliticOrEnd;  ! Via         |
-wang[PerPro]-[Equ][1Sg]:wangtun     EncliticOrEnd; wang[PerPro]-[Equ][1Pl]:wangkutun      EncliticOrEnd; wang[PerPro]-[Equ][1Du]:wangkugtun     EncliticOrEnd;  ! Equ         |
-wang[PerPro]-[Equ][1Sg]:wangcetun   EncliticOrEnd; wang[PerPro]-[Equ][1Pl]:wangkucetun    EncliticOrEnd; wang[PerPro]-[Equ][1Du]:wangkugcetun   EncliticOrEnd;                !
+wang[PerPro]-[Abs][1Sg]:wi+i         EncliticOrEnd; wang[PerPro]-[Abs][1Pl]:wang+kuta       EncliticOrEnd; wang[PerPro]-[Abs][1Du]:wang+kuk        EncliticOrEnd;  ! Abs         |
+wang[PerPro]-[Abs][1Sg]:wi+inga      EncliticOrEnd;                                                    !                                                    !                |
+wang[PerPro]-[Rel][1Sg]:wi+i         EncliticOrEnd; wang[PerPro]-[Rel][1Pl]:wang+kuta       EncliticOrEnd; wang[PerPro]-[Rel][1Du]:wang+kuk        EncliticOrEnd;  ! Rel         |
+wang[PerPro]-[Rel][1Sg]:wi+inga      EncliticOrEnd;                                                    !                                                    !                |
+wang[PerPro]-[Abl_Mod][1Sg]:wang+nek EncliticOrEnd; wang[PerPro]-[Abl_Mod][1Pl]:wangku+tnek EncliticOrEnd; wang[PerPro]-[Abl_Mod][1Du]:wang+kugnek EncliticOrEnd;  ! Abl_Mod     |
+wang[PerPro]-[Loc][1Sg]:wang+ni      EncliticOrEnd; wang[PerPro]-[Loc][1Pl]:wang+kutni      EncliticOrEnd; wang[PerPro]-[Loc][1Du]:wang+kugni      EncliticOrEnd;  ! Loc         |
+wang[PerPro]-[Ter][1Sg]:wang+nun     EncliticOrEnd; wang[PerPro]-[Ter][1Pl]:wang+kutnun     EncliticOrEnd; wang[PerPro]-[Ter][1Du]:wang+kugnun     EncliticOrEnd;  ! Ter         |
+wang[PerPro]-[Via][1Sg]:wang+kun     EncliticOrEnd; wang[PerPro]-[Via][1Pl]:wang+kutgun     EncliticOrEnd; wang[PerPro]-[Via][1Du]:wang+kugnegun   EncliticOrEnd;  ! Via         |
+wang[PerPro]-[Equ][1Sg]:wang+tun     EncliticOrEnd; wang[PerPro]-[Equ][1Pl]:wang+kutun      EncliticOrEnd; wang[PerPro]-[Equ][1Du]:wang+kugtun     EncliticOrEnd;  ! Equ         |
+wang[PerPro]-[Equ][1Sg]:wang+cetun   EncliticOrEnd; wang[PerPro]-[Equ][1Pl]:wang+kucetun    EncliticOrEnd; wang[PerPro]-[Equ][1Du]:wang+kugcetun   EncliticOrEnd;                !
 !-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
 !                                               |                                                    |                                                    |  ! 2nd Person  |
-ell[PerPro]-[Abs][2Sg]:elpet        EncliticOrEnd; ell[PerPro]-[Abs][2Pl]:elpeci          EncliticOrEnd; ell[PerPro]-[Abs][2Du]:elpetek         EncliticOrEnd;  ! Abs         |
-ell[PerPro]-[Rel][2Sg]:elpet        EncliticOrEnd; ell[PerPro]-[Rel][2Pl]:elpeci          EncliticOrEnd; ell[PerPro]-[Rel][2Du]:elpetek         EncliticOrEnd;  ! Rel         |
-ell[PerPro]-[Abl_Mod][2Sg]:elpenek  EncliticOrEnd; ell[PerPro]-[Abl_Mod][2Pl]:elpecen̄ek   EncliticOrEnd; ell[PerPro]-[Abl_Mod][2Du]:elpetegnek  EncliticOrEnd;  ! Abl_Mod     |
-ell[PerPro]-[Loc][2Sg]:elpeni       EncliticOrEnd; ell[PerPro]-[Loc][2Pl]:elpecen̄i        EncliticOrEnd; ell[PerPro]-[Loc][2Du]:elpetegni       EncliticOrEnd;  ! Loc         |
-ell[PerPro]-[Ter][2Sg]:elpenun      EncliticOrEnd; ell[PerPro]-[Ter][2Pl]:elpecen̄un       EncliticOrEnd; ell[PerPro]-[Ter][2Du]:elpetegnun      EncliticOrEnd;  ! Ter         |
-ell[PerPro]-[Via][2Sg]:elpetgun     EncliticOrEnd; ell[PerPro]-[Via][2Pl]:elpecetgun      EncliticOrEnd; ell[PerPro]-[Via][2Du]:elpetegnegun    EncliticOrEnd;  ! Via         |
-ell[PerPro]-[Equ][2Sg]:elpetun      EncliticOrEnd; ell[PerPro]-[Equ][2Pl]:elpecitun       EncliticOrEnd; ell[PerPro]-[Equ][2Du]:elpetegtun      EncliticOrEnd;  ! Equ         |
-ell[PerPro]-[Equ][2Sg]:elpecetun    EncliticOrEnd; ell[PerPro]-[Equ][2Pl]:elpecicetun     EncliticOrEnd; ell[PerPro]-[Equ][2Du]:elpetegcetun    EncliticOrEnd;                !
+ell[PerPro]-[Abs][2Sg]:el+pet        EncliticOrEnd; ell[PerPro]-[Abs][2Pl]:el+peci          EncliticOrEnd; ell[PerPro]-[Abs][2Du]:el+petek         EncliticOrEnd;  ! Abs         |
+ell[PerPro]-[Rel][2Sg]:el+pet        EncliticOrEnd; ell[PerPro]-[Rel][2Pl]:el+peci          EncliticOrEnd; ell[PerPro]-[Rel][2Du]:el+petek         EncliticOrEnd;  ! Rel         |
+ell[PerPro]-[Abl_Mod][2Sg]:el+penek  EncliticOrEnd; ell[PerPro]-[Abl_Mod][2Pl]:el+pecen̄ek   EncliticOrEnd; ell[PerPro]-[Abl_Mod][2Du]:el+petegnek  EncliticOrEnd;  ! Abl_Mod     |
+ell[PerPro]-[Loc][2Sg]:el+peni       EncliticOrEnd; ell[PerPro]-[Loc][2Pl]:el+pecen̄i        EncliticOrEnd; ell[PerPro]-[Loc][2Du]:el+petegni       EncliticOrEnd;  ! Loc         |
+ell[PerPro]-[Ter][2Sg]:el+penun      EncliticOrEnd; ell[PerPro]-[Ter][2Pl]:el+pecen̄un       EncliticOrEnd; ell[PerPro]-[Ter][2Du]:el+petegnun      EncliticOrEnd;  ! Ter         |
+ell[PerPro]-[Via][2Sg]:el+petgun     EncliticOrEnd; ell[PerPro]-[Via][2Pl]:el+pecetgun      EncliticOrEnd; ell[PerPro]-[Via][2Du]:el+petegnegun    EncliticOrEnd;  ! Via         |
+ell[PerPro]-[Equ][2Sg]:el+petun      EncliticOrEnd; ell[PerPro]-[Equ][2Pl]:el+pecitun       EncliticOrEnd; ell[PerPro]-[Equ][2Du]:el+petegtun      EncliticOrEnd;  ! Equ         |
+ell[PerPro]-[Equ][2Sg]:el+pecetun    EncliticOrEnd; ell[PerPro]-[Equ][2Pl]:el+pecicetun     EncliticOrEnd; ell[PerPro]-[Equ][2Du]:el+petegcetun    EncliticOrEnd;                !
 !-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
 !                                               |                                                    |                                                    |  ! 3rd Person  |
-ell[PerPro]-[Abs][3Sg]:ellii        EncliticOrEnd; ell[PerPro]-[Abs][3Pl]:ellait          EncliticOrEnd; ell[PerPro]-[Abs][3Du]:elkek           EncliticOrEnd;  ! Abs         |
-ell[PerPro]-[Rel][3Sg]:elliin       EncliticOrEnd; ell[PerPro]-[Rel][3Pl]:ellaita         EncliticOrEnd; ell[PerPro]-[Rel][3Du]:elkenka         EncliticOrEnd;  ! Rel         |
-ell[PerPro]-[Abl_Mod][3Sg]:elliinek EncliticOrEnd; ell[PerPro]-[Abl_Mod][3Pl]:ellaitnek   EncliticOrEnd; ell[PerPro]-[Abl_Mod][3Du]:elkegnek    EncliticOrEnd;  ! Abl_Mod     |
-ell[PerPro]-[Loc][3Sg]:elliini      EncliticOrEnd; ell[PerPro]-[Loc][3Pl]:ellaitni        EncliticOrEnd; ell[PerPro]-[Loc][3Du]:elkegni         EncliticOrEnd;  ! Loc         |
-ell[PerPro]-[Ter][3Sg]:elliinun     EncliticOrEnd; ell[PerPro]-[Ter][3Pl]:ellaitnun       EncliticOrEnd; ell[PerPro]-[Ter][3Du]:elkegnun        EncliticOrEnd;  ! Ter         |
-ell[PerPro]-[Via][3Sg]:elliikun     EncliticOrEnd; ell[PerPro]-[Via][3Pl]:ellaitgun       EncliticOrEnd; ell[PerPro]-[Via][3Du]:elkegnegun      EncliticOrEnd;  ! Via         |
-ell[PerPro]-[Equ][3Sg]:elliitun     EncliticOrEnd; ell[PerPro]-[Equ][3Pl]:ellaitun        EncliticOrEnd; ell[PerPro]-[Equ][3Du]:elkegtun        EncliticOrEnd;  ! Equ         |
-ell[PerPro]-[Equ][3Sg]:elliicetun   EncliticOrEnd; ell[PerPro]-[Equ][3Pl]:ellaicetun      EncliticOrEnd; ell[PerPro]-[Equ][3Du]:elkegcetun      EncliticOrEnd;                !
+ell[PerPro]-[Abs][3Sg]:ell+ii        EncliticOrEnd; ell[PerPro]-[Abs][3Pl]:ell+ait          EncliticOrEnd; ell[PerPro]-[Abs][3Du]:el_kek           EncliticOrEnd;  ! Abs         |
+ell[PerPro]-[Rel][3Sg]:ell+iin       EncliticOrEnd; ell[PerPro]-[Rel][3Pl]:ell+aita         EncliticOrEnd; ell[PerPro]-[Rel][3Du]:el_kenka         EncliticOrEnd;  ! Rel         |
+ell[PerPro]-[Abl_Mod][3Sg]:ell+iinek EncliticOrEnd; ell[PerPro]-[Abl_Mod][3Pl]:ell+aitnek   EncliticOrEnd; ell[PerPro]-[Abl_Mod][3Du]:el+kegnek    EncliticOrEnd;  ! Abl_Mod     |
+ell[PerPro]-[Loc][3Sg]:ell+iini      EncliticOrEnd; ell[PerPro]-[Loc][3Pl]:ell+aitni        EncliticOrEnd; ell[PerPro]-[Loc][3Du]:el+kegni         EncliticOrEnd;  ! Loc         |
+ell[PerPro]-[Ter][3Sg]:ell+iinun     EncliticOrEnd; ell[PerPro]-[Ter][3Pl]:ell+aitnun       EncliticOrEnd; ell[PerPro]-[Ter][3Du]:el+kegnun        EncliticOrEnd;  ! Ter         |
+ell[PerPro]-[Via][3Sg]:ell+iikun     EncliticOrEnd; ell[PerPro]-[Via][3Pl]:ell+aitgun       EncliticOrEnd; ell[PerPro]-[Via][3Du]:el+kegnegun      EncliticOrEnd;  ! Via         |
+ell[PerPro]-[Equ][3Sg]:ell+iitun     EncliticOrEnd; ell[PerPro]-[Equ][3Pl]:ell+aitun        EncliticOrEnd; ell[PerPro]-[Equ][3Du]:el+kegtun        EncliticOrEnd;  ! Equ         |
+ell[PerPro]-[Equ][3Sg]:ell+iicetun   EncliticOrEnd; ell[PerPro]-[Equ][3Pl]:ell+aicetun      EncliticOrEnd; ell[PerPro]-[Equ][3Du]:el+kegcetun      EncliticOrEnd;                !
 !-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
 !                                               |                                                    |                                                    |  ! 4th Person  |
-ell[PerPro]-[Abs][4Sg]:ellmi        EncliticOrEnd; ell[PerPro]-[Abs][4Pl]:ellmeng         EncliticOrEnd; ell[PerPro]-[Abs][4Du]:ellmek          EncliticOrEnd;  ! Abs         |
-ell[PerPro]-[Rel][4Sg]:ellmi        EncliticOrEnd; ell[PerPro]-[Rel][4Pl]:ellmeng         EncliticOrEnd; ell[PerPro]-[Rel][4Du]:ellmek          EncliticOrEnd;  ! Rel         |
-ell[PerPro]-[Abl_Mod][4Sg]:ellminek EncliticOrEnd; ell[PerPro]-[Abl_Mod][4Pl]:ellmeggnek  EncliticOrEnd; ell[PerPro]-[Abl_Mod][4Du]:ellmegnek   EncliticOrEnd;  ! Abl_Mod     |
-ell[PerPro]-[Loc][4Sg]:ellmini      EncliticOrEnd; ell[PerPro]-[Loc][4Pl]:ellmeggni       EncliticOrEnd; ell[PerPro]-[Loc][4Du]:ellmegni        EncliticOrEnd;  ! Loc         |
-ell[PerPro]-[Ter][4Sg]:ellminun     EncliticOrEnd; ell[PerPro]-[Ter][4Pl]:ellmeggnun      EncliticOrEnd; ell[PerPro]-[Ter][4Du]:ellmegnun       EncliticOrEnd;  ! Ter         |
-ell[PerPro]-[Via][4Sg]:ellmikun     EncliticOrEnd; ell[PerPro]-[Via][4Pl]:ellmegteggun    EncliticOrEnd; ell[PerPro]-[Via][4Du]:ellmegnegun     EncliticOrEnd;  ! Via         |
-ell[PerPro]-[Equ][4Sg]:ellmitun     EncliticOrEnd; ell[PerPro]-[Equ][4Pl]:ellmegtun       EncliticOrEnd; ell[PerPro]-[Equ][4Du]:ellmegnegun     EncliticOrEnd;  ! Equ         |
-ell[PerPro]-[Equ][4Sg]:ellmicetun   EncliticOrEnd; ell[PerPro]-[Equ][4Pl]:ellmegcetun     EncliticOrEnd;                                                    !                |
+ell[PerPro]-[Abs][4Sg]:ell+mi        EncliticOrEnd; ell[PerPro]-[Abs][4Pl]:ell+meng         EncliticOrEnd; ell[PerPro]-[Abs][4Du]:ell+mek          EncliticOrEnd;  ! Abs         |
+ell[PerPro]-[Rel][4Sg]:ell+mi        EncliticOrEnd; ell[PerPro]-[Rel][4Pl]:ell+meng         EncliticOrEnd; ell[PerPro]-[Rel][4Du]:ell+mek          EncliticOrEnd;  ! Rel         |
+ell[PerPro]-[Abl_Mod][4Sg]:ell+minek EncliticOrEnd; ell[PerPro]-[Abl_Mod][4Pl]:ell+meggnek  EncliticOrEnd; ell[PerPro]-[Abl_Mod][4Du]:ell+megnek   EncliticOrEnd;  ! Abl_Mod     |
+ell[PerPro]-[Loc][4Sg]:ell+mini      EncliticOrEnd; ell[PerPro]-[Loc][4Pl]:ell+meggni       EncliticOrEnd; ell[PerPro]-[Loc][4Du]:ell+megni        EncliticOrEnd;  ! Loc         |
+ell[PerPro]-[Ter][4Sg]:ell+minun     EncliticOrEnd; ell[PerPro]-[Ter][4Pl]:ell+meggnun      EncliticOrEnd; ell[PerPro]-[Ter][4Du]:ell+megnun       EncliticOrEnd;  ! Ter         |
+ell[PerPro]-[Via][4Sg]:ell+mikun     EncliticOrEnd; ell[PerPro]-[Via][4Pl]:ell+megteggun    EncliticOrEnd; ell[PerPro]-[Via][4Du]:ell+megnegun     EncliticOrEnd;  ! Via         |
+ell[PerPro]-[Equ][4Sg]:ell+mitun     EncliticOrEnd; ell[PerPro]-[Equ][4Pl]:ell+megtun       EncliticOrEnd; ell[PerPro]-[Equ][4Du]:ell+megnegun     EncliticOrEnd;  ! Equ         |
+ell[PerPro]-[Equ][4Sg]:ell+micetun   EncliticOrEnd; ell[PerPro]-[Equ][4Pl]:ell+megcetun     EncliticOrEnd;                                                    !                |
 !-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
 
-wang[PerPro][1Sg]-%:~(ng)u[N→V]:wang'u    VerbPostbase;
+wang[PerPro]-[1Sg]-%:~(ng)u[N→V]:wang+'+u    VerbPostbase;
 !wang[PerPro]-[1Pl]-%:~(ng)u[N→V]:          VerbPostbase;
 !wang[PerPro]-[1Du]-%:~(ng)u[N→V]:          VerbPostbase;
-ell[PerPro][2Sg]-%:~(ng)u[N→V]:elpengu    VerbPostbase;
+ell[PerPro]-[2Sg]-%:~(ng)u[N→V]:el+pe+ngu    VerbPostbase;
 !ell[PerPro]-[2Pl]-%:~(ng)u[N→V]:           VerbPostbase;
 !ell[PerPro]-[2Du]-%:~(ng)u[N→V]:           VerbPostbase;
-ell[PerPro][3Sg]-%:~(ng)u[N→V]:elliingu   VerbPostbase;
+ell[PerPro]-[3Sg]-%:~(ng)u[N→V]:ell+ii+ngu   VerbPostbase;
 !ell[PerPro]-[3Pl]-%:~(ng)u[N→V]:           VerbPostbase;
 !ell[PerPro]-[3Du]-%:~(ng)u[N→V]:           VerbPostbase;
 !ell[PerPro]-[4Sg]-%:~(ng)u[N→V]:           VerbPostbase;
 !ell[PerPro]-[4Pl]-%:~(ng)u[N→V]:           VerbPostbase;
 !ell[PerPro]-[4Du]-%:~(ng)u[N→V]:           VerbPostbase;
 
-wang[PerPro][1Sg]-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:wiiu͡rluq       EncliticOrEnd;
-wang[PerPro][1Du]-–r(ur)lur*[N→N]-[N][Abs][DuUnpd]:wangkurluuk    EncliticOrEnd;
-wang[PerPro][1Pl]-–r(ur)lur*[N→N]-[N][Abs][PlUnpd]:wangkurluut    EncliticOrEnd;
-ell[PerPro][2Sg]-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:elpeu͡rluq       EncliticOrEnd;
-ell[PerPro][2Sg]-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:elpe'u͡rluq      EncliticOrEnd;
-ell[PerPro][2Du]-–r(ur)lur*[N→N]-[N][Abs][DuUnpd]:elpeu͡rlurpetek  EncliticOrEnd;
-ell[PerPro][2Du]-–r(ur)lur*[N→N]-[N][Abs][DuUnpd]:elpe'u͡rlurpetek EncliticOrEnd;
-ell[PerPro][2Pl]-–r(ur)lur*[N→N]-[N][Abs][PlUnpd]:elpeciu͡rluut    EncliticOrEnd;
+wang[PerPro]-[1Sg]-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:wi+i+u͡rlur*       EncliticOrEnd;
+wang[PerPro]-[1Du]-–r(ur)lur*[N→N]-[N][Abs][DuUnpd]:wang+ku+rlu+uk    EncliticOrEnd;
+wang[PerPro]-[1Pl]-–r(ur)lur*[N→N]-[N][Abs][PlUnpd]:wang+ku+rlu+ut    EncliticOrEnd;
+ell[PerPro]-[2Sg]-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:el+pe+u͡rlur*       EncliticOrEnd;
+ell[PerPro]-[2Sg]-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:el+pe+'u͡rlur*      EncliticOrEnd;
+ell[PerPro]-[2Du]-–r(ur)lur*[N→N]-[N][Abs][DuUnpd]:el+pe+u͡rlur+petek  EncliticOrEnd;
+ell[PerPro]-[2Du]-–r(ur)lur*[N→N]-[N][Abs][DuUnpd]:el+pe+'u͡rlur+petek EncliticOrEnd;
+ell[PerPro]-[2Pl]-–r(ur)lur*[N→N]-[N][Abs][PlUnpd]:el+peci+u͡rlu+ut    EncliticOrEnd;
 
 
 LEXICON QuantQual

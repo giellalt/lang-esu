@@ -27,7 +27,7 @@ a c e g i k l m n p q r s t u v w y m̄ n̄
 vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr
 %[e%] '
 
-%=:%>
+%=:%-
 %>:0 %>:%> ; 
 
 Rules 
@@ -36,4 +36,4 @@ Rules
 %>:0 <=> %> :0* _ ; 
 
 "Convert enclitic to hyphen"
-%=:%> <=> _ ; 
+%=:%- <=> _ ; 
