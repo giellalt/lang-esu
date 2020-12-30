@@ -256,13 +256,15 @@ ugaani-[N][Loc][3SgPoss][SgPosd]:ugaani                   EncliticOrEnd; ! becau
 ugaani-[N][Loc][3SgPoss][SgPosd]:ugaan'                   EncliticOrEnd; ! because of; as a consequence of; on account of
 wataime-+(a)r[N→V]-[V][Intrg][Intr][S_3Sg]:wataim+arta    EncliticOrEnd; ! what time is it?
 ell-[PerPro][Abs][2Sg]-=mi[Encl]:elpes+mi                  EncliticOrEnd;
-ciin-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:cii+u͡rluq           EncliticOrEnd;
+tua[DemAdv]-=i[Encl]-%:~(ng)u[N→V]-–nrite[V→V]-[V][Ind][Intr][S_3Sg]:tua=i=ngu–nrit–uq EncliticOrEnd;
+ciin[Ignorative]-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:cii+u͡rluq           EncliticOrEnd;
 apa-–r(ur)lur*[N→N]:apa+'urlur*                           EncliticOrEnd;
 ema-–r(ur)lur*[N→N]:ma+urlur*                             EncliticOrEnd;
 nas'ag-–r(ur)lur*[N→N]:nasa+urlur*                        EncliticOrEnd;
 taneg-–r(ur)lur*[N→N]:tan'ga+urlur*                       EncliticOrEnd;
 tutgar(ar*)-–r(ur)lur*[N→N]:tutgara+'urlur*               EncliticOrEnd;
 tangerr-–nrite[V→V]:tange+nrrite                          VerbSpecialT;
+
 
 ! Irregular -–a/–ar/–aa 'to V repeatedly'
 qalrir-–a|–ar|–aa|+a|+aar[V→V]:qalri+a       VerbPostbase; ! 
@@ -432,7 +434,6 @@ ayumian                  ParticleEnd; ! (and) then; (and) so; subsequently; cons
 caitqapik                ParticleEnd; ! absolutely nothing
 cali                     ParticleEnd; ! more; furthermore; again; also; still; yet; and
 carrarmek                ParticleEnd; ! a little bit
-ciin                     ParticleEnd; ! why?
 ciumek                   ParticleEnd; ! first
 ciunganitun              ParticleEnd; ! as previously; as in the past; as before (it)
 ciutmun                  ParticleEnd; ! forward
@@ -518,12 +519,7 @@ piciatun                 ParticleEnd; ! in any manner; any old which way; anywhe
 pitsaqutmek              ParticleEnd; ! intentionally
 pulengtaq                ParticleEnd; ! frequently; often; repeatedly
 qakirpak                 ParticleEnd; ! all pale, dry, bleached
-qaku                     ParticleEnd; ! when? (in the future); how long from now?; a certain unspecified (or unspecifiable) time afterward;
-qakuan                   ParticleEnd; ! when some time had elapsed
-qakuaqan                 ParticleEnd; ! at what times?; at various times
 qangkun                  ParticleEnd; ! as one usually does
-qangvaq                  ParticleEnd; ! when (in the past); how long ago?; for some time
-qangvarpak               ParticleEnd; ! for how long?; for a long time
 qang'a=llu               ParticleEnd; ! on the other hand; contrary to what might be thought adverb; or; or else; either . . . or
 qaterpak                 ParticleEnd; ! very white; all white
 qayuwa                   ParticleEnd; ! this time; to my surprise; for some unknown reason; how? (Y, NSU additional meaning)
@@ -621,66 +617,77 @@ LEXICON ParticleEnd
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Ignorative
-ca[Ignorative]:ca                      NounPostbase;
-ca[Ignorative]:ca                      VerbPostbase;
+ca[Ignorative]:ca                      NounPostbase; ! in interrogative contexts: what?, in non-interrogative contexts: something
+ca[Ignorative]:ca                      VerbPostbase; ! in interrogative contexts: what?, in non-interrogative contexts: something
 
-ciin[Ignorative]:ciin                  EncliticOrEnd;
+ciin[Ignorative]:ciin                  EncliticOrEnd; ! why?
 
-ki[Ignorative]-[Abs][SgUnpd]:ki+na                       EncliticOrEnd;
-ki[Ignorative]-–r(ur)lur*[N→N][Abs][SgUnpd]:ki+nau͡rluq  EncliticOrEnd;
+ki[Ignorative]-[Abs][SgUnpd]:ki+na                       EncliticOrEnd; ! who; someone (in non-content-interrogative context)
+ki[Ignorative]-–r(ur)lur*[N→N][Abs][SgUnpd]:ki+nau͡rluq  EncliticOrEnd; 
 ki[Ignorative]-[Abs][SgUnpd]-–lkug[N→N]:ki+na–lkug       EncliticOrEnd; ! no-good, darned N
-kitu[Ignorative]-[Rel][SgUnpd]:ki.a                      EncliticOrEnd;
-kitu[Ignorative]-[Rel][SgUnpd]:kitu.m                    EncliticOrEnd;
-kitu[Ignorative]-[Abl_Mod][SgUnpd]:kitu.mek              EncliticOrEnd;
-kitu[Ignorative]-[Loc][SgUnpd]:kitu.mi                   EncliticOrEnd;
-kitu[Ignorative]-[Ter][SgUnpd]:kitu.mun                  EncliticOrEnd;
-kitu[Ignorative]-[Via][SgUnpd]:kitu.kun                  EncliticOrEnd;
-kitu[Ignorative]-[Equ][SgUnpd]:kitu.tun                  EncliticOrEnd;
-kitu[Ignorative]-%:~(ng)u[N→V]:kitu%:~(ng)u               VerbPostbase;
-kinku[Ignorative]-[Abs][PlUnpd]:kinku.t                  EncliticOrEnd;
-kinku[Ignorative]-[Abs][DuUnpd]:kinku.k                  EncliticOrEnd;
-kinku[Ignorative]-[Rel][PlUnpd]:kinku.t                  EncliticOrEnd;
-kinku[Ignorative]-[Rel][DuUnpd]:kinku.k                  EncliticOrEnd;
-kinku[Ignorative]-[Abl_Mod][PlUnpd]:kinku.nek            EncliticOrEnd;
-kinku[Ignorative]-[Abl_Mod][DuUnpd]:kinku.gnek           EncliticOrEnd;
-kinku[Ignorative]-[Loc][PlUnpd]:kinku.ni                 EncliticOrEnd;
-kinku[Ignorative]-[Loc][DuUnpd]:kinku.gni                EncliticOrEnd;
-kinku[Ignorative]-[Ter][PlUnpd]:kinku.nun                EncliticOrEnd;
-kinku[Ignorative]-[Ter][DuUnpd]:kinku.gnun               EncliticOrEnd;
-kinku[Ignorative]-[Via][PlUnpd]:kinku.tgun               EncliticOrEnd;
-kinku[Ignorative]-[Via][DuUnpd]:kinku.negnun             EncliticOrEnd;
-kinku[Ignorative]-[Equ][PlUnpd]:kinku.cetun              EncliticOrEnd;
-kinku[Ignorative]-[Equ][DuUnpd]:kinku.gcetun             EncliticOrEnd;
-kinku[Ignorative]-[Voc][PlUnpd]:kinku.ut                 EncliticOrEnd;
-kinku[Ignorative]-[Voc][DuUnpd]:kinku.uk                 EncliticOrEnd;
-kinku[Ignorative]-~+miu[N→N]:kinku~+miu                   NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
-kinku[Ignorative]-%:~(ng)u[N→V]:kinku%:~(ng)u             VerbPostbase;
+ki[Ignorative]-[Rel][SgUnpd]:ki.a                      EncliticOrEnd; ! who; whose
+ki[Ignorative]-[Rel][SgUnpd]:kitu.m                    EncliticOrEnd; ! who
+ki[Ignorative]-[Abl_Mod][SgUnpd]:kitu.mek              EncliticOrEnd;
+ki[Ignorative]-[Loc][SgUnpd]:kitu.mi                   EncliticOrEnd;
+ki[Ignorative]-[Ter][SgUnpd]:kitu.mun                  EncliticOrEnd;
+ki[Ignorative]-[Via][SgUnpd]:kitu.kun                  EncliticOrEnd;
+ki[Ignorative]-[Equ][SgUnpd]:kitu.tun                  EncliticOrEnd;
+ki[Ignorative]-%:~(ng)u[N→V]:kitu%:~(ng)u               VerbPostbase;
 
-na[Ignorative]-[Sec_Ter]:na.tmun                 EncliticOrEnd;
+ki[Ignorative]-[Abs][PlUnpd]:kinku.t                  EncliticOrEnd; ! who plural
+ki[Ignorative]-[Abs][DuUnpd]:kinku.k                  EncliticOrEnd;
+ki[Ignorative]-[Rel][PlUnpd]:kinku.t                  EncliticOrEnd;
+ki[Ignorative]-[Rel][DuUnpd]:kinku.k                  EncliticOrEnd;
+ki[Ignorative]-[Abl_Mod][PlUnpd]:kinku.nek            EncliticOrEnd;
+ki[Ignorative]-[Abl_Mod][DuUnpd]:kinku.gnek           EncliticOrEnd;
+ki[Ignorative]-[Loc][PlUnpd]:kinku.ni                 EncliticOrEnd;
+ki[Ignorative]-[Loc][DuUnpd]:kinku.gni                EncliticOrEnd;
+ki[Ignorative]-[Ter][PlUnpd]:kinku.nun                EncliticOrEnd;
+ki[Ignorative]-[Ter][DuUnpd]:kinku.gnun               EncliticOrEnd;
+ki[Ignorative]-[Via][PlUnpd]:kinku.tgun               EncliticOrEnd;
+ki[Ignorative]-[Via][DuUnpd]:kinku.negnun             EncliticOrEnd;
+ki[Ignorative]-[Equ][PlUnpd]:kinku.cetun              EncliticOrEnd;
+ki[Ignorative]-[Equ][DuUnpd]:kinku.gcetun             EncliticOrEnd;
+ki[Ignorative]-[Voc][PlUnpd]:kinku.ut                 EncliticOrEnd;
+ki[Ignorative]-[Voc][DuUnpd]:kinku.uk                 EncliticOrEnd;
+ki[Ignorative]-~+miu[N→N]:kinku~+miu                   NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
+ki[Ignorative]-%:~(ng)u[N→V]:kinku%:~(ng)u             VerbPostbase;
+
+na[Ignorative]-[Sec_Ter]:na.tmun                 EncliticOrEnd; ! to where?
 na[Ignorative]-[Sec_Ter]+tmurte[N→V]:na.tmurte   VerbPostbase;
 na[Ignorative]-[Loc]:na.ni                       EncliticOrEnd;
 na[Ignorative]-[Abl]:na.ken                      EncliticOrEnd;
-na[Ignorative]-[Via]:na.w'un                     EncliticOrEnd;
+na[Ignorative]-[Via]:na.w'un                     EncliticOrEnd; ! through where?
 na[Ignorative]-[Via]:na.gg'un                    EncliticOrEnd;
 na[Ignorative]-[Loc]ete[N→V]:na+nte°            VerbPostbase;
 na[Ignorative]-+var[N→V]:nat+var                VerbPostbase; ! to go or put N-ward
 na[Ignorative]-[Ter]+virte[N→V]:nat.virte        VerbPostbase;
 na[Ignorative]-[Via]+gguir[N→V]:na.gguir         VerbPostbase;
-na[Ignorative]-=wa[Encl]:nau=wa                  EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
-na[Ignorative]-=wa[Encl]:nauwa                   EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
-na[Ignorative]-=wa[Encl]:naugga                  EncliticOrEnd; ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na.u=wa                  EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na.u.wa                   EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na.u.w'                   EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na.u.gga                  EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na.u.gg'                  EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+
 nate[Ignorative]:nate                           NounInflection; ! what part?; some part; a certain part
-nalir[Ignorative]:nalir                         NounPostbase;
 
-qaillun[Ignorative]:qaillun                     EncliticOrEnd;
-qaillun[Ignorative]:qaill'                      EncliticOrEnd;
-qaku[Ignorative]:qaku                           EncliticOrEnd;
-qangvar[Ignorative]:qangvar                     EncliticOrEnd;
-qangvar[Ignorative]-–llar*[N→N]:qangvar–llar*   NounPostbase;
+nalir[Ignorative]:nalir                         NounPostbase; ! (naliq) which (one(s))
 
-qavcir[Ignorative]:qavcin              EncliticOrEnd;
-qavcir[Ignorative]:qavcir              NounPostbase;
-qavcir[Ignorative]:qavcir              VerbPostbase;
+qaillun[Ignorative]:qaillun                     EncliticOrEnd; ! how
+qaillun[Ignorative]:qaill'                      EncliticOrEnd; ! how
+
+qaku[Ignorative]:qaku                           EncliticOrEnd; ! when? (in the future); how long from now?; a certain unspecified (or unspecifiable) time afterward;
+qakuan                   ParticleEnd; ! when some time had elapsed
+qakuaqan                 ParticleEnd; ! at what times?; at various times
+
+qangvar[Ignorative]:qangvar                     EncliticOrEnd; ! when (in the past); how long ago?; for some time
+qangvar[Ignorative]-–llar*[N→N]:qangvar–llar*   NounPostbase; ! ‘thing of when (in the past)ʼ
+qangvallar             NounPostbase; ! ‘thing of when (in the past)ʼ
+qangvarpak               ParticleEnd; ! for how long?; for a long time
+
+qavcir[Ignorative]:qavcin              EncliticOrEnd; ! how many?; how much?; several
+qavcir[Ignorative]:qavcir              NounPostbase; ! how many?; how much?; several
+qavcir[Ignorative]:qavcir              VerbPostbase; ! how many?; how much?; several
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -2119,7 +2126,6 @@ ayuqucir               NounPostbase; ! what something is like; its condition; ch
 ayur                   NounPostbase; ! Labrador or Hudsonʼs Bay tea (Ledum sp.)
 ayvailute              NounPostbase; ! stabilizer
 ay'utar                NounPostbase; ! hockey stick
-ca                     NounPostbase; ! in interrogative contexts: what?, in non-interrogative contexts: something
 caa                    NounPostbase; ! front area of hill, mountain, etc.
 caacug                 NounPostbase; ! bad person; amoral person
 caacunguar             NounPostbase; ! carved arts and crafts item
@@ -4115,7 +4121,6 @@ kevraartur             NounPostbase; ! spruce tree (Picea sp.)
 keyianeng              NounPostbase; ! always
 ken̄ervig               NounPostbase; ! stove
 ken̄itar                NounPostbase; ! match
-kia                    NounPostbase; ! who; whose
 kia(ni)                NounPostbase; ! inside; upriver; on the left facing the ocean
 kiacirutar             NounPostbase; ! shelf at front edge of rear storage platform; bottom cupboard
 kiag                   NounPostbase; ! summer; last summer
@@ -4155,7 +4160,6 @@ kiliner                NounPostbase; ! wound; cut
 kilinercuute           NounPostbase; ! antiseptic; wound dressing
 kilirnar               NounPostbase; ! type of coarse reed (species ?); lamprey (Lampetra japonica)
 kilmar                 NounPostbase; ! stomach
-kina                   NounPostbase; ! who; someone (in non-content-interrogative context)
 kinami                 NounPostbase; ! because
 kinengyag              NounPostbase; ! dried meat
 kinercissuute          NounPostbase; ! clothes dryer
@@ -4178,7 +4182,6 @@ kingur                 NounPostbase; ! worm (species ?)
 kingutmute             NounPostbase; ! going back; going toward the back
 kinguver               NounPostbase; ! descendant
 kinguvkutag            NounPostbase; ! ice piece with large overhang
-kinkut                 NounPostbase; ! who plural
 kipukengar             NounPostbase; ! purchase (purchased thing)
 kipusvig               NounPostbase; ! (HBC form) store
 kipusviliurte          NounPostbase; ! storekeeper; store manager; store clerk
@@ -4944,7 +4947,6 @@ naterar                NounPostbase; ! (NSU form) sole of skin boot; special ove
 naterkar               NounPostbase; ! sole material for skin boots, made from the tanned skin of the bearded seal
 naternar               NounPostbase; ! starry flounder (Platichthys stellatus), arrowtooth flounder (Atheresthes stomias)
 naternarpag            NounPostbase; ! halibut (Hippoglossus stenolepis)
-natmute                NounPostbase; ! to where?
 natquig                NounPostbase; ! drifting snow, sand, etc.
 nat'rar                NounPostbase; ! (NSU form) sole of skin boot; special oversole used to prevent slipping on ice
 nat'rarkar             NounPostbase; ! sole material for skin boots, made from the tanned skin of the bearded seal
@@ -4957,8 +4959,6 @@ naucir                 NounPostbase; ! wild rhubarb (Polygonum alaskanum)
 naucirivig             NounPostbase; ! garden
 naucug                 NounPostbase; ! sore
 naugaar(ar*)           NounPostbase; ! sepal; calyx as of a flower
-naugga                 NounPostbase; ! where is it, he, she?
-naugg'                 NounPostbase; ! where is it, he, she?
 nauktag                NounPostbase; ! skin sore # nauktiit ‘rashʼ
 naulluute              NounPostbase; ! disease; illness
 naulluuvig             NounPostbase; ! hospital
@@ -4978,8 +4978,6 @@ naunrar*               NounPostbase; ! (NUN form) plant; vegetable; cloudberry o
 naunrarvig             NounPostbase; ! vegetable garden
 naunrayagar*           NounPostbase; ! sourdock (Rumex arcticus)
 naurrlug               NounPostbase; ! sore
-nauwa                  NounPostbase; ! where is it, he, she?
-nauw'                  NounPostbase; ! where is it, he, she?
 navcar                 NounPostbase; ! snow hanging over a cliff and ready to fall
 naviskaar              NounPostbase; ! loft; attic
 navisqar               NounPostbase; ! loft; attic
@@ -4988,7 +4986,6 @@ navrar                 NounPostbase; ! borrowed thing
 navrarvig              NounPostbase; ! place to borrow things; site of borrowing; lending library
 navriute               NounPostbase; ! loaned out thing
 navrute                NounPostbase; ! borrowed thing; trade item
-naw'ute                NounPostbase; ! through where?
 nayaar                 NounPostbase; ! girl; virgin (particularly the Virgin Mary in Russian Orthodox and Roman Catholic usage)
 nayagar                NounPostbase; ! younger sister of a male
 nayangar               NounPostbase; ! greeting
@@ -5785,8 +5782,6 @@ qaglaya(g)ar           NounPostbase; ! bowl with grooved upper part made of a se
 qagna                  NounPostbase; ! the one outside; the one to the north
 qag'erner              NounPostbase; ! hernia
 qaillukuarte           NounPostbase; ! ‘council memberʼ
-qaillute               NounPostbase; ! how
-qaill'                 NounPostbase; ! how
 qair*                  NounPostbase; ! wave
 qairvaar               NounPostbase; ! big wave capable of breaking shore-fast ice
 qairvag                NounPostbase; ! big wave
@@ -5939,7 +5934,6 @@ qangqiir               NounPostbase; ! ptarmigan (Lagopus sp.)
 qangquar               NounPostbase; ! frozen “Eskimo ice cream” (akutaq)
 qangqulegcitaar        NounPostbase; ! (HBC form) bunchberry or ground dogwood (Cornus canadensis)
 qangqullektaar         NounPostbase; ! (HBC form) bunchberry or ground dogwood (Cornus canadensis)
-qangvallar             NounPostbase; ! ‘thing of when (in the past)ʼ
 qang'a                 NounPostbase; ! no
 qaniciurte             NounPostbase; ! scavenger; trash collector
 qanikcar*              NounPostbase; ! snow on the ground
@@ -6069,7 +6063,6 @@ qavarvig               NounPostbase; ! sleeping bag; bedroom; bed (in NUN)
 qavcicuar              NounPostbase; ! marten (Martes americana)
 qavcicuar(ar*)         NounPostbase; ! marten (Martes americana)
 qavcig                 NounPostbase; ! wolverine (Gulo gulo)
-qavcite                NounPostbase; ! how many?; how much?; several
 qavliryar              NounPostbase; ! bog; quicksand
 qavlunar               NounPostbase; ! streak or wake made on the surface of water by a fish or animal swimming at or just below the surface; silver salmon; coho salmon (Oncorhynchus kisutch) (additional HBC meaning)
 qavlunguar             NounPostbase; ! a certain constellation (?) that resembles an eyebrow
@@ -8808,7 +8801,6 @@ ayuqute                VerbPostbase; ! to treat (him in a certain way); to regar
 ayvair                 VerbPostbase; ! to stabilize
 ayvaite                VerbSpecialT; ! to be solid; to be stable; to be immovable
 ay'utar                VerbPostbase; ! to play hockey
-ca                     VerbPostbase; ! in interrogative contexts: to do what?; in non-interrogative contexts: to do something
 caacungui              VerbPostbase; ! to carve ivory or wood
 caagniite              VerbPostbase; ! to be restricted from engaging in certain activities due to death, first menses, miscarriage, or childbirth; to practice rite-of-passage abstinence
 caagnite               VerbPostbase; ! to be restricted from engaging in certain activities due to death, first menses, miscarriage, or childbirth; to practice rite-of-passage abstinence
@@ -10360,7 +10352,6 @@ kitengpag              VerbPostbase; ! to kick hard with the heel (or toe)
 kitngiar               VerbPostbase; ! to repeatedly kick
 kitngig                VerbPostbase; ! to kick (especially but not exclusively, forward with the heel)
 kitngu                 VerbPostbase; ! to capsize; to tip over (of sled)
-kitu                   VerbPostbase; ! who
 kitugi                 VerbPostbase; ! to function better
 kitugte                VerbPostbase; ! to repair; to mend; to fix; to arrange; to straighten out a personʼs behavior
 kitur                  VerbPostbase; ! to pass (physically go past, or pass by in time)
@@ -10846,7 +10837,6 @@ nalate                 VerbPostbase; ! to kill (plants, animals, people)
 naler                  VerbPostbase; ! to break wind; to expel flatus; vulgar to fart
 nalig                  VerbPostbase; ! to be covering (it)
 naliquciite            VerbPostbase; ! to not know which one
-nalir                  VerbPostbase; ! (naliq) which (one(s))
 nalirrugte             VerbPostbase; ! to be undecided
 nalke                  VerbPostbase; ! to find; to discover
 nalkute                VerbPostbase; ! to find something
@@ -15084,8 +15074,8 @@ ell[PerPro]-[Equ][2Sg]:el+petun      EncliticOrEnd; ell[PerPro]-[Equ][2Pl]:el+pe
 ell[PerPro]-[Equ][2Sg]:el+pecetun    EncliticOrEnd; ell[PerPro]-[Equ][2Pl]:el+pecicetun     EncliticOrEnd; ell[PerPro]-[Equ][2Du]:el+petegcetun    EncliticOrEnd;                !
 !-----------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------|
 !                                               |                                                    |                                                    |  ! 3rd Person  |
-ell[PerPro]-[Abs][3Sg]:ell+ii        EncliticOrEnd; ell[PerPro]-[Abs][3Pl]:ell+ait          EncliticOrEnd; ell[PerPro]-[Abs][3Du]:el_kek           EncliticOrEnd;  ! Abs         |
-ell[PerPro]-[Rel][3Sg]:ell+iin       EncliticOrEnd; ell[PerPro]-[Rel][3Pl]:ell+aita         EncliticOrEnd; ell[PerPro]-[Rel][3Du]:el_kenka         EncliticOrEnd;  ! Rel         |
+ell[PerPro]-[Abs][3Sg]:ell+ii        EncliticOrEnd; ell[PerPro]-[Abs][3Pl]:ell+ait          EncliticOrEnd; ell[PerPro]-[Abs][3Du]:el+kek           EncliticOrEnd;  ! Abs         |
+ell[PerPro]-[Rel][3Sg]:ell+iin       EncliticOrEnd; ell[PerPro]-[Rel][3Pl]:ell+aita         EncliticOrEnd; ell[PerPro]-[Rel][3Du]:el+kenka         EncliticOrEnd;  ! Rel         |
 ell[PerPro]-[Abl_Mod][3Sg]:ell+iinek EncliticOrEnd; ell[PerPro]-[Abl_Mod][3Pl]:ell+aitnek   EncliticOrEnd; ell[PerPro]-[Abl_Mod][3Du]:el+kegnek    EncliticOrEnd;  ! Abl_Mod     |
 ell[PerPro]-[Loc][3Sg]:ell+iini      EncliticOrEnd; ell[PerPro]-[Loc][3Pl]:ell+aitni        EncliticOrEnd; ell[PerPro]-[Loc][3Du]:el+kegni         EncliticOrEnd;  ! Loc         |
 ell[PerPro]-[Ter][3Sg]:ell+iinun     EncliticOrEnd; ell[PerPro]-[Ter][3Pl]:ell+aitnun       EncliticOrEnd; ell[PerPro]-[Ter][3Du]:el+kegnun        EncliticOrEnd;  ! Ter         |
@@ -15149,7 +15139,7 @@ LEXICON QuantQualInflection
 !----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
                                                                                                 -[Quant_Qual][P_3Sg]:%:(ng)an      EncliticOrEnd;
                                                                                                 -[Quant_Qual][P_3Pl]:%:(ng)ita     EncliticOrEnd;
-                                                                                                -[Quant_Qual][P_3Du]:%%%:(e)gkenka EncliticOrEnd;
+                                                                                                -[Quant_Qual][P_3Du]:+(g)kenka     EncliticOrEnd;
 !----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 -[Quant_Qual][S_1Sg]:+ma           EncliticOrEnd; -[Quant_Qual][A_1Sg]:+ma           EncliticOrEnd; -[Quant_Qual][P_1Sg]:+ma           EncliticOrEnd;
 -[Quant_Qual][S_1Pl]:–mta          EncliticOrEnd; -[Quant_Qual][A_1Pl]:–mta          EncliticOrEnd; -[Quant_Qual][P_1Pl]:–mta          EncliticOrEnd;
@@ -15246,9 +15236,9 @@ un'gaa             DemAdv2Ter;
 ! HERE, NEAR SPEAKER                                                                  |
 !--------------------------|----------------------------|-----------------------------|
 ma              DemAbsSgIrr; u                  DemAbsSg; im                  DemAbsSg;
-man:mat+'u      DemNonAbsSg; u:u+u           DemNonAbsSg; im'u             DemNonAbsSg;
-                                                          imu              DemNonAbsSg;
-man:ma+ku  DemIntermedNonSg; u:u+ku     DemIntermedNonSg; imku        DemIntermedNonSg;
+man:mat+'u      DemNonAbsSg; u:u+u           DemNonAbsSg; im:im'u             DemNonAbsSg;
+                                                          im:imu              DemNonAbsSg;
+man:ma+ku  DemIntermedNonSg; u:u+ku     DemIntermedNonSg; im:imku        DemIntermedNonSg;
 maa              DemAdv2Ter; wa                   DemAdv; 
                                                           ima                   DemAdv;
 u[DemPro]-[Via][SgUnpd]:u+u+ggun      EncliticOrEnd;  
