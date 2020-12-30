@@ -28,6 +28,8 @@ Alphabet
     %[e%] %[e%]:e                               ! HBC/Nun: initial e is not weak
     ạ ụ ġ                                       ! for (ar) droppping ; for vowel dropping in connective moods ending in a vowel ; ya(g)ar*
 
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Vv Ll Ss Gg Rr Ng N͞g U͡g U͡gg U͡r U͡rr M̄ N̄ ! pass through for [NonYupik]
+
     ! All operators and allomorph operators map to morpheme segmenter 
     %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%>
     %(ar%):%> %(ar%*%):%> %(ng%):%> ! %(ur%):%> %(aa%):%> %(a%):%>
@@ -65,6 +67,8 @@ Rules
 
 "a:0 = --"
 a:0 <=> _ Con:0 (%*:) %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        .#. :Con _ ; ! block meliur- -> miur-
 
 "a:i = age/ii | aga/ii | anga/ii | aga/ii | enga/ii"
 a:i <=> [:Con|.#.] _ g: %%: %:: %(e%):i Con: ; ! ag%:(e) -> ii 
@@ -79,6 +83,8 @@ a:i <=> [:Con|.#.] _ g: %%: %:: %(e%):i Con: ; ! ag%:(e) -> ii
 
 "ạ:0 = --"
 ạ:0 <=> _ Con:0 (%*:) %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        .#. :Con _ ; ! block meliur- -> miur-
 
 "ạ:i = age/ii | aga/ii | anga/ii | aga/ii | enga/ii"
 ạ:i <=> [:Con|.#.] _ g: %%: %:: %(e%):i Con: ; ! ag%:(e) -> ii 
@@ -101,6 +107,7 @@ e:0 <=> _ [ Bndry: - %`: - %(r%): ]* %~: ; ! "Rule for Tilde"
     except
         [:Con|.#.] _ %:: [ng:|%(ng%):] [i:|u:] [Bndry:|Con:|.#.] ; ! e:(ng)i -> ai ; e:(ng)u -> au
         [:Con|.#.] _ %:: [ng:|%(ng%):] [a:|ạ:] [Bndry:|Con:|.#.] ; ! e:(ng)a -> ii
+        .#. :Con _ ; ! block meliur- -> miur-
 
 "e:a = e^a | engi/ai"
 e:a <=> _ [ .#. | %= ] ; ! "Word final e:a"
@@ -113,12 +120,12 @@ e:i <=> [:Con|.#.] _ %:: [ng:|%(ng%):] [a:|ạ:] [Bndry:|:Con|.#.] ; ! e:(ng)a -
 
 "g:0 = - | :"
 g:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
-        [:Con|.#.] FVow: _ %%: %:: %(e%): Con: ; ! ag%:(e) -> ii
-        [:Con|.#.] FVow: _ [%@³:|%~:] %:: %(u%): Con: ; ! ag@³:(u) -> au
-        [:Con|.#.] FVow: _  %:: %(u%|i%): Con: ; ! ag:(u/i) -> au
-        [:Con|.#.] [Bndry:|:0]* FVow: %:: _ FVow: [Bndry:|Con:|.#.] ; ! a:gu -> au
-        [:Con|.#.] FVow: _ %:: FVow: [Bndry:|Con:|.#.] ; ! ag:a -> ii
-        [:Con|.#.] FVow: _ %:: (%~:) %(ng%): FVow: [Bndry:|Con:|.#.] ; ! Vg:(~)(ng)V -> VV
+        Con FVow _ [%@³:|%~:] %:: %(u%): Con: ; ! ag@³:(u) -> au
+        [:Con|.#.] :FVow _ %%: %:: %(e%): Con: ; ! ag%:(e) -> ii
+        [:Con|.#.] :FVow _  %:: %(u%|i%): Con: ; ! ag:(u/i) -> au
+        [:Con|.#.] [Bndry:|:0]* :FVow %:: _ FVow: [Bndry:|Con:|.#.] ; ! a:gu -> au
+        [:Con|.#.] :FVow _ %:: FVow: [Bndry:|Con:|.#.] ; ! ag:a -> ii
+        [:Con|.#.] :FVow _ %:: (%~:) %(ng%): FVow: [Bndry:|Con:|.#.] ; ! Vg:(~)(ng)V -> VV
 
 "g̲:r = Uvular/VelarAgreement"
 g̲:r <=> [r:|rr:] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
@@ -135,6 +142,8 @@ g̲g̲:rr <=> [r:|rr:] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 
 "i:0 = --"
 i:0 <=> _ Con:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        .#. :Con _ ; ! block meliur- -> miur-
 
 "k̲:q = Uvular/VelarAgreement"
 k̲:q <=> [r:|rr:] Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
@@ -156,7 +165,7 @@ m:m̄ <=> Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: Bndry:* _ ; ! Cte@²m/Cm̄
 n:n̄ <=> Con t:0 e:0 (%°:) [Bndry:-AtSign:]* %@¹: [Bndry:-AtSign:]* _ ; ! Cte@¹n/Cn̄
 
 "ng:0 = :"
-ng:0 <=> [:Con|.#.] [Bndry:|:0]* FVow: %:: _ FVow: [Bndry:|Con:|.#.] ; ! u:nga -> ua ; a:nga -> ii
+ng:0 <=> [:Con|.#.] [Bndry:|:0]* :FVow %:: _ FVow: [Bndry:|Con:|.#.] ; ! u:nga -> ua ; a:nga -> ii
     except
          Con t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* _ ; ! Cte@²ng/Cn͞g
 
@@ -169,12 +178,13 @@ q̲:k <=> g: Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
 "r:0 = - | % | :"
 r:0 <=> _ Bndry:* %–: ; ! Rule for Minus - drop consonant ending base
         [FVow|%=:] _ [Bndry: - %*:]* %%:0 ; ! Rule for Percent
-        [:Con|.#.] FVow: _ %*: %%: %:: %(e%): Con: ; ! ar*%:(e) -> aa
-        [:Con|.#.] FVow: _ [%@³:|%~:] %:: %(u%): Con: ; ! ar@³:(u) -> au
-        [:Con|.#.] FVow: _  %:: %(u%|i%): [Con:] ; ! ar:(u/i) -> au
-        [:Con|.#.] [Bndry:|:0]* FVow: %:: _ FVow: [Bndry:|Con:|.#.] ; ! i:ru -> iu
-        [:Con|.#.] [Bndry:|:0]* FVow: _ %:: FVow: [Bndry:|Con:|.#.] ; ! ar:a -> aa
-        [:Con|.#.] FVow: _ (%*:) %:: (%~:) %(ng%): FVow: [Bndry:|Con:|.#.] ; ! ar(*):(~)(ng)a -> ii
+        [:Con|.#.] :FVow _ %*: %%: %:: %(e%): Con: ; ! ar*%:(e) -> aa
+        [:Con|.#.] :FVow _ %~:  %:: %(u%): Con: ; ! ar@³:(u) -> au
+        [:Con|.#.] :FVow _ %@³: %:: %(u%): Con: ; ! ar@³:(u) -> au
+        [:Con|.#.] :FVow _ %:: %(u%|i%): [Con:] ; ! ar:(u/i) -> au
+        [:Con|.#.] [Bndry:|:0]* :FVow %:: _ FVow: [Bndry:|Con:|.#.] ; ! i:ru -> iu
+        [:Con|.#.] [Bndry:|:0]* :FVow _ %:: FVow: [Bndry:|Con:|.#.] ; ! ar:a -> aa
+        [:Con|.#.] :FVow _ (%*:) %:: (%~:) %(ng%): FVow: [Bndry:|Con:|.#.] ; ! ar(*):(~)(ng)a -> ii
 
 "r̲:g = Uvular/VelarAgreement"
 r̲:g <=> g: Bndry:* %–: Bndry:* _ ; ! Uvular/VelarAgreement
@@ -215,6 +225,8 @@ t:c <=> _ Vow:0 (Con:0) [Bndry:-%(u%):-AtSign:]* %–: %–: l:0 i ; ! te--li/ci
         _ (') e: (%°:) %:: %(u%|i%): m: ; ! te:(u/i)/ci
         _ (') e: (%°:) [Bndry:-%(u%):-AtSign:]* %@ʸ: [Bndry:-%(u%):-AtSign:]* y: ; ! te@y/c
         _ (') e: [Bndry:-%(u%):-AtSign:]* [s:|y:] ; ! te~s/c
+    except
+        .#. _ ;
 
 "t:l = Vte@²/l | te*@³(u)/l | te°@⁴gkng/l"
 t:l <=> Vow _ (') e: %°: [Bndry:-AtSign:]* %@²: ; ! Vte°@²mngv/l
@@ -240,6 +252,8 @@ t:y <=>
 
 "u:0 = --"
 u:0 <=> _ Con:0 Bndry:* %–: %–: l:0 ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        .#. :Con _ ; ! block meliur- -> miur-
 
 "u͡gg:u͡g = u͡gte@(u)"
 u͡gg:u͡g <=> _ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ; ! CCte@³(u)/Cu
@@ -307,11 +321,11 @@ y:s <=> [VlessCon-t] (e:0) [Bndry:-AtSign:]* %@ʸ: [Bndry:-AtSign:]* _ ; ! Stop@
 %(ng%):ng <=> Vow: Bndry:* _ ;
     except
         [:Con|.#.] Vow: %:: _ FVow: [Bndry:|Con:|.#.] ; ! CV:(ng)VC -> CVVC
-        [:Con|.#.] FVow: %:: %~: _ FVow: [Bndry:|Con:|.#.] ; ! CFV:~(ng)VC -> CVVC
+        [:Con|.#.] :FVow %:: %~: _ FVow: [Bndry:|Con:|.#.] ; ! CFV:~(ng)VC -> CVVC
 
 "(ng):0 = :" ! - bases that get added then dropped after single vowel
 %(ng%):0 <=> [:Con|.#.] Vow: %:: _ FVow: [Bndry:|Con:|.#.] ; ! CV:(ng)VC -> CVVC
-             [:Con|.#.] FVow: %:: %~: _ FVow: [Bndry:|Con:|.#.] ; ! CFV:~(ng)VC -> CVVC
+             [:Con|.#.] :FVow %:: %~: _ FVow: [Bndry:|Con:|.#.] ; ! CFV:~(ng)VC -> CVVC
              ! 
 
 "(r):r = te Bases"
