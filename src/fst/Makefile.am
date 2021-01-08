@@ -101,9 +101,6 @@ clean-local:
 	-rm -f url.lexc *.tmp*
 	-rm -f *.relabel lexicon-tags.* lexicon-sigma.*
 
-maintainer-clean-local:
-	-rm -f $(srcdir)/root.lexc
-
 include $(srcdir)/Makefile.modifications-phon.am
 include $(top_srcdir)/../giella-core/am-shared/src-morphology-dir-include.am
 
