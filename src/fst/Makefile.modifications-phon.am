@@ -21,24 +21,24 @@
 #! @param GT_TWOLC_SUPPLEMENTS optional, other sources to distribute and
 #! 		  compile for other things
 GT_PHONOLOGY_MAIN=phonology.twolc
-GT_PHONOLOGY_SUPPLEMENTS=esu.stress.twolc \
-                         esu.twol.xfscript \
-                         esu.seg.twolc \
-                         esu.ana.twolc
+GT_PHONOLOGY_SUPPLEMENTS=assign-stress.twolc \
+                         extra-phonology.xfscript \
+                         collapse-boundaries.twolc \
+                         remove-boundaries.twolc
 
-phonology.twolc: $(srcdir)/orig/src/esu.twol
+phonology.twolc:           $(srcdir)/orig/src/esu.twol
 	$(AM_V_CP)cp -f $< $@
 
-esu.stress.twolc: $(srcdir)/orig/src/esu.stress.twol
+assign-stress.twolc:       $(srcdir)/orig/src/esu.stress.twol
 	$(AM_V_CP)cp -f $< $@
 
-esu.twol.xfscript: $(srcdir)/orig/src/esu.twol.xfst
+extra-phonology.xfscript:  $(srcdir)/orig/src/esu.twol.xfst
 	$(AM_V_CP)cp -f $< $@
 
-esu.seg.twolc: $(srcdir)/orig/src/esu.seg.twol
+collapse-boundaries.twolc: $(srcdir)/orig/src/esu.seg.twol
 	$(AM_V_CP)cp -f $< $@
 
-esu.ana.twolc: $(srcdir)/orig/src/esu.ana.twol
+remove-boundaries.twolc:   $(srcdir)/orig/src/esu.ana.twol
 	$(AM_V_CP)cp -f $< $@
 
 # vim: set ft=automake:
