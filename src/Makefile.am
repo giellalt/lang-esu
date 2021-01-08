@@ -63,20 +63,66 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
-#generator-raw-gt-desc.%: generator-raw-gt-desc.tmp.% \
-#						 fst/esu.stress.compose.% \
-#						 fst/esu.twol.compose.% \
-#						 fst/esu.ana.compose.%
-#	$(AM_V_COMPOSE)$(HFST_COMPOSE_INTERSECT) \
-#						 -1 $< -2 fst/esu.stress.compose.$* \
-#		| $(HFST_COMPOSE) -1 - -2 fst/esu.twol.compose.$* \
-#		| $(HFST_COMPOSE) -2 - -1 fst/esu.ana.compose.$* \
-#		| $(HFST_MINIMIZE) > $@
-#
-#morpher-gt-desc.%: morpher-gt-desc.tmp.% fst/esu.seg.compose.%
-#	$(AM_V_COMPOSE)$(HFST_COMPOSE_INTERSECT) -1 $< \
-#		-2 fst/esu.seg.compose.$* \
-#		-o esu.seg.hfst
+### ESU requires extra processing after twolc intersection:
+# Hfst:
+generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst \
+			fst/assign-stress.compose.hfst  \
+			fst/extra-phonology.compose.hfst
+	$(AM_V_INTRSCT)$(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
+		  -1 $< -2 fst/assign-stress.compose.hfst \
+		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
+		  -1 - -2 fst/extra-phonology.compose.hfst \
+		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+		-o $@
+
+#### Xerox & FOMA:
+analyser-raw-gt-desc.%: analyser-raw-gt-desc.tmp.% \
+			fst/assign-stress.compose.%  \
+			fst/extra-phonology.compose.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"$<\" \
+			.o. @\"fst/assign-stress.compose.$*\"   \
+			.o. @\"fst/extra-phonology.compose.$*\" \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+# Remove & change boundaries in the analysers:
+define giella_default_analysers
+analyser%.$(1): analyser%.tmp.$(1) \
+			fst/remove-boundarie.compose.$(1)
+	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
+				@\"fst/remove-boundarie.compose.$(1)\"  \
+			.o. @\"$$<\" \
+		 $$(INVERT_HFST)\
+		 save stack $$@\n\
+		 quit\n" | $$(XFST_TOOL)
+endef
+$(foreach fst,hfst xfst foma,$(eval $(call giella_default_analysers,$(fst))))
+
+# Remove & change boundaries in the generators:
+define giella_default_generators
+generator-%.$(1): generator-%.tmp.$(1) \
+			fst/remove-boundarie.compose.$(1)
+	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
+				@\"fst/remove-boundarie.compose.$(1)\"  \
+			.o. @\"$$<\" \
+		 $$(INVERT_XFST)$$(INVERT_FOMA)\
+		 save stack $$@\n\
+		 quit\n" | $$(XFST_TOOL)
+endef
+$(foreach fst,hfst xfst foma,$(eval $(call giella_default_generators,$(fst))))
+
+# Collaps boundaries in the morpher:
+morpher-gt-desc.%: morpher-gt-desc.tmp.% \
+			fst/collapse-boundaries.compose.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"fst/collapse-boundaries.compose.$*\".i  \
+			.o. @\"$<\" \
+			;\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
