@@ -39,6 +39,9 @@ z
 -
 .
 :
+ʼ
+͡
+’
 
 ## Transition pairs + weight - section separator:
 @@
