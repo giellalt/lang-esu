@@ -27,8 +27,8 @@ Alphabet
     %[e%]
     ʼ                                           ! Keep apostrophe from lexical entries
     ạ ụ ġ                                       ! for (ar) droppping
-    á í ú ạ́ ụ́ â î û ậ ụ̂ é ê
-    %[é%] %[ê%]                                 ! weak initial e cannot be hatted
+    á í ú ạ́ ụ́ â î û ậ ụ̂ é ê
+    %[é%] %[ê%]                                 ! weak initial e cannot be hatted
     %> 
     %= ;
 
@@ -50,18 +50,18 @@ Sets
     Con = Stop Fric Nasal w y ;
 
     FVow = a i u ạ ụ ;
-    FVowStress = á í ú ạ́ ụ́ ;
-    FVowHatted = â î û ậ ụ̂ ;
+    FVowStress = á í ú ạ́ ụ́ ;
+    FVowHatted = â î û ậ ụ̂ ;
     AllFVow = FVow FVowStress FVowHatted ;
     Vow = FVow e %[e%] ;
-    VowStress = FVowStress é %[é%] ;
-    VowHatted = FVowHatted ê %[ê%] ; ! weak initial e cannot be hatted
+    VowStress = FVowStress é %[é%] ;
+    VowHatted = FVowHatted ê %[ê%] ; ! weak initial e cannot be hatted
     AllVow = Vow VowStress VowHatted ;
 
 Rules 
 ! From pg 55 in practical grammar book (Jacobson, 1995)
 
-"a:â"
+"a:â"
 Vx:Vy <=> [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con :* | B:* :Con B:* :ʼ :* ] .#. ; !CVCV̂              ! Rule 1
     except
         _ B:* (:Vow) B:* (:Con) B:* [.#.|:%=] ;
@@ -69,7 +69,7 @@ Vx:Vy <=> [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con 
           Vy in VowHatted
     matched;
 
-"a:á"
+"a:á"
 Vx:Vy <=> :Vow B:* _ ; !VV́(C)                                                                                         ! Rule 2
           [.#.|:Con] B:* _ B:* :Con B:* ([:Con|:ʼ]) B:* :Vow B:* :AllVow ; ! CV́C(C)VV́                                   ! Rule 3
           .#. (:Con) B:* _ B:* :Con B:* [:Con|:ʼ] ; ! #(C)V́C[Cʼ]                                               ! Rule 4
