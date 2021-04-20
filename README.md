@@ -1,6 +1,10 @@
 Finite State Morphological Analyzer for Central Alaskan Yup'ik
 ==============================================================
 
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/issues)
+[![Build Status](https://github.com/giellalt/lang-esu/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-esu/actions)
+[![License](https://img.shields.io/github/license/giellalt/template-lang-esu)](https://raw.githubusercontent.com/giellalt/lang-esu/develop/LICENSE)
+
 Central Alaskan Yup'ik (CAY) (ISO 639-3: esu) is a member of the Inuit-Yupik-Unangan (IYU) (also known as Eskimo-Aleut) language family. It is spoken in south-west Alaska among the Yukon-Kuskokwim Delta and Bristol Bay areas.
 
 This CAY morphological analyzer/generator can **analyze** (break the word into its individual parts) and **generate** (build a word from its individual parts) Yup'ik words. The underlying form is composed of morphemes represented by the analysis of Jacobson's (1984/1995/2012) [dictionary](http://www.uaf.edu/anla/item.xml?id=CY972J2012) and grammar book. It is build using the open source [HFST tools](https://hfst.github.io). This project was developed with `hfst 3.15.2`.
