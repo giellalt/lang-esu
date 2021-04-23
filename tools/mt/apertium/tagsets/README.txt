@@ -15,7 +15,7 @@ modify-rags.TARGETLANG.regex - pair-specific changes using regex, manually m.
 apertium.TARGETLANG.relabel  - pair-specific relabelling, manually add/maint.
 
 Replace TARGETLANG with the language code of the actual target language you
-are building your __UNDEFINED__ apertium analyser for.
+are building your Central Alaskan Yup'ik apertium analyser for.
 
 
 The file apertium.postproc.relabel is added to all languages and contain some
