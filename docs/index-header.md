@@ -5,11 +5,11 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/issues)
 [![Build status](https://github.com/giellalt/lang-esu/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-esu/actions)
 
-This page documents the work on the **Central Yupik language model**. See the GitHub repo (link to the left) for more details.
+This page documents the work on the [Central Yupik language model](http://github.com/giellalt/lang-esu). See the GitHub repo (link to the left) for more details.
 
 # Project documentation
 
-* Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.
+* (Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.)
 
 # In-source documentation
 
