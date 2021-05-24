@@ -21,10 +21,12 @@ HFST_LEXC_LOCAL_FLAGS=
 ####### Morphology source file defs: ########
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
-GT_LEXC_ROOT=$(srcdir)/orig/src/esu.lexc
+GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
-GT_LEXC_SRCS_L1_L2=
+GT_LEXC_SRCS_L1_L2=\
+			 stems/exceptions.lexc
+
 #			 affixes/adjectives.lexc  \
 #			 affixes/nouns.lexc       \
 #			 affixes/propernouns.lexc \
@@ -88,7 +90,7 @@ lexicon.cleanup.xfscript: $(srcdir)/orig/src/esu.lexc.xfst
 	$(AM_V_CP)cp -f $< $@
 
 # Just for doc targets:
-$(srcdir)/root.lexc: $(srcdir)/orig/src/esu.lexc
+$(srcdir)/root.lexc: $(srcdir)/root.lexc
 	$(AM_V_CP)cp -f $< $@
 
 ### END: Local processing: ###
