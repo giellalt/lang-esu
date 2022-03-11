@@ -14,10 +14,7 @@
 
 @SET_MAKE@
 
-# List all md files that should be created from source files in the
-# MD_PAGES variable. The filename pattern is as follows:
-#
-# dir/filename.lexc => filename-dir.md
+# The generated docs are automatically detected by the automake script
 
 # *.gt.* designates the tagset being used.
 # At the end of the makefile, there is support for automatic compilation of
@@ -51,7 +48,6 @@
 # hfst-multiply
 # hfst-pair-test
 # hfst-pmatch
-# hfst-prune-alphabet
 # hfst-push-weights
 # hfst-remove-epsilons
 # hfst-shuffle
@@ -333,6 +329,7 @@ R = @R@
 RSYNC = @RSYNC@
 SAXON = @SAXON@
 SAXONJAR = @SAXONJAR@
+SED = @SED@
 SEE = @SEE@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
@@ -404,9 +401,6 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-MD_PAGES = root-morphology.md \
-		 transcriptor-abbrevs2text.md
-
 
 # Variables:
 ALLINONE_MD_PAGE = $(srcdir)/$(GTLANG).md
@@ -417,8 +411,91 @@ INDEX = $(srcdir)/index.md
 # no regenerations while debugging
 doc_DATA = $(INDEX) $(LINKS) $(ALLINONE_MD_PAGE)
 DOCC2MDWIKI = $(GTCORE)/scripts/doccomments2ghpages.awk
-JSPWIKI2MD = $(GTCORE)/scripts/jspwiki2md.awk
+DOCC2MDWIKI_CG3 = $(GTCORE)/scripts/doccomments2ghpages-vislcg.awk
 GRAPHPLOTTER = $(GTCORE)/scripts/plot-speller-progress.R
+
+# Define all doccomment source files in a variable:
+DOCSRC_XEROX := $(shell fgrep -rl \
+		--include '*.lexc' \
+		--include '*.twolc' \
+		--include '*.pmscript' \
+		--include '*.xfscript'\
+		--exclude 'Makefile*' \
+		--exclude 'lexicon.tmp.lexc' \
+		--exclude-dir 'generated_files' \
+		--exclude-dir 'orig' \
+		--exclude-dir 'incoming' \
+		'!! ' $(top_srcdir)/src/* $(top_srcdir)/tools/* |\
+		fgrep -v incoming/ )
+
+DOCSRC_CG3 := $(shell fgrep -rl \
+		--include '*.cg3' \
+		--exclude 'Makefile*' \
+		--exclude 'lexicon.tmp.lexc' \
+		--exclude-dir 'generated_files' \
+		--exclude-dir 'orig' \
+		--exclude-dir 'incoming' \
+		'!! ' $(top_srcdir)/src/* $(top_srcdir)/tools/* |\
+		fgrep -v incoming/ )
+
+DOCSRC = $(sort $(DOCSRC_XEROX) $(DOCSRC_CG3) )
+
+# Remove vpath prefix for nested list construction:
+BARE_DOCSRC := $(subst $(top_srcdir)/,,$(DOCSRC))
+
+# Create actual list of MD files:
+MDFILES = $(call src2md,$(DOCSRC))
+# Append vpath prefix - for now, the files are stored in the source tree:
+VPATH_MDFILES = $(addprefix $(top_srcdir)/docs/,$(MDFILES))
+
+# Construct source file and md file pairs of the following format:
+# src/fst/root.lexc@src-fst-root.lexc.md
+
+# The variable DOCSRC_MDFILES contains a list of all source files and the
+# corresponding md file in the following format:
+#
+# src/fst/root.lexc@src-fst-root.lexc.md
+#
+# From this we want to construct a nested Markdown bullet list as follows
+# - src
+#     - fst
+#         - [root.lexc](src-fst-root.lexc.md)
+#
+# The resulting list should be the content in the $(LINKS) file.
+DOCSRC_MDFILES = $(shell echo $(BARE_DOCSRC) | tr ' ' '\n' > docsrc.tmp; \
+					   echo $(MDFILES) | tr ' ' '\n' > mdfiles.tmp; \
+					   paste -d '@' docsrc.tmp mdfiles.tmp; )
+
+
+# src file links: target should be:
+#    https://github.com/giellalt/lang-sma/blob/main/src/fst/root.lexc
+# host:      --------^
+# owner/org: ------------^^^
+# repo:      ----------------------^^^
+# branch:    ----------------------------------^^^
+# filepath:  ---------------------------------------^^^^^^^^^^^^^^^^
+HOST = https://github.com
+ORG = giellalt
+SH_REPO_NAME = $(shell cd $(top_srcdir); \
+		if test -d ./.git; then \
+			git config --get remote.origin.url | cut -d'/' -f2 | cut -d'.' -f1; \
+		elif test -d ./.svn; then \
+			svn info . | grep 'Repository Root' | rev | cut -d'/' -f1 | rev | cut -d'.' -f1; \
+		else \
+			pwd | rev | cut -d'/' -f1 | rev; \
+		fi )
+
+# When running via GitHub Actions, get org/owner + reponame from the environment:
+GH_REPO = $(GITHUB_REPOSITORY)
+# The branch name is presently hard-coded, could be taken from the commit:
+BRANCH = main
+# Use GitHub info if available, fall back to shell otherwise:
+REPOURL = $(shell if test "x$(GH_REPO)" != x ; then \
+				echo "$(HOST)/$(GH_REPO)/blob/$(BRANCH)"; \
+			else \
+				echo "$(HOST)/$(ORG)/$(SH_REPO_NAME)/blob/$(BRANCH)" ; \
+			fi)
+
 
 # hfst-compose:
 AM_V_COMPOSE = $(AM_V_COMPOSE_@AM_V@)
@@ -505,6 +582,11 @@ AM_V_PM2FST_0 = @echo "  HPM2FST  $@";
 AM_V_PROJECT = $(AM_V_PROJECT_@AM_V@)
 AM_V_PROJECT_ = $(AM_V_PROJECT_@AM_DEFAULT_V@)
 AM_V_PROJECT_0 = @echo "  HPROJECT $@";
+
+# hfst-prune-alphabet
+AM_V_HPRUNE = $(AM_V_HPRUNE_@AM_V@)
+AM_V_HPRUNE_ = $(AM_V_HPRUNE_@AM_DEFAULT_V@)
+AM_V_HPRUNE_0 = @echo "  HPRUNE   $@";
 
 # hfst-reverse
 AM_V_REVERSE = $(AM_V_REVERSE_@AM_V@)
@@ -835,110 +917,94 @@ regenerate-markdown: generate-markdown
 @WANT_SPELLERS_FALSE@	@echo need to configure --enable-spellers to generate statistics
 @WANT_SPELLERS_FALSE@	touch $@
 
-$(srcdir)/%-syntax.md: $(top_srcdir)/src/cg3/%.cg3
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+# Convert source filenames to extracted documentation filenames, VPATH safe:
+# ../../../src/fst/stems/adverbs.lexc => src-fst-stems-adverbs.lexc.md
+define src2md
+$(addsuffix .md,$(subst /,-,$(subst $(top_srcdir)/,,$(1))))
+endef
 
-$(srcdir)/%-morphology.md: $(top_srcdir)/src/fst/%.lexc
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+# Extract Markdown doccomments:
+define make_md_files
+$$(top_srcdir)/docs/$$(call src2md,$(1)): $(1)
+	$$(AM_V_AWK)"$(GAWK)" -v REPOURL=$(REPOURL) -v GLANG=$(GLANG) -f $(DOCC2MDWIKI) $$< |\
+		$(SED) -e 's/@/REALLY_AT/g' |\
+		tr '\n' '@' |\
+		$(SED) -e 's/@@@*/@@/g' |\
+		tr '@' '\n' |\
+		$(SED) -e 's/REALLY_AT/@/g' > $$@
+endef
+define make_md_files_cg3
+$$(top_srcdir)/docs/$$(call src2md,$(1)): $(1)
+	$$(AM_V_AWK)"$(GAWK)" -v REPOURL=$(REPOURL) -v GLANG=$(GLANG) -f $(DOCC2MDWIKI_CG3) $$< |\
+		$(SED) -e 's/@/REALLY_AT/g' |\
+		tr '\n' '@' |\
+		$(SED) -e 's/@@@*/@@/g' |\
+		tr '@' '\n' |\
+		$(SED) -e 's/REALLY_AT/@/g' > $$@
+endef
 
-$(srcdir)/%.md: $(top_srcdir)/src/fst/oahpa-filer/%.lexc
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+# Build each MD file:
+$(foreach f,$(DOCSRC_XEROX),$(eval $(call make_md_files,$(f))))
+$(foreach f,$(DOCSRC_CG3),$(eval $(call make_md_files_cg3,$(f))))
 
-$(srcdir)/mansi-lexicon.md: $(top_srcdir)/src/fst/mansi-lexicon.lexc
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+# Collect all target files into one big MD file:
+$(ALLINONE_MD_PAGE): $(VPATH_MDFILES)
+	$(AM_V_GEN)printf "# $(GLANGUAGE) description \n\nAll documents in one file\n\n" \
+	| cat - $(VPATH_MDFILES) > $@
 
-$(srcdir)/%-morphology.md: $(top_srcdir)/src/fst/%.twolc
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
-
-$(srcdir)/%-generated.md: $(top_srcdir)/src/fst/generated_files/%.lexc
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
-
-$(srcdir)/%-stems.md: $(top_srcdir)/src/fst/stems/%.lexc
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
-
-$(srcdir)/%-affixes.md: $(top_srcdir)/src/fst/affixes/%.lexc
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
-
-$(srcdir)/%.md: $(top_srcdir)/src/transcriptions/%.lexc
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
-
-$(srcdir)/%.md: $(top_srcdir)/tools/grammarcheckers/%.cg3
-	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
-
-generated-markdowns.sources:
-	$(AM_V_GEN)fgrep -rl --include '*.lexc' --include '*.twolc' --include '*.twolc' \
-		--exclude 'Makefile*' --exclude '*.pmscript' --exclude '*.xfscript'\
-		--exclude lexicon.tmp.lexc \
-		'!! ' $(top_srcdir)/src/* $(top_srcdir)/tools/* > $@
-
-generated-markdowns.targets: generated-markdowns.sources
-	$(AM_V_GEN)for f in `cat $<` ; do \
-		x=`basename $$f | sed -E -e 's/\.(lexc|twolc|cg3)$$//'` ; \
-		case $$f in \
-		*fst/stems*) echo $$x-stems.md;;\
-		*fst/affixes*) echo $$x-affixes.md;;\
-		*fst/generated*) echo $$x-generated.md;;\
-		*fst/root*) echo root-morphology.md;;\
-		*fst/compounding*) echo compounding-morphology.md;;\
-		*fst/clitics*) echo clitics-morphology.md;;\
-		*fst/phonology*) echo phonology-morphology.md;;\
-		*) echo $$x.md;;\
-		esac;\
+$(LINKS):
+	$(AM_V_GEN)for doc2md in $(DOCSRC_MDFILES) ; do \
+		doc=`echo "$$doc2md" | cut -d '@' -f 1` ;\
+		md=`echo "$$doc2md" | cut -d '@' -f 2` ;\
+		d=`dirname "$$doc"` ;\
+		docname=`basename "$$doc" .md` ;\
+		b=`basename "$$md" .md` ;\
+		html=$$b.html ;\
+		d1=`echo "$$d" | cut -d '/' -f 1` ;\
+		d2=`echo "$$d" | cut -d '/' -f 2` ;\
+		d3=`echo "$$d" | cut -d '/' -f 3` ;\
+		d4=`echo "$$d" | cut -d '/' -f 4` ;\
+		if test "x$$d1" != "x$$oldd1" ; then \
+			echo "* \`$$d1/\`" ;\
+			oldd1=$$d1 ;\
+		fi ; \
+		if test "x$$d2" = x ; then \
+			echo "    * [$$docname]($$html) ([src]($(REPOURL)/$$doc))" ;\
+		elif test "x$$d2" != "x$$oldd2" ; then \
+			echo "    * \`$$d2/\`" ;\
+			oldd2=$$d2 ;\
+		fi ; \
+		if test "x$$d3" = x -a "x$$d2" != x; then \
+			echo "        * [$$docname]($$html) ([src]($(REPOURL)/$$doc))" ;\
+		elif test "x$$d3" != "x$$oldd3" ; then \
+			echo "        * \`$$d3/\`" ;\
+			oldd3=$$d3 ;\
+		fi ; \
+		if test "x$$d4" = x -a "x$$d3" != x ; then \
+			echo "            * [$$docname]($$html) ([src]($(REPOURL)/$$doc))" ;\
+		elif test "x$$d4" != "x$$oldd4" ; then \
+			echo "            * \`$$d4/\`" ;\
+			oldd4=$$d4 ;\
+		fi ; \
 	done > $@
 
-generate-markdown: generated-markdowns.targets
-	$(AM_V_at)for f in `cat $<` ; do \
-		$(MAKE) $(srcdir)/$$f;\
-	done
-
-$(ALLINONE_MD_PAGE): generate-markdown generated-markdowns.targets
-	$(AM_V_GEN)cat `cat generated-markdowns.targets | sed -e 's@^@$(srcdir)/@'` > $@
-
-$(LINKS): generate-markdown generated-markdowns.targets
-	$(AM_V_GEN)cat generated-markdowns.targets |\
-				LC_COLLATE=C sed 's/[a-z0-9._-]*/* [&]\(&\)/g' \
-				> $@
+empty.md:
+	$(AM_V_GEN)echo > $@
 
 # FIXME: some temporary stuff to have index page
-$(INDEX): $(HEADER) $(LINKS)
+$(INDEX): $(HEADER) empty.md $(LINKS)
 	$(AM_V_GEN)cat $^ > $@
-
-%.md: %.jspwiki
-	$(AM_V_AWK)"$(GAWK)" -f $(JSPWIKI2MD) < $< > $@
 
 clean-local:
 	$(AM_V_at)-rm -rf $(builddir)/build
 	$(AM_V_at)-rm -rf $(srcdir)/build
-
-maintainerclean-local:
-	$(AM_V_at)-rm -rf $(ALLINONE_MD_PAGE)
+	$(AM_V_at)-rm -f $(doc_DATA)
+	$(AM_V_at)-rm -f *-src.md src-*.md $(srcdir)/*-src.md $(srcdir)/src-*.md
+	$(AM_V_at)-rm -f *-tools.md tools-*.md $(srcdir)/*-tools.md $(srcdir)/tools-*.md
+	$(AM_V_at)-rm -f generated-markdowns.*
+	$(AM_V_at)-rm -f docsrc.tmp mdfiles.tmp empty.md
 
 # vim: set ft=automake:
-# clitics-morphology.md       \
-# compounding-morphology.md   \
-# abbreviations-stems.md      \
-# acronyms-stems.md           \
-# adjectives-oahpa-stems.md   \
-# adjectives-stems.md         \
-# adpositions-stems.md        \
-# adverbs-stems.md            \
-# conjunctions-stems.md       \
-# interjections-stems.md      \
-# nouns-oahpa-stems.md        \
-# nouns-stems.md              \
-# numerals-stems.md           \
-# particles-stems.md          \
-# pronouns-stems.md           \
-# propernouns-stems.md        \
-# punctuation-stems.md        \
-# smi-propernouns-stems.md    \
-# subjunctions-stems.md       \
-# verbs-stems.md              \
-# adjectives-oahpa-affixes.md \
-# adjectives-affixes.md       \
-# nouns-affixes.md            \
-# propernouns-affixes.md      \
-# verbs-affixes.md
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
