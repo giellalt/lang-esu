@@ -2,7 +2,7 @@ Finite State Morphological Analyzer for Central Alaskan Yup'ik
 ==============================================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/issues)
-[![Build Status](https://github.com/giellalt/lang-esu/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-esu/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-esu/main/badge.svg)](https://github.com/giellalt/lang-esu/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/blob/main/LICENSE)
 
 Central Alaskan Yup'ik (CAY) (ISO 639-3: esu) is a member of the Inuit-Yupik-Unangan (IYU) (also known as Eskimo-Aleut) language family. It is spoken in south-west Alaska among the Yukon-Kuskokwim Delta and Bristol Bay areas.
