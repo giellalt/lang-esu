@@ -56,7 +56,7 @@ def runTests(genAna, hfstName):
 
         if not args.quiet:
             print("########## {}: {} SUMMARY ##########".format(genAna, testFile))
-        passed = [x[2] for x in currentTests].count(2) + [x[2] for x in currentTests].count(3)
+        passed = [x[2] for x in currentTests].count("UC") + [x[2] for x in currentTests].count("AC")
         count = len(currentTests)
         if not args.quiet:
             print("Current tests Passed: {}/{}".format(passed, count))
@@ -66,11 +66,11 @@ def runTests(genAna, hfstName):
 
     print("\n########## {}: {} TEST SUMMARY ##########".format(genAna, len(args.testFiles)))
     total = sum(testsCounter.values())
-    print("Total Passed: {}/{}".format(testsCounter[2]+testsCounter[3], total))
-    print("0 - {}".format(testsCounter[0]))
-    print("1 - {}".format(testsCounter[1]))
-    print("2 - {}".format(testsCounter[2]))
-    print("3 - {}".format(testsCounter[3]))
+    print("Total Passed: {}/{}".format(testsCounter["UC"]+testsCounter["AC"], total))
+    print("NO - {}".format(testsCounter["NO"]))
+    print("OI - {}".format(testsCounter["OI"]))
+    print("UC - {}".format(testsCounter["UC"]))
+    print("AC - {}".format(testsCounter["AC"]))
 
 
 def readTestFile(filename):
@@ -83,7 +83,7 @@ def readPreviousTestFile(filename):
     testFile = []
     with open(filename, 'r') as f:
         testFile = [[x.strip() for x in line.split('\t') if x != ''] for line in f]
-        testFile = [(x[0], x[1], int(x[2]), json.loads(x[3])) for x in testFile]  
+        testFile = [(x[0], x[1], x[2], json.loads(x[3])) for x in testFile]  
     return testFile
 
 def writeTestFile(outputTest, dirname, filename):
@@ -102,28 +102,28 @@ def runTest(genAna, hfstName, testFile):
         else: # genAna == "ana"
             inputstring, outputstring = surface, underlying
 
-        completedProcess = subprocess.run(["echo \"{}\" | hfst-optimized-lookup {}".format(inputstring.replace("@:","@%:"), hfstName)], shell=True, capture_output=True)
+        completedProcess = subprocess.run(["echo \"{}\" | hfst-optimized-lookup {}".format(inputstring.replace("@:","@%:").replace("`","\`"), hfstName)], shell=True, capture_output=True)
         processResults = [line.decode("utf-8") for line in completedProcess.stdout.split()][1::2]
         processResults = [parse.replace("@%:","@:") for parse in processResults]
 
         testResultCode = -1
         if inputstring == processResults[0]: # not parseable in input has output 'error error +?' so no parse word is duplicated
-            testResultCode = 0               # 0 = no output
+            testResultCode = "NO"               # 0 = no output
             processResults = []              # remove duplicated input 
             if not args.quiet:
                 print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
         elif outputstring in processResults:
             if len(processResults) == 1:
-                testResultCode = 2          # 2 = just one answer and correct
+                testResultCode = "UC"          # 2 = just one answer and correct
                 if args.verbose:
                     print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
             else:
-                testResultCode = 3          # 3 = multiple outputs, including correct
+                testResultCode = "AC"          # 3 = multiple outputs, including correct
                 if args.verbose:
                 # if not args.quiet:
                     print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
         else:
-            testResultCode = 1              # 1 = multiple outputs, none correct
+            testResultCode = "OI"              # 1 = multiple outputs, none correct
             if not args.quiet:
                 print("\t".join([underlying, surface, str(testResultCode), json.dumps(processResults, ensure_ascii=False)]))
 
@@ -149,7 +149,7 @@ def compareTests(previousTests, currentTests):
                                                           json.dumps(previousTests[i][3], ensure_ascii=False), json.dumps(currentTests[i][3], ensure_ascii=False)))
     if not args.quiet:
         print("########## Previous -> Current Test SUMMARY ##########")
-        print("Previous tests Passed: {}/{}".format([x[2] for x in previousTests].count(2) + [x[2] for x in previousTests].count(3) , len(previousTests)))
+        print("Previous tests Passed: {}/{}".format([x[2] for x in previousTests].count("UC") + [x[2] for x in previousTests].count("AC") , len(previousTests)))
         print("Prev -> Curr Count: {}".format(changesCount))
 
 

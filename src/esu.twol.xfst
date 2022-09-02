@@ -165,6 +165,9 @@ define RemoveLigature m̄ (->) m     .o.
                       u͡gg (->) u gg .o.
                       u͡rr (->) u rr  ;
 
+define FinalWordApostrophe Vow (->) "'" || Con _ .#. ;
+
+
 define Lowercase "A"   -> a,
                  "B"   -> b,
                  "C"   -> c,
@@ -205,7 +208,6 @@ define Lowercase "A"   -> a,
                  "U͡gg" -> u͡gg,
                  "U͡rr" -> u͡rr;
                     
-define FinalWordApostrophe Vow (->) "'" || Con _ .#. ;
 
 regex AutomaticDevoicing   .o.
       WeakInitialE         .o.
@@ -220,6 +222,6 @@ regex AutomaticDevoicing   .o.
       AddApostrophe        .o.
       AutomaticDevoicing   .o.
       ToOrthography        .o.
-      RemoveLigature       .o.
+!      RemoveLigature       .o.
+!      FinalWordApostrophe  .o.
       Lowercase             ;
-!      FinalWordApostrophe   ;

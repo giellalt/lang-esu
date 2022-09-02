@@ -1,0 +1,379 @@
+! LANGUAGE: "esu"
+! AUTHOR: "Lonny Alaskuk Strunk"
+
+! This Central Alaskan Yup'ik FST morphological analyzer/generator and the 
+! associated source code is available under the GNU Affero General Public 
+! License (GNU AGPL v.3):
+!
+! Copyright (C) 2020 Lonny Alaskuk Strunk
+!
+! This program is free software: you can redistribute it and/or modify it under 
+! the terms of the GNU Affero General Public License as published by the Free 
+! Software Foundation, either version 3 of the License, or (at your option) any 
+! later version.
+!
+! This program is distributed in the hope that it will be useful, but WITHOUT 
+! ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+! FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more 
+! details.
+!
+! You should have received a copy of the GNU Affero General Public License along 
+! with this program. If not, see https://www.gnu.org/licenses/.
+
+
+Alphabet
+    a c e g i k l m n p q r s t u v w y m̄ n̄
+    vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr '
+    k̲:k q̲:q g̲:g r̲:r g̲g̲:gg r̲r̲:rr                 ! for -velar postbase assimilation
+    %[e%] %[e%]:e                               ! HBC/Nun: initial e is not weak
+    ạ ụ ġ                                       ! for (ar) droppping ; for vowel dropping in connective moods ending in a vowel ; ya(g)ar*
+
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Vv Ll Ss Gg Rr Ng N͞g U͡g U͡gg U͡r U͡rr M̄ N̄ ! pass through for [NonYupik]
+
+    %< %$ %& %↞ %↠ ! real morpheme segmenter
+
+    ! All operators and allomorph operators map to morpheme segmenter 
+    %(e%):%> %(g%):%> %(r%):%> %(s%):%> %(t%):%> %(u%):%>
+    %(ar%):%> %(ar%*%):%> %(ng%):%> ! %(ur%):%> %(aa%):%> %(a%):%>
+    %(g%|t%):%> %(r%|l%):%> %(u%|i%):%>
+
+    %+:%> %–:%> %~:%> %%:%> %::%> %`:%> %.:%> %*:%> %°:%>
+    %@¹:%> %@²:%> %@³:%> %@⁴:%> %@⁵:%> %@ˡ:%> %@ˁ:%> %@ʸ:%> %@:%>  
+    %=; 
+
+Sets 
+    Sep = %< %& %↞ %↠ %$ ;
+    Bndry = %+ %– %~ %% %: %` %. %* %° %< %$
+        %@¹ %@² %@³ %@⁴ %@⁵ %@ˡ %@ˁ %@ʸ %@
+        %(a%) %(e%) %(g%) %(r%) %(s%) %(t%) %(u%)
+        %(aa%) %(ar%) %(ar%*%) %(ng%) %(ur%) %(g%|t%) %(r%|l%) %(u%|i%) ;
+    AtSign = %@¹ %@² %@³ %@⁴ %@⁵ %@ˡ %@ˁ %@ʸ %@ ;
+
+    Stop = p t c k q k̲ q̲ ;
+    VoiceFric = v l s g r u͡g u͡r g̲ r̲ ġ ; 
+    VlessFric = vv ll ss gg rr u͡gg u͡rr g̲g̲ r̲r̲ ;
+    VoiceNasal = m n ng ;
+    VlessNasal = m̄ n̄ n͞g ;
+
+    VoiceCon = VoiceFric VoiceNasal ;
+    VlessCon = VlessFric VlessNasal Stop ;
+
+    Fric = VoiceFric VlessFric ;
+    Nasal = VoiceNasal VlessNasal ;
+
+    Con = Stop Fric Nasal w y ;
+
+    FVow = a i u ạ ụ ;
+    Vow = FVow e ;
+
+Rules 
+
+"a:0 = --"
+a:0 <=> _ [[ Con:0 (%*:) %–: %–: l:0 ] / Sep ] ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        [[ .#. :Con ] / Sep ] _ ; ! block meliur- -> miur-
+
+"a:i = age/ii | aga/ii | anga/ii | aga/ii | enga/ii"
+a:i <=> [[ [.#.|%=:|:Con] ] / Sep ] _ [[ g: %%: %:: %(e%):i Con: ] / Sep ] ; ! ag%:(e) -> ii 
+        [[ [.#.|%=:|:Con] ] / Sep ] _ [[ g: %:: (%~:) (%(ng%):) [a:|ạ:] [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! ag:(~)(ng)a -> ii ; ag:a -> ii
+        [[ [.#.|%=:|:Con] ] / Sep ] _ [[ %:: [ng:|%(ng%):] [a:|ạ:] [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! a:nga -> ii ; a:(ng)a -> ii
+
+        [[ [[ [.#.|%=:|:Con] [a:|ạ:] g: %:: (%~:) (%(ng%):) ] / Sep ] ] / Sep ] _ [[ [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! ag:(ng)a -> ii ; ag:a -> ii
+        [[ [[ [.#.|%=:|:Con] [a:|ạ:|e:] %:: [ng:|%(ng%):] ] / Sep ] ] / Sep ] _ [[ [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! a:nga -> ii ; a:(ng)a -> ii ; e:(ng)a -> ii
+
+    except
+        _ [[ Con:0 (%*:) %–: %–: l:0 ] / Sep ]  ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+
+"ạ:0 = --"
+ạ:0 <=> _ [[ Con:0 (%*:) %–: %–: l:0 ] / Sep ]  ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        [[ .#. :Con ] / Sep ] _ ; ! block meliur- -> miur-
+
+"ạ:i = age/ii | aga/ii | anga/ii | aga/ii | enga/ii"
+ạ:i <=> [[ [.#.|%=:|:Con] ] / Sep ] _ [[ g: %%: %:: %(e%):i Con: ] / Sep ] ; ! ag%:(e) -> ii 
+        [[ [.#.|%=:|:Con] ] / Sep ] _ [[ g: %:: (%~:) (%(ng%):) [a:|ạ:] [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! ag:(ng)a -> ii ; ag:a -> ii
+        [[ [.#.|%=:|:Con] ] / Sep ] _ [[ %:: [ng:|%(ng%):] [a:|ạ:] [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! a:nga -> ii ; a:(ng)a -> ii
+
+        [[ [.#.|%=:|:Con] [a:|ạ:] g: %:: (%~:) (%(ng%):) ] / Sep ] _ [[ [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! ag:(ng)a -> ii ; ag:a -> ii
+        [[ [.#.|%=:|:Con] [a:|ạ:|e:] %:: [ng:|%(ng%):] ] / Sep ] _ [[ [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! a:nga -> ii ; a:(ng)a -> ii ; e:(ng)a -> ii
+    except
+        _ [[ Con:0 (%*:) %–: %–: l:0 ] / Sep ] ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+
+"e:0 = ~ | word# | eVowPostbase | semifinaleVowPostbase | (e):e | -- | te@ "
+e:0 <=> _ [[ [ Bndry: - %`: - %(r%): ]* %~: ] / Sep ] ; ! "Rule for Tilde"
+        [[ :Vow [Bndry:%>|:0]* t:n ] / Sep ] _ [[ [ .#. | %= ] ] / Sep ] ; ! "Word final Vte -> e:0"
+        _ [[ Bndry:+ :Vow ] / Sep ] ; ! "vowel postbases are e deleters" "(u):u"
+        [[ .#. ~[ :* :Con :VlessCon] ] / Sep ] _ [[ [ r | g ] [ Bndry: - %(t%): - %(g%|t%): ]+ :Vow ] / Sep ] ; ! "vowel postbases are semi-final e deleters" "(u):u"   !maybe ~[:Con :VlessCon] for amlleret ? 
+        [[ [[Vow Con]|[Con VoiceCon]] ] / Sep ] _ [[ [ r | g ] Bndry:* %%:%> Bndry:* %(e%):e ] / Sep ] ; ! "Rule (e):e"
+        _ [[ (Con:0) Bndry:* %–: %–: l:0 ] / Sep ] ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+        [[ t: ] / Sep ] _ [[ [Bndry:-AtSign:]* AtSign: ] / Sep ] ; ! te@
+    except
+        [[ [.#.|%=:|:Con] ] / Sep ] _ [[ %:: [ng:|%(ng%):] [i:|u:] [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! e:(ng)i -> ai ; e:(ng)u -> au
+        [[ [.#.|%=:|:Con] ] / Sep ] _ [[ %:: [ng:|%(ng%):] [a:|ạ:] [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! e:(ng)a -> ii
+        [[ .#. :Con ] / Sep ] _ ; ! block meliur- -> miur-
+
+"e:a = e^a | engi/ai"
+e:a <=> _ [[ [ .#. | %= ] ] / Sep ] ; ! "Word final e:a"
+        [[ [.#.|%=:|:Con] ] / Sep ] _ [[ %:: [ng:|%(ng%):] [i:|u:] [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! e:(ng)i -> ai ; e:(ng)u -> au
+    except
+        [[ :Vow [Bndry:%>|:0]* t:n ] / Sep ] _ [[ [ .#. | %= ] ] / Sep ] ; ! "Word final Vte -> e:0"
+
+"e:i = enga/ii"
+e:i <=> [[ [.#.|%=:|:Con] ] / Sep ] _ [[ %:: [ng:|%(ng%):] [a:|ạ:] [Bndry:|:Con|.#.] ] / Sep ] ; ! e:(ng)a -> ii
+
+"g:0 = - | :"
+g:0 <=> _ [[ Bndry:* %–: ] / Sep ] ; ! Rule for Minus - drop consonant ending base
+        [[ Con FVow ] / Sep ] _ [[ [%@³:|%~:] %:: %(u%): Con: ] / Sep ] ; ! ag@³:(u) -> au
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[ %%: %:: %(e%): Con: ] / Sep ] ; ! ag%:(e) -> ii
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[  %:: %(u%|i%): Con: ] / Sep ] ; ! ag:(u/i) -> au
+        [[ [.#.|%=:|:Con] [Bndry:|:0]* :FVow %:: ] / Sep ] _ [[ FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! a:gu -> au
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[ %:: FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! ag:a -> ii
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[ %:: (%~:) %(ng%): FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! Vg:(~)(ng)V -> VV
+
+"g:gg = g+VlessCon"
+g:gg <=> _ [[ %+: VlessCon: ] / Sep ] ; ! g+te
+
+"g̲:r = Uvular/VelarAgreement"
+g̲:r <=> [[ [r:|rr:] Bndry:* %–: Bndry:* ] / Sep ] _ ; ! Uvular/VelarAgreement
+
+"g:k = word#"
+g:k <=> _ [[ [ .#. | %= ] ] / Sep ] ; ! Word Final changes
+
+"gg:g = gte@(u)"
+gg:g <=> _ [[ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! CCte@³(u)/Cu
+         _ [[ t:s (') e:0 [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/s
+
+"g̲g̲:rr = Uvular/VelarAgreement"
+g̲g̲:rr <=> [[ [r:|rr:] Bndry:* %–: Bndry:* ] / Sep ] _ ; ! Uvular/VelarAgreement
+
+"i:0 = --"
+i:0 <=> _ [[ Con:0 Bndry:* %–: %–: l:0 ] / Sep ] ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        [[ .#. :Con ] / Sep ] _ ; ! block meliur- -> miur-
+
+"k̲:q = Uvular/VelarAgreement"
+k̲:q <=> [[ [r:|rr:] Bndry:* %–: Bndry:* ] / Sep ] _ ; ! Uvular/VelarAgreement
+
+"l:0 = --" ! - optional drop preceding vowel also
+l:0 => Vow:0 (Con:0) Bndry:* %–: %–: _ ; ! Rule for Double Minus - 
+
+"l:ll = te@ˡl/ll"
+l:ll <=> [[ t:0 (') e:0 (%°:) [Bndry:-AtSign:-%(r%):]* %@ˡ: [Bndry:-AtSign:-%(r%):]* ] / Sep ] _ ; ! te@ˡl/ll  -(r) for qimugterluni
+
+"ll:l = lte@(u)"
+ll:l <=> _ [[ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! CCte@³(u)/Cu
+         _ [[ t:s (') e:0 [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/s
+
+"m:m̄ = @²m"
+m:m̄ <=> [[ Con [Bndry:-%°:-AtSign:]* t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: Bndry:* ] / Sep ] _ ; ! Cte@²m/Cm̄
+
+"n:n̄ = @¹n"
+n:n̄ <=> [[ Con [Bndry:-AtSign:]* t:0 e:0 (%°:) [Bndry:-AtSign:]* %@¹: [Bndry:-AtSign:]* ] / Sep ] _ ; ! Cte@¹n/Cn̄
+
+"ng:0 = :"
+ng:0 <=> [[ [.#.|%=:|:Con] [Bndry:|:0]* :FVow %:: ] / Sep ] _ [[ FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! u:nga -> ua ; a:nga -> ii
+    except
+        [[ Con [Bndry:-AtSign:]* t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* ] / Sep ] _ ; ! Cte@²ng/Cn͞g
+
+"ng:n͞g = @²ng"
+ng:n͞g <=> [[ Con [Bndry:-AtSign:]* t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* ] / Sep ] _ ; ! Cte@²ng/Cn͞g
+
+"q̲:k = Uvular/VelarAgreement"
+q̲:k <=> [[ g: Bndry:* %–: Bndry:* ] / Sep ] _ ; ! Uvular/VelarAgreement
+
+"r:0 = - | % | :"
+r:0 <=> _ [[ Bndry:* %–: ] / Sep ] ; ! Rule for Minus - drop consonant ending base
+        [[ [FVow|%=:] ] / Sep ] _ [[ [Bndry: - %*:]* %%:0 ] / Sep ] ; ! Rule for Percent
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[ %*: %%: %:: %(e%): Con: ] / Sep ] ; ! ar*%:(e) -> aa
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[ %~:  %:: %(u%): Con: ] / Sep ] ; ! ar@³:(u) -> au
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[ %@³: %:: %(u%): Con: ] / Sep ] ; ! ar@³:(u) -> au
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[ %:: %(u%|i%): [Con:] ] / Sep ] ; ! ar:(u/i) -> au
+        [[ [.#.|%=:|:Con] [Bndry:|:0]* :FVow %:: ] / Sep ] _ [[ FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! i:ru -> iu
+        [[ [.#.|%=:|:Con] [Bndry:|:0]* :FVow ] / Sep ] _ [[ %:: FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! ar:a -> aa
+        [[ [.#.|%=:|:Con] :FVow ] / Sep ] _ [[ (%*:) %:: (%~:) %(ng%): FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! ar(*):(~)(ng)a -> ii
+        [[ %=: ] / Sep ] _ [[ (%*:) %:: (%~:) %(ng%): FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! =r:(~)(ng)a -> =a
+
+"r:rr = r+VlessCon"
+r:rr <=> _ [[ %+: VlessCon: ] / Sep ] ; ! g+te
+
+"r̲:g = Uvular/VelarAgreement"
+r̲:g <=> [[ g: Bndry:* %–: Bndry:* ] / Sep ] _ ; ! Uvular/VelarAgreement
+
+"r:q = word#"
+r:q <=> _ [[ (%*:) [ .#. | %= ] ] / Sep ] ; ! Word Final changes
+
+"rr:0 = -"
+rr:0 <=> _ [[ Bndry:* %–: ] / Sep ] ; ! Rule for Minus - drop consonant ending base
+    except
+        _ [[ Bndry:* %–: [k:|k̲:|q:|q̲:] Vow: ] / Sep ] ; ! rr-qa -> rqa
+
+"r̲r̲:gg = Uvular/VelarAgreement"
+r̲r̲:gg <=> [[ g: Bndry:* %–: Bndry:* ] / Sep ] _ ; ! Uvular/VelarAgreement
+
+"rr:r = rte@(u)"
+rr:r <=> _ [[ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! CCte@³(u)/Cu
+         _ [[ t:s (') e:0 [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/s
+
+"s:0 = te~s/c | (t)s/c"
+s:0 <=> [[ t:c (') e:0 Bndry:* ] / Sep ] _ ; ! te~s/c
+        [[ %(t%):c Bndry:* ] / Sep ] _ ; ! (t)s/c
+
+"ss:s = ste@(u)"
+ss:s <=> _ [[ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! CCte@³(u)/Cu
+         _ [[ t:s (') e:0 [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/s
+
+"t:0 = Cte@¹n/CCn̄ | Cte@²mngv/CCm̄n͞gvv | Cte@³(u)/Cu"
+t:0 <=> [[ Con ] / [ Sep | Bndry: ] ] _ [[ e: (%°:) [Bndry:-AtSign:]* %@¹: ] / Sep ] ; ! Cte@¹n/CCn̄
+        [[ Con ] / [ Sep | Bndry: ] ] _ [[ e: (%°:) [Bndry:-AtSign:]* %@²: ] / Sep ] ; ! Cte@²mngv/CCm̄n͞gvv
+        [[ VlessFric:VoiceFric ] / [ Sep | Bndry: ] ] _ [[ e: (%°:) [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! Cte@³(u)/Cu
+        _ [[ (') e: (%°:) [Bndry:-AtSign:]* %@⁵: ] / Sep ] ;
+        _ [[ (') e: (%°:) [Bndry:-AtSign:-%(r%):]* %@ˡ: ] / Sep ] ;
+
+"t:c = tV--li/ci | te@y/c | te~s/c" 
+t:c <=> _ [[ Vow:0 (Con:0) [Bndry:-%(u%):-AtSign:]* %–: %–: l:0 i ] / Sep ] ; ! te--li/ci
+        _ [[ (') e:0 [Bndry:-%(u%):-%(ng%):-AtSign:]* i ] / Sep ] ; ! te~i/ci
+        _ [[ (') e: (%°:) %:: %(u%|i%): m: ] / Sep ] ; ! te:(u/i)/ci
+        _ [[ (') e: (%°:) [Bndry:-%(u%):-AtSign:]* %@ʸ: [Bndry:-%(u%):-AtSign:]* y: ] / Sep ] ; ! te@y/c
+        _ [[ (') e: [Bndry:-%(u%):-AtSign:]* [s:|y:] ] / Sep ] ; ! te~s/c
+    except
+        [[ .#. ] / Sep ] _ ;
+
+"t:l = Vte@²/l | te*@³(u)/l | te°@⁴gkng/l"
+t:l <=> [[ Vow ] / [ Sep | Bndry: ] ] _ [[ (') e: %°: [Bndry:-AtSign:]* %@²: ] / Sep ] ; ! Vte°@²mngv/l
+        [[ Vow ] / [ Sep | Bndry: ] ] _ [[ (') e: %°: [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! Vte°@³(u)/l
+        _ [[ (') e: %°: [Bndry:-AtSign:]* %@⁴: ] / Sep ] ; ! te°@⁴gkng/l
+
+"t:n = WordFinalVte"
+t:n <=> [[ :Vow [Bndry:%>|:0]* ] / Sep ] _ [[ e: [ .#. | %= ] ] / Sep ] ; ! Word final Vte
+
+"t:q = te@ˁ/q"
+t:q <=> _ [[ (') e: (%°:) [Bndry:-AtSign:]* %@ˁ: ] / Sep ] ; ! te@ˁ/q
+
+"t:s = Vte@²/s | Vt'e@³(u)/s'u | Cte@⁴gkng/s"
+t:s <=> [[ Vow ] / [ Sep | Bndry: ] ] _ [[ (') e: [Bndry:-%°:-AtSign:]* %@²: ] / Sep ] ; ! Vte@²mngv/s
+        [[ Vow ] / [ Sep | Bndry: ] ] _ [[ ' e: [Bndry:-%°:-AtSign:]* %@³: ] / Sep ] ; ! Vt'e@³(u)/s'u
+        [[ [Vow|VlessFric:VoiceFric|Nasal|Stop] ] / [ Sep | Bndry: ] ] _ [[ (') e: [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/s
+
+"t:y = Vte@³(u)/Vy"
+t:y <=> 
+!        Vow _ [[ (') e:0 [Bndry:-%°:-AtSign:]* %@²: ] / Sep ] ; ! Vte@²mngv/y  (for HBC)
+        [[ [Vow|Nasal|Stop] ] / Sep ] _ [[ e: [Bndry:-%°:-AtSign:]* %@³: ] / Sep ] ; ! Vte@³(u)/Vy    TODO: Add t'e/y' also for HBC
+!        [Vow|VlessFric:VoiceFric|Nasal|Stop] _ [[ (') e:0 [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/y for HBC  
+
+"u:0 = --"
+u:0 <=> _ [[ Con:0 Bndry:* %–: %–: l:0 ] / Sep ] ; ! "Rule for Double Minus" ! - optional drop preceding vowel also
+    except
+        [[ .#. :Con ] / Sep ] _ ; ! block meliur- -> miur-
+
+"u͡gg:u͡g = u͡gte@(u)"
+u͡gg:u͡g <=> _ [[ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! CCte@³(u)/Cu
+           _ [[ t:s (') e:0 [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/s
+
+"u͡rr:u͡r = u͡rte@(u)"
+u͡rr:u͡r <=> _ [[ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! CCte@³(u)/Cu
+           _ [[ t:s (') e:0 [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/s
+
+"v:vv = @²v"
+v:vv <=> [[ Con [Bndry:-%°:-AtSign:]* t:0 e:0 [Bndry:-%°:-AtSign:]* %@²: [Bndry:-AtSign:]* ] / Sep ] _ ; ! Cte@²v/Cvv
+
+"vv:v = vte@(u)"
+vv:v <=> _ [[ t:0 e:0 (%°:) [Bndry:-AtSign:]* %@³: ] / Sep ] ; ! CCte@³(u)/Cu
+         _ [[ t:s (') e:0 [Bndry:-%°:-AtSign:]* %@⁴: ] / Sep ] ; ! Cte@⁴gkng/s
+
+"y:0 = te@y"
+y:0 <=> [[ t:c (') e:0 (%°:) [Bndry:-%(u%):-AtSign:]* %@ʸ: [Bndry:-%(u%):-AtSign:]* ] / Sep ] _ ; ! te@y/c
+        [[ t:c (') e:0 (%°:) [Bndry:-%(u%):-AtSign:]* ] / Sep ] _ ; ! tey/c
+        [[ %(t%):c Bndry:* ] / Sep ] _ ; ! (t)y/c
+
+"y:s = Stop@y" 
+y:s <=> [[ [VlessCon-t] (e:0) [Bndry:-AtSign:]* %@ʸ: [Bndry:-AtSign:]* ] / Sep ] _ ; ! Stop@y/s
+        [[ [VlessCon-t] (e:0) [Bndry:-AtSign:]* ] / Sep ] _ ; ! Stopy/s
+    except
+        [[ t:c (') e:0 (%°:) [Bndry:-AtSign:]* %@ʸ: [Bndry:-AtSign:]* ] / Sep ] _ ; ! te@y/c
+        [[ t:c (') e:0 (%°:) [Bndry:-%(u%):-AtSign:]* ] / Sep ] _ ; ! tey/c
+        [[ %(t%):c Bndry:* ] / Sep ] _ ; ! (t)y/c
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!     ALLOMORPHS    !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"(e):a = %/:" ! - bases kept with percent and dropped by colon
+%(e%):a <=> [[ [.#.|%=:|:Con] [a:|ạ:] r: (%*:) %%:%> %:: ] / Sep ] _ [[ [Con:] ] / Sep ] ; ! ar*e -> aa
+
+"(e):e = VV[r/g]%e | e:0%e"
+%(e%):e <=> [[ :FVow :FVow [ r | g ] (%*:) %%:   %:: ] / Sep ] _ ;
+        [[              e: [ r | g ] (%*:) %%:%> %:: ] / Sep ] _ ;
+    except
+        [[ [.#.|%=:|:Con] [a:|ạ:] r: (%*:) %%:%> %:: ] / Sep ] _ [[ [Con:] ] / Sep ] ; ! ar*e -> aa
+        [[ [.#.|%=:|:Con] [a:|ạ:] g: (%*:) %%:%> %:: ] / Sep ] _ [[ [Con:] ] / Sep ] ; ! age -> ii
+        [[ [.#.|%=:|:Con] i: [g:|r:] (%*:) %%:%> %:: ] / Sep ] _ [[ [Con:] ] / Sep ] ; ! ige/ir*e -> ii
+        [[ [.#.|%=:|:Con] u: [g:|r:] (%*:) %%:%> %:: ] / Sep ] _ [[ [Con:] ] / Sep ] ; ! uge/ur*e -> uu
+
+"(e):i = age/ii"
+%(e%):i <=> [[ [.#.|%=:|:Con] [a:|ạ:] g: (%*:) %%:%> %:: ] / Sep ] _ [[ [Con:] ] / Sep ] ; ! age -> ii
+        [[     [.#.|%=:|:Con] i: [g:|r:] (%*:) %%:%> %:: ] / Sep ] _ [[ [Con:] ] / Sep ] ; ! ige/ir*e -> ii
+
+"(e):u = %/:" ! - bases kept with percent and dropped by colon
+%(e%):u <=> [[ [.#.|%=:|:Con] u: [g:|r:] (%*:) %%:%> %:: ] / Sep ] _ [[ [Con:] ] / Sep ] ; ! uge/ur*e -> uu
+
+"(g):g = VVFinalBase"
+%(g%):g <=> [[ :Vow [:%>|:0]* :Vow [:%>|:0]* ] / Sep ] _ ;
+
+"(g/t):g = VVFinalBase"
+%(g%|t%):g <=> [[ :Vow [:%>|:0]* :Vow [:%>|:0]* ] / Sep ] _ ;
+    except
+        [[ :Con Bndry:* ] / Sep ] _ ; ! CFinalBase
+
+"(g/t):t = CFinalBase"
+%(g%|t%):t <=> [[ :Con Bndry:* ] / Sep ] _ ; ! CFinalBase
+
+"(ng):ng = VFinalBase"
+%(ng%):ng <=> [[ Vow: Bndry:* ] / Sep ] _ ;
+    except
+        [[ [.#.|%=:|:Con] Vow: %:: ] / Sep ] _ [[ FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! CV:(ng)VC -> CVVC
+        [[ [.#.|%=:|:Con] :FVow %:: %~: ] / Sep ] _ [[ FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! CFV:~(ng)VC -> CVVC
+
+"(ng):0 = :" ! - bases that get added then dropped after single vowel
+%(ng%):0 <=> [[ [.#.|%=:|:Con] Vow: %:: ] / Sep ] _ [[ FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! CV:(ng)VC -> CVVC
+        [[      [.#.|%=:|:Con] :FVow %:: %~: ] / Sep ] _ [[ FVow: [Con:|Bndry:|%=:|.#.] ] / Sep ] ; ! CFV:~(ng)VC -> CVVC
+             ! 
+
+"(r):r = te Bases"
+%(r%):r <=> [[ :t :e %+: ] / Sep ] _ ; ! bases ending in te
+
+"(s):s = VFinalBase"
+%(s%):s <=> [[ Vow: Bndry:* ] / Sep ] _ ; ! bases ending in a vowel
+
+"(t):t = CFinalBase"
+%(t%):t <=> [[ :Con Bndry:* ] / Sep ] _ ; ! CFinalBase
+    except
+        [[ :Con Bndry:* ] / Sep ] _ [[ Bndry:* [s:|y:] ] / Sep ] ; ! (t)[sy]/c
+
+"(t):c = (t)s/c"
+%(t%):c <=> [[ :Con Bndry:* ] / Sep ] _ [[ Bndry:* [s:|y:] ] / Sep ] ; ! (t)[sy]/c
+
+"(u):u = notFVow"
+%(u%):u <=> [[ [Con:|e:] Bndry:* ] / Sep ] _ ; ! notFVow = Con|e
+
+"(u/i):i = te:(u/i)/ci"
+%(u%|i%):i <=> [[ t:c (') e: (%°:) %:: ] / Sep ] _ ; ! te:(u/i)/ci
+
+"(u/i):u = [Con|e-te]:(u/i)/Cu"
+%(u%|i%):u <=> [[ \:FVow %:: ] / Sep ] _ ; ! [Con|e-te]:(u/i)/Cu
+    except
+        [[ t:c (') e: (%°:) %:: ] / Sep ] _ ; ! te:(u/i)/ci
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!     OPERATOR      !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! "Rule for Plus" - useless
+! "Rule for Period" - useless
+
+"%:0 = percentWeak" ! percent weak
+%%:0 <=> [[ [FVow|%=:] r: [Bndry:-%*:]* ] / Sep ] _ ;
+
+"`:' = ApostropheRule"
+%`:%' <=> [[ .#. (Con) Vow Con e:0 [ Bndry: - %~: ]* ] / Sep ] _ ; ! "Rule for Apostrophe - short bases"
+
+

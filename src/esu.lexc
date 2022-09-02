@@ -91,8 +91,7 @@ Vv Ll Ss Gg Rr Ng N͞g U͡g U͡r U͡gg U͡rr M̄ N̄
 [N→V]                       ! Denominal Verb Derivation
 [V→N]                       ! Deverbal Noun Derivation
 [V→V]                       ! Deverbal Verb Derivation
-[V→XCLM]                    ! Verb -> Exclamation Derivation
-[how.V]                     ! [how.V][V→XCLM] used together
+[XCLM]                      ! Verb -> Exclamation Derivation
 [Imprs_Agnt]                ! Impersonal Agent
 [SgUnpd]                    ! Unpossessed - Singular
 [PlUnpd]                    ! Unpossessed - Plural
@@ -173,7 +172,7 @@ Vv Ll Ss Gg Rr Ng N͞g U͡g U͡r U͡gg U͡rr M̄ N̄
 
 !!!!!!! Multiple Forms !!!!!!
 [e]                         ! weak e initial bases - optional e used for prosody
-(a)                         ! non-Yup'ik bases
+!(a)                         ! non-Yup'ik bases
 !(aa)                        ! 
 (ar)                        ! (aq*)/(ar*)/(ar) - NounDicForm/NounBaseForm/VerbBaseForm
 (ar*)                       ! (aq*)/(ar*)/(ar) - NounDicForm/NounBaseForm/VerbBaseForm
@@ -433,6 +432,7 @@ ayagmek                  ParticleEnd; ! from the beginning
 ayumian                  ParticleEnd; ! (and) then; (and) so; subsequently; consequently; for that reason; after that
 caitqapik                ParticleEnd; ! absolutely nothing
 cali                     ParticleEnd; ! more; furthermore; again; also; still; yet; and
+cama=i                   ParticleEnd; ! hello; greetings; pleased to meet you; good to see you again
 carrarmek                ParticleEnd; ! a little bit
 ciumek                   ParticleEnd; ! first
 ciunganitun              ParticleEnd; ! as previously; as in the past; as before (it)
@@ -455,6 +455,7 @@ ellmacuar(ar*)           ParticleEnd; ! a little bit
 envanek                  ParticleEnd; ! from time immemorial; from long ago; from far in the distance
 ernequ                   ParticleEnd; ! later today
 ernerpak                 ParticleEnd; ! all day; today (additional Y, NS meaning)
+gguun                    ParticleEnd; ! through here; this way
 icivaaraqu               ParticleEnd; ! in the near future; soon
 icivaarqu                ParticleEnd; ! in the near future; soon
 icivaq                   ParticleEnd; ! a few days ago; a few weeks ago; recently
@@ -462,7 +463,9 @@ icivaqu                  ParticleEnd; ! a few days from now; a few weeks from no
 iciwa                    ParticleEnd; ! you know; remember; as you know too
 iciw'                    ParticleEnd; ! you know; remember; as you know too
 icugg'                   ParticleEnd; ! you know; remember; as you know too
+ii=i                     ParticleEnd; ! yes; youʼre welcome
 iilektii                 ParticleEnd; ! how disgusting!
+ikaa=i                   ParticleEnd; ! ugh!; yuck!
 ikik                     ParticleEnd; ! it is to be hoped; perhaps
 ikika                    ParticleEnd; ! I suppose; perhaps
 ik'apassi                ParticleEnd; ! ugh!; yuck!
@@ -479,6 +482,8 @@ imumi                    ParticleEnd; ! at that time that both speaker and liste
 iq                       ParticleEnd; ! exclamatory particle ‘I canʼt believe it!ʼ
 kacakikika               ParticleEnd; ! serves you right!, you caught it this time!, youʼre going to get it!, for shame!
 kaca'a                   ParticleEnd; ! serves you right!, you caught it this time!, youʼre going to get it!, for shame!
+kapegcugna               ParticleEnd; ! exclamation of dread
+kapegcugnarpiit=lli      ParticleEnd; ! exclamation of dread
 kass'atun                ParticleEnd; ! in the English language
 kass'aturrlainaq         ParticleEnd; ! in English only
 kavcagpak                ParticleEnd; ! (with) a big clattering or rattling noise
@@ -508,6 +513,7 @@ nalliinitun              ParticleEnd; ! like at the time of (it)
 nallu                    ParticleEnd; !
 nallutmun                ParticleEnd; ! in ignorance; not knowing
 naullu=wa=i              ParticleEnd; ! watch out!
+nutaan                   ParticleEnd; ! just now/then for the good; finally!
 negetmun                 ParticleEnd; ! northward
 nepetmun                 ParticleEnd; ! heading toward commotion, turbulence, chaos
 nutem                    ParticleEnd; ! from the beginning; originally
@@ -533,17 +539,21 @@ taayam                   ParticleEnd; ! come! # exclamatory particle; < taa=am
 takelmun                 ParticleEnd; ! marking, cutting, moving, etc. lengthwise
 tamaa                    ParticleEnd; ! at once; right away; immediately; as soon as possible
 tamatmun                 ParticleEnd; ! in various directions
+tang                     ParticleEnd; ! look!
 tangrriu                 ParticleEnd; ! look at him/it!; see!
 taunginaq                ParticleEnd; ! without anyone intending it to be so
 taunginarmek             ParticleEnd; ! without anyone intending it to be so
+tau͡ga=i                  ParticleEnd; ! thatʼs enough; well then; and then; thatʼs all
 tau͡gaam                  ParticleEnd; ! (UY form) however; but; only; except for; instead
 tau͡gken                  ParticleEnd; ! even though; however; but; from there
 tau͡g'am                  ParticleEnd; ! (UY form) however; but; only; except for; instead
+tava=i                   ParticleEnd; ! thatʼs enough; well then; and then; thatʼs all
 tavaq                    ParticleEnd; ! I doubt it
 tavatellengraan          ParticleEnd; ! nevertheless
 tayima                   ParticleEnd; ! elsewhere
 tayimatmun               ParticleEnd; ! into the area out of sight, as in the distance
 temeqvanek               ParticleEnd; ! from long ago; from far away
+tua=i                    ParticleEnd; ! thatʼs enough; well then; and then; thatʼs all
 tuakenirnek              ParticleEnd; ! from that time on
 tuamta=llu               ParticleEnd; ! then again; furthermore; moreover
 tuamtellu                ParticleEnd; ! then again; furthermore; moreover
@@ -654,7 +664,7 @@ ki[Ignorative]-~+miu[N→N]:kinku~+miu                   NounPostbase; ! inhabit
 ki[Ignorative]-%:~(ng)u[N→V]:kinku%:~(ng)u             VerbPostbase;
 
 na[Ignorative]-[Sec_Ter]:na.tmun                 EncliticOrEnd; ! to where?
-na[Ignorative]-[Sec_Ter]+tmurte[N→V]:na.tmurte   VerbPostbase;
+na[Ignorative]-[Sec_Ter]–tmurte1[N→V]:na.tmurte  VerbPostbase;
 na[Ignorative]-[Loc]:na.ni                       EncliticOrEnd;
 na[Ignorative]-[Abl]:na.ken                      EncliticOrEnd;
 na[Ignorative]-[Via]:na.w'un                     EncliticOrEnd; ! through where?
@@ -2203,7 +2213,6 @@ calugcissuute          NounPostbase; ! skin scraper
 calugute               NounPostbase; ! skin scraper
 cal'kuuyar             NounPostbase; ! casserole of meat or fish with potatoes, onions, etc.
 cama(ni)               NounPostbase; ! in the area down below or toward the river
-cama=i                 NounPostbase; ! hello; greetings; pleased to meet you; good to see you again
 camatar                NounPostbase; ! metal (copper or brass) and bead forehead ornament
 cami                   NounPostbase; ! when?
 camna                  NounPostbase; ! the one down below or toward the river
@@ -3142,7 +3151,6 @@ eyanqellria            NounPostbase; ! one who follows traditional abstinence pr
 eyar                   NounPostbase; ! tattoo
 eyurcissuute           NounPostbase; ! mold (for forming a shape)
 gguurrar               NounPostbase; ! this way a little
-gguute                 NounPostbase; ! through here; this way
 ici                    NounPostbase; ! ouch!; itʼs hot (to the touch)!
 iciner                 NounPostbase; ! thin, melting, overhanging ice edge is spring
 ic'ukcag               NounPostbase; ! mink scent gland
@@ -3185,7 +3193,6 @@ ig'atag                NounPostbase; ! ugh!; yuck!
 ig'ir                  NounPostbase; ! ugly thing; bad thing; improper behavior; (ritually) unclean thing # basically, a thing that is viewed unfavorably in some sense
 ii                     NounPostbase; ! (NUN form) eye
 ii(ni)                 NounPostbase; ! across there
-ii=i                   NounPostbase; ! yes; youʼre welcome
 iiRgii                 NounPostbase; ! oh dear!; how scary!
 iiciller               NounPostbase; ! orbital cavity, eye socket
 iicill'er              NounPostbase; ! thatʼs great!; excellent!
@@ -3227,7 +3234,6 @@ iivkaner               NounPostbase; ! lower part of a body
 iiyuar(ar*)            NounPostbase; ! solitary sandpiper (Tringa solitaria); western sandpiper (Calidris mauri)
 iiyuraar(ar*)          NounPostbase; ! solitary sandpiper (Tringa solitaria); western sandpiper (Calidris mauri)
 ika(ni)                NounPostbase; ! across there
-ikaa=i                 NounPostbase; ! ugh!; yuck!
 ikaknar                NounPostbase; ! southeast
 ikamracuar(ar*)        NounPostbase; ! small sled; childʼs sled for playing
 ikamralugpiar          NounPostbase; ! big freight sled
@@ -3789,8 +3795,6 @@ kapatag                NounPostbase; ! small bullhead (species ?)
 kapcilar               NounPostbase; ! empty cartridge
 kapciliar              NounPostbase; ! empty cartridge
 kapcir                 NounPostbase; ! (NS, LY, NUN form), kapeciq (NSU form) scale of fish
-kapegcugna             NounPostbase; ! exclamation of dread
-kapegcugnarpiit=lli    NounPostbase; ! exclamation of dread
 kapilar                NounPostbase; ! sled stanchion
 kapit'ar               NounPostbase; ! gut rain parka
 kapkaanar              NounPostbase; ! steel animal trap
@@ -5263,7 +5267,6 @@ nurar                  NounPostbase; ! yearling caribou or reindeer; calf; colt
 nurraninr(ar*)         NounPostbase; ! barren old reindeer
 nurr'ar                NounPostbase; ! femaleʼs sisterʼs child nephew or niece
 nuss'ur                NounPostbase; ! harpoon head
-nutaate                NounPostbase; ! just now/then for the good; finally!
 nutangqur              NounPostbase; ! indentation on top of bow of kayak
 nutaqar                NounPostbase; ! frozen raw fish; new thing (LI meaning)
 nutaqerrute            NounPostbase; ! soft melting snow; fresh snow; new ice in fall
@@ -6802,8 +6805,8 @@ taneknaarallr(ar*)     NounPostbase; ! young boy
 taneksagglugar*        NounPostbase; ! young boy
 tanektallr(ar*)        NounPostbase; ! young boy
 tanem                  NounPostbase; ! ever; why; how on earth!
-tang                   NounPostbase; ! look!
 tanger                 NounPostbase; ! strip of seal blubber from which oil has been rendered; seal cracklings
+tan'gaurlur*           NounPostbase; ! boy; lad 
 tan'ger                NounPostbase; ! darkness
 tangercetaar           NounPostbase; ! movie
 tangercetaarvig        NounPostbase; ! movie theater
@@ -6937,10 +6940,8 @@ tauciite               NounPostbase; ! first time
 taumiqlag              NounPostbase; ! thing from there or then
 tauna                  NounPostbase; ! that one; the thing near the person being spoken to
 tauteg                 NounPostbase; ! forehead
-tau͡ga=i                NounPostbase; ! thatʼs enough; well then; and then; thatʼs all
 tau͡gag'estauna         NounPostbase; ! see what happened, thatʼs what you get
 tava(ni)               NounPostbase; ! (tau͡ga(ni)) there
-tava=i                 NounPostbase; ! thatʼs enough; well then; and then; thatʼs all
 tavci                  NounPostbase; ! belt
 tavigtar               NounPostbase; ! braid; braided thing
 tavtaar                NounPostbase; ! clam
@@ -7114,7 +7115,6 @@ tiiyar                 NounPostbase; ! tiny usually black sea anemone
 titir                  NounPostbase; ! otitus; runny ear
 tit'assir              NounPostbase; ! northern pintail (Anas acuta)
 tua(ni)                NounPostbase; ! there
-tua=i                  NounPostbase; ! thatʼs enough; well then; and then; thatʼs all
 tualler                NounPostbase; ! large, moving ice floe that breaks away from shore ice after ocean swell
 tuar                   NounPostbase; ! shore-fast ice on the ocean
 tuc'arar               NounPostbase; ! step; rung of a ladder; rug
@@ -7820,7 +7820,6 @@ vvelag                 NounPostbase; ! flag
 wakencuillag           NounPostbase; ! one who reacts or retaliates immediately without thinking it over
 wangkug                NounPostbase; ! wedual; usdual
 wangkute               NounPostbase; ! weplural; usplural
-wani                   NounPostbase; ! here; now
 watpig                 NounPostbase; ! never ever!; without fail!
 watqapig               NounPostbase; ! never ever!; without fail!
 wii                    NounPostbase; ! I; me
@@ -13323,10 +13322,12 @@ LEXICON VerbSpecialT
 
 
 LEXICON NonYupikPostbase
--=+(a)r[N→N]:=(a)r                             NounPostbase; ! used with English words when they are used in Yupʼik speech or writing
+-=+r[N→N]:=r                                   NounPostbase; ! used with English words when they are used in Yupʼik speech or writing
+-=+(a)r[N→N]:=ar                               NounPostbase; ! used with English words when they are used in Yupʼik speech or writing
 -=+(aa)r[N→N]:=aar                             NounPostbase; ! used with English words when they are used in Yupʼik speech or writing
 
--=+(a)r[V→V]:=(a)r                             VerbPostbase; ! used with English words when they are used in Yupʼik speech or writing
+-=+r[V→V]:=r                                   VerbPostbase; ! used with English words when they are used in Yupʼik speech or writing
+-=+(a)r[V→V]:=ar                               VerbPostbase; ! used with English words when they are used in Yupʼik speech or writing
 -=+(aa)r[V→V]:=aar                             VerbPostbase; ! used with English words when they are used in Yupʼik speech or writing
 
 !-+(a)r[N→V]:+(a)r                             VerbPostbase; ! to say or “go”. . . (word or sound)
@@ -13343,7 +13344,6 @@ VerbEte;
 -–ar(ar*)[N→N]:–ar(ar*)                       NounPostbase; ! little piece of N
 -–cengar*[N→N]:–cengar*                       NounPostbase; ! one with a small N
 -–ciller[N→N]:–ciller                         NounPostbase; ! worthless N; dilapidated N
--@–ckegg[N→N]:@⁵–ckegg                        NounPostbase; ! to be very V, to have good N
 -–cuar(ar*)[N→N]:–cuar(ar*)                   NounPostbase; ! small N; tiny N; little N
 -–cug[N→N]:–cug                               NounPostbase; ! unpleasing N; ugly old N; bad result of V-ing
 -–cungar[N→N]:–cungar                         NounPostbase; ! cute little N; little N (NSU meaning)
@@ -13352,7 +13352,7 @@ VerbEte;
 -%:(ng)i%:rute[N→N]:%:(ng)i%:rute             NounPostbase; ! late (deceased) N; something that causes one to lose his N
 -–kainer[N→N]:–kainer                         NounPostbase; ! a little bit of N; small amount of N
 -+kar[N→N]:+kar                               NounPostbase; ! raw material for N; future N; unrealized N
--@kar(ar*)[N→N]:@⁵kar(ar*)                    NounPostbase; ! small N; little N
+-@kar(ar*)1[N→N]:@⁵kar(ar*)                   NounPostbase; ! small N; little N
 -–kcag[N→N]:–kcag                             NounPostbase; ! something that looks like N
 -–kcuar(ar*)[N→N]:–kcuar(ar*)                 NounPostbase; ! small N; little N
 -–kegtaar(ar*)[N→N]:–k̲egtaar(ar*)             NounPostbase; ! good N; nice N; new N
@@ -13372,12 +13372,14 @@ VerbEte;
 -–kuyugar[N→N]:–kuyugar                       NounPostbase; ! small bit of N; poor N
 -–leg[N→N]:–leg                               NounPostbase; ! one with N or Ns, one having N
 -–lgute[N→N]:–lgute                           NounPostbase; ! one who has the same N as possessor; sharer of N
+-+li1[N→N]:+li                                NounPostbase; ! one who is V; one who Vs; one having V; one similar to N
+-+lir[N→N]:+lir                               NounPostbase; ! one who is V; one who Vs; one having V; one similar to N
 -––liar[N→N]:––liar                           NounPostbase; ! a made N; N made by possessor
 -––linrar*[N→N]:––linrar*                     NounPostbase; ! product of N; evidence or trace of N
 -––linr(ar*)[N→N]:––linr(ar*)                 NounPostbase; ! (NUN form) product of N; evidence or trace of N
 -–lkug[N→N]:–lkug                             NounPostbase; ! no-good, darned N
 -–llar*[N→N]:–llar*                           NounPostbase; ! thing of N (often with reference to the past)
--–ller[N→N]:–ller                             NounPostbase; ! former N; one that V-ed or was V-ed; act or state of V-ing
+-–ller1[N→N]:–ller                            NounPostbase; ! former N; one that V-ed or was V-ed; act or state of V-ing
 -–ller(ar*)[N→N]:–ller(ar*)                   NounPostbase; ! shabby, old N
 -–llruar(ar*)[N→N]:–llruar(ar*)               NounPostbase; ! few N in poor condition
 -@–llug[N→N]:@⁵–llug                          NounPostbase; ! bad N; one with bad N
@@ -13390,11 +13392,11 @@ VerbEte;
 -~+miu[N→N]:~+miu                             NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
 -~+miutar*[N→N]:~+miutar*                     NounPostbase; ! one whose place is N
 -–mte[N→N]:–mte                               NounPostbase; ! our N, ... ; our Ns, ...
--+ner[N→N]:+ner                               NounPostbase; ! area of N
+-+ner4[N→N]:+ner                              NounPostbase; ! area of N
 -–nerrar*[N→N]:–nerrar*                       NounPostbase; ! new N; one that has recently V-ed
 -–nerrar(ar*)[N→N]:–nerrar(ar*)               NounPostbase; ! new N; one that has recently V-ed
 -–nerar(ar*)[N→N]:–nerar(ar*)                 NounPostbase; ! (NUN form) new N; one that has recently V-ed
--–ngirte'rrlugar*[N→N]:–ngirte'rrlugar*       NounPostbase; ! good old (but perhaps decrepit) N
+-–ngirta'rrlugar*[N→N]:–ngirta'rrlugar*       NounPostbase; ! good old (but perhaps decrepit) N
 -–ngnagar[N→N]:–ngnagar                       NounPostbase; ! poor quality N; darned N
 -–ngssaar(ar*)[N→N]:–ngssaar(ar*)             NounPostbase; ! secret N
 -–nguar[N→N]:–nguar                           NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
@@ -13405,7 +13407,7 @@ VerbEte;
 !-%:(e)nkut[N→N]:%:(e)nkut                     EncliticOrEnd; ! (plural) N and family; N and companion
 !-%:(e)nkuk[N→N]:%:(e)nkuk                     EncliticOrEnd; ! (dual) N and family; N and companion
 -–paarrlug[N→N]:–paarrlug                     NounPostbase; ! big N
--–pig[N→N]:–pig                               NounPostbase; ! genuine N; real N; authentic N
+-–pig1[N→N]:–pig                              NounPostbase; ! genuine N; real N; authentic N
 -–piar[N→N]:–piar                             NounPostbase; ! genuine N; real N; authentic N
 -–pigar[N→N]:–pigar                           NounPostbase; ! genuine N; real N; authentic N
 -–qainar[N→N]:–q̲ainar                         NounPostbase; ! only N; merely N
@@ -13435,7 +13437,6 @@ VerbEte;
 -+tar3[N→N]:+tar                              NounPostbase; ! caught N (game animal); N caught by possessor
 -+tar4[N→N]:+tar                              NounPostbase; ! N part of something
 -+tar5[N→N]:+tar                              NounPostbase; ! N specifically (exact meaning uncertain); small N
--+tna[N→N]:+tna                               NounPostbase; ! to do like N
 -+tuli[N→N]:+tuli                             NounPostbase; ! one that is well endowed with N
 -+(ng)uar[N→N]:+(ng)uar                       NounPostbase; ! imitation N; inauthentic N; thing similar to or reminiscent of N; device for inauthentic V-ing
 -%:(ng)ute[N→N]:%:(ng)ute                     NounPostbase; ! supply of N; owned N
@@ -13453,11 +13454,12 @@ VerbEte;
 
 -+`(g)ar(ar)[N→V]:+`(g)ar(ar)                 VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
 -+arar(ar)[N→V]:+arar(ar)                     VerbPostbase; ! to go only by V-ing or only with N (which is barely adequate for conditions)
--%:(ng)ar(ar)te[N→V]:%:(ng)ar(ar)te           VerbPostbase; ! to hit or get hit in or on oneʼs N
+-%:(ng)ar(ar)te2[N→V]:%:(ng)ar(ar)te          VerbPostbase; ! to hit or get hit in or on oneʼs N
 -–car(ar)te[N→V]:–car(ar)te                   VerbPostbase; ! to hit in or on the N, to hit right in or on the N
 -+ci[N→V]:+ci                                 VerbPostbase; ! to buy (some) N
 -–ciller(ar)te[N→V]:–ciller(ar)te             VerbPostbase; ! to unintentionally hit (it) in the N
--+cite[N→V]:+cite                             VerbPostbase; ! to have the quality of V or N
+-+cite2[N→V]:+cite°                           VerbPostbase; ! to have the quality of V or N
+-@–ckegg[N→V]:@⁵–ckegg                        VerbPostbase; ! to be very V, to have good N
 -+cugninarqe[N→V]:+cugninarqe                 VerbPostbase; ! (Y form) to smell or taste like N
 -+cugnilarqe[N→V]:+cugnilarqe                 VerbPostbase; ! (NUN, NSU form) to smell or taste like N
 -–cugninarqe[N→V]:–cugninarqe                 VerbPostbase; ! (K form) to smell or taste like N
@@ -13466,15 +13468,15 @@ VerbEte;
 -+cur|+ssur[N→V]:+c|.ssur                     VerbPostbase; ! to hunt N; to seek N; to check N (game-catching implement)
 -%:(ng)icag[N→V]:%:(ng)icag                   VerbPostbase; ! to be in need of N; to lack N
 -%:(ng)illiqe[N→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
--–ir[N→V]:–ir                                 VerbPostbase; ! N (natural phenomenon) is occurring; to set N (game capturing device); to provide or be provided with N (but not in the sense of giving N to someone)
--%:(ng)ir[N→V]:%:(ng)ir                       VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
+-–ir1[N→V]:–ir                                VerbPostbase; ! N (natural phenomenon) is occurring; to set N (game capturing device); to provide or be provided with N (but not in the sense of giving N to someone)
+-%:(ng)ir2[N→V]:%:(ng)ir                      VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
 -%:(ng)ir(ar)[N→V]:%:(ng)ir(ar)               VerbPostbase; ! to have cold N
 -%:(ng)ir(ar)te[N→V]:%:(ng)ir(ar)te           VerbPostbase; ! to injure or be injured in oneʼs N; to abrubtly cease V-ing
 -%:(ng)i%:rute[N→V]:%:(ng)i%:rute             VerbPostbase; ! to not have N any more; to no longer be V (adjectival verbs only)
--%:(ng)ite[N→V]:%:(ng)ite°                    VerbPostbase; ! to lack N or V; to have no N or V
+-%:(ng)ite1[N→V]:%:(ng)ite°                   VerbPostbase; ! to lack N or V; to have no N or V
 -+karci[N→V]:+karci                           VerbPostbase; ! to buy something to serve as oneʼs N
 -–kcugi[N→V]:–kcugi                           VerbPostbase; ! to strike (it) with a projectile or implement in the N
--–ke[N→V]:–k̲e                                 VerbPostbase; ! to have as oneʼs N
+-–ke2[N→V]:–k̲e                                VerbPostbase; ! to have as oneʼs N
 -–kegci[N→V]:–k̲egci                           VerbPostbase; ! to have good N
 -–kegci[N→V]:–kegci                           VerbPostbase; ! to have good N
 -–keggi[N→V]:–keggi                           VerbPostbase; ! to become good N
@@ -13491,7 +13493,7 @@ VerbEte;
 -–knaggairute[N→V]:–knaggairute               VerbPostbase; ! to have come to totally lack N
 -–knaggaite[N→V]:–knaggaite                   VerbPostbase; ! to totally lack N
 -–ksagute[N→V]:–k̲sagute                       VerbPostbase; ! to acquire or claim (it) as oneʼs N
--%%kuir[N→V]:%%kuir                           VerbPostbase; ! to go along N; to go following N
+-%%kuir[N→V]:%%.kuir                          VerbPostbase; ! to go along N; to go following N
 -–laar(ar)[N→V]:–laar(ar)                     VerbPostbase; ! to get a new N
 -–lgir[N→V]:–lgir                             VerbPostbase; ! to take along N
 -––li[N→V]:––li                               VerbPostbase; ! to make N; to make N for (him); to make N out of (it)
@@ -13528,7 +13530,7 @@ VerbEte;
 -–qliarte[N→V]:–q̲liarte                       VerbPostbase; ! to reach the N of; to extend to the N of
 -–qsig[N→V]:–q̲sig                             VerbPostbase; ! to be far in the direction denoted by N
 -–qsigi[N→V]:–q̲sigi                           VerbPostbase; ! to get farther into the area denoted by N
--–qu[N→V]:–qu                                 VerbPostbase; ! to hunt with N or at N
+-–qu2[N→V]:–qu                                VerbPostbase; ! to hunt with N or at N
 -–rpagninarqe[N→V]:–r̲pagninarqe               VerbPostbase; ! to smell strongly of N
 -–rpagnite[N→V]:–r̲pagnite                     VerbPostbase; ! to smell or taste strongly of N
 -–rpau[N→V]:–r̲pau                             VerbPostbase; ! to be a large N; to have a large N
@@ -13536,24 +13538,23 @@ VerbEte;
 -–rrlug[N→V]:–r̲r̲lug                           VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in oneʼs N or in respect to N; to have bad N
 -–rrlugte[N→V]:–r̲r̲lugte                       VerbPostbase; ! to be dirtied with N; to be somewhat V; to be afflicted in oneʼs N or in respect to N; to have bad N
 -–(u)saar[N→V]:–(u)saar                       VerbPostbase; ! to speak the language of N
--–ssaag[N→V]:–ssaag                           VerbPostbase; ! to fetch some N from an easily accessible place
+-–ssaag2[N→V]:–ssaag                          VerbPostbase; ! to fetch some N from an easily accessible place
 -–ssaar[N→V]:–ssaar                           VerbPostbase; ! to hunt N
 -+ssur[N→V]:+ssur                             VerbPostbase; ! to hunt N; to seek N; to check N (game-capturing implement)
--–ssur[N→V]:–ssur                             VerbPostbase; ! to hunt N; to seek N; to check N (game-capturing implement)
 -+tairute[N→V]:+tairute                       VerbPostbase; ! (for there) to be no more N
--+taite[N→V]:+taite°                          VerbPostbase; ! (for there) to be no N
+-+taite1[N→V]:+taite°                         VerbPostbase; ! (for there) to be no N
 -+taknaggaite[N→V]:+taknaggaite               VerbPostbase; ! for there to be absolutely no N
 -+tange[N→V]:+tange                           VerbPostbase; ! (for there) to be N now
 -+tangqerr[N→V]:+tangqerr                     VerbPostbase; ! (for there) to be N
--+tar[N→V]:+tar                               SubordinativeVerbInflection; ! (for there) to be N
--+te[N→V]:+te                                 VerbPostbase; ! to catch N (game animal); to go to N (place); to obtain N; to spend the N (time); for N (time) to pass
--+te[N→V]:+te                                 VerbPostbase; ! to plan to act at a given time
--+te[N→V]:+te                                 VerbPostbase; ! to make the N noise
--+te[N→V]:+te                                 VerbPostbase; ! to apply N (liquid or the like) to (it)
--–tmurte[N→V]:–tmurte                         VerbPostbase; ! to go N-ward; to go in the area described by V
+-+tar3[N→V]:+tar                              SubordinativeVerbInflection; ! (for there) to be N
+-+te2[N→V]:+te                                VerbPostbase; ! to catch N (game animal); to go to N (place); to obtain N; to spend the N (time); for N (time) to pass
+-+te4[N→V]:+te                                VerbPostbase; ! to plan to act at a given time
+-+te3[N→V]:+te                                VerbPostbase; ! to make the N noise
+-+te1[N→V]:+te                                VerbPostbase; ! to apply N (liquid or the like) to (it)
+-–tmurte1[N→V]:–tmurte                        VerbPostbase; ! to go N-ward; to go in the area described by V
 -–trute[N→V]:–trute                           VerbPostbase; ! to miss by passing through the N area, or the N area of it
 -+tu[N→V]:+tu                                 VerbPostbase; ! to be well endowed with N, to have N to a large extent
--+tur[N→V]:+tur                               VerbPostbase; ! to eat N (food); to wear N (clothing); to use N (limited usage with this meaning)
+-+tur2[N→V]:+tur                              VerbPostbase; ! to eat N (food); to wear N (clothing); to use N (limited usage with this meaning)
 -+(r)tuuma(r)[N→V]:+(r)tuuma                  SubordinativeVerbInflection; ! to act together with oneʼs N or Ns
 -+(r)tuuma(r)[N→V]:+(r)tuumar                 QuantQualInflection; ! to act together with oneʼs N or Ns
 -%:~(ng)u[N→V]:%:~(ng)u                       VerbPostbase; ! to be N
@@ -13575,9 +13576,9 @@ VerbEte;
 LEXICON VerbPostbase
 VerbInflection;
 
--[V→N][N][Rel][SgUnpd]:%%%:(e)m              EncliticOrEnd; ! V-ing (understood in nominal sense); V-ness
--@+paa|~vaa[how.V][V→XCLM]:@⁵+p|~vaa          EncliticOrEnd; ! oh, how V!; my, how V!
--@+pag|~vag[how.V][V→XCLM]:@⁵+p|~vag          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
+-[V→N]-[N][Rel][SgUnpd]:%%%:(e)m              EncliticOrEnd; ! V-ing (understood in nominal sense); V-ness
+-@+paa|~vaa[V][XCLM]:@⁵+p|~vaa          EncliticOrEnd; ! oh, how V!; my, how V!
+-@+pag|~vag[V][XCLM]:@⁵+p|~vag          EncliticOrEnd; ! (HBC form) oh, how V!; my, how V!
 
 -–lria|@ngur*[V→N]:–lria|@⁴+ngur*             NounPostbase; ! the one who is V-ing
 !-–lria[V→N]:–lria                             NounPostbase; ! the one who is V-ing
@@ -13587,7 +13588,7 @@ VerbInflection;
 -–a|–ar|–aa|+a|+aar[V→V]:+a|+aar              VerbPostbase; ! to V repeatedly
 -+`(g)aqe[V→V]:+`(g)aqe                       VerbPostbase; ! to usually V; to repeatedly V; to habitually V
 -+`(g)ar(ar)[V→V]:+`(g)ar(ar)                 VerbPostbase; ! to just barely V; to hardly V; to gradually V; leisurely V; With adjectival verbs ending in te-, this postbase means to be a little V
--@+(g)ar(ar)te[V→V]:@+–`(g)ar(ar)te           VerbPostbase; ! to suddenly or immediately V; to V with short duration of action
+-@+(g)ar(ar)te1[V→V]:@+–`(g)ar(ar)te          VerbPostbase; ! to suddenly or immediately V; to V with short duration of action
 -+`(g)arkaqe[V→V]:+`(g)arkaqe                 VerbPostbase; ! will V (it); should V (it); to V (it) in the future
 -+`(g)arkau[V→V]:+`(g)arkau                   VerbPostbase; ! will eventually V or be V-ed; should V or be V-ed; is supposed to V or be V-ed; to V in the future
 -+`(g)arkaunrir[V→V]:+`(g)arkaunrir           VerbPostbase; ! to now be unable to V; to not be able or fit to V in the V future
@@ -13595,7 +13596,7 @@ VerbInflection;
 -@~+caar(ar)[V→V]:@⁴~+caar(ar)                VerbPostbase; ! to endeavor to V, to undertake the act of V-ing, to try to V (with a high probability of success)
 -@+car[V→V]:@+car                             VerbPostbase; ! to cause to V, to try to induce to V
 -@~+cetaar[V→V]:@⁵~+cetaar                    VerbPostbase; ! to try to cause one to V
--@+cete|.vkar[V→V]:@⁵+cete|.vkar              VerbPostbase; ! to let, allow, permit, cause, or compel one to V
+-@+cete1|.vkar[V→V]:@⁵+cete|.vkar             VerbPostbase; ! to let, allow, permit, cause, or compel one to V
 -@~+ciar(ar)[V→V]:@⁵~+ciar(ar)                VerbPostbase; ! to wait patiently for object to V
 -+(s)ciigali[V→V]:+(s)ciigali                 VerbPostbase; ! to not be able to V any longer
 -+(s)ciigalli[V→V]:+(s)ciigalli               VerbPostbase; ! (additional NI form) to not be able to V any longer
@@ -13606,23 +13607,24 @@ VerbInflection;
 -+ciqe|@ciiqe[V→V]:+ciqe|@⁵ciiqe              VerbPostbase; ! to V in the future; will V
 -+ciqiar|@ciiqiar[V→V]:+ciqiar|@⁵ciiqiar      VerbPostbase; ! to be about to V; to be going to V
 -+ciqli|@ciiqli[V→V]:+ciqli|@⁵ciiqli          VerbPostbase; ! to probably be going to V
--@~+cir[V→V]:@⁵~+cir                          VerbPostbase; ! to let (it) V; to wait for (it) to V; to make (it) V
--+(s)cir[V→V]:+(s)cir                         VerbPostbase; ! to get V-ed (usually to oneʼs detriment)
+-@~+cir1[V→V]:@⁵~+cir                         VerbPostbase; ! to let (it) V; to wait for (it) to V; to make (it) V
+-+(s)cir2[V→V]:+(s)cir                        VerbPostbase; ! to get V-ed (usually to oneʼs detriment)
 -+(s)ciryar[V→V]:+(s)ciryar                   VerbPostbase; ! to be easily V-ed
 -@~+citaar[V→V]:@⁵~+citaar                    VerbPostbase; ! to try to cause one to V
--@+cite[V→V]:@⁵+cite                          VerbPostbase; ! to let, allow, permit, cause, compel one to V
--+cite[V→V]:+cite°                            VerbPostbase; ! to have the quality of V or N
--@%:(u)cite[V→V]:@³%:(u)cite                  VerbPostbase; ! to V in place of, instead of, or for (him) (but not in the sense of ‘for the sake ofʼ)
+-@+cite1[V→V]:@⁵+cite                         VerbPostbase; ! to let, allow, permit, cause, compel one to V
+-+cite2[V→V]:+cite°                           VerbPostbase; ! to have the quality of V or N
+-@%:(u)cite3[V→V]:@³%:(u)cite                 VerbPostbase; ! to V in place of, instead of, or for (him) (but not in the sense of ‘for the sake ofʼ)
 -+(s)ciur[V→V]:+(s)ciur                       VerbPostbase; ! to get V-ed (usually to oneʼs detriment)
 -@–ckegg[V→V]:@⁵–ckegg                        VerbPostbase; ! to be very V, to have good N
 -–curlag[V→V]:–curlag                         VerbPostbase; ! to be interfered with while V-ing; to V with unsatisfactory results
--@+(r|l)i[V→V]:@+(r|l)i                       VerbPostbase; ! to become or cause to become V
--+`(g)i[V→V]:+`(g)i                           VerbPostbase; ! to V something; to do some V-ing; to suffer the V-ing of something
+-@+(r|l)i1[V→V]:@+(r|l)i                      VerbPostbase; ! to become or cause to become V
+-+`(g)i2[V→V]:+`(g)i                          VerbPostbase; ! to V something; to do some V-ing; to suffer the V-ing of something
 -@~+(ng)iinar[V→V]:@²~+(ng)iinar              VerbPostbase; ! to V more and more
 -%:(ng)illiqe[V→V]:%:(ng)illiqe               VerbPostbase; ! to suffer from the lack of N or V
 -–inar[V→V]:–inar                             VerbPostbase; ! to finally V
+-%:(ng)ir2[V→V]:%:(ng)ir                      VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
 -%:(ng)i%:rute[V→V]:%:(ng)i%:rute             VerbPostbase; ! to not have N any more; to no longer be V (adjectival verbs only)
--%:(ng)ite[V→V]:%:(ng)ite°                    VerbPostbase; ! to lack N or V; to have no N or V
+-%:(ng)ite1[V→V]:%:(ng)ite°                   VerbPostbase; ! to lack N or V; to have no N or V
 -–kaca(g)ar[V→V]:–kacaġar                     VerbPostbase; ! to be very V
 -–kacagar[V→V]:–kacagar                       VerbPostbase; ! to be very V
 -–kacgar[V→V]:–kacgar                         VerbPostbase; ! to be very V
@@ -13632,7 +13634,7 @@ VerbInflection;
 -–@kaunrir[V→V]:–@⁴k̲aunrir                    VerbPostbase; ! to be unable to V on account of some inhibiting factor
 -–kayag[V→V]:–kayag                           VerbPostbase; ! to V (of “darned” one, one toward whom the speaker has negative feelings)
 -–keckacagar[V→V]:–keckacagar                 VerbPostbase; ! to be very V
--@–ke[V→V]:@⁴–ke                              VerbPostbase; ! to find (it) to be V
+-@–ke3[V→V]:@⁴–ke                             VerbPostbase; ! to find (it) to be V
 -@~–kenge[V→V]:@⁵~–kenge                      VerbPostbase; ! to V something
 -–knig[V→V]:–knig                             VerbPostbase; ! to suddenly V (motion)
 -–ksaar(ar)[V→V]:–ksaar(ar)                   VerbPostbase; ! to V in a small and unnoticeable way
@@ -13675,8 +13677,8 @@ VerbInflection;
 -–llgu[V→V]:–llgu                             VerbPostbase; ! to be good at V-ing
 -–lli[V→V]:–lli                               VerbPostbase; ! to maybe V; to perhaps V
 -–llini[V→V]:–llini                           VerbPostbase; ! to V without being directly observed by the speaker
--–llru[V→V]:–llru                             VerbPostbase; ! to have V-ed
--@llru[V→V]:@⁵llru                            VerbPostbase; ! to be more V
+-–llru1[V→V]:–llru                            VerbPostbase; ! to have V-ed
+-@llru2[V→V]:@⁵llru                           VerbPostbase; ! to be more V
 -–llrunrite[V→V]:–llrunrite°                  VerbPostbase; ! to not have V-ed
 -–llrurte[V→V]:–llrurte                       VerbPostbase; ! to have already V-ed
 -–llugtur[V→V]:–llugtur                       VerbPostbase; ! to V quickly, in a hurry
@@ -13700,7 +13702,7 @@ VerbInflection;
 -–mssugte[V→V]:–mssugte                       VerbPostbase; ! to V in a small way
 -–myag[V→V]:–myag                             VerbPostbase; ! to not V enough
 -–myugte[V→V]:–myugte                         VerbPostbase; ! to V in a small way; to tend to be V
--@~+na[V→V]:@¹~+na                            SubordinativeVerbInflection; ! in order to V; for the purpose of V-ing
+-@~+na2[V→V]:@¹~+na                            SubordinativeVerbInflection; ! in order to V; for the purpose of V-ing
 -@~+naciar[V→V]:@¹~+naciar                    VerbPostbase; ! to V late; to take a long time in V-ing
 -@~+naite[V→V]:@¹~+naite°                     VerbPostbase; ! to tend not to cause one to V
 -@~+nake[V→V]:@¹~+nake                        VerbPostbase; ! to consider (it) to tend to cause one to V
@@ -13760,7 +13762,7 @@ VerbInflection;
 -@+paalug|~vaalug[V→V]:@⁵+p|~vaalug           VerbPostbase; ! to V for the first time, or for the first time in a long time
 -@+pailug|~vailug[V→V]:@⁵+p|~vailug           VerbPostbase; ! to V for the first time, or for the first time in a long time
 -–pacug[V→V]:–pacug                           VerbPostbase; ! poor dear one Vs
--@+pag|~vag[V→V]:@⁵+p|~vag                    InterrogativeVerbInflection; ! to V so well    ! interrogative mood only
+-@+pag|~vag1[V→V]:@⁵+p|~vag                   InterrogativeVerbInflection; ! to V so well    ! interrogative mood only
 -@+pakar|~vakar[V→V]:@⁵+p|~vakar              VerbPostbase; ! to V so long; to V so much
 -–qpakar[V→V]:–qpakar                         VerbPostbase; ! to V so long; to V so much
 -@+pallag|~vallag[V→V]:@⁵+p|~vallag           VerbPostbase; ! to V intensely; to V excessively
@@ -13778,8 +13780,8 @@ VerbInflection;
 -–qainaurte[V→V]:–q̲ainaurte                   VerbPostbase; ! to be ready to V
 -–qapiar(ar)[V→V]:–q̲apiar(ar)                 VerbPostbase; ! to be very V
 -–qapigte[V→V]:–q̲apigte                       VerbPostbase; ! to be very V
--–qaqe[V→V]:–q̲araqe                           SubordinativeVerbInflection; ! to V now and then; to V intermittently
--@qaqe[V→V]:@⁵qaqe                            VerbPostbase; ! to V one after another
+-–qaqe1[V→V]:–q̲araqe                          SubordinativeVerbInflection; ! to V now and then; to V intermittently
+-@qaqe2[V→V]:@⁵qaqe                           VerbPostbase; ! to V one after another
 -–qaqu[V→V]:–q̲aqu                             VerbPostbase; ! to V now and then
 -–qaqur(ar)[V→V]:–q̲aqur(ar)                   VerbPostbase; ! to V now and then
 -–qar[V→V]:–q̲ar                               VerbPostbase; ! to V briefly; to merely V; please V; to V immediately before an associated event
@@ -13792,14 +13794,15 @@ VerbInflection;
 -@–qtaar[V→V]:@–qtaar                         VerbPostbase; ! to repeatedly V at intervals; to V back and forth
 -–qtar[V→V]:–q̲tar                             VerbPostbase; ! to V (of weak, helpless one; dear one)
 -–qtarar(ar)[V→V]:–q̲tarar(ar)                 VerbPostbase; ! to V slowly and with difficulty because of disability
--–qu[V→V]:–q̲u                                 VerbPostbase; ! to V one after another
+-–qu1[V→V]:–q̲u                                VerbPostbase; ! to V one after another
 -@–qur[V→V]:@⁵–qur                            VerbPostbase; ! to V using repeated actions to accomplish the act; to be V-ed by repeated actions
 -–rpaga[V→V]:–r̲paga                           VerbPostbase; ! to V hard at intervals
 -–rpag[V→V]:–r̲pag                             VerbPostbase; ! to V hard; to be very V
 -–rpakar[V→V]:–r̲pakar                         VerbPostbase; ! to V so much; to V for so long
--@–rqe[V→V]:@⁵–rqe                            VerbPostbase; ! to V one after another; to V time after time; to V all of them
--–rqe[V→V]:–r̲qe                               VerbPostbase; ! to intentionally or deliberately cause one to V (often repeatedly)
--–rqe[V→V]:–rqe                               VerbPostbase; ! to intentionally or deliberately cause one to V (often repeatedly)
+-@–rqe1[V→V]:@⁵–rqe                           VerbPostbase; ! to V one after another; to V time after time; to V all of them
+-–rqe2[V→V]:–r̲qe                              VerbPostbase; ! to intentionally or deliberately cause one to V (often repeatedly)
+-–rqe2[V→V]:–rqe                              VerbPostbase; ! to intentionally or deliberately cause one to V (often repeatedly)
+-–rrar[V→V]:–r̲r̲ar                             VerbPostbase; ! to V a little; to just barely V
 -–rraar[V→V]:–r̲r̲aar                           VerbPostbase; ! to V first; to V before doing something else; after V-ing
 !-–rraar[V→V]:–r̲r̲aar                           SubordinativeVerbInflection; ! to V first; to V before doing something else; after V-ing
 !-–rraar[V→V]:–r̲r̲aar                           OptativeVerbInflection; ! to V first; to V before doing something else; after V-ing
@@ -13819,19 +13822,19 @@ VerbInflection;
 -–ssaag3[V→V]:–ssaag                          VerbPostbase; ! to be too V
 -–ssiyaag[V→V]:–ssiyaag                       VerbPostbase; ! to be too V
 -+(te)staili[V→V]:+(te)staili                 VerbPostbase; ! to prevent oneself or another from V-ing
--@+ta[V→V]:@²+ta                              VerbPostbase; ! to V or be V to a certain degree; to be that V
+-@+ta2[V→V]:@²+ta                             VerbPostbase; ! to V or be V to a certain degree; to be that V
 -+taagute[V→V]:+taagute                       VerbPostbase; ! to V back and forth; to V reciprocally; to V each other
--@+taar[V→V]:@⁴+taar                          VerbPostbase; ! to act so as to try to make others feel that one is V
--+tar[V→V]:+tar                               VerbPostbase; ! to tend by oneʼs disposition or nature to V a lot
+-@+taar1[V→V]:@⁴+taar                         VerbPostbase; ! to act so as to try to make others feel that one is V
+-+tar1[V→V]:+tar                              VerbPostbase; ! to tend by oneʼs disposition or nature to V a lot
 -@+tassiir[V→V]:@²+tassiir                    VerbPostbase; ! to test or determine how V (it) is
 -@+tassiar[V→V]:@²+tassiar                    VerbPostbase; ! to test or determine how V (it) is
 -@+taciar[V→V]:@²+taciar                      VerbPostbase; ! to test or determine how V (it) is
 -@+tateke[V→V]:@²+tateke                      VerbPostbase; ! to be V to the same extent           
--@%:(u)te[V→V]:@³%:(u)te                      VerbPostbase; ! to V with another; to V for the sake of; to V reciprocally; to V (it) along with oneself or others
+-@%:(u)te5[V→V]:@³%:(u)te                     VerbPostbase; ! to V with another; to V for the sake of; to V reciprocally; to V (it) along with oneself or others
 -@%:(u)teke[V→V]:@³%:(u)teke                  VerbPostbase; ! to V on account of (it); to V concerning (it)
 -+ter[V→V]:+ter                               VerbPostbase; ! to V suddenly and willfully
 -–tngurte[V→V]:–tngurte                       VerbPostbase; ! to V unexpectedly; to V after changing oneʼs mind
--–tmurte[V→V]:–tmurte                         VerbPostbase; ! (HBC form) to V unexpectedly; to V after changing oneʼs mind
+-–tmurte2[V→V]:–tmurte                        VerbPostbase; ! (HBC form) to V unexpectedly; to V after changing oneʼs mind
 -–tu[V→V]:–tu                                 VerbPostbase; ! to V customarily
 -+tuinar[V→V]:+tuinar                         VerbPostbase; ! to always V
 -–turnike[V→V]:–turnike                       VerbPostbase; ! to feel that object can V proficiently
@@ -13893,7 +13896,7 @@ VerbInflection;
 -@~+yuumiite[V→V]:@ʸ~+yuumiite°               VerbPostbase; ! to not care to V
 -@~+yuumir[V→V]:@ʸ~+yuumir                    VerbPostbase; ! to yearn to V; to desire to V
 
--+`(g)ar[V→N]:+`(g)ar                         NounPostbase; ! that which has been V-ed
+-+`(g)ar1[V→N]:+`(g)ar                        NounPostbase; ! that which has been V-ed
 -+`(g)arkar[V→N]:+`(g)arkar                   NounPostbase; ! that which is to be V-ed; that which will V
 -+`(g)arkaqenrilke[V→N]:+`(g)arkaqenrilke     NounPostbase; ! that which possessor must, should or would not V
 -@~+cetaar[V→N]:@⁵~+cetaar                    NounPostbase; ! something used to cause one to V
@@ -13902,20 +13905,22 @@ VerbInflection;
 -@~+citaar[V→N]:@⁵~+citaar                    NounPostbase; ! something used to cause one to V
 -–curlag[V→N]:–curlag                         NounPostbase; ! misfortune in V-ing
 -+cuute|+ssuute[V→N]:+c|.ssuute               NounPostbase; ! device for V-ing, device associated with N
--+(s)kar(ar*)[V→N]:+(s)kar(ar*)               NounPostbase; ! one who Vs; the only one who Vs
+-+(s)kar(ar*)2[V→N]:+(s)kar(ar*)              NounPostbase; ! one who Vs; the only one who Vs
 -+karar[V→N]:+karar                           NounPostbase; ! exact area denoted by N with respect to possessor
--@~–ke[V→N]:@⁴~–k̲e                            NounPostbase; ! (@~-ke-1) the one or ones that the possessor is V-ing
+-@~–ke1[V→N]:@⁴~–k̲e                           NounPostbase; ! (@~-ke-1) the one or ones that the possessor is V-ing
 -@~–kengar[V→N]:@⁵~–kengar                    NounPostbase; ! one that is being V-ed
--–ller[V→N]:–ller                             NounPostbase; ! former N; one that V-ed or was V-ed; act or state of V-ing
--@ller[V→N]:@⁵ller                            NounPostbase; ! one more V than possessor(s), the most V of the possessors
+-+li1[V→N]:+li                                NounPostbase; ! one who is V; one who Vs; one having V; one similar to N
+-+lir[V→N]:+lir                               NounPostbase; ! one who is V; one who Vs; one having V; one similar to N
+-–ller1[V→N]:–ller                            NounPostbase; ! former N; one that V-ed or was V-ed; act or state of V-ing
+-@ller2[V→N]:@⁵ller                           NounPostbase; ! one more V than possessor(s), the most V of the possessors
 -–llerkar[V→N]:–llerkar                       NounPostbase; ! future act of V-ing; unrealized act of V-ing
 -–llgute[V→N]:–llgute                         NounPostbase; ! fellow V-er; V-ing partner
 -–lqurrar*[V→N]:–lqurrar*                     NounPostbase; ! the one(s) most V
 -@%:(u)te[V→N]:@³%:(u)te                      NounPostbase; ! (also @³(u)taq) instrument or device for V-ing; time of V-ing
 -@~+natkar[V→N]:@¹~+natkar                    NounPostbase; ! future time of V-ing
--@~+ner[V→N]:@⁵~+ner                          NounPostbase; ! thing that results from V-ing
--@–ner[V→N]:@¹–ner                            NounPostbase; ! the activity, art, or process of V-ing
--–ner[V→N]:–ner                               NounPostbase; ! one more V than possessor(s); the most V of possessors
+-@~+ner1[V→N]:@⁵~+ner                         NounPostbase; ! thing that results from V-ing
+-@–ner2[V→N]:@¹–ner                           NounPostbase; ! the activity, art, or process of V-ing
+-–ner3[V→N]:–ner                              NounPostbase; ! one more V than possessor(s); the most V of possessors
 -–nerrar*[V→N]:–nerrar*                       NounPostbase; ! new N; one that has recently V-ed
 -–nerrar(ar*)[V→N]:–nerrar(ar*)               NounPostbase; ! new N; one that has recently V-ed
 -–nerar(ar*)[V→N]:–nerar(ar*)                 NounPostbase; ! (NUN form) new N; one that has recently V-ed
@@ -13931,7 +13936,7 @@ VerbInflection;
 -+ssuute[V→N]:+ssuute                         NounPostbase; ! device for V-ing; device associated with N
 -+(s)te[V→N]:+(s)te                           NounPostbase; ! V-er; one who Vs as an occupation (with unpossessed ending);
 -@+tacir[V→N]:@²+tacir                        NounPostbase; ! extent of possessorʼs V-ing
--@%:(u)tar[V→N]:@³%:(u)tar                    NounPostbase; ! device for V-ing
+-@%:(u)tar1[V→N]:@³%:(u)tar                   NounPostbase; ! device for V-ing
 -@+tassiigute[V→N]:@²+tassiigute              NounPostbase; ! something for determining V-ness
 -@+taciigute[V→N]:@²+taciigute                NounPostbase; ! something for determining V-ness
 -@+tate[V→N]:@²+tate                          NounPostbase; ! one that is V to the same extent as possessor
@@ -14143,7 +14148,7 @@ LEXICON NounInflection
 ! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 !                  singular possessed                    |                      plural possessed                  |                           dual possessed                      |
 ! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
--[N][Via][SgUnpd]:%%kun                    EncliticOrEnd; -[N][Via][PlUnpd]:%%tgun                 EncliticOrEnd; -[N][Via][DuUnpd]:%%%:(e)gnegun                 EncliticOrEnd; ! unpossessed   |
+-[N][Via][SgUnpd]:%%.kun                    EncliticOrEnd; -[N][Via][PlUnpd]:%%.tgun                 EncliticOrEnd; -[N][Via][DuUnpd]:%%%:(e)gnegun                 EncliticOrEnd; ! unpossessed   |
                                                                                                                     -[N][Via][DuUnpd]:%%%:(e)gkun                   EncliticOrEnd;
 ! -------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|-----------------|
 -[N][Via][3SgPoss][SgPosd]:%:(ng)akun        EncliticOrEnd; -[N][Via][3SgPoss][PlPosd]:%:(ng)ikun      EncliticOrEnd; -[N][Via][3SgPoss][DuPosd]:%%%:(e)gkenkun         EncliticOrEnd; ! 3Sg possessor |
@@ -14174,7 +14179,7 @@ LEXICON NounInflection
 ! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 !                  singular possessed                   |                     plural possessed                |                          dual possessed                      |
 ! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
--[N][Equ][SgUnpd]:%%tun                   EncliticOrEnd; -[N][Equ][PlUnpd]:%%cetun             EncliticOrEnd; -[N][Equ][DuUnpd]:%%%:(e)gtun                  EncliticOrEnd; ! unpossessed   |
+-[N][Equ][SgUnpd]:%%.tun                   EncliticOrEnd; -[N][Equ][PlUnpd]:%%.cetun             EncliticOrEnd; -[N][Equ][DuUnpd]:%%%:(e)gtun                  EncliticOrEnd; ! unpossessed   |
 ! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
 -[N][Equ][3SgPoss][SgPosd]:%:(ng)atun       EncliticOrEnd; -[N][Equ][3SgPoss][PlPosd]:%:(ng)itun   EncliticOrEnd; -[N][Equ][3SgPoss][DuPosd]:%%%:(e)gketun         EncliticOrEnd; ! 3Sg possessor |
 -[N][Equ][3PlPoss][SgPosd]:%:(ng)acetun     EncliticOrEnd; -[N][Equ][3PlPoss][PlPosd]:%:(ng)icetun EncliticOrEnd; -[N][Equ][3PlPoss][DuPosd]:%%%:(e)gkecetun       EncliticOrEnd; ! 3Pl possessor |
@@ -14936,6 +14941,7 @@ kemyu           EmotionalPostbase; ! relying on someone
 kencig          EmotionalPostbase; ! respectful*
 keneg           EmotionalPostbase; ! loving
 kumeg           EmotionalPostbase; ! attracted to a baby 
+kusgu           EmotionalPostbase; ! protective* 
 kusgur          EmotionalPostbase; ! protective* 
 kuygur          EmotionalPostbase; ! protective* 
 nakleg          EmotionalPostbase; ! compassionate
@@ -14972,11 +14978,11 @@ ulurya          EmotionalPostbase; ! afraid of being hit
 uumi            EmotionalPostbase; ! frustrated
 
 LEXICON EmotionalPostbase
--@–ke[V→V]:@⁴–k̲e             VerbPostbase; ! to find (it) to be V
+-–ke4[V→V]:–k̲e               VerbPostbase; ! to feel V toward (him/it); to V (object)
 -@~+narqe[V→V]:@¹~+narqe     VerbPostbase; ! to tend to cause one to V; to be able to be V-ed
 -@~+naite[V→V]:@¹~+naite     VerbPostbase; ! to tend not to cause one to V
--+tar[V→V]:+tar              VerbPostbase; ! to tend by oneʼs disposition or nature to V a lot
--+taite[V→V]:+taite°         VerbPostbase; ! to tend by oneʼs disposition or nature not to V
+-+tar1[V→V]:+tar             VerbPostbase; ! to tend by oneʼs disposition or nature to V a lot
+-+taite2[V→V]:+taite°        VerbPostbase; ! to tend by oneʼs disposition or nature not to V
 -@~+yug[V→V]:@ʸ~+yug         VerbPostbase; ! to want to V; to tend to V; to feel V (with “emotional roots”)
 
 
@@ -15041,7 +15047,7 @@ uver            PosturalPostbase; ! slanting
 
 LEXICON PosturalPostbase
 QuantQualInflection;
--+te[V→V]:+te             VerbPostbase; ! to act on one so as to cause it to V
+-+te2[V→V]:+te            VerbPostbase; ! to act on one so as to cause it to V
 -@–ngqa[V→V]:@⁵–ngqa      VerbPostbase; ! to be in a state of V or of having V-ed or having been V-ed
 -@–ngqa[V→V]:@⁵–ngqar     QuantQualInflection; ! to be in a state of V or of having V-ed or having been V-ed
 
@@ -15241,7 +15247,8 @@ man:mat+'u      DemNonAbsSg; u:u+u           DemNonAbsSg; im:im'u             De
 man:ma+ku  DemIntermedNonSg; u:u+ku     DemIntermedNonSg; im:imku        DemIntermedNonSg;
 maa              DemAdv2Ter; wa                   DemAdv; 
                                                           ima                   DemAdv;
-u[DemPro]-[Via][SgUnpd]:u+u+ggun      EncliticOrEnd;  
+u[DemPro]-[Via][SgUnpd]:u+u+ggun      EncliticOrEnd;
+maa[DemAdv]-[Via]:gguun               EncliticOrEnd;  
 wa[DemAdv]-[Via]:u+u+ggun             EncliticOrEnd;                                                          
 maa[DemAdv]-[Equ]:maa+ten             EncliticOrEnd;
 wa[DemAdv]-[Equ]:wa+ten               EncliticOrEnd;
@@ -15323,8 +15330,8 @@ DemAdv;
 [DemAdv]-–qsigi[N→V]:–q̲sigi             VerbPostbase; ! to get farther into the area denoted by N
 [DemAdv]-–qva[N→N]:–q̲va                 NounPostbase; ! area far in the direction of N
 [DemAdv]-–qvaar*[N→N]:–q̲vaar*           NounPostbase; ! area far in the direction of N
-[DemAdv]-[Sec_Ter]:.tmun                 EncliticOrEnd;
-[DemAdv]-[Sec_Ter]+tmurte[N→V]:.tmurte   VerbPostbase; ! to go N-ward; to go in the area described by V
+[DemAdv]-[Sec_Ter]:.tmun                EncliticOrEnd;
+[DemAdv]-[Sec_Ter]–tmurte1[N→V]:.tmurte VerbPostbase; ! to go N-ward; to go in the area described by V
 
 
 LEXICON DemAdv
@@ -15369,7 +15376,7 @@ yaate                  NounInflection; ! area beyond
 
 LEXICON PositionalPostbase
 NounInflection;
-[Positional]-%:(ng)ir[N→V]:%:(ng)ir                VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
+[Positional]-%:(ng)ir2[N→V]:%:(ng)ir               VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
 [Positional]-–lirner[N→N]:–lirner                  NounPostbase; ! area in the N direction; one of the N direction
 [Positional]-–qlikacaar(ar*)[N→N]:–q̲likacaar(ar*)  NounPostbase; ! one that is the farthest in the area denoted by N
 [Positional]-–qlir*[N→N]:–q̲lir*                    NounPostbase; ! the one located far in the area or space or time denoted by N
@@ -15378,7 +15385,7 @@ NounInflection;
 [Positional]-–qva[N→N]:–q̲va                        NounPostbase; ! area far in the direction of N
 [Positional]-–qvaar*[N→N]:–q̲vaar*                  NounPostbase; ! area far in the direction of N
 [Positional]-[Sec_Ter]:.tmun                       EncliticOrEnd;
-[Positional]-[Sec_Ter]+tmurte[N→V]:.tmurte         VerbPostbase;
+[Positional]-[Sec_Ter]–tmurte1[N→V]:.tmurte        VerbPostbase;
 [Positional]-+var[N→V]:+var                        VerbPostbase; ! to go or put N-ward
 
 

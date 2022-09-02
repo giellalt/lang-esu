@@ -169,9 +169,7 @@ define MultipleForms t e "–r̲pag|@²vag" (->) l "." v a g            || Vow _
                      "+c|.ss" -> "." ss                       || Vow _                        .o.
                      "+c|.ss" -> "+" c                                                        .o.          
                      "('a)" -> ' a                            || \.#. Con a _                 .o.
-                     "('a)" -> 0                                                              .o.
-                     "(a)" (->) a                                                             .o.
-                     "(a)" -> 0                                                                ;
+                     "('a)" -> 0                                                               ;
 
 
 define AutomaticDevoicing v -> vv,

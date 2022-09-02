@@ -52,7 +52,7 @@ def processFile(filePath):
 
 def normalizeRegex(word):
     norm = word.strip().lower()
-    norm = re.sub('[^\s\w\'\-̄͡͞ńḿ]','', norm) # punctuation without \' and - and special characters
+    norm = re.sub('[^\s\w\'\-̄͡͞ńḿu͡g]','', norm) # punctuation without \' and - and special characters
     norm = re.sub('[\d]','', norm) # remove digits, underscore
     norm = re.sub('^\'','', norm) # remove word initial apostrphe
     norm = re.sub('[\']','ʼ', norm) # convert apostrophe

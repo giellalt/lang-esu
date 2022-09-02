@@ -1,0 +1,310 @@
+! LANGUAGE: "esu"
+! AUTHOR: "Lonny Alaskuk Strunk"
+
+! This Central Alaskan Yup'ik FST morphological analyzer/generator and the 
+! associated source code is available under the GNU Affero General Public 
+! License (GNU AGPL v.3):
+!
+! Copyright (C) 2020 Lonny Alaskuk Strunk
+!
+! This program is free software: you can redistribute it and/or modify it under 
+! the terms of the GNU Affero General Public License as published by the Free 
+! Software Foundation, either version 3 of the License, or (at your option) any 
+! later version.
+!
+! This program is distributed in the hope that it will be useful, but WITHOUT 
+! ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+! FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more 
+! details.
+!
+! You should have received a copy of the GNU Affero General Public License along 
+! with this program. If not, see https://www.gnu.org/licenses/.
+
+
+!! NOTE !!!
+! 1. Morpheme Operators are indicated by ["<"|">"|"$"|"&"]
+! 2. Vowels may be hatted or stressed (i.e. a -> [â|á])
+
+! TODO:
+!   - 
+
+define Sep        ["<"|">"|"&"|"↞"|"↠"];
+
+define Stop       [ p | t | c | k | q ];
+define VoiceFric  [ v | l | s | g | r | u͡g | u͡r | ġ ];
+define VlessFric  [ vv | ll | ss | gg | rr | u͡gg | u͡rr ];
+define VoiceNasal [ m | n | ng ];
+define VlessNasal [ m̄ | n̄ | n͞g ];
+
+define VoiceCon   [ VoiceFric | VoiceNasal ];
+define VlessCon   [ VlessFric | VlessNasal | Stop ];
+
+define Fric       [ VlessFric  | VoiceFric  ];
+define Nasal      [ VlessNasal | VoiceNasal ];
+
+define Con        [ Stop | Fric | Nasal | w | y ];
+
+define FVow       [ a | i | u | ạ | ụ ];
+define FVowStress [ á | í | ú | ạ́ | ụ́ ];
+define FVowHatted [ â | î | û | ậ | ụ̂ ];
+define AllFVow    [ FVow | FVowStress | FVowHatted ];
+define Vow        [ FVow | e ];
+define VowStress  [ FVowStress | é ];
+define VowHatted  [ FVowHatted | ê ];
+define AllVow     [ Vow | VowStress | VowHatted ];
+
+define AutomaticDevoicing v -> vv,
+                          l -> ll,
+                          s -> ss,
+                          g -> gg,
+                          r -> rr,
+                          u͡g -> u͡gg,
+                          u͡r -> u͡rr || [ Stop | VlessFric ] Sep* _  ,
+                                     _ Sep* [ Stop | VlessFric ]             .o.
+                          m -> m̄,
+                          n -> n̄,
+                          ng -> n͞g || [ Stop | VlessFric ] Sep* _   ;
+
+! Unnecessary devoicing                          
+!                          r -> rr  || _ Sep* .#.                            .o.
+!                          s -> ss  || .#. Sep* _                             ;
+
+define WeakInitialE [..] -> e   || .#. ["[e]"|"[é]"] Con _ Sep* Con                      .o. ! [é]nmek -> [e]nemek
+                       ê -> e   || .#. ["[e]"|"[é]"] Con _ Sep* Con                      .o. ! [e]nêli -> enel'iuq
+                    [..] -> "'" || .#. ["[e]"|"[é]"] Con AllVow Sep+ Con _ Sep* AllVow   .o. ! [e]nemek -> nem'ek
+                    [..] -> "'" || .#. ["[e]"|"[é]"] Con AllVow Con _ Sep+ AllVow        .o. ! [e]mer -> mer'et
+                    ["[e]"|"[é]"] -> 0  || .#. _ Con AllVow Sep* Con                      ;  ! drop weak e ; not [e]nii
+
+define urDeletion [ụ|ụ́] r (->) u r                           || g Sep _ l                .o. ! acagurluq (HBC form)
+                  [ụ|ụ́] r -> e ("'") "u͡r"                    || g Sep _ l                .o. ! acageu͡rluq/acage'u͡rluq
+                  r [ụ|ụ́] r (->) r u                         || Vow Vow Sep+ _ l         .o. ! uiruluq (HBC form)
+                  r [ụ|ụ́] r -> "u͡r"                          || Vow Vow Sep+ _ l         .o. ! uiu͡rluq
+                  ê Sep+ r [ụ|ụ́] r (->)  Sep r u             || _ l                      .o. ! tumruluq (HBC form)
+                  ê Sep+ r [ụ|ụ́] r -> e Sep ("'") "u͡r"       || _ l                      .o. ! tumeu͡rluq/tume'u͡rluq
+                  [e|é] Sep+ r [ụ|ụ́] r (->) Sep u "'" r      || _ l                      .o. ! qaspu'rluq (HBC form)
+                  [e|é] Sep+ r [ụ|ụ́] r (->) e Sep ("'") "u͡r" || _ l                      .o. ! qaspeu͡rluq/qaspe'u͡rluq
+                  r [ụ|ụ́] r (->) r u                         || VowHatted Sep+ _ l       .o. ! nunaruluq (HBC form)
+                  r [ụ|ụ́] r -> "'" u r                       || VowHatted Sep+ _ l       .o. ! nuna'urluq
+                  r [ụ|ụ́] r -> ("'") "u͡r"                    || [Vow|VowStress] Sep+ _ l  ;  ! angyau͡rluq/angya'u͡rluq
+
+define DropHattedE ê -> 0 .o.
+                [..] -> e || p _ Sep* p , t _ Sep* t , c _ Sep* c , k _ Sep* k , q _ Sep* q , 
+                             v _ Sep* v , l _ Sep* l , s _ Sep* s , g _ Sep* g , r _ Sep* r , u͡g _ Sep* u͡g , u͡r _ Sep* u͡r ,
+                             vv _ Sep* vv , ll _ Sep* ll , ss _ Sep* ss, gg _ Sep* gg , rr _ Sep* rr , u͡gg _ Sep* u͡gg , u͡rr _ Sep* u͡rr ,
+                             v _ Sep* vv , l _ Sep* ll , s _ Sep* ss, g _ Sep* gg , r _ Sep* rr , u͡g _ Sep* u͡gg , u͡r _ Sep* u͡rr ,
+                             m _ Sep* m , n _ Sep* n , ng _ Sep* ng , m̄ _ Sep* m̄ , n̄ _ Sep* n̄ , n͞g _ Sep* n͞g , 
+                             w _ Sep* w , y _ Sep* y , c _ Sep* t , t _ Sep* c                                                       ; ! maybe c _ Sep* n , n _ Sep* c ??
+
+define TripleConsonant  rr   ->  0 || _ q Sep* Con                .o. ! rqe- bases drop r
+                       [..]  ->  e || Con _ Sep* [s|ss] Sep* Con  .o.
+                       [..]  ->  e || Con Sep* t _ Sep* Con       .o.
+                       [..] (->) e || Con Sep* Con _ Sep* Con     .o.
+                       [..]  ->  e || Con _ Sep* Con Sep* Con      ;
+
+define TripleVowel  AllFVow -> 0 || [Con|.#.] Sep* AllFVow Sep* _ Sep* AllFVow Sep* [Con|.#.] ;
+
+define ConnectiveMood  ạ -> 0               || _ Sep [a|á] \.#.                          .o. ! caliạan -> calian 
+                       ụ -> 0               || _ Sep [a|á] \.#.                          .o. ! calikụan -> calikan 
+                       [e|é] -> e ("'")     || [VowStress|VowHatted|Con] Sep ng _ [r|rr] .o. ! qavangrarpet -> qavange(')rpet
+                       [e|é] -> "'" e ("'") || Vow Sep ng _ [r|rr]                        ;  ! iqvangrarma -> iqvang'e(')rma
+
+define WordAdjustments ġ -> 0       || Vow _                           .o. ! túntuvâyaġaq -> túntuvâyaaq 
+                       t (->) c     || \.#. _ [e|é] Sep* t ,               ! angutet -> angucet
+                                       \.#. _ [e|é] Sep* ss Sep* Stop  .o. ! kitugtesciigataqa -> kitugcesciigataqa
+                       t [e|é] Sep rr (->) Sep q || _ Vow              .o. ! inarterraarluni -> inarqaarluni for -rraar- postbase
+                       â r [a|á] (->) a "'" a || Sep [q|k] _ q         .o. ! quuyurniqaraqluni -> quuyurniqa'aqluni for -qaqe- postbase
+                       [a|á] r [a|á] (->) a   || Sep [q|k] _ q         .o. ! nerqaraqluni -> nerqaqluni for -qaqe- postbase
+                       [a|â|á] -> e || Sep q _ Sep* [r|rr]              ;  ! apteqarru -> apteqerru for -qar- postbase
+
+define arDeletion  "â" -> a "'" a,
+                   "î" -> i "'" i,
+                   "û" -> u "'" u  || _ Sep* Con Sep* "ạ" q Sep* .#.                    .o. ! V̂r(ar)# -> V'Vr
+                   "ạ" q -> 0 || _ Sep* .#.                                             .o. ! wordFinal
+                   ["ạ"|"ạ́"] [r|rr] -> 0 || Vow Sep* VowStress Sep* Con Sep* _ Sep* Con .o. ! VV́r(ar) -> VV́r
+                   "ạ" [r|rr] -> 0 || Con Sep* VowStress Sep* Con Sep* _ Sep* Con       .o. ! CV́r(ar) -> CV́r
+                   "â" -> a "'" á,
+                   "î" -> i "'" í,
+                   "û" -> u "'" ú  || _ Sep* Con Sep* ["ạ"|"ạ́"] [r|rr] Sep* Con         .o. ! V̂r(ar) -> V'Vr
+                   ["ạ"|"ạ́"] [r|rr] -> 0 || Vow "'" VowStress Sep* Con Sep* _ Sep* Con  .o. ! V̂r(ar) -> V'Vr
+                   a -> á "'",
+                   e -> é "'",
+                   i -> í "'",
+                   u -> ú "'" || _ Sep* Con Sep* "ạ́" [r|rr] Sep* Con                     .o. ! Vr(ár) -> V́(')r
+                   "ạ́" [r|rr] -> 0 || VowStress "'" Sep* Con Sep* _ Sep* Con             .o. ! Vr(ár) -> V́(')r
+                   "'" (->) 0 || VowStress _ Sep* Con                                     ;  ! Vr(ár) -> V́(')r
+
+
+define RemoveApostrophe "'" -> 0 || [ .#. | Con ] Sep* AllVow Sep* Con Sep* _ Sep* AllVow Sep* AllVow , ! [#|C]VC'VV
+                                    VoiceCon Sep*  _ Sep* VoiceCon                                    ; 
+
+define AddApostrophe [..] -> "'" || VlessCon _ Sep* VoiceCon , n _ Sep* g   ;      ! maybe VoiceFric _ Sep* VlessCon  ???
+
+define ToOrthography  vv -> v,
+                      ll -> l,
+                      ss -> s,
+                      gg -> g,
+                      rr -> r,
+                      u͡gg -> u͡g,
+                      u͡rr -> u͡r || [ Stop | VlessFric ] Sep* _           ,
+                                 _ Sep* [ Stop ]                        .o.
+                      m̄ -> m,
+                      n̄ -> n,
+                      n͞g -> ng || [ Stop | VlessFric ] Sep* _           .o.
+                      rr -> r  || _ Sep* .#.                            .o.
+                      ss -> s  || .#. Sep*  _                           .o.
+                      [â|á|ạ|ậ|ạ́] -> a                                  .o.
+                      [ê|é] -> e                                        .o.
+                      [î|í] -> i                                        .o.
+                      [û|ú|ụ|ụ́|ụ̂] -> u                                  .o.
+                      ["[e]"|"[é]"|"[ê]"] -> e                          .o.
+                      ġ -> g                                             ;
+
+define RemoveLigature m̄ (->) m     .o.
+                      n̄ (->) n     .o.
+                      n͞g (->) ng   .o.
+                      u͡g (->) u g   .o.
+                      u͡r (->) u r   .o.
+                      u͡gg (->) u gg .o.
+                      u͡rr (->) u rr  ;
+
+define FinalWordApostrophe Vow (->) "'" || Con Sep* _ Sep* .#. ;
+
+
+define Lowercase "A"   -> a,
+                 "B"   -> b,
+                 "C"   -> c,
+                 "D"   -> d,
+                 "E"   -> e,
+                 "F"   -> f,
+                 "G"   -> g,
+                 "H"   -> h,
+                 "I"   -> i,
+                 "J"   -> j,
+                 "K"   -> k,
+                 "L"   -> l,
+                 "M"   -> m,
+                 "N"   -> n,
+                 "O"   -> o,
+                 "P"   -> p,
+                 "Q"   -> q,
+                 "R"   -> r,
+                 "S"   -> s,
+                 "T"   -> t,
+                 "U"   -> u,
+                 "V"   -> v,
+                 "W"   -> w,
+                 "X"   -> x,
+                 "Y"   -> y,
+                 "Z"   -> z,
+                 "M̄"   -> m̄,
+                 "N̄"   -> n̄,
+                 "Vv"  -> vv,
+                 "Ll"  -> ll,
+                 "Ss"  -> ss,
+                 "Gg"  -> gg,
+                 "Rr"  -> rr,
+                 "Ng"  -> ng,
+                 "N͞g"  -> n͞g,
+                 "U͡g"  -> u͡g,
+                 "U͡r"  -> u͡r,
+                 "U͡gg" -> u͡gg,
+                 "U͡rr" -> u͡rr;
+
+define Uppercase "$" "a"   -> "A",
+                 "$" "b"   -> "B",
+                 "$" "c"   -> "C",
+                 "$" "d"   -> "D",
+                 "$" "e"   -> "E",
+                 "$" "f"   -> "F",
+                 "$" "g"   -> "G",
+                 "$" "h"   -> "H",
+                 "$" "i"   -> "I",
+                 "$" "j"   -> "J",
+                 "$" "k"   -> "K",
+                 "$" "l"   -> "L",
+                 "$" "m"   -> "M",
+                 "$" "n"   -> "N",
+                 "$" "o"   -> "O",
+                 "$" "p"   -> "P",
+                 "$" "q"   -> "Q",
+                 "$" "r"   -> "R",
+                 "$" "s"   -> "S",
+                 "$" "t"   -> "T",
+                 "$" "u"   -> "U",
+                 "$" "v"   -> "V",
+                 "$" "w"   -> "W",
+                 "$" "x"   -> "X",
+                 "$" "y"   -> "Y",
+                 "$" "z"   -> "Z",
+                 "$" "m̄"   -> "M̄",
+                 "$" "n̄"   -> "N̄",
+                 "$" "vv"  -> "Vv",
+                 "$" "ll"  -> "Ll",
+                 "$" "ss"  -> "Ss",
+                 "$" "gg"  -> "Gg",
+                 "$" "rr"  -> "Rr",
+                 "$" "ng"  -> "Ng",
+                 "$" "n͞g"  -> "N͞g",
+                 "$" "u͡g"  -> "U͡g",
+                 "$" "u͡r"  -> "U͡r",
+                 "$" "u͡gg" -> "U͡gg",
+                 "$" "u͡rr" -> "U͡rr";    
+
+define NonYupik   "1" -> "a",
+                  "2" -> "b",
+                  "3" -> "c",
+                  "4" -> "d",
+                  "5" -> "e",
+                  "6" -> "f",
+                  "7" -> "g",
+                  "8" -> "h",
+                  "9" -> "i",
+                  "10" -> "j",
+                  "11" -> "k",
+                  "12" -> "l",
+                  "13" -> "m",
+                  "14" -> "n",
+                  "15" -> "o",
+                  "16" -> "p",
+                  "17" -> "q",
+                  "18" -> "r",
+                  "19" -> "s",
+                  "20" -> "t",
+                  "21" -> "u",
+                  "22" -> "v",
+                  "23" -> "w",
+                  "24" -> "x",
+                  "25" -> "y",
+                  "26" -> "z",
+                  "27" -> "vv",
+                  "28" -> "ll",
+                  "29" -> "ss",
+                  "30" -> "gg",
+                  "31" -> "rr",
+                  "32" -> "ng",
+                  "33" -> "n͞g",
+                  "34" -> "u͡g",
+                  "35" -> "u͡gg",
+                  "36" -> "u͡r",
+                  "37" -> "u͡rr",
+                  "38" -> "m̄",
+                  "39" -> "n̄";            
+
+regex AutomaticDevoicing   .o.
+      WeakInitialE         .o.
+      urDeletion           .o. 
+      DropHattedE          .o.
+      TripleConsonant      .o.
+      TripleVowel          .o.
+      ConnectiveMood       .o.
+      WordAdjustments      .o.
+      arDeletion           .o.
+      RemoveApostrophe     .o.
+      AddApostrophe        .o.
+      AutomaticDevoicing   .o.
+      ToOrthography        .o.
+!      RemoveLigature       .o.
+!      FinalWordApostrophe  .o.
+!      Lowercase             ;
+      NonYupik             .o.
+      Uppercase             ;
