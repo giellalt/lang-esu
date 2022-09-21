@@ -23,6 +23,7 @@ Documentation
 Documentation can be found at:
 
 - [Language specific documentation](https://giellalt.github.io/lang-esu/)
+- [General documentation](https://giellalt.github.io/)
 
 FST Stack
 ---------
