@@ -1,0 +1,44 @@
+## Process this file with automake to produce Makefile.in
+
+## Copyright (C) 2011 Samediggi
+
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+####### Source file defs: ########
+
+#! @param GT_TWOLC_MAIN required, the source of phonology
+#! @param GT_TWOLC_SUPPLEMENTS optional, other sources to distribute and
+#! 		  compile for other things
+GT_PHONOLOGY_MAIN=phonology.twolc
+GT_PHONOLOGY_SUPPLEMENTS=assign-stress.twolc \
+                         extra-phonology.xfscript \
+                         collapse-boundaries.twolc \
+                         remove-boundaries.twolc
+
+phonology.twolc:           $(srcdir)/orig/src/esu.twol
+	$(AM_V_CP)cp -f $< $@
+
+assign-stress.twolc:       $(srcdir)/orig/src/esu.stress.twol
+	$(AM_V_CP)cp -f $< $@
+
+extra-phonology.xfscript:  $(srcdir)/orig/src/esu.twol.xfst
+	$(AM_V_CP)cp -f $< $@
+
+collapse-boundaries.twolc: $(srcdir)/orig/src/esu.seg.twol
+	$(AM_V_CP)cp -f $< $@
+
+remove-boundaries.twolc:   $(srcdir)/orig/src/esu.ana.twol
+	$(AM_V_CP)cp -f $< $@
+
+# vim: set ft=automake:

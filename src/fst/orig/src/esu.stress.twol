@@ -1,0 +1,84 @@
+! LANGUAGE: "esu"
+! AUTHOR: "Lonny Alaskuk Strunk"
+
+! This Central Alaskan Yup'ik FST morphological analyzer/generator and the 
+! associated source code is available under the GNU Affero General Public 
+! License (GNU AGPL v.3):
+!
+! Copyright (C) 2020 Lonny Alaskuk Strunk
+!
+! This program is free software: you can redistribute it and/or modify it under 
+! the terms of the GNU Affero General Public License as published by the Free 
+! Software Foundation, either version 3 of the License, or (at your option) any 
+! later version.
+!
+! This program is distributed in the hope that it will be useful, but WITHOUT 
+! ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+! FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more 
+! details.
+!
+! You should have received a copy of the GNU Affero General Public License along 
+! with this program. If not, see https://www.gnu.org/licenses/.
+
+
+Alphabet
+    a c e g i k l m n p q r s t u v w y m̄ n̄
+    vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr
+    %[e%]
+    ʼ                                           ! Keep apostrophe from lexical entries
+    ạ ụ ġ                                       ! for (ar) droppping
+    á í ú ạ́ ụ́ â î û ậ ụ̂ é ê
+    %[é%] %[ê%]                                 ! weak initial e cannot be hatted
+    %> 
+    %= ;
+
+Sets 
+    B = %> ;
+
+    Stop = p t c k q ;
+    VoiceFric = v l s g r u͡g u͡r ġ ; 
+    VlessFric = vv ll ss gg rr u͡gg u͡rr ;
+    VoiceNasal = m n ng ;
+    VlessNasal = m̄ n̄ n͞g ;
+
+    VoiceCon = VoiceFric VoiceNasal ;
+    VlessCon = VlessFric VlessNasal Stop ;
+
+    Fric = VoiceFric VlessFric ;
+    Nasal = VoiceNasal VlessNasal ;
+
+    Con = Stop Fric Nasal w y ;
+
+    FVow = a i u ạ ụ ;
+    FVowStress = á í ú ạ́ ụ́ ;
+    FVowHatted = â î û ậ ụ̂ ;
+    AllFVow = FVow FVowStress FVowHatted ;
+    Vow = FVow e %[e%] ;
+    VowStress = FVowStress é %[é%] ;
+    VowHatted = FVowHatted ê %[ê%] ; ! weak initial e cannot be hatted
+    AllVow = Vow VowStress VowHatted ;
+
+Rules 
+! From pg 55 in practical grammar book (Jacobson, 1995)
+
+"a:â"
+Vx:Vy <=> [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con :* | B:* :Con B:* :ʼ :* ] .#. ; !CVCV̂              ! Rule 1
+    except
+        _ B:* (:Vow) B:* (:Con) B:* [.#.|:%=] ;
+    where Vx in Vow
+          Vy in VowHatted
+    matched;
+
+"a:á"
+Vx:Vy <=> :Vow B:* _ ; !VV́(C)                                                                                         ! Rule 2
+          [.#.|:Con] B:* _ B:* :Con B:* ([:Con|:ʼ]) B:* :Vow B:* :AllVow ; ! CV́C(C)VV́                                   ! Rule 3
+          .#. (:Con) B:* _ B:* :Con B:* [:Con|:ʼ] ; ! #(C)V́C[Cʼ]                                               ! Rule 4
+          [.#.|:Con|:ʼ] B:* :Vow B:* (:Con) B:* :Con B:* _ B:* :Con B:* :Con ; ! every 2nd closed syllable
+          :Con B:* _ B:* :Con B:* :Con B:* :Vow B:* :Con B:* :AllVow ; ! 1st syllable if second syllable open
+    except
+        _ B:* (:Con) B:* [.#.|%-] ;
+        [.#.|:Con] B:* :Vow B:* :Con B:* _ ~[ B:* :Vow :* | B:* :Con B:* :Con :* | B:* :Con B:* :ʼ :* ] .#. ; !CVCV̂  
+    where Vx in Vow
+          Vy in VowStress
+    matched;
+

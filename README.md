@@ -1,9 +1,32 @@
 Finite State Morphological Analyzer for Central Alaskan Yup'ik
 ==============================================================
 
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/issues)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-esu/main/badge.svg)](https://github.com/giellalt/lang-esu/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/blob/main/LICENSE)
+[![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-esu?platform=desktop&channel=nightly)
+[![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-esu?platform=mbile&channel=nightly)
+
 Central Alaskan Yup'ik (CAY) (ISO 639-3: esu) is a member of the Inuit-Yupik-Unangan (IYU) (also known as Eskimo-Aleut) language family. It is spoken in south-west Alaska among the Yukon-Kuskokwim Delta and Bristol Bay areas.
 
 This CAY morphological analyzer/generator can **analyze** (break the word into its individual parts) and **generate** (build a word from its individual parts) Yup'ik words. The underlying form is composed of morphemes represented by the analysis of Jacobson's (1984/1995/2012) [dictionary](http://www.uaf.edu/anla/item.xml?id=CY972J2012) and grammar book. It is build using the open source [HFST tools](https://hfst.github.io). This project was developed with `hfst 3.15.2`.
+
+Download and test speller files
+-------------------------------
+
+The speller files downloadable at the top of this page (the `*.bhfst` files) can
+be used with [divvunspell](https://github.com/divvun/divvunspell), to test their
+performance. These files are the exact same ones as installed on users' computers
+and mobile phones. Desktop and mobile speller files differ from each other in the
+error model and should be tested separately — thus also two different downloads.
+
+Documentation
+-------------
+
+Documentation can be found at:
+
+- [Language specific documentation](https://giellalt.github.io/lang-esu/)
+- [General documentation](https://giellalt.github.io/)
 
 FST Stack
 ---------
