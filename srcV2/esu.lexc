@@ -1972,6 +1972,7 @@ atawa                                          NounPostbase; ! benefit; goodness
 atawaqaun:atawaqaute                           NounPostbase; ! blessing
 at'ayagglugaq:at'ayagglugar                    NounPostbase; ! waterproof sealskin hipboot for women
 ateknguin:ateknguite                           NounPostbase; ! story knife
+ateguk:ategug                                  NounPostbase; ! parka
 atekuk:atekug                                  NounPostbase; ! parka
 atellgun:atellgute                             NounPostbase; ! one having the same name; name-sharer
 ateq:ater                                      NounPostbase; ! name; the person after whom one (the possessor) is named
@@ -3078,6 +3079,7 @@ esip'aq:esip'ar                                NounPostbase; ! zipper
 esip'aaq:esip'aar                              NounPostbase; ! zipper
 esepaaq:esepaar                                NounPostbase; ! zipper
 esiq:esir                                      NounPostbase; ! egg yolk
+eyiq:eyir                                      NounPostbase; ! egg yolk
 esirliq:esirlir                                NounPostbase; ! yellow thing
 esirngalnguq*:esirngalngur*                    NounPostbase; ! yellow thing
 eskaaniq:eskaanir                              NounPostbase; ! bark of a certain type of tree (species?) burned and used as an inhalant to stop nosebleeds
@@ -5319,6 +5321,7 @@ nuyavvlucangaq:nuyavvlucangar                  NounPostbase; ! red-breasted merg
 nuyiurun:nuyiurute                             NounPostbase; ! comb; brush
 nuyuurun:nuyuurute                             NounPostbase; ! comb; brush
 nuyuirun:nuyuirute                             NounPostbase; ! comb; brush
+paa³:paa                                       NounPostbase; ! mouth of river, den, bottle, kayak, etc.
 paacaq:paacar                                  NounPostbase; ! barge
 paalraayak:paalraayag                          NounPostbase; ! a certain legendary creature
 paallaguaq:paallaguar                          NounPostbase; ! fur hat
@@ -5344,6 +5347,7 @@ paggluk¹:pagglug                               NounPostbase; ! grudge; rancor
 paggluk²:pagglug                               NounPostbase; ! wood that is very hard to whittle
 pagken:pagkete                                 NounPostbase; ! from up there
 pagkullr(aq*):pagkullr(ar*)                    NounPostbase; ! raven (Corvus corax)
+pai²:pai                                       NounPostbase; ! mouth of river; outlet; opening of den, bottle, etc., cockpit of kayak
 paigista:paigiste                              NounPostbase; ! babysitter
 paipaq:paipar                                  NounPostbase; ! pipe
 paiqaq:paiqar                                  NounPostbase; ! one of a set of people who go back and forth before the Kevgiq (“Messenger Feast”) begins after the first two Messengers have arrived at the invited village
@@ -5781,6 +5785,7 @@ qagkumiu                                       NounPostbase; ! northerner; Inupi
 qagkurmiu                                      NounPostbase; ! northerner; Inupiaq Eskimo; Yukon Yup'ik Eskimo; Yukon or Kuskokwim Yup'ik Eskimo
 qaglak:qaglag                                  NounPostbase; ! upper part of bowl or bucket (with a groove for the bottom piece); outer rim around cockpit coaming in a kayak (and groove for tying the kayaker's raincoat to to keep the water out)
 qaglaya(g)aq:qaglaya(g)ar                      NounPostbase; ! bowl with grooved upper part made of a separate piece of bent wood
+qai                                            NounPostbase; ! surface; top
 qaillukuarta:qaillukuarte                      NounPostbase; ! ‘council member’
 qaiq:qair                                      NounPostbase; ! wave
 qairvak:qairvag                                NounPostbase; ! big wave
@@ -11290,7 +11295,6 @@ nuyurtar                                       VerbPostbase; ! to be wild; to be
 nuyuurqe                                       VerbPostbase; ! to scare away (animals)
 paa¹:paa                                       VerbPostbase; ! to postrate oneself
 paa²:paa                                       VerbPostbase; ! to stay behind; to stay with
-paa³:paa                                       VerbPostbase; ! mouth of river, den, bottle, kayak, etc.
 paalaryaaqe                                    VerbPostbase; ! to hurriedly go forward
 paallag                                        VerbPostbase; ! to fall forward
 paame                                          VerbPostbase; ! to scratch; to relieve an itch
@@ -11313,7 +11317,6 @@ pacike                                         VerbPostbase; ! to blame; to accu
 pacikcar                                       VerbPostbase; ! to chop up
 pacsaqar                                       VerbPostbase; ! to suffer a chill from going outside when sweaty; to get pneumonia
 pai¹:pai                                       VerbPostbase; ! to stay behind with; to babysit
-pai²:pai                                       VerbPostbase; ! mouth of river; outlet; opening of den, bottle, etc., cockpit of kayak
 paicir                                         VerbPostbase; ! to leave an inheritance for (him); to bequeath something to (him)
 paigi                                          VerbPostbase; ! to babysit
 painqegcaar(ar)                                VerbPostbase; ! to lick completely clean
@@ -11791,7 +11794,6 @@ qagra                                          VerbPostbase; ! to explode repeat
 qagrute                                        VerbPostbase; ! to burst through net or trap
 qagte¹:qagte                                   VerbPostbase; ! to speak Inupiaq
 qagte²:qagte                                   VerbPostbase; ! to protrude or curve out
-qai                                            VerbPostbase; ! surface; top
 qailir                                         VerbPostbase; ! to be rough (of water); to have lots of waves
 qailiur                                        VerbPostbase; ! to deal with rough water
 qaillukuar                                     VerbPostbase; ! to mess around; to tinker; to plot; to deliberate; to confer
@@ -13694,7 +13696,7 @@ VerbEte;
 -+tange[N→V]:%<+tange                          VerbPostbase; ! (for there) to be N now
 -+tangqerr[N→V]:%<+tangqerr                    VerbPostbase; ! (for there) to be N
 -+te¹[N→V]:%<+te                               VerbPostbase; ! to catch N (game animal); to go to N (place); to obtain N; to spend the N (time); for N (time) to pass
--+te⁵[N→V]:%<+te                               VerbPostbase; ! to make the N noise
+-+te⁷[N→V]:%<+te                               VerbPostbase; ! to make the N noise
 -+te⁶[N→V]:%<+te                               VerbPostbase; ! to apply N (liquid or the like) to (it)
 -–tmurte¹[N→V]:%<–tmurte                       VerbPostbase; ! to go N-ward
 -[Sec_Ter]–tmurte¹[N→V]:%<.tmurte              VerbPostbase; ! to go N-ward
