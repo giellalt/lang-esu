@@ -3882,6 +3882,7 @@ kauturyar(aq*):kauturyar(ar*)                  NounPostbase; ! tree swallow (Tac
 kavam'aq:kavam'ar                              NounPostbase; ! government
 kavcak:kavcag                                  NounPostbase; ! hailstone
 kavcircuun:kavcircuute                         NounPostbase; ! snow beater
+kaviaq:kaviar                                  NounPostbase; ! red fox (Vulpes vulpes)
 kaviaq*:kaviar*                                NounPostbase; ! red fox (Vulpes vulpes)
 kaviaruaq:kaviaruar                            NounPostbase; ! aft keel support of the kayak
 kavingali                                      NounPostbase; ! brown (or grizzly) bear (Ursus arctos)
@@ -4846,6 +4847,7 @@ nalkutaq:nalkutar                              NounPostbase; ! found thing; disc
 nall'arcetaarun:nall'arcetaarute               NounPostbase; ! lot; drawing; lottery
 nall'arcetaaq:nall'arcetaar                    NounPostbase; ! lot; drawing; lottery
 nall'aruaq:nall'aruar                          NounPostbase; ! joint at the edge of tracking stabilizer stern piece of a kayak
+nallu²:nallu                                   NounPostbase; ! state of not knowing; unawareness
 nallumquq:nallumqur                            NounPostbase; ! dull-witted person
 nallunailkutaq:nallunailkutar                  NounPostbase; ! mark; insignia; signpost; bouy; trail marker; cairn; marker to show where something is
 nallunairista:nallunairiste                    NounPostbase; ! one who shows; witness in court
@@ -10868,7 +10870,6 @@ nalle                                          VerbPostbase; ! that which corres
 nalleknguar                                    VerbPostbase; ! to be perceived as occuring because of or in conjunction with something else
 nallime                                        VerbPostbase; ! to disappear from sight
 nallu¹:nallu                                   VerbPostbase; ! to not know
-nallu²:nallu                                   VerbPostbase; ! state of not knowing; unawareness
 nalluliur                                      VerbPostbase; ! to act concealing one's action's from
 nallunair                                      VerbPostbase; ! to explain; to instruct; to demonstrate; to show how; to interpret (sign, evidence)
 nallunaite:nallunaite°                         VerbPostbase; ! to be obvious; to be clear; to be discernible; to be perceptible
