@@ -499,6 +499,7 @@ maa-i:maa=i                                    ParticleEnd; ! here; coming this 
 maa-irpak:maa=irpak                            ParticleEnd; ! during the present period of time; now
 malrurqugnek                                   ParticleEnd; ! twice
 malrurqugni                                    ParticleEnd; ! during two periods of time
+nakleng                                        ParticleEnd; ! poor thing!; so sad!
 nakmiin                                        ParticleEnd; ! one's own
 nak'nirmek                                     ParticleEnd; ! since when
 nalliinitun                                    ParticleEnd; ! like at the time of (it)
@@ -5934,7 +5935,7 @@ qanganaruaq:qanganaruar                        NounPostbase; ! wormwood (Artemis
 qangiar(aq*):qangiar(ar*)                      NounPostbase; ! man's brother's child; man's nephew or niece through his brother
 qanglluk:qangllug                              NounPostbase; ! deep hole in a riverbed
 qanglluq:qangllur                              NounPostbase; ! deep hole in a riverbed
-qangqiiq:qangqiir                              NounPostbase; ! ptarmigan (Lagopus sp.)
+qangqiiq*:qangqiir*                            NounPostbase; ! ptarmigan (Lagopus sp.)
 qangquaq:qangquar                              NounPostbase; ! frozen “Eskimo ice cream” (akutaq)
 qangqullektaaq:qangqullektaar                  NounPostbase; ! bunchberry or ground dogwood (Cornus canadensis)
 qangqulegcitaaq:qangqulegcitaar                NounPostbase; ! bunchberry or ground dogwood (Cornus canadensis)
@@ -7411,6 +7412,7 @@ uivun:uivute                                   NounPostbase; ! device for stirri
 uivvluaq:uivvluar                              NounPostbase; ! round bowl made for girls
 uivvsak:uivvsag                                NounPostbase; ! round labret
 ukangiiq:ukangiir                              NounPostbase; ! access to something; potential to obtain something
+ukataᵉ:ukate                                   NounPostbase; ! this side
 ukayiruaq:ukayiruar                            NounPostbase; ! cottongrass (Eriophorum sp.)
 ukasiruaq:ukasiruar                            NounPostbase; ! cottongrass (Eriophorum sp.)
 ukeggna                                        NounPostbase; ! the one approaching
@@ -7834,6 +7836,7 @@ yaassiigek:yaassiig                            NounPostbase; ! suitcase; trunk; 
 yaassiigenqellria                              NounPostbase; ! square
 yaassiigenqelria                               NounPostbase; ! square
 yaassiik:yaassiig                              NounPostbase; ! box
+yaataᵉ:yaate                                   NounPostbase; ! area beyond
 yag'arussuk:yag'arussug                        NounPostbase; ! net thrown over birds to capture them
 yagiraciq:yagiracir                            NounPostbase; ! the arm motions in an Eskimo dance
 yagiran:yagirate                               NounPostbase; ! the arm motions in an Eskimo dance
@@ -12953,7 +12956,6 @@ ukakarar                                       VerbPostbase; ! a little on the s
 ukamar                                         VerbPostbase; ! to tow a boat with a rope while walking along the shore
 ukangiir                                       VerbPostbase; ! access to something; potential to obtain something
 ukaqsig                                        VerbPostbase; ! to be close (to here)
-ukate                                          VerbPostbase; ! this side
 ukatrute                                       VerbPostbase; ! to shoot short of a target
 uki                                            VerbPostbase; ! to get a hole (in it); to get pierced
 ukii                                           VerbPostbase; ! to pierce a hole through
@@ -13311,7 +13313,6 @@ yaaqliqe                                       VerbPostbase; ! to be situated in
 yaaqsig                                        VerbPostbase; ! to be distant
 yaarui                                         VerbPostbase; ! to use a story knife to draw pictures on mud or snow and tell a story to go along with it
 yaassiigenqegg                                 VerbPostbase; ! to be square
-yaate                                          VerbPostbase; ! area beyond
 yaatiir                                        VerbPostbase; ! to speak to a group of people directing one's words at a particular person in the group; to look at while passing by; to go beyond
 yaaveskanir                                    VerbPostbase; ! to go further
 yaaveskaniur                                   VerbPostbase; ! to save food for later
@@ -15517,43 +15518,43 @@ LEXICON DemAdv
 LEXICON Positional
 aci                    PositionalPostbase; ! area below; area under (positional base used only with a possessed ending); mattress; bed; wild potato Hedysarum sp. (additional LI meaning)
 aki                    PositionalPostbase; ! other side; area across; reponse; equivalent; value; coin; money
-akule                  PositionalPostbase; ! midsection; area between; land between two topographical features such as the river and the ocean; tundra
-canir                  PositionalPostbase; ! area beside; space next to
+akulaᵉ:akule           PositionalPostbase; ! midsection; area between; land between two topographical features such as the river and the ocean; tundra
+caniq:canir            PositionalPostbase; ! area beside; space next to
 ciu                    PositionalPostbase; ! area in front (of it); time preceding (it); bow of a boat; forepart
-elate                  PositionalPostbase; ! area outside of
+elataᵉ:elate           PositionalPostbase; ! area outside of
 ilu                    PositionalPostbase; ! interior; area inside; upriver area; inner feelings; intestinal tract
 kelu                   PositionalPostbase; ! area behind, back from the house and away from the river
-kete                   PositionalPostbase; ! area down toward the river or sea; area away from the wall; area down from and in front
+ketaᵉ:kete             PositionalPostbase; ! area down toward the river or sea; area away from the wall; area down from and in front
 kingu                  PositionalPostbase; ! rear; back part; area behind; stern; time after
 manu                   PositionalPostbase; ! front side of something
-pai                    PositionalPostbase; ! mouth of river; outlet; opening of den, bottle, etc., cockpit of kayak
+pai²:pai               PositionalPostbase; ! mouth of river; outlet; opening of den, bottle, etc., cockpit of kayak
 qai                    PositionalPostbase; ! surface; top
-qule                   PositionalPostbase; ! area above; ten; ten in cards
-tunge                  PositionalPostbase; ! direction of; area toward
+qulaᵉ:qule             PositionalPostbase; ! area above; ten; ten in cards
+tungaᵉ:tunge           PositionalPostbase; ! direction of; area toward
 tunu                   PositionalPostbase; ! back of; area in back of
 
-amate                  NounInflection; ! area behind; area beyond; area on the far side
-au͡gate                 NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
-avate                  NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
-kiate                  NounInflection; ! area up river of –; inside area of — (house of the like)
-uate                   NounInflection; ! area downriver or toward the exit from possessor
-ukate                  NounInflection; ! this side # ukatiini ‘on this side of itʼ
-yaate                  NounInflection; ! area beyond
+amataᵉ:amate           NounInflection; ! area behind; area beyond; area on the far side
+au͡gataᵉ:au͡gate         NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
+avataᵉ:avate           NounInflection; ! area around (positional base); one of a pair of tassels on the sides of the piece of calfskin in the middle of a tradional Yupʼik parka
+kiataᵉ:kiate           NounInflection; ! area up river of –; inside area of — (house of the like)
+uataᵉ:uate             NounInflection; ! area downriver or toward the exit from possessor
+ukataᵉ:ukate           NounInflection; ! this side # ukatiini ‘on this side of itʼ
+yaataᵉ:yaate           NounInflection; ! area beyond
 
 
 LEXICON PositionalPostbase
 NounInflection;
-[Positional]-%:(ng)ir2[N→V]:%<%:(ng)ir               VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
-[Positional]-–lirner[N→N]:%<–lirner                  NounPostbase; ! area in the N direction; one of the N direction
-[Positional]-–qlikacaar(ar*)[N→N]:%<–q̲likacaar(ar*)  NounPostbase; ! one that is the farthest in the area denoted by N
-[Positional]-–qlir*[N→N]:%<–q̲lir*                    NounPostbase; ! the one located far in the area or space or time denoted by N
-[Positional]-–qsig[N→V]:%<–q̲sig                      VerbPostbase; ! to be far in the direction denoted by N
-[Positional]-–qsigi[N→V]:%<–q̲sigi                    VerbPostbase; ! to get farther into the area denoted by N
-[Positional]-–qva[N→N]:%<–q̲va                        NounPostbase; ! area far in the direction of N
-[Positional]-–qvaar*[N→N]:%<–q̲vaar*                  NounPostbase; ! area far in the direction of N
-[Positional]-[Sec_Ter]:%<.tmun                       EncliticOrEnd;
-[Positional]-[Sec_Ter]–tmurte1[N→V]:%<.tmurte        VerbPostbase;
-[Positional]-+var[N→V]:%<+var                        VerbPostbase; ! to go or put N-ward
+-%:(ng)ir2[N→V]:%<%:(ng)ir               VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
+-–lirner[N→N]:%<–lirner                  NounPostbase; ! area in the N direction; one of the N direction
+-–qlikacaar(ar*)[N→N]:%<–q̲likacaar(ar*)  NounPostbase; ! one that is the farthest in the area denoted by N
+-–qlir*[N→N]:%<–q̲lir*                    NounPostbase; ! the one located far in the area or space or time denoted by N
+-–qsig[N→V]:%<–q̲sig                      VerbPostbase; ! to be far in the direction denoted by N
+-–qsigi[N→V]:%<–q̲sigi                    VerbPostbase; ! to get farther into the area denoted by N
+-–qva[N→N]:%<–q̲va                        NounPostbase; ! area far in the direction of N
+-–qvaar*[N→N]:%<–q̲vaar*                  NounPostbase; ! area far in the direction of N
+-[Sec_Ter]:%<.tmun                       EncliticOrEnd;
+–tmurte1[N→V]:%<.tmurte                  VerbPostbase;
+-+var[N→V]:%<+var                        VerbPostbase; ! to go or put N-ward
 
 
 LEXICON Numeral
