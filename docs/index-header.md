@@ -3,7 +3,7 @@
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
 [![License](https://img.shields.io/github/license/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/issues)
-[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-esu/main/badge.svg)](https://github.com/giellalt/lang-esu/actions)
+[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-esu/main/badge.svg)](https://github.com/giellalt/lang-esu/actions)
 
 This page documents the work on the [Central Yupik language model](http://github.com/giellalt/lang-esu). See the GitHub repo (link to the left) for more details.
 
