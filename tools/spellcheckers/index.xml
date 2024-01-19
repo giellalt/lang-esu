@@ -2,7 +2,7 @@
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
     <locale>esu</locale>
-    <title>Giellatekno/Divvun/UiT fst-based speller for Central Yupik</title>
+    <title>Central Yupik</title>
     <description>This is an fst-based speller for Central Yupik. It is based
     on the normative subset of the morphological analyser for Central Yupik.
     The source code can be found at:
