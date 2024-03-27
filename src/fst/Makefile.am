@@ -79,6 +79,67 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
+### ESU requires extra processing after twolc intersection:
+# Hfst:
+.generated/generator-raw-gt-desc.hfst: .generated/generator-raw-gt-desc.tmp.hfst \
+			morphology/assign-stress.compose.hfst  \
+			morphology/extra-phonology.compose.hfst
+	$(AM_V_INTRSCT)$(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
+		  -1 $< -2 morphology/assign-stress.compose.hfst \
+		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
+		  -1 - -2 morphology/extra-phonology.compose.hfst \
+		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+		-o $@
+
+#### Xerox & FOMA:
+.generated/analyser-raw-gt-desc.%: .generated/analyser-raw-gt-desc.tmp.% \
+			morphology/assign-stress.compose.%  \
+			morphology/extra-phonology.compose.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"$<\" \
+			.o. @\"morphology/assign-stress.compose.$*\"   \
+			.o. @\"morphology/extra-phonology.compose.$*\" \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+# Remove & change boundaries in the analysers:
+define giella_default_analysers
+.generated/analyser%.$(1): .generated/analyser%.tmp.$(1) \
+			morphology/remove-boundarie.compose.$(1)
+	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
+				@\"morphology/remove-boundarie.compose.$(1)\"  \
+			.o. @\"$$<\" \
+		 $$(INVERT_HFST)\
+		 save stack $$@\n\
+		 quit\n" | $$(XFST_TOOL)
+endef
+$(foreach fst,hfst xfst foma,$(eval $(call giella_default_analysers,$(fst))))
+
+# Remove & change boundaries in the generators:
+define giella_default_generators
+.generated/generator-%.$(1): .generated/generator-%.tmp.$(1) \
+			morphology/remove-boundarie.compose.$(1)
+	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
+				@\"morphology/remove-boundarie.compose.$(1)\"  \
+			.o. @\"$$<\" \
+		 $$(INVERT_XFST)$$(INVERT_FOMA)\
+		 save stack $$@\n\
+		 quit\n" | $$(XFST_TOOL)
+endef
+$(foreach fst,hfst xfst foma,$(eval $(call giella_default_generators,$(fst))))
+
+# Collaps boundaries in the morpher:
+.generated/morpher-gt-desc.%: .generated/morpher-gt-desc.tmp.% \
+			morphology/collapse-boundaries.compose.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"morphology/collapse-boundaries.compose.$*\".i  \
+			.o. @\"$<\" \
+			;\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################
