@@ -1,6 +1,10 @@
-# Central Yupik description 
+# Central Yupik language model documentation
 
-All documents in one file
+All doc-comment documentation in one large file.
+
+---
+
+# src-cg3-functions.cg3.md 
 
 
 
@@ -170,13 +174,32 @@ These were the set types.
 ## HNOUN MAPPING
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-esu/blob/main/src/cg3/functions.cg3)</small>
+
+---
+
+# src-fst-extra-phonology.xfscript.md 
+
+
 
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/extra-phonology.xfscript](https://github.com/giellalt/lang-esu/blob/main/src/fst/extra-phonology.xfscript)</small>
 
 ---
+
+# src-fst-morphology-extra-phonology.xfscript.md 
+
+
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/extra-phonology.xfscript](https://github.com/giellalt/lang-esu/blob/main/src/fst/morphology/extra-phonology.xfscript)</small>
+
+---
+
+# src-fst-morphology-root.lexc.md 
 
 
 
@@ -185,6 +208,8 @@ These were the set types.
 <small>This (part of) documentation was generated from [src/fst/morphology/root.lexc](https://github.com/giellalt/lang-esu/blob/main/src/fst/morphology/root.lexc)</small>
 
 ---
+
+# src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -353,6 +378,8 @@ retracted tongue root			_q
 
 ---
 
+# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+
 
 
 We describe here how abbreviations are in Central Yupik are read out, e.g.
@@ -373,6 +400,8 @@ For example:
 
 ---
 
+# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+
 
 
 % komma% :,      Root ;
@@ -386,6 +415,8 @@ For example:
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-esu/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
+
+# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
 
 # Tokeniser for esu
 
@@ -450,6 +481,8 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
+# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
+
 # Grammar checker tokenisation for esu
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
@@ -513,6 +546,8 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
+# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+
 # TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
@@ -574,6 +609,3 @@ Needs hfst-tokenise to output things differently depending on the tag they get
 * * *
 
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-tts-cggt-desc.pmscript](https://github.com/giellalt/lang-esu/blob/main/tools/tokenisers/tokeniser-tts-cggt-desc.pmscript)</small>
-
----
-

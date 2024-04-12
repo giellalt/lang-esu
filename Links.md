@@ -4,6 +4,7 @@
     * `fst/`
         * [extra-phonology.xfscript](src-fst-extra-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-esu/blob/main/src/fst/extra-phonology.xfscript))
         * `morphology/`
+            * [extra-phonology.xfscript](src-fst-morphology-extra-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-esu/blob/main/src/fst/morphology/extra-phonology.xfscript))
             * [root.lexc](src-fst-morphology-root.lexc.html) ([src](https://github.com/giellalt/lang-esu/blob/main/src/fst/morphology/root.lexc))
         * `phonetics/`
             * [txt2ipa.xfscript](src-fst-phonetics-txt2ipa.xfscript.html) ([src](https://github.com/giellalt/lang-esu/blob/main/src/fst/phonetics/txt2ipa.xfscript))
