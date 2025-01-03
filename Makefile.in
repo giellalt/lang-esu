@@ -384,6 +384,7 @@ docdir = @docdir@
 dvidir = @dvidir@
 exec_prefix = @exec_prefix@
 gt_SHARED_common = @gt_SHARED_common@
+gt_SHARED_mul = @gt_SHARED_mul@
 host = @host@
 host_alias = @host_alias@
 host_cpu = @host_cpu@
@@ -1063,7 +1064,7 @@ clean-local:
 devtest: devtest-recursive
 
 devtest-recursive:
-	-for subdir in $(SUBDIRS); do \
+	@-for subdir in $(SUBDIRS); do \
 		if test "$$subdir" = . ; then \
 			continue; \
 		else   \
@@ -1073,7 +1074,7 @@ devtest-recursive:
 	$(MAKE) $(AM_FLAGS) devtest-local
 
 devtest-local:
-	-for t in $(TESTS) ; do \
+	@-for t in $(TESTS) ; do \
 		echo "TEST: $$t" ;\
 		if test -f "./$$t" ; then \
 			srcdir=$(srcdir) GIELLA_CORE=$(GIELLA_CORE) "./$$t" ;\
