@@ -245,11 +245,11 @@ LEXICON Root
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Exceptions
-qimugte-–rpag|@vag[N→N]:qimul%<+vag                         NounPostbase; ! qimulvak
+qimugta-–rpag|@vag[N→N]:qimul%<+vag                         NounPostbase; ! qimulvak
 pi-@+`(g|t)ur(ar)[V→V]-[V][Opt][Intr][PRS][S_2Sg]:pi%<+ur%<+a EncliticOrEnd; ! goodbye (lit. keep on doing (as you've been doing))
 tai-[V][Opt][Intr][PRS][S_2Sg]:tai%<+tai                    EncliticOrEnd; ! come here!
-iqsur-–lirner[N→N]:iqsur%<–lirner                           NounPostbase; ! thing of the left side
-tallirpig-–lirner[N→N]:tallirpig%<–lirner                   NounPostbase; ! right-hand side
+iqsuq-–lirner[N→N]:iqsur%<–lirner                           NounPostbase; ! thing of the left side
+tallirpik-–lirner[N→N]:tallirpig%<–lirner                   NounPostbase; ! right-hand side
 aqum-@–ngqa[V→V]:aqum%<+gar                                 QuantQualInflection; ! sitting
 ugaani-[N][Loc][3SgPoss][SgPosd]:ugaani                   EncliticOrEnd; ! because of; as a consequence of; on account of
 ugaani-[N][Loc][3SgPoss][SgPosd]:ugaan'                   EncliticOrEnd; ! because of; as a consequence of; on account of
@@ -259,9 +259,9 @@ tua[DemAdv]-=i[Encl]-%:~(ng)u[N→V]-–nrite[V→V]-[V][Ind][Intr][S_3Sg]:tua%<
 ciin[Ignorative]-–r(ur)lur*[N→N]-[N][Abs][SgUnpd]:cii%<+u͡rluq           EncliticOrEnd;
 apa-–r(ur)lur*[N→N]:apa%<+'urlur*                           EncliticOrEnd;
 ema-–r(ur)lur*[N→N]:ma%<+urlur*                             EncliticOrEnd;
-nas'ag-–r(ur)lur*[N→N]:nasa%<+urlur*                        EncliticOrEnd;
-taneg-–r(ur)lur*[N→N]:tan'ga%<+urlur*                       EncliticOrEnd;
-tutgar(ar*)-–r(ur)lur*[N→N]:tutgara%<+'urlur*               EncliticOrEnd;
+nas'ak-–r(ur)lur*[N→N]:nasa%<+urlur*                        EncliticOrEnd;
+tanek-–r(ur)lur*[N→N]:tan'ga%<+urlur*                       EncliticOrEnd;
+tutgar(aq*)-–r(ur)lur*[N→N]:tutgara%<+'urlur*               EncliticOrEnd;
 tangerr-–nrite[V→V]:tange%<+nrrite°                          VerbPostbase;
 
 
@@ -325,14 +325,14 @@ pupsug-?pag[V→V]:pupes%<+pag   VerbPostbase; !
 pupsug-?pag[V→V]:pupes%<+vag   VerbPostbase; !
 alleg-?pag[V→V]:al%<+pag       VerbPostbase; !
 quser-?pag[V→V]:qus%<+pag      VerbPostbase; !
-nengle-?pag[N→V]:nengel%<+vag  VerbPostbase; !
-nengle-?pag[N→V]:nengel%<+pag  VerbPostbase; !
+nenglaᵉ-?pag[N→V]:nengel%<+vag  VerbPostbase; !
+nenglaᵉ-?pag[N→V]:nengel%<+pag  VerbPostbase; !
 akerta-?pag[N→V]:aker%<+vag    VerbPostbase; !
-kiir-?pag[N→V]:kiir%<+pag      VerbPostbase; !
-kiir-?pag[N→V]:kiir%<+vag      VerbPostbase; !
-anuqe-?pag[N→V]:anur%<+vag     VerbPostbase; !
-anuqe-?pag[N→V]:anuq%<+vag     VerbPostbase; !
-anuqe-?pag[N→V]:anuq%<'+vag    VerbPostbase; !
+kiiq*-?pag[N→V]:kiir%<+pag      VerbPostbase; !
+kiiq*-?pag[N→V]:kiir%<+vag      VerbPostbase; !
+anuqaᵉ-?pag[N→V]:anur%<+vag     VerbPostbase; !
+anuqaᵉ-?pag[N→V]:anuq%<+vag     VerbPostbase; !
+anuqaᵉ-?pag[N→V]:anuq%<'+vag    VerbPostbase; !
 ella-?pag[N→V]:ellar%<+vag     VerbPostbase; !
 
 
@@ -605,6 +605,82 @@ watuacetun                                     ParticleEnd; ! like nowadays
 yaaliagni                                      ParticleEnd; ! day before yesterday or year before last; three days ago or three years ago
 yaaliaku                                       ParticleEnd; ! day after tomorrow or year after next; three or more days hence or three or more years hence
 
+arenqiapaa                                     ParticleEnd; ! too bad!; oh dear me!; well that's how it is and it can't be helped
+aspiar%!:aspiar                                 ParticleEnd; ! excellent!, superb!
+asqapiar%!:asqapiar                             ParticleEnd; ! excellent!, superb!
+assipiaq                                       ParticleEnd; ! very good!; just fine!
+cakneq                                         ParticleEnd; ! very much
+cama-i:cama=i                                  ParticleEnd; ! hello; greetings; pleased to meet you; good to see you again
+ellmikun                                       ParticleEnd; ! for no particular purpose; for one's own reasons; through one's own devices
+em'a                                           ParticleEnd; ! drink!
+ici                                            ParticleEnd; ! ouch!; it's hot (to the touch)!
+ii-i:ii=i                                      ParticleEnd; ! yes; you're welcome
+iicill'er                                      ParticleEnd; ! that's great!; excellent!
+iiRgii:iirgii                                  ParticleEnd; ! oh dear!; how scary!
+ikaa-i:ikaa=i                                  ParticleEnd; ! ugh!; yuck!
+ik'atak                                        ParticleEnd; ! ugh!; yuck!
+ikii                                           ParticleEnd; ! yuck!
+ineqsikika                                     ParticleEnd; ! my, how cute!
+iqlutmun                                       ParticleEnd; ! the wrong way; the wrong direction
+kaaka                                          ParticleEnd; ! listen!
+kaak                                           ParticleEnd; ! listen!
+kassutmun                                      ParticleEnd; ! going around something circumferentially
+katak                                          ParticleEnd; ! for shame!
+kelutmun                                       ParticleEnd; ! toward the area upland; away from the river or behind
+kenlutmun                                      ParticleEnd; ! contrary to the way it should be or the way one should act; the opposite way
+ketmun                                         ParticleEnd; ! toward the water
+ketetmun                                       ParticleEnd; ! toward the water
+keyianeng                                      ParticleEnd; ! always
+kiaku                                          ParticleEnd; ! next summer
+kinami                                         ParticleEnd; ! because
+kinguqvaarni                                   ParticleEnd; ! later on
+kingutmun                                      ParticleEnd; ! going back; going toward the back
+kua                                            ParticleEnd; ! it's right here
+kuaksikika                                     ParticleEnd; ! wow, what a close call!
+maaten                                         ParticleEnd; ! when; upon; when it came to pass
+mikeltak                                       ParticleEnd; ! “darned” child
+naallu                                         ParticleEnd; ! I don't know
+naamelliin                                     ParticleEnd; ! I don't know
+naamell'                                       ParticleEnd; ! I don't know
+naam'                                          ParticleEnd; ! I don't know
+naamikika                                      ParticleEnd; ! I don't know
+naamiki                                        ParticleEnd; ! I don't know
+naumiki                                        ParticleEnd; ! I don't know
+naumi                                          ParticleEnd; ! I don't know
+naung                                          ParticleEnd; ! why have you come!, what do you want?
+nutaan                                         ParticleEnd; ! just now/then for the good; finally!
+palaq                                          ParticleEnd; ! it serves you right!; you got what was coming to you!
+paq                                            ParticleEnd; ! used in reference to feces or other smelly, messy things when speaking to small children
+pegenqapiar                                    ParticleEnd; ! after very much effort
+pegnem                                         ParticleEnd; ! after much effort; finally
+qaa¹:qaa                                       ParticleEnd; ! really?; is that so?
+qaang                                          ParticleEnd; ! no
+qaillun                                        ParticleEnd; ! how
+qaill'                                         ParticleEnd; ! how
+qang'a                                         ParticleEnd; ! no
+qayumi¹:qayumi                                 ParticleEnd; ! just as could be expected; indeed
+qayumikika                                     ParticleEnd; ! I don't know
+qayumiki                                       ParticleEnd; ! I don't know
+qayumi²:qayumi                                 ParticleEnd; ! I don't know
+qayutun                                        ParticleEnd; ! how many?; how much?
+quyana                                         ParticleEnd; ! thank you
+taaki                                          ParticleEnd; ! oh my!
+taa                                            ParticleEnd; ! oh my!
+taima                                          ParticleEnd; ! elsewhere
+taitai                                         ParticleEnd; ! come here!
+tallurna                                       ParticleEnd; ! thank you!
+tamiini                                        ParticleEnd; ! everywhere
+tanem                                          ParticleEnd; ! ever; why; how on earth!
+tang                                           ParticleEnd; ! look!
+tarr'i                                         ParticleEnd; ! listen; let's see
+tarr'u                                         ParticleEnd; ! go away; leave me alone
+tava-i:tava=i                                  ParticleEnd; ! that's enough; well then; and then; that's all
+tau͡ga-i:tau͡ga=i                              ParticleEnd; ! that's enough; well then; and then; that's all
+tela'a                                         ParticleEnd; ! what a surprise!
+telt                                           ParticleEnd; ! oh yeah; that's what you say
+tua-i:tua=i                                    ParticleEnd; ! that's enough; well then; and then; that's all
+wagg'uq-qaa:wagg'uq=qaa                        ParticleEnd; ! exclamation expressing disappointment or dissatisfaction
+
 LEXICON ParticleEnd
 [Particle]:              EncliticOrEnd;
 
@@ -656,7 +732,7 @@ ki[Ignorative]-~+miu[N→N]:kinku%<~+miu                   NounPostbase; ! inhab
 ki[Ignorative]-%:~(ng)u[N→V]:kinku%<%:~(ng)u             VerbPostbase;
 
 na[Ignorative]-[Sec_Ter]:na%<.tmun                 EncliticOrEnd; ! to where?
-na[Ignorative]-[Sec_Ter]–tmurte1[N→V]:na%<.tmurte  VerbPostbase;
+na[Ignorative]-[Sec_Ter]–tmurte¹[N→V]:na%<.tmurte  VerbPostbase;
 na[Ignorative]-[Loc]:na%<.ni                       EncliticOrEnd;
 na[Ignorative]-[Abl]:na%<.ken                      EncliticOrEnd;
 na[Ignorative]-[Via]:na%<.w'un                     EncliticOrEnd; ! through where?
@@ -1273,7 +1349,8 @@ akagyaralek:akagyaraleg                        NounPostbase; ! all-terrain vehic
 akakcukuaq:akakcukuar                          NounPostbase; ! biscuit; muffin
 akakiik:akakiig                                NounPostbase; ! broad whitefish (Coregonus nasus)
 akakupak:akakupag                              NounPostbase; ! small hard, round piece of feces
-ak'allaq:ak'allar                              NounPostbase; ! old thing; thing of the past
+!ak'allaq:ak'allar                              NounPostbase; ! old thing; thing of the past
+ak'allaq*:ak'allar*                            NounPostbase; ! old thing; thing of the past
 ak'allar(aq*):ak'allar(ar*)                    NounPostbase; ! old person
 akalria                                        NounPostbase; ! wheel; roller; rolling things; automobile; fish wheel
 akangluaryuk:akangluaryug                      NounPostbase; ! pancake ice; rounded sheet of floating ice that can tip
@@ -2539,7 +2616,7 @@ cinkutak:cinkutag                              NounPostbase; ! sty in the eye
 cip'lagaq:cip'lagar                            NounPostbase; ! crested auklet (Aethia cristatella)
 cipluku                                        NounPostbase; ! having an addition
 cipnelget:cipneleg                             NounPostbase; ! additional ones
-cipnermiutaq:cipnermiutar                      NounPostbase; ! dangling end of woman's belt
+cipnermiutaq*:cipnermiutar*                    NounPostbase; ! dangling end of woman's belt
 cipsaq:cipsar                                  NounPostbase; ! hip
 ciqamciq:ciqamcir                              NounPostbase; ! egg in fomative stage, inside bird
 ciqauyaq:ciqauyar                              NounPostbase; ! ruffle at hem of cloth parka cover; skirt
@@ -3350,7 +3427,8 @@ imanaq:imanar                                  NounPostbase; ! guts; internal or
 imanarvik:imanarvig                            NounPostbase; ! conainer made of beluga stomach
 imangaq:imangar                                NounPostbase; ! blackfish (Dallia pectoralis)
 ima(ni)                                        NounPostbase; ! far away and/or long ago but identity known, at least partially, to speaker and audience
-imaq*:imar*                                    NounPostbase; ! contents; bullet; pus; ocean; water
+imaq:imar                                      NounPostbase; ! contents; bullet; pus; ocean; water
+!imaq*:imar*                                    NounPostbase; ! contents; bullet; pus; ocean; water
 imaqcaar(aq*):imaqcaar(ar*)                    NounPostbase; ! red-necked phalarope (Phalaropus lobatus)
 imaqliq:imaqlir                                NounPostbase; ! kayak part, piece on each side, up from keel, in front of tracking stabilizer
 imaqucuk:imaqucug                              NounPostbase; ! undesirable contents; phlegm; pus
@@ -3514,7 +3592,7 @@ iqtutaciq:iqtutacir                            NounPostbase; ! width
 iqucissuun:iqucissuute                         NounPostbase; ! skin-scraping implement
 iquggalek:iquggaleg                            NounPostbase; ! seven in cards
 iqugkuaq:iqugkuar                              NounPostbase; ! cigarette butt; end part of something
-iqugmiutaq:iqugmiutar                          NounPostbase; ! toggle type bag fastener
+iqugmiutaq*:iqugmiutar*                        NounPostbase; ! toggle type bag fastener
 iqugta:iqugte                                  NounPostbase; ! fisherman's helper, one who rows or drives the motor while the net is being set out for driftnet fishing; helper at the (other) end of something such as a log being carried
 iqulek:iquleg                                  NounPostbase; ! one with an end; seven in playing cards
 iquk:iqug                                      NounPostbase; ! end (of object, time period, story, etc., or other end, or tip)
@@ -5230,6 +5308,7 @@ nuka'urluq*:nuka'urlur*                        NounPostbase; ! young man
 nuliacungaq*:nuliacungar*                      NounPostbase; ! female cross-cousin of a male; also male's grandparent's cross-cousin's granddaughter
 nuliangqan:nuliangqate                         NounPostbase; ! one's spouse's maternal cousin's spouse
 nuliaq:nuliar                                  NounPostbase; ! wife
+nulirr                                         NounPostbase; ! wife
 nuliariutelleq:nuliariuteller                  NounPostbase; ! widower
 nulirqellriik:nulirqellriig                    NounPostbase; ! (married) couple; man and wife
 nulirqucaraq:nulirqucarar                      NounPostbase; ! marriage
@@ -5251,7 +5330,7 @@ nunalgun:nunalgute                             NounPostbase; ! person from one's
 nunaliurta:nunaliurte                          NounPostbase; ! surveyor; land use planner
 nunalleq:nunaller                              NounPostbase; ! old village site; former settlement; ghost town
 nunalugpiaq:nunalugpiar                        NounPostbase; ! continent
-nunamiutaq:nunamiutar                          NounPostbase; ! land animal
+nunamiutaq*:nunamiutar*                        NounPostbase; ! land animal
 nunanguaq:nunanguar                            NounPostbase; ! map
 nunaniq:nunanir                                NounPostbase; ! delight; joy; happiness; object that brings happiness
 nunaniryuk:nunaniryug                          NounPostbase; ! gray jay (Perisoreus canadensis)
@@ -5513,7 +5592,7 @@ pengutakuk:pengutakug                          NounPostbase; ! upright of sled
 pequaq:pequar                                  NounPostbase; ! upper back part of parka
 pequmiggsuun:pequmiggsuute                     NounPostbase; ! backpack
 pequmik:pequmig                                NounPostbase; ! back load
-pequmiutaq:pequmiutar                          NounPostbase; ! decorative small wolverine “tail” on a traditional Yup'ik parka
+pequmiutaq*:pequmiutar*                        NounPostbase; ! decorative small wolverine “tail” on a traditional Yup'ik parka
 pequnqauksuar(aq*):pequnqauksuar(ar*)          NounPostbase; ! very small item wrapped in something
 pequq¹:pequr                                   NounPostbase; ! scruff of the neck; upper back; back
 pequq²:pequr                                   NounPostbase; ! piece of sod
@@ -5790,7 +5869,8 @@ qaglak:qaglag                                  NounPostbase; ! upper part of bow
 qaglaya(g)aq:qaglaya(g)ar                      NounPostbase; ! bowl with grooved upper part made of a separate piece of bent wood
 qai                                            NounPostbase; ! surface; top
 qaillukuarta:qaillukuarte                      NounPostbase; ! ‘council member’
-qaiq:qair                                      NounPostbase; ! wave
+!qaiq:qair                                      NounPostbase; ! wave
+qaiq*:qair*                                    NounPostbase; ! wave
 qairvak:qairvag                                NounPostbase; ! big wave
 qairvaaq:qairvaar                              NounPostbase; ! big wave capable of breaking shore-fast ice
 qaitaq:qaitar                                  NounPostbase; ! beanbag-like toy
@@ -7571,7 +7651,7 @@ unista:uniste                                  NounPostbase; ! deceased parent
 univkaraq:univkarar                            NounPostbase; ! legend passed down from generation to generation; thing of the past
 univkarrsuun:univkarrsuute                     NounPostbase; ! story knife
 univkaq:univkar                                NounPostbase; ! tale; account
-unkumiutaq:unkumiutar                          NounPostbase; ! sea mammal
+unkumiutaq*:unkumiutar*                        NounPostbase; ! sea mammal
 unrapigaq:unrapigar                            NounPostbase; ! small thin straight log from a spruce sapling
 unraq:unrar                                    NounPostbase; ! spear line; spear with line attached
 un'u                                           NounPostbase; ! clothing; garment
@@ -10390,6 +10470,7 @@ kive                                           VerbPostbase; ! to let down one's
 kiveg                                          VerbPostbase; ! to slip down; to slide down to the floor or ground
 kivkar                                         VerbPostbase; ! to pick and eat the scraps of meat clinging to a bone
 kiyarte                                        VerbPostbase; ! to look around; to scan
+kuarte                                         VerbPostbase; ! to speak the Nunivak dialect
 kuayiamciarutke                                VerbPostbase; ! to squander
 kucerte                                        VerbPostbase; ! to flirt
 kucir                                          VerbPostbase; ! to drip
@@ -11216,7 +11297,6 @@ nuleg                                          VerbPostbase; ! to crack; to spli
 nulgair                                        VerbPostbase; ! to become facially expressionless, unsmiling
 nulgaite:nulgaite°                             VerbPostbase; ! to be facially expressionless, unsmiling
 nuliqliute                                     VerbPostbase; ! to get as a wife
-nulirr                                         VerbPostbase; ! wife
 nulirrniar                                     VerbPostbase; ! to ask to marry
 nulirruar                                      VerbPostbase; ! to be deranged, thinking one has a wife when he does not
 nulirrucir                                     VerbPostbase; ! to provide a bride with new clothing
@@ -13795,7 +13875,6 @@ VerbInflection;
 -–kayag[V→V]:%<–kayag                          VerbPostbase; ! to V (of "darned" one, one toward whom the speaker has negative feelings)
 -–keckacagar[V→V]:%<–keckacagar                VerbPostbase; ! to be very V
 -@–ke³[V→V]:%<@⁴–ke                            VerbPostbase; ! to find (it) to be V
---ke⁴[V→V]:%<–k̲e                              VerbPostbase; ! to feel V toward (him/it); to V (object)
 -–ke⁴[V→V]:%<–k̲e                              VerbPostbase; ! to feel V toward (him/it); to V (object)
 -@~–kenge[V→V]:%<@⁵~–kenge                     VerbPostbase; ! to V something
 -–knig[V→V]:%<–knig                            VerbPostbase; ! to suddenly V (motion)
@@ -15081,7 +15160,7 @@ uya             DimensionalPostbase; ! width, especially of a river*
 
 LEXICON DimensionalPostbase
 -+tu[N→V]:%<+tu          VerbPostbase; ! to be well endowed with N, to have N to a large extent
--+kite2[N→V]:%<+kite°    VerbPostbase; ! to have N to a small degree; to have only a small amount of N 
+-+kite²[N→V]:%<+kite°    VerbPostbase; ! to have N to a small degree; to have only a small amount of N 
 
 LEXICON EmotionalRoot
 aar             EmotionalPostbase; ! frightened, endangered
@@ -15146,11 +15225,11 @@ ulurya          EmotionalPostbase; ! afraid of being hit
 uumi            EmotionalPostbase; ! frustrated
 
 LEXICON EmotionalPostbase
--–ke4[V→V]:%<–k̲e               VerbPostbase; ! to feel V toward (him/it); to V (object)
+-–ke⁴[V→V]:%<–k̲e               VerbPostbase; ! to feel V toward (him/it); to V (object)
 -@~+narqe[V→V]:%<@¹~+narqe     VerbPostbase; ! to tend to cause one to V; to be able to be V-ed
 -@~+naite[V→V]:%<@¹~+naite     VerbPostbase; ! to tend not to cause one to V
--+tar1[V→V]:%<+tar             VerbPostbase; ! to tend by oneʼs disposition or nature to V a lot
--+taite2[V→V]:%<+taite°        VerbPostbase; ! to tend by oneʼs disposition or nature not to V
+-+tar¹[V→V]:%<+tar             VerbPostbase; ! to tend by oneʼs disposition or nature to V a lot
+-+taite²[V→V]:%<+taite°        VerbPostbase; ! to tend by oneʼs disposition or nature not to V
 -@~+yug[V→V]:%<@ʸ~+yug         VerbPostbase; ! to want to V; to tend to V; to feel V (with “emotional roots”)
 
 
@@ -15215,7 +15294,7 @@ uver            PosturalPostbase; ! slanting
 
 LEXICON PosturalPostbase
 QuantQualInflection;
--+te2[V→V]:%<+te            VerbPostbase; ! to act on one so as to cause it to V
+-+te²[V→V]:%<+te            VerbPostbase; ! to act on one so as to cause it to V
 -@–ngqa[V→V]:%<@⁵–ngqa      VerbPostbase; ! to be in a state of V or of having V-ed or having been V-ed
 -@–ngqa[V→V]:%<@⁵–ngqar     QuantQualInflection; ! to be in a state of V or of having V-ed or having been V-ed
 
@@ -15499,7 +15578,7 @@ DemAdv;
 [DemAdv]-–qva[N→N]:%<–q̲va                 NounPostbase; ! area far in the direction of N
 [DemAdv]-–qvaar*[N→N]:%<–q̲vaar*           NounPostbase; ! area far in the direction of N
 [DemAdv]-[Sec_Ter]:%<.tmun                EncliticOrEnd;
-[DemAdv]-[Sec_Ter]–tmurte1[N→V]:%<.tmurte VerbPostbase; ! to go N-ward; to go in the area described by V
+[DemAdv]-[Sec_Ter]–tmurte¹[N→V]:%<.tmurte VerbPostbase; ! to go N-ward; to go in the area described by V
 
 
 LEXICON DemAdv
@@ -15544,7 +15623,7 @@ yaataᵉ:yaate           NounInflection; ! area beyond
 
 LEXICON PositionalPostbase
 NounInflection;
--%:(ng)ir2[N→V]:%<%:(ng)ir               VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
+-%:(ng)ir²[N→V]:%<%:(ng)ir               VerbPostbase; ! to deprive or be deprived of N; to remove N from; to un-V; to pass through the N area of (it)
 -–lirner[N→N]:%<–lirner                  NounPostbase; ! area in the N direction; one of the N direction
 -–qlikacaar(ar*)[N→N]:%<–q̲likacaar(ar*)  NounPostbase; ! one that is the farthest in the area denoted by N
 -–qlir*[N→N]:%<–q̲lir*                    NounPostbase; ! the one located far in the area or space or time denoted by N
@@ -15553,7 +15632,7 @@ NounInflection;
 -–qva[N→N]:%<–q̲va                        NounPostbase; ! area far in the direction of N
 -–qvaar*[N→N]:%<–q̲vaar*                  NounPostbase; ! area far in the direction of N
 -[Sec_Ter]:%<.tmun                       EncliticOrEnd;
-–tmurte1[N→V]:%<.tmurte                  VerbPostbase;
+–[Sec_Ter]–tmurte¹[N→V]:%<.tmurte        VerbPostbase;
 -+var[N→V]:%<+var                        VerbPostbase; ! to go or put N-ward
 
 

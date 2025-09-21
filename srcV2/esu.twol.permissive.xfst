@@ -103,8 +103,8 @@ define TripleConsonant  rr   ->  0 || _ q Sep* Con                .o. ! rqe- bas
 
 define TripleVowel  AllFVow -> 0 || [Con|.#.] Sep* AllFVow Sep* _ Sep* AllFVow Sep* [Con|.#.] ;
 
-define ConnectiveMood  ạ -> 0               || _ Sep [a|á] \.#.                          .o. ! caliạan -> calian 
-                       ụ -> 0               || _ Sep [a|á] \.#.                          .o. ! calikụan -> calikan 
+define ConnectiveMood  ạ -> 0               || _ "&" Sep [a|á] \.#.                          .o. ! caliạan -> calian 
+                       ụ -> 0               || _ "&" Sep [a|á] \.#.                          .o. ! calikụan -> calikan 
                        [e|é] -> e ("'")     || [VowStress|VowHatted|Con] Sep ng _ [r|rr] .o. ! qavangrarpet -> qavange(')rpet
                        [e|é] -> "'" e ("'") || Vow Sep ng _ [r|rr]                        ;  ! iqvangrarma -> iqvang'e(')rma
 
