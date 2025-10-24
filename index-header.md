@@ -4,7 +4,8 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-esu%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-esu)](https://github.com/giellalt/lang-esu/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-esu/main/badge.svg)](https://github.com/giellalt/lang-esu/actions)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-esu?label=CI)](https://builds.giellalt.org/pipelines/lang-esu/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/cent2127)
 
 This page documents the work on the [Central Yupik language model](http://github.com/giellalt/lang-esu). See the GitHub repo (link to the left) for more details.
 
