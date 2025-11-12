@@ -1,6 +1,3 @@
-spellername = "Central Yupik"
-spellerversion = "0.1.1"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
@@ -23,3 +20,15 @@ legacy_product_codes = [
     { value = "6DDA6B00-9E4E-11EA-9465-87DB239B8845", kind = "nsis" }
 ]
 extra_locales = { esu-US = "esu" }
+
+[package.speller]
+name = "Central Yupik"
+version = "0.1.1"
+
+[package.grammar]
+name = "Central Yupik"
+version = "0.1.0"
+
+[package.tts-text-proc]
+name = "Central Yupik"
+version = "0.1.0"
