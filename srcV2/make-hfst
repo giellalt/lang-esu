@@ -1,0 +1,22 @@
+# Ad hoc makefile for this fileset.
+# run in this folder with command:
+
+# make -f make-hfst
+
+all: esu.gen.hfst esu.mor.hfst
+
+esu.lexc.hfst: esu.lexc
+	hfst-lexc esu.lexc -o esu.lexc.hfst
+
+esu.twol.hfst: esu.twol
+	hfst-twolc esu.twol -o esu.twol.hfst
+
+esu.gen.hfst: esu.lexc.hfst esu.twol.hfst
+	hfst-compose-intersect -1 esu.lexc.hfst -2 esu.twol.hfst -o esu.gen.hfst
+
+esu.mor.hfst: esu.gen.hfst
+	hfst-invert esu.gen.hfst -o esu.mor.hfst
+
+clean: 
+	rm esu.lexc.hfst esu.twol.hfst esu.gen.hfst esu.mor.hfst
+
