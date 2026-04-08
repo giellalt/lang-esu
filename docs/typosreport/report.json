@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "info": {
+      "locale": "esu",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Central Yupik spellchecker"
+        }
+      ],
+      "description": "A spellchecker for Central Yupik, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway.",
+      "producer": "Giellatekno/Divvun/UiT contributors"
+    },
+    "acceptor": {
+      "type": "general",
+      "id": "acceptor.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Central Yupik speller lexicon"
+        }
+      ],
+      "description": "Central Yupik speller lexicon compiled with HFST.",
+      "continuation": null
+    },
+    "errmodel": {
+      "id": "errmodel.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Central Yupik error model"
+        }
+      ],
+      "description": "Error model for Central Yupik."
+    }
+  },
+  "config": {
+    "n-best": 10,
+    "max-weight": 10000.0,
+    "beam": null,
+    "reweight": {
+      "start-penalty": 10.0,
+      "end-penalty": 10.0,
+      "mid-penalty": 5.0
+    },
+    "node-pool-size": 128,
+    "recase": true,
+    "completion-marker": null
+  },
+  "summary": {
+    "total_words": 1,
+    "first_position": 0,
+    "top_five": 0,
+    "any_position": 0,
+    "no_suggestions": 1,
+    "only_wrong": 0,
+    "false_accept": 0,
+    "true_positive": 1,
+    "false_negative": 0,
+    "true_negative": 0,
+    "slowest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 293917
+    },
+    "fastest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 293917
+    },
+    "average_time": {
+      "secs": 0,
+      "subsec_nanos": 293917
+    },
+    "average_time_95pc": {
+      "secs": 0,
+      "subsec_nanos": 293917
+    },
+    "average_position_of_correct": 0.0,
+    "average_suggestions_for_correct": 0.0
+  },
+  "results": [
+    {
+      "input": "åvtohke",
+      "expected": "åvtehke",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 293917
+      },
+      "false_accept": false
+    }
+  ],
+  "start_timestamp": {
+    "secs": 1775652067,
+    "subsec_nanos": 633599000
+  },
+  "total_time": {
+    "secs": 0,
+    "subsec_nanos": 462041
+  }
+}
