@@ -1,0 +1,82 @@
+LEXICON Ignorative
+ca[Ignorative]:ca                      NounPostbase; ! in interrogative contexts: what?, in non-interrogative contexts: something
+ca[Ignorative]:ca                      VerbPostbase; ! in interrogative contexts: what?, in non-interrogative contexts: something
+
+ciin[Ignorative]:ciin                  EncliticOrEnd; ! why?
+
+ki[Ignorative]-[Abs][SgUnpd]:ki%<+na                       EncliticOrEnd; ! who; someone (in non-content-interrogative context)
+ki[Ignorative]-–r(ur)lur*[N→N][Abs][SgUnpd]:ki%<+nau͡rluq  EncliticOrEnd; 
+ki[Ignorative]-[Abs][SgUnpd]-–lkug[N→N]:ki%<+na%<–lkug       EncliticOrEnd; ! no-good, darned N
+ki[Ignorative]-[Rel][SgUnpd]:ki%<.a                      EncliticOrEnd; ! who; whose
+ki[Ignorative]-[Rel][SgUnpd]:kitu%<.m                    EncliticOrEnd; ! who
+ki[Ignorative]-[Abl_Mod][SgUnpd]:kitu%<.mek              EncliticOrEnd;
+ki[Ignorative]-[Loc][SgUnpd]:kitu%<.mi                   EncliticOrEnd;
+ki[Ignorative]-[Ter][SgUnpd]:kitu%<.mun                  EncliticOrEnd;
+ki[Ignorative]-[Via][SgUnpd]:kitu%<.kun                  EncliticOrEnd;
+ki[Ignorative]-[Equ][SgUnpd]:kitu%<.tun                  EncliticOrEnd;
+ki[Ignorative]-%:~(ng)u[N→V]:kitu%<%:~(ng)u               VerbPostbase;
+
+ki[Ignorative]-[Abs][PlUnpd]:kinku%<.t                  EncliticOrEnd; ! who plural
+ki[Ignorative]-[Abs][DuUnpd]:kinku%<.k                  EncliticOrEnd;
+ki[Ignorative]-[Rel][PlUnpd]:kinku%<.t                  EncliticOrEnd;
+ki[Ignorative]-[Rel][DuUnpd]:kinku%<.k                  EncliticOrEnd;
+ki[Ignorative]-[Abl_Mod][PlUnpd]:kinku%<.nek            EncliticOrEnd;
+ki[Ignorative]-[Abl_Mod][DuUnpd]:kinku%<.gnek           EncliticOrEnd;
+ki[Ignorative]-[Loc][PlUnpd]:kinku%<.ni                 EncliticOrEnd;
+ki[Ignorative]-[Loc][DuUnpd]:kinku%<.gni                EncliticOrEnd;
+ki[Ignorative]-[Ter][PlUnpd]:kinku%<.nun                EncliticOrEnd;
+ki[Ignorative]-[Ter][DuUnpd]:kinku%<.gnun               EncliticOrEnd;
+ki[Ignorative]-[Via][PlUnpd]:kinku%<.tgun               EncliticOrEnd;
+ki[Ignorative]-[Via][DuUnpd]:kinku%<.negnun             EncliticOrEnd;
+ki[Ignorative]-[Equ][PlUnpd]:kinku%<.cetun              EncliticOrEnd;
+ki[Ignorative]-[Equ][DuUnpd]:kinku%<.gcetun             EncliticOrEnd;
+ki[Ignorative]-[Voc][PlUnpd]:kinku%<.ut                 EncliticOrEnd;
+ki[Ignorative]-[Voc][DuUnpd]:kinku%<.uk                 EncliticOrEnd;
+ki[Ignorative]-~+miu[N→N]:kinku%<~+miu                   NounPostbase; ! inhabitant of N; resident of N; tribe-member of or from N
+ki[Ignorative]-%:~(ng)u[N→V]:kinku%<%:~(ng)u             VerbPostbase;
+
+na[Ignorative]-[Sec_Ter]:na%<.tmun                 EncliticOrEnd; ! to where?
+na[Ignorative]-[Sec_Ter]–tmurte1[N→V]:na%<.tmurte  VerbPostbase;
+na[Ignorative]-[Loc]:na%<.ni                       EncliticOrEnd;
+na[Ignorative]-[Abl]:na%<.ken                      EncliticOrEnd;
+na[Ignorative]-[Via]:na%<.w'un                     EncliticOrEnd; ! through where?
+na[Ignorative]-[Via]:na%<.gg'un                    EncliticOrEnd;
+na[Ignorative]-[Loc]ete[N→V]:na%<+nte°            VerbPostbase;
+na[Ignorative]-+var[N→V]:nat%<+var                VerbPostbase; ! to go or put N-ward
+na[Ignorative]-[Ter]+virte[N→V]:nat%<.virte        VerbPostbase;
+na[Ignorative]-[Via]+gguir[N→V]:na%<.gguir         VerbPostbase;
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na%<.u%<=wa                  EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na%<.u%<.wa                   EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na%<.u%<.w'                   EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na%<.u%<.gga                  EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+na[Ignorative]-%:~(ng)u[N→V]-=wa[Encl]:na%<.u%<.gg'                  EncliticOrEnd; ! where is it, he, she? ! used with demonstrative adverb bases to form exclamations that operate as “verbal pointers” or “predicative demonstrative forms”
+
+nate[Ignorative]:nate                           NounInflection; ! what part?; some part; a certain part
+
+nalir[Ignorative]:nalir                         NounPostbase; ! (naliq) which (one(s))
+
+qaillun[Ignorative]:qaillun                     EncliticOrEnd; ! how
+qaillun[Ignorative]:qaill'                      EncliticOrEnd; ! how
+
+qaku[Ignorative]:qaku                           EncliticOrEnd; ! when? (in the future); how long from now?; a certain unspecified (or unspecifiable) time afterward;
+qakuan                   ParticleEnd; ! when some time had elapsed
+qakuaqan                 ParticleEnd; ! at what times?; at various times
+
+qangvar[Ignorative]:qangvar                     EncliticOrEnd; ! when (in the past); how long ago?; for some time
+qangvar[Ignorative]-–llar*[N→N]:qangvar%<–llar*   NounPostbase; ! ‘thing of when (in the past)ʼ
+qangvallar             NounPostbase; ! ‘thing of when (in the past)ʼ
+qangvarpak               ParticleEnd; ! for how long?; for a long time
+
+qavcir[Ignorative]:qavcin              EncliticOrEnd; ! how many?; how much?; several
+qavcir[Ignorative]:qavcir              NounPostbase; ! how many?; how much?; several
+qavcir[Ignorative]:qavcir              VerbPostbase; ! how many?; how much?; several
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                        !!!!!!
+!!!!!!               Proper Nouns             !!!!!!
+!!!!!!                                        !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+

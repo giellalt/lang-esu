@@ -248,7 +248,9 @@ define Uppercase "$" "a"   -> "A",
                  "$" "u͡g"  -> "U͡g",
                  "$" "u͡r"  -> "U͡r",
                  "$" "u͡gg" -> "U͡gg",
-                 "$" "u͡rr" -> "U͡rr";    
+                 "$" "u͡rr" -> "U͡rr";
+
+define rmUppercase "$" -> 0 ;                     
 
 define NonYupik   "1" -> "a",
                   "2" -> "b",
@@ -288,7 +290,7 @@ define NonYupik   "1" -> "a",
                   "36" -> "u͡r",
                   "37" -> "u͡rr",
                   "38" -> "m̄",
-                  "39" -> "n̄";            
+                  "39" -> "n̄";  
 
 regex AutomaticDevoicing   .o.
       WeakInitialE         .o.
@@ -303,8 +305,9 @@ regex AutomaticDevoicing   .o.
       AddApostrophe        .o.
       AutomaticDevoicing   .o.
       ToOrthography        .o.
-!      RemoveLigature       .o.
-!      FinalWordApostrophe  .o.
-!      Lowercase             ;
-      NonYupik             .o.
-      Uppercase             ;
+      RemoveLigature       .o.
+      FinalWordApostrophe  .o.
+      Lowercase            .o.
+      rmUppercase          .o.
+      NonYupik              ;
+!      Uppercase             ;

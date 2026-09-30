@@ -25,15 +25,20 @@ Alphabet
 
 a c e g i k l m n p q r s t u v w y m̄ n̄
 vv ll ss gg rr ng n͞g u͡g u͡gg u͡r u͡rr
-%[e%] ʼ
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z M̄ N̄ 
+Vv Ll Ss Gg Rr Ng N͞g U͡g U͡r U͡gg U͡rr
+%[e%] ' %< %& %↞ %↠
 
-%=:%>
-%>:0 %>:%> ; 
+%=:%-
+%>:0 ; 
 
 Rules 
 
-"Collapse morpheme boundaries"
-%>:0 <=> %> :0* _ ; 
+"Remove morpheme boundary"
+%>:0 <=> _ ; 
+
+! "Collapse morpheme boundaries"
+! %>:0 <=> %> :0* _ ; 
 
 "Convert enclitic to hyphen"
-%=:%> <=> _ ; 
+%=:%- <=> _ ; 

@@ -88,6 +88,8 @@
 /src/fst/morphology/*-error-log.txt
 /src/fst/morphology/*.tmp.*
 /src/fst/morphology/lexicon*
+!/src/fst/morphology/lexicon.cleanup.xfscript
+!/src/fst/morphology/lexicon.cleanup.permissive.xfscript
 /src/fst/morphology/test/*-adjective.txt
 /src/fst/morphology/test/*.txt
 /src/fst/morphology/test/config.json

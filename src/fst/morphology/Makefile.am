@@ -32,18 +32,23 @@ endif
 GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
-GT_LEXC_SRCS_L1_L2=
-#			 affixes/adjectives.lexc  \
-#			 affixes/nouns.lexc       \
-#			 affixes/propernouns.lexc \
-#			 affixes/symbols.lexc     \
-#			 affixes/verbs.lexc       \
-#			 stems/adjectives.lexc    \
-#			 stems/nouns.lexc         \
-#			 stems/numerals.lexc      \
-#			 stems/prefixes.lexc      \
-#			 stems/pronouns.lexc      \
-#			 stems/verbs.lexc
+GT_LEXC_SRCS_L1_L2=\
+			 affixes/affixes.lexc       \
+			 stems/demonstratives.lexc  \
+			 stems/dimensional.lexc     \
+			 stems/emotional.lexc       \
+			 stems/exceptions.lexc      \
+			 stems/ignorative.lexc      \
+			 stems/non-yupik.lexc       \
+			 stems/nouns.lexc           \
+			 stems/numerals.lexc        \
+			 stems/particles.lexc       \
+			 stems/positionals.lexc     \
+			 stems/postural.lexc        \
+			 stems/propernouns.lexc     \
+			 stems/pronouns.lexc        \
+			 stems/quantqual.lexc       \
+			 stems/verbs.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -107,14 +112,12 @@ GT_DISTRO_SRCS=
 ### separate fst's that need further treatment in the src/ dir. See the language
 ### gle/ for an example of how this is used.
 
-GIELLA_LOCAL_TARGETS=$(srcdir)/root.lexc
+GIELLA_LOCAL_TARGETS=
 
+update-srcv2:
+	python3 $(top_srcdir)/devtools/sync-srcv2.py
 
-lexicon.cleanup.xfscript: $(srcdir)/orig/src/esu.lexc.xfst
-	$(AM_V_CP)cp -f $< $@
-
-$(srcdir)/root.lexc: $(srcdir)/orig/src/esu.lexc
-	$(AM_V_CP)cp -f $< $@
+.PHONY: update-srcv2
 
 ### END: Local processing: ###
 

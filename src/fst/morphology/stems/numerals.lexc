@@ -1,0 +1,75 @@
+LEXICON Numeral
+! Counting From
+ataucir[Num]-[Cardinal][Sg]:atauciq                          EncliticOrEnd;
+malrur[Num]-[Cardinal][Du]:malruk                            EncliticOrEnd;
+pingayur[Num]-[Cardinal][Pl]:pingayun                        EncliticOrEnd;
+cetamar[Num]-[Cardinal][Pl]:cetaman                          EncliticOrEnd;
+tallimar[Num]-[Cardinal][Pl]:talliman                        EncliticOrEnd;
+arvinleg[Num]-[Cardinal][Pl]:arvinlegen                      EncliticOrEnd;
+arvinleg[Num]-[Cardinal][Pl]:arvinelgen                      EncliticOrEnd;
+malrunleg[Num]-[Cardinal][Pl]:malrunlegen                    EncliticOrEnd;
+malrunleg[Num]-[Cardinal][Pl]:malrunelgen                    EncliticOrEnd;
+pingayunleg[Num]-[Cardinal][Pl]:pingayunlegen                EncliticOrEnd;
+pingayunleg[Num]-[Cardinal][Pl]:pingayunelgen                EncliticOrEnd;
+qulngunritar(ar*)[Num]-[Cardinal][Sg]:qulngunritar(ar*)      EncliticOrEnd;
+qule[Num]-[Cardinal][Sg]:qula                                EncliticOrEnd;
+akimiarunritar(ar*)[Num]-[Cardinal][Sg]:akimiarunritar(ar*)  EncliticOrEnd;
+akimiar[Num]-[Cardinal][Sg]:akimiaq                          EncliticOrEnd;
+yuinaunritar(ar*)[Num]-[Cardinal][Sg]:yuinaunritar(ar*)      EncliticOrEnd;
+ipiarunritar(ar*)[Num]-[Cardinal][Sg]:ipiarunritar(ar*)      EncliticOrEnd;
+yuinar*[Num]-[Cardinal][Sg]:yuinaq                           EncliticOrEnd;
+ipiar[Num]-[Cardinal][Sg]:ipiaq                              EncliticOrEnd;
+tiissitsaar[Num]-[Cardinal][Sg]:tiissitsaaq                  EncliticOrEnd;
+
+! Appositive Form
+pingayur[Num]-[Cardinal][Pl]:pingayut                        EncliticOrEnd;
+cetamar[Num]-[Cardinal][Pl]:cetamat                          EncliticOrEnd;
+tallimar[Num]-[Cardinal][Pl]:tallimat                        EncliticOrEnd;
+arvinleg[Num]-[Cardinal][Pl]:arvinleget                      EncliticOrEnd;
+arvinleg[Num]-[Cardinal][Pl]:arvinelget                      EncliticOrEnd;
+malrunleg[Num]-[Cardinal][Pl]:malrunleget                    EncliticOrEnd;
+malrunleg[Num]-[Cardinal][Pl]:malrunelget                    EncliticOrEnd;
+pingayunleg[Num]-[Cardinal][Pl]:pingayunleget                EncliticOrEnd;
+pingayunleg[Num]-[Cardinal][Pl]:pingayunelget                EncliticOrEnd;
+qulngunritar(ar*)[Num]-[Cardinal][Pl]:qulngunritaraan        EncliticOrEnd;
+qulngunritar(ar*)[Num]-[Cardinal][Pl]:qulngunritaraat        EncliticOrEnd;
+qule[Num]-[Cardinal][Du]:qulek                               EncliticOrEnd;
+qule[Num]-[Cardinal][Pl]:qulen                               EncliticOrEnd;
+qule[Num]-[Cardinal][Pl]:qulet                               EncliticOrEnd;
+akimiarunritar(ar*)[Num]-[Cardinal][Pl]:akimiarunritaraan    EncliticOrEnd;
+akimiarunritar(ar*)[Num]-[Cardinal][Pl]:akimiarunritaraat    EncliticOrEnd;
+akimiar[Num]-[Cardinal][Pl]:akimiaret                        EncliticOrEnd;
+yuinaunritar(ar*)[Num]-[Cardinal][Pl]:yuinaunritaraan        EncliticOrEnd;
+yuinaunritar(ar*)[Num]-[Cardinal][Pl]:yuinaunritaraat        EncliticOrEnd;
+ipiarunritar(ar*)[Num]-[Cardinal][Pl]:ipiarunritaraan        EncliticOrEnd;
+ipiarunritar(ar*)[Num]-[Cardinal][Pl]:ipiarunritaraat        EncliticOrEnd;
+yuinar*[Num]-[Cardinal][Du]:yuinaak                          EncliticOrEnd;
+yuinar*[Num]-[Cardinal][Pl]:yuinaat                          EncliticOrEnd;
+ipiar[Num]-[Cardinal][Du]:ipiak                              EncliticOrEnd;
+ipiar[Num]-[Cardinal][Pl]:ipiat                              EncliticOrEnd;
+tiissitsaar[Num]-[Cardinal][Du]:tiissitsaak                  EncliticOrEnd;
+tiissitsaar[Num]-[Cardinal][Pl]:tiissitsaat                  EncliticOrEnd;
+
+cetamar[Num]-[N][Abs][3PlPoss][SgPosd]:cetamiit              EncliticOrEnd;
+tallimar[Num]-[N][Abs][3PlPoss][SgPosd]:tallimiit            EncliticOrEnd;
+
+ataucir                 NumeralPostbase; ! 1
+malrur                  NumeralPostbase; ! 2
+pingayur                NumeralPostbase; ! 3
+cetamar                 NumeralPostbase; ! 4
+tallimar                NumeralPostbase; ! 5
+arvinleg                NumeralPostbase; ! 6
+malrunleg               NumeralPostbase; ! 7
+pingayunleg             NumeralPostbase; ! 8
+qulngunritar(ar*)       NumeralPostbase; ! 9
+qule                    NumeralPostbase; ! 10
+akimiarunritar(ar*)     NumeralPostbase; ! 14
+akimiar                 NumeralPostbase; ! 15
+yuinaunritar(ar*)       NumeralPostbase; ! 19
+ipiarunritar(ar*)       NumeralPostbase; ! 19
+yuinar*                 NumeralPostbase; ! 20
+ipiar                   NumeralPostbase; ! 20
+tiissitsaar             NumeralPostbase; ! Thousand
+!miilitsaar              NumeralPostbase; ! Million?
+!piilitsaar              NumeralPostbase; ! Billion?
+

@@ -2,3 +2,5 @@
 phonology.twolc
 esu.*
 root.lexc
+!morphology/phonology.twolc
+!morphology/root.lexc
