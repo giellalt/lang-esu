@@ -68,25 +68,40 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
-### ESU requires extra processing after twolc intersection:
-# Hfst:
-.generated/generator-raw-gt-desc.hfst: .generated/generator-raw-gt-desc.tmp.hfst \
-			morphology/assign-stress.compose.hfst  \
-			morphology/extra-phonology.compose.hfst
-	$(AM_V_INTRSCT)$(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
-		  -1 $< -2 morphology/assign-stress.compose.hfst \
-		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
-		  -1 - -2 morphology/extra-phonology.compose.hfst \
-		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-		-o $@
+### ESU adds regular output and only the permissive-only paths as Err/Orth.
+.generated/generator-raw-gt-desc.tmp.hfst: \
+			.generated/generator-raw-gt-desc.tmp1.hfst \
+			morphology/extra-phonology.compose.hfst \
+			morphology/extra-phonology.permissive.compose.hfst \
+			morphology/analysis-error-tag.hfst \
+			filters/reorder-semantic-tags.hfst \
+			filters/reorder-subpos-tags.hfst
+	$(HFST_COMPOSE) -1 $< -2 morphology/extra-phonology.compose.hfst \
+		-o .generated/esu-regular.hfst
+	$(HFST_COMPOSE) -1 $< -2 morphology/extra-phonology.permissive.compose.hfst \
+		-o .generated/esu-permissive.hfst
+	$(HFST_SUBTRACT) -1 .generated/esu-permissive.hfst \
+		-2 .generated/esu-regular.hfst -o .generated/esu-permissive-only.hfst
+	$(HFST_CONCATENATE) -1 .generated/esu-permissive-only.hfst \
+		-2 morphology/analysis-error-tag.hfst \
+		-o .generated/esu-permissive-tagged.hfst
+	$(HFST_DISJUNCT) -1 .generated/esu-regular.hfst \
+		-2 .generated/esu-permissive-tagged.hfst \
+		-o .generated/esu-raw-unioned.hfst
+	$(HFST_COMPOSE) -F -1 .generated/esu-raw-unioned.hfst \
+		-2 filters/reorder-semantic-tags.hfst \
+		-o .generated/esu-semantic-reordered.hfst
+	$(HFST_COMPOSE) -F -1 .generated/esu-semantic-reordered.hfst \
+		-2 filters/reorder-subpos-tags.hfst -o $@
+	rm -f .generated/esu-regular.hfst .generated/esu-permissive.hfst \
+		.generated/esu-permissive-only.hfst .generated/esu-permissive-tagged.hfst \
+		.generated/esu-raw-unioned.hfst .generated/esu-semantic-reordered.hfst
 
-#### Xerox & FOMA:
+#### Xerox & FOMA: keep the regular mapping, without adding stress.
 .generated/analyser-raw-gt-desc.%: .generated/analyser-raw-gt-desc.tmp.% \
-			morphology/assign-stress.compose.%  \
 			morphology/extra-phonology.compose.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"$<\" \
-			.o. @\"morphology/assign-stress.compose.$*\"   \
 			.o. @\"morphology/extra-phonology.compose.$*\" \
 			;\n\
 		 save stack $@\n\

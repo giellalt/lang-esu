@@ -99,7 +99,10 @@ GT_XML_SRCS=
 GT_LOCAL_SRCS=
 
 # Define local xfscripts here:
-GT_LOCAL_XFSCRIPT_SRCS=
+GT_LOCAL_XFSCRIPT_SRCS=\
+			lexicon.cleanup.xfscript \
+			analysis-error-tag.xfscript \
+			extra-phonology.permissive.xfscript
 
 # Define here any additional sources just included in the distro:
 GT_DISTRO_SRCS=
@@ -113,6 +116,18 @@ GT_DISTRO_SRCS=
 ### gle/ for an example of how this is used.
 
 GIELLA_LOCAL_TARGETS=
+
+GT_LEXICON_HFST_DEPS=$(GENDIR) $(GT_LEXC_ROOT) $(GT_LEXC_SRCS) \
+			$(GENERATED_LEXC_SRCS) .generated/lexicon.cleanup.hfst
+
+define GT_LEXICON_HFST_RECIPE
+	$(AM_V_HLEXC)"$(HFST_LEXC)" \
+		$(MORE_VERBOSITY) $(HFST_FORMAT) $(HFST_LEXC_FLAGS) \
+		-o $@.raw.hfst $(GT_LEXC_ROOT) $(VPATH_LEXCS)
+	$(HFST_COMPOSE) -1 $@.raw.hfst -2 .generated/lexicon.cleanup.hfst \
+		-o $@
+	rm -f $@.raw.hfst
+endef
 
 update-srcv2:
 	python3 $(top_srcdir)/devtools/sync-srcv2.py

@@ -54,5 +54,22 @@ EXTRA_SRCS=
 # Included build file, where the actual build instructions are:
 include $(top_srcdir)/../giella-core/am-shared/src-filters-dir-include.am
 
+# Err/Orth is added after the lexical transducer is compiled, so extract the
+# existing core error-tag list from the raw generator FST instead of the lexicon.
+.generated/error-tags.txt: $(top_builddir)/src/fst/.generated/generator-raw-gt-desc.hfst
+	$(AM_V_GEN)$(HFST_SUMMARIZE) -v 2>/dev/null $< \
+		| grep -A1 '^sigma set' \
+		| grep -v '^sigma set' \
+		| sed 's/, /\\\\\\/g' \
+		| perl -pe 's/\\\\\\/\n/g' \
+		| grep -v '^$$' \
+		| egrep -v '(@_EPSILON_SYMBOL_@|@_IDENTITY_SYMBOL_@|@_UNKNOWN_SYMBOL_@)' \
+		> $@.sigma.tmp
+	$(AM_V_GEN)$(GTCORE)/scripts/extract-tags.sh $@.sigma.tmp $@.tmp Err/
+	$(AM_V_GEN)if test -f $@; then \
+		if ! diff -q $@ $@.tmp; then mv -f $@.tmp $@; else rm -f $@.tmp; fi; \
+	else mv -f $@.tmp $@; fi
+	rm -f $@.sigma.tmp
+
 # vim: set ft=automake:
 include $(top_srcdir)/../giella-core/am-shared/devtest-include.am
