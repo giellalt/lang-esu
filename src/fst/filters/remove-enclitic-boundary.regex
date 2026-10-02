@@ -1,0 +1,7 @@
+! Deletes the "=" enclitic/morpheme boundary marker on the surface side.
+! None of the standard GiellaLT filters know about this ESU-only symbol, so
+! without this it leaks into the final surface forms. Add further boundary
+! symbols here if more turn out to leak through.
+
+%= -> 0
+;

@@ -121,31 +121,57 @@ endif # CAN_FOMA
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
-# Remove & change boundaries in the analysers:
-define giella_default_analysers
-.generated/analyser%.$(1): .generated/analyser%.tmp.$(1) \
-			morphology/remove-boundarie.compose.$(1)
+# NB: the raw-gt-desc analyser/generator built above must keep *everything*,
+# including surface-side morpheme boundaries, so it can serve as a basis for
+# other applications. It gets no extra filtering here, only the standard
+# giella-core default (see giella-core/am-shared/src-fst-dir-include.am),
+# which composes "filter .o. $<" (filter on the left), i.e. it removes the
+# usage-tags from the analysis side only, leaving everything else --
+# including "=" -- untouched on the surface side.
+#
+# filters/remove-enclitic-boundary deletes the ESU-only "=" boundary marker
+# from the surface side, so it must be composed to the right of "$<"
+# ("$< .o. filter"), matching the convention giella-core itself uses for
+# surface-side filters (e.g. filters/remove-word-boundary) further
+# downstream. It is only needed for the text analysis/generation products
+# below, never for the raw transducer above. Because this is a static
+# pattern rule with an explicit target list (rather than a bare "%"
+# pattern), it applies only to the listed targets and does not compete with
+# -- or risk silently losing to -- giella-core's own "analyser%"/"generator%"
+# fallback rules for anything else, such as the raw targets.
+define esu_text_analysers
+.generated/analyser-gt-desc.$(1) \
+.generated/analyser-gt-norm.$(1)   : \
+.generated/analyser-%.$(1): .generated/analyser-%.tmp.$(1) \
+			filters/remove-usage-tags.$(1) \
+			filters/remove-enclitic-boundary.$(1)
 	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
-				@\"morphology/remove-boundarie.compose.$(1)\"  \
+				@\"filters/remove-usage-tags.$(1)\" \
 			.o. @\"$$<\" \
+			.o. @\"filters/remove-enclitic-boundary.$(1)\" \
+			;\n\
 		 $$(INVERT_HFST)\
 		 save stack $$@\n\
 		 quit\n" | $$(XFST_TOOL)
 endef
-$(foreach fst,hfst xfst foma,$(eval $(call giella_default_analysers,$(fst))))
+$(foreach fst,hfst xfst foma,$(eval $(call esu_text_analysers,$(fst))))
 
-# Remove & change boundaries in the generators:
-define giella_default_generators
+define esu_text_generators
+.generated/generator-gt-desc.$(1) \
+.generated/generator-gt-norm.$(1)   : \
 .generated/generator-%.$(1): .generated/generator-%.tmp.$(1) \
-			morphology/remove-boundarie.compose.$(1)
+			filters/remove-usage-tags.$(1) \
+			filters/remove-enclitic-boundary.$(1)
 	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
-				@\"morphology/remove-boundarie.compose.$(1)\"  \
+				@\"filters/remove-usage-tags.$(1)\" \
 			.o. @\"$$<\" \
+			.o. @\"filters/remove-enclitic-boundary.$(1)\" \
+			;\n\
 		 $$(INVERT_XFST)$$(INVERT_FOMA)\
 		 save stack $$@\n\
 		 quit\n" | $$(XFST_TOOL)
 endef
-$(foreach fst,hfst xfst foma,$(eval $(call giella_default_generators,$(fst))))
+$(foreach fst,hfst xfst foma,$(eval $(call esu_text_generators,$(fst))))
 
 # Collaps boundaries in the morpher:
 .generated/morpher-gt-desc.%: .generated/morpher-gt-desc.tmp.% \
