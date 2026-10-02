@@ -54,22 +54,34 @@ EXTRA_SRCS=
 # Included build file, where the actual build instructions are:
 include $(top_srcdir)/../giella-core/am-shared/src-filters-dir-include.am
 
-# Err/Orth is added after the lexical transducer is compiled, so extract the
-# existing core error-tag list from the raw generator FST instead of the lexicon.
-.generated/error-tags.txt: $(top_builddir)/src/fst/.generated/generator-raw-gt-desc.hfst
-	$(AM_V_GEN)$(HFST_SUMMARIZE) -v 2>/dev/null $< \
-		| grep -A1 '^sigma set' \
-		| grep -v '^sigma set' \
-		| sed 's/, /\\\\\\/g' \
-		| perl -pe 's/\\\\\\/\n/g' \
-		| grep -v '^$$' \
-		| egrep -v '(@_EPSILON_SYMBOL_@|@_IDENTITY_SYMBOL_@|@_UNKNOWN_SYMBOL_@)' \
-		> $@.sigma.tmp
-	$(AM_V_GEN)$(GTCORE)/scripts/extract-tags.sh $@.sigma.tmp $@.tmp Err/
+# Err/Orth is added after the lexical transducer is compiled, so the
+# error-tag list should come from the raw generator FST instead of the
+# lexicon. But that raw FST is only built in src/fst/ itself, *after*
+# this filters/ dir has already been processed once by the normal SUBDIRS
+# recursion, so it does not exist yet on the first pass. Fall back to the
+# default lexicon-based extraction then, and rely on src/fst/Makefile.am
+# to force a refresh (re-extract + rebuild the error-tag filters) right
+# after the raw FST is actually built, before it is used further downstream.
+RAW_GT_DESC_HFST=$(top_builddir)/src/fst/.generated/generator-raw-gt-desc.hfst
+
+.generated/error-tags.txt: .generated/$(LEX_TAG_FILE) $(wildcard $(RAW_GT_DESC_HFST))
+	$(AM_V_GEN)if test -f $(RAW_GT_DESC_HFST); then \
+		$(HFST_SUMMARIZE) -v 2>/dev/null $(RAW_GT_DESC_HFST) \
+			| grep -A1 '^sigma set' \
+			| grep -v '^sigma set' \
+			| sed 's/, /\\\\\\/g' \
+			| perl -pe 's/\\\\\\/\n/g' \
+			| grep -v '^$$' \
+			| egrep -v '(@_EPSILON_SYMBOL_@|@_IDENTITY_SYMBOL_@|@_UNKNOWN_SYMBOL_@)' \
+			> $@.sigma.tmp; \
+		$(GTCORE)/scripts/extract-tags.sh $@.sigma.tmp $@.tmp Err/; \
+		rm -f $@.sigma.tmp; \
+	else \
+		$(GTCORE)/scripts/extract-tags.sh .generated/$(LEX_TAG_FILE) $@.tmp Err/; \
+	fi
 	$(AM_V_GEN)if test -f $@; then \
 		if ! diff -q $@ $@.tmp; then mv -f $@.tmp $@; else rm -f $@.tmp; fi; \
 	else mv -f $@.tmp $@; fi
-	rm -f $@.sigma.tmp
 
 # vim: set ft=automake:
 include $(top_srcdir)/../giella-core/am-shared/devtest-include.am

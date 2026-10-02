@@ -97,6 +97,20 @@ endif # CAN_FOMA
 		.generated/esu-permissive-only.hfst .generated/esu-permissive-tagged.hfst \
 		.generated/esu-raw-unioned.hfst .generated/esu-semantic-reordered.hfst
 
+# Err/Orth tags only exist once the raw generator FST above is built, but
+# filters/ (which builds the Err-tag filters from them) is processed earlier
+# by the SUBDIRS recursion, using a lexicon-based fallback list (see
+# filters/Makefile.am). Now that the raw FST exists, re-extract the tags and
+# rebuild the dependent filter transducers, before anything downstream
+# composes with them.
+.generated/generator-raw-gt-desc.hfst: .generated/errtags-raw-refresh.stamp
+
+.generated/errtags-raw-refresh.stamp: .generated/generator-raw-gt-desc.tmp.hfst
+	rm -f filters/.generated/error-tags.txt
+	$(MAKE) -C filters .generated/error-tags.txt
+	$(MAKE) -C filters make-optional-error-tags.hfst remove-error-tags.hfst
+	touch $@
+
 #### Xerox & FOMA: keep the regular mapping, without adding stress.
 .generated/analyser-raw-gt-desc.%: .generated/analyser-raw-gt-desc.tmp.% \
 			morphology/extra-phonology.compose.%
