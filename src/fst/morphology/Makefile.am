@@ -99,6 +99,7 @@ GT_XML_SRCS=
 GT_LOCAL_SRCS=
 
 # Define local xfscripts here:
+# analysis-error-tag.xfscript marks permissive-only paths with Err/Orth.
 GT_LOCAL_XFSCRIPT_SRCS=\
 			lexicon.cleanup.xfscript \
 			analysis-error-tag.xfscript \

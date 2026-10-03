@@ -68,25 +68,41 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
-### The permissive path mirrors the analyzer build in morphology/orig/Makefile.
+### Preserve permissive forms and add Err/Orth only to permissive-only paths.
 .generated/generator-raw-gt-desc.tmp.hfst: \
 			.generated/generator-raw-gt-desc.tmp1.hfst \
 			morphology/.generated/assign-stress.compose.hfst \
+			morphology/extra-phonology.compose.hfst \
 			morphology/extra-phonology.permissive.compose.hfst \
+			morphology/analysis-error-tag.hfst \
 			filters/reorder-semantic-tags.hfst \
 			filters/reorder-subpos-tags.hfst
 	$(HFST_COMPOSE_INTERSECT) -1 $< \
 		-2 morphology/.generated/assign-stress.compose.hfst \
 		-o .generated/esu-stressed.hfst
 	$(HFST_COMPOSE) -1 .generated/esu-stressed.hfst \
+		-2 morphology/extra-phonology.compose.hfst \
+		-o .generated/esu-regular.hfst
+	$(HFST_COMPOSE) -1 .generated/esu-stressed.hfst \
 		-2 morphology/extra-phonology.permissive.compose.hfst \
 		-o .generated/esu-permissive.hfst
-	$(HFST_COMPOSE) -F -1 .generated/esu-permissive.hfst \
+	$(HFST_SUBTRACT) -1 .generated/esu-permissive.hfst \
+		-2 .generated/esu-regular.hfst -o .generated/esu-permissive-only.hfst
+	$(HFST_CONCATENATE) -1 .generated/esu-permissive-only.hfst \
+		-2 morphology/analysis-error-tag.hfst \
+		-o .generated/esu-permissive-tagged.hfst
+	$(HFST_DISJUNCT) -1 .generated/esu-permissive.hfst \
+		-2 .generated/esu-permissive-tagged.hfst \
+		-o .generated/esu-raw-with-errtags.hfst
+	$(HFST_COMPOSE) -F -1 .generated/esu-raw-with-errtags.hfst \
 		-2 filters/reorder-semantic-tags.hfst \
 		-o .generated/esu-semantic-reordered.hfst
 	$(HFST_COMPOSE) -F -1 .generated/esu-semantic-reordered.hfst \
 		-2 filters/reorder-subpos-tags.hfst -o $@
-	rm -f .generated/esu-stressed.hfst .generated/esu-permissive.hfst \
+	rm -f .generated/esu-stressed.hfst .generated/esu-regular.hfst \
+		.generated/esu-permissive.hfst .generated/esu-permissive-only.hfst \
+		.generated/esu-permissive-tagged.hfst \
+		.generated/esu-raw-with-errtags.hfst \
 		.generated/esu-semantic-reordered.hfst
 
 #### Xerox & FOMA: keep the regular mapping, without adding stress.
