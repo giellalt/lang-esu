@@ -1,0 +1,11 @@
+Config:
+  hfst:
+    Gen: ../../generator-gt-norm.hfstol
+    Morph: ../../analyser-gt-norm.hfst
+
+Tests:
+  Verb - calinrituq:
+    cali-–nrite[V→V]-[V][Ind][Intr][S_3Sg]: calinrituq
+
+  Verb - uksuigaqamta
+    uksui-[V][Cont][Intr][S_1Pl]: uksuigaqamta
