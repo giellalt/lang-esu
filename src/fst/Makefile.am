@@ -68,48 +68,26 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
-### ESU adds regular output and only the permissive-only paths as Err/Orth.
+### The permissive path mirrors the analyzer build in morphology/orig/Makefile.
 .generated/generator-raw-gt-desc.tmp.hfst: \
 			.generated/generator-raw-gt-desc.tmp1.hfst \
-			morphology/extra-phonology.compose.hfst \
+			morphology/.generated/assign-stress.compose.hfst \
 			morphology/extra-phonology.permissive.compose.hfst \
-			morphology/analysis-error-tag.hfst \
 			filters/reorder-semantic-tags.hfst \
 			filters/reorder-subpos-tags.hfst
-	$(HFST_COMPOSE) -1 $< -2 morphology/extra-phonology.compose.hfst \
-		-o .generated/esu-regular.hfst
-	$(HFST_COMPOSE) -1 $< -2 morphology/extra-phonology.permissive.compose.hfst \
+	$(HFST_COMPOSE_INTERSECT) -1 $< \
+		-2 morphology/.generated/assign-stress.compose.hfst \
+		-o .generated/esu-stressed.hfst
+	$(HFST_COMPOSE) -1 .generated/esu-stressed.hfst \
+		-2 morphology/extra-phonology.permissive.compose.hfst \
 		-o .generated/esu-permissive.hfst
-	$(HFST_SUBTRACT) -1 .generated/esu-permissive.hfst \
-		-2 .generated/esu-regular.hfst -o .generated/esu-permissive-only.hfst
-	$(HFST_CONCATENATE) -1 .generated/esu-permissive-only.hfst \
-		-2 morphology/analysis-error-tag.hfst \
-		-o .generated/esu-permissive-tagged.hfst
-	$(HFST_DISJUNCT) -1 .generated/esu-regular.hfst \
-		-2 .generated/esu-permissive-tagged.hfst \
-		-o .generated/esu-raw-unioned.hfst
-	$(HFST_COMPOSE) -F -1 .generated/esu-raw-unioned.hfst \
+	$(HFST_COMPOSE) -F -1 .generated/esu-permissive.hfst \
 		-2 filters/reorder-semantic-tags.hfst \
 		-o .generated/esu-semantic-reordered.hfst
 	$(HFST_COMPOSE) -F -1 .generated/esu-semantic-reordered.hfst \
 		-2 filters/reorder-subpos-tags.hfst -o $@
-	rm -f .generated/esu-regular.hfst .generated/esu-permissive.hfst \
-		.generated/esu-permissive-only.hfst .generated/esu-permissive-tagged.hfst \
-		.generated/esu-raw-unioned.hfst .generated/esu-semantic-reordered.hfst
-
-# Err/Orth tags only exist once the raw generator FST above is built, but
-# filters/ (which builds the Err-tag filters from them) is processed earlier
-# by the SUBDIRS recursion, using a lexicon-based fallback list (see
-# filters/Makefile.am). Now that the raw FST exists, re-extract the tags and
-# rebuild the dependent filter transducers, before anything downstream
-# composes with them.
-.generated/generator-raw-gt-desc.hfst: .generated/errtags-raw-refresh.stamp
-
-.generated/errtags-raw-refresh.stamp: .generated/generator-raw-gt-desc.tmp.hfst
-	rm -f filters/.generated/error-tags.txt
-	$(MAKE) -C filters .generated/error-tags.txt
-	$(MAKE) -C filters make-optional-error-tags.hfst remove-error-tags.hfst
-	touch $@
+	rm -f .generated/esu-stressed.hfst .generated/esu-permissive.hfst \
+		.generated/esu-semantic-reordered.hfst
 
 #### Xerox & FOMA: keep the regular mapping, without adding stress.
 .generated/analyser-raw-gt-desc.%: .generated/analyser-raw-gt-desc.tmp.% \
@@ -129,26 +107,21 @@ endif # CAN_FOMA
 # usage-tags from the analysis side only, leaving everything else --
 # including "=" -- untouched on the surface side.
 #
-# filters/remove-enclitic-boundary deletes the ESU-only "=" boundary marker
-# from the surface side, so it must be composed to the right of "$<"
-# ("$< .o. filter"), matching the convention giella-core itself uses for
-# surface-side filters (e.g. filters/remove-word-boundary) further
-# downstream. It is only needed for the text analysis/generation products
-# below, never for the raw transducer above. Because this is a static
-# pattern rule with an explicit target list (rather than a bare "%"
-# pattern), it applies only to the listed targets and does not compete with
-# -- or risk silently losing to -- giella-core's own "analyser%"/"generator%"
-# fallback rules for anything else, such as the raw targets.
+# The tmp-to-final rules mirror orig/Makefile by applying the ESU
+# remove-boundaries transducer on the surface side before inversion.
+#
+# The explicit target lists keep this ESU-only step away from raw products and
+# from unrelated GiellaLT analyser/generator targets.
 define esu_text_analysers
 .generated/analyser-gt-desc.$(1) \
 .generated/analyser-gt-norm.$(1)   : \
 .generated/analyser-%.$(1): .generated/analyser-%.tmp.$(1) \
 			filters/remove-usage-tags.$(1) \
-			filters/remove-enclitic-boundary.$(1)
+			morphology/remove-boundaries.compose.$(1)
 	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
 				@\"filters/remove-usage-tags.$(1)\" \
 			.o. @\"$$<\" \
-			.o. @\"filters/remove-enclitic-boundary.$(1)\" \
+			.o. @\"morphology/remove-boundaries.compose.$(1)\" \
 			;\n\
 		 $$(INVERT_HFST)\
 		 save stack $$@\n\
@@ -161,11 +134,11 @@ define esu_text_generators
 .generated/generator-gt-norm.$(1)   : \
 .generated/generator-%.$(1): .generated/generator-%.tmp.$(1) \
 			filters/remove-usage-tags.$(1) \
-			filters/remove-enclitic-boundary.$(1)
+			morphology/remove-boundaries.compose.$(1)
 	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
 				@\"filters/remove-usage-tags.$(1)\" \
 			.o. @\"$$<\" \
-			.o. @\"filters/remove-enclitic-boundary.$(1)\" \
+			.o. @\"morphology/remove-boundaries.compose.$(1)\" \
 			;\n\
 		 $$(INVERT_XFST)$$(INVERT_FOMA)\
 		 save stack $$@\n\
