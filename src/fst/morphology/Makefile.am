@@ -131,7 +131,7 @@ define GT_LEXICON_HFST_RECIPE
 endef
 
 update-srcv2:
-	python3 $(top_srcdir)/devtools/sync-srcv2.py
+	python3 $(srcdir)/sync-srcv2.py
 
 .PHONY: update-srcv2
 

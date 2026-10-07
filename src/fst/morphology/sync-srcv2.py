@@ -6,9 +6,8 @@ import re
 import shutil
 
 
-ROOT = Path(__file__).resolve().parent.parent
-SRCV2 = ROOT / "srcV2"
-MORPHOLOGY = ROOT / "src/fst/morphology"
+MORPHOLOGY = Path(__file__).resolve().parent
+SRCV2 = MORPHOLOGY / "orig" / "srcV2"
 
 STEM_LEXICONS = {
     "Exceptions": "exceptions.lexc",
